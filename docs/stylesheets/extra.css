@@ -870,24 +870,27 @@
 /* ── mapmyvisitors widget container ── */
 .homepage-pageviews__globe {
   width: 100%;
-  min-height: 200px;
+  background: #040c18;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #040c18;
+}
+
+.homepage-pageviews__globe a {
+  display: block;
+  width: 100%;
 }
 
 .homepage-pageviews__globe img {
   display: block;
   width: 100%;
   height: auto;
+  transition: opacity 0.2s;
 }
 
-.homepage-pageviews__globe canvas,
-.homepage-pageviews__globe .mmvst_outer {
-  display: block;
-  max-width: 100%;
+.homepage-pageviews__globe img:hover {
+  opacity: 0.88;
 }
 
 /* ── Footer stats row ── */

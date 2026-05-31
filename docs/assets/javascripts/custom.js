@@ -419,36 +419,9 @@
   }
 
   /* ───────────────────────────────────────────────────────────
-     5. VISIT MAP (mapmyvisitors.com)
-     Dynamically re-injects the globe script on every homepage
-     visit so it works with MkDocs Material instant navigation.
-     Animation fallback drives the map layers if globe_call_home.js
-     is blocked by ORB (localhost / some browsers).
+     5. VISIT MAP
   ─────────────────────────────────────────────────────────── */
-  var _MMV_TOKEN = "-OgpYucqPJE3qE-DPpa-aGXkFL-J_BPFYLvY42lwvas";
-  var _globeAnimTmr = null;
-
-  function startGlobeAnimFallback() {
-    clearTimeout(_globeAnimTmr);
-    _globeAnimTmr = setTimeout(function () {
-      var mapB = document.querySelector(".mmvst_map_b");
-      var mapF = document.querySelector(".mmvst_map_f");
-      if (!mapB || !mapF) return;
-      var t0 = mapB.style.transform;
-      setTimeout(function () {
-        if (mapB.style.transform !== t0) return; // native already animating
-        var EARTH_W = 3231, FRONT_OFFSET = 1615.5, SPEED = 1.8, offset = 0;
-        function tick() {
-          if (!document.getElementById("mmvst_globe_container")) return;
-          offset = (offset + SPEED) % EARTH_W;
-          mapB.style.transform = "translateX(" + -offset + "px)";
-          mapF.style.transform = "translateX(" + -(offset + FRONT_OFFSET) + "px)";
-          requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-      }, 1000);
-    }, 5000);
-  }
+  var _MMV_ID = "1c4xe";
 
   function initVisitMap() {
     var container = document.getElementById("mmvst_globe_container");
@@ -458,20 +431,12 @@
     var old = document.getElementById("mmvst_globe");
     if (old) old.remove();
 
-    // Reset container: clear stale globe markup, restore image fallback
-    container.innerHTML =
-      '<a href="https://mapmyvisitors.com/web/' + _MMV_TOKEN + '" target="_blank" rel="noopener noreferrer">' +
-      '<img src="https://mapmyvisitors.com/map.png?d=' + _MMV_TOKEN + '&cl=ffffff" alt="Visitor Map" loading="lazy" style="display:block;width:100%;height:auto;">' +
-      '</a>';
-
     // Inject globe script — browser executes it fresh each time
     var s = document.createElement("script");
     s.id = "mmvst_globe";
     s.type = "text/javascript";
-    s.src = "//mapmyvisitors.com/globe.js?d=" + _MMV_TOKEN;
+    s.src = "//mapmyvisitors.com/globe.js?d=" + _MMV_ID;
     container.appendChild(s);
-
-    startGlobeAnimFallback();
   }
 
   /* ───────────────────────────────────────────────────────────
