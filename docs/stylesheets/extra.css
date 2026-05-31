@@ -860,7 +860,7 @@
 
 /* ── mapmyvisitors widget container ── */
 .homepage-pageviews__globe {
-  width: 100%;
+  width: 60%;
   min-height: 200px;
   background: #040c18;
   display: flex;
