@@ -46,12 +46,10 @@ hooks:
   - scripts/hooks.py
 
 extra_css:
-  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
   - stylesheets/extra.css
 
 extra_javascript:
   - assets/javascripts/wordcloud2.js
-  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
   - assets/javascripts/custom.js
 
 plugins:

@@ -415,81 +415,13 @@
   }
 
   /* ───────────────────────────────────────────────────────────
-     5. VISITOR WORLD MAP  (Leaflet.js, homepage only)
-  ─────────────────────────────────────────────────────────── */
-  var _visitorMap = null;
-
-  function initVisitorMap() {
-    var el = document.getElementById("visitor-world-map");
-    if (!el || !window.L) return;
-
-    // Destroy previous instance (instant-nav)
-    if (_visitorMap) {
-      try { _visitorMap.remove(); } catch (_) {}
-      _visitorMap = null;
-    }
-
-    var isDark = document.body.getAttribute("data-md-color-scheme") === "slate";
-
-    var tileUrl = isDark
-      ? "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png"
-      : "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png";
-
-    _visitorMap = L.map(el, {
-      center: [20, 10],
-      zoom: 1,
-      zoomControl: false,
-      scrollWheelZoom: false,
-      doubleClickZoom: false,
-      dragging: false,
-      touchZoom: false,
-      keyboard: false,
-      boxZoom: false,
-      attributionControl: false
-    });
-
-    L.tileLayer(tileUrl, { maxZoom: 4, subdomains: "abcd" }).addTo(_visitorMap);
-
-    // Decorative pulsing markers at major research hubs
-    var hubs = [
-      [39.9, 116.4],  // Beijing
-      [37.4, -122.1], // San Francisco Bay Area
-      [51.5, -0.1],   // London
-      [35.7, 139.7],  // Tokyo
-      [1.3, 103.8],   // Singapore
-      [48.8, 2.3],    // Paris
-      [40.7, -74.0],  // New York
-      [52.5, 13.4],   // Berlin
-      [37.6, 127.0],  // Seoul
-      [-33.9, 151.2]  // Sydney
-    ];
-
-    hubs.forEach(function (latlng) {
-      var dot = L.circleMarker(latlng, {
-        radius: 4,
-        color: "#ffffff",
-        weight: 1.5,
-        fillColor: "#e84040",
-        fillOpacity: 0.85,
-        interactive: false
-      }).addTo(_visitorMap);
-    });
-
-    // Re-render tiles on color scheme change
-    document.addEventListener("colorSchemeChange", function () {
-      initVisitorMap();
-    });
-  }
-
-  /* ───────────────────────────────────────────────────────────
-     6. BOOT
+     5. BOOT
   ─────────────────────────────────────────────────────────── */
   function boot() {
     initHomeBtn();
     initSearch();
     loadWCD().catch(function () {});
     if (document.getElementById("wordcloud-canvas")) initWordCloud();
-    if (document.getElementById("visitor-world-map")) initVisitorMap();
   }
 
   if (document.readyState === "loading") {
@@ -503,7 +435,6 @@
       initHomeBtn();
       initSearch();
       if (document.getElementById("wordcloud-canvas")) initWordCloud();
-      if (document.getElementById("visitor-world-map")) initVisitorMap();
     }, 60);
   });
 
