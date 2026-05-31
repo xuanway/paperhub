@@ -860,8 +860,9 @@
 
 /* ── mapmyvisitors widget container ── */
 .homepage-pageviews__globe {
-  width: 100%;
+  width: min(50%, 480px);
   min-height: 100px;
+  margin: 0 auto;
   background: #040c18;
   display: flex;
   align-items: center;
@@ -930,7 +931,8 @@
   }
 
   .homepage-pageviews__globe {
-    height: 160px;
+    width: min(50%, 180px);
+    height: 130px;
   }
 
   #ph-homebtn,
