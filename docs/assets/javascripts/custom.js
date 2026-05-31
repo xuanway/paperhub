@@ -427,22 +427,50 @@
     var container = document.getElementById("mmvst_globe_container");
     if (!container) return;
 
-    // Remove previous globe render and script for clean re-init on SPA navigation
+    // Clean up previous render and script for SPA navigation
     while (container.firstChild) container.removeChild(container.firstChild);
     var oldScript = document.getElementById("mmvst_globe");
     if (oldScript) oldScript.remove();
 
-    // Inject Globe Widget script
     var s = document.createElement("script");
     s.id = "mmvst_globe";
     s.type = "text/javascript";
     s.src = "//mapmyvisitors.com/globe.js?d=" + _MMV_TOKEN;
     s.onload = function () {
-      // globe.js uses $(window).load() to finalize rendering (set_globe / isScrolled).
-      // That event won't fire for dynamically injected scripts, so we call them manually.
-      setTimeout(function () {
-        if (typeof window.set_globe === "function") window.set_globe();
-        if (typeof window.isScrolled === "function") window.isScrolled();
+      // globe.js async-loads its own jQuery (window.globe_jq) then calls main() which:
+      //   (a) runs embed_globe() → inserts the DOM, sets elem = $(".mmvst_outer")
+      //   (b) binds $(window).load(cb) → cb calls set_globe() then isScrolled()
+      // Because we inject dynamically, window.load has already fired so (b) never runs.
+      //
+      // Fix: poll until globe_jq exists and #mmvst_a is in DOM (main() finished),
+      // then trigger $(window).load so set_globe() positions the rotating layers.
+      // Afterwards force-show .mmvst_inner + run the intro Velocity animation directly,
+      // bypassing isScrolled()'s strict "fully-in-viewport" check which can fail when
+      // the globe (≈760px tall) is taller than the browser viewport.
+      var tries = 0;
+      var timer = setInterval(function () {
+        tries++;
+        if (window.globe_jq && document.getElementById("mmvst_a")) {
+          clearInterval(timer);
+          var jq = window.globe_jq;
+          jq(window).trigger("load"); // runs set_globe() + binds scroll handler
+          setTimeout(function () {
+            var inner = jq(".mmvst_inner");
+            if (inner.length && inner.css("display") === "none") {
+              inner.show();
+              try {
+                jq(".mmvst_globe").velocity(
+                  { scale: [1, 0], opacity: 1 },
+                  { visibility: "visible", duration: 800, easing: "swing" }
+                );
+              } catch (e) {
+                jq(".mmvst_globe").css({ opacity: 1, visibility: "visible" });
+              }
+            }
+          }, 150); // slight delay so set_globe() finishes first
+        } else if (tries > 80) { // 4 s timeout
+          clearInterval(timer);
+        }
       }, 50);
     };
     container.appendChild(s);
