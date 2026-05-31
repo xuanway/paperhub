@@ -7,350 +7,1092 @@
       "count": 11,
       "trend": -1,
       "conf_info": "HPCA 2025 (5 papers) · HPCA 2026 (5 papers) · ISCA 2025 (1 paper)",
-      "search_term": "LLM Inference"
+      "search_term": "LLM Inference",
+      "papers": [
+        {
+          "title": "AQPIM: Breaking the PIM Capacity Wall for LLMs with In-Memory Activation Quantization",
+          "url": "HPCA/2026/pim/aqpim/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：AQPIM在PIM内部实现激活值量化，将LLM推理所需内存容量降低4×，使更大规模模型可在PIM上运行。"
+        },
+        {
+          "title": "ELORA: Efficient LoRA and KV Cache Management for Multi-LoRA LLM Serving",
+          "url": "HPCA/2026/llm_inference/elora/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：ELORA解决多LoRA模型并行服务中LoRA权重和KV Cache的双重内存压力，提升GPU利用率。"
+        },
+        {
+          "title": "Focus: A Streaming Concentration Architecture for Efficient Vision-Language Models",
+          "url": "HPCA/2026/llm_inference/focus/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026 Best Paper候选：Focus提出流式集中架构，通过识别和聚焦视觉token中的信息密集区域，大幅提升VLM推理效率。"
+        },
+        {
+          "title": "PASCAL: A Phase-Aware Scheduling Algorithm for Serving Reasoning-based Large Language Models",
+          "url": "HPCA/2026/llm_inference/pascal/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：PASCAL针对DeepSeek-R1等推理型LLM的思考与回答两阶段特性，设计专用调度算法提升服务效率。"
+        },
+        {
+          "title": "PIMphony: Overcoming Bandwidth and Capacity Inefficiency in PIM-based Long-Context LLM Inference",
+          "url": "HPCA/2026/pim/pimphony/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：PIMphony通过协同优化PIM带宽分配和KV Cache管理，解决长文本LLM推理中的带宽瓶颈，吞吐量提升3.2×。"
+        },
+        {
+          "title": "Anda: Unlocking Efficient LLM Inference with a Variable-Length Grouped Activation Data Format",
+          "url": "HPCA/2025/llm_inference/anda/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：Anda提出变长分组激活数据格式（Variable-Length Grouped Activation），通过精确捕捉LLM激活分布的不均匀性，实现更高效的激活量化和推理加速。"
+        },
+        {
+          "title": "DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency",
+          "url": "HPCA/2025/llm_inference/dynamollm/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：DynamoLLM通过动态调整LLM推理集群的GPU频率、并行度和批次大小，在保证SLO（服务级目标）的前提下降低推理能耗。"
+        },
+        {
+          "title": "FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference",
+          "url": "HPCA/2025/pim/facil/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：FACIL提出灵活的DRAM地址映射方案，使移动SoC与DRAM-PIM协同完成on-device LLM推理，在有限内存带宽下实现50B参数LLM的本地推理。"
+        },
+        {
+          "title": "InstAttention: In-Storage Attention Offloading for Cost-Effective Long-Context LLM Inference",
+          "url": "HPCA/2025/llm_inference/instattention/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：InstAttention将LLM的KV Cache卸载到NVMe SSD，通过In-Storage计算减少主机-存储数据传输，实现超长上下文（100K+ tokens）的高效LLM推理。"
+        },
+        {
+          "title": "PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM",
+          "url": "HPCA/2025/pim/paise/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：PAISE是三星SDS提出的PIM加速Transformer推理调度引擎，通过智能分配Attention与FFN操作到PIM和SoC，实现LLM推理的高效调度。"
+        },
+        {
+          "title": "WSC-LLM: Efficient LLM Service and Architecture Co-exploration for Wafer-scale Chips",
+          "url": "ISCA/2025/ml_accelerator/wsc_llm/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：WSC-LLM针对晶圆级（wafer-scale）芯片的独特互联拓扑和计算特性，系统探索LLM推理部署的最优体系结构配置。"
+        }
+      ]
     },
     {
       "text": "Hardware Security",
       "count": 6,
       "trend": 0,
       "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (3 papers)",
-      "search_term": "Hardware Security"
+      "search_term": "Hardware Security",
+      "papers": [
+        {
+          "title": "DSASSASSIN: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator",
+          "url": "HPCA/2026/security/dsassassin/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：首次发现Intel Data Streaming Accelerator（DSA）可被利用实施跨VM侧信道攻击，威胁云计算安全。"
+        },
+        {
+          "title": "Protean: A Programmable Spectre Defense",
+          "url": "HPCA/2026/security/protean/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：Stanford提出Protean，一种可在运行时配置的Spectre攻击防御硬件机制，适应不同攻击变体。"
+        },
+        {
+          "title": "SSBleed: Non-speculative Side-channel Attacks via Speculative Store Bypass on Armv9 CPUs",
+          "url": "HPCA/2026/security/ssbleed/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：在ARM Armv9处理器上发现无需推测执行即可利用Speculative Store Bypass实施侧信道攻击的新机制。"
+        },
+        {
+          "title": "BrokenSleep: Remote Power Timing Attack Exploiting Processor Idle States",
+          "url": "HPCA/2025/security/brokensleep/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：BrokenSleep发现处理器Idle State（C-state）转换的电源消耗具有可测量的时序特征，可被远程攻击者利用来推断目标CPU的工作负载信息。"
+        },
+        {
+          "title": "Palermo: Improving the Performance of Oblivious Memory using Protocol-Hardware Co-Design",
+          "url": "HPCA/2025/security/palermo/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：Palermo通过协议-硬件协同设计改进Oblivious Memory（ORAM）的性能，将ORAM访问延迟降低3×以上，使隐私保护内存访问在实际系统中可行。"
+        },
+        {
+          "title": "SpecMPK: Efficient In-Process Isolation with Speculative and Secure Permission Update Instruction",
+          "url": "HPCA/2025/security/specmpk/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：SpecMPK提出推测执行安全的MPK（Memory Protection Keys）权限更新指令，以极低开销实现进程内细粒度内存隔离，防御基于推测执行的内存安全攻击。"
+        }
+      ]
     },
     {
       "text": "Homomorphic Encryption",
       "count": 6,
       "trend": -1,
       "conf_info": "HPCA 2025 (4 papers) · HPCA 2026 (2 papers)",
-      "search_term": "Homomorphic Encryption"
+      "search_term": "Homomorphic Encryption",
+      "papers": [
+        {
+          "title": "Peregrine: Accelerating TFHE Bootstrapping on GPUs via Multi-Level External Product Co-Design",
+          "url": "HPCA/2026/fhe/peregrine/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：Peregrine利用GPU的SIMD并行性，通过多级外积重分解实现TFHE Bootstrapping的极速加速，延迟降低18×。"
+        },
+        {
+          "title": "UniFHE: Faster Accelerator for FHE with Diverse Algebraic Structure and Balanced Memory System",
+          "url": "HPCA/2026/fhe/unifhe/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：UniFHE为全同态加密设计统一加速架构，支持BFV/CKKS/TFHE等多种FHE方案，通过均衡内存系统消除访存瓶颈。"
+        },
+        {
+          "title": "Anaheim: Architecture and Algorithms for Processing Fully Homomorphic Encryption in Memory",
+          "url": "HPCA/2025/fhe/anaheim/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：Anaheim是首尔大学提出的FHE处理器内存架构，支持CKKS/BFV方案，通过片上SRAM存储密钥材料和专用多项式流水线实现高效FHE计算。"
+        },
+        {
+          "title": "EFFACT: A Highly Efficient Full-Stack FHE Acceleration Platform",
+          "url": "HPCA/2025/fhe/effact/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：EFFACT是清华大学提出的全栈FHE加速平台，通过NTT硬件优化、Bootstrapping专用引擎和编译器协同，实现端到端FHE应用加速。"
+        },
+        {
+          "title": "FHENDI: A Near-DRAM Accelerator for Compiler-Generated Fully Homomorphic Encryption Applications",
+          "url": "HPCA/2025/fhe/fhendi/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：FHENDI是IBM Research提出的近DRAM FHE加速器，通过编译器生成的FHE应用实现高效多项式运算，相比CPU加速超过100×。"
+        },
+        {
+          "title": "WarpDrive: GPU-Based Fully Homomorphic Encryption Acceleration Leveraging Tensor and CUDA Cores",
+          "url": "HPCA/2025/fhe/warpdrive/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：WarpDrive利用GPU Tensor Core与CUDA Core协同加速全同态加密，结合NTT与模乘的混合计算模式，实现FHE的GPU端到端加速。"
+        }
+      ]
     },
     {
       "text": "DRAM Security",
       "count": 5,
       "trend": -1,
       "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (2 papers)",
-      "search_term": "DRAM Security"
+      "search_term": "DRAM Security",
+      "papers": [
+        {
+          "title": "MIRZA: Efficiently Mitigating Rowhammer with Randomization and ALERT",
+          "url": "HPCA/2026/memory/mirza/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：MIRZA通过行地址随机化与ALERT机制协同工作，在极低性能开销下有效缓解Rowhammer攻击。"
+        },
+        {
+          "title": "SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense",
+          "url": "HPCA/2026/memory/salt/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：SALT将Rowhammer防御粒度从行级提升到子阵列级，彻底消除爆炸半径问题，以极低开销提供强安全保证。"
+        },
+        {
+          "title": "Chronus: Understanding and Securing the Cutting-Edge Industry Solutions to DRAM Read Disturbance",
+          "url": "HPCA/2025/memory/chronus/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：ETH Zürich团队对工业界现役DRAM Rowhammer防护（TRR、PRAC等）进行系统安全性分析，发现多类绕过攻击，并提出Chronus统一防护框架。"
+        },
+        {
+          "title": "QPRAC: Towards Secure and Practical PRAC-based Rowhammer Mitigation using Priority Queues",
+          "url": "HPCA/2025/memory/qprac/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：QPRAC利用优先队列数据结构优化DDR5 PRAC的行激活追踪，在保证安全性的前提下将PRAC的性能开销降低50%以上。"
+        },
+        {
+          "title": "Variable Read Disturbance: An Experimental Analysis of Temporal Variation in DRAM Read Disturbance",
+          "url": "HPCA/2025/memory/variable_rd/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：ETH Zürich Onur Mutlu团队对真实DRAM芯片的读扰动（Read Disturbance）进行系统实验分析，发现Rowhammer阈值存在显著时间变化特性，对现有缓解方案提出新挑战。"
+        }
+      ]
     },
     {
       "text": "PIM",
       "count": 5,
       "trend": -1,
       "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (2 papers)",
-      "search_term": "PIM"
+      "search_term": "PIM",
+      "papers": [
+        {
+          "title": "AQPIM: Breaking the PIM Capacity Wall for LLMs with In-Memory Activation Quantization",
+          "url": "HPCA/2026/pim/aqpim/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：AQPIM在PIM内部实现激活值量化，将LLM推理所需内存容量降低4×，使更大规模模型可在PIM上运行。"
+        },
+        {
+          "title": "PIMphony: Overcoming Bandwidth and Capacity Inefficiency in PIM-based Long-Context LLM Inference",
+          "url": "HPCA/2026/pim/pimphony/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：PIMphony通过协同优化PIM带宽分配和KV Cache管理，解决长文本LLM推理中的带宽瓶颈，吞吐量提升3.2×。"
+        },
+        {
+          "title": "AsyncDIMM: Achieving Asynchronous Execution in DIMM-Based Near-Memory Processing",
+          "url": "HPCA/2025/pim/asyncdimm/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：AsyncDIMM提出DIMM近内存处理(NMP)的异步执行框架，解决主机CPU与DIMM处理单元之间的同步开销问题，实现更高效的计算卸载。"
+        },
+        {
+          "title": "FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference",
+          "url": "HPCA/2025/pim/facil/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：FACIL提出灵活的DRAM地址映射方案，使移动SoC与DRAM-PIM协同完成on-device LLM推理，在有限内存带宽下实现50B参数LLM的本地推理。"
+        },
+        {
+          "title": "PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM",
+          "url": "HPCA/2025/pim/paise/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：PAISE是三星SDS提出的PIM加速Transformer推理调度引擎，通过智能分配Attention与FFN操作到PIM和SoC，实现LLM推理的高效调度。"
+        }
+      ]
     },
     {
       "text": "Quantum Computing",
       "count": 5,
       "trend": -1,
       "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (2 papers)",
-      "search_term": "Quantum Computing"
+      "search_term": "Quantum Computing",
+      "papers": [
+        {
+          "title": "Cyclone: Designing Efficient and Highly Parallel QCCD Architectural Codesigns for Fault Tolerant Quantum Memory",
+          "url": "HPCA/2026/quantum/cyclone/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：Cyclone为囚禁离子量子计算机设计高度并行的QCCD体系结构，将容错量子存储的操作深度降低5.2×。"
+        },
+        {
+          "title": "d'ArQ: A QOC Framework with Causality-Aware Grouping and Basis Selection",
+          "url": "HPCA/2026/quantum/darq/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：d'ArQ为量子最优控制提出因果感知分组和自适应基选择，降低量子门优化的计算复杂度。"
+        },
+        {
+          "title": "HATT: Hamiltonian Aware Ternary Tree for Optimizing Fermion-to-Qubit Mapping",
+          "url": "HPCA/2025/quantum/hatt/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：HATT提出基于Hamiltonian结构感知的三叉树Fermion-to-Qubit映射，减少量子化学模拟电路的量子门数量，实现更高效的量子计算资源利用。"
+        },
+        {
+          "title": "LSQCA: Resource-Efficient Load/Store Architecture for Limited-Scale Fault-Tolerant Quantum Computing",
+          "url": "HPCA/2025/quantum/lsqca/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：LSQCA为有限规模容错量子计算机提出专用Load/Store体系结构，通过将逻辑量子比特的存储与计算解耦，在有限物理量子比特预算下实现更大规模的量子算法执行。"
+        },
+        {
+          "title": "QuCLEAR: Clifford Extraction and Absorption for Quantum Circuit Optimization",
+          "url": "HPCA/2025/quantum/quclear/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：QuCLEAR提出量子电路中Clifford门的提取与吸收算法，通过将Clifford门从电路中分离并在末尾合并，减少量子电路中的T门数量，降低容错量子计算的资源开销。"
+        }
+      ]
     },
     {
       "text": "Rowhammer",
       "count": 5,
       "trend": -1,
       "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (2 papers)",
-      "search_term": "Rowhammer"
+      "search_term": "Rowhammer",
+      "papers": [
+        {
+          "title": "MIRZA: Efficiently Mitigating Rowhammer with Randomization and ALERT",
+          "url": "HPCA/2026/memory/mirza/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：MIRZA通过行地址随机化与ALERT机制协同工作，在极低性能开销下有效缓解Rowhammer攻击。"
+        },
+        {
+          "title": "SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense",
+          "url": "HPCA/2026/memory/salt/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：SALT将Rowhammer防御粒度从行级提升到子阵列级，彻底消除爆炸半径问题，以极低开销提供强安全保证。"
+        },
+        {
+          "title": "Chronus: Understanding and Securing the Cutting-Edge Industry Solutions to DRAM Read Disturbance",
+          "url": "HPCA/2025/memory/chronus/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：ETH Zürich团队对工业界现役DRAM Rowhammer防护（TRR、PRAC等）进行系统安全性分析，发现多类绕过攻击，并提出Chronus统一防护框架。"
+        },
+        {
+          "title": "QPRAC: Towards Secure and Practical PRAC-based Rowhammer Mitigation using Priority Queues",
+          "url": "HPCA/2025/memory/qprac/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：QPRAC利用优先队列数据结构优化DDR5 PRAC的行激活追踪，在保证安全性的前提下将PRAC的性能开销降低50%以上。"
+        },
+        {
+          "title": "Variable Read Disturbance: An Experimental Analysis of Temporal Variation in DRAM Read Disturbance",
+          "url": "HPCA/2025/memory/variable_rd/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：ETH Zürich Onur Mutlu团队对真实DRAM芯片的读扰动（Read Disturbance）进行系统实验分析，发现Rowhammer阈值存在显著时间变化特性，对现有缓解方案提出新挑战。"
+        }
+      ]
     },
     {
       "text": "FHE",
       "count": 4,
       "trend": -1,
       "conf_info": "HPCA 2025 (4 papers)",
-      "search_term": "FHE"
+      "search_term": "FHE",
+      "papers": [
+        {
+          "title": "Anaheim: Architecture and Algorithms for Processing Fully Homomorphic Encryption in Memory",
+          "url": "HPCA/2025/fhe/anaheim/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：Anaheim是首尔大学提出的FHE处理器内存架构，支持CKKS/BFV方案，通过片上SRAM存储密钥材料和专用多项式流水线实现高效FHE计算。"
+        },
+        {
+          "title": "EFFACT: A Highly Efficient Full-Stack FHE Acceleration Platform",
+          "url": "HPCA/2025/fhe/effact/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：EFFACT是清华大学提出的全栈FHE加速平台，通过NTT硬件优化、Bootstrapping专用引擎和编译器协同，实现端到端FHE应用加速。"
+        },
+        {
+          "title": "FHENDI: A Near-DRAM Accelerator for Compiler-Generated Fully Homomorphic Encryption Applications",
+          "url": "HPCA/2025/fhe/fhendi/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：FHENDI是IBM Research提出的近DRAM FHE加速器，通过编译器生成的FHE应用实现高效多项式运算，相比CPU加速超过100×。"
+        },
+        {
+          "title": "WarpDrive: GPU-Based Fully Homomorphic Encryption Acceleration Leveraging Tensor and CUDA Cores",
+          "url": "HPCA/2025/fhe/warpdrive/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：WarpDrive利用GPU Tensor Core与CUDA Core协同加速全同态加密，结合NTT与模乘的混合计算模式，实现FHE的GPU端到端加速。"
+        }
+      ]
     },
     {
       "text": "ML Accelerator",
       "count": 3,
       "trend": -1,
       "conf_info": "ISCA 2025 (3 papers)",
-      "search_term": "ML Accelerator"
+      "search_term": "ML Accelerator",
+      "papers": [
+        {
+          "title": "FRED: A Wafer-scale Fabric for 3D Parallel DNN Training",
+          "url": "ISCA/2025/ml_accelerator/fred/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：FRED为Wafer-scale系统设计3D并行（数据/流水/张量并行）的互联结构，使超大DNN训练效率提升2.7×。"
+        },
+        {
+          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
+          "url": "ISCA/2025/ml_accelerator/lighttml/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：LightML提出基于光子计算的ML推理加速架构，利用光子矩阵乘法在能效上比数字加速器提升10×以上。"
+        },
+        {
+          "title": "WSC-LLM: Efficient LLM Service and Architecture Co-exploration for Wafer-scale Chips",
+          "url": "ISCA/2025/ml_accelerator/wsc_llm/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：WSC-LLM针对晶圆级（wafer-scale）芯片的独特互联拓扑和计算特性，系统探索LLM推理部署的最优体系结构配置。"
+        }
+      ]
     },
     {
       "text": "Side-Channel Attack",
       "count": 3,
       "trend": 1,
       "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (2 papers)",
-      "search_term": "Side-Channel Attack"
+      "search_term": "Side-Channel Attack",
+      "papers": [
+        {
+          "title": "DSASSASSIN: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator",
+          "url": "HPCA/2026/security/dsassassin/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：首次发现Intel Data Streaming Accelerator（DSA）可被利用实施跨VM侧信道攻击，威胁云计算安全。"
+        },
+        {
+          "title": "SSBleed: Non-speculative Side-channel Attacks via Speculative Store Bypass on Armv9 CPUs",
+          "url": "HPCA/2026/security/ssbleed/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：在ARM Armv9处理器上发现无需推测执行即可利用Speculative Store Bypass实施侧信道攻击的新机制。"
+        },
+        {
+          "title": "BrokenSleep: Remote Power Timing Attack Exploiting Processor Idle States",
+          "url": "HPCA/2025/security/brokensleep/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：BrokenSleep发现处理器Idle State（C-state）转换的电源消耗具有可测量的时序特征，可被远程攻击者利用来推断目标CPU的工作负载信息。"
+        }
+      ]
     },
     {
       "text": "Wafer-scale",
       "count": 3,
       "trend": -1,
       "conf_info": "ISCA 2025 (3 papers)",
-      "search_term": "Wafer-scale"
+      "search_term": "Wafer-scale",
+      "papers": [
+        {
+          "title": "FRED: A Wafer-scale Fabric for 3D Parallel DNN Training",
+          "url": "ISCA/2025/ml_accelerator/fred/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：FRED为Wafer-scale系统设计3D并行（数据/流水/张量并行）的互联结构，使超大DNN训练效率提升2.7×。"
+        },
+        {
+          "title": "PD Constraint-aware Physical/Logical Topology Co-Design for Network on Wafer",
+          "url": "ISCA/2025/ml_accelerator/pd_network/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：针对Wafer-scale芯片上片上网络的物理设计约束，提出物理-逻辑拓扑协同优化方法，降低LLM训练通信延迟。"
+        },
+        {
+          "title": "WSC-LLM: Efficient LLM Service and Architecture Co-exploration for Wafer-scale Chips",
+          "url": "ISCA/2025/ml_accelerator/wsc_llm/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：WSC-LLM针对晶圆级（wafer-scale）芯片的独特互联拓扑和计算特性，系统探索LLM推理部署的最优体系结构配置。"
+        }
+      ]
     },
     {
       "text": "Bootstrapping",
       "count": 2,
       "trend": 0,
       "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
-      "search_term": "Bootstrapping"
+      "search_term": "Bootstrapping",
+      "papers": [
+        {
+          "title": "Peregrine: Accelerating TFHE Bootstrapping on GPUs via Multi-Level External Product Co-Design",
+          "url": "HPCA/2026/fhe/peregrine/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：Peregrine利用GPU的SIMD并行性，通过多级外积重分解实现TFHE Bootstrapping的极速加速，延迟降低18×。"
+        },
+        {
+          "title": "EFFACT: A Highly Efficient Full-Stack FHE Acceleration Platform",
+          "url": "HPCA/2025/fhe/effact/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：EFFACT是清华大学提出的全栈FHE加速平台，通过NTT硬件优化、Bootstrapping专用引擎和编译器协同，实现端到端FHE应用加速。"
+        }
+      ]
     },
     {
       "text": "CKKS",
       "count": 2,
       "trend": -1,
       "conf_info": "HPCA 2025 (2 papers)",
-      "search_term": "CKKS"
+      "search_term": "CKKS",
+      "papers": [
+        {
+          "title": "Anaheim: Architecture and Algorithms for Processing Fully Homomorphic Encryption in Memory",
+          "url": "HPCA/2025/fhe/anaheim/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：Anaheim是首尔大学提出的FHE处理器内存架构，支持CKKS/BFV方案，通过片上SRAM存储密钥材料和专用多项式流水线实现高效FHE计算。"
+        },
+        {
+          "title": "EFFACT: A Highly Efficient Full-Stack FHE Acceleration Platform",
+          "url": "HPCA/2025/fhe/effact/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：EFFACT是清华大学提出的全栈FHE加速平台，通过NTT硬件优化、Bootstrapping专用引擎和编译器协同，实现端到端FHE应用加速。"
+        }
+      ]
     },
     {
       "text": "DDR5",
       "count": 2,
       "trend": -1,
       "conf_info": "HPCA 2025 (2 papers)",
-      "search_term": "DDR5"
+      "search_term": "DDR5",
+      "papers": [
+        {
+          "title": "Chronus: Understanding and Securing the Cutting-Edge Industry Solutions to DRAM Read Disturbance",
+          "url": "HPCA/2025/memory/chronus/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：ETH Zürich团队对工业界现役DRAM Rowhammer防护（TRR、PRAC等）进行系统安全性分析，发现多类绕过攻击，并提出Chronus统一防护框架。"
+        },
+        {
+          "title": "QPRAC: Towards Secure and Practical PRAC-based Rowhammer Mitigation using Priority Queues",
+          "url": "HPCA/2025/memory/qprac/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：QPRAC利用优先队列数据结构优化DDR5 PRAC的行激活追踪，在保证安全性的前提下将PRAC的性能开销降低50%以上。"
+        }
+      ]
     },
     {
       "text": "Energy Efficiency",
       "count": 2,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper) · ISCA 2025 (1 paper)",
-      "search_term": "Energy Efficiency"
+      "search_term": "Energy Efficiency",
+      "papers": [
+        {
+          "title": "DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency",
+          "url": "HPCA/2025/llm_inference/dynamollm/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：DynamoLLM通过动态调整LLM推理集群的GPU频率、并行度和批次大小，在保证SLO（服务级目标）的前提下降低推理能耗。"
+        },
+        {
+          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
+          "url": "ISCA/2025/ml_accelerator/lighttml/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：LightML提出基于光子计算的ML推理加速架构，利用光子矩阵乘法在能效上比数字加速器提升10×以上。"
+        }
+      ]
     },
     {
       "text": "Fault-Tolerant QC",
       "count": 2,
       "trend": -1,
       "conf_info": "HPCA 2025 (2 papers)",
-      "search_term": "Fault-Tolerant QC"
+      "search_term": "Fault-Tolerant QC",
+      "papers": [
+        {
+          "title": "LSQCA: Resource-Efficient Load/Store Architecture for Limited-Scale Fault-Tolerant Quantum Computing",
+          "url": "HPCA/2025/quantum/lsqca/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：LSQCA为有限规模容错量子计算机提出专用Load/Store体系结构，通过将逻辑量子比特的存储与计算解耦，在有限物理量子比特预算下实现更大规模的量子算法执行。"
+        },
+        {
+          "title": "QuCLEAR: Clifford Extraction and Absorption for Quantum Circuit Optimization",
+          "url": "HPCA/2025/quantum/quclear/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：QuCLEAR提出量子电路中Clifford门的提取与吸收算法，通过将Clifford门从电路中分离并在末尾合并，减少量子电路中的T门数量，降低容错量子计算的资源开销。"
+        }
+      ]
     },
     {
       "text": "KV Cache",
       "count": 2,
       "trend": 0,
       "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
-      "search_term": "KV Cache"
+      "search_term": "KV Cache",
+      "papers": [
+        {
+          "title": "ELORA: Efficient LoRA and KV Cache Management for Multi-LoRA LLM Serving",
+          "url": "HPCA/2026/llm_inference/elora/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：ELORA解决多LoRA模型并行服务中LoRA权重和KV Cache的双重内存压力，提升GPU利用率。"
+        },
+        {
+          "title": "InstAttention: In-Storage Attention Offloading for Cost-Effective Long-Context LLM Inference",
+          "url": "HPCA/2025/llm_inference/instattention/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：InstAttention将LLM的KV Cache卸载到NVMe SSD，通过In-Storage计算减少主机-存储数据传输，实现超长上下文（100K+ tokens）的高效LLM推理。"
+        }
+      ]
     },
     {
       "text": "Long Context",
       "count": 2,
       "trend": 0,
       "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
-      "search_term": "Long Context"
+      "search_term": "Long Context",
+      "papers": [
+        {
+          "title": "PIMphony: Overcoming Bandwidth and Capacity Inefficiency in PIM-based Long-Context LLM Inference",
+          "url": "HPCA/2026/pim/pimphony/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：PIMphony通过协同优化PIM带宽分配和KV Cache管理，解决长文本LLM推理中的带宽瓶颈，吞吐量提升3.2×。"
+        },
+        {
+          "title": "InstAttention: In-Storage Attention Offloading for Cost-Effective Long-Context LLM Inference",
+          "url": "HPCA/2025/llm_inference/instattention/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：InstAttention将LLM的KV Cache卸载到NVMe SSD，通过In-Storage计算减少主机-存储数据传输，实现超长上下文（100K+ tokens）的高效LLM推理。"
+        }
+      ]
     },
     {
       "text": "Memory Security",
       "count": 2,
       "trend": 1,
       "conf_info": "HPCA 2026 (2 papers)",
-      "search_term": "Memory Security"
+      "search_term": "Memory Security",
+      "papers": [
+        {
+          "title": "MIRZA: Efficiently Mitigating Rowhammer with Randomization and ALERT",
+          "url": "HPCA/2026/memory/mirza/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：MIRZA通过行地址随机化与ALERT机制协同工作，在极低性能开销下有效缓解Rowhammer攻击。"
+        },
+        {
+          "title": "ReScue: Reliable and Secure CXL Memory",
+          "url": "HPCA/2026/memory/rescue/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：ReScue为CXL内存扩展系统提供统一的可靠性与安全性保护框架，解决CXL链路的特有安全挑战。"
+        }
+      ]
     },
     {
       "text": "NMP",
       "count": 2,
       "trend": -1,
       "conf_info": "HPCA 2025 (2 papers)",
-      "search_term": "NMP"
+      "search_term": "NMP",
+      "papers": [
+        {
+          "title": "AsyncDIMM: Achieving Asynchronous Execution in DIMM-Based Near-Memory Processing",
+          "url": "HPCA/2025/pim/asyncdimm/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：AsyncDIMM提出DIMM近内存处理(NMP)的异步执行框架，解决主机CPU与DIMM处理单元之间的同步开销问题，实现更高效的计算卸载。"
+        },
+        {
+          "title": "FHENDI: A Near-DRAM Accelerator for Compiler-Generated Fully Homomorphic Encryption Applications",
+          "url": "HPCA/2025/fhe/fhendi/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：FHENDI是IBM Research提出的近DRAM FHE加速器，通过编译器生成的FHE应用实现高效多项式运算，相比CPU加速超过100×。"
+        }
+      ]
     },
     {
       "text": "PRAC",
       "count": 2,
       "trend": -1,
       "conf_info": "HPCA 2025 (2 papers)",
-      "search_term": "PRAC"
+      "search_term": "PRAC",
+      "papers": [
+        {
+          "title": "Chronus: Understanding and Securing the Cutting-Edge Industry Solutions to DRAM Read Disturbance",
+          "url": "HPCA/2025/memory/chronus/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：ETH Zürich团队对工业界现役DRAM Rowhammer防护（TRR、PRAC等）进行系统安全性分析，发现多类绕过攻击，并提出Chronus统一防护框架。"
+        },
+        {
+          "title": "QPRAC: Towards Secure and Practical PRAC-based Rowhammer Mitigation using Priority Queues",
+          "url": "HPCA/2025/memory/qprac/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：QPRAC利用优先队列数据结构优化DDR5 PRAC的行激活追踪，在保证安全性的前提下将PRAC的性能开销降低50%以上。"
+        }
+      ]
     },
     {
       "text": "Scheduling",
       "count": 2,
       "trend": 0,
       "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
-      "search_term": "Scheduling"
+      "search_term": "Scheduling",
+      "papers": [
+        {
+          "title": "PASCAL: A Phase-Aware Scheduling Algorithm for Serving Reasoning-based Large Language Models",
+          "url": "HPCA/2026/llm_inference/pascal/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：PASCAL针对DeepSeek-R1等推理型LLM的思考与回答两阶段特性，设计专用调度算法提升服务效率。"
+        },
+        {
+          "title": "PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM",
+          "url": "HPCA/2025/pim/paise/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：PAISE是三星SDS提出的PIM加速Transformer推理调度引擎，通过智能分配Attention与FFN操作到PIM和SoC，实现LLM推理的高效调度。"
+        }
+      ]
     },
     {
       "text": "Spectre",
       "count": 2,
       "trend": 0,
       "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
-      "search_term": "Spectre"
+      "search_term": "Spectre",
+      "papers": [
+        {
+          "title": "Protean: A Programmable Spectre Defense",
+          "url": "HPCA/2026/security/protean/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：Stanford提出Protean，一种可在运行时配置的Spectre攻击防御硬件机制，适应不同攻击变体。"
+        },
+        {
+          "title": "SpecMPK: Efficient In-Process Isolation with Speculative and Secure Permission Update Instruction",
+          "url": "HPCA/2025/security/specmpk/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：SpecMPK提出推测执行安全的MPK（Memory Protection Keys）权限更新指令，以极低开销实现进程内细粒度内存隔离，防御基于推测执行的内存安全攻击。"
+        }
+      ]
     },
     {
       "text": "3D Parallelism",
       "count": 1,
       "trend": -1,
       "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "3D Parallelism"
+      "search_term": "3D Parallelism",
+      "papers": [
+        {
+          "title": "FRED: A Wafer-scale Fabric for 3D Parallel DNN Training",
+          "url": "ISCA/2025/ml_accelerator/fred/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：FRED为Wafer-scale系统设计3D并行（数据/流水/张量并行）的互联结构，使超大DNN训练效率提升2.7×。"
+        }
+      ]
     },
     {
       "text": "ARM",
       "count": 1,
       "trend": 1,
       "conf_info": "HPCA 2026 (1 paper)",
-      "search_term": "ARM"
+      "search_term": "ARM",
+      "papers": [
+        {
+          "title": "SSBleed: Non-speculative Side-channel Attacks via Speculative Store Bypass on Armv9 CPUs",
+          "url": "HPCA/2026/security/ssbleed/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：在ARM Armv9处理器上发现无需推测执行即可利用Speculative Store Bypass实施侧信道攻击的新机制。"
+        }
+      ]
     },
     {
       "text": "Activation Quantization",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Activation Quantization"
+      "search_term": "Activation Quantization",
+      "papers": [
+        {
+          "title": "Anda: Unlocking Efficient LLM Inference with a Variable-Length Grouped Activation Data Format",
+          "url": "HPCA/2025/llm_inference/anda/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：Anda提出变长分组激活数据格式（Variable-Length Grouped Activation），通过精确捕捉LLM激活分布的不均匀性，实现更高效的激活量化和推理加速。"
+        }
+      ]
     },
     {
       "text": "Analog Computing",
       "count": 1,
       "trend": -1,
       "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "Analog Computing"
+      "search_term": "Analog Computing",
+      "papers": [
+        {
+          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
+          "url": "ISCA/2025/ml_accelerator/lighttml/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：LightML提出基于光子计算的ML推理加速架构，利用光子矩阵乘法在能效上比数字加速器提升10×以上。"
+        }
+      ]
     },
     {
       "text": "Async Execution",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Async Execution"
+      "search_term": "Async Execution",
+      "papers": [
+        {
+          "title": "AsyncDIMM: Achieving Asynchronous Execution in DIMM-Based Near-Memory Processing",
+          "url": "HPCA/2025/pim/asyncdimm/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：AsyncDIMM提出DIMM近内存处理(NMP)的异步执行框架，解决主机CPU与DIMM处理单元之间的同步开销问题，实现更高效的计算卸载。"
+        }
+      ]
     },
     {
       "text": "CUDA",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "CUDA"
+      "search_term": "CUDA",
+      "papers": [
+        {
+          "title": "WarpDrive: GPU-Based Fully Homomorphic Encryption Acceleration Leveraging Tensor and CUDA Cores",
+          "url": "HPCA/2025/fhe/warpdrive/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：WarpDrive利用GPU Tensor Core与CUDA Core协同加速全同态加密，结合NTT与模乘的混合计算模式，实现FHE的GPU端到端加速。"
+        }
+      ]
     },
     {
       "text": "CXL",
       "count": 1,
       "trend": 1,
       "conf_info": "HPCA 2026 (1 paper)",
-      "search_term": "CXL"
+      "search_term": "CXL",
+      "papers": [
+        {
+          "title": "ReScue: Reliable and Secure CXL Memory",
+          "url": "HPCA/2026/memory/rescue/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：ReScue为CXL内存扩展系统提供统一的可靠性与安全性保护框架，解决CXL链路的特有安全挑战。"
+        }
+      ]
     },
     {
       "text": "Capacity Optimization",
       "count": 1,
       "trend": 1,
       "conf_info": "HPCA 2026 (1 paper)",
-      "search_term": "Capacity Optimization"
+      "search_term": "Capacity Optimization",
+      "papers": [
+        {
+          "title": "AQPIM: Breaking the PIM Capacity Wall for LLMs with In-Memory Activation Quantization",
+          "url": "HPCA/2026/pim/aqpim/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：AQPIM在PIM内部实现激活值量化，将LLM推理所需内存容量降低4×，使更大规模模型可在PIM上运行。"
+        }
+      ]
     },
     {
       "text": "Clifford Gate",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Clifford Gate"
+      "search_term": "Clifford Gate",
+      "papers": [
+        {
+          "title": "QuCLEAR: Clifford Extraction and Absorption for Quantum Circuit Optimization",
+          "url": "HPCA/2025/quantum/quclear/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：QuCLEAR提出量子电路中Clifford门的提取与吸收算法，通过将Clifford门从电路中分离并在末尾合并，减少量子电路中的T门数量，降低容错量子计算的资源开销。"
+        }
+      ]
     },
     {
       "text": "Compiler",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Compiler"
+      "search_term": "Compiler",
+      "papers": [
+        {
+          "title": "FHENDI: A Near-DRAM Accelerator for Compiler-Generated Fully Homomorphic Encryption Applications",
+          "url": "HPCA/2025/fhe/fhendi/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：FHENDI是IBM Research提出的近DRAM FHE加速器，通过编译器生成的FHE应用实现高效多项式运算，相比CPU加速超过100×。"
+        }
+      ]
     },
     {
       "text": "Compiler Optimization",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Compiler Optimization"
+      "search_term": "Compiler Optimization",
+      "papers": [
+        {
+          "title": "HATT: Hamiltonian Aware Ternary Tree for Optimizing Fermion-to-Qubit Mapping",
+          "url": "HPCA/2025/quantum/hatt/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：HATT提出基于Hamiltonian结构感知的三叉树Fermion-to-Qubit映射，减少量子化学模拟电路的量子门数量，实现更高效的量子计算资源利用。"
+        }
+      ]
     },
     {
       "text": "DIMM",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "DIMM"
+      "search_term": "DIMM",
+      "papers": [
+        {
+          "title": "AsyncDIMM: Achieving Asynchronous Execution in DIMM-Based Near-Memory Processing",
+          "url": "HPCA/2025/pim/asyncdimm/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：AsyncDIMM提出DIMM近内存处理(NMP)的异步执行框架，解决主机CPU与DIMM处理单元之间的同步开销问题，实现更高效的计算卸载。"
+        }
+      ]
     },
     {
       "text": "DRAM",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "DRAM"
+      "search_term": "DRAM",
+      "papers": [
+        {
+          "title": "FACIL: Flexible DRAM Address Mapping for SoC-PIM Cooperative On-device LLM Inference",
+          "url": "HPCA/2025/pim/facil/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：FACIL提出灵活的DRAM地址映射方案，使移动SoC与DRAM-PIM协同完成on-device LLM推理，在有限内存带宽下实现50B参数LLM的本地推理。"
+        }
+      ]
     },
     {
       "text": "Data Center",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Data Center"
+      "search_term": "Data Center",
+      "papers": [
+        {
+          "title": "DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency",
+          "url": "HPCA/2025/llm_inference/dynamollm/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：DynamoLLM通过动态调整LLM推理集群的GPU频率、并行度和批次大小，在保证SLO（服务级目标）的前提下降低推理能耗。"
+        }
+      ]
     },
     {
       "text": "Data Format",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Data Format"
+      "search_term": "Data Format",
+      "papers": [
+        {
+          "title": "Anda: Unlocking Efficient LLM Inference with a Variable-Length Grouped Activation Data Format",
+          "url": "HPCA/2025/llm_inference/anda/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：Anda提出变长分组激活数据格式（Variable-Length Grouped Activation），通过精确捕捉LLM激活分布的不均匀性，实现更高效的激活量化和推理加速。"
+        }
+      ]
     },
     {
       "text": "Distributed Training",
       "count": 1,
       "trend": -1,
       "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "Distributed Training"
+      "search_term": "Distributed Training",
+      "papers": [
+        {
+          "title": "FRED: A Wafer-scale Fabric for 3D Parallel DNN Training",
+          "url": "ISCA/2025/ml_accelerator/fred/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：FRED为Wafer-scale系统设计3D并行（数据/流水/张量并行）的互联结构，使超大DNN训练效率提升2.7×。"
+        }
+      ]
     },
     {
       "text": "Empirical Analysis",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Empirical Analysis"
+      "search_term": "Empirical Analysis",
+      "papers": [
+        {
+          "title": "Variable Read Disturbance: An Experimental Analysis of Temporal Variation in DRAM Read Disturbance",
+          "url": "HPCA/2025/memory/variable_rd/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：ETH Zürich Onur Mutlu团队对真实DRAM芯片的读扰动（Read Disturbance）进行系统实验分析，发现Rowhammer阈值存在显著时间变化特性，对现有缓解方案提出新挑战。"
+        }
+      ]
     },
     {
       "text": "FHE Accelerator",
       "count": 1,
       "trend": 1,
       "conf_info": "HPCA 2026 (1 paper)",
-      "search_term": "FHE Accelerator"
+      "search_term": "FHE Accelerator",
+      "papers": [
+        {
+          "title": "UniFHE: Faster Accelerator for FHE with Diverse Algebraic Structure and Balanced Memory System",
+          "url": "HPCA/2026/fhe/unifhe/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：UniFHE为全同态加密设计统一加速架构，支持BFV/CKKS/TFHE等多种FHE方案，通过均衡内存系统消除访存瓶颈。"
+        }
+      ]
     },
     {
       "text": "Fermion-to-Qubit",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Fermion-to-Qubit"
+      "search_term": "Fermion-to-Qubit",
+      "papers": [
+        {
+          "title": "HATT: Hamiltonian Aware Ternary Tree for Optimizing Fermion-to-Qubit Mapping",
+          "url": "HPCA/2025/quantum/hatt/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：HATT提出基于Hamiltonian结构感知的三叉树Fermion-to-Qubit映射，减少量子化学模拟电路的量子门数量，实现更高效的量子计算资源利用。"
+        }
+      ]
     },
     {
       "text": "Full-Stack Accel.",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "Full-Stack Accel."
+      "search_term": "Full-Stack Accel.",
+      "papers": [
+        {
+          "title": "EFFACT: A Highly Efficient Full-Stack FHE Acceleration Platform",
+          "url": "HPCA/2025/fhe/effact/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：EFFACT是清华大学提出的全栈FHE加速平台，通过NTT硬件优化、Bootstrapping专用引擎和编译器协同，实现端到端FHE应用加速。"
+        }
+      ]
     },
     {
       "text": "GPU",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "GPU"
+      "search_term": "GPU",
+      "papers": [
+        {
+          "title": "WarpDrive: GPU-Based Fully Homomorphic Encryption Acceleration Leveraging Tensor and CUDA Cores",
+          "url": "HPCA/2025/fhe/warpdrive/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：WarpDrive利用GPU Tensor Core与CUDA Core协同加速全同态加密，结合NTT与模乘的混合计算模式，实现FHE的GPU端到端加速。"
+        }
+      ]
     },
     {
       "text": "GPU Acceleration",
       "count": 1,
       "trend": 1,
       "conf_info": "HPCA 2026 (1 paper)",
-      "search_term": "GPU Acceleration"
+      "search_term": "GPU Acceleration",
+      "papers": [
+        {
+          "title": "Peregrine: Accelerating TFHE Bootstrapping on GPUs via Multi-Level External Product Co-Design",
+          "url": "HPCA/2026/fhe/peregrine/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：Peregrine利用GPU的SIMD并行性，通过多级外积重分解实现TFHE Bootstrapping的极速加速，延迟降低18×。"
+        }
+      ]
     },
     {
       "text": "GPU Scheduling",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "GPU Scheduling"
+      "search_term": "GPU Scheduling",
+      "papers": [
+        {
+          "title": "DynamoLLM: Designing LLM Inference Clusters for Performance and Energy Efficiency",
+          "url": "HPCA/2025/llm_inference/dynamollm/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：DynamoLLM通过动态调整LLM推理集群的GPU频率、并行度和批次大小，在保证SLO（服务级目标）的前提下降低推理能耗。"
+        }
+      ]
     },
     {
       "text": "HW-SW Co-design",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "HW-SW Co-design"
+      "search_term": "HW-SW Co-design",
+      "papers": [
+        {
+          "title": "Palermo: Improving the Performance of Oblivious Memory using Protocol-Hardware Co-Design",
+          "url": "HPCA/2025/security/palermo/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：Palermo通过协议-硬件协同设计改进Oblivious Memory（ORAM）的性能，将ORAM访问延迟降低3×以上，使隐私保护内存访问在实际系统中可行。"
+        }
+      ]
     },
     {
       "text": "In-Storage Computing",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "In-Storage Computing"
+      "search_term": "In-Storage Computing",
+      "papers": [
+        {
+          "title": "InstAttention: In-Storage Attention Offloading for Cost-Effective Long-Context LLM Inference",
+          "url": "HPCA/2025/llm_inference/instattention/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：InstAttention将LLM的KV Cache卸载到NVMe SSD，通过In-Storage计算减少主机-存储数据传输，实现超长上下文（100K+ tokens）的高效LLM推理。"
+        }
+      ]
     },
     {
       "text": "LoRA",
       "count": 1,
       "trend": 1,
       "conf_info": "HPCA 2026 (1 paper)",
-      "search_term": "LoRA"
+      "search_term": "LoRA",
+      "papers": [
+        {
+          "title": "ELORA: Efficient LoRA and KV Cache Management for Multi-LoRA LLM Serving",
+          "url": "HPCA/2026/llm_inference/elora/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：ELORA解决多LoRA模型并行服务中LoRA权重和KV Cache的双重内存压力，提升GPU利用率。"
+        }
+      ]
     },
     {
       "text": "MPK",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
-      "search_term": "MPK"
+      "search_term": "MPK",
+      "papers": [
+        {
+          "title": "SpecMPK: Efficient In-Process Isolation with Speculative and Secure Permission Update Instruction",
+          "url": "HPCA/2025/security/specmpk/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：SpecMPK提出推测执行安全的MPK（Memory Protection Keys）权限更新指令，以极低开销实现进程内细粒度内存隔离，防御基于推测执行的内存安全攻击。"
+        }
+      ]
     }
   ]
 }

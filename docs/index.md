@@ -47,6 +47,15 @@ hide:
   <canvas id="wordcloud-canvas" width="600" height="600"></canvas>
   <div class="wc-loading" id="wc-loading">词云加载中…</div>
 </div>
+
+<div class="wc-results" id="keyword-results">
+  <div class="wc-results__eyebrow">Keyword Paper List</div>
+  <div class="wc-results__title" id="keyword-results-title">点击词云中的关键词查看对应论文列表</div>
+  <div class="wc-results__meta" id="keyword-results-meta">每个关键词都会展示对应论文；点击论文标题可进入详细解读页面。</div>
+  <div class="wc-results__list" id="keyword-results-list">
+    <div class="wc-results__empty">选择一个关键词后，这里会展示匹配论文的标题、会议信息和简介。</div>
+  </div>
+</div>
 </div>
 
 ---

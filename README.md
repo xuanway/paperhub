@@ -31,7 +31,7 @@ memory reliability, homomorphic encryption, LLM inference acceleration, PIM, and
   - Font size strictly follows keyword frequency
   - Faster loading through build-time data generation plus cached client fetches
   - Hover shows conference source and paper count
-  - Click triggers site search
+  - Click opens a keyword-specific paper list with direct links to the paper detail pages
   - Denser layout that fills the full word cloud panel on desktop/mobile
   - Responsive redraw for desktop/mobile
   - Skeleton loading state before cloud render
@@ -46,7 +46,7 @@ Keyword data is generated from paper frontmatter tags in markdown files.
 - Source generator: scripts/gen_wordcloud_data.py
 - Output JSON: docs/assets/word_data.json
 - Build hook: scripts/hooks.py (runs automatically on mkdocs build)
-- Runtime behavior: homepage preloads and reuses the generated JSON so the search suggestions and word cloud share the same cached dataset
+- Runtime behavior: homepage preloads and reuses the generated JSON so the search suggestions, word cloud tooltips, and keyword paper list all share the same cached dataset
 
 During each build, the hook regenerates word cloud data so newly added papers are reflected automatically.
 

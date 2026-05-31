@@ -118,6 +118,26 @@ def conf_from_path(relpath):
     return "Unknown"
 
 
+def relpath_to_url(relpath):
+    return relpath.replace("\\", "/").replace(".md", "/")
+
+
+def extract_frontmatter_field(frontmatter, field):
+    match = re.search(rf'^{field}:\s*["\']?(.*?)["\']?\s*$', frontmatter, re.MULTILINE)
+    return match.group(1).strip() if match else ""
+
+
+def extract_heading(content):
+    match = re.search(r'^#\s+(.+)$', content, re.MULTILINE)
+    return match.group(1).strip() if match else ""
+
+
+def paper_sort_key(paper):
+    year = re.search(r'(\d{4})', paper["conf"])
+    year_value = -int(year.group(1)) if year else 0
+    return (year_value, paper["conf"], paper["title"])
+
+
 def normalize(tag):
     """Translate tag to English, return None to skip."""
     tag = re.sub(r"\s+", " ", tag.strip().strip("\"'"))
@@ -132,8 +152,10 @@ def normalize(tag):
 
 
 def generate():
-    # tag → { count, by_conf: {conf: count} }
-    tag_data = defaultdict(lambda: {"count": 0, "by_conf": defaultdict(int)})
+    # tag → { count, by_conf: {conf: count}, papers: {url: paper-meta} }
+    tag_data = defaultdict(
+        lambda: {"count": 0, "by_conf": defaultdict(int), "papers": {}}
+    )
     total_papers = 0
 
     for root, dirs, files in os.walk(DOCS_DIR):
@@ -153,6 +175,7 @@ def generate():
             if not fm:
                 continue
             frontmatter = fm.group(1)
+            body = content[fm.end():]
 
             # Inline array: tags: ["a", "b"]
             inline = re.search(r'tags:\s*\[([^\]]+)\]', frontmatter)
@@ -168,13 +191,26 @@ def generate():
                     block.group(1), re.MULTILINE
                 )
 
+            paper_title = extract_heading(body) or extract_frontmatter_field(frontmatter, "title")
+            paper_desc = extract_frontmatter_field(frontmatter, "description")
+            paper_url = relpath_to_url(relpath)
+            paper_meta = {
+                "title": paper_title or os.path.splitext(os.path.basename(relpath))[0],
+                "url": paper_url,
+                "conf": conf,
+                "summary": paper_desc,
+            }
+
             total_papers += 1
+            seen_tags = set()
             for raw in raw_tags:
                 en = normalize(raw.strip())
-                if not en:
+                if not en or en in seen_tags:
                     continue
+                seen_tags.add(en)
                 tag_data[en]["count"] += 1
                 tag_data[en]["by_conf"][conf] += 1
+                tag_data[en]["papers"][paper_url] = paper_meta
 
     # Build output list with trend calculation
     keywords = []
@@ -201,6 +237,7 @@ def generate():
             "trend":       trend,
             "conf_info":   " · ".join(conf_parts),
             "search_term": text,
+            "papers":      sorted(info["papers"].values(), key=paper_sort_key),
         })
 
     # Sort by count descending, keep top 50

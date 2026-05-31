@@ -216,75 +216,64 @@
   var _lastData  = null;
   var _scrollTipBound = false;
 
-  function getCanvasBounds(canvas) {
-    var ctx = canvas.getContext("2d", { willReadFrequently: true });
-    var width = canvas.width;
-    var height = canvas.height;
-    var data = ctx.getImageData(0, 0, width, height).data;
-    var minX = width;
-    var minY = height;
-    var maxX = -1;
-    var maxY = -1;
-
-    for (var y = 0; y < height; y++) {
-      for (var x = 0; x < width; x++) {
-        if (data[(y * width + x) * 4 + 3] > 0) {
-          if (x < minX) minX = x;
-          if (y < minY) minY = y;
-          if (x > maxX) maxX = x;
-          if (y > maxY) maxY = y;
-        }
-      }
+  function getKeywordParam() {
+    try {
+      return new URL(window.location.href).searchParams.get("keyword") || "";
+    } catch (_err) {
+      return "";
     }
-
-    if (maxX < minX || maxY < minY) return null;
-
-    return {
-      minX: minX,
-      minY: minY,
-      maxX: maxX,
-      maxY: maxY,
-      width: maxX - minX + 1,
-      height: maxY - minY + 1,
-    };
   }
 
-  function fitCloudBounds(canvas) {
-    var bounds = getCanvasBounds(canvas);
-    if (!bounds || !bounds.width || !bounds.height) return;
+  function setKeywordParam(keyword) {
+    try {
+      var url = new URL(window.location.href);
+      if (keyword) {
+        url.searchParams.set("keyword", keyword);
+      } else {
+        url.searchParams.delete("keyword");
+      }
+      history.replaceState(null, "", url.toString());
+    } catch (_err) {}
+  }
 
-    var insetX = Math.round(canvas.width * 0.06);
-    var insetY = Math.round(canvas.height * 0.08);
-    var targetWidth = canvas.width - insetX * 2;
-    var targetHeight = canvas.height - insetY * 2;
-    var scale = Math.min(targetWidth / bounds.width, targetHeight / bounds.height);
-    if (!isFinite(scale) || scale <= 0) return;
+  function paperHref(relUrl) {
+    return getBase() + String(relUrl || "").replace(/^\/+/, "");
+  }
 
-    var temp = document.createElement("canvas");
-    temp.width = canvas.width;
-    temp.height = canvas.height;
+  function renderKeywordResults(keyword, keywordData, shouldScroll) {
+    var section = document.getElementById("keyword-results");
+    var title = document.getElementById("keyword-results-title");
+    var meta = document.getElementById("keyword-results-meta");
+    var list = document.getElementById("keyword-results-list");
+    if (!section || !title || !meta || !list) return;
 
-    var tempCtx = temp.getContext("2d");
-    tempCtx.drawImage(canvas, 0, 0);
+    if (!keywordData || !keywordData.papers || !keywordData.papers.length) {
+      title.textContent = "没有找到对应论文";
+      meta.textContent = keyword ? (keyword + " 当前没有可展示的论文列表。") : "点击词云中的关键词查看对应论文列表";
+      list.innerHTML = '<div class="wc-results__empty">选择一个关键词后，这里会展示匹配论文的标题、会议信息和简介。</div>';
+      section.classList.remove("is-active");
+      setKeywordParam("");
+      return;
+    }
 
-    var ctx = canvas.getContext("2d");
-    var drawWidth = bounds.width * scale;
-    var drawHeight = bounds.height * scale;
-    var dx = Math.round((canvas.width - drawWidth) / 2);
-    var dy = Math.round((canvas.height - drawHeight) / 2);
+    title.textContent = keyword;
+    meta.textContent = keywordData.count + " 篇相关论文 · " + (keywordData.conf_info || "");
+    list.innerHTML = keywordData.papers.map(function (paper) {
+      return (
+        '<article class="wc-paper-card">' +
+          '<div class="wc-paper-card__conf">' + esc(paper.conf || "") + '</div>' +
+          '<a class="wc-paper-card__title" href="' + esc(paperHref(paper.url)) + '">' + esc(paper.title || keyword) + '</a>' +
+          '<p class="wc-paper-card__summary">' + esc(paper.summary || "Open the paper page for the full note.") + '</p>' +
+        '</article>'
+      );
+    }).join("");
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.drawImage(
-      temp,
-      bounds.minX,
-      bounds.minY,
-      bounds.width,
-      bounds.height,
-      dx,
-      dy,
-      drawWidth,
-      drawHeight
-    );
+    section.classList.add("is-active");
+    setKeywordParam(keyword);
+
+    if (shouldScroll) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 
   function renderCloud(data) {
@@ -302,10 +291,11 @@
     canvas.style.opacity = "1";
 
     var kws = data.keywords || [];
-    var infoMap = {}, trendMap = {};
+    var infoMap = {}, trendMap = {}, keywordMap = {};
     kws.forEach(function (k) {
       infoMap[k.text]  = k.conf_info || "";
       trendMap[k.text] = typeof k.trend === "number" ? k.trend : 0;
+      keywordMap[k.text] = k;
     });
 
     var list = kws.map(function (k) { return [k.text, k.count]; });
@@ -329,14 +319,9 @@
       shrinkToFit: true,
 
       click: function (item) {
-        var si  = document.querySelector(".md-search__input");
-        var tog = document.querySelector("[data-md-toggle='search']");
-        if (si) {
-          if (tog) tog.checked = true;
-          si.value = item[0];
-          si.dispatchEvent(new Event("input", { bubbles: true }));
-          si.focus();
-        }
+        var keywordData = keywordMap[item[0]] || null;
+        renderKeywordResults(item[0], keywordData, true);
+        getTip().style.display = "none";
         var drop = document.querySelector(".ph-sdrop");
         if (drop) drop.style.display = "none";
       },
@@ -366,14 +351,14 @@
       canvas.style.opacity = "1";
     }
 
-    function finalizeCloud() {
-      fitCloudBounds(canvas);
-      revealCanvas();
-    }
-
     canvas.addEventListener("wordclouddrawn", revealCanvas, { once: true });
-    canvas.addEventListener("wordcloudstop", finalizeCloud, { once: true });
+    canvas.addEventListener("wordcloudstop", revealCanvas, { once: true });
     setTimeout(revealCanvas, 1200);
+
+    var initialKeyword = getKeywordParam();
+    if (initialKeyword && keywordMap[initialKeyword]) {
+      renderKeywordResults(initialKeyword, keywordMap[initialKeyword], false);
+    }
 
     if (!_scrollTipBound) {
       document.addEventListener("scroll", function () {
