@@ -223,9 +223,14 @@ hide:
 ---
 
 <div class="homepage-pageviews">
-  <div class="homepage-pageviews__title">📊 Pageviews</div>
-  <div class="homepage-pageviews__subtitle">记录每位访客的到来 · Today / Total</div>
-  <a class="homepage-pageviews__badge" href="https://hits.sh/xuanway.github.io/paperhub/" target="_blank" rel="noopener noreferrer" aria-label="PaperHub Pageviews">
-    <img src="https://hits.sh/xuanway.github.io/paperhub.svg?style=for-the-badge&label=Pageviews&labelColor=2f2248&color=8a63d2&view=today-total" alt="PaperHub pageviews counter" loading="lazy">
-  </a>
+  <div class="homepage-pageviews__header">
+    <span class="homepage-pageviews__title">📊 Pageviews</span>
+    <span class="homepage-pageviews__subtitle">记录每位访客的到来 · 访客分布世界地图</span>
+  </div>
+  <div id="visitor-world-map" class="homepage-pageviews__map"></div>
+  <div class="homepage-pageviews__footer">
+    <a class="homepage-pageviews__badge" href="https://hits.sh/xuanway.github.io/paperhub/" target="_blank" rel="noopener noreferrer" aria-label="PaperHub Pageviews">
+      <img src="https://hits.sh/xuanway.github.io/paperhub.svg?style=for-the-badge&label=Pageviews&labelColor=1a2b4a&color=2d78ad&view=today-total" alt="PaperHub pageviews counter" loading="lazy">
+    </a>
+  </div>
 </div>
