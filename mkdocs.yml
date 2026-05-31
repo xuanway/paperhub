@@ -1,6 +1,6 @@
 site_name: 📚 AI Paper Notes
 site_description: 顶会论文笔记 | 覆盖 ICLR/CVPR/ACL/NeurIPS/AAAI 等顶级会议 | 每篇 5 分钟读懂核心思想
-site_url: https://paperhub.example.com/
+site_url: https://xuanway.github.io/paperhub/
 repo_url: https://github.com/xuanway/paperhub
 repo_name: Star on GitHub
 docs_dir: docs
