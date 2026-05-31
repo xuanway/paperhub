@@ -47,8 +47,15 @@ Keyword data is generated from paper frontmatter tags in markdown files.
 - Output JSON: docs/assets/word_data.json
 - Build hook: scripts/hooks.py (runs automatically on mkdocs build)
 - Runtime behavior: homepage preloads and reuses the generated JSON so the search suggestions, word cloud tooltips, and keyword paper list all share the same cached dataset
+- Stability behavior: if the extracted keyword dataset has not changed, the generator keeps the existing word_data.json unchanged instead of rewriting it on every build
 
 During each build, the hook regenerates word cloud data so newly added papers are reflected automatically.
+
+This means:
+
+- New or changed paper content that affects tags will update the word cloud
+- No content change means the word cloud data file remains unchanged
+- The frontend no longer uses a time-based cache-busting query for word_data.json, so unchanged content keeps the cloud stable
 
 ## Add a New Paper
 

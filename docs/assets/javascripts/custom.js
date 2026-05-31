@@ -69,7 +69,7 @@
   function loadWCD() {
     if (_wcd) return Promise.resolve(_wcd);
     if (_wcdPromise) return _wcdPromise;
-    var url = getBase() + "assets/word_data.json?v=" + (Date.now() / 3e5 | 0);
+    var url = getBase() + "assets/word_data.json";
     _wcdPromise = fetch(url)
       .then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);

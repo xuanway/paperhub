@@ -7,7 +7,7 @@ Out:  docs/assets/word_data.json
 Called automatically by scripts/hooks.py on every mkdocs build.
 """
 
-import os, re, json
+import os, re, json, hashlib
 from collections import defaultdict
 from datetime import datetime
 
@@ -15,6 +15,16 @@ DOCS_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs"
 )
 OUTPUT = os.path.join(DOCS_DIR, "assets", "word_data.json")
+
+
+def compute_content_hash(total_papers, keywords):
+    payload = json.dumps(
+        {"total_papers": total_papers, "keywords": keywords},
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 # ── Chinese / mixed → English academic keyword map ────────────────────────
 ZH_TO_EN = {
@@ -244,8 +254,24 @@ def generate():
     keywords.sort(key=lambda x: (-x["count"], x["text"]))
     keywords = keywords[:50]
 
+    content_hash = compute_content_hash(total_papers, keywords)
+    previous = None
+    if os.path.exists(OUTPUT):
+        try:
+            with open(OUTPUT, encoding="utf-8") as f:
+                previous = json.load(f)
+        except Exception:
+            previous = None
+
+    if previous and previous.get("content_hash") == content_hash:
+        print(
+            f"✅ word_data.json unchanged: {len(keywords)} keywords from {total_papers} papers"
+        )
+        return previous
+
     data = {
         "updated":      datetime.now().strftime("%Y-%m-%d"),
+        "content_hash": content_hash,
         "total_papers": total_papers,
         "keywords":     keywords,
     }
@@ -254,7 +280,7 @@ def generate():
     with open(OUTPUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ word_data.json: {len(keywords)} keywords from {total_papers} papers")
+    print(f"✅ word_data.json updated: {len(keywords)} keywords from {total_papers} papers")
     return data
 
 
