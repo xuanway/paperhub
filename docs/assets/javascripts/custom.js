@@ -223,6 +223,7 @@
   var _resizeTmr = null;
   var _lastData  = null;
   var _scrollTipBound = false;
+  var _resizeListenerAdded = false;
 
   function getKeywordParam() {
     try {
@@ -406,12 +407,15 @@
         hideSkeleton(wrap);
       });
 
-    window.addEventListener("resize", function () {
-      clearTimeout(_resizeTmr);
-      _resizeTmr = setTimeout(function () {
-        if (_lastData) renderCloud(_lastData);
-      }, 320);
-    });
+    if (!_resizeListenerAdded) {
+      window.addEventListener("resize", function () {
+        clearTimeout(_resizeTmr);
+        _resizeTmr = setTimeout(function () {
+          if (_lastData && document.getElementById("wordcloud-canvas")) renderCloud(_lastData);
+        }, 320);
+      });
+      _resizeListenerAdded = true;
+    }
   }
 
   /* ───────────────────────────────────────────────────────────
@@ -448,6 +452,19 @@
   /* ───────────────────────────────────────────────────────────
      6. BOOT
   ─────────────────────────────────────────────────────────── */
+
+  function reinit() {
+    initHomeBtn();
+    initSearch();
+    if (document.getElementById("wordcloud-canvas")) {
+      // Reset per-render state so the new canvas draws fresh
+      _lastData = null;
+      _scrollTipBound = false;
+      initWordCloud();
+    }
+    initGlobeAnim();
+  }
+
   function boot() {
     initHomeBtn();
     initSearch();
@@ -462,12 +479,17 @@
     boot();
   }
 
-  document.addEventListener("DOMContentSwitch", function () {
-    setTimeout(function () {
-      initHomeBtn();
-      initSearch();
-      if (document.getElementById("wordcloud-canvas")) initWordCloud();
-    }, 60);
-  });
+  // MkDocs Material instant navigation: subscribe to document$ (RxJS Subject)
+  // This fires on every page swap including back-navigation.
+  // Fall back to legacy DOMContentSwitch for non-Material environments.
+  if (window.document$ && typeof window.document$.subscribe === "function") {
+    window.document$.subscribe(function () {
+      reinit();
+    });
+  } else {
+    document.addEventListener("DOMContentSwitch", function () {
+      setTimeout(reinit, 60);
+    });
+  }
 
 })();
