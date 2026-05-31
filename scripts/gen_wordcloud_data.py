@@ -202,6 +202,18 @@ def update_mkdocs_nav(per_track_raw, per_conf_stats):
     with open(MKDOCS_YML, encoding="utf-8") as f:
         lines = f.readlines()
 
+    def format_label_with_count(label, count):
+        label = label.strip()
+        # If the label is quoted, keep the count inside the same quotes.
+        q = re.match(r'^(["\'])(.*)\1$', label)
+        if q:
+            quote = q.group(1)
+            inner = q.group(2).strip()
+            inner = re.sub(r'\s+\(\d+\+?\)$', '', inner).strip()
+            return f"{quote}{inner} ({count}){quote}"
+        base = re.sub(r'\s+\(\d+\+?\)$', '', label).strip()
+        return f"{base} ({count})"
+
     new_lines = []
     i = 0
     changed = False
@@ -252,7 +264,8 @@ def update_mkdocs_nav(per_track_raw, per_conf_stats):
 
                 if new_count is not None:
                     spaces   = ' ' * prefix_indent
-                    new_line = f"{spaces}- {label_clean} ({new_count}):\n"
+                    counted_label = format_label_with_count(label_clean, new_count)
+                    new_line = f"{spaces}- {counted_label}:\n"
                     if new_line != line:
                         changed = True
                     new_lines.append(new_line)

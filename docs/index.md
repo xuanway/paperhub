@@ -146,15 +146,25 @@ hide:
 
 ### 🔬 [MICRO 2025](MICRO/2025/index.md)
 
-<div class="conf-count">更新中 · Austin, Texas</div>
+<div class="conf-count" data-conf-key="MICRO 2025" data-conf-location="Seoul, Korea">123 篇 · 26 个方向 · Seoul, Korea</div>
 
 <div class="area-groups">
 <div class="area-group">
 <div class="area-group-label">方向</div>
 <div class="area-tags">
-<span class="area-tag">微处理器</span>
-<span class="area-tag">内存系统</span>
-<span class="area-tag">安全架构</span>
+<a class="area-tag" href="MICRO/2025/quantum/" data-track-key="MICRO/2025/quantum" data-track-label="Quantum">Quantum 8</a>
+<a class="area-tag" href="MICRO/2025/emerging_applications/" data-track-key="MICRO/2025/emerging_applications" data-track-label="Emerging Applications">Emerging Applications 7</a>
+<a class="area-tag" href="MICRO/2025/microarchitecture/" data-track-key="MICRO/2025/microarchitecture" data-track-label="Microarchitecture">Microarchitecture 7</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -165,15 +175,25 @@ hide:
 
 ### 🔄 [ASPLOS 2025](ASPLOS/2025/index.md)
 
-<div class="conf-count">更新中 · Rotterdam, Netherlands</div>
+<div class="conf-count" data-conf-key="ASPLOS 2025" data-conf-location="Rotterdam, Netherlands">184 篇 · 37 个方向 · Rotterdam, Netherlands</div>
 
 <div class="area-groups">
 <div class="area-group">
 <div class="area-group-label">方向</div>
 <div class="area-tags">
-<span class="area-tag">体系结构</span>
-<span class="area-tag">操作系统</span>
-<span class="area-tag">编译优化</span>
+<a class="area-tag" href="ASPLOS/2025/ml_systems/" data-track-key="ASPLOS/2025/ml_systems" data-track-label="ML Systems">ML Systems 10</a>
+<a class="area-tag" href="ASPLOS/2025/cloud_computing/" data-track-key="ASPLOS/2025/cloud_computing" data-track-label="Cloud Computing">Cloud Computing 8</a>
+<a class="area-tag" href="ASPLOS/2025/potpourri/" data-track-key="ASPLOS/2025/potpourri" data-track-label="Potpourri">Potpourri 8</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
