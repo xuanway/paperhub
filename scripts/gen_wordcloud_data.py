@@ -70,6 +70,7 @@ ZH_TO_EN = {
     "On-device AI":  "On-Device AI",
     "On-deviceAI":   "On-Device AI",
     "GPU调度":       "GPU Scheduling",
+    "GPU加速":       "GPU Acceleration",
     "LLM服务":       "LLM Serving",
     "容量优化":      "Capacity Optimization",
     "数据格式":      "Data Format",
@@ -119,13 +120,15 @@ def conf_from_path(relpath):
 
 def normalize(tag):
     """Translate tag to English, return None to skip."""
-    tag = tag.strip().strip("\"'")
-    if not tag or tag in SKIP_SET:
+    tag = re.sub(r"\s+", " ", tag.strip().strip("\"'"))
+    compact = tag.replace(" ", "")
+
+    if not tag or tag in SKIP_SET or compact in SKIP_SET:
         return None
     # Pattern skip: pure institution-like all-caps or contains digits (year)
     if re.match(r'^[A-Z]+\d{4}$', tag):
         return None
-    return ZH_TO_EN.get(tag, tag)
+    return ZH_TO_EN.get(tag, ZH_TO_EN.get(compact, tag))
 
 
 def generate():

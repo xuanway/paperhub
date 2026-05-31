@@ -311,18 +311,18 @@
       "search_term": "GPU"
     },
     {
+      "text": "GPU Acceleration",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "HPCA 2026 (1 paper)",
+      "search_term": "GPU Acceleration"
+    },
+    {
       "text": "GPU Scheduling",
       "count": 1,
       "trend": -1,
       "conf_info": "HPCA 2025 (1 paper)",
       "search_term": "GPU Scheduling"
-    },
-    {
-      "text": "GPU加速",
-      "count": 1,
-      "trend": 1,
-      "conf_info": "HPCA 2026 (1 paper)",
-      "search_term": "GPU加速"
     },
     {
       "text": "HW-SW Co-design",

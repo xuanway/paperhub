@@ -29,8 +29,10 @@ memory reliability, homomorphic encryption, LLM inference acceleration, PIM, and
 - Dynamic academic keyword word cloud on homepage:
   - Fully English keywords
   - Font size strictly follows keyword frequency
+  - Faster loading through build-time data generation plus cached client fetches
   - Hover shows conference source and paper count
   - Click triggers site search
+  - Denser layout that fills the full word cloud panel on desktop/mobile
   - Responsive redraw for desktop/mobile
   - Skeleton loading state before cloud render
 - Theme polish:
@@ -44,6 +46,7 @@ Keyword data is generated from paper frontmatter tags in markdown files.
 - Source generator: scripts/gen_wordcloud_data.py
 - Output JSON: docs/assets/word_data.json
 - Build hook: scripts/hooks.py (runs automatically on mkdocs build)
+- Runtime behavior: homepage preloads and reuses the generated JSON so the search suggestions and word cloud share the same cached dataset
 
 During each build, the hook regenerates word cloud data so newly added papers are reflected automatically.
 
@@ -85,6 +88,18 @@ mkdocs build
 ```
 
 The generated static site is written to `site/`.
+
+## Test The Site Locally
+
+Production-like local verification:
+
+```bash
+mkdocs build
+cd site
+python3 -m http.server 8124
+```
+
+Then open `http://127.0.0.1:8124/` and check the homepage navigation, search suggestions, and keyword word cloud.
 
 ## Tech Stack
 

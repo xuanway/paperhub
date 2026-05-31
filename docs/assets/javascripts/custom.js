@@ -56,19 +56,27 @@
      2. WORD CLOUD DATA  (fetched once, cached)
   ─────────────────────────────────────────────────────────── */
   var _wcd = null;
+  var _wcdPromise = null;
 
   function loadWCD() {
     if (_wcd) return Promise.resolve(_wcd);
+    if (_wcdPromise) return _wcdPromise;
     var url = getBase() + "assets/word_data.json?v=" + (Date.now() / 3e5 | 0);
-    return fetch(url)
+    _wcdPromise = fetch(url)
       .then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         return r.json();
       })
       .then(function (d) {
         _wcd = d;
+        _wcdPromise = null;
         return d;
+      })
+      .catch(function (err) {
+        _wcdPromise = null;
+        throw err;
       });
+    return _wcdPromise;
   }
 
   /* ───────────────────────────────────────────────────────────
@@ -206,6 +214,78 @@
 
   var _resizeTmr = null;
   var _lastData  = null;
+  var _scrollTipBound = false;
+
+  function getCanvasBounds(canvas) {
+    var ctx = canvas.getContext("2d", { willReadFrequently: true });
+    var width = canvas.width;
+    var height = canvas.height;
+    var data = ctx.getImageData(0, 0, width, height).data;
+    var minX = width;
+    var minY = height;
+    var maxX = -1;
+    var maxY = -1;
+
+    for (var y = 0; y < height; y++) {
+      for (var x = 0; x < width; x++) {
+        if (data[(y * width + x) * 4 + 3] > 0) {
+          if (x < minX) minX = x;
+          if (y < minY) minY = y;
+          if (x > maxX) maxX = x;
+          if (y > maxY) maxY = y;
+        }
+      }
+    }
+
+    if (maxX < minX || maxY < minY) return null;
+
+    return {
+      minX: minX,
+      minY: minY,
+      maxX: maxX,
+      maxY: maxY,
+      width: maxX - minX + 1,
+      height: maxY - minY + 1,
+    };
+  }
+
+  function fitCloudBounds(canvas) {
+    var bounds = getCanvasBounds(canvas);
+    if (!bounds || !bounds.width || !bounds.height) return;
+
+    var insetX = Math.round(canvas.width * 0.06);
+    var insetY = Math.round(canvas.height * 0.08);
+    var targetWidth = canvas.width - insetX * 2;
+    var targetHeight = canvas.height - insetY * 2;
+    var scale = Math.min(targetWidth / bounds.width, targetHeight / bounds.height);
+    if (!isFinite(scale) || scale <= 0) return;
+
+    var temp = document.createElement("canvas");
+    temp.width = canvas.width;
+    temp.height = canvas.height;
+
+    var tempCtx = temp.getContext("2d");
+    tempCtx.drawImage(canvas, 0, 0);
+
+    var ctx = canvas.getContext("2d");
+    var drawWidth = bounds.width * scale;
+    var drawHeight = bounds.height * scale;
+    var dx = Math.round((canvas.width - drawWidth) / 2);
+    var dy = Math.round((canvas.height - drawHeight) / 2);
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(
+      temp,
+      bounds.minX,
+      bounds.minY,
+      bounds.width,
+      bounds.height,
+      dx,
+      dy,
+      drawWidth,
+      drawHeight
+    );
+  }
 
   function renderCloud(data) {
     var canvas = document.getElementById("wordcloud-canvas");
@@ -215,10 +295,11 @@
     _ci = [0, 0, 0];
 
     var wrap = canvas.closest(".wc-canvas-wrap");
-    var size = Math.min(wrap ? wrap.clientWidth - 4 : 620, 620);
-    canvas.width  = size;
-    canvas.height = size;
-    canvas.style.opacity = "0";
+    var width = Math.min(wrap ? wrap.clientWidth - 4 : 680, 680);
+    var height = wrap ? Math.max(420, wrap.clientHeight - 4) : 576;
+    canvas.width  = width;
+    canvas.height = height;
+    canvas.style.opacity = "1";
 
     var kws = data.keywords || [];
     var infoMap = {}, trendMap = {};
@@ -231,16 +312,19 @@
 
     WordCloud(canvas, {
       list: list,
-      weightFactor: function (s) { return Math.pow(s, 0.5) * (canvas.width / 95); },
+      weightFactor: function (s) {
+        return Math.pow(s, 0.68) * (Math.min(canvas.width, canvas.height) / 54);
+      },
       fontFamily: "'Inter','Segoe UI','Helvetica Neue',Arial,sans-serif",
       fontWeight: "700",
       color: function (word) { return nextColor(trendMap[word] || 0); },
       backgroundColor: "transparent",
       rotateRatio: 0,
       rotationSteps: 1,
-      shape: "circle",
-      gridSize: Math.round(canvas.width / 80),
-      minSize: 11,
+      shape: "square",
+      ellipticity: 0.92,
+      gridSize: Math.max(5, Math.round(Math.min(canvas.width, canvas.height) / 120)),
+      minSize: 10,
       drawOutOfBound: false,
       shrinkToFit: true,
 
@@ -281,12 +365,22 @@
       canvas.style.transition = "opacity 0.45s";
       canvas.style.opacity = "1";
     }
-    canvas.addEventListener("wordcloudstop", revealCanvas, { once: true });
-    setTimeout(revealCanvas, 3000);
 
-    document.addEventListener("scroll", function () {
-      getTip().style.display = "none";
-    }, { passive: true });
+    function finalizeCloud() {
+      fitCloudBounds(canvas);
+      revealCanvas();
+    }
+
+    canvas.addEventListener("wordclouddrawn", revealCanvas, { once: true });
+    canvas.addEventListener("wordcloudstop", finalizeCloud, { once: true });
+    setTimeout(revealCanvas, 1200);
+
+    if (!_scrollTipBound) {
+      document.addEventListener("scroll", function () {
+        getTip().style.display = "none";
+      }, { passive: true });
+      _scrollTipBound = true;
+    }
   }
 
   function initWordCloud() {
