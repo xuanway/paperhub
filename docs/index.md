@@ -35,6 +35,22 @@ hide:
 
 ---
 
+<div class="wc-section">
+<div class="wc-section__title">🔍 关键词热度词云</div>
+<div class="wc-section__subtitle">点击关键词跳转相关论文 · 字体大小 = 论文覆盖频次 · 颜色深浅 = 热度趋势</div>
+<div class="wc-legend">
+  <span class="wc-legend-item"><span class="wc-legend-dot" style="background:#2d0a6e"></span> 热度上升</span>
+  <span class="wc-legend-item"><span class="wc-legend-dot" style="background:#5b2d9e"></span> 热度平稳</span>
+  <span class="wc-legend-item"><span class="wc-legend-dot" style="background:#9c7dcf"></span> 热度下降</span>
+</div>
+<div class="wc-canvas-wrap">
+  <canvas id="wordcloud-canvas" width="600" height="600"></canvas>
+  <div class="wc-loading" id="wc-loading">词云加载中…</div>
+</div>
+</div>
+
+---
+
 <div class="conf-grid" markdown>
 
 <div class="conf-card" markdown>

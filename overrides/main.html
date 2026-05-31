@@ -1,5 +1,41 @@
 {% extends "base.html" %}
 
+{% block announce %}
+<div class="ph-conf-strip" role="navigation" aria-label="Conference quick navigation">
+  <div class="ph-conf-strip__inner">
+    <a class="ph-conf-group" href="{{ config.site_url or '/' }}HPCA/2026/">
+      <span class="ph-conf-group__label">⚡ HPCA</span>
+      <span class="ph-conf-year">2026 <span class="ph-conf-badge">15</span></span>
+      <span class="ph-conf-year">2025 <span class="ph-conf-badge">19</span></span>
+    </a>
+    <a class="ph-conf-group" href="{{ config.site_url or '/' }}ISCA/2025/">
+      <span class="ph-conf-group__label">🏗️ ISCA</span>
+      <span class="ph-conf-year">2025 <span class="ph-conf-badge">8</span></span>
+    </a>
+    <a class="ph-conf-group" href="{{ config.site_url or '/' }}MICRO/2025/">
+      <span class="ph-conf-group__label">🔬 MICRO</span>
+      <span class="ph-conf-year">2025</span>
+    </a>
+    <a class="ph-conf-group" href="{{ config.site_url or '/' }}ASPLOS/2025/">
+      <span class="ph-conf-group__label">🔄 ASPLOS</span>
+      <span class="ph-conf-year">2025</span>
+    </a>
+    <a class="ph-conf-group" href="{{ config.site_url or '/' }}DAC/2025/">
+      <span class="ph-conf-group__label">🛠️ DAC</span>
+      <span class="ph-conf-year">2025</span>
+    </a>
+    <a class="ph-conf-group" href="{{ config.site_url or '/' }}NeurIPS/2025/">
+      <span class="ph-conf-group__label">🧠 NeurIPS</span>
+      <span class="ph-conf-year">2025</span>
+    </a>
+    <a class="ph-conf-group" href="{{ config.site_url or '/' }}ICML/2025/">
+      <span class="ph-conf-group__label">📈 ICML</span>
+      <span class="ph-conf-year">2025</span>
+    </a>
+  </div>
+</div>
+{% endblock %}
+
 {% block htmltitle %}
 {% if page and page.is_homepage %}
   {%- if page.meta and page.meta.title %}

@@ -29,21 +29,25 @@ theme:
       primary: custom
       accent: deep purple
       toggle:
-        icon: material/weather-sunny
-        name: Toggle Dark Mode
+        icon: custom/sun
+        name: Switch to Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: deep purple
       toggle:
-        icon: material/weather-night
-        name: Toggle Light Mode
+        icon: custom/moon
+        name: Switch to Light Mode
   font:
     text: Noto Sans SC
     code: JetBrains Mono
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/wordcloud2.js
+  - assets/javascripts/custom.js
 
 plugins:
   - search:
