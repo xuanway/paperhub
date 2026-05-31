@@ -17,9 +17,17 @@
      UTILITY
   ─────────────────────────────────────────────────────────── */
   function getBase() {
+    var script = document.querySelector('script[src*="assets/javascripts/custom.js"]');
+    if (script) {
+      try {
+        var url = new URL(script.getAttribute("src"), window.location.href);
+        return url.pathname.replace(/assets\/javascripts\/custom\.js.*$/, "");
+      } catch (_err) {}
+    }
+
     var parts = location.pathname.split("/").filter(Boolean);
     if (parts.length === 0) return "/";
-    if (!parts[0].includes(".")) return "/" + parts[0] + "/";
+    if (parts.length > 1 && parts[0] === "paperhub") return "/paperhub/";
     return "/";
   }
 
