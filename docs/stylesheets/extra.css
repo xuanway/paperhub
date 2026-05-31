@@ -870,6 +870,7 @@
 /* ── mapmyvisitors widget container ── */
 .homepage-pageviews__globe {
   width: 100%;
+  min-height: 200px;
   background: #040c18;
   display: flex;
   align-items: center;

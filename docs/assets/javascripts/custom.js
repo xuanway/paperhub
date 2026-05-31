@@ -427,16 +427,24 @@
     var container = document.getElementById("mmvst_globe_container");
     if (!container) return;
 
-    // Remove any previous globe script to allow re-execution
-    var old = document.getElementById("mmvst_globe");
-    if (old) old.remove();
+    // Remove any previous map content to allow re-rendering on SPA navigation
+    while (container.firstChild) container.removeChild(container.firstChild);
 
-    // Inject globe script — browser executes it fresh each time
-    var s = document.createElement("script");
-    s.id = "mmvst_globe";
-    s.type = "text/javascript";
-    s.src = "//mapmyvisitors.com/globe.js?d=" + _MMV_ID;
-    container.appendChild(s);
+    // Static map image — more reliable than globe.js dynamic injection
+    // (globe.js depends on $(window).load which never fires when injected after page load)
+    var a = document.createElement("a");
+    a.href = "https://mapmyvisitors.com/web/" + _MMV_ID;
+    a.title = "Visit tracker";
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+
+    var img = document.createElement("img");
+    img.src = "https://mapmyvisitors.com/map.png?d=" + _MMV_ID + "&cl=ffffff&w=a";
+    img.alt = "Visitor map";
+    img.loading = "lazy";
+
+    a.appendChild(img);
+    container.appendChild(a);
   }
 
   /* ───────────────────────────────────────────────────────────
