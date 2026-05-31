@@ -1,0 +1,285 @@
+/* ── Hide logo icon in header ── */
+.md-header__button.md-logo {
+  display: none;
+}
+
+/* ── Make header title clickable ── */
+.md-header__title {
+  cursor: pointer;
+}
+.md-header__title:hover .md-ellipsis {
+  opacity: 0.8;
+}
+
+/* ── Light mode: custom dark header ── */
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #2b2d42;
+  --md-primary-fg-color--light: #3d3f5c;
+  --md-primary-fg-color--dark: #1a1b2e;
+  --md-accent-fg-color: #7c4dff;
+}
+
+/* ── Dark mode: let Material handle it, only tweak accent ── */
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #a78bfa;
+}
+
+/* ── Homepage cards ── */
+.conf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+@media (max-width: 960px) {
+  .conf-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .conf-grid { grid-template-columns: 1fr; }
+}
+
+.conf-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  transition: box-shadow 0.2s, transform 0.15s;
+  background: var(--md-default-bg-color--light, var(--md-default-bg-color));
+}
+
+.conf-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  transform: translateY(-2px);
+}
+
+[data-md-color-scheme="slate"] .conf-card {
+  background: var(--md-default-bg-color--light);
+}
+
+[data-md-color-scheme="slate"] .conf-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+.conf-card h3 {
+  margin: 0 0 0.3rem 0 !important;
+  font-size: 1.15rem;
+}
+
+.conf-card h3 a {
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none;
+}
+
+.conf-card .conf-count {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.conf-card .area-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* 语义大类分组容器：组之间留竖向间距 */
+.conf-card .area-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.conf-card .area-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.conf-card .area-group-label {
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--lighter);
+  letter-spacing: 0.05em;
+  text-transform: none;
+  opacity: 0.85;
+}
+
+.conf-card .area-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.22rem;
+  background: rgba(124, 77, 255, 0.08);
+  color: var(--md-accent-fg-color) !important;
+  padding: 0.2rem 0.55rem 0.22rem;
+  border: 1px solid rgba(124, 77, 255, 0.24);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+  text-decoration: none !important;
+  transition: background 0.15s, border-color 0.15s, color 0.15s, transform 0.12s, box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.conf-card .area-tag::after {
+  content: "›";
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.65;
+  transform: translateY(-0.02rem);
+}
+
+[data-md-color-scheme="slate"] .conf-card .area-tag {
+  background: rgba(167, 139, 250, 0.12);
+  border-color: rgba(167, 139, 250, 0.28);
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.conf-card .area-tag:hover {
+  background: var(--md-accent-fg-color);
+  border-color: var(--md-accent-fg-color);
+  color: #fff !important;
+  box-shadow: 0 2px 10px rgba(124, 77, 255, 0.22);
+  transform: translateY(-1px);
+}
+
+.conf-card .area-tag:active {
+  transform: translateY(0);
+}
+
+.conf-card .area-tag:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* ── Hero section ── */
+.hero {
+  text-align: center;
+  padding: 1rem 0 0.5rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem !important;
+  margin-bottom: 0.2rem !important;
+}
+
+.hero .hero-subtitle {
+  color: var(--md-default-fg-color--light);
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+.hero .hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0.6rem 0 0.3rem;
+  flex-wrap: wrap;
+}
+
+.hero .stat {
+  text-align: center;
+}
+
+.hero .stat-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--md-accent-fg-color);
+}
+
+.hero .stat-label {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.hero .github-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.45rem 1.4rem;
+  border-radius: 2rem;
+  background: var(--md-accent-fg-color);
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  transition: opacity 0.2s;
+}
+.hero .github-link:hover {
+  opacity: 0.85;
+}
+
+/* ── Sidebar: highlight the currently opened note/page ── */
+.md-sidebar--primary a.md-nav__link.md-nav__link--active,
+.md-sidebar--primary label.md-nav__link.md-nav__link--active[for="__toc"] {
+  margin: 0.12rem 0;
+  padding: 0.32rem 0.55rem 0.32rem 0.7rem;
+  border-radius: 6px;
+  background: rgba(124, 77, 255, 0.1);
+  box-shadow: inset 3px 0 0 var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary a.md-nav__link.md-nav__link--active,
+[data-md-color-scheme="slate"] .md-sidebar--primary label.md-nav__link.md-nav__link--active[for="__toc"] {
+  background: rgba(167, 139, 250, 0.16);
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* ── Paper metadata: make arXiv/code links stand out ── */
+.md-content a[href*="arxiv.org"],
+.md-content a[href*="github.com"],
+.md-content a[href*="github.io"] {
+  color: var(--md-accent-fg-color) !important;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 2px;
+}
+
+.md-content a[href*="arxiv.org"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+/* ── Generated paper lists: make note-title links read as links ── */
+.md-typeset dl > dt > strong > a,
+.md-typeset dl > dt > a {
+  color: var(--md-accent-fg-color) !important;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-thickness 0.15s, opacity 0.15s;
+}
+
+.md-typeset dl > dt > strong > a:hover,
+.md-typeset dl > dt > a:hover {
+  opacity: 0.86;
+  text-decoration-thickness: 2px;
+}
+
+/* ── SEO summary strip ── */
+.md-typeset .paper-seo-summary {
+  margin: 0 0 0.8rem;
+  padding: 0.55rem 0 0.55rem 0.75rem;
+  border-left: 3px solid var(--md-accent-fg-color);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+/* ── Mobile: hide heading permalink anchors ── */
+@media (max-width: 960px) {
+  .headerlink {
+    display: none !important;
+  }
+  .md-content h1 {
+    font-size: 1rem !important;
+    line-height: 1.15;
+    font-weight: 600;
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.3rem !important;
+  }
+}

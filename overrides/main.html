@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+{% if page and page.is_homepage %}
+  {%- if page.meta and page.meta.title %}
+  <title>{{ page.meta.title }}</title>
+  {%- else %}
+  <title>{{ config.site_name }}</title>
+  {%- endif %}
+{% else %}
+  {{ super() }}
+{% endif %}
+{% endblock %}
+
+{% block extrahead %}
+<meta name="robots" content="index,follow" />
+
+{% if page %}
+{% set _src = (page.file.src_uri if page and page.file else '') %}
+{% set _is_index = _src.endswith('index.md') %}
+{% set _is_paper = page and not page.is_homepage and not _is_index %}
+
+{% set _seo_title_raw = (page.meta.title if page and page.meta and page.meta.title else page.title) %}
+{% set _seo_title = _seo_title_raw | e %}
+{% set _desc_raw = (page.meta.description if page and page.meta and page.meta.description else (config.site_description | default(''))) %}
+{% set _desc = _desc_raw | e %}
+{% set _tags = (page.meta.tags if page and page.meta and page.meta.tags else []) %}
+
+{% if _tags %}
+<meta name="keywords" content="{{ _tags | join(', ') | e }}" />
+{% endif %}
+
+<!-- OpenGraph -->
+<meta property="og:site_name" content="{{ config.site_name }}" />
+<meta property="og:type" content="{% if _is_paper %}article{% else %}website{% endif %}" />
+<meta property="og:url" content="{{ page.canonical_url }}" />
+<meta property="og:title" content="{{ _seo_title }}" />
+<meta property="og:description" content="{{ _desc }}" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ _seo_title }}" />
+<meta name="twitter:description" content="{{ _desc }}" />
+{% endif %}
+
+{{ super() }}
+{% endblock %}

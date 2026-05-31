@@ -1,0 +1,102 @@
+site_name: 📚 AI Paper Notes
+site_description: 顶会论文笔记 | 覆盖 ICLR/CVPR/ACL/NeurIPS/AAAI 等顶级会议 | 每篇 5 分钟读懂核心思想
+site_url: https://paperhub.example.com/
+repo_url: https://github.com/xuanway/paperhub
+repo_name: Star on GitHub
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  custom_dir: overrides
+  favicon: assets/favicon.svg
+  icon:
+    logo: material/book-open-variant
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.prune
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: 切换暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: 切换亮色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      lang: zh
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+
+nav:
+  - 🏠 首页: index.md
+  - 🔬 ICLR 2025:
+    - ICLR 2025: ICLR2025/index.md
+    - 💡 LLM 推理 (3):
+      - 💡 LLM 推理: ICLR2025/llm_reasoning/index.md
+      - DeepSeek-R1: ICLR2025/llm_reasoning/deepseek_r1.md
+      - Chain of Thought Prompting: ICLR2025/llm_reasoning/chain_of_thought.md
+      - Let's Verify Step by Step: ICLR2025/llm_reasoning/lets_verify_step_by_step.md
+    - 🧩 多模态 VLM (2):
+      - 🧩 多模态 VLM: ICLR2025/multimodal_vlm/index.md
+      - LLaVA-1.5: ICLR2025/multimodal_vlm/llava_1_5.md
+      - InternVL: ICLR2025/multimodal_vlm/internvl.md
+    - 🔒 LLM 安全 (2):
+      - 🔒 LLM 安全: ICLR2025/llm_safety/index.md
+      - Constitutional AI: ICLR2025/llm_safety/constitutional_ai.md
+      - Safety via Debate: ICLR2025/llm_safety/safety_via_debate.md
+  - 📷 CVPR 2025:
+    - CVPR 2025: CVPR2025/index.md
+    - 🎨 图像生成 (2):
+      - 🎨 图像生成: CVPR2025/image_generation/index.md
+      - DiT: CVPR2025/image_generation/dit.md
+      - ControlNet: CVPR2025/image_generation/controlnet.md
+    - 🧊 3D 视觉 (2):
+      - 🧊 3D 视觉: CVPR2025/3d_vision/index.md
+      - NeRF: CVPR2025/3d_vision/nerf.md
+      - Gaussian Splatting: CVPR2025/3d_vision/gaussian_splatting.md
+  - 💬 ACL 2025:
+    - ACL 2025: ACL2025/index.md
+    - 💬 LLM/NLP (2):
+      - 💬 LLM/NLP: ACL2025/llm_nlp/index.md
+      - GPT-4 Technical Report: ACL2025/llm_nlp/gpt4_technical_report.md
+      - Llama 2: ACL2025/llm_nlp/llama2.md
