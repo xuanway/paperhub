@@ -227,9 +227,7 @@ hide:
     <span class="homepage-pageviews__title">📊 Pageviews</span>
     <span class="homepage-pageviews__subtitle">实时访客地球仪 · 由 mapmyvisitors.com 提供</span>
   </div>
-  <div class="homepage-pageviews__globe">
-    <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=-OgpYucqPJE3qE-DPpa-aGXkFL-J_BPFYLvY42lwvas"></script>
-  </div>
+  <div class="homepage-pageviews__globe" id="mmvst_globe_container"></div>
   <div class="homepage-pageviews__footer">
     <a class="homepage-pageviews__badge" href="https://hits.sh/xuanway.github.io/paperhub/" target="_blank" rel="noopener noreferrer" aria-label="PaperHub Pageviews">
       <img src="https://hits.sh/xuanway.github.io/paperhub.svg?style=for-the-badge&label=Pageviews&labelColor=1a2b4a&color=2d78ad&view=today-total" alt="PaperHub pageviews counter" loading="lazy">

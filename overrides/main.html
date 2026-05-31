@@ -110,3 +110,10 @@
 
 {{ super() }}
 {% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{% if page and page.is_homepage %}
+<script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=-OgpYucqPJE3qE-DPpa-aGXkFL-J_BPFYLvY42lwvas"></script>
+{% endif %}
+{% endblock %}
