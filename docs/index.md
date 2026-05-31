@@ -228,9 +228,4 @@ hide:
     <span class="homepage-pageviews__subtitle">实时访客地图 · 由 mapmyvisitors.com 提供</span>
   </div>
   <div id="mmvst_globe_container" class="homepage-pageviews__globe"></div>
-  <div class="homepage-pageviews__footer">
-    <a class="homepage-pageviews__badge" href="https://hits.sh/xuanway.github.io/paperhub/" target="_blank" rel="noopener noreferrer" aria-label="PaperHub Pageviews">
-      <img src="https://hits.sh/xuanway.github.io/paperhub.svg?style=for-the-badge&label=Pageviews&labelColor=1a2b4a&color=2d78ad&view=today-total" alt="PaperHub pageviews counter" loading="lazy">
-    </a>
-  </div>
 </div>

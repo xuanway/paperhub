@@ -421,30 +421,31 @@
   /* ───────────────────────────────────────────────────────────
      5. VISIT MAP
   ─────────────────────────────────────────────────────────── */
-  var _MMV_ID = "1bvbs";
+  var _MMV_TOKEN = "-OgpYucqPJE3qE-DPpa-aGXkFL-J_BPFYLvY42lwvas";
 
   function initVisitMap() {
     var container = document.getElementById("mmvst_globe_container");
     if (!container) return;
 
-    // Remove any previous map content to allow re-rendering on SPA navigation
+    // Remove previous globe render and script for clean re-init on SPA navigation
     while (container.firstChild) container.removeChild(container.firstChild);
+    var oldScript = document.getElementById("mmvst_globe");
+    if (oldScript) oldScript.remove();
 
-    // Static map image — more reliable than globe.js dynamic injection
-    // (globe.js depends on $(window).load which never fires when injected after page load)
-    var a = document.createElement("a");
-    a.href = "https://mapmyvisitors.com/web/" + _MMV_ID;
-    a.title = "Visit tracker";
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-
-    var img = document.createElement("img");
-    img.src = "https://mapmyvisitors.com/map.png?d=" + _MMV_ID + "&cl=ffffff&w=a";
-    img.alt = "Visitor map";
-    img.loading = "lazy";
-
-    a.appendChild(img);
-    container.appendChild(a);
+    // Inject Globe Widget script
+    var s = document.createElement("script");
+    s.id = "mmvst_globe";
+    s.type = "text/javascript";
+    s.src = "//mapmyvisitors.com/globe.js?d=" + _MMV_TOKEN;
+    s.onload = function () {
+      // globe.js uses $(window).load() to finalize rendering (set_globe / isScrolled).
+      // That event won't fire for dynamically injected scripts, so we call them manually.
+      setTimeout(function () {
+        if (typeof window.set_globe === "function") window.set_globe();
+        if (typeof window.isScrolled === "function") window.isScrolled();
+      }, 50);
+    };
+    container.appendChild(s);
   }
 
   /* ───────────────────────────────────────────────────────────

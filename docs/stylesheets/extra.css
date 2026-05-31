@@ -894,36 +894,6 @@
   opacity: 0.88;
 }
 
-/* ── Footer stats row ── */
-.homepage-pageviews__footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.65rem 1.1rem 0.75rem;
-  background: rgba(117, 77, 191, 0.05);
-  border-top: 1px solid rgba(102, 51, 153, 0.08);
-}
-
-[data-md-color-scheme="slate"] .homepage-pageviews__footer {
-  background: rgba(151, 117, 205, 0.08);
-  border-top-color: rgba(151, 117, 205, 0.12);
-}
-
-.homepage-pageviews__badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none !important;
-}
-
-.homepage-pageviews__badge img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-  filter: drop-shadow(0 2px 8px rgba(45, 120, 173, 0.25));
-}
-
 /* Header home button */
 #ph-homebtn,
 .ph-homebtn {
