@@ -66,29 +66,18 @@ hide:
 
 ### ⚡ [HPCA 2025](HPCA/2025/index.md)
 
-<div class="conf-count" data-conf-key="HPCA 2025" data-conf-location="Las Vegas, NV, USA">19 篇 · 6 个方向 · Las Vegas, NV, USA</div>
+<div class="conf-count" data-conf-key="HPCA 2025" data-conf-location="Las Vegas, NV, USA">121 篇 · 23 个方向 · Las Vegas, NV, USA</div>
 
 <div class="area-groups">
 <div class="area-group">
-<div class="area-group-label">安全与可信</div>
+<div class="area-group-label">方向</div>
 <div class="area-tags">
-<a class="area-tag" href="HPCA/2025/fhe/" data-track-key="HPCA/2025/fhe" data-track-label="同态加密">同态加密 4</a>
-<a class="area-tag" href="HPCA/2025/security/" data-track-key="HPCA/2025/security" data-track-label="硬件安全">硬件安全 3</a>
-<a class="area-tag" href="HPCA/2025/memory/" data-track-key="HPCA/2025/memory" data-track-label="内存安全">内存安全 3</a>
-</div>
-</div>
-<div class="area-group">
-<div class="area-group-label">高效计算</div>
-<div class="area-tags">
-<a class="area-tag" href="HPCA/2025/pim/" data-track-key="HPCA/2025/pim" data-track-label="存内计算">存内计算 3</a>
-<a class="area-tag" href="HPCA/2025/llm_inference/" data-track-key="HPCA/2025/llm_inference" data-track-label="LLM推理">LLM推理 3</a>
-<a class="area-tag" href="HPCA/2025/quantum/" data-track-key="HPCA/2025/quantum" data-track-label="量子计算">量子计算 3</a>
+<a class="area-tag" href="HPCA/2025/the_winning_system/" data-track-key="HPCA/2025/the_winning_system" data-track-label="The Winning System">The Winning System 11</a>
+<a class="area-tag" href="HPCA/2025/all_in_on_gpus/" data-track-key="HPCA/2025/all_in_on_gpus" data-track-label="All in on GPUs">All in on GPUs 8</a>
+<a class="area-tag" href="HPCA/2025/high_stakes_vision/" data-track-key="HPCA/2025/high_stakes_vision" data-track-label="High Stakes Vision">High Stakes Vision 7</a>
 </div>
 </div>
 </div>
-
-</div>
-
 ---
 
 <div class="conf-card" markdown>
