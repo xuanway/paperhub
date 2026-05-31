@@ -24,9 +24,9 @@ hide:
 <p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · NeurIPS · ICML 等顶级会议<br>持续更新中</p>
 
 <div class="hero-stats">
-<div class="stat"><span class="stat-number">54+</span><span class="stat-label">篇笔记</span></div>
-<div class="stat"><span class="stat-number">7</span><span class="stat-label">个会议</span></div>
-<div class="stat"><span class="stat-number">8</span><span class="stat-label">个研究方向</span></div>
+<div class="stat"><span class="stat-number" data-stat-key="papers">169</span><span class="stat-label">篇论文</span></div>
+<div class="stat"><span class="stat-number" data-stat-key="conferences">7</span><span class="stat-label">个会议</span></div>
+<div class="stat"><span class="stat-number" data-stat-key="directions">11</span><span class="stat-label">个研究方向</span></div>
 </div>
 
 <!-- <a class="github-link" href="https://github.com/xuanway/paperhub" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" style="vertical-align:middle;margin-right:6px;fill:currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a> -->
@@ -66,23 +66,23 @@ hide:
 
 ### ⚡ [HPCA 2025](HPCA/2025/index.md)
 
-<div class="conf-count">19 篇 · 6 个方向 · Las Vegas, NV, USA</div>
+<div class="conf-count" data-conf-key="HPCA 2025" data-conf-location="Las Vegas, NV, USA">19 篇 · 6 个方向 · Las Vegas, NV, USA</div>
 
 <div class="area-groups">
 <div class="area-group">
 <div class="area-group-label">安全与可信</div>
 <div class="area-tags">
-<a class="area-tag" href="HPCA/2025/fhe/">同态加密 4</a>
-<a class="area-tag" href="HPCA/2025/security/">硬件安全 3</a>
-<a class="area-tag" href="HPCA/2025/memory/">内存安全 3</a>
+<a class="area-tag" href="HPCA/2025/fhe/" data-track-key="HPCA/2025/fhe" data-track-label="同态加密">同态加密 4</a>
+<a class="area-tag" href="HPCA/2025/security/" data-track-key="HPCA/2025/security" data-track-label="硬件安全">硬件安全 3</a>
+<a class="area-tag" href="HPCA/2025/memory/" data-track-key="HPCA/2025/memory" data-track-label="内存安全">内存安全 3</a>
 </div>
 </div>
 <div class="area-group">
 <div class="area-group-label">高效计算</div>
 <div class="area-tags">
-<a class="area-tag" href="HPCA/2025/pim/">存内计算 3</a>
-<a class="area-tag" href="HPCA/2025/llm_inference/">LLM推理 3</a>
-<a class="area-tag" href="HPCA/2025/quantum/">量子计算 3</a>
+<a class="area-tag" href="HPCA/2025/pim/" data-track-key="HPCA/2025/pim" data-track-label="存内计算">存内计算 3</a>
+<a class="area-tag" href="HPCA/2025/llm_inference/" data-track-key="HPCA/2025/llm_inference" data-track-label="LLM推理">LLM推理 3</a>
+<a class="area-tag" href="HPCA/2025/quantum/" data-track-key="HPCA/2025/quantum" data-track-label="量子计算">量子计算 3</a>
 </div>
 </div>
 </div>
@@ -95,23 +95,23 @@ hide:
 
 ### ⚡ [HPCA 2026](HPCA/2026/index.md)
 
-<div class="conf-count">15 篇 · 6 个方向 · Sydney, Australia</div>
+<div class="conf-count" data-conf-key="HPCA 2026" data-conf-location="Sydney, Australia">15 篇 · 6 个方向 · Sydney, Australia</div>
 
 <div class="area-groups">
 <div class="area-group">
 <div class="area-group-label">安全与可信</div>
 <div class="area-tags">
-<a class="area-tag" href="HPCA/2026/security/">硬件安全 3</a>
-<a class="area-tag" href="HPCA/2026/memory/">内存安全 3</a>
-<a class="area-tag" href="HPCA/2026/fhe/">同态加密 2</a>
+<a class="area-tag" href="HPCA/2026/security/" data-track-key="HPCA/2026/security" data-track-label="硬件安全">硬件安全 3</a>
+<a class="area-tag" href="HPCA/2026/memory/" data-track-key="HPCA/2026/memory" data-track-label="内存安全">内存安全 3</a>
+<a class="area-tag" href="HPCA/2026/fhe/" data-track-key="HPCA/2026/fhe" data-track-label="同态加密">同态加密 2</a>
 </div>
 </div>
 <div class="area-group">
 <div class="area-group-label">高效计算</div>
 <div class="area-tags">
-<a class="area-tag" href="HPCA/2026/llm_inference/">LLM推理 3</a>
-<a class="area-tag" href="HPCA/2026/pim/">存内计算 2</a>
-<a class="area-tag" href="HPCA/2026/quantum/">量子计算 2</a>
+<a class="area-tag" href="HPCA/2026/llm_inference/" data-track-key="HPCA/2026/llm_inference" data-track-label="LLM推理">LLM推理 3</a>
+<a class="area-tag" href="HPCA/2026/pim/" data-track-key="HPCA/2026/pim" data-track-label="存内计算">存内计算 2</a>
+<a class="area-tag" href="HPCA/2026/quantum/" data-track-key="HPCA/2026/quantum" data-track-label="量子计算">量子计算 2</a>
 </div>
 </div>
 </div>
@@ -122,20 +122,20 @@ hide:
 
 ### 🏗️ [ISCA 2025](ISCA/2025/index.md)
 
-<div class="conf-count">8 篇 · 3 个方向 · Tokyo, Japan</div>
+<div class="conf-count" data-conf-key="ISCA 2025" data-conf-location="Tokyo, Japan">135 篇 · 11 个方向 · Tokyo, Japan</div>
 
 <div class="area-groups">
 <div class="area-group">
 <div class="area-group-label">AI加速</div>
 <div class="area-tags">
-<a class="area-tag" href="ISCA/2025/ml_accelerator/">ML加速器 4</a>
+<a class="area-tag" href="ISCA/2025/ml_accelerator/" data-track-key="ISCA/2025/ml_accelerator" data-track-label="ML加速器">ML加速器 20</a>
 </div>
 </div>
 <div class="area-group">
 <div class="area-group-label">安全与存储</div>
 <div class="area-tags">
-<a class="area-tag" href="ISCA/2025/crypto_fhe/">密码&FHE</a>
-<a class="area-tag" href="ISCA/2025/memory/">内存安全</a>
+<a class="area-tag" href="ISCA/2025/crypto_fhe/" data-track-key="ISCA/2025/crypto_fhe" data-track-label="密码&amp;FHE">密码&amp;FHE 4</a>
+<a class="area-tag" href="ISCA/2025/memory/" data-track-key="ISCA/2025/memory" data-track-label="内存安全">内存安全 8</a>
 </div>
 </div>
 </div>

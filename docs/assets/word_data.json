@@ -1,257 +1,52 @@
 {
   "updated": "2026-06-01",
-  "content_hash": "823eaaef0052af8b",
+  "content_hash": "8752f7e8bd8987f0",
   "total_papers": 169,
-  "keywords": [
-    {
-      "text": "系统架构",
-      "count": 40,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (40 papers)",
-      "search_term": "系统架构",
-      "papers": [
-        {
-          "title": "A4: Agile Accelerator Allocation for AI",
-          "url": "ISCA/2025/systems/a4/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：为数据中心AI任务设计敏捷的加速器动态分配机制，提升加速器利用率。"
-        },
-        {
-          "title": "AMALI: Microarchitecture Sensitivity Analysis",
-          "url": "ISCA/2025/systems/amali/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：系统分析真实工作负载对微架构参数（缓存大小、分支预测等）的敏感度，指导微架构设计。"
-        },
-        {
-          "title": "Assassyn: A Language for Architecture Simulation",
-          "url": "ISCA/2025/systems/assassyn/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：设计专用领域语言（DSL）用于体系结构周期精确模拟，提升模拟器开发效率和可维护性。"
-        },
-        {
-          "title": "Avalanche: Large-Scale AI Training Infrastructure",
-          "url": "ISCA/2025/systems/avalanche/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：介绍大规模AI训练集群的Avalanche互连架构和调度系统，支持数万GPU规模的分布式训练。"
-        },
-        {
-          "title": "Branch Predictor Microservices",
-          "url": "ISCA/2025/systems/bp_microservices/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：将分支预测器模块化为可独立更新的微服务，提升预测器的灵活性和可维护性。"
-        },
-        {
-          "title": "CORD: Cross-Layer Memory Optimization",
-          "url": "ISCA/2025/systems/cord/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：跨越OS-硬件层边界协同优化内存系统，通过跨层信息共享提升内存子系统性能。"
-        },
-        {
-          "title": "Caravan: Pipeline Efficiency Optimization",
-          "url": "ISCA/2025/systems/caravan/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：通过协调多核流水线的执行节奏，减少流水线气泡和资源争用。"
-        },
-        {
-          "title": "Concorde: Concurrent Performance Modeling",
-          "url": "ISCA/2025/systems/concorde/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：为多核/众核系统建立并发性能分析模型，准确预测竞争资源上的性能。"
-        },
-        {
-          "title": "Cramming More Performance into the Datacenter Cabinet",
-          "url": "ISCA/2025/systems/cramming_dc/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：研究如何在有限的机柜空间和功耗约束内最大化数据中心性能密度。"
-        },
-        {
-          "title": "Debunking the CUDA Myth: GPU Programming Beyond CUDA",
-          "url": "ISCA/2025/systems/debunking_cuda/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：揭穿CUDA是GPU编程唯一高效途径的迷思，展示替代GPU编程模型在特定场景的性能优势。"
-        },
-        {
-          "title": "Dynamic Load Balancing at Intel Scale",
-          "url": "ISCA/2025/systems/intel_lb/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：描述Intel数据中心在超大规模下的动态负载均衡实践与系统设计经验。"
-        },
-        {
-          "title": "Ecco: Communication-Computation Overlap for AI Training",
-          "url": "ISCA/2025/systems/ecco/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：通过通信与计算重叠消除分布式AI训练的通信等待时间，提升大模型训练效率。"
-        },
-        {
-          "title": "Enabling Ahead-of-Time Branch Prediction",
-          "url": "ISCA/2025/systems/ahead_prediction/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：提前预测分支目标，减少分支预测错误的恢复代价，提升乱序处理器性能。"
-        },
-        {
-          "title": "Fair-CO2: Fair Carbon Emission Attribution in Datacenters",
-          "url": "ISCA/2025/systems/fair_co2/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：为多租户数据中心设计公平的碳排放归因方法，支持碳中和目标的精确核算。"
-        },
-        {
-          "title": "GCStack+GCScaler: Garbage Collection Optimization",
-          "url": "ISCA/2025/systems/gcstack/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：分析垃圾回收（GC）对应用性能的影响，设计GC栈跟踪和自动扩展机制减少GC停顿。"
-        },
-        {
-          "title": "GPUs All Grown-Up: Modern GPU Workload Characterization",
-          "url": "ISCA/2025/systems/gpus_grown_up/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：系统分析现代GPU在AI、科学计算、图形等多类工作负载下的性能特征演变。"
-        },
-        {
-          "title": "Garibaldi: Microarchitectural Optimization",
-          "url": "ISCA/2025/systems/garibaldi/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：提出针对现代乱序处理器微架构瓶颈的优化技术，提升指令级并行性。"
-        },
-        {
-          "title": "H2-LLM: 异构硬件LLM调度优化",
-          "url": "ISCA/2025/systems/h2_llm/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：针对CPU+GPU+FPGA等异构硬件平台优化LLM推理的任务调度与内存分配。"
-        },
-        {
-          "title": "HPVM-HDC: Hyperdimensional Computing Acceleration",
-          "url": "ISCA/2025/systems/hpvm_hdc/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：通过HPVM编译框架为超维度计算（HDC）生成高效的加速器映射代码。"
-        },
-        {
-          "title": "HardHarvest: Hardware Resource Harvesting",
-          "url": "ISCA/2025/systems/hardharvest/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：在数据中心中收割闲置硬件资源（如空闲CPU核心和内存），提升资源利用率。"
-        },
-        {
-          "title": "Hybe: Hybrid Parallelism for HPC",
-          "url": "ISCA/2025/systems/hybe/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：为HPC应用设计混合并行策略，结合任务并行、数据并行和流水线并行提升HPC利用率。"
-        },
-        {
-          "title": "Jord: Serverless Function Acceleration",
-          "url": "ISCA/2025/systems/jord_faas/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：为无服务器计算（FaaS）设计专用加速支持，降低函数调用延迟和冷启动开销。"
-        },
-        {
-          "title": "LazyGPU: Lazy Execution for GPU Workloads",
-          "url": "ISCA/2025/systems/lazygpu/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：通过延迟执行策略减少GPU中的无效计算，提升GPU在稀疏激活场景下的利用率。"
-        },
-        {
-          "title": "Light-weight Cache Replacement Policy",
-          "url": "ISCA/2025/systems/lw_cache_replace/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：设计极低硬件开销的缓存替换策略，在接近最优替换效果的同时最小化元数据存储。"
-        },
-        {
-          "title": "Magellan: Microarchitecture Exploration",
-          "url": "ISCA/2025/systems/magellan/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：设计系统化的微架构探索框架，高效评估大量微架构设计点。"
-        },
-        {
-          "title": "MeshSlice: Mesh-based Parallel Slicing",
-          "url": "ISCA/2025/systems/meshslice/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：将大规模网格计算任务切片为子问题并行执行，优化科学计算工作负载的并行效率。"
-        },
-        {
-          "title": "Neoscope: Memory Range Analysis",
-          "url": "ISCA/2025/systems/neoscope/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：设计内存地址范围动态分析工具，识别程序的内存访问模式以指导系统优化。"
-        },
-        {
-          "title": "NetCrafter: Network Hardware Optimization",
-          "url": "ISCA/2025/systems/netcrafter/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：为高性能网络接口设计专用硬件优化，降低消息传递延迟和CPU开销。"
-        },
-        {
-          "title": "Nyx: Secure System Isolation",
-          "url": "ISCA/2025/systems/nyx/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：设计高效的系统级安全隔离机制，在最小性能开销下实现强隔离保证。"
-        },
-        {
-          "title": "Profile-Guided Temporal Prefetching",
-          "url": "ISCA/2025/systems/pgtp/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：通过程序Profile引导，在时序相关的访问模式中进行精准数据预取。"
-        },
-        {
-          "title": "Ruche Networks: Low-Diameter On-Chip Networks",
-          "url": "ISCA/2025/systems/ruche/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Ruche网络通过增加长距离连线降低片上网络直径，减少多跳通信延迟。"
-        },
-        {
-          "title": "Telos: Towards the Ultimate HPC Performance",
-          "url": "ISCA/2025/systems/telos/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：探索高性能计算系统在计算、内存、通信三维度的极限性能，分析距理论峰值的差距。"
-        },
-        {
-          "title": "TrioSim: Three-Level Architecture Simulation",
-          "url": "ISCA/2025/systems/triosim/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：提出三层次模拟框架结合高速功能模拟和精确时序分析，实现速度与精度的平衡。"
-        },
-        {
-          "title": "UGPU: Unified GPU Architecture",
-          "url": "ISCA/2025/systems/ugpu/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：设计统一GPU架构，同时高效支持图形渲染、AI推理和通用计算三类工作负载。"
-        },
-        {
-          "title": "WarmCache: Context-Switch Cache Warming",
-          "url": "ISCA/2025/systems/warmcache/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：上下文切换导致缓存内容丢失；WarmCache 在切换时主动预热目标进程的缓存内容。"
-        },
-        {
-          "title": "WindServe: Wind-Energy-Driven Inference Serving",
-          "url": "ISCA/2025/systems/windserve/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：利用可再生能源（风能）的间歇性特点设计自适应推理服务调度，在能源充足时优先处理批量任务。"
-        },
-        {
-          "title": "XOR Cache: 消除缓存冲突的XOR映射缓存",
-          "url": "ISCA/2025/systems/xor_cache/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：通过XOR操作将内存地址映射到缓存行，消除因地址规律性导致的缓存组冲突，提升缓存利用率。"
-        },
-        {
-          "title": "Zettafly: Zettascale Interconnect Architecture",
-          "url": "ISCA/2025/systems/zettafly/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：面向Zettascale计算设计新型互连网络架构，支持极大规模并行计算节点高效互联。"
-        },
-        {
-          "title": "精确异常处理的加速器集成",
-          "url": "ISCA/2025/systems/precise_exceptions/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：解决将加速器（如ML加速器）集成进乱序CPU流水线时精确异常处理的语义一致性问题。"
-        },
-        {
-          "title": "重新思考数据预取",
-          "url": "ISCA/2025/systems/rethinking_prefetching/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：重新审视主流数据预取机制的假设与局限，提出改进的预取框架。"
-        }
-      ]
+  "stats": {
+    "total_papers": 169,
+    "conferences_count": 7,
+    "directions_count": 11,
+    "per_conf": {
+      "HPCA 2025": {
+        "total": 19,
+        "tracks": 6
+      },
+      "HPCA 2026": {
+        "total": 15,
+        "tracks": 6
+      },
+      "ISCA 2025": {
+        "total": 135,
+        "tracks": 11
+      }
     },
+    "per_track": {
+      "HPCA/2025/memory": 3,
+      "HPCA/2025/security": 3,
+      "HPCA/2025/fhe": 4,
+      "HPCA/2025/llm_inference": 3,
+      "HPCA/2025/pim": 3,
+      "HPCA/2025/quantum": 3,
+      "HPCA/2026/memory": 3,
+      "HPCA/2026/security": 3,
+      "HPCA/2026/fhe": 2,
+      "HPCA/2026/llm_inference": 3,
+      "HPCA/2026/pim": 2,
+      "HPCA/2026/quantum": 2,
+      "ISCA/2025/gpu": 4,
+      "ISCA/2025/llm": 6,
+      "ISCA/2025/memory": 8,
+      "ISCA/2025/security": 4,
+      "ISCA/2025/storage": 5,
+      "ISCA/2025/pim": 10,
+      "ISCA/2025/ml_accelerator": 20,
+      "ISCA/2025/crypto_fhe": 4,
+      "ISCA/2025/systems": 44,
+      "ISCA/2025/domain_specific": 14,
+      "ISCA/2025/quantum": 16
+    }
+  },
+  "keywords": [
     {
       "text": "ML Accelerator",
       "count": 19,
@@ -1153,72 +948,6 @@
       ]
     },
     {
-      "text": "产业论文",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "产业论文",
-      "papers": [
-        {
-          "title": "DCPerf: Datacenter Performance Benchmarking",
-          "url": "ISCA/2025/systems/dcperf/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025产业论文解读：Meta开源DCPerf基准套件，覆盖搜索、推荐、内容理解等典型数据中心工作负载，用于评估服务器处理器和内存系统性能。"
-        },
-        {
-          "title": "DeepSeek-V3: Inference Architecture and System Optimization",
-          "url": "ISCA/2025/systems/deepseek_v3/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025产业论文解读：DeepSeek团队介绍DeepSeek-V3模型的推理架构设计，包括MoE架构优化、KV Cache管理和多节点推理部署经验。"
-        },
-        {
-          "title": "Meta AI Training Chip: Architecture and Datacenter Integration",
-          "url": "ISCA/2025/systems/meta_ai/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025产业论文解读：Meta分享其自研AI训练芯片（MTIA）的设计思路、与数据中心基础设施的集成实践以及大规模部署经验。"
-        },
-        {
-          "title": "Scaling Llama 3: Infrastructure for Large-Scale LLM Training",
-          "url": "ISCA/2025/systems/llama3_scaling/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025产业论文解读：介绍Llama 3模型大规模训练的硬件基础设施、并行策略、容错机制和效率优化实践。"
-        }
-      ]
-    },
-    {
-      "text": "光线追踪",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "光线追踪",
-      "papers": [
-        {
-          "title": "AQB8: Adaptive Quantization for Bounding Volume Hierarchies in Ray Tracing",
-          "url": "ISCA/2025/domain_specific/aqb8/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：AQB8为光线追踪BVH数据结构设计自适应量化压缩方案，通过多级量化减少BVH内存占用和带宽，提升光线追踪性能。"
-        },
-        {
-          "title": "CoopRT: Accelerating BVH Traversal for Ray Tracing via Cooperative Threads",
-          "url": "ISCA/2025/gpu/cooprt/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：CoopRT让多个GPU线程协作执行单个光线的BVH遍历，通过负载均衡解决光线遍历路径差异导致的warp分歧问题。"
-        },
-        {
-          "title": "Heliostat: Harnessing Ray Tracing Accelerators for Page Table Walks",
-          "url": "ISCA/2025/gpu/heliostat/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Heliostat将GPU中的RT核（光线追踪加速器）复用为页表遍历的BVH遍历引擎，显著加速地址翻译。"
-        },
-        {
-          "title": "RTSpMSpM: Accelerating Sparse-Sparse Matrix Multiplication via Ray Tracing",
-          "url": "ISCA/2025/domain_specific/rtspmspm/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：RTSpMSpM将GPU中的RT Core复用于稀疏矩阵乘法的非零元素相交查找，利用BVH遍历加速SpMSpM。"
-        }
-      ]
-    },
-    {
       "text": "CXL",
       "count": 3,
       "trend": -1,
@@ -1543,114 +1272,6 @@
       ]
     },
     {
-      "text": "向量检索",
-      "count": 3,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (3 papers)",
-      "search_term": "向量检索",
-      "papers": [
-        {
-          "title": "DReX: Accurate and Scalable Dense Retrieval Acceleration via Algorithmic-Hardware Codesign",
-          "url": "ISCA/2025/pim/drex/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：DReX通过算法和硬件协同设计加速神经稠密检索（Dense Retrieval），在保持高精度的同时实现可扩展的高吞吐量。"
-        },
-        {
-          "title": "In-Storage Acceleration of Retrieval Augmented Generation as a Service",
-          "url": "ISCA/2025/storage/rag_storage/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：将RAG服务的向量检索操作卸载到SSD存储设备内执行，减少主机IO带宽消耗，提升RAG服务的吞吐量和能效。"
-        },
-        {
-          "title": "REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing",
-          "url": "ISCA/2025/pim/reis/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：REIS将向量检索和相似度计算推送到SSD内部执行，构建高性能高能效的In-Storage检索系统。"
-        }
-      ]
-    },
-    {
-      "text": "容错量子",
-      "count": 3,
-      "trend": -1,
-      "conf_info": "HPCA 2026 (1 paper) · ISCA 2025 (2 papers)",
-      "search_term": "容错量子",
-      "papers": [
-        {
-          "title": "Cyclone: Designing Efficient and Highly Parallel QCCD Architectural Codesigns for Fault Tolerant Quantum Memory",
-          "url": "HPCA/2026/quantum/cyclone/",
-          "conf": "HPCA 2026",
-          "summary": "HPCA 2026论文解读：Cyclone为囚禁离子量子计算机设计高度并行的QCCD体系结构，将容错量子存储的操作深度降低5.2×。"
-        },
-        {
-          "title": "SWIPER: Minimizing Fault-Tolerant Quantum Program Latency via Speculative Window Decoding",
-          "url": "ISCA/2025/quantum/swiper/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：SWIPER将推测执行思想引入量子错误纠正解码，通过预测解码结果并推测性执行后续量子操作，降低容错量子计算延迟。"
-        },
-        {
-          "title": "Synchronization for Fault-Tolerant Quantum Computers",
-          "url": "ISCA/2025/quantum/sync_ftqc/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：研究容错量子计算机中不同逻辑量子比特操作的同步问题，提出高效同步协议减少空闲等待开销。"
-        }
-      ]
-    },
-    {
-      "text": "软硬件协同",
-      "count": 3,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (3 papers)",
-      "search_term": "软硬件协同",
-      "papers": [
-        {
-          "title": "AIM: Software and Hardware Co-design for Architecture-level IR-drop Mitigation in High-performance PIM",
-          "url": "ISCA/2025/pim/aim/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：AIM提出PIM系统中架构级IR压降（IR-drop）缓解方案，通过软硬件协同降低高并发PIM运算的电压波动危害。"
-        },
-        {
-          "title": "Finesse: An Agile Design Framework for Pairing-based Cryptography via Software/Hardware Co-Design",
-          "url": "ISCA/2025/crypto_fhe/finesse/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Finesse提出面向配对密码的敏捷软硬件协同设计框架，通过可重配硬件加速配对运算，覆盖ZKP等多种应用。"
-        },
-        {
-          "title": "LUT Tensor Core: A Software-Hardware Co-Design for LUT-Based Low-Bit LLM Inference",
-          "url": "ISCA/2025/llm/lut_tc/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：LUT Tensor Core提出用查找表替代LLM量化推理中的乘法操作，并设计专用硬件单元，实现低比特LLM推理的高能效加速。"
-        }
-      ]
-    },
-    {
-      "text": "近存处理",
-      "count": 3,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (3 papers)",
-      "search_term": "近存处理",
-      "papers": [
-        {
-          "title": "ANSMET: Approximate Nearest Neighbor Search with Near-Memory Processing and Hybrid Early Termination",
-          "url": "ISCA/2025/pim/ansmet/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：ANSMET结合近存处理和混合早停策略加速ANN（近似最近邻）搜索，在保持高召回率的同时大幅降低延迟。"
-        },
-        {
-          "title": "EOD: Enabling Low Latency GNN Inference via Near-Memory Concatenate Aggregation",
-          "url": "ISCA/2025/pim/eod/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：EOD提出近存合并聚合方法，将GNN图聚合操作下推到内存侧执行，消除主要带宽瓶颈，实现低延迟GNN推理。"
-        },
-        {
-          "title": "NMP-PaK: Near-Memory Processing Acceleration of Scalable De Novo Genome Assembly",
-          "url": "ISCA/2025/memory/nmp_pak/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：NMP-PaK利用近存处理（NMP）加速基因组从头拼接（De Novo Assembly）中的图构建与遍历操作，大幅降低内存带宽瓶颈。"
-        }
-      ]
-    },
-    {
       "text": "Bootstrapping",
       "count": 2,
       "trend": 0,
@@ -1962,6 +1583,153 @@
           "url": "ISCA/2025/quantum/ssync/",
           "conf": "ISCA 2025",
           "summary": "ISCA 2025论文解读：S-SYNC提出QCCD架构中穿梭（Shuttle）与交换（Swap）操作的协同优化策略，降低量子比特移动开销。"
+        }
+      ]
+    },
+    {
+      "text": "Quantum Error Correction",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper) · ISCA 2025 (1 paper)",
+      "search_term": "Quantum Error Correction",
+      "papers": [
+        {
+          "title": "LSQCA: Resource-Efficient Load/Store Architecture for Limited-Scale Fault-Tolerant Quantum Computing",
+          "url": "HPCA/2025/quantum/lsqca/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：LSQCA为有限规模容错量子计算机提出专用Load/Store体系结构，通过将逻辑量子比特的存储与计算解耦，在有限物理量子比特预算下实现更大规模的量子算法执行。"
+        },
+        {
+          "title": "CaliQEC: In-situ Qubit Calibration for Surface Code Quantum Error Correction",
+          "url": "ISCA/2025/quantum/caliqec/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：CaliQEC提出在量子纠错执行期间原位进行量子比特校准，无需暂停计算即可维持高量子比特质量。"
+        }
+      ]
+    },
+    {
+      "text": "Rochester",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (2 papers)",
+      "search_term": "Rochester",
+      "papers": [
+        {
+          "title": "ANVIL: An In-Storage Accelerator for Name-Value Data Stores",
+          "url": "ISCA/2025/storage/anvil/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：ANVIL在SSD内部集成键值存储（KV Store）专用加速逻辑，将Get/Put操作的哈希查找和数据解压缩卸载到存储设备内执行。"
+        },
+        {
+          "title": "SEAL: Single-Event Architecture for Visual Localization",
+          "url": "ISCA/2025/domain_specific/seal/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：SEAL为机器人视觉定位（Visual Localization）设计单事件驱动的处理架构，实现高效稀疏特征匹配。"
+        }
+      ]
+    },
+    {
+      "text": "Scheduling",
+      "count": 2,
+      "trend": 0,
+      "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
+      "search_term": "Scheduling",
+      "papers": [
+        {
+          "title": "PASCAL: A Phase-Aware Scheduling Algorithm for Serving Reasoning-based Large Language Models",
+          "url": "HPCA/2026/llm_inference/pascal/",
+          "conf": "HPCA 2026",
+          "summary": "HPCA 2026论文解读：PASCAL针对DeepSeek-R1等推理型LLM的思考与回答两阶段特性，设计专用调度算法提升服务效率。"
+        },
+        {
+          "title": "PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM",
+          "url": "HPCA/2025/pim/paise/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：PAISE是三星SDS提出的PIM加速Transformer推理调度引擎，通过智能分配Attention与FFN操作到PIM和SoC，实现LLM推理的高效调度。"
+        }
+      ]
+    },
+    {
+      "text": "Speculative Execution",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper) · ISCA 2025 (1 paper)",
+      "search_term": "Speculative Execution",
+      "papers": [
+        {
+          "title": "SpecMPK: Efficient In-Process Isolation with Speculative and Secure Permission Update Instruction",
+          "url": "HPCA/2025/security/specmpk/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：SpecMPK提出推测执行安全的MPK（Memory Protection Keys）权限更新指令，以极低开销实现进程内细粒度内存隔离，防御基于推测执行的内存安全攻击。"
+        },
+        {
+          "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
+          "url": "ISCA/2025/llm/specee/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：SpecEE提出推测早退机制，通过预测LLM token何时可提前退出中间层，在不损失精度的前提下减少大量计算。"
+        }
+      ]
+    },
+    {
+      "text": "Transformer",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper) · ISCA 2025 (1 paper)",
+      "search_term": "Transformer",
+      "papers": [
+        {
+          "title": "PAISE: PIM-Accelerated Inference Scheduling Engine for Transformer-based LLM",
+          "url": "HPCA/2025/pim/paise/",
+          "conf": "HPCA 2025",
+          "summary": "HPCA 2025论文解读：PAISE是三星SDS提出的PIM加速Transformer推理调度引擎，通过智能分配Attention与FFN操作到PIM和SoC，实现LLM推理的高效调度。"
+        },
+        {
+          "title": "Hybrid SLC-MLC RRAM Mixed-Signal Processing-in-Memory Architecture for Transformer Acceleration via Gradient Redistribution",
+          "url": "ISCA/2025/pim/hybrid_rram/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：提出结合SLC和MLC RRAM的混合混信号PIM架构，通过梯度重分布提升Transformer模型的存内计算精度和效率。"
+        }
+      ]
+    },
+    {
+      "text": "UCR",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (2 papers)",
+      "search_term": "UCR",
+      "papers": [
+        {
+          "title": "RTSpMSpM: Accelerating Sparse-Sparse Matrix Multiplication via Ray Tracing",
+          "url": "ISCA/2025/domain_specific/rtspmspm/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：RTSpMSpM将GPU中的RT Core复用于稀疏矩阵乘法的非零元素相交查找，利用BVH遍历加速SpMSpM。"
+        },
+        {
+          "title": "SpecASan: Mitigating Transient Execution Attacks Using Speculative Address Sanitization",
+          "url": "ISCA/2025/security/specasan/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：SpecASan将地址消毒（AddressSanitizer）思想引入推测执行路径，在不影响正常执行性能的前提下阻止Spectre等瞬态执行攻击。"
+        }
+      ]
+    },
+    {
+      "text": "UChicago",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (2 papers)",
+      "search_term": "UChicago",
+      "papers": [
+        {
+          "title": "SWIPER: Minimizing Fault-Tolerant Quantum Program Latency via Speculative Window Decoding",
+          "url": "ISCA/2025/quantum/swiper/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：SWIPER将推测执行思想引入量子错误纠正解码，通过预测解码结果并推测性执行后续量子操作，降低容错量子计算延迟。"
+        },
+        {
+          "title": "Variational Quantum Algorithms in the era of Early Fault Tolerance",
+          "url": "ISCA/2025/quantum/variational_qa/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：分析早期容错量子计算（early fault tolerance）阶段VQA算法的资源需求和优化策略。"
         }
       ]
     }

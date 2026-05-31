@@ -17,6 +17,16 @@ DOCS_DIR = os.path.join(
 OUTPUT = os.path.join(DOCS_DIR, "assets", "word_data.json")
 
 
+REPO_DIR = os.path.dirname(DOCS_DIR)
+MKDOCS_YML = os.path.join(REPO_DIR, "mkdocs.yml")
+
+# Canonical track-dir aliases (merge similar dirs into one direction name)
+TRACK_CANONICAL = {
+    "crypto_fhe": "fhe",
+    "llm": "llm_inference",
+}
+
+
 def compute_content_hash(total_papers, keywords):
     payload = json.dumps(
         {"total_papers": total_papers, "keywords": keywords},
@@ -25,6 +35,11 @@ def compute_content_hash(total_papers, keywords):
         separators=(",", ":"),
     )
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
+
+
+def has_chinese(text):
+    """Return True if text contains Chinese characters."""
+    return any("\u4e00" <= ch <= "\u9fff" for ch in text)
 
 # ── Chinese / mixed → English academic keyword map ────────────────────────
 ZH_TO_EN = {
@@ -158,7 +173,67 @@ def normalize(tag):
     # Pattern skip: pure institution-like all-caps or contains digits (year)
     if re.match(r'^[A-Z]+\d{4}$', tag):
         return None
-    return ZH_TO_EN.get(tag, ZH_TO_EN.get(compact, tag))
+    translated = ZH_TO_EN.get(tag, ZH_TO_EN.get(compact, None))
+    if translated:
+        return translated
+    # Skip tags that contain Chinese characters but have no English translation
+    if has_chinese(tag):
+        return None
+    return tag
+
+
+def update_mkdocs_nav(per_track_raw):
+    """Patch (N) counts in mkdocs.yml nav to match actual per-track paper counts."""
+    if not os.path.exists(MKDOCS_YML):
+        return
+    with open(MKDOCS_YML, encoding="utf-8") as f:
+        lines = f.readlines()
+
+    new_lines = []
+    i = 0
+    changed = False
+    while i < len(lines):
+        line = lines[i]
+        # Match nav section headers that contain a count: "  - 🔒 Label (N):"
+        # Handles both (4) and (30+) forms
+        m = re.match(r'^(\s*-\s+.+?)\s*\((\d+\+?)\):\s*$', line.rstrip('\n'))
+        if m:
+            prefix_indent = len(line) - len(line.lstrip())
+            # Scan forward to find the index.md sub-item (identifies the track dir)
+            track_dir = None
+            j = i + 1
+            while j < len(lines):
+                sub = lines[j].rstrip('\n')
+                if not sub.strip():
+                    j += 1
+                    continue
+                sub_indent = len(sub) - len(sub.lstrip())
+                if sub_indent <= prefix_indent:
+                    break  # exited the section
+                path_m = re.search(r':\s+(.+?/index\.md)\s*$', sub)
+                if path_m:
+                    track_dir = os.path.dirname(path_m.group(1)).replace("\\", "/")
+                    break
+                j += 1
+
+            if track_dir and track_dir in per_track_raw:
+                new_count = per_track_raw[track_dir]
+                new_line = re.sub(r'\(\d+\+?\):', f'({new_count}):', line)
+                if new_line != line:
+                    changed = True
+                new_lines.append(new_line)
+                i += 1
+                continue
+
+        new_lines.append(line)
+        i += 1
+
+    if changed:
+        with open(MKDOCS_YML, "w", encoding="utf-8") as f:
+            f.writelines(new_lines)
+        print("✅ mkdocs.yml nav counts updated")
+    else:
+        print("✅ mkdocs.yml nav counts unchanged")
 
 
 def generate():
@@ -167,6 +242,9 @@ def generate():
         lambda: {"count": 0, "by_conf": defaultdict(int), "papers": {}}
     )
     total_papers = 0
+    # Per-conference and per-track raw counts (ALL non-index .md files)
+    per_conf_raw = defaultdict(int)   # e.g. {"HPCA 2025": 19}
+    per_track_raw = defaultdict(int)  # e.g. {"HPCA/2025/fhe": 4}
 
     for root, dirs, files in os.walk(DOCS_DIR):
         # Skip non-content dirs
@@ -176,7 +254,17 @@ def generate():
                 continue
             fpath = os.path.join(root, fname)
             relpath = os.path.relpath(fpath, DOCS_DIR)
+            parts = relpath.replace("\\", "/").split("/")
             conf = conf_from_path(relpath)
+
+            # Always count every non-index .md as a paper (regardless of tags)
+            total_papers += 1
+            if len(parts) >= 2:
+                conf_key = f"{parts[0].upper()} {parts[1]}"
+                per_conf_raw[conf_key] += 1
+            if len(parts) >= 3:
+                track_key = "/".join(parts[:3])
+                per_track_raw[track_key] += 1
 
             with open(fpath, encoding="utf-8") as f:
                 content = f.read()
@@ -211,7 +299,6 @@ def generate():
                 "summary": paper_desc,
             }
 
-            total_papers += 1
             seen_tags = set()
             for raw in raw_tags:
                 en = normalize(raw.strip())
@@ -254,6 +341,46 @@ def generate():
     keywords.sort(key=lambda x: (-x["count"], x["text"]))
     keywords = keywords[:50]
 
+    # ── Build stats section ──────────────────────────────────────────────
+    # conferences_count: top-level conf dirs in docs/ (e.g. HPCA, ISCA, ...)
+    conf_dirs = [
+        d for d in os.listdir(DOCS_DIR)
+        if os.path.isdir(os.path.join(DOCS_DIR, d))
+        and d not in ("assets", "stylesheets", ".git", "site")
+    ]
+    conferences_count = len(conf_dirs)
+
+    # per_conf summary: total papers + track count per "CONF YEAR"
+    per_conf_stats = {}
+    for conf_key, total in sorted(per_conf_raw.items()):
+        # tracks = unique track dirs under this conf/year that have papers
+        prefix = conf_key.replace(" ", "/", 1).replace(" ", "/") + "/"
+        tracks_with_papers = {
+            k.split("/")[2]
+            for k in per_track_raw
+            if k.startswith(conf_key.replace(" ", "/", 1) + "/")
+        }
+        per_conf_stats[conf_key] = {
+            "total": total,
+            "tracks": len(tracks_with_papers),
+        }
+
+    # directions_count: unique canonical track names with papers
+    canonical_tracks = {
+        TRACK_CANONICAL.get(k.split("/")[2], k.split("/")[2])
+        for k in per_track_raw
+        if per_track_raw[k] > 0 and len(k.split("/")) >= 3
+    }
+    directions_count = len(canonical_tracks)
+
+    stats = {
+        "total_papers":       total_papers,
+        "conferences_count":  conferences_count,
+        "directions_count":   directions_count,
+        "per_conf":           per_conf_stats,
+        "per_track":          dict(per_track_raw),
+    }
+
     content_hash = compute_content_hash(total_papers, keywords)
     previous = None
     if os.path.exists(OUTPUT):
@@ -267,12 +394,14 @@ def generate():
         print(
             f"✅ word_data.json unchanged: {len(keywords)} keywords from {total_papers} papers"
         )
+        update_mkdocs_nav(per_track_raw)
         return previous
 
     data = {
         "updated":      datetime.now().strftime("%Y-%m-%d"),
         "content_hash": content_hash,
         "total_papers": total_papers,
+        "stats":        stats,
         "keywords":     keywords,
     }
 
@@ -281,6 +410,7 @@ def generate():
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     print(f"✅ word_data.json updated: {len(keywords)} keywords from {total_papers} papers")
+    update_mkdocs_nav(per_track_raw)
     return data
 
 

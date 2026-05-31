@@ -254,7 +254,7 @@ nav:
         - LightNobel: ISCA/2025/domain_specific/lightnobel.md
         - MD-pipe: ISCA/2025/domain_specific/md_pipe.md
         - InfiniMind: ISCA/2025/domain_specific/infinimind.md
-      - ⚙️ 系统与微架构 (30+):
+      - ⚙️ 系统与微架构 (44):
         - 系统与微架构: ISCA/2025/systems/index.md
         - XOR Cache: ISCA/2025/systems/xor_cache.md
         - H2-LLM: ISCA/2025/systems/h2_llm.md

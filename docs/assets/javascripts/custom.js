@@ -53,9 +53,12 @@
     btn.title = "Return to Homepage";
     btn.setAttribute("aria-label", "Homepage");
     btn.innerHTML =
-      '<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">' +
-      '<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>' +
-      '<span>Home</span>';
+      '<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">' +
+      '<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>';
+    // btn.innerHTML =
+    //   '<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">' +
+    //   '<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>' +
+    //   '<span>Home</span>';
 
     title.after(btn);
   }
@@ -95,7 +98,7 @@
     if (!inp || inp._phInit) return;
     inp._phInit = true;
 
-    inp.placeholder = "Search papers…";
+    inp.placeholder = "Search papers";
 
     var form = document.querySelector(".md-search__form");
     if (!form) return;
@@ -419,7 +422,63 @@
   }
 
   /* ───────────────────────────────────────────────────────────
-     5. VISIT MAP
+     5. HERO STATS  (read from word_data.json, update homepage)
+  ─────────────────────────────────────────────────────────── */
+  function initHeroStats() {
+    // Stat numbers (data-stat-key="papers|conferences|directions")
+    var statEls = document.querySelectorAll("[data-stat-key]");
+    // Conf-count divs (data-conf-key="HPCA 2025" etc.)
+    var confEls = document.querySelectorAll("[data-conf-key]");
+    // Area-tags (data-track-key="HPCA/2025/fhe" etc.)
+    var trackEls = document.querySelectorAll("[data-track-key]");
+
+    if (!statEls.length && !confEls.length && !trackEls.length) return;
+
+    loadWCD().then(function (data) {
+      var stats = data.stats || {};
+
+      // Hero stats
+      statEls.forEach(function (el) {
+        var key = el.getAttribute("data-stat-key");
+        if (key === "papers" && stats.total_papers != null) {
+          el.textContent = stats.total_papers;
+        } else if (key === "conferences" && stats.conferences_count != null) {
+          el.textContent = stats.conferences_count;
+        } else if (key === "directions" && stats.directions_count != null) {
+          el.textContent = stats.directions_count;
+        }
+      });
+
+      // Conf-card counts (e.g. "19 篇 · 6 个方向 · Las Vegas, NV, USA")
+      if (stats.per_conf) {
+        confEls.forEach(function (el) {
+          var key = el.getAttribute("data-conf-key");
+          var location = el.getAttribute("data-conf-location") || "";
+          var info = stats.per_conf[key];
+          if (info) {
+            el.textContent =
+              info.total + " 篇 · " + info.tracks + " 个方向" +
+              (location ? " · " + location : "");
+          }
+        });
+      }
+
+      // Area-tag counts (e.g. "同态加密 4")
+      if (stats.per_track) {
+        trackEls.forEach(function (el) {
+          var key = el.getAttribute("data-track-key");
+          var label = el.getAttribute("data-track-label") || "";
+          var count = stats.per_track[key];
+          if (count != null) {
+            el.textContent = label + " " + count;
+          }
+        });
+      }
+    }).catch(function () {});
+  }
+
+  /* ───────────────────────────────────────────────────────────
+     6. VISIT MAP
   ─────────────────────────────────────────────────────────── */
   var _MMV_SRC = "//mapmyvisitors.com/map.js?d=VK6_Uhjas4vA0CDps3EFeB0Fotb8hU50SYT4Fcq5nUI&cl=ffffff&w=a";
 
@@ -442,12 +501,13 @@
   }
 
   /* ───────────────────────────────────────────────────────────
-     6. BOOT
+     7. BOOT
   ─────────────────────────────────────────────────────────── */
 
   function reinit() {
     initHomeBtn();
     initSearch();
+    initHeroStats();
     if (document.getElementById("wordcloud-canvas")) {
       // Reset per-render state so the new canvas draws fresh
       _lastData = null;
@@ -460,6 +520,7 @@
   function boot() {
     initHomeBtn();
     initSearch();
+    initHeroStats();
     loadWCD().catch(function () {});
     if (document.getElementById("wordcloud-canvas")) initWordCloud();
     // map.js <script> is statically embedded in index.md and self-initialises.
