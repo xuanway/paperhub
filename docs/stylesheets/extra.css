@@ -198,19 +198,32 @@
 }
 
 .hero .github-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin-top: 0.8rem;
   padding: 0.45rem 1.4rem;
   border-radius: 2rem;
-  background: var(--md-accent-fg-color);
+  background: #24292e;
   color: #fff !important;
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none !important;
-  transition: opacity 0.2s;
+  transition: background 0.2s, opacity 0.2s;
+  gap: 0.4rem;
+}
+.hero .github-link svg {
+  flex-shrink: 0;
 }
 .hero .github-link:hover {
-  opacity: 0.85;
+  background: #1a1f24;
+  opacity: 1;
+}
+
+[data-md-color-scheme="slate"] .hero .github-link {
+  background: #30363d;
+}
+[data-md-color-scheme="slate"] .hero .github-link:hover {
+  background: #3c434b;
 }
 
 /* ── Sidebar: highlight the currently opened note/page ── */

@@ -24,18 +24,45 @@ hide:
 <p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · NeurIPS · ICML 等顶级会议<br>持续更新中</p>
 
 <div class="hero-stats">
-<div class="stat"><span class="stat-number">35+</span><span class="stat-label">篇笔记</span></div>
+<div class="stat"><span class="stat-number">54+</span><span class="stat-label">篇笔记</span></div>
 <div class="stat"><span class="stat-number">7</span><span class="stat-label">个会议</span></div>
 <div class="stat"><span class="stat-number">8</span><span class="stat-label">个研究方向</span></div>
 </div>
 
-<a class="github-link" href="https://github.com/xuanway/paperhub" target="_blank">⭐ Star on GitHub</a>
+<a class="github-link" href="https://github.com/xuanway/paperhub" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" style="vertical-align:middle;margin-right:6px;fill:currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a>
 
 </div>
 
 ---
 
 <div class="conf-grid" markdown>
+
+<div class="conf-card" markdown>
+
+### ⚡ [HPCA 2025](HPCA/2025/index.md)
+
+<div class="conf-count">19 篇 · 6 个方向 · Las Vegas, NV, USA</div>
+
+<div class="area-groups">
+<div class="area-group">
+<div class="area-group-label">安全与可信</div>
+<div class="area-tags">
+<a class="area-tag" href="HPCA/2025/fhe/">同态加密 4</a>
+<a class="area-tag" href="HPCA/2025/security/">硬件安全 3</a>
+<a class="area-tag" href="HPCA/2025/memory/">内存安全 3</a>
+</div>
+</div>
+<div class="area-group">
+<div class="area-group-label">高效计算</div>
+<div class="area-tags">
+<a class="area-tag" href="HPCA/2025/pim/">存内计算 3</a>
+<a class="area-tag" href="HPCA/2025/llm_inference/">LLM推理 3</a>
+<a class="area-tag" href="HPCA/2025/quantum/">量子计算 3</a>
+</div>
+</div>
+</div>
+
+</div>
 
 <div class="conf-card" markdown>
 

@@ -2,7 +2,7 @@ site_name: 可信高效计算论文
 site_description: "MICRO·ISCA·HPCA·ASPLOS·DAC·NeurIPS·ICML 顶会论文解读 | 聚焦可信高效计算 | 2025/2026年"
 site_url: https://xuanway.github.io/paperhub/
 repo_url: https://github.com/xuanway/paperhub
-repo_name: Star on GitHub
+repo_name: GitHub
 docs_dir: docs
 site_dir: site
 
@@ -13,6 +13,7 @@ theme:
   favicon: assets/favicon.svg
   icon:
     logo: material/book-open-variant
+    repo: fontawesome/brands/github
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -29,14 +30,14 @@ theme:
       accent: deep purple
       toggle:
         icon: material/weather-sunny
-        name: 切换暗色模式
+        name: Switch to Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: deep purple
       toggle:
         icon: material/weather-night
-        name: 切换亮色模式
+        name: Switch to Light Mode
   font:
     text: Noto Sans SC
     code: JetBrains Mono
@@ -70,6 +71,39 @@ markdown_extensions:
 nav:
   - 🏠 首页: index.md
   - ⚡ HPCA:
+    - HPCA 2025:
+      - HPCA 2025: HPCA/2025/index.md
+      - 🔒 同态加密 (4):
+        - 同态加密加速: HPCA/2025/fhe/index.md
+        - FHENDI: HPCA/2025/fhe/fhendi.md
+        - EFFACT: HPCA/2025/fhe/effact.md
+        - Anaheim: HPCA/2025/fhe/anaheim.md
+        - WarpDrive: HPCA/2025/fhe/warpdrive.md
+      - 🔐 硬件安全 (3):
+        - 硬件安全: HPCA/2025/security/index.md
+        - Palermo: HPCA/2025/security/palermo.md
+        - SpecMPK: HPCA/2025/security/specmpk.md
+        - BrokenSleep: HPCA/2025/security/brokensleep.md
+      - 💾 内存安全 (3):
+        - 内存安全与Rowhammer: HPCA/2025/memory/index.md
+        - Variable RD: HPCA/2025/memory/variable_rd.md
+        - Chronus: HPCA/2025/memory/chronus.md
+        - QPRAC: HPCA/2025/memory/qprac.md
+      - 🔮 存内计算 (3):
+        - 存内计算 PIM: HPCA/2025/pim/index.md
+        - AsyncDIMM: HPCA/2025/pim/asyncdimm.md
+        - FACIL: HPCA/2025/pim/facil.md
+        - PAISE: HPCA/2025/pim/paise.md
+      - 🤖 LLM推理 (3):
+        - LLM推理加速: HPCA/2025/llm_inference/index.md
+        - DynamoLLM: HPCA/2025/llm_inference/dynamollm.md
+        - Anda: HPCA/2025/llm_inference/anda.md
+        - InstAttention: HPCA/2025/llm_inference/instattention.md
+      - ⚛️ 量子计算 (3):
+        - 量子计算体系结构: HPCA/2025/quantum/index.md
+        - HATT: HPCA/2025/quantum/hatt.md
+        - QuCLEAR: HPCA/2025/quantum/quclear.md
+        - LSQCA: HPCA/2025/quantum/lsqca.md
     - HPCA 2026:
       - HPCA 2026: HPCA/2026/index.md
       - 🔐 硬件安全 (3):
