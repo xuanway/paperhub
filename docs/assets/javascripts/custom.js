@@ -91,6 +91,26 @@
     drop.setAttribute("aria-label", "Trending keywords");
     form.appendChild(drop);
 
+    function showSuggestions() {
+      if (inp.value.trim()) {
+        drop.style.display = "none";
+        return;
+      }
+
+      if (_wcd) {
+        populate(_wcd.keywords);
+        return;
+      }
+
+      drop.innerHTML = '<div class="ph-sdrop-hd">Loading\u2026</div>';
+      drop.style.display = "block";
+      loadWCD()
+        .then(function (d) {
+          if (document.activeElement === inp && !inp.value.trim()) populate(d.keywords);
+        })
+        .catch(function () { drop.style.display = "none"; });
+    }
+
     function populate(keywords) {
       var html = '<div class="ph-sdrop-hd">&#x1F525; Trending Keywords</div>';
       keywords.slice(0, 10).forEach(function (kw) {
@@ -114,22 +134,19 @@
       drop.style.display = "block";
     }
 
-    inp.addEventListener("focus", function () {
-      if (inp.value.trim()) return;
-      if (_wcd) {
-        populate(_wcd.keywords);
-      } else {
-        drop.innerHTML = '<div class="ph-sdrop-hd">Loading\u2026</div>';
-        drop.style.display = "block";
-        loadWCD()
-          .then(function (d) {
-            if (document.activeElement === inp && !inp.value.trim()) populate(d.keywords);
-          })
-          .catch(function () { drop.style.display = "none"; });
-      }
+    inp.addEventListener("focus", showSuggestions);
+    inp.addEventListener("click", showSuggestions);
+    form.addEventListener("focusin", function (e) {
+      if (e.target === inp) showSuggestions();
     });
 
-    inp.addEventListener("input", function () { drop.style.display = "none"; });
+    inp.addEventListener("input", function () {
+      if (inp.value.trim()) {
+        drop.style.display = "none";
+      } else if (document.activeElement === inp) {
+        showSuggestions();
+      }
+    });
     inp.addEventListener("keydown", function (e) { if (e.key === "Escape") drop.style.display = "none"; });
     document.addEventListener("click", function (e) {
       if (!form.contains(e.target)) drop.style.display = "none";
