@@ -1,70 +1,125 @@
 {% extends "base.html" %}
 
-{% block announce %}
-<nav class="ph-conf-strip" aria-label="Conference navigation">
-  <div class="ph-conf-strip__inner">
+{% block announce %}{% endblock %}
 
-    {# ── Home link ── #}
-    <a class="ph-home-link" href="{{ config.site_url or '/' }}" title="Return to Homepage">
-      <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-      Homepage
+{# ── Left-side hidden conference drawer ── #}
+{% block content %}
+<!-- Drawer toggle button (fixed left edge) -->
+<button class="ph-drawer-toggle" id="ph-drawer-toggle" aria-label="会议导航" aria-expanded="false" aria-controls="ph-drawer">
+  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+  </svg>
+  <span class="ph-drawer-toggle__label">会议</span>
+</button>
+
+<!-- Drawer overlay -->
+<div class="ph-drawer-overlay" id="ph-drawer-overlay" aria-hidden="true"></div>
+
+<!-- Drawer panel -->
+<nav class="ph-drawer" id="ph-drawer" aria-label="会议导航菜单" aria-hidden="true">
+  <div class="ph-drawer__header">
+    <span class="ph-drawer__title">🗂️ 顶会导航</span>
+    <button class="ph-drawer__close" id="ph-drawer-close" aria-label="关闭导航">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+  </div>
+
+  <div class="ph-drawer__body">
+
+    <a class="ph-drawer__home" href="{{ config.site_url or '/' }}">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      首页
     </a>
 
-    <span class="ph-strip-div" aria-hidden="true"></span>
+    <div class="ph-drawer__section">
+      <div class="ph-drawer__section-label">体系结构</div>
 
-    {# ── HPCA: 2025(19) | 2026(15) ── #}
-    <span class="ph-conf-item">
-      <span class="ph-conf-nm">⚡ HPCA</span>
-      <span class="ph-conf-parens"
-        >(<a class="ph-yr" href="{{ config.site_url or '/' }}HPCA/2025/">2025<span class="ph-n">(19)</span></a
-        ><span class="ph-pipe"> | </span
-        ><a class="ph-yr" href="{{ config.site_url or '/' }}HPCA/2026/">2026<span class="ph-n">(15)</span></a>)</span>
-    </span>
+      <div class="ph-drawer__conf">
+        <span class="ph-drawer__conf-name">⚡ HPCA</span>
+        <div class="ph-drawer__years">
+          <a href="{{ config.site_url or '/' }}HPCA/2025/">2025 <span class="ph-drawer__n">(19)</span></a>
+          <a href="{{ config.site_url or '/' }}HPCA/2026/">2026 <span class="ph-drawer__n">(15)</span></a>
+        </div>
+      </div>
 
-    {# ── ISCA ── #}
-    <span class="ph-conf-item">
-      <span class="ph-conf-nm">🏗️ ISCA</span>
-      <span class="ph-conf-parens"
-        >(<a class="ph-yr" href="{{ config.site_url or '/' }}ISCA/2025/">2025<span class="ph-n">(8)</span></a>)</span>
-    </span>
+      <div class="ph-drawer__conf">
+        <span class="ph-drawer__conf-name">🏗️ ISCA</span>
+        <div class="ph-drawer__years">
+          <a href="{{ config.site_url or '/' }}ISCA/2025/">2025 <span class="ph-drawer__n">(8)</span></a>
+        </div>
+      </div>
 
-    {# ── MICRO ── #}
-    <span class="ph-conf-item">
-      <span class="ph-conf-nm">🔬 MICRO</span>
-      <span class="ph-conf-parens"
-        >(<a class="ph-yr" href="{{ config.site_url or '/' }}MICRO/2025/">2025</a>)</span>
-    </span>
+      <div class="ph-drawer__conf">
+        <span class="ph-drawer__conf-name">🔬 MICRO</span>
+        <div class="ph-drawer__years">
+          <a href="{{ config.site_url or '/' }}MICRO/2025/">2025</a>
+        </div>
+      </div>
 
-    {# ── ASPLOS ── #}
-    <span class="ph-conf-item">
-      <span class="ph-conf-nm">🔄 ASPLOS</span>
-      <span class="ph-conf-parens"
-        >(<a class="ph-yr" href="{{ config.site_url or '/' }}ASPLOS/2025/">2025</a>)</span>
-    </span>
+      <div class="ph-drawer__conf">
+        <span class="ph-drawer__conf-name">🔄 ASPLOS</span>
+        <div class="ph-drawer__years">
+          <a href="{{ config.site_url or '/' }}ASPLOS/2025/">2025</a>
+        </div>
+      </div>
 
-    {# ── DAC ── #}
-    <span class="ph-conf-item">
-      <span class="ph-conf-nm">🛠️ DAC</span>
-      <span class="ph-conf-parens"
-        >(<a class="ph-yr" href="{{ config.site_url or '/' }}DAC/2025/">2025</a>)</span>
-    </span>
+      <div class="ph-drawer__conf">
+        <span class="ph-drawer__conf-name">🛠️ DAC</span>
+        <div class="ph-drawer__years">
+          <a href="{{ config.site_url or '/' }}DAC/2025/">2025</a>
+        </div>
+      </div>
+    </div>
 
-    {# ── NeurIPS ── #}
-    <span class="ph-conf-item">
-      <span class="ph-conf-nm">🧠 NeurIPS</span>
-      <span class="ph-conf-parens"
-        >(<a class="ph-yr" href="{{ config.site_url or '/' }}NeurIPS/2025/">2025</a>)</span>
-    </span>
+    <div class="ph-drawer__section">
+      <div class="ph-drawer__section-label">机器学习</div>
 
-    {# ── ICML ── #}
-    <span class="ph-conf-item">
-      <span class="ph-conf-nm">📈 ICML</span>
-      <span class="ph-conf-parens"
-        >(<a class="ph-yr" href="{{ config.site_url or '/' }}ICML/2025/">2025</a>)</span>
-    </span>
+      <div class="ph-drawer__conf">
+        <span class="ph-drawer__conf-name">🧠 NeurIPS</span>
+        <div class="ph-drawer__years">
+          <a href="{{ config.site_url or '/' }}NeurIPS/2025/">2025</a>
+        </div>
+      </div>
+
+      <div class="ph-drawer__conf">
+        <span class="ph-drawer__conf-name">📈 ICML</span>
+        <div class="ph-drawer__years">
+          <a href="{{ config.site_url or '/' }}ICML/2025/">2025</a>
+        </div>
+      </div>
+    </div>
 
   </div>
 </nav>
+
+<script>
+(function(){
+  var toggle = document.getElementById('ph-drawer-toggle');
+  var drawer = document.getElementById('ph-drawer');
+  var overlay = document.getElementById('ph-drawer-overlay');
+  var closeBtn = document.getElementById('ph-drawer-close');
+  function open(){
+    drawer.classList.add('ph-drawer--open');
+    overlay.classList.add('ph-drawer-overlay--show');
+    toggle.setAttribute('aria-expanded','true');
+    drawer.setAttribute('aria-hidden','false');
+    overlay.setAttribute('aria-hidden','false');
+  }
+  function close(){
+    drawer.classList.remove('ph-drawer--open');
+    overlay.classList.remove('ph-drawer-overlay--show');
+    toggle.setAttribute('aria-expanded','false');
+    drawer.setAttribute('aria-hidden','true');
+    overlay.setAttribute('aria-hidden','true');
+  }
+  toggle.addEventListener('click', function(){ drawer.classList.contains('ph-drawer--open') ? close() : open(); });
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+})();
+</script>
+
+{{ super() }}
 {% endblock %}
 
 {% block htmltitle %}
