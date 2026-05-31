@@ -829,16 +829,7 @@
 /* Homepage pageviews badge */
 .homepage-pageviews {
   margin: 1.8rem auto 0.4rem;
-  max-width: 720px;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(102, 51, 153, 0.18);
-  box-shadow: 0 4px 24px rgba(45, 10, 80, 0.10);
-}
-
-[data-md-color-scheme="slate"] .homepage-pageviews {
-  border-color: rgba(151, 117, 205, 0.22);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  width: 100%;
 }
 
 .homepage-pageviews__header {
@@ -936,7 +927,6 @@
   .homepage-pageviews {
     margin-left: 0;
     margin-right: 0;
-    border-radius: 10px;
   }
 
   .homepage-pageviews__globe {
