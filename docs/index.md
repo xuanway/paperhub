@@ -91,14 +91,6 @@ hide:
 
 ---
 
-<div class="homepage-pageviews">
-  <div class="homepage-pageviews__title">Pageviews</div>
-  <div class="homepage-pageviews__subtitle">Track homepage visits with a lightweight public counter.</div>
-  <a class="homepage-pageviews__badge" href="https://hits.sh/xuanway.github.io/paperhub/" target="_blank" rel="noopener noreferrer" aria-label="PaperHub Pageviews">
-    <img src="https://hits.sh/xuanway.github.io/paperhub.svg?style=for-the-badge&amp;label=Pageviews&amp;labelColor=2f2248&amp;color=8a63d2&amp;view=today-total" alt="PaperHub pageviews counter" loading="lazy">
-  </a>
-</div>
-
 <div class="conf-card" markdown>
 
 ### ⚡ [HPCA 2026](HPCA/2026/index.md)
@@ -226,4 +218,14 @@ hide:
 
 </div>
 
+</div>
+
+---
+
+<div class="homepage-pageviews">
+  <div class="homepage-pageviews__title">📊 Pageviews</div>
+  <div class="homepage-pageviews__subtitle">记录每位访客的到来 · Today / Total</div>
+  <a class="homepage-pageviews__badge" href="https://hits.sh/xuanway.github.io/paperhub/" target="_blank" rel="noopener noreferrer" aria-label="PaperHub Pageviews">
+    <img src="https://hits.sh/xuanway.github.io/paperhub.svg?style=for-the-badge&label=Pageviews&labelColor=2f2248&color=8a63d2&view=today-total" alt="PaperHub pageviews counter" loading="lazy">
+  </a>
 </div>
