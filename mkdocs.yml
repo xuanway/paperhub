@@ -1,5 +1,5 @@
-site_name: 📚 AI Paper Notes
-site_description: 顶会论文笔记 | 覆盖 ICLR/CVPR/ACL/NeurIPS/AAAI 等顶级会议 | 每篇 5 分钟读懂核心思想
+site_name: 可信高效计算论文
+site_description: "MICRO·ISCA·HPCA·ASPLOS·DAC·NeurIPS·ICML 顶会论文解读 | 聚焦可信高效计算 | 2025/2026年"
 site_url: https://xuanway.github.io/paperhub/
 repo_url: https://github.com/xuanway/paperhub
 repo_name: Star on GitHub
@@ -32,7 +32,7 @@ theme:
         name: 切换暗色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: custom
       accent: deep purple
       toggle:
         icon: material/weather-night
@@ -69,34 +69,56 @@ markdown_extensions:
 
 nav:
   - 🏠 首页: index.md
-  - 🔬 ICLR 2025:
-    - ICLR 2025: ICLR2025/index.md
-    - 💡 LLM 推理 (3):
-      - 💡 LLM 推理: ICLR2025/llm_reasoning/index.md
-      - DeepSeek-R1: ICLR2025/llm_reasoning/deepseek_r1.md
-      - Chain of Thought Prompting: ICLR2025/llm_reasoning/chain_of_thought.md
-      - Let's Verify Step by Step: ICLR2025/llm_reasoning/lets_verify_step_by_step.md
-    - 🧩 多模态 VLM (2):
-      - 🧩 多模态 VLM: ICLR2025/multimodal_vlm/index.md
-      - LLaVA-1.5: ICLR2025/multimodal_vlm/llava_1_5.md
-      - InternVL: ICLR2025/multimodal_vlm/internvl.md
-    - 🔒 LLM 安全 (2):
-      - 🔒 LLM 安全: ICLR2025/llm_safety/index.md
-      - Constitutional AI: ICLR2025/llm_safety/constitutional_ai.md
-      - Safety via Debate: ICLR2025/llm_safety/safety_via_debate.md
-  - 📷 CVPR 2025:
-    - CVPR 2025: CVPR2025/index.md
-    - 🎨 图像生成 (2):
-      - 🎨 图像生成: CVPR2025/image_generation/index.md
-      - DiT: CVPR2025/image_generation/dit.md
-      - ControlNet: CVPR2025/image_generation/controlnet.md
-    - 🧊 3D 视觉 (2):
-      - 🧊 3D 视觉: CVPR2025/3d_vision/index.md
-      - NeRF: CVPR2025/3d_vision/nerf.md
-      - Gaussian Splatting: CVPR2025/3d_vision/gaussian_splatting.md
-  - 💬 ACL 2025:
-    - ACL 2025: ACL2025/index.md
-    - 💬 LLM/NLP (2):
-      - 💬 LLM/NLP: ACL2025/llm_nlp/index.md
-      - GPT-4 Technical Report: ACL2025/llm_nlp/gpt4_technical_report.md
-      - Llama 2: ACL2025/llm_nlp/llama2.md
+  - ⚡ HPCA:
+    - HPCA 2026:
+      - HPCA 2026: HPCA/2026/index.md
+      - 🔐 硬件安全 (3):
+        - 硬件安全: HPCA/2026/security/index.md
+        - DSASSASSIN: HPCA/2026/security/dsassassin.md
+        - SSBleed: HPCA/2026/security/ssbleed.md
+        - Protean: HPCA/2026/security/protean.md
+      - 🤖 LLM推理 (3):
+        - LLM推理加速: HPCA/2026/llm_inference/index.md
+        - Focus: HPCA/2026/llm_inference/focus.md
+        - ELORA: HPCA/2026/llm_inference/elora.md
+        - PASCAL: HPCA/2026/llm_inference/pascal.md
+      - 💾 内存安全 (3):
+        - 内存安全与可靠性: HPCA/2026/memory/index.md
+        - MIRZA: HPCA/2026/memory/mirza.md
+        - SALT: HPCA/2026/memory/salt.md
+        - ReScue: HPCA/2026/memory/rescue.md
+      - 🔮 存内计算 (2):
+        - 存内计算 PIM: HPCA/2026/pim/index.md
+        - PIMphony: HPCA/2026/pim/pimphony.md
+        - AQPIM: HPCA/2026/pim/aqpim.md
+      - 🔒 同态加密 (2):
+        - 同态加密加速: HPCA/2026/fhe/index.md
+        - UniFHE: HPCA/2026/fhe/unifhe.md
+        - Peregrine: HPCA/2026/fhe/peregrine.md
+      - ⚛️ 量子计算 (2):
+        - 量子计算体系结构: HPCA/2026/quantum/index.md
+        - Cyclone: HPCA/2026/quantum/cyclone.md
+        - d'ArQ: HPCA/2026/quantum/darq.md
+  - 🏗️ ISCA:
+    - ISCA 2025:
+      - ISCA 2025: ISCA/2025/index.md
+      - 🤖 ML加速器 (4):
+        - ML加速器: ISCA/2025/ml_accelerator/index.md
+        - WSC-LLM: ISCA/2025/ml_accelerator/wsc_llm.md
+        - LightML: ISCA/2025/ml_accelerator/lighttml.md
+        - FRED: ISCA/2025/ml_accelerator/fred.md
+        - PD-Constraint NW: ISCA/2025/ml_accelerator/pd_network.md
+      - 🔒 密码与FHE:
+        - 密码与FHE: ISCA/2025/crypto_fhe/index.md
+      - 💾 内存与Rowhammer:
+        - 内存与Rowhammer: ISCA/2025/memory/index.md
+  - 🔬 MICRO:
+    - MICRO 2025: MICRO/2025/index.md
+  - 🔄 ASPLOS:
+    - ASPLOS 2025: ASPLOS/2025/index.md
+  - 🛠️ DAC:
+    - DAC 2025: DAC/2025/index.md
+  - 🧠 NeurIPS:
+    - NeurIPS 2025: NeurIPS/2025/index.md
+  - 📈 ICML:
+    - ICML 2025: ICML/2025/index.md

@@ -11,18 +11,21 @@
   opacity: 0.8;
 }
 
-/* ── Light mode: custom dark header ── */
+/* ── Light mode: purple theme RGB(102,51,153) ── */
 :root,
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #2b2d42;
-  --md-primary-fg-color--light: #3d3f5c;
-  --md-primary-fg-color--dark: #1a1b2e;
-  --md-accent-fg-color: #7c4dff;
+  --md-primary-fg-color: #663399;
+  --md-primary-fg-color--light: #7e45b0;
+  --md-primary-fg-color--dark: #4d2673;
+  --md-accent-fg-color: #9b59d0;
 }
 
-/* ── Dark mode: let Material handle it, only tweak accent ── */
+/* ── Dark mode: purple theme ── */
 [data-md-color-scheme="slate"] {
-  --md-accent-fg-color: #a78bfa;
+  --md-primary-fg-color: #663399;
+  --md-primary-fg-color--light: #7e45b0;
+  --md-primary-fg-color--dark: #4d2673;
+  --md-accent-fg-color: #b07fe0;
 }
 
 /* ── Homepage cards ── */
