@@ -143,16 +143,163 @@ nav:
   - 🏗️ ISCA:
     - ISCA 2025:
       - ISCA 2025: ISCA/2025/index.md
-      - 🤖 ML加速器 (4):
+      - 🤖 ML加速器 (20):
         - ML加速器: ISCA/2025/ml_accelerator/index.md
         - WSC-LLM: ISCA/2025/ml_accelerator/wsc_llm.md
         - LightML: ISCA/2025/ml_accelerator/lighttml.md
         - FRED: ISCA/2025/ml_accelerator/fred.md
         - PD-Constraint NW: ISCA/2025/ml_accelerator/pd_network.md
-      - 🔒 密码与FHE:
+        - Single-Spike SNN: ISCA/2025/ml_accelerator/single_spike_snn.md
+        - Phi SNN: ISCA/2025/ml_accelerator/phi_snn.md
+        - Bishop: ISCA/2025/ml_accelerator/bishop.md
+        - Hermes RAG: ISCA/2025/ml_accelerator/hermes_rag.md
+        - RAGO: ISCA/2025/ml_accelerator/rago.md
+        - Transitive Array: ISCA/2025/ml_accelerator/transitive_array.md
+        - MicroScopiQ: ISCA/2025/ml_accelerator/microscopiq.md
+        - Topology-Aware NPU: ISCA/2025/ml_accelerator/topology_npu.md
+        - Chip Sanctions: ISCA/2025/ml_accelerator/chip_sanctions.md
+        - DiTile-DGNN: ISCA/2025/ml_accelerator/ditile_dgnn.md
+        - Cambricon-SR: ISCA/2025/ml_accelerator/cambricon_sr.md
+        - FATE: ISCA/2025/ml_accelerator/fate.md
+        - Reconfigurable Stream: ISCA/2025/ml_accelerator/reconfigurable_stream.md
+        - DS-TPU: ISCA/2025/ml_accelerator/ds_tpu.md
+        - TRACI: ISCA/2025/ml_accelerator/traci.md
+        - FlexNeRFer: ISCA/2025/ml_accelerator/flexnerfer.md
+      - 🚀 LLM推理 (6):
+        - LLM推理: ISCA/2025/llm/index.md
+        - SpecEE: ISCA/2025/llm/specee.md
+        - Oaken: ISCA/2025/llm/oaken.md
+        - Chimera: ISCA/2025/llm/chimera.md
+        - LUT-TC: ISCA/2025/llm/lut_tc.md
+        - AIF: ISCA/2025/llm/aif.md
+        - LIA: ISCA/2025/llm/lia.md
+      - 🔮 存内计算 (10):
+        - 存内计算: ISCA/2025/pim/index.md
+        - AIM: ISCA/2025/pim/aim.md
+        - OptiPIM: ISCA/2025/pim/optipim.md
+        - HeterRAG: ISCA/2025/pim/heterrag.md
+        - ATiM: ISCA/2025/pim/atim.md
+        - ANSMET: ISCA/2025/pim/ansmet.md
+        - DReX: ISCA/2025/pim/drex.md
+        - EOD: ISCA/2025/pim/eod.md
+        - RAP: ISCA/2025/pim/rap.md
+        - Hybrid RRAM: ISCA/2025/pim/hybrid_rram.md
+        - REIS: ISCA/2025/pim/reis.md
+      - ⚛️ 量子计算 (16):
+        - 量子计算: ISCA/2025/quantum/index.md
+        - HW Calibration: ISCA/2025/quantum/hw_calibration.md
+        - Constant-Rate Entangle: ISCA/2025/quantum/constant_rate_entangle.md
+        - SSYNC: ISCA/2025/quantum/ssync.md
+        - Artery: ISCA/2025/quantum/artery.md
+        - QTenon: ISCA/2025/quantum/qtenon.md
+        - Sync FTQC: ISCA/2025/quantum/sync_ftqc.md
+        - Swiper: ISCA/2025/quantum/swiper.md
+        - CaliQEC: ISCA/2025/quantum/caliqec.md
+        - Variational QA: ISCA/2025/quantum/variational_qa.md
+        - Transversal: ISCA/2025/quantum/transversal.md
+        - SwitchQNet: ISCA/2025/quantum/switchqnet.md
+        - QCircuit Noise: ISCA/2025/quantum/qcircuit_noise.md
+        - QPlacer: ISCA/2025/quantum/qplacer.md
+        - QR-Map: ISCA/2025/quantum/qr_map.md
+        - Genesis: ISCA/2025/quantum/genesis.md
+        - RL Graph State: ISCA/2025/quantum/rl_graph_state.md
+      - 💾 内存安全与技术 (8):
+        - 内存安全与技术: ISCA/2025/memory/index.md
+        - MoPAC: ISCA/2025/memory/mopac.md
+        - Mitigations Backfire: ISCA/2025/memory/mitigations_backfire.md
+        - PUDHammer: ISCA/2025/memory/pudhammer.md
+        - DREAM: ISCA/2025/memory/dream.md
+        - MAGICache: ISCA/2025/memory/magicache.md
+        - Folded Banks: ISCA/2025/memory/folded_banks.md
+        - NMP-PAK: ISCA/2025/memory/nmp_pak.md
+        - BingoGCN: ISCA/2025/memory/bingogcn.md
+      - 🔒 密码与FHE (4):
         - 密码与FHE: ISCA/2025/crypto_fhe/index.md
-      - 💾 内存与Rowhammer:
-        - 内存与Rowhammer: ISCA/2025/memory/index.md
+        - Finesse: ISCA/2025/crypto_fhe/finesse.md
+        - Cassandra: ISCA/2025/crypto_fhe/cassandra.md
+        - FAST: ISCA/2025/crypto_fhe/fast.md
+        - Neo: ISCA/2025/crypto_fhe/neo.md
+      - 🔐 硬件安全 (4):
+        - 硬件安全: ISCA/2025/security/index.md
+        - zkSpeed: ISCA/2025/security/zkspeed.md
+        - Adaptive CHERI: ISCA/2025/security/adaptive_cheri.md
+        - Unified Mem Prot: ISCA/2025/security/unified_mem_prot.md
+        - SpecASan: ISCA/2025/security/specasan.md
+      - 🎮 GPU与光线追踪 (4):
+        - GPU与光线追踪: ISCA/2025/gpu/index.md
+        - Heliostat: ISCA/2025/gpu/heliostat.md
+        - Forest: ISCA/2025/gpu/forest.md
+        - Avant-Garde: ISCA/2025/gpu/avant_garde.md
+        - CoopRT: ISCA/2025/gpu/cooprt.md
+      - 💽 存储系统 (5):
+        - 存储系统: ISCA/2025/storage/index.md
+        - ANVIL: ISCA/2025/storage/anvil.md
+        - ArtMem: ISCA/2025/storage/artmem.md
+        - UPP: ISCA/2025/storage/upp.md
+        - XHarvest: ISCA/2025/storage/xharvest.md
+        - RAG In-Storage: ISCA/2025/storage/rag_storage.md
+      - 🔧 领域专用加速器 (14):
+        - 领域专用加速器: ISCA/2025/domain_specific/index.md
+        - HiPER: ISCA/2025/domain_specific/hiper.md
+        - Dadu-Corki: ISCA/2025/domain_specific/dadu_corki.md
+        - Foveated VR: ISCA/2025/domain_specific/foveated_vr.md
+        - RTSpMSpM: ISCA/2025/domain_specific/rtspmspm.md
+        - AQB8: ISCA/2025/domain_specific/aqb8.md
+        - HYTE: ISCA/2025/domain_specific/hyte.md
+        - NUPEA: ISCA/2025/domain_specific/nupea.md
+        - DX100: ISCA/2025/domain_specific/dx100.md
+        - SEAL: ISCA/2025/domain_specific/seal.md
+        - IDEA-GP: ISCA/2025/domain_specific/idea_gp.md
+        - Lumina: ISCA/2025/domain_specific/lumina.md
+        - LightNobel: ISCA/2025/domain_specific/lightnobel.md
+        - MD-pipe: ISCA/2025/domain_specific/md_pipe.md
+        - InfiniMind: ISCA/2025/domain_specific/infinimind.md
+      - ⚙️ 系统与微架构 (30+):
+        - 系统与微架构: ISCA/2025/systems/index.md
+        - XOR Cache: ISCA/2025/systems/xor_cache.md
+        - H2-LLM: ISCA/2025/systems/h2_llm.md
+        - Precise Exceptions: ISCA/2025/systems/precise_exceptions.md
+        - Rethinking Prefetching: ISCA/2025/systems/rethinking_prefetching.md
+        - Ahead Prediction: ISCA/2025/systems/ahead_prediction.md
+        - PGTP: ISCA/2025/systems/pgtp.md
+        - WarmCache: ISCA/2025/systems/warmcache.md
+        - Magellan: ISCA/2025/systems/magellan.md
+        - Branch Predictor Microservices: ISCA/2025/systems/bp_microservices.md
+        - Cramming DC Cabinet: ISCA/2025/systems/cramming_dc.md
+        - Fair-CO2: ISCA/2025/systems/fair_co2.md
+        - Intel Load Balancer: ISCA/2025/systems/intel_lb.md
+        - A4: ISCA/2025/systems/a4.md
+        - Jord FaaS: ISCA/2025/systems/jord_faas.md
+        - HardHarvest: ISCA/2025/systems/hardharvest.md
+        - Ecco: ISCA/2025/systems/ecco.md
+        - Hybe: ISCA/2025/systems/hybe.md
+        - MeshSlice: ISCA/2025/systems/meshslice.md
+        - Zettafly: ISCA/2025/systems/zettafly.md
+        - LW Cache Replace: ISCA/2025/systems/lw_cache_replace.md
+        - LazyGPU: ISCA/2025/systems/lazygpu.md
+        - Ruche: ISCA/2025/systems/ruche.md
+        - Garibaldi: ISCA/2025/systems/garibaldi.md
+        - NetCrafter: ISCA/2025/systems/netcrafter.md
+        - Caravan: ISCA/2025/systems/caravan.md
+        - WindServe: ISCA/2025/systems/windserve.md
+        - Neoscope: ISCA/2025/systems/neoscope.md
+        - CORD: ISCA/2025/systems/cord.md
+        - Nyx: ISCA/2025/systems/nyx.md
+        - HPVM-HDC: ISCA/2025/systems/hpvm_hdc.md
+        - UGPU: ISCA/2025/systems/ugpu.md
+        - Assassyn: ISCA/2025/systems/assassyn.md
+        - Concorde: ISCA/2025/systems/concorde.md
+        - AMALI: ISCA/2025/systems/amali.md
+        - GCStack: ISCA/2025/systems/gcstack.md
+        - TrioSim: ISCA/2025/systems/triosim.md
+        - Meta AI Chip: ISCA/2025/systems/meta_ai.md
+        - Scaling Llama 3: ISCA/2025/systems/llama3_scaling.md
+        - DCPerf: ISCA/2025/systems/dcperf.md
+        - DeepSeek-V3: ISCA/2025/systems/deepseek_v3.md
+        - Avalanche: ISCA/2025/systems/avalanche.md
+        - Debunking CUDA: ISCA/2025/systems/debunking_cuda.md
+        - GPUs All Grown-Up: ISCA/2025/systems/gpus_grown_up.md
+        - Telos: ISCA/2025/systems/telos.md
   - 🔬 MICRO:
     - MICRO 2025: MICRO/2025/index.md
   - 🔄 ASPLOS:
