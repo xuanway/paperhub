@@ -1,119 +1,97 @@
-# 📚 AI Paper Notes (PaperHub)
+# 📚 PaperHub — AI 顶会论文笔记
 
 > AI · LLM · NLP · CV 顶会论文解读，每篇 5 分钟读懂核心思想。
 
+[![Site](https://img.shields.io/badge/网站-在线阅读-blue)](https://xuanway.github.io/paperhub/)
 [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=flat&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
-## 🌐 在线阅读
+## 🌐 在线地址
 
-本地运行：`mkdocs serve`，然后访问 [http://127.0.0.1:8000](http://127.0.0.1:8000)
+**https://xuanway.github.io/paperhub/**
 
-## 📊 会议覆盖
+---
 
-| 会议 | 论文数 | 链接 |
-|------|-------|------|
-| ICLR 2025 | 7 | [docs/ICLR2025/](docs/ICLR2025/) |
-| CVPR 2025 | 4 | [docs/CVPR2025/](docs/CVPR2025/) |
-| ACL 2025 | 2 | [docs/ACL2025/](docs/ACL2025/) |
-
-## 🔍 研究领域
-
-- 💡 LLM 推理
-- 🔒 LLM 安全
-- 🧩 多模态 VLM
-- 🎨 图像生成
-- 🧊 3D 视觉
-- 💬 LLM/NLP
-
-## 📂 目录结构
+## 📂 项目结构
 
 ```
-docs/
-├── index.md                     # 总索引（首页）
-├── ICLR2025/
-│   ├── index.md                 # 会议索引
-│   ├── llm_reasoning/           # LLM 推理
-│   ├── multimodal_vlm/          # 多模态 VLM
-│   └── llm_safety/              # LLM 安全
-├── CVPR2025/
-│   ├── index.md
-│   ├── image_generation/        # 图像生成
-│   └── 3d_vision/               # 3D 视觉
-└── ACL2025/
-    ├── index.md
-    └── llm_nlp/                 # LLM/NLP
+paperhub/
+├── docs/                        # 📝 所有内容源文件（你只需维护这里）
+│   ├── index.md                 #    首页
+│   ├── ICLR2025/                #    会议目录
+│   │   ├── index.md             #    会议首页
+│   │   ├── llm_reasoning/       #    Track 分类
+│   │   │   ├── index.md         #    分类首页
+│   │   │   └── deepseek_r1.md   #    论文笔记
+│   │   ├── multimodal_vlm/
+│   │   └── llm_safety/
+│   ├── CVPR2025/
+│   └── ACL2025/
+├── scripts/
+│   └── new_paper.sh             # 🛠️ 快速创建新论文笔记
+├── mkdocs.yml                   # ⚙️ 站点配置（导航、主题）
+├── requirements.txt             # 📦 Python 依赖
+└── .github/workflows/deploy.yml # 🚀 自动部署（push 后约1分钟生效）
 ```
 
-## 🚀 快速开始
+> `site/` 目录是构建产物，由 GitHub Actions 自动生成，**无需关注，不提交**。
 
-### 安装依赖
+---
+
+## ✏️ 添加新论文（3步）
+
+### 第一步：生成模板文件
 
 ```bash
-pip install mkdocs-material mkdocs-minify-plugin
+bash scripts/new_paper.sh <会议> <分类> <文件名> "论文标题"
 ```
 
-### 本地预览
+示例：
 
 ```bash
+bash scripts/new_paper.sh ICLR2025 llm_reasoning attention "Attention Is All You Need"
+bash scripts/new_paper.sh CVPR2025 image_generation sdxl "SDXL: Improving Latent Diffusion Models"
+```
+
+脚本自动创建含完整结构的 `.md` 文件，并提示需要在 `mkdocs.yml` 中添加的导航条目。
+
+### 第二步：编辑论文内容
+
+打开生成的 `.md` 文件，填写论文链接、背景、方法、实验结果等。
+
+### 第三步：注册导航 + 推送
+
+在 `mkdocs.yml` 的 `nav:` 中添加条目，然后：
+
+```bash
+git add .
+git commit -m "add: 论文标题"
+git push
+```
+
+**推送后约 1 分钟，网站自动更新。**
+
+---
+
+## 🚀 本地预览
+
+```bash
+# 安装依赖（首次）
+pip install -r requirements.txt
+
+# 启动本地服务（实时热更新）
 mkdocs serve
+# 访问 http://127.0.0.1:8000
 ```
-
-### 构建静态站点
-
-```bash
-mkdocs build
-```
-
-### 部署到 GitHub Pages
-
-```bash
-mkdocs gh-deploy
-```
-
-## 📝 添加新笔记
-
-1. 在对应会议/领域目录下创建 Markdown 文件
-2. 添加 frontmatter（title, description, tags）
-3. 在该领域的 `index.md` 中添加链接
-4. 在 `mkdocs.yml` 的 `nav` 中注册页面
-
-### 论文笔记模板
-
-```markdown
----
-title: "论文标题（中文）"
-description: "一句话描述论文贡献。会议名称 论文解读。"
-tags:
-  - "研究领域"
-  - "关键词"
-  - "会议名称"
----
-
-# 论文英文标题
-
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">一句话摘要。</p>
-<p class="paper-seo-summary__tags">会议 · 领域 · 关键词</p>
-</div>
-
-**论文链接**：[arXiv XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)  
-**机构**：XXX  
-**发表**：会议名称
 
 ---
 
-## 一句话总结
+## 📊 当前收录
 
-## 背景与动机
-
-## 方法详解
-
-## 实验结果
-
-## 核心亮点
-
-## 局限性
-```
+| 会议 | 篇数 | 分类 |
+|------|------|------|
+| ICLR 2025 | 7 | LLM推理 · 多模态VLM · LLM安全 |
+| CVPR 2025 | 4 | 图像生成 · 3D视觉 |
+| ACL 2025  | 2 | LLM/NLP |
 
 ## 📄 License
 
