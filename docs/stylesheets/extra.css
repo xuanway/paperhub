@@ -776,9 +776,9 @@
 /* ── mapmyvisitors Globe container ── */
 .homepage-pageviews__globe {
   width: 100%;
-  height: 320px;
+  height: 420px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;   /* vertically center the 774 px outer → shows equatorial band */
   justify-content: center;
   overflow: hidden;
   background: #040c18;
@@ -885,7 +885,7 @@
   }
 
   .homepage-pageviews__globe {
-    min-height: 180px;
+    height: 260px;
   }
 
   #ph-homebtn,

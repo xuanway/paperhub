@@ -415,13 +415,45 @@
   }
 
   /* ───────────────────────────────────────────────────────────
-     5. BOOT
+     5. GLOBE ANIMATION FALLBACK
+     globe_call_home.js is blocked by modern browsers (ORB).
+     After 6 s, if the native animation hasn't started we drive
+     the two map layers ourselves with requestAnimationFrame.
+  ─────────────────────────────────────────────────────────── */
+  function initGlobeAnim() {
+    var mapB = document.querySelector(".mmvst_map_b");
+    var mapF = document.querySelector(".mmvst_map_f");
+    if (!mapB || !mapF) return;
+
+    var t0 = mapB.style.transform;
+    setTimeout(function () {
+      if (mapB.style.transform !== t0) return; // native already moving
+
+      // One full Earth = half element width (element contains 2 tiled copies)
+      var EARTH_W = 3231;       // px per 360°
+      var FRONT_OFFSET = 1615.5; // front layer is half-Earth ahead of back
+      var SPEED = 1.8;           // px/frame ≈ 30 s per rotation at 60 fps
+
+      var offset = 0;
+      function tick() {
+        offset = (offset + SPEED) % EARTH_W;
+        mapB.style.transform = "translateX(" + -offset + "px)";
+        mapF.style.transform = "translateX(" + -(offset + FRONT_OFFSET) + "px)";
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }, 6000);
+  }
+
+  /* ───────────────────────────────────────────────────────────
+     6. BOOT
   ─────────────────────────────────────────────────────────── */
   function boot() {
     initHomeBtn();
     initSearch();
     loadWCD().catch(function () {});
     if (document.getElementById("wordcloud-canvas")) initWordCloud();
+    initGlobeAnim();
   }
 
   if (document.readyState === "loading") {
