@@ -78,7 +78,7 @@ markdown_extensions:
 nav:
   - 🏠 首页: index.md
   - ⚡ HPCA:
-    - HPCA 2025:
+    - HPCA 2025 (19):
       - HPCA 2025: HPCA/2025/index.md
       - 🔒 同态加密 (4):
         - 同态加密加速: HPCA/2025/fhe/index.md
@@ -111,7 +111,7 @@ nav:
         - HATT: HPCA/2025/quantum/hatt.md
         - QuCLEAR: HPCA/2025/quantum/quclear.md
         - LSQCA: HPCA/2025/quantum/lsqca.md
-    - HPCA 2026:
+    - HPCA 2026 (15):
       - HPCA 2026: HPCA/2026/index.md
       - 🔐 硬件安全 (3):
         - 硬件安全: HPCA/2026/security/index.md
@@ -141,7 +141,7 @@ nav:
         - Cyclone: HPCA/2026/quantum/cyclone.md
         - d'ArQ: HPCA/2026/quantum/darq.md
   - 🏗️ ISCA:
-    - ISCA 2025:
+    - ISCA 2025 (135):
       - ISCA 2025: ISCA/2025/index.md
       - 🤖 ML加速器 (20):
         - ML加速器: ISCA/2025/ml_accelerator/index.md

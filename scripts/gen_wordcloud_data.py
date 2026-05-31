@@ -182,10 +182,23 @@ def normalize(tag):
     return tag
 
 
-def update_mkdocs_nav(per_track_raw):
-    """Patch (N) counts in mkdocs.yml nav to match actual per-track paper counts."""
+def update_mkdocs_nav(per_track_raw, per_conf_stats):
+    """Patch (N) counts in mkdocs.yml nav for both year-level and track-level sections.
+
+    - Year-level  (e.g. "- HPCA 2025:")    → total papers for that conf/year
+    - Track-level (e.g. "- 同态加密 (4):") → papers in that track dir
+    Adds (N) if absent; updates if the number changed.
+    """
     if not os.path.exists(MKDOCS_YML):
         return
+
+    # Build conf_by_path: "HPCA/2025" -> 19
+    conf_by_path = {}
+    for conf_key, info in per_conf_stats.items():  # "HPCA 2025" -> {"total": N, ...}
+        parts = conf_key.split()
+        if len(parts) == 2:
+            conf_by_path[f"{parts[0]}/{parts[1]}"] = info["total"]
+
     with open(MKDOCS_YML, encoding="utf-8") as f:
         lines = f.readlines()
 
@@ -194,12 +207,17 @@ def update_mkdocs_nav(per_track_raw):
     changed = False
     while i < len(lines):
         line = lines[i]
-        # Match nav section headers that contain a count: "  - 🔒 Label (N):"
-        # Handles both (4) and (30+) forms
-        m = re.match(r'^(\s*-\s+.+?)\s*\((\d+\+?)\):\s*$', line.rstrip('\n'))
+        # Match ANY section header (ends with bare ":" — no path after it)
+        # Works for both "- Label:" and "- Label (N):"
+        m = re.match(r'^(\s*)-\s+(.+?)(?:\s+\(\d+\+?\))?\s*:\s*$', line.rstrip('\n'))
         if m:
-            prefix_indent = len(line) - len(line.lstrip())
-            # Scan forward to find the index.md sub-item (identifies the track dir)
+            prefix_indent = len(m.group(1))   # spaces before "-"
+            label_clean  = m.group(2).strip() # label without any existing (N)
+            child_indent = prefix_indent + 2  # direct children are 2 spaces deeper
+
+            # Scan for the FIRST direct child that is a page link with index.md.
+            # Stop at the first non-blank direct child if it is a sub-section header
+            # (ends with bare ":"), to avoid descending into nested sections.
             track_dir = None
             j = i + 1
             while j < len(lines):
@@ -208,22 +226,38 @@ def update_mkdocs_nav(per_track_raw):
                     j += 1
                     continue
                 sub_indent = len(sub) - len(sub.lstrip())
-                if sub_indent <= prefix_indent:
-                    break  # exited the section
-                path_m = re.search(r':\s+(.+?/index\.md)\s*$', sub)
-                if path_m:
-                    track_dir = os.path.dirname(path_m.group(1)).replace("\\", "/")
-                    break
+                if sub_indent < child_indent:
+                    break  # left the section entirely
+                if sub_indent == child_indent:
+                    # Page link with index.md?
+                    path_m = re.search(r':\s+(\S+/index\.md)\s*$', sub)
+                    if path_m:
+                        track_dir = os.path.dirname(path_m.group(1)).replace("\\", "/")
+                        break
+                    # Sub-section header (no path, ends with ":")?  Stop here —
+                    # don't go deeper or we'd mismatch parent sections.
+                    if re.search(r':\s*$', sub):
+                        break
                 j += 1
 
-            if track_dir and track_dir in per_track_raw:
-                new_count = per_track_raw[track_dir]
-                new_line = re.sub(r'\(\d+\+?\):', f'({new_count}):', line)
-                if new_line != line:
-                    changed = True
-                new_lines.append(new_line)
-                i += 1
-                continue
+            if track_dir:
+                path_parts = track_dir.split("/")
+                new_count = None
+                if len(path_parts) == 3:
+                    # Track-level: HPCA/2025/fhe
+                    new_count = per_track_raw.get(track_dir)
+                elif len(path_parts) == 2:
+                    # Conference-year level: HPCA/2025
+                    new_count = conf_by_path.get(track_dir)
+
+                if new_count is not None:
+                    spaces   = ' ' * prefix_indent
+                    new_line = f"{spaces}- {label_clean} ({new_count}):\n"
+                    if new_line != line:
+                        changed = True
+                    new_lines.append(new_line)
+                    i += 1
+                    continue
 
         new_lines.append(line)
         i += 1
@@ -394,7 +428,7 @@ def generate():
         print(
             f"✅ word_data.json unchanged: {len(keywords)} keywords from {total_papers} papers"
         )
-        update_mkdocs_nav(per_track_raw)
+        update_mkdocs_nav(per_track_raw, per_conf_stats)
         return previous
 
     data = {
@@ -410,7 +444,7 @@ def generate():
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     print(f"✅ word_data.json updated: {len(keywords)} keywords from {total_papers} papers")
-    update_mkdocs_nav(per_track_raw)
+    update_mkdocs_nav(per_track_raw, per_conf_stats)
     return data
 
 
