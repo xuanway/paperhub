@@ -30,14 +30,14 @@ theme:
       accent: deep purple
       toggle:
         icon: material/weather-sunny
-        name: Switch to Dark Mode
+        name: Toggle Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: deep purple
       toggle:
         icon: material/weather-night
-        name: Switch to Light Mode
+        name: Toggle Light Mode
   font:
     text: Noto Sans SC
     code: JetBrains Mono
