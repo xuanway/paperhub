@@ -223,10 +223,10 @@ hide:
 ---
 
 <div class="homepage-pageviews">
-  <div class="homepage-pageviews__header">
+  <!-- <div class="homepage-pageviews__header">
     <span class="homepage-pageviews__title">📊 Pageviews</span>
     <span class="homepage-pageviews__subtitle">实时访客地图 · 由 mapmyvisitors.com 提供</span>
-  </div>
+  </div> -->
   <div id="mmvst_globe_container" class="homepage-pageviews__globe">
     <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=VK6_Uhjas4vA0CDps3EFeB0Fotb8hU50SYT4Fcq5nUI&cl=ffffff&w=a"></script>
   </div>
