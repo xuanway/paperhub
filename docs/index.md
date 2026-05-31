@@ -27,7 +27,7 @@ hide:
 <div class="stat"><span class="stat-number">10</span><span class="stat-label">个领域</span></div>
 </div>
 
-<a class="github-link" href="https://github.com/your-name/paperhub" target="_blank">⭐ Star on GitHub</a>
+<a class="github-link" href="https://github.com/xuanway/paperhub" target="_blank">⭐ Star on GitHub</a>
 
 </div>
 
