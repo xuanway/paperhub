@@ -1,39 +1,70 @@
 {% extends "base.html" %}
 
 {% block announce %}
-<div class="ph-conf-strip" role="navigation" aria-label="Conference quick navigation">
+<nav class="ph-conf-strip" aria-label="Conference navigation">
   <div class="ph-conf-strip__inner">
-    <a class="ph-conf-group" href="{{ config.site_url or '/' }}HPCA/2026/">
-      <span class="ph-conf-group__label">⚡ HPCA</span>
-      <span class="ph-conf-year">2026 <span class="ph-conf-badge">15</span></span>
-      <span class="ph-conf-year">2025 <span class="ph-conf-badge">19</span></span>
+
+    {# ── Home link ── #}
+    <a class="ph-home-link" href="{{ config.site_url or '/' }}" title="Return to Homepage">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      Homepage
     </a>
-    <a class="ph-conf-group" href="{{ config.site_url or '/' }}ISCA/2025/">
-      <span class="ph-conf-group__label">🏗️ ISCA</span>
-      <span class="ph-conf-year">2025 <span class="ph-conf-badge">8</span></span>
-    </a>
-    <a class="ph-conf-group" href="{{ config.site_url or '/' }}MICRO/2025/">
-      <span class="ph-conf-group__label">🔬 MICRO</span>
-      <span class="ph-conf-year">2025</span>
-    </a>
-    <a class="ph-conf-group" href="{{ config.site_url or '/' }}ASPLOS/2025/">
-      <span class="ph-conf-group__label">🔄 ASPLOS</span>
-      <span class="ph-conf-year">2025</span>
-    </a>
-    <a class="ph-conf-group" href="{{ config.site_url or '/' }}DAC/2025/">
-      <span class="ph-conf-group__label">🛠️ DAC</span>
-      <span class="ph-conf-year">2025</span>
-    </a>
-    <a class="ph-conf-group" href="{{ config.site_url or '/' }}NeurIPS/2025/">
-      <span class="ph-conf-group__label">🧠 NeurIPS</span>
-      <span class="ph-conf-year">2025</span>
-    </a>
-    <a class="ph-conf-group" href="{{ config.site_url or '/' }}ICML/2025/">
-      <span class="ph-conf-group__label">📈 ICML</span>
-      <span class="ph-conf-year">2025</span>
-    </a>
+
+    <span class="ph-strip-div" aria-hidden="true"></span>
+
+    {# ── HPCA: 2025(19) | 2026(15) ── #}
+    <span class="ph-conf-item">
+      <span class="ph-conf-nm">⚡ HPCA</span>
+      <span class="ph-conf-parens"
+        >(<a class="ph-yr" href="{{ config.site_url or '/' }}HPCA/2025/">2025<span class="ph-n">(19)</span></a
+        ><span class="ph-pipe"> | </span
+        ><a class="ph-yr" href="{{ config.site_url or '/' }}HPCA/2026/">2026<span class="ph-n">(15)</span></a>)</span>
+    </span>
+
+    {# ── ISCA ── #}
+    <span class="ph-conf-item">
+      <span class="ph-conf-nm">🏗️ ISCA</span>
+      <span class="ph-conf-parens"
+        >(<a class="ph-yr" href="{{ config.site_url or '/' }}ISCA/2025/">2025<span class="ph-n">(8)</span></a>)</span>
+    </span>
+
+    {# ── MICRO ── #}
+    <span class="ph-conf-item">
+      <span class="ph-conf-nm">🔬 MICRO</span>
+      <span class="ph-conf-parens"
+        >(<a class="ph-yr" href="{{ config.site_url or '/' }}MICRO/2025/">2025</a>)</span>
+    </span>
+
+    {# ── ASPLOS ── #}
+    <span class="ph-conf-item">
+      <span class="ph-conf-nm">🔄 ASPLOS</span>
+      <span class="ph-conf-parens"
+        >(<a class="ph-yr" href="{{ config.site_url or '/' }}ASPLOS/2025/">2025</a>)</span>
+    </span>
+
+    {# ── DAC ── #}
+    <span class="ph-conf-item">
+      <span class="ph-conf-nm">🛠️ DAC</span>
+      <span class="ph-conf-parens"
+        >(<a class="ph-yr" href="{{ config.site_url or '/' }}DAC/2025/">2025</a>)</span>
+    </span>
+
+    {# ── NeurIPS ── #}
+    <span class="ph-conf-item">
+      <span class="ph-conf-nm">🧠 NeurIPS</span>
+      <span class="ph-conf-parens"
+        >(<a class="ph-yr" href="{{ config.site_url or '/' }}NeurIPS/2025/">2025</a>)</span>
+    </span>
+
+    {# ── ICML ── #}
+    <span class="ph-conf-item">
+      <span class="ph-conf-nm">📈 ICML</span>
+      <span class="ph-conf-parens"
+        >(<a class="ph-yr" href="{{ config.site_url or '/' }}ICML/2025/">2025</a>)</span>
+    </span>
+
   </div>
-</div>
+</nav>
 {% endblock %}
 
 {% block htmltitle %}

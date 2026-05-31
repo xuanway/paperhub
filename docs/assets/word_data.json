@@ -1,0 +1,356 @@
+{
+  "updated": "2026-05-31",
+  "total_papers": 38,
+  "keywords": [
+    {
+      "text": "LLM Inference",
+      "count": 11,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (5 papers) · HPCA 2026 (5 papers) · ISCA 2025 (1 paper)",
+      "search_term": "LLM Inference"
+    },
+    {
+      "text": "Hardware Security",
+      "count": 6,
+      "trend": 0,
+      "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (3 papers)",
+      "search_term": "Hardware Security"
+    },
+    {
+      "text": "Homomorphic Encryption",
+      "count": 6,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (4 papers) · HPCA 2026 (2 papers)",
+      "search_term": "Homomorphic Encryption"
+    },
+    {
+      "text": "DRAM Security",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (2 papers)",
+      "search_term": "DRAM Security"
+    },
+    {
+      "text": "PIM",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (2 papers)",
+      "search_term": "PIM"
+    },
+    {
+      "text": "Quantum Computing",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (2 papers)",
+      "search_term": "Quantum Computing"
+    },
+    {
+      "text": "Rowhammer",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (3 papers) · HPCA 2026 (2 papers)",
+      "search_term": "Rowhammer"
+    },
+    {
+      "text": "FHE",
+      "count": 4,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (4 papers)",
+      "search_term": "FHE"
+    },
+    {
+      "text": "ML Accelerator",
+      "count": 3,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (3 papers)",
+      "search_term": "ML Accelerator"
+    },
+    {
+      "text": "Side-Channel Attack",
+      "count": 3,
+      "trend": 1,
+      "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (2 papers)",
+      "search_term": "Side-Channel Attack"
+    },
+    {
+      "text": "Wafer-scale",
+      "count": 3,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (3 papers)",
+      "search_term": "Wafer-scale"
+    },
+    {
+      "text": "Bootstrapping",
+      "count": 2,
+      "trend": 0,
+      "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
+      "search_term": "Bootstrapping"
+    },
+    {
+      "text": "CKKS",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (2 papers)",
+      "search_term": "CKKS"
+    },
+    {
+      "text": "DDR5",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (2 papers)",
+      "search_term": "DDR5"
+    },
+    {
+      "text": "Energy Efficiency",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper) · ISCA 2025 (1 paper)",
+      "search_term": "Energy Efficiency"
+    },
+    {
+      "text": "Fault-Tolerant QC",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (2 papers)",
+      "search_term": "Fault-Tolerant QC"
+    },
+    {
+      "text": "KV Cache",
+      "count": 2,
+      "trend": 0,
+      "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
+      "search_term": "KV Cache"
+    },
+    {
+      "text": "Long Context",
+      "count": 2,
+      "trend": 0,
+      "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
+      "search_term": "Long Context"
+    },
+    {
+      "text": "Memory Security",
+      "count": 2,
+      "trend": 1,
+      "conf_info": "HPCA 2026 (2 papers)",
+      "search_term": "Memory Security"
+    },
+    {
+      "text": "NMP",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (2 papers)",
+      "search_term": "NMP"
+    },
+    {
+      "text": "PRAC",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (2 papers)",
+      "search_term": "PRAC"
+    },
+    {
+      "text": "Scheduling",
+      "count": 2,
+      "trend": 0,
+      "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
+      "search_term": "Scheduling"
+    },
+    {
+      "text": "Spectre",
+      "count": 2,
+      "trend": 0,
+      "conf_info": "HPCA 2025 (1 paper) · HPCA 2026 (1 paper)",
+      "search_term": "Spectre"
+    },
+    {
+      "text": "3D Parallelism",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (1 paper)",
+      "search_term": "3D Parallelism"
+    },
+    {
+      "text": "ARM",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "HPCA 2026 (1 paper)",
+      "search_term": "ARM"
+    },
+    {
+      "text": "Activation Quantization",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Activation Quantization"
+    },
+    {
+      "text": "Analog Computing",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (1 paper)",
+      "search_term": "Analog Computing"
+    },
+    {
+      "text": "Async Execution",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Async Execution"
+    },
+    {
+      "text": "CUDA",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "CUDA"
+    },
+    {
+      "text": "CXL",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "HPCA 2026 (1 paper)",
+      "search_term": "CXL"
+    },
+    {
+      "text": "Capacity Optimization",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "HPCA 2026 (1 paper)",
+      "search_term": "Capacity Optimization"
+    },
+    {
+      "text": "Clifford Gate",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Clifford Gate"
+    },
+    {
+      "text": "Compiler",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Compiler"
+    },
+    {
+      "text": "Compiler Optimization",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Compiler Optimization"
+    },
+    {
+      "text": "DIMM",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "DIMM"
+    },
+    {
+      "text": "DRAM",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "DRAM"
+    },
+    {
+      "text": "Data Center",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Data Center"
+    },
+    {
+      "text": "Data Format",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Data Format"
+    },
+    {
+      "text": "Distributed Training",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (1 paper)",
+      "search_term": "Distributed Training"
+    },
+    {
+      "text": "Empirical Analysis",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Empirical Analysis"
+    },
+    {
+      "text": "FHE Accelerator",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "HPCA 2026 (1 paper)",
+      "search_term": "FHE Accelerator"
+    },
+    {
+      "text": "Fermion-to-Qubit",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Fermion-to-Qubit"
+    },
+    {
+      "text": "Full-Stack Accel.",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "Full-Stack Accel."
+    },
+    {
+      "text": "GPU",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "GPU"
+    },
+    {
+      "text": "GPU Scheduling",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "GPU Scheduling"
+    },
+    {
+      "text": "GPU加速",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "HPCA 2026 (1 paper)",
+      "search_term": "GPU加速"
+    },
+    {
+      "text": "HW-SW Co-design",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "HW-SW Co-design"
+    },
+    {
+      "text": "In-Storage Computing",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "In-Storage Computing"
+    },
+    {
+      "text": "LoRA",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "HPCA 2026 (1 paper)",
+      "search_term": "LoRA"
+    },
+    {
+      "text": "MPK",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "HPCA 2025 (1 paper)",
+      "search_term": "MPK"
+    }
+  ]
+}

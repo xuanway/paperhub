@@ -1,98 +1,98 @@
-# 📚 PaperHub — AI 顶会论文笔记
+# PaperHub: Trusted and Efficient Computing Paper Notes
 
-> AI · LLM · NLP · CV 顶会论文解读，每篇 5 分钟读懂核心思想。
+PaperHub is a MkDocs-based academic notes site focused on top systems and architecture conferences.
+The current collection centers on trusted and efficient computing topics, including hardware security,
+memory reliability, homomorphic encryption, LLM inference acceleration, PIM, and quantum architecture.
 
-[![Site](https://img.shields.io/badge/网站-在线阅读-blue)](https://xuanway.github.io/paperhub/)
-[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=flat&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+- Online site: https://xuanway.github.io/paperhub/
+- Repo: https://github.com/xuanway/paperhub
 
-## 🌐 在线地址
+## Current Coverage
 
-**https://xuanway.github.io/paperhub/**
+- HPCA 2025: 19 papers
+- HPCA 2026: 15 papers
+- ISCA 2025: 8 papers
+- MICRO 2025
+- ASPLOS 2025
+- DAC 2025
+- NeurIPS 2025
+- ICML 2025
 
----
+## Main Features
 
-## 📂 项目结构
+- Two-row navigation experience:
+  - Top header with a persistent Home button
+  - Conference strip using compact format such as `HPCA (2025(19) | 2026(15))`
+- English search experience:
+  - Search placeholder in English
+  - Focus suggestions show top 10 trending keywords from word cloud data
+- Dynamic academic keyword word cloud on homepage:
+  - Fully English keywords
+  - Font size strictly follows keyword frequency
+  - Hover shows conference source and paper count
+  - Click triggers site search
+  - Responsive redraw for desktop/mobile
+  - Skeleton loading state before cloud render
+- Theme polish:
+  - Custom sun/moon toggle icons
+  - Consistent visual styling for light/dark mode
 
-```
-paperhub/
-├── docs/                        # 📝 所有内容源文件（你只需维护这里）
-│   ├── index.md                 #    首页
-│   ├── ICLR2025/                #    会议目录
-│   │   ├── index.md             #    会议首页
-│   │   ├── llm_reasoning/       #    Track 分类
-│   │   │   ├── index.md         #    分类首页
-│   │   │   └── deepseek_r1.md   #    论文笔记
-│   │   ├── multimodal_vlm/
-│   │   └── llm_safety/
-│   ├── CVPR2025/
-│   └── ACL2025/
-├── scripts/
-│   └── new_paper.sh             # 🛠️ 快速创建新论文笔记
-├── mkdocs.yml                   # ⚙️ 站点配置（导航、主题）
-├── requirements.txt             # 📦 Python 依赖
-└── .github/workflows/deploy.yml # 🚀 自动部署（push 后约1分钟生效）
-```
+## How Dynamic Word Cloud Works
 
-> `site/` 目录是构建产物，由 GitHub Actions 自动生成，**无需关注，不提交**。
+Keyword data is generated from paper frontmatter tags in markdown files.
 
----
+- Source generator: scripts/gen_wordcloud_data.py
+- Output JSON: docs/assets/word_data.json
+- Build hook: scripts/hooks.py (runs automatically on mkdocs build)
 
-## ✏️ 添加新论文（3步）
+During each build, the hook regenerates word cloud data so newly added papers are reflected automatically.
 
-### 第一步：生成模板文件
+## Add a New Paper
 
-```bash
-bash scripts/new_paper.sh <会议> <分类> <文件名> "论文标题"
-```
-
-示例：
-
-```bash
-bash scripts/new_paper.sh ICLR2025 llm_reasoning attention "Attention Is All You Need"
-bash scripts/new_paper.sh CVPR2025 image_generation sdxl "SDXL: Improving Latent Diffusion Models"
-```
-
-脚本自动创建含完整结构的 `.md` 文件，并提示需要在 `mkdocs.yml` 中添加的导航条目。
-
-### 第二步：编辑论文内容
-
-打开生成的 `.md` 文件，填写论文链接、背景、方法、实验结果等。
-
-### 第三步：注册导航 + 推送
-
-在 `mkdocs.yml` 的 `nav:` 中添加条目，然后：
+1. Create the markdown scaffold
 
 ```bash
-git add .
-git commit -m "add: 论文标题"
-git push
+bash scripts/new_paper.sh <conference> <track> <slug> "Paper Title"
 ```
 
-**推送后约 1 分钟，网站自动更新。**
+2. Fill in the generated markdown content (metadata, summary, method, results).
 
----
+3. Add the new page to `nav` in mkdocs.yml.
 
-## 🚀 本地预览
+4. Commit and push:
 
 ```bash
-# 安装依赖（首次）
+git add -A
+git commit -m "add: <paper title>"
+git push origin master
+```
+
+## Local Development
+
+Install dependencies and run local preview:
+
+```bash
 pip install -r requirements.txt
-
-# 启动本地服务（实时热更新）
 mkdocs serve
-# 访问 http://127.0.0.1:8000
 ```
 
----
+Open http://127.0.0.1:8000 to preview changes.
 
-## 📊 当前收录
+## Build
 
-| 会议 | 篇数 | 分类 |
-|------|------|------|
-| ICLR 2025 | 7 | LLM推理 · 多模态VLM · LLM安全 |
-| CVPR 2025 | 4 | 图像生成 · 3D视觉 |
-| ACL 2025  | 2 | LLM/NLP |
+```bash
+mkdocs build
+```
 
-## 📄 License
+The generated static site is written to `site/`.
 
-本项目内容采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 授权。
+## Tech Stack
+
+- MkDocs
+- Material for MkDocs
+- wordcloud2.js
+- Python (metadata extraction and build hooks)
+
+## License
+
+Content is distributed under CC BY-NC-SA 4.0 unless otherwise noted.

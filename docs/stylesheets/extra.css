@@ -314,6 +314,9 @@
 /* ═══════════════════════════════════════════════════════
    CONFERENCE NAV STRIP (second-row header bar)
 ═══════════════════════════════════════════════════════ */
+/* ═══════════════════════════════════════════════════════
+   CONFERENCE NAV STRIP  (new format: HPCA (2025(19) | 2026(15)))
+═══════════════════════════════════════════════════════ */
 .ph-conf-strip {
   background: var(--md-primary-fg-color);
   border-top: 1px solid rgba(255,255,255,0.12);
@@ -327,61 +330,81 @@
 .ph-conf-strip__inner {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 0.05rem;
   padding: 0 0.8rem;
   min-height: 2.2rem;
+  flex-wrap: nowrap;
 }
 
-.ph-conf-group {
+/* Home link */
+.ph-home-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  padding: 0.3rem 0.75rem;
+  gap: 4px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff !important;
   text-decoration: none !important;
-  color: rgba(255,255,255,0.92) !important;
-  border-right: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.15);
+  border-radius: 4px;
+  margin-right: 0.45rem;
+  flex-shrink: 0;
   transition: background 0.15s;
-  font-size: 0.8rem;
+}
+.ph-home-link:hover { background: rgba(255,255,255,0.28); }
+
+/* Divider between home and conf items */
+.ph-strip-div {
+  width: 1px;
+  height: 1.4rem;
+  background: rgba(255,255,255,0.22);
+  margin: 0 0.35rem;
   flex-shrink: 0;
 }
-.ph-conf-group:hover {
-  background: rgba(255,255,255,0.12);
-  color: #fff !important;
-}
 
-.ph-conf-group__label {
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.03em;
-  margin-right: 0.1rem;
-}
-
-.ph-conf-year {
+/* Each conference block */
+.ph-conf-item {
   display: inline-flex;
-  align-items: center;
-  gap: 0.2rem;
-  font-size: 0.72rem;
-  opacity: 0.85;
-  padding: 0.05rem 0.35rem;
-  border-radius: 3px;
-  background: rgba(255,255,255,0.12);
-  transition: background 0.12s, opacity 0.12s;
+  align-items: baseline;
+  gap: 0.22rem;
+  padding: 0.28rem 0.6rem;
+  font-size: 0.79rem;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(255,255,255,0.13);
 }
-.ph-conf-group:hover .ph-conf-year {
-  opacity: 1;
-  background: rgba(255,255,255,0.2);
+.ph-conf-item:last-child { border-right: none; }
+
+/* Conference name label */
+.ph-conf-nm {
+  font-weight: 700;
+  color: rgba(255,255,255,0.95);
+  letter-spacing: 0.02em;
+  margin-right: 0.12rem;
 }
 
-.ph-conf-badge {
-  font-size: 0.65rem;
-  font-weight: 700;
-  background: rgba(255,255,255,0.28);
-  color: #fff;
-  border-radius: 10px;
-  padding: 0.04rem 0.32rem;
-  min-width: 1.3em;
-  text-align: center;
+/* Parentheses wrapper, year links */
+.ph-conf-parens {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.76rem;
 }
+
+.ph-yr {
+  color: rgba(255,255,255,0.88) !important;
+  text-decoration: none !important;
+  transition: color 0.12s;
+}
+.ph-yr:hover { color: #fff !important; text-decoration: underline !important; }
+
+/* Paper count "(19)" — slightly dimmed */
+.ph-n {
+  font-size: 0.7rem;
+  opacity: 0.75;
+  margin-left: 1px;
+}
+
+/* Pipe separator " | " */
+.ph-pipe { opacity: 0.5; }
 
 /* Dark mode strip */
 [data-md-color-scheme="slate"] .ph-conf-strip {
@@ -390,16 +413,14 @@
 }
 
 @media (max-width: 600px) {
-  .ph-conf-group {
-    padding: 0.28rem 0.5rem;
-    font-size: 0.74rem;
-  }
+  .ph-conf-item { padding: 0.24rem 0.4rem; font-size: 0.73rem; }
+  .ph-home-link { padding: 0.24rem 0.5rem; font-size: 0.73rem; }
 }
 
 /* ═══════════════════════════════════════════════════════
-   SEARCH ENHANCEMENT — English placeholder + recent dropdown
+   SEARCH ENHANCEMENT — suggestion dropdown (top-10 keywords)
 ═══════════════════════════════════════════════════════ */
-.ph-recent-dropdown {
+.ph-sdrop {
   display: none;
   position: absolute;
   top: calc(100% + 4px);
@@ -410,73 +431,53 @@
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.14);
   z-index: 9999;
-  padding: 0.5rem 0 0.35rem;
+  padding: 0.45rem 0 0.3rem;
   min-width: 240px;
 }
 
-[data-md-color-scheme="slate"] .ph-recent-dropdown {
+[data-md-color-scheme="slate"] .ph-sdrop {
   background: #1e1e2e;
   border-color: rgba(255,255,255,0.12);
   box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
 
-.ph-recent-title {
+.ph-sdrop-hd {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--md-default-fg-color--light);
-  padding: 0 0.9rem 0.35rem;
+  padding: 0 0.9rem 0.32rem;
   border-bottom: 1px solid var(--md-default-fg-color--lightest);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
-.ph-recent-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.ph-recent-item {
+.ph-sdrop-item {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.5rem;
-  padding: 0.38rem 0.9rem;
-  font-size: 0.85rem;
+  padding: 0.36rem 0.9rem;
+  font-size: 0.84rem;
   color: var(--md-default-fg-color);
   cursor: pointer;
   transition: background 0.12s;
 }
-.ph-recent-item:hover {
-  background: rgba(124, 77, 255, 0.08);
-  color: var(--md-accent-fg-color);
-}
-.ph-recent-icon {
-  flex-shrink: 0;
-  opacity: 0.5;
-  color: var(--md-default-fg-color--light);
-}
-.ph-recent-item:hover .ph-recent-icon {
-  opacity: 0.85;
+.ph-sdrop-item:hover {
+  background: rgba(102,51,153,0.08);
   color: var(--md-accent-fg-color);
 }
 
-.ph-recent-clear {
-  display: none;
-  width: calc(100% - 1.8rem);
-  margin: 0.35rem 0.9rem 0;
-  background: none;
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 5px;
+.ph-sdrop-kw { flex: 1; }
+
+.ph-sdrop-cnt {
+  font-size: 0.72rem;
   color: var(--md-default-fg-color--light);
-  font-size: 0.75rem;
-  padding: 0.28rem 0.6rem;
-  cursor: pointer;
-  transition: border-color 0.15s, color 0.15s;
-}
-.ph-recent-clear:hover {
-  border-color: var(--md-accent-fg-color);
-  color: var(--md-accent-fg-color);
+  background: rgba(102,51,153,0.09);
+  border-radius: 10px;
+  padding: 0.06rem 0.45rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -536,6 +537,7 @@
   overflow: hidden;
   box-shadow: 0 4px 32px rgba(102, 51, 153, 0.12);
   border: 2px solid rgba(102, 51, 153, 0.1);
+  min-height: 340px;
 }
 
 [data-md-color-scheme="slate"] .wc-canvas-wrap {
@@ -559,27 +561,104 @@
   justify-content: center;
   font-size: 0.85rem;
   color: var(--md-default-fg-color--light);
+  z-index: 1;
+}
+
+/* Skeleton screen shown before canvas render */
+.wc-skel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  padding: 1.2rem;
+  z-index: 2;
+  transition: opacity 0.35s;
+  background: rgba(255,255,255,0.72);
+}
+
+[data-md-color-scheme="slate"] .wc-skel {
+  background: rgba(248,245,255,0.75);
+}
+
+.wc-skel-w {
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ece3f8 20%, #f7f3fc 50%, #ece3f8 80%);
+  background-size: 200% 100%;
+  animation: wc-shimmer 1.4s infinite linear;
+}
+
+@keyframes wc-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 /* Tooltip */
-#wc-tooltip {
+#wc-tip {
   display: none;
-  position: absolute;
+  position: fixed;
   pointer-events: none;
   background: rgba(20, 5, 50, 0.92);
   color: #fff;
-  padding: 0.45rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 8px;
   font-size: 0.8rem;
-  line-height: 1.5;
+  line-height: 1.45;
   z-index: 9999;
-  max-width: 200px;
+  max-width: 260px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.wc-tip-kw {
+  font-weight: 700;
+}
+
+.wc-tip-cnt {
+  font-size: 0.75rem;
+  opacity: 0.88;
+}
+
+.wc-tip-conf {
+  font-size: 0.72rem;
+  opacity: 0.78;
+  margin-top: 0.12rem;
+}
+
+/* Header home button */
+#ph-homebtn,
+.ph-homebtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.15);
+  color: #fff !important;
+  font-size: 0.78rem;
+  text-decoration: none !important;
+  transition: background 0.15s;
   white-space: nowrap;
+}
+
+#ph-homebtn:hover,
+.ph-homebtn:hover {
+  background: rgba(255,255,255,0.28);
+  color: #fff !important;
 }
 
 @media (max-width: 600px) {
   .wc-canvas-wrap {
     max-width: 340px;
+    min-height: 300px;
+  }
+
+  #ph-homebtn,
+  .ph-homebtn {
+    margin-left: 6px;
+    padding: 2px 8px;
+    font-size: 0.72rem;
   }
 }

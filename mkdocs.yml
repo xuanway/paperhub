@@ -42,6 +42,9 @@ theme:
     text: Noto Sans SC
     code: JetBrains Mono
 
+hooks:
+  - scripts/hooks.py
+
 extra_css:
   - stylesheets/extra.css
 
