@@ -419,34 +419,59 @@
   }
 
   /* ───────────────────────────────────────────────────────────
-     5. GLOBE ANIMATION FALLBACK
-     globe_call_home.js is blocked by modern browsers (ORB).
-     After 6 s, if the native animation hasn't started we drive
-     the two map layers ourselves with requestAnimationFrame.
+     5. VISIT MAP (mapmyvisitors.com)
+     Dynamically re-injects the globe script on every homepage
+     visit so it works with MkDocs Material instant navigation.
+     Animation fallback drives the map layers if globe_call_home.js
+     is blocked by ORB (localhost / some browsers).
   ─────────────────────────────────────────────────────────── */
-  function initGlobeAnim() {
-    var mapB = document.querySelector(".mmvst_map_b");
-    var mapF = document.querySelector(".mmvst_map_f");
-    if (!mapB || !mapF) return;
+  var _MMV_TOKEN = "-OgpYucqPJE3qE-DPpa-aGXkFL-J_BPFYLvY42lwvas";
+  var _globeAnimTmr = null;
 
-    var t0 = mapB.style.transform;
-    setTimeout(function () {
-      if (mapB.style.transform !== t0) return; // native already moving
-
-      // One full Earth = half element width (element contains 2 tiled copies)
-      var EARTH_W = 3231;       // px per 360°
-      var FRONT_OFFSET = 1615.5; // front layer is half-Earth ahead of back
-      var SPEED = 1.8;           // px/frame ≈ 30 s per rotation at 60 fps
-
-      var offset = 0;
-      function tick() {
-        offset = (offset + SPEED) % EARTH_W;
-        mapB.style.transform = "translateX(" + -offset + "px)";
-        mapF.style.transform = "translateX(" + -(offset + FRONT_OFFSET) + "px)";
+  function startGlobeAnimFallback() {
+    clearTimeout(_globeAnimTmr);
+    _globeAnimTmr = setTimeout(function () {
+      var mapB = document.querySelector(".mmvst_map_b");
+      var mapF = document.querySelector(".mmvst_map_f");
+      if (!mapB || !mapF) return;
+      var t0 = mapB.style.transform;
+      setTimeout(function () {
+        if (mapB.style.transform !== t0) return; // native already animating
+        var EARTH_W = 3231, FRONT_OFFSET = 1615.5, SPEED = 1.8, offset = 0;
+        function tick() {
+          if (!document.getElementById("mmvst_globe_container")) return;
+          offset = (offset + SPEED) % EARTH_W;
+          mapB.style.transform = "translateX(" + -offset + "px)";
+          mapF.style.transform = "translateX(" + -(offset + FRONT_OFFSET) + "px)";
+          requestAnimationFrame(tick);
+        }
         requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    }, 6000);
+      }, 1000);
+    }, 5000);
+  }
+
+  function initVisitMap() {
+    var container = document.getElementById("mmvst_globe_container");
+    if (!container) return;
+
+    // Remove any previous globe script to allow re-execution
+    var old = document.getElementById("mmvst_globe");
+    if (old) old.remove();
+
+    // Reset container: clear stale globe markup, restore image fallback
+    container.innerHTML =
+      '<a href="https://mapmyvisitors.com/web/' + _MMV_TOKEN + '" target="_blank" rel="noopener noreferrer">' +
+      '<img src="https://mapmyvisitors.com/map.png?d=' + _MMV_TOKEN + '&cl=ffffff" alt="Visitor Map" loading="lazy" style="display:block;width:100%;height:auto;">' +
+      '</a>';
+
+    // Inject globe script — browser executes it fresh each time
+    var s = document.createElement("script");
+    s.id = "mmvst_globe";
+    s.type = "text/javascript";
+    s.src = "//mapmyvisitors.com/globe.js?d=" + _MMV_TOKEN;
+    container.appendChild(s);
+
+    startGlobeAnimFallback();
   }
 
   /* ───────────────────────────────────────────────────────────
@@ -462,7 +487,7 @@
       _scrollTipBound = false;
       initWordCloud();
     }
-    initGlobeAnim();
+    initVisitMap();
   }
 
   function boot() {
@@ -470,7 +495,7 @@
     initSearch();
     loadWCD().catch(function () {});
     if (document.getElementById("wordcloud-canvas")) initWordCloud();
-    initGlobeAnim();
+    initVisitMap();
   }
 
   if (document.readyState === "loading") {
