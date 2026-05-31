@@ -1,11 +1,15 @@
-# Storage · ISCA 2025
+# 💿 存储系统 · ISCA 2025
 
-本分类收录 ISCA 2025 Track "Storage" 的论文。
+本分类收录 ISCA 2025 存储系统架构与加速方向论文。
 
-| 论文 | 链接 |
-|------|------|
-| [ANVIL: An In-Storage Accelerator for Name?Value Data Stores](anvil_an_in_storage_accelerator_for_name_value_data_stores.md) | - |
-| [ArtMem: Adaptive Migration in Reinforcement Learning-Enabled Tiered Memory](artmem_adaptive_migration_in_reinforcement_learning_enabled_tiered_memory.md) | - |
-| [UPP: Universal Predicate Pushdown to Smart Storage](upp_universal_predicate_pushdown_to_smart_storage.md) | - |
-| [XHarvest: Rethinking High-Performance and Cost-Efficient SSD Architecture with CXL-Driven Harvesting](xharvest_rethinking_high_performance_and_cost_efficient_ssd_architecture_with_cxl_driven_harvesting.md) | - |
-| [In-Storage Acceleration of Retrieval Augmented Generation as a Service](in_storage_acceleration_of_retrieval_augmented_generation_as_a_service.md) | - |
+相关 Session：**Session 3C: Storage**
+
+主要议题：键值存储加速、分层内存自适应迁移、谓词下推智能存储、CXL驱动SSD、RAG存储加速
+
+| 论文 | 机构 | 关键词 |
+|------|------|--------|
+| [ANVIL](anvil.md) | Rochester等 | 存储内加速, 键值存储 |
+| [ArtMem](artmem.md) | CityU等 | 分层内存, RL自适应迁移 |
+| [UPP](upp.md) | UIUC, Wisconsin等 | 谓词下推, 智能存储 |
+| [XHarvest](xharvest.md) | NUDT等 | CXL, SSD架构, 成本效益 |
+| [RAG In-Storage](rag_storage.md) | UCSD等 | RAG加速, In-Storage |
