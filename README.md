@@ -9,14 +9,16 @@ memory reliability, homomorphic encryption, LLM inference acceleration, PIM, and
 
 ## Current Coverage
 
-- HPCA 2025: 19 papers
-- HPCA 2026: 15 papers
-- ISCA 2025: 8 papers
+- HPCA 2025
+- HPCA 2026
+- ISCA 2025
 - MICRO 2025
 - ASPLOS 2025
 - DAC 2025
-- NeurIPS 2025
-- ICML 2025
+- NeurSys 2025
+- FAST 2025
+- PPoPP 2025
+- ATC 2025
 
 ## Main Features
 
@@ -101,6 +103,7 @@ The generated static site is written to `site/`.
 Production-like local verification:
 
 ```bash
+cd paperhub
 mkdocs build
 cd site
 python3 -m http.server 8124

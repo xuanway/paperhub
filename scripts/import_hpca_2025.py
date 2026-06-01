@@ -5,7 +5,7 @@ What this script updates:
 1) docs/HPCA/2025/**
    - Rebuilds track directories, track index pages, and per-paper markdown stubs.
 2) mkdocs.yml
-   - Rebuilds the HPCA 2025 nav block under "⚡ HPCA" and keeps HPCA 2026 unchanged.
+   - Rebuilds the HPCA 2025 nav block under "🚀 HPCA" and keeps HPCA 2026 unchanged.
 3) docs/index.md
    - Updates the HPCA 2025 card count and top-track tags.
 
@@ -316,7 +316,7 @@ def replace_hpca_2025_nav(content: str, new_block: List[str]) -> str:
 
     hpca_start = None
     for i, line in enumerate(lines):
-        if line.startswith("  - ⚡ HPCA:"):
+        if line.startswith("  - 🚀 HPCA:"):
             hpca_start = i
             break
     if hpca_start is None:
@@ -356,7 +356,7 @@ def update_homepage_index(total: int, top_tracks: List[Tuple[str, str, int]]) ->
     )
 
     replacement = (
-        "### ⚡ [HPCA 2025](HPCA/2025/index.md)\n\n"
+        "### 🚀 [HPCA 2025](HPCA/2025/index.md)\n\n"
         + f'<div class="conf-count" data-conf-key="HPCA 2025" data-conf-location="{HPCA_LOCATION}">{total} 篇 · {len(top_tracks)} 个方向 · {HPCA_LOCATION}</div>\n\n'
         + '<div class="area-groups">\n<div class="area-group">\n<div class="area-group-label">方向</div>\n<div class="area-tags">\n'
         + tags
@@ -364,7 +364,7 @@ def update_homepage_index(total: int, top_tracks: List[Tuple[str, str, int]]) ->
     )
 
     pattern = (
-        r"### ⚡ \[HPCA 2025\]\(HPCA/2025/index.md\)\n\n[\s\S]*?(?=\n---\n\n<div class=\"conf-card\" markdown>\n\n### ⚡ \[HPCA 2026\])"
+        r"### 🚀 \[HPCA 2025\]\(HPCA/2025/index.md\)\n\n[\s\S]*?(?=\n---\n\n<div class=\"conf-card\" markdown>\n\n### 🚀 \[HPCA 2026\])"
     )
 
     new_text, n = re.subn(pattern, replacement, text, count=1)

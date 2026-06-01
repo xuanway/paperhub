@@ -296,7 +296,7 @@
     _ci = [0, 0, 0];
 
     var wrap = canvas.closest(".wc-canvas-wrap");
-    var width = Math.min(wrap ? wrap.clientWidth - 4 : 680, 680);
+    var width = wrap ? Math.max(200, wrap.clientWidth - 4) : 920;
     var height = wrap ? Math.max(420, wrap.clientHeight - 4) : 576;
     canvas.width  = width;
     canvas.height = height;

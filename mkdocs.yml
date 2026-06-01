@@ -77,7 +77,7 @@ markdown_extensions:
 
 nav:
   - 🏠 首页: index.md
-  - ⚡ HPCA:
+  - 🚀 HPCA:
     - HPCA 2025 (121):
       - HPCA 2025: HPCA/2025/index.md
       - "The Winning System (11)":
@@ -1470,12 +1470,600 @@ nav:
         - "ZK-Hammer: Leaking Secrets from Zero-Knowledge Proofs via Rowhammer": DAC/2025/security/zk_hammer_leaking_secrets_from_zero_knowledge_proofs_via_rowhammer.md
         - "zkVC: Fast Zero-Knowledge Proof for Private and Verifiable Computing": DAC/2025/security/zkvc_fast_zero_knowledge_proof_for_private_and_verifiable_computing.md
   - 💾 FAST:
-    - FAST 2025: FAST/2025/index.md
+    - FAST 2025 (36):
+      - FAST 2025: FAST/2025/index.md
+      - "File Systems (5)":
+        - "File Systems": FAST/2025/file_systems/index.md
+        - "Fast, Transparent Filesystem Microkernel Recovery with Ananke": FAST/2025/file_systems/fast_transparent_filesystem_microkernel_recovery_with_ananke.md
+        - "Boosting File Systems Elegantly: A Transparent NVM Write-ahead Log for Disk File Systems": FAST/2025/file_systems/boosting_file_systems_elegantly_a_transparent_nvm_write_ahead_log_for_disk_file_systems.md
+        - "DJFS : Directory-Granularity Filesystem Journaling for CMM-H SSDs": FAST/2025/file_systems/djfs_directory_granularity_filesystem_journaling_for_cmm_h_ssds.md
+        - "ScaleLFS: A Log-Structured File System with Scalable Garbage Collection for Commodity SSDs": FAST/2025/file_systems/scalelfs_a_log_structured_file_system_with_scalable_garbage_collection_for_commodity_ssds.md
+        - "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs": FAST/2025/file_systems/rethinking_the_request_to_io_transformation_process_of_file_systems_for_full_utilization_of_high_bandwidth_ssds.md
+      - "Hardware Assist (5)":
+        - "Hardware Assist": FAST/2025/hardware_assist/index.md
+        - "HaSiS: A Hardware-assisted Single-index Store for Hybrid Transactional and Analytical Processing": FAST/2025/hardware_assist/hasis_a_hardware_assisted_single_index_store_for_hybrid_transactional_and_analytical_processing.md
+        - "AegonKV: A High Bandwidth, Low Tail Latency, and Low Storage Cost KV-Separated LSM Store with SmartSSD-based GC Offloading": FAST/2025/hardware_assist/aegonkv_a_high_bandwidth_low_tail_latency_and_low_storage_cost_kv_separated_lsm_store_with_smartssd_based_gc_offloading.md
+        - "D2FS: Device-Driven Filesystem Garbage Collection": FAST/2025/hardware_assist/d2fs_device_driven_filesystem_garbage_collection.md
+        - "ShiftLock: Mitigate One-sided RDMA Lock Contention via Handover": FAST/2025/hardware_assist/shiftlock_mitigate_one_sided_rdma_lock_contention_via_handover.md
+        - "Selective On-Device Execution of Data-Dependent Read I/Os": FAST/2025/hardware_assist/selective_on_device_execution_of_data_dependent_read_i_os.md
+      - "Machine Learning and Storage (5)":
+        - "Machine Learning and Storage": FAST/2025/machine_learning_and_storage/index.md
+        - "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot": FAST/2025/machine_learning_and_storage/mooncake_trading_more_storage_for_less_computation_a_kvcache_centric_architecture_for_serving_llm_chatbot.md
+        - "Towards High-throughput and Low-latency Billion-scale Vector Search via CPU/GPU Collaborative Filtering and Re-ranking": FAST/2025/machine_learning_and_storage/towards_high_throughput_and_low_latency_billion_scale_vector_search_via_cpu_gpu_collaborative_filtering_and_re_ranking.md
+        - "IMPRESS: An Importance-Informed Multi-Tier Prefix KV Storage System for Large Language Model Inference": FAST/2025/machine_learning_and_storage/impress_an_importance_informed_multi_tier_prefix_kv_storage_system_for_large_language_model_inference.md
+        - "GPHash: An Efficient Hash Index for GPU with Byte-Granularity Persistent Memory": FAST/2025/machine_learning_and_storage/gphash_an_efficient_hash_index_for_gpu_with_byte_granularity_persistent_memory.md
+        - "GeminiFS: A Companion File System for GPUs": FAST/2025/machine_learning_and_storage/geminifs_a_companion_file_system_for_gpus.md
+      - "Security, Integrity, and Consistency (5)":
+        - "Security, Integrity, and Consistency": FAST/2025/security_integrity_and_consistency/index.md
+        - "On Scalable Integrity Checking for Secure Cloud Disks": FAST/2025/security_integrity_and_consistency/on_scalable_integrity_checking_for_secure_cloud_disks.md
+        - "Silhouette: Leveraging Consistency Mechanisms to Detect Bugs in Persistent Memory-Based File Systems": FAST/2025/security_integrity_and_consistency/silhouette_leveraging_consistency_mechanisms_to_detect_bugs_in_persistent_memory_based_file_systems.md
+        - "OPIMQ: Order Preserving IO stack for Multi-Queue Block Device": FAST/2025/security_integrity_and_consistency/opimq_order_preserving_io_stack_for_multi_queue_block_device.md
+        - "AWUPF Rediscovered: Atomic Writes to Unleash Pivotal Fault-Tolerance in SSDs": FAST/2025/security_integrity_and_consistency/awupf_rediscovered_atomic_writes_to_unleash_pivotal_fault_tolerance_in_ssds.md
+        - "AtomicDisk: A Secure Virtual Disk for TEEs against Eviction Attacks": FAST/2025/security_integrity_and_consistency/atomicdisk_a_secure_virtual_disk_for_tees_against_eviction_attacks.md
+      - "Cloud Storage (4)":
+        - "Cloud Storage": FAST/2025/cloud_storage/index.md
+        - "FlacIO: Flat and Collective I/O for Container Image Service": FAST/2025/cloud_storage/flacio_flat_and_collective_i_o_for_container_image_service.md
+        - "Cloudscape: A Study of Storage Services in Modern Cloud Architectures": FAST/2025/cloud_storage/cloudscape_a_study_of_storage_services_in_modern_cloud_architectures.md
+        - "Maat: Analyzing and Optimizing Overcharge on Blockchain Storage": FAST/2025/cloud_storage/maat_analyzing_and_optimizing_overcharge_on_blockchain_storage.md
+        - "Revisiting Network Coding for Warm Blob Storage": FAST/2025/cloud_storage/revisiting_network_coding_for_warm_blob_storage.md
+      - "Compression and Deduplication (4)":
+        - "Compression and Deduplication": FAST/2025/compression_and_deduplication/index.md
+        - "MedFS: Pursuing Low Update Overhead via Metadata-Enabled Delta Compression for Log-structured File System on Mobile Device": FAST/2025/compression_and_deduplication/medfs_pursuing_low_update_overhead_via_metadata_enabled_delta_compression_for_log_structured_file_system_on_mobile_device.md
+        - "Don't Maintain Twice, It's Alright: Merged Metadata Management in Deduplication File System with GogetaFS": FAST/2025/compression_and_deduplication/don_t_maintain_twice_it_s_alright_merged_metadata_management_in_deduplication_file_system_with_gogetafs.md
+        - "Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices": FAST/2025/compression_and_deduplication/archer_adaptive_memory_compression_with_page_association_rule_awareness_for_high_speed_response_of_mobile_devices.md
+        - "VectorCDC: Accelerating Data Deduplication with Vector Instructions": FAST/2025/compression_and_deduplication/vectorcdc_accelerating_data_deduplication_with_vector_instructions.md
+      - "More Machine Learning (4)":
+        - "More Machine Learning": FAST/2025/more_machine_learning/index.md
+        - "3L-Cache: Low Overhead and Precise Learning-based Eviction Policy for Caches": FAST/2025/more_machine_learning/3l_cache_low_overhead_and_precise_learning_based_eviction_policy_for_caches.md
+        - "LeapGNN: Accelerating Distributed GNN Training Leveraging Feature-Centric Model Migration": FAST/2025/more_machine_learning/leapgnn_accelerating_distributed_gnn_training_leveraging_feature_centric_model_migration.md
+        - "HiDPU: A DPU-Oriented Hybrid Indexing Scheme for Disaggregated Storage Systems": FAST/2025/more_machine_learning/hidpu_a_dpu_oriented_hybrid_indexing_scheme_for_disaggregated_storage_systems.md
+        - "PIMLex: A High-Performance Learned Index with Processing-in-Memory": FAST/2025/more_machine_learning/pimlex_a_high_performance_learned_index_with_processing_in_memory.md
+      - "Storage Diversity and Heterogeneity (4)":
+        - "Storage Diversity and Heterogeneity": FAST/2025/storage_diversity_and_heterogeneity/index.md
+        - "Oasis: An Out-of-core Approximate Graph System via All-Distances Sketches": FAST/2025/storage_diversity_and_heterogeneity/oasis_an_out_of_core_approximate_graph_system_via_all_distances_sketches.md
+        - "PolyStore: Exploiting Combined Capabilities of Heterogeneous Storage": FAST/2025/storage_diversity_and_heterogeneity/polystore_exploiting_combined_capabilities_of_heterogeneous_storage.md
+        - "Liquid-State Drive: A Case for DNA Block Device for Enormous Data": FAST/2025/storage_diversity_and_heterogeneity/liquid_state_drive_a_case_for_dna_block_device_for_enormous_data.md
+        - "DNA data storage: A generative tool for Motif-based DNA storage": FAST/2025/storage_diversity_and_heterogeneity/dna_data_storage_a_generative_tool_for_motif_based_dna_storage.md
   - 🌩️ SC:
-    - SC 2025: SC/2025/index.md
-  - 🇪🇺 EuroSys:
-    - EuroSys 2025: EuroSys/2025/index.md
+    - SC 2025 (136):
+      - SC 2025: SC/2025/index.md
+      - "Algorithms: Matrix Multiplication and GEMM Optimization (4)":
+        - "Algorithms: Matrix Multiplication and GEMM Optimization": SC/2025/algorithms_matrix_multiplication_and_gemm_optimization/index.md
+        - "HyTiS: Hybrid Tile Scheduling for GPU GEMM with Enhanced Wave Utilization and Cache Locality": SC/2025/algorithms_matrix_multiplication_and_gemm_optimization/hytis_hybrid_tile_scheduling_for_gpu_gemm_with_enhanced_wave_utilization_and_cache_locality.md
+        - "MXBLAS: Accelerating 8-Bit Deep Learning with a Unified Micro-Scaled GEMM Library": SC/2025/algorithms_matrix_multiplication_and_gemm_optimization/mxblas_accelerating_8_bit_deep_learning_with_a_unified_micro_scaled_gemm_library.md
+        - "KAMI: Communication-Avoiding General Matrix Multiplication Within a Single GPU": SC/2025/algorithms_matrix_multiplication_and_gemm_optimization/kami_communication_avoiding_general_matrix_multiplication_within_a_single_gpu.md
+        - "LiquidGEMM: Hardware-Efficient W4A8 GEMM Kernel for High-Performance LLM Serving": SC/2025/algorithms_matrix_multiplication_and_gemm_optimization/liquidgemm_hardware_efficient_w4a8_gemm_kernel_for_high_performance_llm_serving.md
+      - "Algorithms: Other Matrix and Tensor Methods (4)":
+        - "Algorithms: Other Matrix and Tensor Methods": SC/2025/algorithms_other_matrix_and_tensor_methods/index.md
+        - "Parallel Rank-Adaptive Higher-Order Orthogonal Iteration": SC/2025/algorithms_other_matrix_and_tensor_methods/parallel_rank_adaptive_higher_order_orthogonal_iteration.md
+        - "HStencil: Matrix-Vector Stencil Computation with Interleaved Outer Product and MLA": SC/2025/algorithms_other_matrix_and_tensor_methods/hstencil_matrix_vector_stencil_computation_with_interleaved_outer_product_and_mla.md
+        - "DAS-ILU: A Distributed Asynchronous Parallel ILU Factorization Based on Domain Decomposition": SC/2025/algorithms_other_matrix_and_tensor_methods/das_ilu_a_distributed_asynchronous_parallel_ilu_factorization_based_on_domain_decomposition.md
+        - "Rethinking Back Transformation in Two-Stage Eigenvalue Decomposition on Heterogeneous Architectures": SC/2025/algorithms_other_matrix_and_tensor_methods/rethinking_back_transformation_in_two_stage_eigenvalue_decomposition_on_heterogeneous_architectures.md
+      - "Algorithms: Sparse Matrix and Tensor Computation (4)":
+        - "Algorithms: Sparse Matrix and Tensor Computation": SC/2025/algorithms_sparse_matrix_and_tensor_computation/index.md
+        - "SparStencil: Retargeting Sparse Tensor Cores to Scientific Stencil Computations via Structured Sparsity Transformation": SC/2025/algorithms_sparse_matrix_and_tensor_computation/sparstencil_retargeting_sparse_tensor_cores_to_scientific_stencil_computations_via_structured_sparsity_transformation.md
+        - "Utilizing Sparsity in the GPU-Accelerated Assembly of Schur Complement Matrices in Domain Decomposition Methods": SC/2025/algorithms_sparse_matrix_and_tensor_computation/utilizing_sparsity_in_the_gpu_accelerated_assembly_of_schur_complement_matrices_in_domain_decomposition_methods.md
+        - "Improving SpGEMM Performance Through Matrix-Reordering and Cluster-Wise Computation": SC/2025/algorithms_sparse_matrix_and_tensor_computation/improving_spgemm_performance_through_matrix_reordering_and_cluster_wise_computation.md
+        - "Caracal: A GPU-Resident Sparse LU Solver with Lightweight Fine-Grained Scheduling": SC/2025/algorithms_sparse_matrix_and_tensor_computation/caracal_a_gpu_resident_sparse_lu_solver_with_lightweight_fine_grained_scheduling.md
+      - "Anomaly Detection, Failure Management, and Resilience 1 (4)":
+        - "Anomaly Detection, Failure Management, and Resilience 1": SC/2025/anomaly_detection_failure_management_and_resilience_1/index.md
+        - "Fine-Grained Automated Failure Management for Extreme-Scale GPU-Accelerated Systems": SC/2025/anomaly_detection_failure_management_and_resilience_1/fine_grained_automated_failure_management_for_extreme_scale_gpu_accelerated_systems.md
+        - "FT-Transformer: Resilient and Reliable Transformer with End-to-End Fault-Tolerant Attention": SC/2025/anomaly_detection_failure_management_and_resilience_1/ft_transformer_resilient_and_reliable_transformer_with_end_to_end_fault_tolerant_attention.md
+        - "LowDiff: Efficient Frequent Checkpointing via Low-Cost Differential for High-Performance Distributed Training Systems": SC/2025/anomaly_detection_failure_management_and_resilience_1/lowdiff_efficient_frequent_checkpointing_via_low_cost_differential_for_high_performance_distributed_training_systems.md
+        - "Deploying Lightweight Selective Instruction Duplication for HPC Applications": SC/2025/anomaly_detection_failure_management_and_resilience_1/deploying_lightweight_selective_instruction_duplication_for_hpc_applications.md
+      - "Anomaly Detection, Failure Management, and Resilience 2 (4)":
+        - "Anomaly Detection, Failure Management, and Resilience 2": SC/2025/anomaly_detection_failure_management_and_resilience_2/index.md
+        - "Story of Two GPUs: Characterizing the Resilience of Hopper H100 and Ampere A100 GPUs": SC/2025/anomaly_detection_failure_management_and_resilience_2/story_of_two_gpus_characterizing_the_resilience_of_hopper_h100_and_ampere_a100_gpus.md
+        - "Demystifying the Resilience of Large Language Model Inference: An End-to-End Perspective": SC/2025/anomaly_detection_failure_management_and_resilience_2/demystifying_the_resilience_of_large_language_model_inference_an_end_to_end_perspective.md
+        - "Effective Node-Level Anomaly Detection in HPC Systems via Coarse-Grained Clustering and Fine-Grained Model Sharing": SC/2025/anomaly_detection_failure_management_and_resilience_2/effective_node_level_anomaly_detection_in_hpc_systems_via_coarse_grained_clustering_and_fine_grained_model_sharing.md
+        - "Exploring and Mitigating Failure Behavior of Large Language Model Training Workloads in HPC Systems": SC/2025/anomaly_detection_failure_management_and_resilience_2/exploring_and_mitigating_failure_behavior_of_large_language_model_training_workloads_in_hpc_systems.md
+      - "Applications: Biological Modeling (4)":
+        - "Applications: Biological Modeling": SC/2025/applications_biological_modeling/index.md
+        - "Microscopic-Level Mouse Whole Cortex Simulation Composed of 9 Million Biophysical Neurons and 26 Billion Synapses on the Supercomputer Fugaku": SC/2025/applications_biological_modeling/microscopic_level_mouse_whole_cortex_simulation_composed_of_9_million_biophysical_neurons_and_26_billion_synapses_on_the_supercomputer_fugaku.md
+        - "Trillion Ligands per Day: Performance-Portable Virtual Screening via Compound Database Optimization and Multi-Target Docking": SC/2025/applications_biological_modeling/trillion_ligands_per_day_performance_portable_virtual_screening_via_compound_database_optimization_and_multi_target_docking.md
+        - "T2-RELION: Task Parallelism, Tensor Core Accelerated RELION for Cryo-EM 3D Reconstruction": SC/2025/applications_biological_modeling/t2_relion_task_parallelism_tensor_core_accelerated_relion_for_cryo_em_3d_reconstruction.md
+        - "BLAZE: Exploiting Hybrid Parallelism and Size-Customized Kernels to Accelerate BLASTP on GPUs": SC/2025/applications_biological_modeling/blaze_exploiting_hybrid_parallelism_and_size_customized_kernels_to_accelerate_blastp_on_gpus.md
+      - "Applications: Large-Scale Scientific Simulation (4)":
+        - "Applications: Large-Scale Scientific Simulation": SC/2025/applications_large_scale_scientific_simulation/index.md
+        - "Million-Atom Ab Initio Electron Dynamics: Discontinuous Galerkin Real-Time Time-Dependent Density Functional Theory": SC/2025/applications_large_scale_scientific_simulation/million_atom_ab_initio_electron_dynamics_discontinuous_galerkin_real_time_time_dependent_density_functional_theory.md
+        - "The First Star-by-Star $N$-body/Hydrodynamics Simulation of Our Galaxy Coupling with a Surrogate Model": SC/2025/applications_large_scale_scientific_simulation/the_first_star_by_star_n_body_hydrodynamics_simulation_of_our_galaxy_coupling_with_a_surrogate_model.md
+        - "Kilometer-Scale AI-Powered and Performance-Portable Earth System Model (AP3ESM) to Achieve Year-Scale Simulation Speed on Heterogeneous Supercomputers": SC/2025/applications_large_scale_scientific_simulation/kilometer_scale_ai_powered_and_performance_portable_earth_system_model_ap3esm_to_achieve_year_scale_simulation_speed_on_heterogeneous_supercomputers.md
+        - "Deep Learning-Enabled Supercritical Flame Simulation at Detailed Chemistry and Real-Fluid Accuracy Towards Trillion-Cell Scale": SC/2025/applications_large_scale_scientific_simulation/deep_learning_enabled_supercritical_flame_simulation_at_detailed_chemistry_and_real_fluid_accuracy_towards_trillion_cell_scale.md
+      - "Architectures and Networks: Hashing, Indexing, and Nearest Neighbor Search (4)":
+        - "Architectures and Networks: Hashing, Indexing, and Nearest Neighbor Search": SC/2025/architectures_and_networks_hashing_indexing_and_nearest_neighbor_search/index.md
+        - "MetoHash: A Memory-Efficient and Traffic-Optimized Hashing Index on Hybrid PMem-DRAM Memories": SC/2025/architectures_and_networks_hashing_indexing_and_nearest_neighbor_search/metohash_a_memory_efficient_and_traffic_optimized_hashing_index_on_hybrid_pmem_dram_memories.md
+        - "DRIM-ANN: An Approximate Nearest Neighbor Search Engine Based on Commercial DRAM-PIMs": SC/2025/architectures_and_networks_hashing_indexing_and_nearest_neighbor_search/drim_ann_an_approximate_nearest_neighbor_search_engine_based_on_commercial_dram_pims.md
+        - "UpANNS: Enhancing Billion-Scale ANNS Efficiency with Real-World PIM Architecture": SC/2025/architectures_and_networks_hashing_indexing_and_nearest_neighbor_search/upanns_enhancing_billion_scale_anns_efficiency_with_real_world_pim_architecture.md
+        - "Optimizing Data Acquisitions in Multi-Robot Systems": SC/2025/architectures_and_networks_hashing_indexing_and_nearest_neighbor_search/optimizing_data_acquisitions_in_multi_robot_systems.md
+      - "Architectures and Networks: Networking (4)":
+        - "Architectures and Networks: Networking": SC/2025/architectures_and_networks_networking/index.md
+        - "Uno: A One-Stop Solution for Inter- and Intra-Data Center Congestion Control and Reliable Connectivity": SC/2025/architectures_and_networks_networking/uno_a_one_stop_solution_for_inter_and_intra_data_center_congestion_control_and_reliable_connectivity.md
+        - "SDR-RDMA: Software-Defined Reliability Architecture for Planetary-Scale RDMA Communication": SC/2025/architectures_and_networks_networking/sdr_rdma_software_defined_reliability_architecture_for_planetary_scale_rdma_communication.md
+        - "ACTINA: Adapting Circuit-Switching Techniques for AI Networking Architectures": SC/2025/architectures_and_networks_networking/actina_adapting_circuit_switching_techniques_for_ai_networking_architectures.md
+        - "Scaling Out Chip Interconnect Networks with Implicit Sequence Numbers": SC/2025/architectures_and_networks_networking/scaling_out_chip_interconnect_networks_with_implicit_sequence_numbers.md
+      - "Auto-Tuning, Compilation, and Code Generation (4)":
+        - "Auto-Tuning, Compilation, and Code Generation": SC/2025/auto_tuning_compilation_and_code_generation/index.md
+        - "PerfDojo: Automated ML Library Generation for Heterogeneous Architectures": SC/2025/auto_tuning_compilation_and_code_generation/perfdojo_automated_ml_library_generation_for_heterogeneous_architectures.md
+        - "Constraint-Driven Auto-Tuning of GEMM-Like Operators for MT-3000 Many-Core Processors": SC/2025/auto_tuning_compilation_and_code_generation/constraint_driven_auto_tuning_of_gemm_like_operators_for_mt_3000_many_core_processors.md
+        - "A Sample-Free Compilation Framework for Efficient Dynamic Tensor Computation": SC/2025/auto_tuning_compilation_and_code_generation/a_sample_free_compilation_framework_for_efficient_dynamic_tensor_computation.md
+        - "Automatic Generation of Mappings for Distributed Fourier Operations": SC/2025/auto_tuning_compilation_and_code_generation/automatic_generation_of_mappings_for_distributed_fourier_operations.md
+      - "Collective Operations and Communication (4)":
+        - "Collective Operations and Communication": SC/2025/collective_operations_and_communication/index.md
+        - "Bine Trees: Enhancing Collective Operations by Optimizing Communication Locality": SC/2025/collective_operations_and_communication/bine_trees_enhancing_collective_operations_by_optimizing_communication_locality.md
+        - "DPAR: High-Performance, Secure, and Scalable Differential Privacy-Based AllReduce": SC/2025/collective_operations_and_communication/dpar_high_performance_secure_and_scalable_differential_privacy_based_allreduce.md
+        - "A Streaming Collectives Interface Targeting Dataflow Acceleration and HPC Workloads": SC/2025/collective_operations_and_communication/a_streaming_collectives_interface_targeting_dataflow_acceleration_and_hpc_workloads.md
+        - "DiffMoE: Efficient Batched MoE Inference with Priority-Driven Differential Expert Caching": SC/2025/collective_operations_and_communication/diffmoe_efficient_batched_moe_inference_with_priority_driven_differential_expert_caching.md
+      - "Compression and Data Reduction 1 (4)":
+        - "Compression and Data Reduction 1": SC/2025/compression_and_data_reduction_1/index.md
+        - "Stability-Preserving Lossy Compression for Large-Scale Partial Differential Equations": SC/2025/compression_and_data_reduction_1/stability_preserving_lossy_compression_for_large_scale_partial_differential_equations.md
+        - "What To Support When You’re Compressing: The State of Practice, Gaps, and Opportunities for Scientific Data Compression": SC/2025/compression_and_data_reduction_1/what_to_support_when_you_re_compressing_the_state_of_practice_gaps_and_opportunities_for_scientific_data_compression.md
+        - "lsCOMP: Efficient Light Source Compression": SC/2025/compression_and_data_reduction_1/lscomp_efficient_light_source_compression.md
+        - "Generative Latent Diffusion for Efficient Spatiotemporal Data Reduction": SC/2025/compression_and_data_reduction_1/generative_latent_diffusion_for_efficient_spatiotemporal_data_reduction.md
+      - "Compression and Data Reduction 2 (4)":
+        - "Compression and Data Reduction 2": SC/2025/compression_and_data_reduction_2/index.md
+        - "STZ: A High-Quality and High-Speed Streaming Lossy Compression Framework for Scientific Data": SC/2025/compression_and_data_reduction_2/stz_a_high_quality_and_high_speed_streaming_lossy_compression_framework_for_scientific_data.md
+        - "Boosting Scientific Error-Bounded Lossy Compression Through Optimized Synergistic Lossy-Lossless Orchestration": SC/2025/compression_and_data_reduction_2/boosting_scientific_error_bounded_lossy_compression_through_optimized_synergistic_lossy_lossless_orchestration.md
+        - "GPU Lossy Compression for HPC Can Be Versatile and Ultra-Fast": SC/2025/compression_and_data_reduction_2/gpu_lossy_compression_for_hpc_can_be_versatile_and_ultra_fast.md
+        - "HP-MDR: High-Performance and Portable Data Refactoring and Progressive Retrieval with Advanced GPUs": SC/2025/compression_and_data_reduction_2/hp_mdr_high_performance_and_portable_data_refactoring_and_progressive_retrieval_with_advanced_gpus.md
+      - "Containerization and Software Deployment (4)":
+        - "Containerization and Software Deployment": SC/2025/containerization_and_software_deployment/index.md
+        - "XaaS Containers: Performance-Portable Representation with Source and IR Containers": SC/2025/containerization_and_software_deployment/xaas_containers_performance_portable_representation_with_source_and_ir_containers.md
+        - "Bridging the Gap Between Binary and Source-Based Package Management in Spack": SC/2025/containerization_and_software_deployment/bridging_the_gap_between_binary_and_source_based_package_management_in_spack.md
+        - "coMtainer: Compilation-Assisted HPC Container Images with Enhanced Adaptability": SC/2025/containerization_and_software_deployment/comtainer_compilation_assisted_hpc_container_images_with_enhanced_adaptability.md
+        - "EDDE: Container Deployment Framework Beyond the Cloud": SC/2025/containerization_and_software_deployment/edde_container_deployment_framework_beyond_the_cloud.md
+      - "Data Analytics, Visualization, and Storage (4)":
+        - "Data Analytics, Visualization, and Storage": SC/2025/data_analytics_visualization_and_storage/index.md
+        - "STELLAR: Storage Tuning Engine Leveraging LLM Autonomous Reasoning for High-Performance Parallel File Systems": SC/2025/data_analytics_visualization_and_storage/stellar_storage_tuning_engine_leveraging_llm_autonomous_reasoning_for_high_performance_parallel_file_systems.md
+        - "Phoenix: A Refactored I/O Stack for GPU Direct Storage Without Phony Buffers": SC/2025/data_analytics_visualization_and_storage/phoenix_a_refactored_i_o_stack_for_gpu_direct_storage_without_phony_buffers.md
+        - "MANS: Efficient and Portable ANS Encoding for Multi-Byte Integer Data on CPUs and GPUs": SC/2025/data_analytics_visualization_and_storage/mans_efficient_and_portable_ans_encoding_for_multi_byte_integer_data_on_cpus_and_gpus.md
+        - "gParaKV: A GPGPU-Accelerated Key-Value Separation-Based KV Store with Optimized Compaction and Garbage Collection": SC/2025/data_analytics_visualization_and_storage/gparakv_a_gpgpu_accelerated_key_value_separation_based_kv_store_with_optimized_compaction_and_garbage_collection.md
+      - "Energy, Power, and Sustainability (4)":
+        - "Energy, Power, and Sustainability": SC/2025/energy_power_and_sustainability/index.md
+        - "Benchmark-Driven Models for Energy Analysis and Attribution of GPU-Accelerated Supercomputing": SC/2025/energy_power_and_sustainability/benchmark_driven_models_for_energy_analysis_and_attribution_of_gpu_accelerated_supercomputing.md
+        - "ThirstyFLOPS: Water Footprint Modeling and Analysis Toward Sustainable HPC Systems": SC/2025/energy_power_and_sustainability/thirstyflops_water_footprint_modeling_and_analysis_toward_sustainable_hpc_systems.md
+        - "Core Hours and Carbon Credits: Incentivizing Sustainability in HPC": SC/2025/energy_power_and_sustainability/core_hours_and_carbon_credits_incentivizing_sustainability_in_hpc.md
+        - "Characterizing Performance, Power, and Energy of AMD CDNA3 GPU Family": SC/2025/energy_power_and_sustainability/characterizing_performance_power_and_energy_of_amd_cdna3_gpu_family.md
+      - "Graph Neural Networks and Training (4)":
+        - "Graph Neural Networks and Training": SC/2025/graph_neural_networks_and_training/index.md
+        - "Plexus: Taming Billion-Edge Graphs with 3D Parallel Full-Graph GNN Training": SC/2025/graph_neural_networks_and_training/plexus_taming_billion_edge_graphs_with_3d_parallel_full_graph_gnn_training.md
+        - "PGT-I: Scaling Spatiotemporal GNNs with Memory-Efficient Distributed Training": SC/2025/graph_neural_networks_and_training/pgt_i_scaling_spatiotemporal_gnns_with_memory_efficient_distributed_training.md
+        - "TaGNN: An Efficient Topology-Aware Accelerator for High-Performance Dynamic Graph Neural Networks": SC/2025/graph_neural_networks_and_training/tagnn_an_efficient_topology_aware_accelerator_for_high_performance_dynamic_graph_neural_networks.md
+        - "Moment: Co-Optimizing Physical Communication Topology and Data Placement for Multi-GPU Out-of-Core GNN Training": SC/2025/graph_neural_networks_and_training/moment_co_optimizing_physical_communication_topology_and_data_placement_for_multi_gpu_out_of_core_gnn_training.md
+      - "Graph Processing and Pattern Matching (4)":
+        - "Graph Processing and Pattern Matching": SC/2025/graph_processing_and_pattern_matching/index.md
+        - "Fringe-SGC: Counting Subgraphs with Fringe Vertices": SC/2025/graph_processing_and_pattern_matching/fringe_sgc_counting_subgraphs_with_fringe_vertices.md
+        - "Bubble: Towards Scalable Evolving Graph Processing via Mini-Batch Sorting": SC/2025/graph_processing_and_pattern_matching/bubble_towards_scalable_evolving_graph_processing_via_mini_batch_sorting.md
+        - "Graphago: Accelerating SSD-Based Graph Processing via Activity-Aware Graph Preprocessing": SC/2025/graph_processing_and_pattern_matching/graphago_accelerating_ssd_based_graph_processing_via_activity_aware_graph_preprocessing.md
+        - "SIGMo: High-Throughput Batched Subgraph Isomorphism on GPUs for Molecular Matching": SC/2025/graph_processing_and_pattern_matching/sigmo_high_throughput_batched_subgraph_isomorphism_on_gpus_for_molecular_matching.md
+      - "Machine Learning: Inference and Serving (4)":
+        - "Machine Learning: Inference and Serving": SC/2025/machine_learning_inference_and_serving/index.md
+        - "gLLM: Global Balanced Pipeline Parallelism Systems for Distributed LLMs Serving with Token Throttling": SC/2025/machine_learning_inference_and_serving/gllm_global_balanced_pipeline_parallelism_systems_for_distributed_llms_serving_with_token_throttling.md
+        - "Compile-Time QoS Scheme for Deep Learning Inferences": SC/2025/machine_learning_inference_and_serving/compile_time_qos_scheme_for_deep_learning_inferences.md
+        - "MaverIQ: Fingerprint-Guided Extrapolation and Fragmentation-Aware Layering for Intent-Based LLM Serving": SC/2025/machine_learning_inference_and_serving/maveriq_fingerprint_guided_extrapolation_and_fragmentation_aware_layering_for_intent_based_llm_serving.md
+        - "Hetis: Serving LLMs in Heterogeneous GPU Clusters with Fine-Grained and Dynamic Parallelism": SC/2025/machine_learning_inference_and_serving/hetis_serving_llms_in_heterogeneous_gpu_clusters_with_fine_grained_and_dynamic_parallelism.md
+      - "Machine Learning: Methods (4)":
+        - "Machine Learning: Methods": SC/2025/machine_learning_methods/index.md
+        - "Distributed Cross-Channel Hierarchical Aggregation for Foundation Models": SC/2025/machine_learning_methods/distributed_cross_channel_hierarchical_aggregation_for_foundation_models.md
+        - "TurboFNO: High-Performance Fourier Neural Operator with Fused FFT-GEMM-iFFT on GPU": SC/2025/machine_learning_methods/turbofno_high_performance_fourier_neural_operator_with_fused_fft_gemm_ifft_on_gpu.md
+        - "Towards Efficient LLM Inference via Collective and Adaptive Speculative Decoding": SC/2025/machine_learning_methods/towards_efficient_llm_inference_via_collective_and_adaptive_speculative_decoding.md
+        - "Accelerated Spatio-Temporal Bayesian Modeling for Multivariate Gaussian Processes": SC/2025/machine_learning_methods/accelerated_spatio_temporal_bayesian_modeling_for_multivariate_gaussian_processes.md
+      - "Machine Learning: Training at Scale 1 (4)":
+        - "Machine Learning: Training at Scale 1": SC/2025/machine_learning_training_at_scale_1/index.md
+        - "TT-LoRA MoE: Using Parameter-Efficient Fine Tuning and Sparse Mixture-of-Experts": SC/2025/machine_learning_training_at_scale_1/tt_lora_moe_using_parameter_efficient_fine_tuning_and_sparse_mixture_of_experts.md
+        - "HPC-R1: Characterizing R1-Like Large Reasoning Models on HPC": SC/2025/machine_learning_training_at_scale_1/hpc_r1_characterizing_r1_like_large_reasoning_models_on_hpc.md
+        - "X-MoE: Enabling Scalable Training for Emerging Mixture-of-Experts Architectures on HPC Platforms": SC/2025/machine_learning_training_at_scale_1/x_moe_enabling_scalable_training_for_emerging_mixture_of_experts_architectures_on_hpc_platforms.md
+        - "Balanced and Elastic End-to-End Training of Dynamic LLMs": SC/2025/machine_learning_training_at_scale_1/balanced_and_elastic_end_to_end_training_of_dynamic_llms.md
+      - "Machine Learning: Training at Scale 2 (4)":
+        - "Machine Learning: Training at Scale 2": SC/2025/machine_learning_training_at_scale_2/index.md
+        - "MLP-Offload: Multi-Level, Multi-Path Offloading for LLM Pre-Training To Break the GPU Memory Wall": SC/2025/machine_learning_training_at_scale_2/mlp_offload_multi_level_multi_path_offloading_for_llm_pre_training_to_break_the_gpu_memory_wall.md
+        - "SlimPipe: Memory-Thrifty and Efficient Pipeline Parallelism for Long-Context LLM Training": SC/2025/machine_learning_training_at_scale_2/slimpipe_memory_thrifty_and_efficient_pipeline_parallelism_for_long_context_llm_training.md
+        - "BurstEngine: An Efficient Distributed Framework for Training Transformers on Extremely Long Sequences of Over 1M Tokens": SC/2025/machine_learning_training_at_scale_2/burstengine_an_efficient_distributed_framework_for_training_transformers_on_extremely_long_sequences_of_over_1m_tokens.md
+        - "RingX: Scalable Parallel Attention for Long-Context Learning on HPC": SC/2025/machine_learning_training_at_scale_2/ringx_scalable_parallel_attention_for_long_context_learning_on_hpc.md
+      - "Performance: Analysis Tools (4)":
+        - "Performance: Analysis Tools": SC/2025/performance_analysis_tools/index.md
+        - "C.A.T.S.: Memory and Control Flow Tracing for Whole-Program Performance Analysis": SC/2025/performance_analysis_tools/c_a_t_s_memory_and_control_flow_tracing_for_whole_program_performance_analysis.md
+        - "ATLAHS: An Application-centric Network Simulator Toolchain for AI, HPC, and Distributed Storage": SC/2025/performance_analysis_tools/atlahs_an_application_centric_network_simulator_toolchain_for_ai_hpc_and_distributed_storage.md
+        - "RedSan: A Redundant Memory Instruction Sanitizer for GPU Programs": SC/2025/performance_analysis_tools/redsan_a_redundant_memory_instruction_sanitizer_for_gpu_programs.md
+        - "TraceFlow: Efficient Trace Analysis for Large-Scale Parallel Applications via Interaction Pattern-Aware Trace Distribution": SC/2025/performance_analysis_tools/traceflow_efficient_trace_analysis_for_large_scale_parallel_applications_via_interaction_pattern_aware_trace_distribution.md
+      - "Performance: Benchmarks and Optimization (4)":
+        - "Performance: Benchmarks and Optimization": SC/2025/performance_benchmarks_and_optimization/index.md
+        - "mLR: Scalable Laminography Reconstruction Based on Memoization": SC/2025/performance_benchmarks_and_optimization/mlr_scalable_laminography_reconstruction_based_on_memoization.md
+        - "CPU- and GPU-Initiated Communication Strategies for Conjugate Gradient Methods on Large GPU Clusters": SC/2025/performance_benchmarks_and_optimization/cpu_and_gpu_initiated_communication_strategies_for_conjugate_gradient_methods_on_large_gpu_clusters.md
+        - "Zero-Value Code Specialization via Profile-Guided Control Data Flow Analysis": SC/2025/performance_benchmarks_and_optimization/zero_value_code_specialization_via_profile_guided_control_data_flow_analysis.md
+        - "Scaling the Memory Wall Using Mixed-Precision — HPG-MxP on an Exascale Machine": SC/2025/performance_benchmarks_and_optimization/scaling_the_memory_wall_using_mixed_precision_hpg_mxp_on_an_exascale_machine.md
+      - "Performance: Sparse Matrix and Tensor Computation (4)":
+        - "Performance: Sparse Matrix and Tensor Computation": SC/2025/performance_sparse_matrix_and_tensor_computation/index.md
+        - "Sparsified Preconditioned Conjugate Gradient Solver on GPUs": SC/2025/performance_sparse_matrix_and_tensor_computation/sparsified_preconditioned_conjugate_gradient_solver_on_gpus.md
+        - "Bridging the Gap Between Unstructured SpMM and Structured Sparse Tensor Cores": SC/2025/performance_sparse_matrix_and_tensor_computation/bridging_the_gap_between_unstructured_spmm_and_structured_sparse_tensor_cores.md
+        - "StraGCN: GPU-Accelerated Strassen’s Sparse-Dense Matrix Multiplication for Graph Convolutional Network Training": SC/2025/performance_sparse_matrix_and_tensor_computation/stragcn_gpu_accelerated_strassen_s_sparse_dense_matrix_multiplication_for_graph_convolutional_network_training.md
+        - "FaSTCC: Fast Sparse Tensor Contractions on CPUs": SC/2025/performance_sparse_matrix_and_tensor_computation/fastcc_fast_sparse_tensor_contractions_on_cpus.md
+      - "Precision and Real Number Representations (4)":
+        - "Precision and Real Number Representations": SC/2025/precision_and_real_number_representations/index.md
+        - "High-Performance Branch-Free Algorithms for Extended-Precision Floating-Point Arithmetic": SC/2025/precision_and_real_number_representations/high_performance_branch_free_algorithms_for_extended_precision_floating_point_arithmetic.md
+        - "RAPTOR: Practical Numerical Profiling of Scientific Applications": SC/2025/precision_and_real_number_representations/raptor_practical_numerical_profiling_of_scientific_applications.md
+        - "Numerical Performance of the Implicitly Restarted Arnoldi Method in OFP8, Bfloat16, Posit, and Takum Arithmetics": SC/2025/precision_and_real_number_representations/numerical_performance_of_the_implicitly_restarted_arnoldi_method_in_ofp8_bfloat16_posit_and_takum_arithmetics.md
+        - "A Nested Krylov Method Using Half-Precision Arithmetic": SC/2025/precision_and_real_number_representations/a_nested_krylov_method_using_half_precision_arithmetic.md
+      - "Programming Frameworks (4)":
+        - "Programming Frameworks": SC/2025/programming_frameworks/index.md
+        - "ODOS-MPI: HPC-Friendly SmartNIC Offloading of Computation/Communication Kernels": SC/2025/programming_frameworks/odos_mpi_hpc_friendly_smartnic_offloading_of_computation_communication_kernels.md
+        - "COSMOS: Performance Portable Graph Pattern Matching with Domain-Specific Software Distributed Shared Memory": SC/2025/programming_frameworks/cosmos_performance_portable_graph_pattern_matching_with_domain_specific_software_distributed_shared_memory.md
+        - "AGILE: Lightweight and Efficient Asynchronous GPU-SSD Integration": SC/2025/programming_frameworks/agile_lightweight_and_efficient_asynchronous_gpu_ssd_integration.md
+        - "LCI: A Lightweight Communication Interface for Efficient Asynchronous Multithreaded Communication": SC/2025/programming_frameworks/lci_a_lightweight_communication_interface_for_efficient_asynchronous_multithreaded_communication.md
+      - "Quantum Computing and Simulation (4)":
+        - "Quantum Computing and Simulation": SC/2025/quantum_computing_and_simulation/index.md
+        - "Qonductor: A Cloud Orchestrator for Quantum Computing": SC/2025/quantum_computing_and_simulation/qonductor_a_cloud_orchestrator_for_quantum_computing.md
+        - "QDockBank: A Dataset for Ligand Docking on Protein Fragments Predicted on Utility-Level Quantum Computers": SC/2025/quantum_computing_and_simulation/qdockbank_a_dataset_for_ligand_docking_on_protein_fragments_predicted_on_utility_level_quantum_computers.md
+        - "Optimizing Quantum Circuit Mapping to Reduce Inter-Module Communications in Distributed Architectures": SC/2025/quantum_computing_and_simulation/optimizing_quantum_circuit_mapping_to_reduce_inter_module_communications_in_distributed_architectures.md
+        - "Augmenting Simulated Noisy Quantum Data Collection by Orders of Magnitude Using Pre-Trajectory Sampling with Batched Execution": SC/2025/quantum_computing_and_simulation/augmenting_simulated_noisy_quantum_data_collection_by_orders_of_magnitude_using_pre_trajectory_sampling_with_batched_execution.md
+      - "Scheduling, Tiling, and Parallelism (4)":
+        - "Scheduling, Tiling, and Parallelism": SC/2025/scheduling_tiling_and_parallelism/index.md
+        - "Hypertron: Efficiently Scaling Large Models by Exploring High-Dimensional Parallelization Space": SC/2025/scheduling_tiling_and_parallelism/hypertron_efficiently_scaling_large_models_by_exploring_high_dimensional_parallelization_space.md
+        - "SIREN: Software Identification and Recognition in HPC Systems": SC/2025/scheduling_tiling_and_parallelism/siren_software_identification_and_recognition_in_hpc_systems.md
+        - "TianheEngine: Hierarchy-Aware Adaptive Partitioning System for Trillion-Scale Graph Processing": SC/2025/scheduling_tiling_and_parallelism/tianheengine_hierarchy_aware_adaptive_partitioning_system_for_trillion_scale_graph_processing.md
+        - "UltraAttn: Efficiently Parallelizing Attention Through Hierarchical Context-Tiling": SC/2025/scheduling_tiling_and_parallelism/ultraattn_efficiently_parallelizing_attention_through_hierarchical_context_tiling.md
+      - "State of the Practice (4)":
+        - "State of the Practice": SC/2025/state_of_the_practice/index.md
+        - "ChatHPC: Building the Foundations for a Productive and Trustworthy AI-Assisted HPC Ecosystem": SC/2025/state_of_the_practice/chathpc_building_the_foundations_for_a_productive_and_trustworthy_ai_assisted_hpc_ecosystem.md
+        - "Addressing Reproducibility Challenges in HPC with Continuous Integration": SC/2025/state_of_the_practice/addressing_reproducibility_challenges_in_hpc_with_continuous_integration.md
+        - "Breaking the System Noise Barrier at Exascale": SC/2025/state_of_the_practice/breaking_the_system_noise_barrier_at_exascale.md
+        - "Insights from Optimizing HPL Performance on Exascale Systems: A Comparative Analysis of Panel Factorization": SC/2025/state_of_the_practice/insights_from_optimizing_hpl_performance_on_exascale_systems_a_comparative_analysis_of_panel_factorization.md
+      - "System Software and Cloud (4)":
+        - "System Software and Cloud": SC/2025/system_software_and_cloud/index.md
+        - "Workload Intelligence: Workload-Aware IaaS Abstraction for Cloud Efficiency": SC/2025/system_software_and_cloud/workload_intelligence_workload_aware_iaas_abstraction_for_cloud_efficiency.md
+        - "Make Updates Faster: A Fast Multi-Stripe Updates Framework in Erasure-Coded Storage Clusters": SC/2025/system_software_and_cloud/make_updates_faster_a_fast_multi_stripe_updates_framework_in_erasure_coded_storage_clusters.md
+        - "DHAP: Towards Efficient OLAP in a Disaggregated and Heterogeneous Environment": SC/2025/system_software_and_cloud/dhap_towards_efficient_olap_in_a_disaggregated_and_heterogeneous_environment.md
+        - "cMPI: Using CXL Memory Sharing for MPI One-Sided and Two-Sided Inter-Node Communications": SC/2025/system_software_and_cloud/cmpi_using_cxl_memory_sharing_for_mpi_one_sided_and_two_sided_inter_node_communications.md
+      - "System Software and Cloud Computing: Resource Utilization (4)":
+        - "System Software and Cloud Computing: Resource Utilization": SC/2025/system_software_and_cloud_computing_resource_utilization/index.md
+        - "HELM: Characterizing Unified Memory Accesses to Improve GPU Performance Under Memory Oversubscription": SC/2025/system_software_and_cloud_computing_resource_utilization/helm_characterizing_unified_memory_accesses_to_improve_gpu_performance_under_memory_oversubscription.md
+        - "GreenMix: Energy-Efficient Serverless Computing via Randomized Sketching on Asymmetric Multi-Cores": SC/2025/system_software_and_cloud_computing_resource_utilization/greenmix_energy_efficient_serverless_computing_via_randomized_sketching_on_asymmetric_multi_cores.md
+        - "Minimizing Power Waste in Heterogeneous Computing via Adaptive Uncore Scaling": SC/2025/system_software_and_cloud_computing_resource_utilization/minimizing_power_waste_in_heterogeneous_computing_via_adaptive_uncore_scaling.md
+        - "BOER: Enhancing Resource Utilization for Deep Learning Inference with Hybrid Spatial GPU Sharing": SC/2025/system_software_and_cloud_computing_resource_utilization/boer_enhancing_resource_utilization_for_deep_learning_inference_with_hybrid_spatial_gpu_sharing.md
+      - "Algorithms: Matching System Capabilities (3)":
+        - "Algorithms: Matching System Capabilities": SC/2025/algorithms_matching_system_capabilities/index.md
+        - "Matrix Is All You Need: Rearchitecting Quantum Chemistry to Scale on AI Accelerators": SC/2025/algorithms_matching_system_capabilities/matrix_is_all_you_need_rearchitecting_quantum_chemistry_to_scale_on_ai_accelerators.md
+        - "Wasp: Efficient Asynchronous Single-Source Shortest Path on Multicore Systems via Work Stealing": SC/2025/algorithms_matching_system_capabilities/wasp_efficient_asynchronous_single_source_shortest_path_on_multicore_systems_via_work_stealing.md
+        - "AMRaCut: Scalable Partitioning for Adaptive Mesh Refinement": SC/2025/algorithms_matching_system_capabilities/amracut_scalable_partitioning_for_adaptive_mesh_refinement.md
+      - "Applications: Atomistic Modeling (3)":
+        - "Applications: Atomistic Modeling": SC/2025/applications_atomistic_modeling/index.md
+        - "MISA-AKMC: Achieve Kinetic Monte Carlo Simulation of 20 Quadrillion Atoms on GPU Clusters": SC/2025/applications_atomistic_modeling/misa_akmc_achieve_kinetic_monte_carlo_simulation_of_20_quadrillion_atoms_on_gpu_clusters.md
+        - "TENSORMD: Accelerating Molecular Dynamics with a High-Performance Machine Learning Interatomic Potential": SC/2025/applications_atomistic_modeling/tensormd_accelerating_molecular_dynamics_with_a_high_performance_machine_learning_interatomic_potential.md
+        - "NNQS-SCI: Tackling Trillion-Dimensional Hilbert Space with Adaptive Neural Network Quantum States": SC/2025/applications_atomistic_modeling/nnqs_sci_tackling_trillion_dimensional_hilbert_space_with_adaptive_neural_network_quantum_states.md
+      - "ACM Gordon Bell Finalists Presentations (2)":
+        - "ACM Gordon Bell Finalists Presentations": SC/2025/acm_gordon_bell_finalists_presentations/index.md
+        - "ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling": SC/2025/acm_gordon_bell_finalists_presentations/orbit_2_scaling_exascale_vision_foundation_models_for_weather_and_climate_downscaling.md
+        - "Ab-Initio Quantum Transport with the GW Approximation, 42,240 Atoms, and Sustained Exascale Performance": SC/2025/acm_gordon_bell_finalists_presentations/ab_initio_quantum_transport_with_the_gw_approximation_42_240_atoms_and_sustained_exascale_performance.md
+  - ⚙️ EuroSys:
+    - EuroSys 2025 (85):
+      - EuroSys 2025: EuroSys/2025/index.md
+      - "LLM Serving (9)":
+        - "LLM Serving": EuroSys/2025/llm_serving/index.md
+        - "CacheBlend: Fast Large Language Model Serving for RAG with Cached Knowledge Fusion": EuroSys/2025/llm_serving/cacheblend_fast_large_language_model_serving_for_rag_with_cached_knowledge_fusion.md
+        - "DeltaZip: Efficient Serving of Multiple Full-Model-Tuned LLMs": EuroSys/2025/llm_serving/deltazip_efficient_serving_of_multiple_full_model_tuned_llms.md
+        - "Fast State Restoration in LLM Serving with HCache": EuroSys/2025/llm_serving/fast_state_restoration_in_llm_serving_with_hcache.md
+        - "Stateful Large Language Model Serving with Pensieve": EuroSys/2025/llm_serving/stateful_large_language_model_serving_with_pensieve.md
+        - "SkyServe: Serving AI Models across Regions and Clouds with Spot Instances": EuroSys/2025/llm_serving/skyserve_serving_ai_models_across_regions_and_clouds_with_spot_instances.md
+        - "SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs": EuroSys/2025/llm_serving/spinfer_leveraging_low_level_sparsity_for_efficient_large_language_model_inference_on_gpus.md
+        - "Empower Vision Applications with LoRA LMM": EuroSys/2025/llm_serving/empower_vision_applications_with_lora_lmm.md
+        - "T-MAC: CPU Renaissance via Table Lookup for Low-Bit LLM Deployment on Edge": EuroSys/2025/llm_serving/t_mac_cpu_renaissance_via_table_lookup_for_low_bit_llm_deployment_on_edge.md
+        - "Samoyeds: Accelerating MoE Models with Structured Sparsity Leveraging Sparse Tensor Cores": EuroSys/2025/llm_serving/samoyeds_accelerating_moe_models_with_structured_sparsity_leveraging_sparse_tensor_cores.md
+      - "Storage (8)":
+        - "Storage": EuroSys/2025/storage/index.md
+        - "Solid State Drive Targeted Memory-Efficient Indexing for Universal I/O Patterns and Fragmentation Degrees": EuroSys/2025/storage/solid_state_drive_targeted_memory_efficient_indexing_for_universal_i_o_patterns_and_fragmentation_degrees.md
+        - "Daredevil: Rescue Your Flash Storage from Inflexible Kernel Storage Stack": EuroSys/2025/storage/daredevil_rescue_your_flash_storage_from_inflexible_kernel_storage_stack.md
+        - "Overcoming the Last Mile between Log-Structured File Systems and Persistent Memory via Scatter Logging": EuroSys/2025/storage/overcoming_the_last_mile_between_log_structured_file_systems_and_persistent_memory_via_scatter_logging.md
+        - "Garbage Collection Does Not Only Collect Garbage: Piggybacking-Style Defragmentation for Deduplicated Backup Storage": EuroSys/2025/storage/garbage_collection_does_not_only_collect_garbage_piggybacking_style_defragmentation_for_deduplicated_backup_storage.md
+        - "Heimdall: Optimizing Storage I/O Admission with Extensive Machine Learning Pipeline": EuroSys/2025/storage/heimdall_optimizing_storage_i_o_admission_with_extensive_machine_learning_pipeline.md
+        - "Cheetah: Metadata Aggregation for Fast Object Storage without Distributed Ordering": EuroSys/2025/storage/cheetah_metadata_aggregation_for_fast_object_storage_without_distributed_ordering.md
+        - "Towards Efficient Flash Caches with Emerging NVMe Flexible Data Placement SSDs": EuroSys/2025/storage/towards_efficient_flash_caches_with_emerging_nvme_flexible_data_placement_ssds.md
+        - "Pre-Stores: Proactive Software-guided Movement of Data Down the Memory Hierarchy": EuroSys/2025/storage/pre_stores_proactive_software_guided_movement_of_data_down_the_memory_hierarchy.md
+      - "Distributed Systems (5)":
+        - "Distributed Systems": EuroSys/2025/distributed_systems/index.md
+        - "Collaborative Text Editing with Eg-walker: Better, Faster, Smaller": EuroSys/2025/distributed_systems/collaborative_text_editing_with_eg_walker_better_faster_smaller.md
+        - "Themis: Finding Imbalance Failures in Distributed File Systems via a Load Variance Model": EuroSys/2025/distributed_systems/themis_finding_imbalance_failures_in_distributed_file_systems_via_a_load_variance_model.md
+        - "Moko: Marrying Python with Big Data Systems": EuroSys/2025/distributed_systems/moko_marrying_python_with_big_data_systems.md
+        - "Pegasus: Transparent and Unified Kernel-Bypass Networking for Fast Local and Remote Communication": EuroSys/2025/distributed_systems/pegasus_transparent_and_unified_kernel_bypass_networking_for_fast_local_and_remote_communication.md
+        - "Multi-Grained Specifications for Distributed System Model Checking and Verification": EuroSys/2025/distributed_systems/multi_grained_specifications_for_distributed_system_model_checking_and_verification.md
+      - "Graph and Stream processing (5)":
+        - "Graph and Stream processing": EuroSys/2025/graph_and_stream_processing/index.md
+        - "BINGO: Radix-based Bias Factorization for Random Walk on Dynamic Graphs": EuroSys/2025/graph_and_stream_processing/bingo_radix_based_bias_factorization_for_random_walk_on_dynamic_graphs.md
+        - "OHMiner: An Overlap-centric System for Efficient Hypergraph Pattern Mining": EuroSys/2025/graph_and_stream_processing/ohminer_an_overlap_centric_system_for_efficient_hypergraph_pattern_mining.md
+        - "Impeller: Stream Processing on Shared Logs": EuroSys/2025/graph_and_stream_processing/impeller_stream_processing_on_shared_logs.md
+        - "CAPSys: Contention-aware task placement for data stream processing": EuroSys/2025/graph_and_stream_processing/capsys_contention_aware_task_placement_for_data_stream_processing.md
+        - "NeuStream: Bridging Deep Learning Serving and Stream Processing": EuroSys/2025/graph_and_stream_processing/neustream_bridging_deep_learning_serving_and_stream_processing.md
+      - "LLM Training (5)":
+        - "LLM Training": EuroSys/2025/llm_training/index.md
+        - "MEPipe: Democratizing LLM Training with Memory-Efficient Slice-Level Pipeline Scheduling on Cost-Effective Accelerators": EuroSys/2025/llm_training/mepipe_democratizing_llm_training_with_memory_efficient_slice_level_pipeline_scheduling_on_cost_effective_accelerators.md
+        - "HybridFlow: A Flexible and Efficient RLHF Framework": EuroSys/2025/llm_training/hybridflow_a_flexible_and_efficient_rlhf_framework.md
+        - "Mist: Efficient Distributed Training of Large Language Models via Memory-Parallelism Co-Optimization": EuroSys/2025/llm_training/mist_efficient_distributed_training_of_large_language_models_via_memory_parallelism_co_optimization.md
+        - "Hourglass: Enabling Efficient Split Federated Learning with Data Parallelism": EuroSys/2025/llm_training/hourglass_enabling_efficient_split_federated_learning_with_data_parallelism.md
+        - "FlowCheck: Decoupling Checkpointing and Training of Large-Scale Models": EuroSys/2025/llm_training/flowcheck_decoupling_checkpointing_and_training_of_large_scale_models.md
+      - "Network/Network Congestion Control (5)":
+        - "Network/Network Congestion Control": EuroSys/2025/network_network_congestion_control/index.md
+        - "Enabling Virtual Priority in Data Center Congestion Control": EuroSys/2025/network_network_congestion_control/enabling_virtual_priority_in_data_center_congestion_control.md
+        - "Achieving Fairness Generalizability for Learning-based Congestion Control with Jury": EuroSys/2025/network_network_congestion_control/achieving_fairness_generalizability_for_learning_based_congestion_control_with_jury.md
+        - "Introspective Congestion Control for Consistent High Performance": EuroSys/2025/network_network_congestion_control/introspective_congestion_control_for_consistent_high_performance.md
+        - "Fork: A Dual Congestion Control Loop for Small and Large Flows in Datacenters": EuroSys/2025/network_network_congestion_control/fork_a_dual_congestion_control_loop_for_small_and_large_flows_in_datacenters.md
+        - "Marlin: Enabling High-Throughput Congestion Control Testing in Large-Scale Networks": EuroSys/2025/network_network_congestion_control/marlin_enabling_high_throughput_congestion_control_testing_in_large_scale_networks.md
+      - "Operating Systems (5)":
+        - "Operating Systems": EuroSys/2025/operating_systems/index.md
+        - "Empowering WebAssembly with Thin Kernel Interfaces": EuroSys/2025/operating_systems/empowering_webassembly_with_thin_kernel_interfaces.md
+        - "Revealing the Unstable Foundations of eBPF-Based Kernel Extensions": EuroSys/2025/operating_systems/revealing_the_unstable_foundations_of_ebpf_based_kernel_extensions.md
+        - "eNetSTL: Towards an In-kernel Library for High-Performance eBPF-based Network Functions": EuroSys/2025/operating_systems/enetstl_towards_an_in_kernel_library_for_high_performance_ebpf_based_network_functions.md
+        - "CRAVE: Analyzing Cross-Resource Interaction to Improve Energy Efficiency in Systems-on-Chip": EuroSys/2025/operating_systems/crave_analyzing_cross_resource_interaction_to_improve_energy_efficiency_in_systems_on_chip.md
+        - "Efeu: generating efficient, verified, hybrid hardware/software drivers for I2C devices": EuroSys/2025/operating_systems/efeu_generating_efficient_verified_hybrid_hardware_software_drivers_for_i2c_devices.md
+      - "Security and Privacy (5)":
+        - "Security and Privacy": EuroSys/2025/security_and_privacy/index.md
+        - "RAKIS: Secure Fast I/O Primitives Across Trust Boundaries on Intel SGX": EuroSys/2025/security_and_privacy/rakis_secure_fast_i_o_primitives_across_trust_boundaries_on_intel_sgx.md
+        - "DPack: Efficiency-Oriented Privacy Budget Scheduling": EuroSys/2025/security_and_privacy/dpack_efficiency_oriented_privacy_budget_scheduling.md
+        - "Erebor: A Drop-In Sandbox Solution for Private Data Processing in Untrusted Confidential Virtual Machines": EuroSys/2025/security_and_privacy/erebor_a_drop_in_sandbox_solution_for_private_data_processing_in_untrusted_confidential_virtual_machines.md
+        - "A Hardware-Software Co-Design for Efficient Secure Containers": EuroSys/2025/security_and_privacy/a_hardware_software_co_design_for_efficient_secure_containers.md
+        - "Seal: Towards Diverse Specification Inference for Linux Interfaces from Security Patches": EuroSys/2025/security_and_privacy/seal_towards_diverse_specification_inference_for_linux_interfaces_from_security_patches.md
+      - "Virtualization (5)":
+        - "Virtualization": EuroSys/2025/virtualization/index.md
+        - "Towards VM Rescheduling Optimization Through Deep Reinforcement Learning": EuroSys/2025/virtualization/towards_vm_rescheduling_optimization_through_deep_reinforcement_learning.md
+        - "HyperAlloc: Efficient VM Memory De/Inflation via Hypervisor-Shared Page-Frame Allocators": EuroSys/2025/virtualization/hyperalloc_efficient_vm_memory_de_inflation_via_hypervisor_shared_page_frame_allocators.md
+        - "FastIOV: Fast Startup of Passthrough Network I/O Virtualization for Secure Containers": EuroSys/2025/virtualization/fastiov_fast_startup_of_passthrough_network_i_o_virtualization_for_secure_containers.md
+        - "Hey Hey, My My, Skewness Is Here to Stay: Challenges and Opportunities in Cloud Block Store Traffic": EuroSys/2025/virtualization/hey_hey_my_my_skewness_is_here_to_stay_challenges_and_opportunities_in_cloud_block_store_traffic.md
+        - "Optimizing Task Scheduling in Cloud VMs with Accurate vCPU Abstraction": EuroSys/2025/virtualization/optimizing_task_scheduling_in_cloud_vms_with_accurate_vcpu_abstraction.md
+      - "Bug finding (4)":
+        - "Bug finding": EuroSys/2025/bug_finding/index.md
+        - "Understanding the Linux Kernel, Visually": EuroSys/2025/bug_finding/understanding_the_linux_kernel_visually.md
+        - "Understanding and Detecting SQL Function Bugs: Using Simple Boundary Arguments to Trigger Hundreds of DBMS Bugs": EuroSys/2025/bug_finding/understanding_and_detecting_sql_function_bugs_using_simple_boundary_arguments_to_trigger_hundreds_of_dbms_bugs.md
+        - "BESA: Extending Bugs Triggered by Runtime Testing via Static Analysis": EuroSys/2025/bug_finding/besa_extending_bugs_triggered_by_runtime_testing_via_static_analysis.md
+        - "HawkSet: Automatic, Application-Agnostic, and Efficient Concurrent PM Bug Detection": EuroSys/2025/bug_finding/hawkset_automatic_application_agnostic_and_efficient_concurrent_pm_bug_detection.md
+      - "Cloud and Serverless Computing (4)":
+        - "Cloud and Serverless Computing": EuroSys/2025/cloud_and_serverless_computing/index.md
+        - "SeBS-Flow: Benchmarking Serverless Cloud Function Workflows": EuroSys/2025/cloud_and_serverless_computing/sebs_flow_benchmarking_serverless_cloud_function_workflows.md
+        - "AlloyStack: A Library Operating System for Serverless Workflow Applications": EuroSys/2025/cloud_and_serverless_computing/alloystack_a_library_operating_system_for_serverless_workflow_applications.md
+        - "Serverless Cold Starts and Where to Find Them": EuroSys/2025/cloud_and_serverless_computing/serverless_cold_starts_and_where_to_find_them.md
+        - "TUNA: Tuning Unstable and Noisy Cloud Applications": EuroSys/2025/cloud_and_serverless_computing/tuna_tuning_unstable_and_noisy_cloud_applications.md
+      - "Fault Tolerance and Consensus (4)":
+        - "Fault Tolerance and Consensus": EuroSys/2025/fault_tolerance_and_consensus/index.md
+        - "RoboRebound: Multi-Robot System Defense with Bounded-Time Interaction": EuroSys/2025/fault_tolerance_and_consensus/roborebound_multi_robot_system_defense_with_bounded_time_interaction.md
+        - "Achilles: Efficient TEE-Assisted BFT Consensus via Rollback Resilient Recovery": EuroSys/2025/fault_tolerance_and_consensus/achilles_efficient_tee_assisted_bft_consensus_via_rollback_resilient_recovery.md
+        - "ParallelEVM: Operation-Level Concurrent Transaction Execution for EVM-Compatible Blockchains": EuroSys/2025/fault_tolerance_and_consensus/parallelevm_operation_level_concurrent_transaction_execution_for_evm_compatible_blockchains.md
+        - "Ladon: High-Performance Multi-BFT Consensus via Dynamic Global Ordering": EuroSys/2025/fault_tolerance_and_consensus/ladon_high_performance_multi_bft_consensus_via_dynamic_global_ordering.md
+      - "GPU Systems (4)":
+        - "GPU Systems": EuroSys/2025/gpu_systems/index.md
+        - "Comprehensive Deadlock Prevention for GPU Collective Communication": EuroSys/2025/gpu_systems/comprehensive_deadlock_prevention_for_gpu_collective_communication.md
+        - "Jupiter: Pushing the Speed and Scalability Limitations for Subgraph Matching on Multi-GPUs": EuroSys/2025/gpu_systems/jupiter_pushing_the_speed_and_scalability_limitations_for_subgraph_matching_on_multi_gpus.md
+        - "Improving GPU Sharing Performance through Adaptive Bubbleless Spatial-Temporal Sharing": EuroSys/2025/gpu_systems/improving_gpu_sharing_performance_through_adaptive_bubbleless_spatial_temporal_sharing.md
+        - "Multiplexing Dynamic Deep Learning Workloads with SLO-awareness in GPU Clusters": EuroSys/2025/gpu_systems/multiplexing_dynamic_deep_learning_workloads_with_slo_awareness_in_gpu_clusters.md
+      - "ML Systems (4)":
+        - "ML Systems": EuroSys/2025/ml_systems/index.md
+        - "LOFT: A Lock-free and Adaptive Learned Index with High Scalability for Dynamic Workloads": EuroSys/2025/ml_systems/loft_a_lock_free_and_adaptive_learned_index_with_high_scalability_for_dynamic_workloads.md
+        - "MetaHG: Enhancing HGNN Systems Leveraging Advanced Metapath Graph Abstraction": EuroSys/2025/ml_systems/metahg_enhancing_hgnn_systems_leveraging_advanced_metapath_graph_abstraction.md
+        - "Flex: Fast, Accurate DNN Inference on Low-Cost Edges Using Heterogeneous Accelerator Execution": EuroSys/2025/ml_systems/flex_fast_accurate_dnn_inference_on_low_cost_edges_using_heterogeneous_accelerator_execution.md
+        - "A House United Within Itself: SLO-Awareness for On-Premises Containerized ML Inference Clusters via Faro": EuroSys/2025/ml_systems/a_house_united_within_itself_slo_awareness_for_on_premises_containerized_ml_inference_clusters_via_faro.md
+      - "ML systems (4)":
+        - "ML systems": EuroSys/2025/ml_systems_2/index.md
+        - "JABAS: Joint Adaptive Batching and Automatic Scaling for DNN Training on Heterogeneous GPUs": EuroSys/2025/ml_systems_2/jabas_joint_adaptive_batching_and_automatic_scaling_for_dnn_training_on_heterogeneous_gpus.md
+        - "SpaceFusion: Advanced Deep Learning Operator Fusion via Space-Mapping Graph": EuroSys/2025/ml_systems_2/spacefusion_advanced_deep_learning_operator_fusion_via_space_mapping_graph.md
+        - "Groot: Graph-Centric Row Reordering with Tree for Sparse Matrix Multiplications on Tensor Cores": EuroSys/2025/ml_systems_2/groot_graph_centric_row_reordering_with_tree_for_sparse_matrix_multiplications_on_tensor_cores.md
+        - "SuperFE: A Scalable and Flexible Feature Extractor for ML-based Traffic Analysis Applications": EuroSys/2025/ml_systems_2/superfe_a_scalable_and_flexible_feature_extractor_for_ml_based_traffic_analysis_applications.md
+      - "Memory Tiering and Disaggregation (4)":
+        - "Memory Tiering and Disaggregation": EuroSys/2025/memory_tiering_and_disaggregation/index.md
+        - "Chrono: Meticulous Hotness Measurement and Flexible Page Migration for Memory Tiering": EuroSys/2025/memory_tiering_and_disaggregation/chrono_meticulous_hotness_measurement_and_flexible_page_migration_for_memory_tiering.md
+        - "PET: Proactive Demotion for Efficient Tiered Memory Management": EuroSys/2025/memory_tiering_and_disaggregation/pet_proactive_demotion_for_efficient_tiered_memory_management.md
+        - "Adios to Busy-Waiting for Microsecond-scale Memory Disaggregation": EuroSys/2025/memory_tiering_and_disaggregation/adios_to_busy_waiting_for_microsecond_scale_memory_disaggregation.md
+        - "Deft: A Scalable Tree Index for Disaggregated Memory": EuroSys/2025/memory_tiering_and_disaggregation/deft_a_scalable_tree_index_for_disaggregated_memory.md
+      - "Network - Van Oldebarneveldt (3)":
+        - "Network - Van Oldebarneveldt": EuroSys/2025/network_van_oldebarneveldt/index.md
+        - "Atlas: Towards Real-Time Verification in Large-Scale Networks via a Native Distributed Architecture": EuroSys/2025/network_van_oldebarneveldt/atlas_towards_real_time_verification_in_large_scale_networks_via_a_native_distributed_architecture.md
+        - "Occamy: A Preemptive Buffer Management for On-chip Shared-memory Switches": EuroSys/2025/network_van_oldebarneveldt/occamy_a_preemptive_buffer_management_for_on_chip_shared_memory_switches.md
+        - "Phantom: Virtualizing Switch Register Resources for Accurate Sketch-based Network Measurement": EuroSys/2025/network_van_oldebarneveldt/phantom_virtualizing_switch_register_resources_for_accurate_sketch_based_network_measurement.md
+      - "Cloud and Networking - Rotterdam hall 1B (2)":
+        - "Cloud and Networking - Rotterdam hall 1B": EuroSys/2025/cloud_and_networking_rotterdam_hall_1b/index.md
+        - "Eva: Cost-Efficient Cloud-Based Cluster Scheduling": EuroSys/2025/cloud_and_networking_rotterdam_hall_1b/eva_cost_efficient_cloud_based_cluster_scheduling.md
+        - "Byte vSwitch: A High-Performance Virtual Switch for Cloud Networking": EuroSys/2025/cloud_and_networking_rotterdam_hall_1b/byte_vswitch_a_high_performance_virtual_switch_for_cloud_networking.md
   - ⚡ PPoPP:
-    - PPoPP 2025: PPoPP/2025/index.md
-  - 🛠️ ATC:
-    - ATC 2025: ATC/2025/index.md
+    - PPoPP 2025 (38):
+      - PPoPP 2025: PPoPP/2025/index.md
+      - "Concurrent Data Structures and Synchronization I (4)":
+        - "Concurrent Data Structures and Synchronization I": PPoPP/2025/concurrent_data_structures_and_synchronization_i/index.md
+        - "Reciprocating Locks": PPoPP/2025/concurrent_data_structures_and_synchronization_i/reciprocating_locks.md
+        - "Aggregating Funnels for Faster Fetch&Add and Queues": PPoPP/2025/concurrent_data_structures_and_synchronization_i/aggregating_funnels_for_faster_fetch_and_add_and_queues.md
+        - "Fairer and More Scalable Reader-Writer Locks by Optimizing Queue Management": PPoPP/2025/concurrent_data_structures_and_synchronization_i/fairer_and_more_scalable_reader_writer_locks_by_optimizing_queue_management.md
+        - "Publish on Ping: A Better Way to Publish Reservations in Memory Reclamation for Concurrent Data Structures Distinguished Paper Award": PPoPP/2025/concurrent_data_structures_and_synchronization_i/publish_on_ping_a_better_way_to_publish_reservations_in_memory_reclamation_for_concurrent_data_structures_distinguished_paper_award.md
+      - "Concurrent Data Structures and Synchronization II (4)":
+        - "Concurrent Data Structures and Synchronization II": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/index.md
+        - "PANNS: Enhancing Graph-based Approximate Nearest Neighbor Search through Recency-aware Construction and Parameterized Search": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/panns_enhancing_graph_based_approximate_nearest_neighbor_search_through_recency_aware_construction_and_parameterized_search.md
+        - "Balanced Allocations over Efficient Queues: A Fast Relaxed FIFO Queue": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/balanced_allocations_over_efficient_queues_a_fast_relaxed_fifo_queue.md
+        - "LibRTS: A Spatial Indexing Library by Ray Tracing": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/librts_a_spatial_indexing_library_by_ray_tracing.md
+        - "Crystality: A Programming Model for Smart Contracts on Parallel EVMs": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/crystality_a_programming_model_for_smart_contracts_on_parallel_evms.md
+      - "GPU II (4)":
+        - "GPU II": PPoPP/2025/gpu_ii/index.md
+        - "Popcorn: Accelerating Kernel K-means on GPUs through Sparse Linear Algebra": PPoPP/2025/gpu_ii/popcorn_accelerating_kernel_k_means_on_gpus_through_sparse_linear_algebra.md
+        - "Swift Unfolding of Communities: GPU-Accelerated Louvain Algorithm": PPoPP/2025/gpu_ii/swift_unfolding_of_communities_gpu_accelerated_louvain_algorithm.md
+        - "GLUMIN: Fast Connectivity Check Based on LUTs For Efficient Graph Pattern Mining": PPoPP/2025/gpu_ii/glumin_fast_connectivity_check_based_on_luts_for_efficient_graph_pattern_mining.md
+        - "Improving Tridiagonalization Performance on GPU Architectures": PPoPP/2025/gpu_ii/improving_tridiagonalization_performance_on_gpu_architectures.md
+      - "Parallel Algorithms and Applications (4)":
+        - "Parallel Algorithms and Applications": PPoPP/2025/parallel_algorithms_and_applications/index.md
+        - "Jigsaw: Toward Conflict-free Vectorized Stencil Computation by Tessellating Swizzled Registers": PPoPP/2025/parallel_algorithms_and_applications/jigsaw_toward_conflict_free_vectorized_stencil_computation_by_tessellating_swizzled_registers.md
+        - "Semi-StructMG: A Fast and Scalable Semi-Structured Algebraic Multigrid": PPoPP/2025/parallel_algorithms_and_applications/semi_structmg_a_fast_and_scalable_semi_structured_algebraic_multigrid.md
+        - "SBMGT: Scaling Bayesian Multinomial Group Testing": PPoPP/2025/parallel_algorithms_and_applications/sbmgt_scaling_bayesian_multinomial_group_testing.md
+        - "An AI-Enhanced 1km-Resolution Seamless Global Weather and Climate Model to Achieve Year-Scale Simulation Speed using 34 Million Cores": PPoPP/2025/parallel_algorithms_and_applications/an_ai_enhanced_1km_resolution_seamless_global_weather_and_climate_model_to_achieve_year_scale_simulation_speed_using_34_million_cores.md
+      - "Tensor Cores (4)":
+        - "Tensor Cores": PPoPP/2025/tensor_cores/index.md
+        - "FlashSparse: Minimizing Computation Redundancy for Fast Sparse Matrix Multiplications on Tensor Cores": PPoPP/2025/tensor_cores/flashsparse_minimizing_computation_redundancy_for_fast_sparse_matrix_multiplications_on_tensor_cores.md
+        - "Acc-SpMM: Accelerating General-purpose Sparse Matrix-Matrix Multiplication with GPU Tensor Cores": PPoPP/2025/tensor_cores/acc_spmm_accelerating_general_purpose_sparse_matrix_matrix_multiplication_with_gpu_tensor_cores.md
+        - "BerryBees: Breadth First Search by Bit-Tensor-Cores Distinguished Paper Award Best Artifact Award": PPoPP/2025/tensor_cores/berrybees_breadth_first_search_by_bit_tensor_cores_distinguished_paper_award_best_artifact_award.md
+        - "FlashFFTStencil: Bridging Fast Fourier Transforms to Memory-Efficient Stencil Computations on Tensor Core Units": PPoPP/2025/tensor_cores/flashfftstencil_bridging_fast_fourier_transforms_to_memory_efficient_stencil_computations_on_tensor_core_units.md
+      - "Deep Neural Network​s (3)":
+        - "Deep Neural Network​s": PPoPP/2025/deep_neural_network_s/index.md
+        - "FlashTensor: Optimizing Tensor Programs by Leveraging Fine-grained Tensor Property": PPoPP/2025/deep_neural_network_s/flashtensor_optimizing_tensor_programs_by_leveraging_fine_grained_tensor_property.md
+        - "Mario: Near Zero-cost Activation Checkpointing in Pipeline Parallelism": PPoPP/2025/deep_neural_network_s/mario_near_zero_cost_activation_checkpointing_in_pipeline_parallelism.md
+        - "COMPSO: Optimizing Gradient Compression for Distributed Training with Second-Order Optimizers": PPoPP/2025/deep_neural_network_s/compso_optimizing_gradient_compression_for_distributed_training_with_second_order_optimizers.md
+      - "GPU I ​ (3)":
+        - "GPU I ​": PPoPP/2025/gpu_i/index.md
+        - "RT–BarnesHut: Accelerating Barnes–Hut Using Ray-Tracing Hardware": PPoPP/2025/gpu_i/rt_barneshut_accelerating_barnes_hut_using_ray_tracing_hardware.md
+        - "EVeREST: An Effective and Versatile Runtime Energy Saving Tool for GPUs Distinguished Paper Award": PPoPP/2025/gpu_i/everest_an_effective_and_versatile_runtime_energy_saving_tool_for_gpus_distinguished_paper_award.md
+        - "TurboFFT: Co-Designed High-Performance and Fault-Tolerant Fast Fourier Transform on GPUs": PPoPP/2025/gpu_i/turbofft_co_designed_high_performance_and_fault_tolerant_fast_fourier_transform_on_gpus.md
+      - "Graph Neural Networks (3)":
+        - "Graph Neural Networks": PPoPP/2025/graph_neural_networks/index.md
+        - "Helios: Efficient Distributed Dynamic Graph Sampling for Online GNN Inference": PPoPP/2025/graph_neural_networks/helios_efficient_distributed_dynamic_graph_sampling_for_online_gnn_inference.md
+        - "Accelerating GNNs on GPU Sparse Tensor Cores through N:M Sparsity-Oriented Graph Reordering": PPoPP/2025/graph_neural_networks/accelerating_gnns_on_gpu_sparse_tensor_cores_through_n_m_sparsity_oriented_graph_reordering.md
+        - "Adaptive Parallel Training for Graph Neural Networks": PPoPP/2025/graph_neural_networks/adaptive_parallel_training_for_graph_neural_networks.md
+      - "Large Language Models (3)":
+        - "Large Language Models": PPoPP/2025/large_language_models/index.md
+        - "MARLIN: Mixed-Precision Auto-Regressive Parallel Inference on Large Language Models": PPoPP/2025/large_language_models/marlin_mixed_precision_auto_regressive_parallel_inference_on_large_language_models.md
+        - "WeiPipe: Weight Pipeline Parallelism for Communication-Effective Long-Context Large Model Training": PPoPP/2025/large_language_models/weipipe_weight_pipeline_parallelism_for_communication_effective_long_context_large_model_training.md
+        - "ATTNChecker: Highly-Optimized Fault Tolerant Attention for Large Language Model Training": PPoPP/2025/large_language_models/attnchecker_highly_optimized_fault_tolerant_attention_for_large_language_model_training.md
+      - "Memory (3)":
+        - "Memory": PPoPP/2025/memory/index.md
+        - "AC-Cache: A Memory-Efficient Caching System for Small Objects via Exploiting Access Correlations": PPoPP/2025/memory/ac_cache_a_memory_efficient_caching_system_for_small_objects_via_exploiting_access_correlations.md
+        - "Effectively Virtual Page Prefetching via Spatial-Temporal Patterns for Memory-intensive Cloud Applications": PPoPP/2025/memory/effectively_virtual_page_prefetching_via_spatial_temporal_patterns_for_memory_intensive_cloud_applications.md
+        - "Harnessing Inter-GPU Shared Memory for Seamless MoE Communication-Computation Fusion": PPoPP/2025/memory/harnessing_inter_gpu_shared_memory_for_seamless_moe_communication_computation_fusion.md
+      - "Scheduling and Resource Management (3)":
+        - "Scheduling and Resource Management": PPoPP/2025/scheduling_and_resource_management/index.md
+        - "SGDRC: Software-Defined Dynamic Resource Control for Concurrent DNN Inference on NVIDIA GPUs": PPoPP/2025/scheduling_and_resource_management/sgdrc_software_defined_dynamic_resource_control_for_concurrent_dnn_inference_on_nvidia_gpus.md
+        - "DORADD: Deterministic Parallel Execution in the Era of Microsecond-Scale Computing": PPoPP/2025/scheduling_and_resource_management/doradd_deterministic_parallel_execution_in_the_era_of_microsecond_scale_computing.md
+        - "WaterWise: Co-optimizing Carbon- and Water-Footprint Toward Environmentally Sustainable Cloud Computing": PPoPP/2025/scheduling_and_resource_management/waterwise_co_optimizing_carbon_and_water_footprint_toward_environmentally_sustainable_cloud_computing.md
+  - 🔧 ATC:
+    - ATC 2025 (100):
+      - ATC 2025: ATC/2025/index.md
+      - "Accelerating ML Training: Parallelism, Tuning, and Modalities (5)":
+        - "Accelerating ML Training: Parallelism, Tuning, and Modalities": ATC/2025/accelerating_ml_training_parallelism_tuning_and_modalities/index.md
+        - "GMI-DRL: Empowering Multi-GPU DRL with Adaptive-Grained Parallelism": ATC/2025/accelerating_ml_training_parallelism_tuning_and_modalities/gmi_drl_empowering_multi_gpu_drl_with_adaptive_grained_parallelism.md
+        - "mTuner: Accelerating Parameter-Efficient Fine-Tuning on Multi-GPU Servers with Elastic Tensor": ATC/2025/accelerating_ml_training_parallelism_tuning_and_modalities/mtuner_accelerating_parameter_efficient_fine_tuning_on_multi_gpu_servers_with_elastic_tensor.md
+        - "JENGA: Enhancing LLM Long-Context Fine-tuning with Contextual Token Sparsity": ATC/2025/accelerating_ml_training_parallelism_tuning_and_modalities/jenga_enhancing_llm_long_context_fine_tuning_with_contextual_token_sparsity.md
+        - "FlexPipe: Maximizing Training Efficiency for Transformer-based Models with Variable-Length Inputs": ATC/2025/accelerating_ml_training_parallelism_tuning_and_modalities/flexpipe_maximizing_training_efficiency_for_transformer_based_models_with_variable_length_inputs.md
+        - "Optimus: Accelerating Large-Scale Multi-Modal LLM Training by Bubble Exploitation": ATC/2025/accelerating_ml_training_parallelism_tuning_and_modalities/optimus_accelerating_large_scale_multi_modal_llm_training_by_bubble_exploitation.md
+      - "Advanced Distributed Systems: ML, Data, and Performance Tuning (5)":
+        - "Advanced Distributed Systems: ML, Data, and Performance Tuning": ATC/2025/advanced_distributed_systems_ml_data_and_performance_tuning/index.md
+        - "On-Demand Container Partitioning for Distributed ML": ATC/2025/advanced_distributed_systems_ml_data_and_performance_tuning/on_demand_container_partitioning_for_distributed_ml.md
+        - "PathWeaver: A High-Throughput Multi-GPU System for Graph-Based Approximate Nearest Neighbor Search": ATC/2025/advanced_distributed_systems_ml_data_and_performance_tuning/pathweaver_a_high_throughput_multi_gpu_system_for_graph_based_approximate_nearest_neighbor_search.md
+        - "Universal Checkpointing: A Flexible and Efficient Distributed Checkpointing System for Large-Scale DNN Training with Reconfigurable Parallelism": ATC/2025/advanced_distributed_systems_ml_data_and_performance_tuning/universal_checkpointing_a_flexible_and_efficient_distributed_checkpointing_system_for_large_scale_dnn_training_with_reconfigurable_parallelism.md
+        - "Towards High-Performance Transactional Stateful Serverless Workflows with Affinity-Aware Leasing": ATC/2025/advanced_distributed_systems_ml_data_and_performance_tuning/towards_high_performance_transactional_stateful_serverless_workflows_with_affinity_aware_leasing.md
+        - "Swift: Fast Performance Tuning with GAN-Generated Configurations": ATC/2025/advanced_distributed_systems_ml_data_and_performance_tuning/swift_fast_performance_tuning_with_gan_generated_configurations.md
+      - "Cloud Computing: Speed, Scale, and Serverless (5)":
+        - "Cloud Computing: Speed, Scale, and Serverless": ATC/2025/cloud_computing_speed_scale_and_serverless/index.md
+        - "Fast ACS: Low-Latency File-Based Ordered Message Delivery at Scale": ATC/2025/cloud_computing_speed_scale_and_serverless/fast_acs_low_latency_file_based_ordered_message_delivery_at_scale.md
+        - "Poby: SmartNIC-accelerated Image Provisioning for Coldstart in Clouds": ATC/2025/cloud_computing_speed_scale_and_serverless/poby_smartnic_accelerated_image_provisioning_for_coldstart_in_clouds.md
+        - "Burst Computing: Quick, Sudden, Massively Parallel Processing on Serverless Resources": ATC/2025/cloud_computing_speed_scale_and_serverless/burst_computing_quick_sudden_massively_parallel_processing_on_serverless_resources.md
+        - "DEEPSERVE: Serverless Large Language Model Serving at Scale": ATC/2025/cloud_computing_speed_scale_and_serverless/deepserve_serverless_large_language_model_serving_at_scale.md
+        - "Cosmic: Cost-Effective Support for Cloud-Assisted 3D Printing": ATC/2025/cloud_computing_speed_scale_and_serverless/cosmic_cost_effective_support_for_cloud_assisted_3d_printing.md
+      - "Distributed Systems: Communication, Consensus, and Data Structures (5)":
+        - "Distributed Systems: Communication, Consensus, and Data Structures": ATC/2025/distributed_systems_communication_consensus_and_data_structures/index.md
+        - "WIC: Hiding Producer-Consumer Synchronization Delays with Warp-Level Interrupt-based GPU Communications": ATC/2025/distributed_systems_communication_consensus_and_data_structures/wic_hiding_producer_consumer_synchronization_delays_with_warp_level_interrupt_based_gpu_communications.md
+        - "Primus: Unified Training System for Large-Scale Deep Learning Recommendation Models": ATC/2025/distributed_systems_communication_consensus_and_data_structures/primus_unified_training_system_for_large_scale_deep_learning_recommendation_models.md
+        - "Chitu: Avoiding Unnecessary Fallback in Byzantine Consensus": ATC/2025/distributed_systems_communication_consensus_and_data_structures/chitu_avoiding_unnecessary_fallback_in_byzantine_consensus.md
+        - "Fast Distributed Transactions for RDMA-based Disaggregated Memory": ATC/2025/distributed_systems_communication_consensus_and_data_structures/fast_distributed_transactions_for_rdma_based_disaggregated_memory.md
+        - "Cuckoo for Clients: Disaggregated Cuckoo Hashing": ATC/2025/distributed_systems_communication_consensus_and_data_structures/cuckoo_for_clients_disaggregated_cuckoo_hashing.md
+      - "Finding Faults: Concurrency, Numerics, and Kernel Fuzzing (5)":
+        - "Finding Faults: Concurrency, Numerics, and Kernel Fuzzing": ATC/2025/finding_faults_concurrency_numerics_and_kernel_fuzzing/index.md
+        - "CAFault: Enhance Fault Injection Technique in Practical Distributed Systems via Abundant Fault-Dependent Configurations.": ATC/2025/finding_faults_concurrency_numerics_and_kernel_fuzzing/cafault_enhance_fault_injection_technique_in_practical_distributed_systems_via_abundant_fault_dependent_configurations.md
+        - "Revealing Floating-Point Accumulation Orders in Software/Hardware Implementations": ATC/2025/finding_faults_concurrency_numerics_and_kernel_fuzzing/revealing_floating_point_accumulation_orders_in_software_hardware_implementations.md
+        - "Inferring Likely Counting-related Atomicity Program Properties for Persistent Memory": ATC/2025/finding_faults_concurrency_numerics_and_kernel_fuzzing/inferring_likely_counting_related_atomicity_program_properties_for_persistent_memory.md
+        - "Optimizing Input Minimization in Kernel Fuzzing": ATC/2025/finding_faults_concurrency_numerics_and_kernel_fuzzing/optimizing_input_minimization_in_kernel_fuzzing.md
+        - "IRHash: Efficient Multi-Language Compiler Caching by IR-Level Hashing": ATC/2025/finding_faults_concurrency_numerics_and_kernel_fuzzing/irhash_efficient_multi_language_compiler_caching_by_ir_level_hashing.md
+      - "Hunting Elusive Bugs: Verification and Analysis from Compilers to Hardware (5)":
+        - "Hunting Elusive Bugs: Verification and Analysis from Compilers to Hardware": ATC/2025/hunting_elusive_bugs_verification_and_analysis_from_compilers_to_hardware/index.md
+        - "Unveiling Compiler Faults via Attribute-Guided Compilation Space Exploration": ATC/2025/hunting_elusive_bugs_verification_and_analysis_from_compilers_to_hardware/unveiling_compiler_faults_via_attribute_guided_compilation_space_exploration.md
+        - "Understanding and Detecting Fail-Slow Hardware Failure Bugs in Cloud Systems": ATC/2025/hunting_elusive_bugs_verification_and_analysis_from_compilers_to_hardware/understanding_and_detecting_fail_slow_hardware_failure_bugs_in_cloud_systems.md
+        - "Converos: Practical Model Checking for Verifying Rust OS Kernel Concurrency": ATC/2025/hunting_elusive_bugs_verification_and_analysis_from_compilers_to_hardware/converos_practical_model_checking_for_verifying_rust_os_kernel_concurrency.md
+        - "Bin2Wrong: a Unified Fuzzing Framework for Uncovering Semantic Errors in Binary-to-C Decompilers": ATC/2025/hunting_elusive_bugs_verification_and_analysis_from_compilers_to_hardware/bin2wrong_a_unified_fuzzing_framework_for_uncovering_semantic_errors_in_binary_to_c_decompilers.md
+        - "HEC: Equivalence Verification Checking for Code Transformation via Equality Saturation": ATC/2025/hunting_elusive_bugs_verification_and_analysis_from_compilers_to_hardware/hec_equivalence_verification_checking_for_code_transformation_via_equality_saturation.md
+      - "Network Performance & Protocols: From Space to VR (5)":
+        - "Network Performance & Protocols: From Space to VR": ATC/2025/network_performance_and_protocols_from_space_to_vr/index.md
+        - "LEOCraft: Towards Designing Performant LEO Networks": ATC/2025/network_performance_and_protocols_from_space_to_vr/leocraft_towards_designing_performant_leo_networks.md
+        - "Emulating Space Computing Networks with RHONE": ATC/2025/network_performance_and_protocols_from_space_to_vr/emulating_space_computing_networks_with_rhone.md
+        - "Roaming Free in the VR World with MP2": ATC/2025/network_performance_and_protocols_from_space_to_vr/roaming_free_in_the_vr_world_with_mp2.md
+        - "STORM: a Multipath QUIC Scheduler for Quick Streaming Media Transport under Unstable Mobile Networks": ATC/2025/network_performance_and_protocols_from_space_to_vr/storm_a_multipath_quic_scheduler_for_quick_streaming_media_transport_under_unstable_mobile_networks.md
+        - "Internet Connection Splitting: What’s Old is New Again": ATC/2025/network_performance_and_protocols_from_space_to_vr/internet_connection_splitting_what_s_old_is_new_again.md
+      - "Networking: From Cloud to In-Network Intelligence (5)":
+        - "Networking: From Cloud to In-Network Intelligence": ATC/2025/networking_from_cloud_to_in_network_intelligence/index.md
+        - "Towards Optimal Rack-scale μs-level CPU Scheduling through In-Network Workload Shaping": ATC/2025/networking_from_cloud_to_in_network_intelligence/towards_optimal_rack_scale_s_level_cpu_scheduling_through_in_network_workload_shaping.md
+        - "TGW: Operating an Efficient and Resilient Cloud Gateway at Scale": ATC/2025/networking_from_cloud_to_in_network_intelligence/tgw_operating_an_efficient_and_resilient_cloud_gateway_at_scale.md
+        - "MARC: Motion-Aware Rate Control for Mobile E-commerce Cloud Rendering": ATC/2025/networking_from_cloud_to_in_network_intelligence/marc_motion_aware_rate_control_for_mobile_e_commerce_cloud_rendering.md
+        - "Accelerating Distributed Graph Learning by Using Collaborative In-Network Multicast and Aggregation": ATC/2025/networking_from_cloud_to_in_network_intelligence/accelerating_distributed_graph_learning_by_using_collaborative_in_network_multicast_and_aggregation.md
+        - "Opening Up Kernel-Bypass TCP Stacks": ATC/2025/networking_from_cloud_to_in_network_intelligence/opening_up_kernel_bypass_tcp_stacks.md
+      - "Operating Systems: Scheduling, Security, and Extensibility (5)":
+        - "Operating Systems: Scheduling, Security, and Extensibility": ATC/2025/operating_systems_scheduling_security_and_extensibility/index.md
+        - "GPREEMPT: GPU Preemptive Scheduling Made General and Efficient": ATC/2025/operating_systems_scheduling_security_and_extensibility/gpreempt_gpu_preemptive_scheduling_made_general_and_efficient.md
+        - "μEFI: A Microkernel-Style UEFI with Isolation and Transparency": ATC/2025/operating_systems_scheduling_security_and_extensibility/efi_a_microkernel_style_uefi_with_isolation_and_transparency.md
+        - "PageFlex: Flexible and Efficient User-space Delegation of Linux Paging Policies with eBPF": ATC/2025/operating_systems_scheduling_security_and_extensibility/pageflex_flexible_and_efficient_user_space_delegation_of_linux_paging_policies_with_ebpf.md
+        - "ASTERINAS: A Linux ABI-Compatible, Rust-Based Framekernel OS with a Small and Sound TCB": ATC/2025/operating_systems_scheduling_security_and_extensibility/asterinas_a_linux_abi_compatible_rust_based_framekernel_os_with_a_small_and_sound_tcb.md
+        - "Rex: Closing the language-verifier gap with safe and usable kernel extensions": ATC/2025/operating_systems_scheduling_security_and_extensibility/rex_closing_the_language_verifier_gap_with_safe_and_usable_kernel_extensions.md
+      - "Serving Intelligence: Efficient LLM Inference at the Edge and Cloud (5)":
+        - "Serving Intelligence: Efficient LLM Inference at the Edge and Cloud": ATC/2025/serving_intelligence_efficient_llm_inference_at_the_edge_and_cloud/index.md
+        - "CLONE: Customizing LLMs for Efficient Latency-Aware Inference at the Edge": ATC/2025/serving_intelligence_efficient_llm_inference_at_the_edge_and_cloud/clone_customizing_llms_for_efficient_latency_aware_inference_at_the_edge.md
+        - "Weaver: Efficient Multi-LLM Serving with Attention Offloading": ATC/2025/serving_intelligence_efficient_llm_inference_at_the_edge_and_cloud/weaver_efficient_multi_llm_serving_with_attention_offloading.md
+        - "Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference": ATC/2025/serving_intelligence_efficient_llm_inference_at_the_edge_and_cloud/torpor_gpu_enabled_serverless_computing_for_low_latency_resource_efficient_inference.md
+        - "Toppings: CPU-Assisted, Rank-Aware Adapter Serving for LLM Inference": ATC/2025/serving_intelligence_efficient_llm_inference_at_the_edge_and_cloud/toppings_cpu_assisted_rank_aware_adapter_serving_for_llm_inference.md
+        - "QFactory: Accelerating Quantized Large Language Model Serving with Qtile Graphs": ATC/2025/serving_intelligence_efficient_llm_inference_at_the_edge_and_cloud/qfactory_accelerating_quantized_large_language_model_serving_with_qtile_graphs.md
+      - "Software-Hardware Synergy: Accelerators, Memory, and Interconnects (5)":
+        - "Software-Hardware Synergy: Accelerators, Memory, and Interconnects": ATC/2025/software_hardware_synergy_accelerators_memory_and_interconnects/index.md
+        - "Para-ksm: Parallelized Memory Deduplication with Data Streaming Accelerator": ATC/2025/software_hardware_synergy_accelerators_memory_and_interconnects/para_ksm_parallelized_memory_deduplication_with_data_streaming_accelerator.md
+        - "DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA": ATC/2025/software_hardware_synergy_accelerators_memory_and_interconnects/dsa_2lm_a_cpu_free_tiered_memory_architecture_with_intel_dsa.md
+        - "Turbocharge ANNS on Real Processing-in-Memory by Enabling Fine-Grained Per-PIM-Core Scheduling": ATC/2025/software_hardware_synergy_accelerators_memory_and_interconnects/turbocharge_anns_on_real_processing_in_memory_by_enabling_fine_grained_per_pim_core_scheduling.md
+        - "SwCC: Software-Programmable and Per-Packet Congestion Control in RDMA Engine": ATC/2025/software_hardware_synergy_accelerators_memory_and_interconnects/swcc_software_programmable_and_per_packet_congestion_control_in_rdma_engine.md
+        - "DRack: A CXL-Disaggregated Rack Architecture to Boost Inter-Rack Communication": ATC/2025/software_hardware_synergy_accelerators_memory_and_interconnects/drack_a_cxl_disaggregated_rack_architecture_to_boost_inter_rack_communication.md
+      - "Storage Innovations: Logs, Tiers, and Modern Flash (5)":
+        - "Storage Innovations: Logs, Tiers, and Modern Flash": ATC/2025/storage_innovations_logs_tiers_and_modern_flash/index.md
+        - "LogCrisp: Fast Aggregated Analysis on Large-scale Compressed Logs by Enabling Two-Phase Pattern Extraction and Vectorized Queries": ATC/2025/storage_innovations_logs_tiers_and_modern_flash/logcrisp_fast_aggregated_analysis_on_large_scale_compressed_logs_by_enabling_two_phase_pattern_extraction_and_vectorized_queries.md
+        - "HotRAP: Hot Record Retention and Promotion for LSM-trees with Tiered Storage": ATC/2025/storage_innovations_logs_tiers_and_modern_flash/hotrap_hot_record_retention_and_promotion_for_lsm_trees_with_tiered_storage.md
+        - "Mitigating Resource Usage Dependency in Sorting-based KV Stores on Hybrid Storage Devices via Operation Decoupling": ATC/2025/storage_innovations_logs_tiers_and_modern_flash/mitigating_resource_usage_dependency_in_sorting_based_kv_stores_on_hybrid_storage_devices_via_operation_decoupling.md
+        - "SolFS: An Operation-Log Versioning File System for Hash-free Efficient Mobile Cloud Backup": ATC/2025/storage_innovations_logs_tiers_and_modern_flash/solfs_an_operation_log_versioning_file_system_for_hash_free_efficient_mobile_cloud_backup.md
+        - "Z-LFS: A Zoned Namespace-tailored Log-structured File System for Commodity Small-zone ZNS SSDs": ATC/2025/storage_innovations_logs_tiers_and_modern_flash/z_lfs_a_zoned_namespace_tailored_log_structured_file_system_for_commodity_small_zone_zns_ssds.md
+      - "Hardware-Specific Optimizations: Space, Accelerators, and AI Chips (4)":
+        - "Hardware-Specific Optimizations: Space, Accelerators, and AI Chips": ATC/2025/hardware_specific_optimizations_space_accelerators_and_ai_chips/index.md
+        - "SpaceExit: Enabling Efficient Adaptive Computing in Space with Early Exits": ATC/2025/hardware_specific_optimizations_space_accelerators_and_ai_chips/spaceexit_enabling_efficient_adaptive_computing_in_space_with_early_exits.md
+        - "XRT: An Accelerator-Aware Runtime for Accelerated Chip Multiprocessors": ATC/2025/hardware_specific_optimizations_space_accelerators_and_ai_chips/xrt_an_accelerator_aware_runtime_for_accelerated_chip_multiprocessors.md
+        - "DShuffle: DPU-Optimized Shuffle Framework for Large-scale Data Processing": ATC/2025/hardware_specific_optimizations_space_accelerators_and_ai_chips/dshuffle_dpu_optimized_shuffle_framework_for_large_scale_data_processing.md
+        - "Accelerating Model Training on Ascend Chips: An Industrial System for Profiling, Analysis and Optimization": ATC/2025/hardware_specific_optimizations_space_accelerators_and_ai_chips/accelerating_model_training_on_ascend_chips_an_industrial_system_for_profiling_analysis_and_optimization.md
+      - "Intelligent Resource Management: Federation, Colocation, and ML for Systems (4)":
+        - "Intelligent Resource Management: Federation, Colocation, and ML for Systems": ATC/2025/intelligent_resource_management_federation_colocation_and_ml_for_systems/index.md
+        - "Resource Multiplexing in Tuning and Serving Large Language Models": ATC/2025/intelligent_resource_management_federation_colocation_and_ml_for_systems/resource_multiplexing_in_tuning_and_serving_large_language_models.md
+        - "Colocating ML Inference and Training with Fast GPU Memory Handover": ATC/2025/intelligent_resource_management_federation_colocation_and_ml_for_systems/colocating_ml_inference_and_training_with_fast_gpu_memory_handover.md
+        - "AssyLLM: Efficient Federated Fine-tuning of LLMs via Assembling Pre-trained Blocks": ATC/2025/intelligent_resource_management_federation_colocation_and_ml_for_systems/assyllm_efficient_federated_fine_tuning_of_llms_via_assembling_pre_trained_blocks.md
+        - "Learning-Enhanced High-Throughput Pattern Matching Based on Programmable Data Plane": ATC/2025/intelligent_resource_management_federation_colocation_and_ml_for_systems/learning_enhanced_high_throughput_pattern_matching_based_on_programmable_data_plane.md
+      - "OS, Mobile, and Reliability Challenges (4)":
+        - "OS, Mobile, and Reliability Challenges": ATC/2025/os_mobile_and_reliability_challenges/index.md
+        - "PMR: Fast Application Response via Parallel Memory Reclaim on Mobile Devices": ATC/2025/os_mobile_and_reliability_challenges/pmr_fast_application_response_via_parallel_memory_reclaim_on_mobile_devices.md
+        - "SAVE: Software-Implemented Fault Tolerance for Model Inference against GPU Memory Bit Flips": ATC/2025/os_mobile_and_reliability_challenges/save_software_implemented_fault_tolerance_for_model_inference_against_gpu_memory_bit_flips.md
+        - "Identifying and Analyzing Pitfalls in GNN Systems": ATC/2025/os_mobile_and_reliability_challenges/identifying_and_analyzing_pitfalls_in_gnn_systems.md
+        - "Bluetooth Low Energy Security Testing with Combinatorial Methods": ATC/2025/os_mobile_and_reliability_challenges/bluetooth_low_energy_security_testing_with_combinatorial_methods.md
+      - "Optimizing ML Execution: Compilers, Pipelines, and Runtimes (4)":
+        - "Optimizing ML Execution: Compilers, Pipelines, and Runtimes": ATC/2025/optimizing_ml_execution_compilers_pipelines_and_runtimes/index.md
+        - "PluS: Highly Efficient and Expandable ML Compiler with Pluggable Graph Schedules": ATC/2025/optimizing_ml_execution_compilers_pipelines_and_runtimes/plus_highly_efficient_and_expandable_ml_compiler_with_pluggable_graph_schedules.md
+        - "Obscura: Concealing Recomputation Overhead in Training of Large Language Models with Bubble-filling Pipeline Transformation": ATC/2025/optimizing_ml_execution_compilers_pipelines_and_runtimes/obscura_concealing_recomputation_overhead_in_training_of_large_language_models_with_bubble_filling_pipeline_transformation.md
+        - "PPipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism": ATC/2025/optimizing_ml_execution_compilers_pipelines_and_runtimes/ppipe_efficient_video_analytics_serving_on_heterogeneous_gpu_clusters_via_pool_based_pipeline_parallelism.md
+        - "Voltrix: Sparse Matrix-Matrix Multiplication on Tensor Cores with Asynchronous and Balanced Kernel Optimization": ATC/2025/optimizing_ml_execution_compilers_pipelines_and_runtimes/voltrix_sparse_matrix_matrix_multiplication_on_tensor_cores_with_asynchronous_and_balanced_kernel_optimization.md
+      - "Performance: Benchmarking, Caching, and Workload Characterization (4)":
+        - "Performance: Benchmarking, Caching, and Workload Characterization": ATC/2025/performance_benchmarking_caching_and_workload_characterization/index.md
+        - "GeneralSparse: Bridging the Gap in SpMM for Pruned Large Language Model Inference on GPUs": ATC/2025/performance_benchmarking_caching_and_workload_characterization/generalsparse_bridging_the_gap_in_spmm_for_pruned_large_language_model_inference_on_gpus.md
+        - "HyCache: Hybrid Caching for Accelerating DNN Input Preprocessing Pipelines": ATC/2025/performance_benchmarking_caching_and_workload_characterization/hycache_hybrid_caching_for_accelerating_dnn_input_preprocessing_pipelines.md
+        - "The Koala Benchmarks for the Shell: Characterization and Implications": ATC/2025/performance_benchmarking_caching_and_workload_characterization/the_koala_benchmarks_for_the_shell_characterization_and_implications.md
+        - "KVCache Cache in the Wild: Characterizing and Optimizing KVCache Cache at a Large Cloud Provider": ATC/2025/performance_benchmarking_caching_and_workload_characterization/kvcache_cache_in_the_wild_characterizing_and_optimizing_kvcache_cache_at_a_large_cloud_provider.md
+      - "Resilient Systems: Failure Detection, Consistency, and Scalability (4)":
+        - "Resilient Systems: Failure Detection, Consistency, and Scalability": ATC/2025/resilient_systems_failure_detection_consistency_and_scalability/index.md
+        - "NetKeeper: Enhancing Network Resilience with Autonomous Network Configuration Update on Traffic Patterns and Anomalies": ATC/2025/resilient_systems_failure_detection_consistency_and_scalability/netkeeper_enhancing_network_resilience_with_autonomous_network_configuration_update_on_traffic_patterns_and_anomalies.md
+        - "GREYHOUND: Hunting Fail-Slows in Hybrid-Parallel Training at Scale": ATC/2025/resilient_systems_failure_detection_consistency_and_scalability/greyhound_hunting_fail_slows_in_hybrid_parallel_training_at_scale.md
+        - "Crash Consistency in Block-Level Caching Systems: An Open CAS Case Study": ATC/2025/resilient_systems_failure_detection_consistency_and_scalability/crash_consistency_in_block_level_caching_systems_an_open_cas_case_study.md
+        - "FiDe: Reliable and Fast Crash Failure Detection to Boost Datacenter Coordination": ATC/2025/resilient_systems_failure_detection_consistency_and_scalability/fide_reliable_and_fast_crash_failure_detection_to_boost_datacenter_coordination.md
+      - "Scaling Complex Models: Distribution, Heterogeneity, and Efficiency (4)":
+        - "Scaling Complex Models: Distribution, Heterogeneity, and Efficiency": ATC/2025/scaling_complex_models_distribution_heterogeneity_and_efficiency/index.md
+        - "Katz: Efficient Workflow Serving for Diffusion Models with Many Adapters": ATC/2025/scaling_complex_models_distribution_heterogeneity_and_efficiency/katz_efficient_workflow_serving_for_diffusion_models_with_many_adapters.md
+        - "PopFetcher: Towards Accelerated Mixture-of-Experts Training Via Popularity Based Expert-Wise Prefetch": ATC/2025/scaling_complex_models_distribution_heterogeneity_and_efficiency/popfetcher_towards_accelerated_mixture_of_experts_training_via_popularity_based_expert_wise_prefetch.md
+        - "HypeReca: Distributed Heterogeneous In-Memory Embedding Database for Training Recommender Models": ATC/2025/scaling_complex_models_distribution_heterogeneity_and_efficiency/hypereca_distributed_heterogeneous_in_memory_embedding_database_for_training_recommender_models.md
+        - "CrossPipe: Towards Optimal Pipeline Schedules for Cross-Datacenter Training": ATC/2025/scaling_complex_models_distribution_heterogeneity_and_efficiency/crosspipe_towards_optimal_pipeline_schedules_for_cross_datacenter_training.md
+      - "Securing the Stack: Attestation, Memory Protection, and Privacy (4)":
+        - "Securing the Stack: Attestation, Memory Protection, and Privacy": ATC/2025/securing_the_stack_attestation_memory_protection_and_privacy/index.md
+        - "ShieldReduce: Fine-Grained Shielded Data Reduction": ATC/2025/securing_the_stack_attestation_memory_protection_and_privacy/shieldreduce_fine_grained_shielded_data_reduction.md
+        - "MemoryTrap: Booby Trapping Memory to Counter Memory Disclosure Attacks with Hardware Support": ATC/2025/securing_the_stack_attestation_memory_protection_and_privacy/memorytrap_booby_trapping_memory_to_counter_memory_disclosure_attacks_with_hardware_support.md
+        - "Separate but Together: Integrating Remote Attestation into TLS": ATC/2025/securing_the_stack_attestation_memory_protection_and_privacy/separate_but_together_integrating_remote_attestation_into_tls.md
+        - "DDLumos: Understanding and Detecting Atomic DDL Bugs in DBMSs": ATC/2025/securing_the_stack_attestation_memory_protection_and_privacy/ddlumos_understanding_and_detecting_atomic_ddl_bugs_in_dbmss.md
+      - "The Programmable Data Plane: SmartNICs and Beyond (4)":
+        - "The Programmable Data Plane: SmartNICs and Beyond": ATC/2025/the_programmable_data_plane_smartnics_and_beyond/index.md
+        - "Barre: Empowering Simplified and Versatile Programmable Congestion Control in High-Speed AI Clusters": ATC/2025/the_programmable_data_plane_smartnics_and_beyond/barre_empowering_simplified_and_versatile_programmable_congestion_control_in_high_speed_ai_clusters.md
+        - "FLB: Fine-grained Load Balancing for Lossless Datacenter Networks": ATC/2025/the_programmable_data_plane_smartnics_and_beyond/flb_fine_grained_load_balancing_for_lossless_datacenter_networks.md
+        - "SNARY: A High-Performance and Generic SmartNIC-accelerated Retrieval System": ATC/2025/the_programmable_data_plane_smartnics_and_beyond/snary_a_high_performance_and_generic_smartnic_accelerated_retrieval_system.md
+        - "Minos : A Lightweight and Dynamic Defense against Traffic Analysis in Programmable Data Planes": ATC/2025/the_programmable_data_plane_smartnics_and_beyond/minos_a_lightweight_and_dynamic_defense_against_traffic_analysis_in_programmable_data_planes.md
+      - "Virtualization and Isolation: Security, Sharing, and Performance (4)":
+        - "Virtualization and Isolation: Security, Sharing, and Performance": ATC/2025/virtualization_and_isolation_security_sharing_and_performance/index.md
+        - "LITESHIELD: Secure Containers via Lightweight, Composable Userspace μKernel Services": ATC/2025/virtualization_and_isolation_security_sharing_and_performance/liteshield_secure_containers_via_lightweight_composable_userspace_kernel_services.md
+        - "Accelerating Nested Virtualization with HyperTurtle": ATC/2025/virtualization_and_isolation_security_sharing_and_performance/accelerating_nested_virtualization_with_hyperturtle.md
+        - "Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception": ATC/2025/virtualization_and_isolation_security_sharing_and_performance/efficient_performance_aware_gpu_sharing_with_compatibility_and_isolation_through_kernel_space_interception.md
+        - "AnchorNet: Bridging Live and Collaborative Streaming with a Unified Architecture": ATC/2025/virtualization_and_isolation_security_sharing_and_performance/anchornet_bridging_live_and_collaborative_streaming_with_a_unified_architecture.md

@@ -779,9 +779,9 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  width: min(100%, 680px);
-  max-width: 680px;
-  aspect-ratio: 1.18 / 1;
+  width: min(100%, 920px);
+  max-width: 920px;
+  aspect-ratio: 1.6 / 1;
   background:
     radial-gradient(circle at 20% 20%, rgba(132, 92, 191, 0.12), transparent 32%),
     radial-gradient(circle at 82% 18%, rgba(74, 29, 150, 0.09), transparent 26%),

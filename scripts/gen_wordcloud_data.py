@@ -118,6 +118,7 @@ SKIP_SET = {
     # Conference year identifiers
     "HPCA2025","HPCA2026","ISCA2025","ISCA2026","MICRO2025","ASPLOS2025",
     "DAC2025","NeurIPS2025","ICML2025","ICLR2025","CVPR2025","ACL2025",
+    "FAST2025","SC2025","EuroSys2025","PPoPP2025","ATC2025",
     # Institutions
     "UIUC","Tsinghua","GeorgiaTech","ETHZürich","ETH Zürich","CAS",
     "Microsoft","IBMResearch","IBM Research","AntGroup","Ant Group",

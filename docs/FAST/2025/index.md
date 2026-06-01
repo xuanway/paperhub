@@ -1,17 +1,25 @@
 ---
 title: "FAST 2025 论文集"
-description: "USENIX文件与存储技术会议（FAST 2025）接收论文解读"
+description: "USENIX 文件与存储技术大会 FAST 2025，Santa Clara, CA"
 hide:
   - toc
 ---
 
 # FAST 2025
 
-**USENIX 文件与存储技术大会**
+**FAST 2025** · 2025年2月25日 - 2月27日 · Santa Clara, CA
 
-FAST 2025是文件与存储系统领域顶级会议，覆盖存储系统、文件系统、I/O优化、数据管理等方向。
+共收录 **36** 篇论文，涵盖 **8** 个方向。
 
 ---
 
-> 📖 本会议论文解读持续更新中，欢迎通过 `bash scripts/new_paper.sh FAST/2025 <分类> <文件名> "论文标题"` 添加新内容。
-
+| 方向 | 论文数 |
+|------|-------|
+| [File Systems](file_systems/index.md) | 5 |
+| [Hardware Assist](hardware_assist/index.md) | 5 |
+| [Machine Learning and Storage](machine_learning_and_storage/index.md) | 5 |
+| [Security, Integrity, and Consistency](security_integrity_and_consistency/index.md) | 5 |
+| [Cloud Storage](cloud_storage/index.md) | 4 |
+| [Compression and Deduplication](compression_and_deduplication/index.md) | 4 |
+| [More Machine Learning](more_machine_learning/index.md) | 4 |
+| [Storage Diversity and Heterogeneity](storage_diversity_and_heterogeneity/index.md) | 4 |

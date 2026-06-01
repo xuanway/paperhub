@@ -21,7 +21,7 @@ hide:
 
 # 计算机体系结构论文
 
-<p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC 等顶级会议<br>持续更新中</p>
+<p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC 顶级会议<br>持续更新中</p>
 
 <div class="hero-stats">
 <div class="stat"><span class="stat-number" data-stat-key="papers">169</span><span class="stat-label">篇论文</span></div>
@@ -63,7 +63,7 @@ hide:
 <div class="conf-cubes">
 
 <div class="conf-cube conf-cube--hpca">
-  <span class="conf-cube__icon">⚡</span>
+  <span class="conf-cube__icon">🚀</span>
   <div class="conf-cube__name">HPCA</div>
   <div class="conf-cube__full">High-Performance Computer Architecture</div>
   <div class="conf-cube__years">
@@ -120,7 +120,7 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="FAST/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">更新中 · Santa Clara</div>
+  <div class="conf-cube__stat" data-conf-key="FAST 2025">36 篇 · Santa Clara, CA</div>
 </div>
 
 <div class="conf-cube conf-cube--sc">
@@ -130,17 +130,17 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="SC/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">更新中 · Atlanta</div>
+  <div class="conf-cube__stat" data-conf-key="SC 2025">136 篇 · St. Louis, MO</div>
 </div>
 
 <div class="conf-cube conf-cube--eurosys">
-  <span class="conf-cube__icon">🇪🇺</span>
+  <span class="conf-cube__icon">⚙️</span>
   <div class="conf-cube__name">EuroSys</div>
   <div class="conf-cube__full">European Conf. on Computer Systems</div>
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="EuroSys/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">更新中 · Rotterdam</div>
+  <div class="conf-cube__stat" data-conf-key="EuroSys 2025">85 篇 · Rotterdam, Netherlands</div>
 </div>
 
 <div class="conf-cube conf-cube--ppopp">
@@ -150,17 +150,17 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="PPoPP/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">更新中 · Las Vegas</div>
+  <div class="conf-cube__stat" data-conf-key="PPoPP 2025">38 篇 · Las Vegas, NV</div>
 </div>
 
 <div class="conf-cube conf-cube--atc">
-  <span class="conf-cube__icon">🛠️</span>
+  <span class="conf-cube__icon">🔧</span>
   <div class="conf-cube__name">ATC</div>
   <div class="conf-cube__full">USENIX Annual Technical Conference</div>
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="ATC/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">更新中 · Boston</div>
+  <div class="conf-cube__stat" data-conf-key="ATC 2025">100 篇 · Boston, MA</div>
 </div>
 
 </div>
