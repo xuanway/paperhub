@@ -42,17 +42,17 @@
 /* ── Conference cube navigation (homepage) ── */
 .conf-cubes {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.6rem;
   margin: 1.5rem 0 2.5rem;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .conf-cubes { grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
 }
-@media (max-width: 840px) {
+@media (max-width: 900px) {
   .conf-cubes { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 }
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .conf-cubes { grid-template-columns: repeat(2, 1fr); gap: 0.85rem; }
 }
 
@@ -119,15 +119,30 @@
   --cube-shadow-1: #914e05;
   --cube-shadow-2: #6e3506;
 }
-.conf-cube--neurips {
+.conf-cube--fast {
   background: linear-gradient(135deg, #db2777 0%, #9333ea 100%);
   --cube-shadow-1: #9b1d5e;
   --cube-shadow-2: #6e20a8;
 }
-.conf-cube--icml {
+.conf-cube--sc {
   background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
   --cube-shadow-1: #991b1b;
   --cube-shadow-2: #9a3412;
+}
+.conf-cube--eurosys {
+  background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+  --cube-shadow-1: #0874a8;
+  --cube-shadow-2: #4338ca;
+}
+.conf-cube--ppopp {
+  background: linear-gradient(135deg, #10b981 0%, #0891b2 100%);
+  --cube-shadow-1: #0a7a5a;
+  --cube-shadow-2: #0a6580;
+}
+.conf-cube--atc {
+  background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  --cube-shadow-1: #b45309;
+  --cube-shadow-2: #b91c1c;
 }
 
 .conf-cube__icon {

@@ -1,6 +1,6 @@
 ---
 title: "可信高效计算论文 · 顶会论文解读"
-description: "MICRO·ISCA·HPCA·ASPLOS·DAC·NeurIPS·ICML 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
+description: "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
 tags:
   - "可信计算"
   - "高效计算"
@@ -21,11 +21,11 @@ hide:
 
 # 可信高效计算论文
 
-<p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · NeurIPS · ICML 等顶级会议<br>持续更新中</p>
+<p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC 等顶级会议<br>持续更新中</p>
 
 <div class="hero-stats">
 <div class="stat"><span class="stat-number" data-stat-key="papers">169</span><span class="stat-label">篇论文</span></div>
-<div class="stat"><span class="stat-number" data-stat-key="conferences">7</span><span class="stat-label">个会议</span></div>
+<div class="stat"><span class="stat-number" data-stat-key="conferences">10</span><span class="stat-label">个会议</span></div>
 <div class="stat"><span class="stat-number" data-stat-key="directions">11</span><span class="stat-label">个研究方向</span></div>
 </div>
 
@@ -113,24 +113,54 @@ hide:
   <div class="conf-cube__stat" data-conf-key="DAC 2025">419 篇 · San Francisco, CA</div>
 </div>
 
-<div class="conf-cube conf-cube--neurips">
-  <span class="conf-cube__icon">🧠</span>
-  <div class="conf-cube__name">NeurIPS</div>
-  <div class="conf-cube__full">Conf. on Neural Information Processing Systems</div>
+<div class="conf-cube conf-cube--fast">
+  <span class="conf-cube__icon">💾</span>
+  <div class="conf-cube__name">FAST</div>
+  <div class="conf-cube__full">USENIX Conf. on File and Storage Technologies</div>
   <div class="conf-cube__years">
-    <a class="conf-cube__year-link" href="NeurIPS/2025/">2025</a>
+    <a class="conf-cube__year-link" href="FAST/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">更新中 · Vancouver</div>
+  <div class="conf-cube__stat">更新中 · Santa Clara</div>
 </div>
 
-<div class="conf-cube conf-cube--icml">
-  <span class="conf-cube__icon">🤖</span>
-  <div class="conf-cube__name">ICML</div>
-  <div class="conf-cube__full">Int'l Conf. on Machine Learning</div>
+<div class="conf-cube conf-cube--sc">
+  <span class="conf-cube__icon">🌩️</span>
+  <div class="conf-cube__name">SC</div>
+  <div class="conf-cube__full">Int'l Conf. for High Performance Computing, Networking, Storage &amp; Analysis</div>
   <div class="conf-cube__years">
-    <a class="conf-cube__year-link" href="ICML/2025/">2025</a>
+    <a class="conf-cube__year-link" href="SC/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">更新中 · Vancouver</div>
+  <div class="conf-cube__stat">更新中 · Atlanta</div>
+</div>
+
+<div class="conf-cube conf-cube--eurosys">
+  <span class="conf-cube__icon">🇪🇺</span>
+  <div class="conf-cube__name">EuroSys</div>
+  <div class="conf-cube__full">European Conf. on Computer Systems</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="EuroSys/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat">更新中 · Rotterdam</div>
+</div>
+
+<div class="conf-cube conf-cube--ppopp">
+  <span class="conf-cube__icon">⚡</span>
+  <div class="conf-cube__name">PPoPP</div>
+  <div class="conf-cube__full">Principles &amp; Practice of Parallel Programming</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="PPoPP/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat">更新中 · Las Vegas</div>
+</div>
+
+<div class="conf-cube conf-cube--atc">
+  <span class="conf-cube__icon">🛠️</span>
+  <div class="conf-cube__name">ATC</div>
+  <div class="conf-cube__full">USENIX Annual Technical Conference</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="ATC/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat">更新中 · Boston</div>
 </div>
 
 </div>

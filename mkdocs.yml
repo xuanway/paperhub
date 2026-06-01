@@ -1,5 +1,5 @@
 site_name: 可信高效计算论文
-site_description: "MICRO·ISCA·HPCA·ASPLOS·DAC·NeurIPS·ICML 顶会论文解读 | 聚焦可信高效计算 | 2025/2026年"
+site_description: "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC 顶会论文解读 | 聚焦可信高效计算 | 2025/2026年"
 site_url: https://xuanway.github.io/paperhub/
 repo_url: https://github.com/xuanway/paperhub
 repo_name: GitHub
@@ -1469,7 +1469,13 @@ nav:
         - "Zion: A Practical Confidential Virtual Machine Architecture on Commodity RISC-V Processors": DAC/2025/security/zion_a_practical_confidential_virtual_machine_architecture_on_commodity_risc_v_processors.md
         - "ZK-Hammer: Leaking Secrets from Zero-Knowledge Proofs via Rowhammer": DAC/2025/security/zk_hammer_leaking_secrets_from_zero_knowledge_proofs_via_rowhammer.md
         - "zkVC: Fast Zero-Knowledge Proof for Private and Verifiable Computing": DAC/2025/security/zkvc_fast_zero_knowledge_proof_for_private_and_verifiable_computing.md
-  - 🧠 NeurIPS:
-    - NeurIPS 2025: NeurIPS/2025/index.md
-  - 📈 ICML:
-    - ICML 2025: ICML/2025/index.md
+  - 💾 FAST:
+    - FAST 2025: FAST/2025/index.md
+  - 🌩️ SC:
+    - SC 2025: SC/2025/index.md
+  - 🇪🇺 EuroSys:
+    - EuroSys 2025: EuroSys/2025/index.md
+  - ⚡ PPoPP:
+    - PPoPP 2025: PPoPP/2025/index.md
+  - 🛠️ ATC:
+    - ATC 2025: ATC/2025/index.md
