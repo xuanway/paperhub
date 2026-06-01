@@ -22,7 +22,7 @@ memory reliability, homomorphic encryption, LLM inference acceleration, PIM, and
 
 - Two-row navigation experience:
   - Top header with a persistent Home button
-  - Conference strip using compact format such as `HPCA (2025(19) | 2026(15))`
+  - Conference strip using compact format such as `HPCA (2025 | 2026)`
 - English search experience:
   - Search placeholder in English
   - Focus suggestions show top 10 trending keywords from word cloud data
