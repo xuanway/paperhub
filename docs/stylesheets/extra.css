@@ -39,20 +39,159 @@
   --md-accent-fg-color: #b07fe0;
 }
 
-/* ── Homepage cards ── */
-.conf-grid {
+/* ── Conference cube navigation (homepage) ── */
+.conf-cubes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 1.5rem 0;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+  margin: 1.5rem 0 2.5rem;
 }
-@media (max-width: 960px) {
-  .conf-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 1100px) {
+  .conf-cubes { grid-template-columns: repeat(4, 1fr); gap: 1.2rem; }
 }
-@media (max-width: 600px) {
-  .conf-grid { grid-template-columns: 1fr; }
+@media (max-width: 840px) {
+  .conf-cubes { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+}
+@media (max-width: 560px) {
+  .conf-cubes { grid-template-columns: repeat(2, 1fr); gap: 0.85rem; }
 }
 
+.conf-cube {
+  position: relative;
+  border-radius: 14px;
+  padding: 1.4rem 1.2rem 1.15rem;
+  color: #fff;
+  text-decoration: none !important;
+  overflow: hidden;
+  /* 3D depth: offset layered box-shadows simulate a raised cube face */
+  box-shadow:
+    5px 5px 0 var(--cube-shadow-1),
+    10px 10px 0 var(--cube-shadow-2),
+    0 16px 40px rgba(0, 0, 0, 0.18);
+  transform: translate(0, 0);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
+  will-change: transform, box-shadow;
+}
+
+.conf-cube:hover {
+  transform: translate(-5px, -5px);
+  box-shadow:
+    10px 10px 0 var(--cube-shadow-1),
+    20px 20px 0 var(--cube-shadow-2),
+    0 28px 60px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.08);
+  color: #fff !important;
+}
+
+/* Gloss highlight overlay */
+.conf-cube::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0) 55%);
+  pointer-events: none;
+}
+
+/* Per-conference gradient + shadow colors */
+.conf-cube--hpca {
+  background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+  --cube-shadow-1: #3b1e9e;
+  --cube-shadow-2: #2a1478;
+}
+.conf-cube--isca {
+  background: linear-gradient(135deg, #1d6ae5 0%, #0284c7 100%);
+  --cube-shadow-1: #1149a0;
+  --cube-shadow-2: #0a6b87;
+}
+.conf-cube--micro {
+  background: linear-gradient(135deg, #0891b2 0%, #0d9488 100%);
+  --cube-shadow-1: #0a6580;
+  --cube-shadow-2: #096b60;
+}
+.conf-cube--asplos {
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+  --cube-shadow-1: #046b4a;
+  --cube-shadow-2: #087060;
+}
+.conf-cube--dac {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  --cube-shadow-1: #914e05;
+  --cube-shadow-2: #6e3506;
+}
+.conf-cube--neurips {
+  background: linear-gradient(135deg, #db2777 0%, #9333ea 100%);
+  --cube-shadow-1: #9b1d5e;
+  --cube-shadow-2: #6e20a8;
+}
+.conf-cube--icml {
+  background: linear-gradient(135deg, #dc2626 0%, #ea580c 100%);
+  --cube-shadow-1: #991b1b;
+  --cube-shadow-2: #9a3412;
+}
+
+.conf-cube__icon {
+  font-size: 1.7rem;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.conf-cube__name {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 0.28rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.conf-cube__full {
+  font-size: 0.68rem;
+  opacity: 0.82;
+  line-height: 1.4;
+  margin-bottom: 0.85rem;
+  min-height: 1.9em;
+  letter-spacing: 0.01em;
+}
+
+.conf-cube__years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.conf-cube__year-link {
+  display: inline-block;
+  padding: 0.18rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff !important;
+  font-size: 0.79rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  transition: background 0.15s, transform 0.12s;
+  position: relative;
+  z-index: 2;
+}
+
+.conf-cube__year-link:hover {
+  background: rgba(255, 255, 255, 0.40);
+  color: #fff !important;
+  transform: scale(1.06);
+}
+
+.conf-cube__stat {
+  font-size: 0.74rem;
+  opacity: 0.82;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+/* ── Legacy card styles (kept for generated track pages) ── */
 .conf-card {
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 8px;

@@ -60,171 +60,77 @@ hide:
 
 ---
 
-<div class="conf-grid" markdown>
+<div class="conf-cubes">
 
-<div class="conf-card" markdown>
-
-### ⚡ [HPCA 2025](HPCA/2025/index.md)
-
-<div class="conf-count" data-conf-key="HPCA 2025" data-conf-location="Las Vegas, NV, USA">121 篇 · 23 个方向 · Las Vegas, NV, USA</div>
-
-<div class="area-groups">
-<div class="area-group">
-<div class="area-group-label">方向</div>
-<div class="area-tags">
-<a class="area-tag" href="HPCA/2025/the_winning_system/" data-track-key="HPCA/2025/the_winning_system" data-track-label="The Winning System">The Winning System 11</a>
-<a class="area-tag" href="HPCA/2025/all_in_on_gpus/" data-track-key="HPCA/2025/all_in_on_gpus" data-track-label="All in on GPUs">All in on GPUs 8</a>
-<a class="area-tag" href="HPCA/2025/high_stakes_vision/" data-track-key="HPCA/2025/high_stakes_vision" data-track-label="High Stakes Vision">High Stakes Vision 7</a>
-</div>
-</div>
-</div>
----
-
-<div class="conf-card" markdown>
-
-### ⚡ [HPCA 2026](HPCA/2026/index.md)
-
-<div class="conf-count" data-conf-key="HPCA 2026" data-conf-location="Sydney, Australia">15 篇 · 6 个方向 · Sydney, Australia</div>
-
-<div class="area-groups">
-<div class="area-group">
-<div class="area-group-label">安全与可信</div>
-<div class="area-tags">
-<a class="area-tag" href="HPCA/2026/security/" data-track-key="HPCA/2026/security" data-track-label="硬件安全">硬件安全 3</a>
-<a class="area-tag" href="HPCA/2026/memory/" data-track-key="HPCA/2026/memory" data-track-label="内存安全">内存安全 3</a>
-<a class="area-tag" href="HPCA/2026/fhe/" data-track-key="HPCA/2026/fhe" data-track-label="同态加密">同态加密 2</a>
-</div>
-</div>
-<div class="area-group">
-<div class="area-group-label">高效计算</div>
-<div class="area-tags">
-<a class="area-tag" href="HPCA/2026/llm_inference/" data-track-key="HPCA/2026/llm_inference" data-track-label="LLM推理">LLM推理 3</a>
-<a class="area-tag" href="HPCA/2026/pim/" data-track-key="HPCA/2026/pim" data-track-label="存内计算">存内计算 2</a>
-<a class="area-tag" href="HPCA/2026/quantum/" data-track-key="HPCA/2026/quantum" data-track-label="量子计算">量子计算 2</a>
-</div>
-</div>
+<div class="conf-cube conf-cube--hpca">
+  <span class="conf-cube__icon">⚡</span>
+  <div class="conf-cube__name">HPCA</div>
+  <div class="conf-cube__full">High-Performance Computer Architecture</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="HPCA/2026/">2026</a>
+    <a class="conf-cube__year-link" href="HPCA/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat">136 篇 · Las Vegas / Sydney</div>
 </div>
 
+<div class="conf-cube conf-cube--isca">
+  <span class="conf-cube__icon">🏗️</span>
+  <div class="conf-cube__name">ISCA</div>
+  <div class="conf-cube__full">Int'l Symp. on Computer Architecture</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="ISCA/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat" data-conf-key="ISCA 2025">135 篇 · Tokyo, Japan</div>
 </div>
 
-<div class="conf-card" markdown>
-
-### 🏗️ [ISCA 2025](ISCA/2025/index.md)
-
-<div class="conf-count" data-conf-key="ISCA 2025" data-conf-location="Tokyo, Japan">135 篇 · 11 个方向 · Tokyo, Japan</div>
-
-<div class="area-groups">
-<div class="area-group">
-<div class="area-group-label">AI加速</div>
-<div class="area-tags">
-<a class="area-tag" href="ISCA/2025/ml_accelerator/" data-track-key="ISCA/2025/ml_accelerator" data-track-label="ML加速器">ML加速器 20</a>
-</div>
-</div>
-<div class="area-group">
-<div class="area-group-label">安全与存储</div>
-<div class="area-tags">
-<a class="area-tag" href="ISCA/2025/crypto_fhe/" data-track-key="ISCA/2025/crypto_fhe" data-track-label="密码&amp;FHE">密码&amp;FHE 4</a>
-<a class="area-tag" href="ISCA/2025/memory/" data-track-key="ISCA/2025/memory" data-track-label="内存安全">内存安全 8</a>
-</div>
-</div>
+<div class="conf-cube conf-cube--micro">
+  <span class="conf-cube__icon">🔬</span>
+  <div class="conf-cube__name">MICRO</div>
+  <div class="conf-cube__full">IEEE/ACM Int'l Symp. on Microarchitecture</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="MICRO/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat" data-conf-key="MICRO 2025">123 篇 · Seoul, Korea</div>
 </div>
 
+<div class="conf-cube conf-cube--asplos">
+  <span class="conf-cube__icon">🔄</span>
+  <div class="conf-cube__name">ASPLOS</div>
+  <div class="conf-cube__full">Architectural Support for Programming Languages &amp; OS</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="ASPLOS/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat" data-conf-key="ASPLOS 2025">184 篇 · Rotterdam</div>
 </div>
 
-<div class="conf-card" markdown>
-
-### 🔬 [MICRO 2025](MICRO/2025/index.md)
-
-<div class="conf-count" data-conf-key="MICRO 2025" data-conf-location="Seoul, Korea">123 篇 · 26 个方向 · Seoul, Korea</div>
-
-<div class="area-groups">
-<div class="area-group">
-<div class="area-group-label">方向</div>
-<div class="area-tags">
-<a class="area-tag" href="MICRO/2025/quantum/" data-track-key="MICRO/2025/quantum" data-track-label="Quantum">Quantum 8</a>
-<a class="area-tag" href="MICRO/2025/emerging_applications/" data-track-key="MICRO/2025/emerging_applications" data-track-label="Emerging Applications">Emerging Applications 7</a>
-<a class="area-tag" href="MICRO/2025/microarchitecture/" data-track-key="MICRO/2025/microarchitecture" data-track-label="Microarchitecture">Microarchitecture 7</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div class="conf-cube conf-cube--dac">
+  <span class="conf-cube__icon">🛠️</span>
+  <div class="conf-cube__name">DAC</div>
+  <div class="conf-cube__full">Design Automation Conference</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="DAC/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat">更新中 · San Francisco</div>
 </div>
 
+<div class="conf-cube conf-cube--neurips">
+  <span class="conf-cube__icon">🧠</span>
+  <div class="conf-cube__name">NeurIPS</div>
+  <div class="conf-cube__full">Conf. on Neural Information Processing Systems</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="NeurIPS/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat">更新中 · Vancouver</div>
 </div>
 
-<div class="conf-card" markdown>
-
-### 🔄 [ASPLOS 2025](ASPLOS/2025/index.md)
-
-<div class="conf-count" data-conf-key="ASPLOS 2025" data-conf-location="Rotterdam, Netherlands">184 篇 · 37 个方向 · Rotterdam, Netherlands</div>
-
-<div class="area-groups">
-<div class="area-group">
-<div class="area-group-label">方向</div>
-<div class="area-tags">
-<a class="area-tag" href="ASPLOS/2025/ml_systems/" data-track-key="ASPLOS/2025/ml_systems" data-track-label="ML Systems">ML Systems 10</a>
-<a class="area-tag" href="ASPLOS/2025/cloud_computing/" data-track-key="ASPLOS/2025/cloud_computing" data-track-label="Cloud Computing">Cloud Computing 8</a>
-<a class="area-tag" href="ASPLOS/2025/potpourri/" data-track-key="ASPLOS/2025/potpourri" data-track-label="Potpourri">Potpourri 8</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="conf-card" markdown>
-
-### 🛠️ [DAC 2025](DAC/2025/index.md)
-
-<div class="conf-count">更新中 · San Francisco, CA</div>
-
-<div class="area-groups">
-<div class="area-group">
-<div class="area-group-label">方向</div>
-<div class="area-tags">
-<span class="area-tag">EDA工具</span>
-<span class="area-tag">硬件验证</span>
-<span class="area-tag">安全设计</span>
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="conf-card" markdown>
-
-### 🧠 [NeurIPS 2025](NeurIPS/2025/index.md)
-
-<div class="conf-count">更新中 · Vancouver, Canada</div>
-
-<div class="area-groups">
-<div class="area-group">
-<div class="area-group-label">方向</div>
-<div class="area-tags">
-<span class="area-tag">高效推理</span>
-<span class="area-tag">可信AI</span>
-<span class="area-tag">系统ML</span>
-</div>
-</div>
-</div>
-
+<div class="conf-cube conf-cube--icml">
+  <span class="conf-cube__icon">🤖</span>
+  <div class="conf-cube__name">ICML</div>
+  <div class="conf-cube__full">Int'l Conf. on Machine Learning</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="ICML/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat">更新中 · Vancouver</div>
 </div>
 
 </div>
