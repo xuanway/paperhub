@@ -1,5 +1,5 @@
 ---
-title: "可信高效计算论文 · 顶会论文解读"
+title: "计算机体系结构论文 · 顶会论文解读"
 description: "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
 tags:
   - "可信计算"
@@ -19,7 +19,7 @@ hide:
 
 <div class="hero" markdown>
 
-# 可信高效计算论文
+# 计算机体系结构论文
 
 <p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC 等顶级会议<br>持续更新中</p>
 
