@@ -247,35 +247,197 @@ nav:
         - "SkyByte: Architecting An Efficient Memory-Semantic CXL-based SSD with OS and Hardware Co-design": HPCA/2025/stashing_your_winnings/skybyte_architecting_an_efficient_memory_semantic_cxl_based_ssd_with_os_and_hardware_co_design.md
         - "Zebra: Efficient Redundant Array of Zoned Namespace SSDs Enabled by Zone Random Write Area (ZRWA)": HPCA/2025/stashing_your_winnings/zebra_efficient_redundant_array_of_zoned_namespace_ssds_enabled_by_zone_random_write_area_zrwa.md
         - "Reviving In-Storage Hardware Compression on ZNS SSDs through Host-SSD Collaboration": HPCA/2025/stashing_your_winnings/reviving_in_storage_hardware_compression_on_zns_ssds_through_host_ssd_collaboration.md
-    - HPCA 2026 (15):
+    - HPCA 2026 (125):
       - HPCA 2026: HPCA/2026/index.md
-      - 🔐 硬件安全 (3):
-        - 硬件安全: HPCA/2026/security/index.md
-        - DSASSASSIN: HPCA/2026/security/dsassassin.md
-        - SSBleed: HPCA/2026/security/ssbleed.md
-        - Protean: HPCA/2026/security/protean.md
-      - 🤖 LLM推理 (3):
-        - LLM推理加速: HPCA/2026/llm_inference/index.md
-        - Focus: HPCA/2026/llm_inference/focus.md
-        - ELORA: HPCA/2026/llm_inference/elora.md
-        - PASCAL: HPCA/2026/llm_inference/pascal.md
-      - 💾 内存安全 (3):
-        - 内存安全与可靠性: HPCA/2026/memory/index.md
-        - MIRZA: HPCA/2026/memory/mirza.md
-        - SALT: HPCA/2026/memory/salt.md
-        - ReScue: HPCA/2026/memory/rescue.md
-      - 🔮 存内计算 (2):
-        - 存内计算 PIM: HPCA/2026/pim/index.md
-        - PIMphony: HPCA/2026/pim/pimphony.md
-        - AQPIM: HPCA/2026/pim/aqpim.md
-      - 🔒 同态加密 (2):
-        - 同态加密加速: HPCA/2026/fhe/index.md
-        - UniFHE: HPCA/2026/fhe/unifhe.md
-        - Peregrine: HPCA/2026/fhe/peregrine.md
-      - ⚛️ 量子计算 (2):
-        - 量子计算体系结构: HPCA/2026/quantum/index.md
-        - Cyclone: HPCA/2026/quantum/cyclone.md
-        - d'ArQ: HPCA/2026/quantum/darq.md
+      - "3D Graphics and Rendering Acceleration (4)":
+        - "3D Graphics and Rendering Acceleration": HPCA/2026/3d_graphics_and_rendering_acceleration/index.md
+        - "GRTX: Efficient Ray Tracing for 3D Gaussian-Based Rendering": HPCA/2026/3d_graphics_and_rendering_acceleration/grtx_efficient_ray_tracing_for_3d_gaussian_based_rendering.md
+        - "Splatonic: Architecture Support for 3D Gaussian Splatting SLAM via Sparse Processing": HPCA/2026/3d_graphics_and_rendering_acceleration/splatonic_architecture_support_for_3d_gaussian_splatting_slam_via_sparse_processing.md
+        - "FractalCloud: A Fractal-Inspired Architecture for Efficient Large-Scale Point Cloud Processing": HPCA/2026/3d_graphics_and_rendering_acceleration/fractalcloud_a_fractal_inspired_architecture_for_efficient_large_scale_point_cloud_processing.md
+        - "ORANGE: Exploring \\underline{O}ckham's \\underline{R}azor for Neural Rendering by \\underline{A}ccelerating 3DGS on \\underline{N}PUs with \\underline{GE}MM-Friendly Blending and Balanced Workloads": HPCA/2026/3d_graphics_and_rendering_acceleration/orange_exploring_underline_o_ckham_s_underline_r_azor_for_neural_rendering_by_underline_a_ccelerating_3dgs_on_underline_n_pus_with_underline_ge_mm_friendly_blending_and_balanced_workloads.md
+      - "Accelerator Design and Modeling (4)":
+        - "Accelerator Design and Modeling": HPCA/2026/accelerator_design_and_modeling/index.md
+        - "NPUWattch: ML-based Power, Area, and Timing Modeling for Neural Accelerators": HPCA/2026/accelerator_design_and_modeling/npuwattch_ml_based_power_area_and_timing_modeling_for_neural_accelerators.md
+        - "Area Bloating and the Future of Specialization": HPCA/2026/accelerator_design_and_modeling/area_bloating_and_the_future_of_specialization.md
+        - "Advancing Full-stack Acceleration for Schrödinger-Style Quantum Simulation": HPCA/2026/accelerator_design_and_modeling/advancing_full_stack_acceleration_for_schr_dinger_style_quantum_simulation.md
+        - "COMET: Communication and Memory Co-Design for Fine-Grained AI Inference in MCM Accelerators": HPCA/2026/accelerator_design_and_modeling/comet_communication_and_memory_co_design_for_fine_grained_ai_inference_in_mcm_accelerators.md
+      - "Best Paper Candidates (4)":
+        - "Best Paper Candidates": HPCA/2026/best_paper_candidates/index.md
+        - "Focus: A Streaming Concentration Architecture for Efficient Vision-Language Models": HPCA/2026/best_paper_candidates/focus_a_streaming_concentration_architecture_for_efficient_vision_language_models.md
+        - "LoCaLUT: Harnessing Capacity–Computation Tradeoffs for LUT-Based Inference in DRAM-PIM": HPCA/2026/best_paper_candidates/localut_harnessing_capacity_computation_tradeoffs_for_lut_based_inference_in_dram_pim.md
+        - "RPU - A Reasoning Processing Unit": HPCA/2026/best_paper_candidates/rpu_a_reasoning_processing_unit.md
+        - "PinDrop: Breaking the Silence on SDCs in a Large-Scale Fleet": HPCA/2026/best_paper_candidates/pindrop_breaking_the_silence_on_sdcs_in_a_large_scale_fleet.md
+      - "CPU Microarchitecture Optimization (4)":
+        - "CPU Microarchitecture Optimization": HPCA/2026/cpu_microarchitecture_optimization/index.md
+        - "The Last-Level Branch Predictor Revisited": HPCA/2026/cpu_microarchitecture_optimization/the_last_level_branch_predictor_revisited.md
+        - "Tempranillo: Non-Speculative Early Register Release": HPCA/2026/cpu_microarchitecture_optimization/tempranillo_non_speculative_early_register_release.md
+        - "SMTcheck: Accurate SMT Interference Prediction to Improve Scheduling Efficiency in Datacenters": HPCA/2026/cpu_microarchitecture_optimization/smtcheck_accurate_smt_interference_prediction_to_improve_scheduling_efficiency_in_datacenters.md
+        - "I-POP: Ignite Positive Prefetchers": HPCA/2026/cpu_microarchitecture_optimization/i_pop_ignite_positive_prefetchers.md
+      - "Cache Coherence and Chiplet Interconnects (4)":
+        - "Cache Coherence and Chiplet Interconnects": HPCA/2026/cache_coherence_and_chiplet_interconnects/index.md
+        - "$C^3$ : CXL Coherence Controllers for Heterogeneous Architectures": HPCA/2026/cache_coherence_and_chiplet_interconnects/c_3_cxl_coherence_controllers_for_heterogeneous_architectures.md
+        - "Cohet: A CXL-Driven Coherent Heterogeneous Computing Framework with Hardware-Calibrated Full-System Simulation": HPCA/2026/cache_coherence_and_chiplet_interconnects/cohet_a_cxl_driven_coherent_heterogeneous_computing_framework_with_hardware_calibrated_full_system_simulation.md
+        - "PhasedStore: Supporting High-performance Write-through Cache-coherence Protocols under TSO": HPCA/2026/cache_coherence_and_chiplet_interconnects/phasedstore_supporting_high_performance_write_through_cache_coherence_protocols_under_tso.md
+        - "Deadlock-Free Bridge Module for Inter-Chiplet Communication in Open Chiplet Ecosystem": HPCA/2026/cache_coherence_and_chiplet_interconnects/deadlock_free_bridge_module_for_inter_chiplet_communication_in_open_chiplet_ecosystem.md
+      - "Caching and Prefetching (4)":
+        - "Caching and Prefetching": HPCA/2026/caching_and_prefetching/index.md
+        - "Athena: Synergizing Data Prefetching and Off-Chip Prediction via Online Reinforcement Learning": HPCA/2026/caching_and_prefetching/athena_synergizing_data_prefetching_and_off_chip_prediction_via_online_reinforcement_learning.md
+        - "Streamlined On-Chip Temporal Prefetching": HPCA/2026/caching_and_prefetching/streamlined_on_chip_temporal_prefetching.md
+        - "Intermittence-Aware Cache Compression": HPCA/2026/caching_and_prefetching/intermittence_aware_cache_compression.md
+        - "TENET-v2: Applying Relation-centric Notation to Model and Optimize Data Swizzle in the Cache of Modern NPU": HPCA/2026/caching_and_prefetching/tenet_v2_applying_relation_centric_notation_to_model_and_optimize_data_swizzle_in_the_cache_of_modern_npu.md
+      - "DRAM Security and Reliability (4)":
+        - "DRAM Security and Reliability": HPCA/2026/dram_security_and_reliability/index.md
+        - "MIRZA: Efficiently Mitigating Rowhammer with Randomization and ALERT": HPCA/2026/dram_security_and_reliability/mirza_efficiently_mitigating_rowhammer_with_randomization_and_alert.md
+        - "SALT: Track-and-Mitigate Subarrays, Not Rows, for Blast-Radius-Free Rowhammer Defense": HPCA/2026/dram_security_and_reliability/salt_track_and_mitigate_subarrays_not_rows_for_blast_radius_free_rowhammer_defense.md
+        - "ReScue: Reliable and Secure CXL Memory": HPCA/2026/dram_security_and_reliability/rescue_reliable_and_secure_cxl_memory.md
+        - "Secret Caching Sauce for High-Performance Secure Memory": HPCA/2026/dram_security_and_reliability/secret_caching_sauce_for_high_performance_secure_memory.md
+      - "Distributed and Multi-GPU Training (4)":
+        - "Distributed and Multi-GPU Training": HPCA/2026/distributed_and_multi_gpu_training/index.md
+        - "Compression-Aware Gradient Splitting for Collective Communications in Distributed Training": HPCA/2026/distributed_and_multi_gpu_training/compression_aware_gradient_splitting_for_collective_communications_in_distributed_training.md
+        - "SCALE: Tackling Communication Bottlenecks in Confidential Multi-GPU ML": HPCA/2026/distributed_and_multi_gpu_training/scale_tackling_communication_bottlenecks_in_confidential_multi_gpu_ml.md
+        - "AutoHAAP: Automated Heterogeneity-Aware Asymmetric Partitioning for LLM Training": HPCA/2026/distributed_and_multi_gpu_training/autohaap_automated_heterogeneity_aware_asymmetric_partitioning_for_llm_training.md
+        - "Towards Compute-Aware In-Switch Computing for LLMs Tensor-Parallelism on Multi-GPU Systems": HPCA/2026/distributed_and_multi_gpu_training/towards_compute_aware_in_switch_computing_for_llms_tensor_parallelism_on_multi_gpu_systems.md
+      - "Domain Specific Accelerators (4)":
+        - "Domain Specific Accelerators": HPCA/2026/domain_specific_accelerators/index.md
+        - "Uni-STC: Unified Sparse Tensor Core": HPCA/2026/domain_specific_accelerators/uni_stc_unified_sparse_tensor_core.md
+        - "AUM: Unleashing the Efficiency Potential of Shared Processors with Accelerator Units for LLM Serving": HPCA/2026/domain_specific_accelerators/aum_unleashing_the_efficiency_potential_of_shared_processors_with_accelerator_units_for_llm_serving.md
+        - "DRACO: A Hardware-Efficient Robot Rigid Body Dynamics Accelerator with Precision-Aware Quantization Framework": HPCA/2026/domain_specific_accelerators/draco_a_hardware_efficient_robot_rigid_body_dynamics_accelerator_with_precision_aware_quantization_framework.md
+        - "REASON: Accelerating Probabilistic Logical Reasoning for Neuro-Symbolic Cognitive Intelligence": HPCA/2026/domain_specific_accelerators/reason_accelerating_probabilistic_logical_reasoning_for_neuro_symbolic_cognitive_intelligence.md
+      - "Efficient LLM Inference Techniques (4)":
+        - "Efficient LLM Inference Techniques": HPCA/2026/efficient_llm_inference_techniques/index.md
+        - "PADE: A Predictor-Free Sparse Attention Accelerator via Unified Execution and Stage Fusion": HPCA/2026/efficient_llm_inference_techniques/pade_a_predictor_free_sparse_attention_accelerator_via_unified_execution_and_stage_fusion.md
+        - "AQPIM: Breaking the PIM Capacity Wall for LLMs with In-Memory Activation Quantization": HPCA/2026/efficient_llm_inference_techniques/aqpim_breaking_the_pim_capacity_wall_for_llms_with_in_memory_activation_quantization.md
+        - "BitDecoding: Unlocking Tensor Cores for Long-Context LLMs with Low-Bit KV Cache": HPCA/2026/efficient_llm_inference_techniques/bitdecoding_unlocking_tensor_cores_for_long_context_llms_with_low_bit_kv_cache.md
+        - "GyRot: Leveraging Hidden Synergy between Rotation and Fine-grained Group Quantization for Low-bit LLM Inference": HPCA/2026/efficient_llm_inference_techniques/gyrot_leveraging_hidden_synergy_between_rotation_and_fine_grained_group_quantization_for_low_bit_llm_inference.md
+      - "Efficient Serving and Resource Management (4)":
+        - "Efficient Serving and Resource Management": HPCA/2026/efficient_serving_and_resource_management/index.md
+        - "Near-Zero-Overhead Freshness for Recommendation Systems via Inference-Side Model Updates": HPCA/2026/efficient_serving_and_resource_management/near_zero_overhead_freshness_for_recommendation_systems_via_inference_side_model_updates.md
+        - "AccelFlow: Orchestrating an On-Package Ensemble of Fine-Grained Accelerators for Microservices": HPCA/2026/efficient_serving_and_resource_management/accelflow_orchestrating_an_on_package_ensemble_of_fine_grained_accelerators_for_microservices.md
+        - "SpotCC: Facilitating Coded Computation for Prediction Serving Systems on Spot Instances": HPCA/2026/efficient_serving_and_resource_management/spotcc_facilitating_coded_computation_for_prediction_serving_systems_on_spot_instances.md
+        - "LowCarb: Carbon-Aware Scheduling of Serverless Functions": HPCA/2026/efficient_serving_and_resource_management/lowcarb_carbon_aware_scheduling_of_serverless_functions.md
+      - "Emerging Compute Paradigms (4)":
+        - "Emerging Compute Paradigms": HPCA/2026/emerging_compute_paradigms/index.md
+        - "BASES: Enabling Energy-Efficient and Error-Resilient Analog CIM Acceleration via Reformation of Coding Bases": HPCA/2026/emerging_compute_paradigms/bases_enabling_energy_efficient_and_error_resilient_analog_cim_acceleration_via_reformation_of_coding_bases.md
+        - "A PN-Free Digital SAT Accelerator Using Crossbar Architecture and Frequency-Controlled Counters": HPCA/2026/emerging_compute_paradigms/a_pn_free_digital_sat_accelerator_using_crossbar_architecture_and_frequency_controlled_counters.md
+        - "ESTroM: Element-Flow Architecture For Processing Sparse Tractable Probabilistic Models": HPCA/2026/emerging_compute_paradigms/estrom_element_flow_architecture_for_processing_sparse_tractable_probabilistic_models.md
+        - "GustavSNN: Unleashing the Power of Gustavson's Algorithm on SNN Acceleration with Column-Parallel Tick-Batch Dataflow": HPCA/2026/emerging_compute_paradigms/gustavsnn_unleashing_the_power_of_gustavson_s_algorithm_on_snn_acceleration_with_column_parallel_tick_batch_dataflow.md
+      - "FPGA, SmartNIC, and Reconfigurable Computing (4)":
+        - "FPGA, SmartNIC, and Reconfigurable Computing": HPCA/2026/fpga_smartnic_and_reconfigurable_computing/index.md
+        - "RidgeWalker: Perfectly Pipelined Graph Random Walks on FPGAs": HPCA/2026/fpga_smartnic_and_reconfigurable_computing/ridgewalker_perfectly_pipelined_graph_random_walks_on_fpgas.md
+        - "DP-HLS: A High-Level Synthesis Framework for Accelerating Dynamic Programming Algorithms in Bioinformatics": HPCA/2026/fpga_smartnic_and_reconfigurable_computing/dp_hls_a_high_level_synthesis_framework_for_accelerating_dynamic_programming_algorithms_in_bioinformatics.md
+        - "Sassy: SmartNIC-Assisted Notification Delivery for μs-scale RDMA Workloads": HPCA/2026/fpga_smartnic_and_reconfigurable_computing/sassy_smartnic_assisted_notification_delivery_for_s_scale_rdma_workloads.md
+        - "TurboFuzz: FPGA Accelerated Hardware Fuzzing for Processor Agile Verification": HPCA/2026/fpga_smartnic_and_reconfigurable_computing/turbofuzz_fpga_accelerated_hardware_fuzzing_for_processor_agile_verification.md
+      - "GPU Kernel Optimization and Resource Sharing (4)":
+        - "GPU Kernel Optimization and Resource Sharing": HPCA/2026/gpu_kernel_optimization_and_resource_sharing/index.md
+        - "μShare: Non-Intrusive Kernel Co-Locating on NVIDIA GPUs": HPCA/2026/gpu_kernel_optimization_and_resource_sharing/share_non_intrusive_kernel_co_locating_on_nvidia_gpus.md
+        - "FlashFuser: Expanding the Scale of Kernel Fusion for Compute-Intensive operators via Inter-Core Connection": HPCA/2026/gpu_kernel_optimization_and_resource_sharing/flashfuser_expanding_the_scale_of_kernel_fusion_for_compute_intensive_operators_via_inter_core_connection.md
+        - "Swift: High-Performance Sparse-Dense Matrix Multiplication on GPUs": HPCA/2026/gpu_kernel_optimization_and_resource_sharing/swift_high_performance_sparse_dense_matrix_multiplication_on_gpus.md
+        - "QuCo: Efficient and Flexible Hardware-Driven Automatic Configuration of Tile Transfers in GPUs": HPCA/2026/gpu_kernel_optimization_and_resource_sharing/quco_efficient_and_flexible_hardware_driven_automatic_configuration_of_tile_transfers_in_gpus.md
+      - "GPU Memory Management and Multi-Chiplet Systems (4)":
+        - "GPU Memory Management and Multi-Chiplet Systems": HPCA/2026/gpu_memory_management_and_multi_chiplet_systems/index.md
+        - "Exploration of LLM Workload Reliability based on di/dt effects and Voltage Droops": HPCA/2026/gpu_memory_management_and_multi_chiplet_systems/exploration_of_llm_workload_reliability_based_on_di_dt_effects_and_voltage_droops.md
+        - "ARIADNE: Adaptive UVM Management for Efficient GPU Memory Oversubscription": HPCA/2026/gpu_memory_management_and_multi_chiplet_systems/ariadne_adaptive_uvm_management_for_efficient_gpu_memory_oversubscription.md
+        - "LRM-GPU: Alleviating Synchronization Overhead for Multi-Chiplet GPU Architecture": HPCA/2026/gpu_memory_management_and_multi_chiplet_systems/lrm_gpu_alleviating_synchronization_overhead_for_multi_chiplet_gpu_architecture.md
+        - "LEGO: Supporting LLM-enhanced Games with One Gaming GPU": HPCA/2026/gpu_memory_management_and_multi_chiplet_systems/lego_supporting_llm_enhanced_games_with_one_gaming_gpu.md
+      - "Graph Neural Networks and Retrieval Systems (4)":
+        - "Graph Neural Networks and Retrieval Systems": HPCA/2026/graph_neural_networks_and_retrieval_systems/index.md
+        - "VeloxGNN: Accelerating Out-of-Core based GNN Training with Low Data Migration and High Accuracy via Delayed Gradient Propagation": HPCA/2026/graph_neural_networks_and_retrieval_systems/veloxgnn_accelerating_out_of_core_based_gnn_training_with_low_data_migration_and_high_accuracy_via_delayed_gradient_propagation.md
+        - "AutoGNN: End-to-End Hardware-Driven Graph Preprocessing for Enhanced GNN Performance": HPCA/2026/graph_neural_networks_and_retrieval_systems/autognn_end_to_end_hardware_driven_graph_preprocessing_for_enhanced_gnn_performance.md
+        - "Scaling Graph Neural Network Training via Geometric Optimization": HPCA/2026/graph_neural_networks_and_retrieval_systems/scaling_graph_neural_network_training_via_geometric_optimization.md
+        - "VectorLiteRAG: Latency-Aware and Fine-Grained Resource Partitioning for Efficient RAG": HPCA/2026/graph_neural_networks_and_retrieval_systems/vectorliterag_latency_aware_and_fine_grained_resource_partitioning_for_efficient_rag.md
+      - "Hardware Security and Side-Channel Defenses (4)":
+        - "Hardware Security and Side-Channel Defenses": HPCA/2026/hardware_security_and_side_channel_defenses/index.md
+        - "DSASSASSIN: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator": HPCA/2026/hardware_security_and_side_channel_defenses/dsassassin_cross_vm_side_channel_attacks_by_exploiting_intel_data_streaming_accelerator.md
+        - "SSBleed: Non-speculative Side-channel Attacks via Speculative Store Bypass on Armv9 CPUs": HPCA/2026/hardware_security_and_side_channel_defenses/ssbleed_non_speculative_side_channel_attacks_via_speculative_store_bypass_on_armv9_cpus.md
+        - "Protean: A Programmable Spectre Defense": HPCA/2026/hardware_security_and_side_channel_defenses/protean_a_programmable_spectre_defense.md
+        - "HERO-Sign: Hierarchical Tuning and Efficient Compiler-Time GPU Optimizations for SPHINCS$^+$ Signature Generation": HPCA/2026/hardware_security_and_side_channel_defenses/hero_sign_hierarchical_tuning_and_efficient_compiler_time_gpu_optimizations_for_sphincs_signature_generation.md
+      - "Homomorphic Encryption Acceleration (4)":
+        - "Homomorphic Encryption Acceleration": HPCA/2026/homomorphic_encryption_acceleration/index.md
+        - "UniFHE: Faster Accelerator for FHE with Diverse Algebraic Structure and Balanced Memory System": HPCA/2026/homomorphic_encryption_acceleration/unifhe_faster_accelerator_for_fhe_with_diverse_algebraic_structure_and_balanced_memory_system.md
+        - "Leveraging ASIC AI Chips for Homomorphic Encryption": HPCA/2026/homomorphic_encryption_acceleration/leveraging_asic_ai_chips_for_homomorphic_encryption.md
+        - "CROPHE: Cross-Operator Dataflow Optimization for Fully Homomorphic Encryption Accelerators": HPCA/2026/homomorphic_encryption_acceleration/crophe_cross_operator_dataflow_optimization_for_fully_homomorphic_encryption_accelerators.md
+        - "Peregrine: Accelerating TFHE Bootstrapping on GPUs via Multi-Level External Product Co-Design": HPCA/2026/homomorphic_encryption_acceleration/peregrine_accelerating_tfhe_bootstrapping_on_gpus_via_multi_level_external_product_co_design.md
+      - "LLM Inference Serving Systems (4)":
+        - "LLM Inference Serving Systems": HPCA/2026/llm_inference_serving_systems/index.md
+        - "Towards Resource-Efficient Serverless LLM Inference with SLINFER": HPCA/2026/llm_inference_serving_systems/towards_resource_efficient_serverless_llm_inference_with_slinfer.md
+        - "ELORA: Efficient LoRA and KV Cache Management for Multi-LoRA LLM Serving": HPCA/2026/llm_inference_serving_systems/elora_efficient_lora_and_kv_cache_management_for_multi_lora_llm_serving.md
+        - "PASCAL: A Phase-Aware Scheduling Algorithm for Serving Reasoning-based Large Language Models": HPCA/2026/llm_inference_serving_systems/pascal_a_phase_aware_scheduling_algorithm_for_serving_reasoning_based_large_language_models.md
+        - "The Cost of Dynamic Reasoning: Demystifying AI Agents and Test-Time Scaling from an AI Infrastructure Perspective": HPCA/2026/llm_inference_serving_systems/the_cost_of_dynamic_reasoning_demystifying_ai_agents_and_test_time_scaling_from_an_ai_infrastructure_perspective.md
+      - "LLM Systems and Microarchitecture Tools (4)":
+        - "LLM Systems and Microarchitecture Tools": HPCA/2026/llm_systems_and_microarchitecture_tools/index.md
+        - "LILo: Harnessing the On-chip Accelerators in Intel CPUs for Compressed LLM Inference Acceleration": HPCA/2026/llm_systems_and_microarchitecture_tools/lilo_harnessing_the_on_chip_accelerators_in_intel_cpus_for_compressed_llm_inference_acceleration.md
+        - "ReThermal: Co-Design of Thermal-Aware Static and Dynamic Scheduling for LLM Training on Liquid-Cooled Wafer-Scale Chips": HPCA/2026/llm_systems_and_microarchitecture_tools/rethermal_co_design_of_thermal_aware_static_and_dynamic_scheduling_for_llm_training_on_liquid_cooled_wafer_scale_chips.md
+        - "TraceRTL: Agile Performance Evaluation for Microarchitecture Exploration": HPCA/2026/llm_systems_and_microarchitecture_tools/tracertl_agile_performance_evaluation_for_microarchitecture_exploration.md
+        - "Nugget: Portable Program Snippets": HPCA/2026/llm_systems_and_microarchitecture_tools/nugget_portable_program_snippets.md
+      - "Memory System Reliability (4)":
+        - "Memory System Reliability": HPCA/2026/memory_system_reliability/index.md
+        - "Predicting DRAM Failures at Scale: A Two-Stage Approach for Heterogeneous Systems": HPCA/2026/memory_system_reliability/predicting_dram_failures_at_scale_a_two_stage_approach_for_heterogeneous_systems.md
+        - "MemSOS: OS-Guided Selective Memory Mirroring": HPCA/2026/memory_system_reliability/memsos_os_guided_selective_memory_mirroring.md
+        - "ASPA: Reassigning DDR5 Parity Bandwidth": HPCA/2026/memory_system_reliability/aspa_reassigning_ddr5_parity_bandwidth.md
+        - "HR-DCIM: High-Reliability Floating-Point Digital CIM Architecture with Unified Low-Cost Iterative Error Correction": HPCA/2026/memory_system_reliability/hr_dcim_high_reliability_floating_point_digital_cim_architecture_with_unified_low_cost_iterative_error_correction.md
+      - "Memory Systems for Scalable Computing (4)":
+        - "Memory Systems for Scalable Computing": HPCA/2026/memory_systems_for_scalable_computing/index.md
+        - "BARD: Reducing Write Latency of DDR5 Memory by Exploiting Bank-Parallelism": HPCA/2026/memory_systems_for_scalable_computing/bard_reducing_write_latency_of_ddr5_memory_by_exploiting_bank_parallelism.md
+        - "RoMe: Row Granularity Access Memory System for Large Language Models": HPCA/2026/memory_systems_for_scalable_computing/rome_row_granularity_access_memory_system_for_large_language_models.md
+        - "HDPAT: Hierarchical Distributed Page Address Translation for Wafer-Scale GPUs": HPCA/2026/memory_systems_for_scalable_computing/hdpat_hierarchical_distributed_page_address_translation_for_wafer_scale_gpus.md
+        - "Pulse: Fine-Grained Hierarchical Hashing Index for Disaggregated Memory": HPCA/2026/memory_systems_for_scalable_computing/pulse_fine_grained_hierarchical_hashing_index_for_disaggregated_memory.md
+      - "Near-Data Processing and Storage (4)":
+        - "Near-Data Processing and Storage": HPCA/2026/near_data_processing_and_storage/index.md
+        - "PIMphony: Overcoming Bandwidth and Capacity Inefficiency in PIM-based Long-Context LLM Inference System": HPCA/2026/near_data_processing_and_storage/pimphony_overcoming_bandwidth_and_capacity_inefficiency_in_pim_based_long_context_llm_inference_system.md
+        - "Adaptive Draft Sequence Length: Enhancing Speculative Decoding Throughput on PIM-Enabled Systems": HPCA/2026/near_data_processing_and_storage/adaptive_draft_sequence_length_enhancing_speculative_decoding_throughput_on_pim_enabled_systems.md
+        - "Conduit: Programmer-Transparent Near-Data Processing Using Multiple Compute-Capable Resources in SSDs": HPCA/2026/near_data_processing_and_storage/conduit_programmer_transparent_near_data_processing_using_multiple_compute_capable_resources_in_ssds.md
+        - "N-DIPPER: A Distributed Inter-die Peak Power Management Network for NAND Systems": HPCA/2026/near_data_processing_and_storage/n_dipper_a_distributed_inter_die_peak_power_management_network_for_nand_systems.md
+      - "Processing-in-Memory Architectures (4)":
+        - "Processing-in-Memory Architectures": HPCA/2026/processing_in_memory_architectures/index.md
+        - "The Memory Processing Unit: A Generalized Interface for End-to-End In-Memory Execution": HPCA/2026/processing_in_memory_architectures/the_memory_processing_unit_a_generalized_interface_for_end_to_end_in_memory_execution.md
+        - "CoCoTree: A Computation-Capable Architecture for Collective Communication in Scalable PIM": HPCA/2026/processing_in_memory_architectures/cocotree_a_computation_capable_architecture_for_collective_communication_in_scalable_pim.md
+        - "PIM-malloc: A Fast and Scalable Dynamic Memory Allocator for Processing-In-Memory (PIM) Architectures": HPCA/2026/processing_in_memory_architectures/pim_malloc_a_fast_and_scalable_dynamic_memory_allocator_for_processing_in_memory_pim_architectures.md
+        - "Count2Multiply: Reliable In-Memory High-Radix Counting": HPCA/2026/processing_in_memory_architectures/count2multiply_reliable_in_memory_high_radix_counting.md
+      - "Quantum Compilation and Simulation (4)":
+        - "Quantum Compilation and Simulation": HPCA/2026/quantum_compilation_and_simulation/index.md
+        - "CLINE: Improving Control Flow Compilation of Quantum Programs with Control Line Encoding": HPCA/2026/quantum_compilation_and_simulation/cline_improving_control_flow_compilation_of_quantum_programs_with_control_line_encoding.md
+        - "Fully Parallelized BP Decoding for Quantum LDPC Codes Can Outperform BP-OSD": HPCA/2026/quantum_compilation_and_simulation/fully_parallelized_bp_decoding_for_quantum_ldpc_codes_can_outperform_bp_osd.md
+        - "DC-MBQC: A Distributed Quantum Compilation Framework for Measurement-Based Quantum Computing": HPCA/2026/quantum_compilation_and_simulation/dc_mbqc_a_distributed_quantum_compilation_framework_for_measurement_based_quantum_computing.md
+        - "TraceQ: Trace-Based Reconstruction of Quantum Circuit Dataflow in Surface-Code Fault-Tolerant Quantum Computing": HPCA/2026/quantum_compilation_and_simulation/traceq_trace_based_reconstruction_of_quantum_circuit_dataflow_in_surface_code_fault_tolerant_quantum_computing.md
+      - "Quantum Computing Architecture (4)":
+        - "Quantum Computing Architecture": HPCA/2026/quantum_computing_architecture/index.md
+        - "Toward Scalable Gate-Level Parallelism on Trapped-Ion Processors with Racetrack Electrodes": HPCA/2026/quantum_computing_architecture/toward_scalable_gate_level_parallelism_on_trapped_ion_processors_with_racetrack_electrodes.md
+        - "Cyclone: Designing Efficient and Highly Parallel QCCD Architectural Codesigns for Fault Tolerant Quantum Memory": HPCA/2026/quantum_computing_architecture/cyclone_designing_efficient_and_highly_parallel_qccd_architectural_codesigns_for_fault_tolerant_quantum_memory.md
+        - "d'ArQ: A QOC Framework with Causality-Aware Grouping and Basis Selection": HPCA/2026/quantum_computing_architecture/d_arq_a_qoc_framework_with_causality_aware_grouping_and_basis_selection.md
+        - "Pinball: A Cryogenic Predecoder for Quantum Error Correction Decoding Under Circuit-Level Noise": HPCA/2026/quantum_computing_architecture/pinball_a_cryogenic_predecoder_for_quantum_error_correction_decoding_under_circuit_level_noise.md
+      - "Visual and Multimodal Acceleration (4)":
+        - "Visual and Multimodal Acceleration": HPCA/2026/visual_and_multimodal_acceleration/index.md
+        - "V-Rex: Real-Time Streaming Video LLM Acceleration via Dynamic KV Cache Retrieval": HPCA/2026/visual_and_multimodal_acceleration/v_rex_real_time_streaming_video_llm_acceleration_via_dynamic_kv_cache_retrieval.md
+        - "SFD: Towards Segment Fusion Dataflow for Spatial Accelerators": HPCA/2026/visual_and_multimodal_acceleration/sfd_towards_segment_fusion_dataflow_for_spatial_accelerators.md
+        - "VAR-Turbo: Unlocking the Potential of Visual Autoregressive Models through Dual Redundancy": HPCA/2026/visual_and_multimodal_acceleration/var_turbo_unlocking_the_potential_of_visual_autoregressive_models_through_dual_redundancy.md
+        - "Cambricon-GS: An Accelerator for 3D Gaussian Splatting Training with Gaussian-Pixel Hybrid Parallelism": HPCA/2026/visual_and_multimodal_acceleration/cambricon_gs_an_accelerator_for_3d_gaussian_splatting_training_with_gaussian_pixel_hybrid_parallelism.md
+      - "Wafer-Scale Systems for Large Models (4)":
+        - "Wafer-Scale Systems for Large Models": HPCA/2026/wafer_scale_systems_for_large_models/index.md
+        - "WATOS: Efficient LLM Training Strategies and Architecture Co-exploration for Wafer-scale Chip": HPCA/2026/wafer_scale_systems_for_large_models/watos_efficient_llm_training_strategies_and_architecture_co_exploration_for_wafer_scale_chip.md
+        - "FACE: Fully PD Overlapped Scheduling and Multi-Level Architecture Co-Exploration on Wafer": HPCA/2026/wafer_scale_systems_for_large_models/face_fully_pd_overlapped_scheduling_and_multi_level_architecture_co_exploration_on_wafer.md
+        - "TEMP: A Memory Efficient Physical-aware Tensor Partition-Mapping Framework on Wafer-scale Chips": HPCA/2026/wafer_scale_systems_for_large_models/temp_a_memory_efficient_physical_aware_tensor_partition_mapping_framework_on_wafer_scale_chips.md
+        - "MoEntwine: Unleashing the Potential of Wafer-scale Chips for Large-scale Expert Parallel Inference": HPCA/2026/wafer_scale_systems_for_large_models/moentwine_unleashing_the_potential_of_wafer_scale_chips_for_large_scale_expert_parallel_inference.md
+      - "Zero-Knowledge and Private Information Retrieval (4)":
+        - "Zero-Knowledge and Private Information Retrieval": HPCA/2026/zero_knowledge_and_private_information_retrieval/index.md
+        - "zkPHIRE: A Programmable Accelerator for ZKPs over HIgh-degRee, Expressive Gates": HPCA/2026/zero_knowledge_and_private_information_retrieval/zkphire_a_programmable_accelerator_for_zkps_over_high_degree_expressive_gates.md
+        - "Conflux: A High-Performance Keyword Private Retrieval System for Dynamic Datasets": HPCA/2026/zero_knowledge_and_private_information_retrieval/conflux_a_high_performance_keyword_private_retrieval_system_for_dynamic_datasets.md
+        - "An Efficient and Scalable Hardware Architecture for Number Theoretic Transform on FPGA with Design Automation": HPCA/2026/zero_knowledge_and_private_information_retrieval/an_efficient_and_scalable_hardware_architecture_for_number_theoretic_transform_on_fpga_with_design_automation.md
+        - "IVE: An Accelerator for Single-Server Private Information Retrieval Using a Versatile Processing Element": HPCA/2026/zero_knowledge_and_private_information_retrieval/ive_an_accelerator_for_single_server_private_information_retrieval_using_a_versatile_processing_element.md
+      - "Best of CAL (3)":
+        - "Best of CAL": HPCA/2026/best_of_cal/index.md
+        - "QuArch: A Question-Answering Dataset for AI Agents in Computer Architecture": HPCA/2026/best_of_cal/quarch_a_question_answering_dataset_for_ai_agents_in_computer_architecture.md
+        - "The Architectural Sustainability Indicator": HPCA/2026/best_of_cal/the_architectural_sustainability_indicator.md
+        - "Per-Row Activation Counting on Real Hardware: Demystifying Performance Overheads": HPCA/2026/best_of_cal/per_row_activation_counting_on_real_hardware_demystifying_performance_overheads.md
+      - "Genomics and Bioinformatics (3)":
+        - "Genomics and Bioinformatics": HPCA/2026/genomics_and_bioinformatics/index.md
+        - "GenPairX: A Hardware-Algorithm Co-Designed Accelerator for Paired-End Read Mapping": HPCA/2026/genomics_and_bioinformatics/genpairx_a_hardware_algorithm_co_designed_accelerator_for_paired_end_read_mapping.md
+        - "SAGe: A Lightweight Algorithm-Architecture Co-Design for Mitigating the Data Preparation Bottleneck in Large-Scale Genome Sequence Analysis": HPCA/2026/genomics_and_bioinformatics/sage_a_lightweight_algorithm_architecture_co_design_for_mitigating_the_data_preparation_bottleneck_in_large_scale_genome_sequence_analysis.md
+        - "NP-CAM: Efficient and Scalable DNA Classification using a NoC-Partitioned CAM Architecture": HPCA/2026/genomics_and_bioinformatics/np_cam_efficient_and_scalable_dna_classification_using_a_noc_partitioned_cam_architecture.md
+      - "Industry Track (3)":
+        - "Industry Track": HPCA/2026/industry_track/index.md
+        - "Enterprise Class On-Chip Accelerator Integration": HPCA/2026/industry_track/enterprise_class_on_chip_accelerator_integration.md
+        - "Characterizing Cloud-Native LLM Inference at ByteDance and Exposing Optimization Challenges and Opportunities for Future AI Accelerators": HPCA/2026/industry_track/characterizing_cloud_native_llm_inference_at_bytedance_and_exposing_optimization_challenges_and_opportunities_for_future_ai_accelerators.md
+        - "eGPU: Production-Scale Elastic Sharing over 10,000 GPUs": HPCA/2026/industry_track/egpu_production_scale_elastic_sharing_over_10_000_gpus.md
   - 🏗️ ISCA:
     - ISCA 2025 (135):
       - ISCA 2025: ISCA/2025/index.md

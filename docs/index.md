@@ -70,7 +70,7 @@ hide:
     <a class="conf-cube__year-link" href="HPCA/2026/">2026</a>
     <a class="conf-cube__year-link" href="HPCA/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">136 篇 · Las Vegas / Sydney</div>
+  <div class="conf-cube__stat">246 篇 · Las Vegas / Sydney</div>
 </div>
 
 <div class="conf-cube conf-cube--isca">

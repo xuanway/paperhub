@@ -1,25 +1,49 @@
 ---
 title: "HPCA 2026 论文集"
-description: "HPCA 2026（第32届IEEE高性能计算机体系结构研讨会）接收论文解读，Sydney, Australia"
+description: "HPCA 2026 论文解读，Sydney, Australia"
 search:
   exclude: false
 hide:
   - toc
 ---
 
-# ⚡ HPCA 2026
+# HPCA 2026
 
-**第32届IEEE高性能计算机体系结构研讨会** · 2026年1月31日 – 2月4日 · 澳大利亚悉尼
-
-HPCA 是计算机体系结构领域顶级会议，覆盖处理器微架构、内存系统、互联网络、AI加速器、硬件安全等方向。
+**HPCA 2026** · 2026年2月2日 - 2月4日 · Sydney, Australia
 
 ---
 
-| 分类 | 论文数 | 关键词 |
-|------|-------|--------|
-| [🔐 硬件安全](security/index.md) | 3 | 侧信道攻击、Spectre防御、CXL安全 |
-| [🤖 LLM推理加速](llm_inference/index.md) | 3 | 稀疏注意力、LoRA服务、推理调度 |
-| [💾 内存安全与可靠性](memory/index.md) | 3 | Rowhammer、CXL内存、DRAM安全 |
-| [🔮 存内计算(PIM)](pim/index.md) | 2 | PIM-LLM、量化 |
-| [🔒 同态加密加速](fhe/index.md) | 2 | FHE硬件加速、TFHE |
-| [⚛️ 量子计算体系结构](quantum/index.md) | 2 | QCCD、容错量子计算 |
+| 分类 (Track) | 论文数 |
+|-------------|-------|
+| [3D Graphics and Rendering Acceleration](3d_graphics_and_rendering_acceleration/index.md) | 4 |
+| [Accelerator Design and Modeling](accelerator_design_and_modeling/index.md) | 4 |
+| [Best Paper Candidates](best_paper_candidates/index.md) | 4 |
+| [CPU Microarchitecture Optimization](cpu_microarchitecture_optimization/index.md) | 4 |
+| [Cache Coherence and Chiplet Interconnects](cache_coherence_and_chiplet_interconnects/index.md) | 4 |
+| [Caching and Prefetching](caching_and_prefetching/index.md) | 4 |
+| [DRAM Security and Reliability](dram_security_and_reliability/index.md) | 4 |
+| [Distributed and Multi-GPU Training](distributed_and_multi_gpu_training/index.md) | 4 |
+| [Domain Specific Accelerators](domain_specific_accelerators/index.md) | 4 |
+| [Efficient LLM Inference Techniques](efficient_llm_inference_techniques/index.md) | 4 |
+| [Efficient Serving and Resource Management](efficient_serving_and_resource_management/index.md) | 4 |
+| [Emerging Compute Paradigms](emerging_compute_paradigms/index.md) | 4 |
+| [FPGA, SmartNIC, and Reconfigurable Computing](fpga_smartnic_and_reconfigurable_computing/index.md) | 4 |
+| [GPU Kernel Optimization and Resource Sharing](gpu_kernel_optimization_and_resource_sharing/index.md) | 4 |
+| [GPU Memory Management and Multi-Chiplet Systems](gpu_memory_management_and_multi_chiplet_systems/index.md) | 4 |
+| [Graph Neural Networks and Retrieval Systems](graph_neural_networks_and_retrieval_systems/index.md) | 4 |
+| [Hardware Security and Side-Channel Defenses](hardware_security_and_side_channel_defenses/index.md) | 4 |
+| [Homomorphic Encryption Acceleration](homomorphic_encryption_acceleration/index.md) | 4 |
+| [LLM Inference Serving Systems](llm_inference_serving_systems/index.md) | 4 |
+| [LLM Systems and Microarchitecture Tools](llm_systems_and_microarchitecture_tools/index.md) | 4 |
+| [Memory System Reliability](memory_system_reliability/index.md) | 4 |
+| [Memory Systems for Scalable Computing](memory_systems_for_scalable_computing/index.md) | 4 |
+| [Near-Data Processing and Storage](near_data_processing_and_storage/index.md) | 4 |
+| [Processing-in-Memory Architectures](processing_in_memory_architectures/index.md) | 4 |
+| [Quantum Compilation and Simulation](quantum_compilation_and_simulation/index.md) | 4 |
+| [Quantum Computing Architecture](quantum_computing_architecture/index.md) | 4 |
+| [Visual and Multimodal Acceleration](visual_and_multimodal_acceleration/index.md) | 4 |
+| [Wafer-Scale Systems for Large Models](wafer_scale_systems_for_large_models/index.md) | 4 |
+| [Zero-Knowledge and Private Information Retrieval](zero_knowledge_and_private_information_retrieval/index.md) | 4 |
+| [Best of CAL](best_of_cal/index.md) | 3 |
+| [Genomics and Bioinformatics](genomics_and_bioinformatics/index.md) | 3 |
+| [Industry Track](industry_track/index.md) | 3 |
