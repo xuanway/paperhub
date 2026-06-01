@@ -110,7 +110,7 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="DAC/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">更新中 · San Francisco</div>
+  <div class="conf-cube__stat" data-conf-key="DAC 2025">419 篇 · San Francisco, CA</div>
 </div>
 
 <div class="conf-cube conf-cube--neurips">

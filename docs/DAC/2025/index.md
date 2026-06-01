@@ -1,17 +1,22 @@
 ---
 title: "DAC 2025 论文集"
-description: "设计自动化会议（DAC 2025）接收论文解读"
+description: "设计自动化会议（DAC 2025，第62届）接收论文解读，San Francisco, CA"
+search:
+  exclude: false
 hide:
   - toc
 ---
 
 # DAC 2025
 
-**设计自动化会议**
-
-DAC 2025（第62届）于2025年6月举办，覆盖芯片设计自动化、EDA工具、硬件安全验证等方向。
+**DAC 2025**（第62届）· 2025年6月22日 - 6月25日 · San Francisco, CA
 
 ---
 
-> 📖 本会议论文解读持续更新中，欢迎通过 `bash scripts/new_paper.sh DAC/2025 <分类> <文件名> "论文标题"` 添加新内容。
-
+| 分类 (Track) | 论文数 |
+|-------------|-------|
+| [Design](design/index.md) | 114 |
+| [EDA](eda/index.md) | 111 |
+| [AI](ai/index.md) | 102 |
+| [Systems](systems/index.md) | 50 |
+| [Security](security/index.md) | 42 |

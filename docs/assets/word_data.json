@@ -1,15 +1,19 @@
 {
   "updated": "2026-06-01",
-  "content_hash": "b9d2cb3a18db3af1",
-  "total_papers": 688,
+  "content_hash": "618441b29d2e86c7",
+  "total_papers": 1107,
   "stats": {
-    "total_papers": 688,
+    "total_papers": 1107,
     "conferences_count": 7,
-    "directions_count": 122,
+    "directions_count": 124,
     "per_conf": {
       "ASPLOS 2025": {
         "total": 184,
         "tracks": 37
+      },
+      "DAC 2025": {
+        "total": 419,
+        "tracks": 5
       },
       "HPCA 2025": {
         "total": 121,
@@ -77,6 +81,11 @@
       "ASPLOS/2025/serverless_computing": 4,
       "ASPLOS/2025/quantum_error_correction": 5,
       "ASPLOS/2025/trust": 5,
+      "DAC/2025/security": 42,
+      "DAC/2025/systems": 50,
+      "DAC/2025/ai": 102,
+      "DAC/2025/design": 114,
+      "DAC/2025/eda": 111,
       "HPCA/2025/best_of_cal": 3,
       "HPCA/2025/viva_las_learning_models_with_pim": 4,
       "HPCA/2025/colluding_to_even_the_odds": 4,
