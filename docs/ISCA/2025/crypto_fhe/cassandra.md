@@ -18,6 +18,7 @@ tags: ["ISCA2025", "密码安全", "侧信道", "顺序执行", "微架构"]
 
 **发表会议**：52nd International Symposium on Computer Architecture (ISCA 2025)  
 **作者**：Ali Hajiabadi (ETH Zürich), Trevor E. Carlson (National University of Singapore)
+**论文**：[原文](https://hajiabadi.github.io/papers/paper_cassandra_isca2025.pdf)
 **Session**：Session 1B: Crypto & Fully Homomorphic Encryption  
 
 ---
