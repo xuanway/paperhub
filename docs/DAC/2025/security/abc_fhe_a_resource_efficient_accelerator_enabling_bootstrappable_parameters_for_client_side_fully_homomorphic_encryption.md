@@ -12,10 +12,8 @@ tags:
 
 # ABC-FHE: A Resource-Efficient Accelerator Enabling Bootstrappable Parameters for Client-Side Fully Homomorphic Encryption
 
-> 第 62 届设计自动化会议（DAC 2025）· Security Track（Session: SEC1 — AI/ML Security/Privacy）
-
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · 针对全同态加密中客户端自举（Bootstrapping）操作的计算瓶颈，提出 ABC-FHE——一款面积与功耗高效的流式 FHE 加速器，通过可重构傅里叶引擎、片上伪随机数生成器与统一在线旋转因子生成器等创新，在 28nm 工艺下实现编码加密 1112×（vs CPU）和 214×（vs SOTA 客户端加速器）的加速比。</p>
+<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track  · Session: SEC1 — AI/ML Security/Privacy）针对全同态加密中客户端自举（Bootstrapping）操作的计算瓶颈，提出 ABC-FHE——一款面积与功耗高效的流式 FHE 加速器，通过可重构傅里叶引擎、片上伪随机数生成器与统一在线旋转因子生成器等创新，在 28nm 工艺下实现编码加密 1112×（vs CPU）和 214×（vs SOTA 客户端加速器）的加速比。</p>
 <p class="paper-seo-summary__tags">DAC 2025 · Security · FHE · Hardware Accelerator · CKKS · Bootstrapping · Streaming Architecture</p>
 </div>
 
@@ -28,7 +26,7 @@ tags:
 | 领域 | 硬件安全 / 密码学加速器（Hardware Security） |
 | 投稿方向 | Security（Session: SEC1 — AI/ML Security/Privacy） |
 | 关键词 | 全同态加密(Fully Homomorphic Encryption)、自举(Bootstrapping)、CKKS 方案、流式架构(Streaming Architecture)、客户端加速器(Client-Side Accelerator) |
-| 核心资源 | 论文原文：[arXiv:2506.08461](https://arxiv.org/abs/2506.08461)；代码 / Slides：暂未公开（2025-07 检索） |
+| 核心资源 | 论文原文：[arXiv:2506.08461](https://arxiv.org/abs/2506.08461)|
 
 ---
 
