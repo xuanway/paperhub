@@ -19,7 +19,7 @@ hide:
 
 <div class="hero" markdown>
 
-# 计算机体系结构论文
+# 计算机体系结构论文导读
 
 <p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC 顶级会议<br>持续更新中</p>
 

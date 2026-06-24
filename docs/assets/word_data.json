@@ -1,6 +1,6 @@
 {
-  "updated": "2026-06-03",
-  "content_hash": "79bacedc4268b0ec",
+  "updated": "2026-06-22",
+  "content_hash": "650adb8da1ca7539",
   "total_papers": 1502,
   "stats": {
     "total_papers": 1502,
@@ -285,6 +285,528 @@
   },
   "keywords": [
     {
+      "text": "dac-2025",
+      "count": 42,
+      "trend": -1,
+      "conf_info": "DAC 2025 (42 papers)",
+      "search_term": "dac-2025",
+      "papers": [
+        {
+          "title": "\"OOPS!\": Out-Of-Band Remote Power Side-Channel Attacks on Intel SGX and TDX",
+          "url": "DAC/2025/security/oops_out_of_band_remote_power_side_channel_attacks_on_intel_sgx_and_tdx/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "A Novel Covert Timing Channel for Cloud FPGAs",
+          "url": "DAC/2025/security/a_novel_covert_timing_channel_for_cloud_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ABC-FHE: A Resource-Efficient Accelerator Enabling Bootstrappable Parameters for Client-Side Fully Homomorphic Encryption",
+          "url": "DAC/2025/security/abc_fhe_a_resource_efficient_accelerator_enabling_bootstrappable_parameters_for_client_side_fully_homomorphic_encryption/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ACIM-QMM: Efficient Analog Computing-in-Memory Accelerator for QC-MDPC McEliece Cryptosystem",
+          "url": "DAC/2025/security/acim_qmm_efficient_analog_computing_in_memory_accelerator_for_qc_mdpc_mceliece_cryptosystem/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ADVeRL-ELF: ADVersarial ELF Malware Generation using Reinforcement Learning",
+          "url": "DAC/2025/security/adverl_elf_adversarial_elf_malware_generation_using_reinforcement_learning/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "AcclMT: A Highly Resource-Efficient and Flexible Poseidon Hash-Based Merkle Tree Architecture",
+          "url": "DAC/2025/security/acclmt_a_highly_resource_efficient_and_flexible_poseidon_hash_based_merkle_tree_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "AmpereBleed: Exploiting On-chip Current Sensors for Circuit-Free Attacks on ARM-FPGA SoCs",
+          "url": "DAC/2025/security/amperebleed_exploiting_on_chip_current_sensors_for_circuit_free_attacks_on_arm_fpga_socs/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "An Enhanced Data Packing Method for General Matrix Multiplication in Brakerski/Fan-Vercauteren Scheme",
+          "url": "DAC/2025/security/an_enhanced_data_packing_method_for_general_matrix_multiplication_in_brakerski_fan_vercauteren_scheme/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "AutoSkewBMT: Autonomously Synthesizing Optimized Integrity Authentication Mechanism for DNN Accelerators",
+          "url": "DAC/2025/security/autoskewbmt_autonomously_synthesizing_optimized_integrity_authentication_mechanism_for_dnn_accelerators/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "BPUFuzzer: Effective Fuzz Testing for Branching Transient Execution Vulnerabilities of RISC-V CPU",
+          "url": "DAC/2025/security/bpufuzzer_effective_fuzz_testing_for_branching_transient_execution_vulnerabilities_of_risc_v_cpu/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "CAE-DFKD: Bridging the Transferability Gap in Data-Free Knowledge Distillation",
+          "url": "DAC/2025/security/cae_dfkd_bridging_the_transferability_gap_in_data_free_knowledge_distillation/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "CMFuzz: Parallel Fuzzing of IoT Protocols by Configuration Model Identification and Scheduling",
+          "url": "DAC/2025/security/cmfuzz_parallel_fuzzing_of_iot_protocols_by_configuration_model_identification_and_scheduling/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "CND-IDS: Continual Novelty Detection for Intrusion Detection Systems",
+          "url": "DAC/2025/security/cnd_ids_continual_novelty_detection_for_intrusion_detection_systems/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Cross-Attention for AES Mode Variation in Side-Channel Analysis",
+          "url": "DAC/2025/security/cross_attention_for_aes_mode_variation_in_side_channel_analysis/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Data Oblivious CPU: Micro-architectural Side-channel Leakage-Resilient Processor",
+          "url": "DAC/2025/security/data_oblivious_cpu_micro_architectural_side_channel_leakage_resilient_processor/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "DeepPUFSCA: Deep Learning for PUF Attack Based on Side Channel Analysis",
+          "url": "DAC/2025/security/deeppufsca_deep_learning_for_physical_unclonable_function_attack_based_on_side_channel_analysis_support/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Ensembler: Protect Collaborative Inference Privacy from Model Inversion Attack via Selective Ensemble",
+          "url": "DAC/2025/security/ensembler_protect_collaborative_inference_privacy_from_model_inversion_attack_via_selective_ensemble/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "FPGA-TrustZone: Security Extension of TrustZone to FPGA for SoC-FPGA Heterogeneous Architecture",
+          "url": "DAC/2025/security/fpga_trustzone_security_extension_of_trustzone_to_fpga_for_soc_fpga_heterogeneous_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "FastPath: A Hybrid Approach for Efficient Hardware Security Verification",
+          "url": "DAC/2025/security/fastpath_a_hybrid_approach_for_efficient_hardware_security_verification/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Graph in the Vault: Protecting Edge GNN Inference with Trusted Execution Environment",
+          "url": "DAC/2025/security/graph_in_the_vault_protecting_edge_gnn_inference_with_trusted_execution_environment/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Guarder: A Stable and Lightweight Reconfigurable RRAM-based PIM Accelerator for DNN IP Protection",
+          "url": "DAC/2025/security/guarder_a_stable_and_lightweight_reconfigurable_rram_based_pim_accelerator_for_dnn_ip_protection/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "HoBBy: Hardening Unbalanced Branches against Control Flow Attacks on Intel SGX and AMD SEV",
+          "url": "DAC/2025/security/hobby_hardening_unbalanced_branches_against_control_flow_attacks_on_intel_sgx_and_amd_sev/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Identifying System-on-Chip Security Assets with Structure-Based Analysis",
+          "url": "DAC/2025/security/identifying_system_on_chip_security_assets_with_structure_based_analysis/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "IntraFuzz: Coverage-Guided Intra-Enclave Fuzzing for Intel SGX Applications",
+          "url": "DAC/2025/security/intrafuzz_coverage_guided_intra_enclave_fuzzing_for_intel_sgx_applications/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "LeakyDSP: Exploiting Digital Signal Processing Blocks to Sense Voltage Fluctuations in FPGAs",
+          "url": "DAC/2025/security/leakydsp_exploiting_digital_signal_processing_blocks_to_sense_voltage_fluctuations_in_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "On Bit-level Reverse Engineering of Vehicular CAN Bus",
+          "url": "DAC/2025/security/on_bit_level_reverse_engineering_of_vehicular_can_bus/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "POLARIS: Explainable AI for Mitigating Power Side-Channel Leakage",
+          "url": "DAC/2025/security/polaris_explainable_artificial_intelligence_for_mitigating_power_side_channel_leakage/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Power-Based Side-Channel Attack on XGBoost Accelerator",
+          "url": "DAC/2025/security/power_based_side_channel_attack_on_xgboost_accelerator/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Quorum: Zero-Training Unsupervised Anomaly Detection using Quantum Autoencoders",
+          "url": "DAC/2025/security/quorum_zero_training_unsupervised_anomaly_detection_using_quantum_autoencoders/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "RAGNAR: Exploring Volatile-Channel Vulnerabilities on RDMA NIC",
+          "url": "DAC/2025/security/ragnar_exploring_volatile_channel_vulnerabilities_on_rdma_nic/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "RAP-Track: Efficient Control Flow Attestation via Parallel Tracking in Commodity MCUs",
+          "url": "DAC/2025/security/rap_track_efficient_control_flow_attestation_via_parallel_tracking_in_commodity_mcus/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Re4PUF: A Reliable, Reconfigurable ReRAM-based PUF Resilient to DNN and Side Channel Attacks",
+          "url": "DAC/2025/security/re4puf_a_reliable_reconfigurable_reram_based_puf_resilient_to_dnn_and_side_channel_attacks/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ReVeil: Unconstrained Concealed Backdoor Attack on DNNs using Machine Unlearning",
+          "url": "DAC/2025/security/reveil_unconstrained_concealed_backdoor_attack_on_deep_neural_networks_using_machine_unlearning/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Resilient Federated Learning on Embedded Devices with Constrained Network Connectivity",
+          "url": "DAC/2025/security/resilient_federated_learning_on_embedded_devices_with_constrained_network_connectivity/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "SCONE: A Logic Locking Technique Utilizing SMT Solver and Circuit Encoding Scheme",
+          "url": "DAC/2025/security/scone_a_logic_locking_technique_utilizing_smt_solver_and_circuit_encoding_scheme_for_efficient_hardware_ip_protection/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "SeDA: Secure and Efficient DNN Accelerators with Hardware/Software Synergy",
+          "url": "DAC/2025/security/seda_secure_and_efficient_dnn_accelerators_with_hardware_software_synergy/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Security of Approximate Neural Networks against Power Side-channel Attack",
+          "url": "DAC/2025/security/security_of_approximate_neural_networks_against_power_side_channel_attack/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "TetrisLock: Quantum Circuit Split Compilation with Interlocking Patterns",
+          "url": "DAC/2025/security/tetrislock_quantum_circuit_split_compilation_with_interlocking_patterns/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ZK-Hammer: Leaking Secrets from Zero-Knowledge Proofs via Rowhammer",
+          "url": "DAC/2025/security/zk_hammer_leaking_secrets_from_zero_knowledge_proofs_via_rowhammer/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ZenLeak: Practical Last-Level Cache Side-Channel Attacks on AMD Zen Processors",
+          "url": "DAC/2025/security/zenleak_practical_last_level_cache_side_channel_attacks_on_amd_zen_processors/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Zion: A Practical Confidential Virtual Machine Architecture on Commodity RISC-V Processors",
+          "url": "DAC/2025/security/zion_a_practical_confidential_virtual_machine_architecture_on_commodity_risc_v_processors/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "zkVC: Fast Zero-Knowledge Proof for Private and Verifiable Computing",
+          "url": "DAC/2025/security/zkvc_fast_zero_knowledge_proof_for_private_and_verifiable_computing/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "security",
+      "count": 42,
+      "trend": -1,
+      "conf_info": "DAC 2025 (42 papers)",
+      "search_term": "security",
+      "papers": [
+        {
+          "title": "\"OOPS!\": Out-Of-Band Remote Power Side-Channel Attacks on Intel SGX and TDX",
+          "url": "DAC/2025/security/oops_out_of_band_remote_power_side_channel_attacks_on_intel_sgx_and_tdx/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "A Novel Covert Timing Channel for Cloud FPGAs",
+          "url": "DAC/2025/security/a_novel_covert_timing_channel_for_cloud_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ABC-FHE: A Resource-Efficient Accelerator Enabling Bootstrappable Parameters for Client-Side Fully Homomorphic Encryption",
+          "url": "DAC/2025/security/abc_fhe_a_resource_efficient_accelerator_enabling_bootstrappable_parameters_for_client_side_fully_homomorphic_encryption/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ACIM-QMM: Efficient Analog Computing-in-Memory Accelerator for QC-MDPC McEliece Cryptosystem",
+          "url": "DAC/2025/security/acim_qmm_efficient_analog_computing_in_memory_accelerator_for_qc_mdpc_mceliece_cryptosystem/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ADVeRL-ELF: ADVersarial ELF Malware Generation using Reinforcement Learning",
+          "url": "DAC/2025/security/adverl_elf_adversarial_elf_malware_generation_using_reinforcement_learning/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "AcclMT: A Highly Resource-Efficient and Flexible Poseidon Hash-Based Merkle Tree Architecture",
+          "url": "DAC/2025/security/acclmt_a_highly_resource_efficient_and_flexible_poseidon_hash_based_merkle_tree_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "AmpereBleed: Exploiting On-chip Current Sensors for Circuit-Free Attacks on ARM-FPGA SoCs",
+          "url": "DAC/2025/security/amperebleed_exploiting_on_chip_current_sensors_for_circuit_free_attacks_on_arm_fpga_socs/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "An Enhanced Data Packing Method for General Matrix Multiplication in Brakerski/Fan-Vercauteren Scheme",
+          "url": "DAC/2025/security/an_enhanced_data_packing_method_for_general_matrix_multiplication_in_brakerski_fan_vercauteren_scheme/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "AutoSkewBMT: Autonomously Synthesizing Optimized Integrity Authentication Mechanism for DNN Accelerators",
+          "url": "DAC/2025/security/autoskewbmt_autonomously_synthesizing_optimized_integrity_authentication_mechanism_for_dnn_accelerators/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "BPUFuzzer: Effective Fuzz Testing for Branching Transient Execution Vulnerabilities of RISC-V CPU",
+          "url": "DAC/2025/security/bpufuzzer_effective_fuzz_testing_for_branching_transient_execution_vulnerabilities_of_risc_v_cpu/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "CAE-DFKD: Bridging the Transferability Gap in Data-Free Knowledge Distillation",
+          "url": "DAC/2025/security/cae_dfkd_bridging_the_transferability_gap_in_data_free_knowledge_distillation/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "CMFuzz: Parallel Fuzzing of IoT Protocols by Configuration Model Identification and Scheduling",
+          "url": "DAC/2025/security/cmfuzz_parallel_fuzzing_of_iot_protocols_by_configuration_model_identification_and_scheduling/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "CND-IDS: Continual Novelty Detection for Intrusion Detection Systems",
+          "url": "DAC/2025/security/cnd_ids_continual_novelty_detection_for_intrusion_detection_systems/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Cross-Attention for AES Mode Variation in Side-Channel Analysis",
+          "url": "DAC/2025/security/cross_attention_for_aes_mode_variation_in_side_channel_analysis/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Data Oblivious CPU: Micro-architectural Side-channel Leakage-Resilient Processor",
+          "url": "DAC/2025/security/data_oblivious_cpu_micro_architectural_side_channel_leakage_resilient_processor/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "DeepPUFSCA: Deep Learning for PUF Attack Based on Side Channel Analysis",
+          "url": "DAC/2025/security/deeppufsca_deep_learning_for_physical_unclonable_function_attack_based_on_side_channel_analysis_support/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Ensembler: Protect Collaborative Inference Privacy from Model Inversion Attack via Selective Ensemble",
+          "url": "DAC/2025/security/ensembler_protect_collaborative_inference_privacy_from_model_inversion_attack_via_selective_ensemble/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "FPGA-TrustZone: Security Extension of TrustZone to FPGA for SoC-FPGA Heterogeneous Architecture",
+          "url": "DAC/2025/security/fpga_trustzone_security_extension_of_trustzone_to_fpga_for_soc_fpga_heterogeneous_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "FastPath: A Hybrid Approach for Efficient Hardware Security Verification",
+          "url": "DAC/2025/security/fastpath_a_hybrid_approach_for_efficient_hardware_security_verification/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Graph in the Vault: Protecting Edge GNN Inference with Trusted Execution Environment",
+          "url": "DAC/2025/security/graph_in_the_vault_protecting_edge_gnn_inference_with_trusted_execution_environment/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Guarder: A Stable and Lightweight Reconfigurable RRAM-based PIM Accelerator for DNN IP Protection",
+          "url": "DAC/2025/security/guarder_a_stable_and_lightweight_reconfigurable_rram_based_pim_accelerator_for_dnn_ip_protection/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "HoBBy: Hardening Unbalanced Branches against Control Flow Attacks on Intel SGX and AMD SEV",
+          "url": "DAC/2025/security/hobby_hardening_unbalanced_branches_against_control_flow_attacks_on_intel_sgx_and_amd_sev/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Identifying System-on-Chip Security Assets with Structure-Based Analysis",
+          "url": "DAC/2025/security/identifying_system_on_chip_security_assets_with_structure_based_analysis/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "IntraFuzz: Coverage-Guided Intra-Enclave Fuzzing for Intel SGX Applications",
+          "url": "DAC/2025/security/intrafuzz_coverage_guided_intra_enclave_fuzzing_for_intel_sgx_applications/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "LeakyDSP: Exploiting Digital Signal Processing Blocks to Sense Voltage Fluctuations in FPGAs",
+          "url": "DAC/2025/security/leakydsp_exploiting_digital_signal_processing_blocks_to_sense_voltage_fluctuations_in_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "On Bit-level Reverse Engineering of Vehicular CAN Bus",
+          "url": "DAC/2025/security/on_bit_level_reverse_engineering_of_vehicular_can_bus/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "POLARIS: Explainable AI for Mitigating Power Side-Channel Leakage",
+          "url": "DAC/2025/security/polaris_explainable_artificial_intelligence_for_mitigating_power_side_channel_leakage/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Power-Based Side-Channel Attack on XGBoost Accelerator",
+          "url": "DAC/2025/security/power_based_side_channel_attack_on_xgboost_accelerator/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Quorum: Zero-Training Unsupervised Anomaly Detection using Quantum Autoencoders",
+          "url": "DAC/2025/security/quorum_zero_training_unsupervised_anomaly_detection_using_quantum_autoencoders/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "RAGNAR: Exploring Volatile-Channel Vulnerabilities on RDMA NIC",
+          "url": "DAC/2025/security/ragnar_exploring_volatile_channel_vulnerabilities_on_rdma_nic/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "RAP-Track: Efficient Control Flow Attestation via Parallel Tracking in Commodity MCUs",
+          "url": "DAC/2025/security/rap_track_efficient_control_flow_attestation_via_parallel_tracking_in_commodity_mcus/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Re4PUF: A Reliable, Reconfigurable ReRAM-based PUF Resilient to DNN and Side Channel Attacks",
+          "url": "DAC/2025/security/re4puf_a_reliable_reconfigurable_reram_based_puf_resilient_to_dnn_and_side_channel_attacks/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ReVeil: Unconstrained Concealed Backdoor Attack on DNNs using Machine Unlearning",
+          "url": "DAC/2025/security/reveil_unconstrained_concealed_backdoor_attack_on_deep_neural_networks_using_machine_unlearning/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Resilient Federated Learning on Embedded Devices with Constrained Network Connectivity",
+          "url": "DAC/2025/security/resilient_federated_learning_on_embedded_devices_with_constrained_network_connectivity/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "SCONE: A Logic Locking Technique Utilizing SMT Solver and Circuit Encoding Scheme",
+          "url": "DAC/2025/security/scone_a_logic_locking_technique_utilizing_smt_solver_and_circuit_encoding_scheme_for_efficient_hardware_ip_protection/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "SeDA: Secure and Efficient DNN Accelerators with Hardware/Software Synergy",
+          "url": "DAC/2025/security/seda_secure_and_efficient_dnn_accelerators_with_hardware_software_synergy/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Security of Approximate Neural Networks against Power Side-channel Attack",
+          "url": "DAC/2025/security/security_of_approximate_neural_networks_against_power_side_channel_attack/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "TetrisLock: Quantum Circuit Split Compilation with Interlocking Patterns",
+          "url": "DAC/2025/security/tetrislock_quantum_circuit_split_compilation_with_interlocking_patterns/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ZK-Hammer: Leaking Secrets from Zero-Knowledge Proofs via Rowhammer",
+          "url": "DAC/2025/security/zk_hammer_leaking_secrets_from_zero_knowledge_proofs_via_rowhammer/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ZenLeak: Practical Last-Level Cache Side-Channel Attacks on AMD Zen Processors",
+          "url": "DAC/2025/security/zenleak_practical_last_level_cache_side_channel_attacks_on_amd_zen_processors/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Zion: A Practical Confidential Virtual Machine Architecture on Commodity RISC-V Processors",
+          "url": "DAC/2025/security/zion_a_practical_confidential_virtual_machine_architecture_on_commodity_risc_v_processors/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "zkVC: Fast Zero-Knowledge Proof for Private and Verifiable Computing",
+          "url": "DAC/2025/security/zkvc_fast_zero_knowledge_proof_for_private_and_verifiable_computing/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
       "text": "ML Accelerator",
       "count": 19,
       "trend": -1,
@@ -491,6 +1013,51 @@
           "url": "ISCA/2025/quantum/variational_qa/",
           "conf": "ISCA 2025",
           "summary": "ISCA 2025论文解读：分析早期容错量子计算（early fault tolerance）阶段VQA算法的资源需求和优化策略。"
+        }
+      ]
+    },
+    {
+      "text": "side-channel",
+      "count": 6,
+      "trend": -1,
+      "conf_info": "DAC 2025 (6 papers)",
+      "search_term": "side-channel",
+      "papers": [
+        {
+          "title": "A Novel Covert Timing Channel for Cloud FPGAs",
+          "url": "DAC/2025/security/a_novel_covert_timing_channel_for_cloud_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Data Oblivious CPU: Micro-architectural Side-channel Leakage-Resilient Processor",
+          "url": "DAC/2025/security/data_oblivious_cpu_micro_architectural_side_channel_leakage_resilient_processor/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "LeakyDSP: Exploiting Digital Signal Processing Blocks to Sense Voltage Fluctuations in FPGAs",
+          "url": "DAC/2025/security/leakydsp_exploiting_digital_signal_processing_blocks_to_sense_voltage_fluctuations_in_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Power-Based Side-Channel Attack on XGBoost Accelerator",
+          "url": "DAC/2025/security/power_based_side_channel_attack_on_xgboost_accelerator/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "RAGNAR: Exploring Volatile-Channel Vulnerabilities on RDMA NIC",
+          "url": "DAC/2025/security/ragnar_exploring_volatile_channel_vulnerabilities_on_rdma_nic/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Security of Approximate Neural Networks against Power Side-channel Attack",
+          "url": "DAC/2025/security/security_of_approximate_neural_networks_against_power_side_channel_attack/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
@@ -732,6 +1299,72 @@
       ]
     },
     {
+      "text": "fpga",
+      "count": 4,
+      "trend": -1,
+      "conf_info": "DAC 2025 (4 papers)",
+      "search_term": "fpga",
+      "papers": [
+        {
+          "title": "AmpereBleed: Exploiting On-chip Current Sensors for Circuit-Free Attacks on ARM-FPGA SoCs",
+          "url": "DAC/2025/security/amperebleed_exploiting_on_chip_current_sensors_for_circuit_free_attacks_on_arm_fpga_socs/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "FPGA-TrustZone: Security Extension of TrustZone to FPGA for SoC-FPGA Heterogeneous Architecture",
+          "url": "DAC/2025/security/fpga_trustzone_security_extension_of_trustzone_to_fpga_for_soc_fpga_heterogeneous_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "LeakyDSP: Exploiting Digital Signal Processing Blocks to Sense Voltage Fluctuations in FPGAs",
+          "url": "DAC/2025/security/leakydsp_exploiting_digital_signal_processing_blocks_to_sense_voltage_fluctuations_in_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Power-Based Side-Channel Attack on XGBoost Accelerator",
+          "url": "DAC/2025/security/power_based_side_channel_attack_on_xgboost_accelerator/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "intel-sgx",
+      "count": 4,
+      "trend": -1,
+      "conf_info": "DAC 2025 (4 papers)",
+      "search_term": "intel-sgx",
+      "papers": [
+        {
+          "title": "\"OOPS!\": Out-Of-Band Remote Power Side-Channel Attacks on Intel SGX and TDX",
+          "url": "DAC/2025/security/oops_out_of_band_remote_power_side_channel_attacks_on_intel_sgx_and_tdx/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Graph in the Vault: Protecting Edge GNN Inference with Trusted Execution Environment",
+          "url": "DAC/2025/security/graph_in_the_vault_protecting_edge_gnn_inference_with_trusted_execution_environment/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "HoBBy: Hardening Unbalanced Branches against Control Flow Attacks on Intel SGX and AMD SEV",
+          "url": "DAC/2025/security/hobby_hardening_unbalanced_branches_against_control_flow_attacks_on_intel_sgx_and_amd_sev/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "IntraFuzz: Coverage-Guided Intra-Enclave Fuzzing for Intel SGX Applications",
+          "url": "DAC/2025/security/intrafuzz_coverage_guided_intra_enclave_fuzzing_for_intel_sgx_applications/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
       "text": "DRAM Security",
       "count": 3,
       "trend": -1,
@@ -944,6 +1577,114 @@
           "url": "ISCA/2025/ml_accelerator/wsc_llm/",
           "conf": "ISCA 2025",
           "summary": "ISCA 2025论文解读：WSC-LLM针对晶圆级（wafer-scale）芯片的独特互联拓扑和计算特性，系统探索LLM推理部署的最优体系结构配置。"
+        }
+      ]
+    },
+    {
+      "text": "fuzz-testing",
+      "count": 3,
+      "trend": -1,
+      "conf_info": "DAC 2025 (3 papers)",
+      "search_term": "fuzz-testing",
+      "papers": [
+        {
+          "title": "BPUFuzzer: Effective Fuzz Testing for Branching Transient Execution Vulnerabilities of RISC-V CPU",
+          "url": "DAC/2025/security/bpufuzzer_effective_fuzz_testing_for_branching_transient_execution_vulnerabilities_of_risc_v_cpu/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "CMFuzz: Parallel Fuzzing of IoT Protocols by Configuration Model Identification and Scheduling",
+          "url": "DAC/2025/security/cmfuzz_parallel_fuzzing_of_iot_protocols_by_configuration_model_identification_and_scheduling/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "IntraFuzz: Coverage-Guided Intra-Enclave Fuzzing for Intel SGX Applications",
+          "url": "DAC/2025/security/intrafuzz_coverage_guided_intra_enclave_fuzzing_for_intel_sgx_applications/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "risc-v",
+      "count": 3,
+      "trend": -1,
+      "conf_info": "DAC 2025 (3 papers)",
+      "search_term": "risc-v",
+      "papers": [
+        {
+          "title": "BPUFuzzer: Effective Fuzz Testing for Branching Transient Execution Vulnerabilities of RISC-V CPU",
+          "url": "DAC/2025/security/bpufuzzer_effective_fuzz_testing_for_branching_transient_execution_vulnerabilities_of_risc_v_cpu/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Data Oblivious CPU: Micro-architectural Side-channel Leakage-Resilient Processor",
+          "url": "DAC/2025/security/data_oblivious_cpu_micro_architectural_side_channel_leakage_resilient_processor/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Zion: A Practical Confidential Virtual Machine Architecture on Commodity RISC-V Processors",
+          "url": "DAC/2025/security/zion_a_practical_confidential_virtual_machine_architecture_on_commodity_risc_v_processors/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "tee",
+      "count": 3,
+      "trend": -1,
+      "conf_info": "DAC 2025 (3 papers)",
+      "search_term": "tee",
+      "papers": [
+        {
+          "title": "FPGA-TrustZone: Security Extension of TrustZone to FPGA for SoC-FPGA Heterogeneous Architecture",
+          "url": "DAC/2025/security/fpga_trustzone_security_extension_of_trustzone_to_fpga_for_soc_fpga_heterogeneous_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "HoBBy: Hardening Unbalanced Branches against Control Flow Attacks on Intel SGX and AMD SEV",
+          "url": "DAC/2025/security/hobby_hardening_unbalanced_branches_against_control_flow_attacks_on_intel_sgx_and_amd_sev/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "IntraFuzz: Coverage-Guided Intra-Enclave Fuzzing for Intel SGX Applications",
+          "url": "DAC/2025/security/intrafuzz_coverage_guided_intra_enclave_fuzzing_for_intel_sgx_applications/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "zero-knowledge-proof",
+      "count": 3,
+      "trend": -1,
+      "conf_info": "DAC 2025 (3 papers)",
+      "search_term": "zero-knowledge-proof",
+      "papers": [
+        {
+          "title": "AcclMT: A Highly Resource-Efficient and Flexible Poseidon Hash-Based Merkle Tree Architecture",
+          "url": "DAC/2025/security/acclmt_a_highly_resource_efficient_and_flexible_poseidon_hash_based_merkle_tree_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "ZK-Hammer: Leaking Secrets from Zero-Knowledge Proofs via Rowhammer",
+          "url": "DAC/2025/security/zk_hammer_leaking_secrets_from_zero_knowledge_proofs_via_rowhammer/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "zkVC: Fast Zero-Knowledge Proof for Private and Verifiable Computing",
+          "url": "DAC/2025/security/zkvc_fast_zero_knowledge_proof_for_private_and_verifiable_computing/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
@@ -1284,257 +2025,170 @@
       ]
     },
     {
-      "text": "3D Parallelism",
-      "count": 1,
+      "text": "aes",
+      "count": 2,
       "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "3D Parallelism",
+      "conf_info": "DAC 2025 (2 papers)",
+      "search_term": "aes",
       "papers": [
         {
-          "title": "FRED: A Wafer-scale Fabric for 3D Parallel DNN Training",
-          "url": "ISCA/2025/ml_accelerator/fred/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：FRED为Wafer-scale系统设计3D并行（数据/流水/张量并行）的互联结构，使超大DNN训练效率提升2.7×。"
+          "title": "Cross-Attention for AES Mode Variation in Side-Channel Analysis",
+          "url": "DAC/2025/security/cross_attention_for_aes_mode_variation_in_side_channel_analysis/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "LeakyDSP: Exploiting Digital Signal Processing Blocks to Sense Voltage Fluctuations in FPGAs",
+          "url": "DAC/2025/security/leakydsp_exploiting_digital_signal_processing_blocks_to_sense_voltage_fluctuations_in_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
     {
-      "text": "AMD",
-      "count": 1,
+      "text": "covert-channel",
+      "count": 2,
       "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "AMD",
+      "conf_info": "DAC 2025 (2 papers)",
+      "search_term": "covert-channel",
       "papers": [
         {
-          "title": "Folded Banks: 3D-Stacked HBM Design for Fine-Grained Random-Access Bandwidth",
-          "url": "ISCA/2025/memory/folded_banks/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Folded Banks提出新型3D堆叠HBM设计，通过折叠式Bank架构实现细粒度随机访问时的高带宽利用率。"
+          "title": "A Novel Covert Timing Channel for Cloud FPGAs",
+          "url": "DAC/2025/security/a_novel_covert_timing_channel_for_cloud_fpgas/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "RAGNAR: Exploring Volatile-Channel Vulnerabilities on RDMA NIC",
+          "url": "DAC/2025/security/ragnar_exploring_volatile_channel_vulnerabilities_on_rdma_nic/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
     {
-      "text": "AlphaFold",
-      "count": 1,
+      "text": "dnn-accelerator",
+      "count": 2,
       "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "AlphaFold",
+      "conf_info": "DAC 2025 (2 papers)",
+      "search_term": "dnn-accelerator",
       "papers": [
         {
-          "title": "LightNobel: Protein Structure Prediction with Activation Quantization",
-          "url": "ISCA/2025/domain_specific/lightnobel/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：LightNobel针对AlphaFold等蛋白质结构预测模型设计激活量化方案和专用硬件，实现高效结构预测推理。"
+          "title": "AutoSkewBMT: Autonomously Synthesizing Optimized Integrity Authentication Mechanism for DNN Accelerators",
+          "url": "DAC/2025/security/autoskewbmt_autonomously_synthesizing_optimized_integrity_authentication_mechanism_for_dnn_accelerators/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "SeDA: Secure and Efficient DNN Accelerators with Hardware/Software Synergy",
+          "url": "DAC/2025/security/seda_secure_and_efficient_dnn_accelerators_with_hardware_software_synergy/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
     {
-      "text": "Analog Computing",
-      "count": 1,
+      "text": "fully-homomorphic-encryption",
+      "count": 2,
       "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "Analog Computing",
+      "conf_info": "DAC 2025 (2 papers)",
+      "search_term": "fully-homomorphic-encryption",
       "papers": [
         {
-          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
-          "url": "ISCA/2025/ml_accelerator/lighttml/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：LightML提出基于光子计算的ML推理加速架构，利用光子矩阵乘法在能效上比数字加速器提升10×以上。"
+          "title": "ABC-FHE: A Resource-Efficient Accelerator Enabling Bootstrappable Parameters for Client-Side Fully Homomorphic Encryption",
+          "url": "DAC/2025/security/abc_fhe_a_resource_efficient_accelerator_enabling_bootstrappable_parameters_for_client_side_fully_homomorphic_encryption/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "An Enhanced Data Packing Method for General Matrix Multiplication in Brakerski/Fan-Vercauteren Scheme",
+          "url": "DAC/2025/security/an_enhanced_data_packing_method_for_general_matrix_multiplication_in_brakerski_fan_vercauteren_scheme/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
     {
-      "text": "BCI",
-      "count": 1,
+      "text": "graph-neural-network",
+      "count": 2,
       "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "BCI",
+      "conf_info": "DAC 2025 (2 papers)",
+      "search_term": "graph-neural-network",
       "papers": [
         {
-          "title": "InfiniMind: A Large-Scale Brain-Computer Interface Processor",
-          "url": "ISCA/2025/domain_specific/infinimind/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：InfiniMind为大规模脑机接口（BCI）系统设计专用处理器，实现数千通道神经信号的实时在线解码。"
+          "title": "Graph in the Vault: Protecting Edge GNN Inference with Trusted Execution Environment",
+          "url": "DAC/2025/security/graph_in_the_vault_protecting_edge_gnn_inference_with_trusted_execution_environment/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "Identifying System-on-Chip Security Assets with Structure-Based Analysis",
+          "url": "DAC/2025/security/identifying_system_on_chip_security_assets_with_structure_based_analysis/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
     {
-      "text": "CHERI",
-      "count": 1,
+      "text": "hardware-accelerator",
+      "count": 2,
       "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "CHERI",
+      "conf_info": "DAC 2025 (2 papers)",
+      "search_term": "hardware-accelerator",
       "papers": [
         {
-          "title": "Adaptive CHERI Compartmentalization for Heterogeneous Accelerators",
-          "url": "ISCA/2025/security/adaptive_cheri/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：将CHERI能力架构扩展到异构加速器，通过自适应隔离策略保护加速器与主机的交互安全。"
+          "title": "ABC-FHE: A Resource-Efficient Accelerator Enabling Bootstrappable Parameters for Client-Side Fully Homomorphic Encryption",
+          "url": "DAC/2025/security/abc_fhe_a_resource_efficient_accelerator_enabling_bootstrappable_parameters_for_client_side_fully_homomorphic_encryption/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "AcclMT: A Highly Resource-Efficient and Flexible Poseidon Hash-Based Merkle Tree Architecture",
+          "url": "DAC/2025/security/acclmt_a_highly_resource_efficient_and_flexible_poseidon_hash_based_merkle_tree_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
     {
-      "text": "CMU",
-      "count": 1,
+      "text": "merkle-tree",
+      "count": 2,
       "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "CMU",
+      "conf_info": "DAC 2025 (2 papers)",
+      "search_term": "merkle-tree",
       "papers": [
         {
-          "title": "NUPEA: Non-Uniform PE Access in Spatial Dataflow Accelerators",
-          "url": "ISCA/2025/domain_specific/nupea/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：NUPEA研究空间数据流加速器中非均匀PE访问延迟对性能的影响，提出访问感知的任务映射策略。"
+          "title": "AcclMT: A Highly Resource-Efficient and Flexible Poseidon Hash-Based Merkle Tree Architecture",
+          "url": "DAC/2025/security/acclmt_a_highly_resource_efficient_and_flexible_poseidon_hash_based_merkle_tree_architecture/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "AutoSkewBMT: Autonomously Synthesizing Optimized Integrity Authentication Mechanism for DNN Accelerators",
+          "url": "DAC/2025/security/autoskewbmt_autonomously_synthesizing_optimized_integrity_authentication_mechanism_for_dnn_accelerators/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     },
     {
-      "text": "Cambridge",
-      "count": 1,
+      "text": "microarchitecture",
+      "count": 2,
       "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "Cambridge",
+      "conf_info": "DAC 2025 (2 papers)",
+      "search_term": "microarchitecture",
       "papers": [
         {
-          "title": "Adaptive CHERI Compartmentalization for Heterogeneous Accelerators",
-          "url": "ISCA/2025/security/adaptive_cheri/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：将CHERI能力架构扩展到异构加速器，通过自适应隔离策略保护加速器与主机的交互安全。"
-        }
-      ]
-    },
-    {
-      "text": "CityU",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "CityU",
-      "papers": [
+          "title": "Data Oblivious CPU: Micro-architectural Side-channel Leakage-Resilient Processor",
+          "url": "DAC/2025/security/data_oblivious_cpu_micro_architectural_side_channel_leakage_resilient_processor/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
         {
-          "title": "ArtMem: Adaptive Migration in Reinforcement Learning-Enabled Tiered Memory",
-          "url": "ISCA/2025/storage/artmem/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：ArtMem使用强化学习优化分层内存系统（如DRAM+NVM）中的数据页面迁移策略，超越传统启发式迁移方法。"
-        }
-      ]
-    },
-    {
-      "text": "DCPerf",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "DCPerf",
-      "papers": [
-        {
-          "title": "DCPerf: Datacenter Performance Benchmarking",
-          "url": "ISCA/2025/systems/dcperf/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025产业论文解读：Meta开源DCPerf基准套件，覆盖搜索、推荐、内容理解等典型数据中心工作负载，用于评估服务器处理器和内存系统性能。"
-        }
-      ]
-    },
-    {
-      "text": "DRAM-PIM",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "DRAM-PIM",
-      "papers": [
-        {
-          "title": "ATiM: Autotuning Tensor Programs for Processing-in-DRAM",
-          "url": "ISCA/2025/pim/atim/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：ATiM提出针对Processing-in-DRAM平台的自动调优框架，通过搜索最优张量程序配置提升PIM执行效率。"
-        }
-      ]
-    },
-    {
-      "text": "DeepSeek",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "DeepSeek",
-      "papers": [
-        {
-          "title": "DeepSeek-V3: Inference Architecture and System Optimization",
-          "url": "ISCA/2025/systems/deepseek_v3/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025产业论文解读：DeepSeek团队介绍DeepSeek-V3模型的推理架构设计，包括MoE架构优化、KV Cache管理和多节点推理部署经验。"
-        }
-      ]
-    },
-    {
-      "text": "Distributed Training",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "Distributed Training",
-      "papers": [
-        {
-          "title": "FRED: A Wafer-scale Fabric for 3D Parallel DNN Training",
-          "url": "ISCA/2025/ml_accelerator/fred/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：FRED为Wafer-scale系统设计3D并行（数据/流水/张量并行）的互联结构，使超大DNN训练效率提升2.7×。"
-        }
-      ]
-    },
-    {
-      "text": "EPFL",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "EPFL",
-      "papers": [
-        {
-          "title": "Avant-Garde: Empowering GPUs with Scaled Numeric Formats",
-          "url": "ISCA/2025/gpu/avant_garde/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Avant-Garde为GPU引入缩放数值格式（Scaled Numeric Formats），通过格式感知的硬件支持提升低精度计算精度，减少模型精度损失。"
-        }
-      ]
-    },
-    {
-      "text": "Early Exit",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "Early Exit",
-      "papers": [
-        {
-          "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
-          "url": "ISCA/2025/llm/specee/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：SpecEE提出推测早退机制，通过预测LLM token何时可提前退出中间层，在不损失精度的前提下减少大量计算。"
-        }
-      ]
-    },
-    {
-      "text": "Energy Efficiency",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "Energy Efficiency",
-      "papers": [
-        {
-          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
-          "url": "ISCA/2025/ml_accelerator/lighttml/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：LightML提出基于光子计算的ML推理加速架构，利用光子矩阵乘法在能效上比数字加速器提升10×以上。"
-        }
-      ]
-    },
-    {
-      "text": "Fudan",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (1 paper)",
-      "search_term": "Fudan",
-      "papers": [
-        {
-          "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
-          "url": "ISCA/2025/llm/specee/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：SpecEE提出推测早退机制，通过预测LLM token何时可提前退出中间层，在不损失精度的前提下减少大量计算。"
+          "title": "FastPath: A Hybrid Approach for Efficient Hardware Security Verification",
+          "url": "DAC/2025/security/fastpath_a_hybrid_approach_for_efficient_hardware_security_verification/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         }
       ]
     }
