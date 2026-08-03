@@ -13,10 +13,10 @@ tags:
 <p class="paper-seo-summary__tags">DAC 2025 · Design</p>
 </div>
 
-**论文链接**：
-**作者**：Meng Han, Xiaojian Liao, Lin Sun, Liang Wang, Zeyu Wang, Limin Xiao
-**会议**：DAC 2025（第62届）
-**Session**：DES1: SoC, Heterogeneous, and Reconfigurable Architectures
+**会议**: DAC 2025
+**专题**: [DES1: SoC, Heterogeneous, and Reconfigurable Architectures](https://62dac.conference-program.com/)
+**论文链接**：[https://arxiv.org/abs/2505.06625](https://arxiv.org/abs/2505.06625)
+**关键词**: 高速缓存, 多租户, 深度神经网络, 神经网络处理器, 片上系统 
 
 ---
 
