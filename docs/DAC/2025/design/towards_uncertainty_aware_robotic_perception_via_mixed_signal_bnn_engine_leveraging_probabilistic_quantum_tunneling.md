@@ -9,14 +9,11 @@ tags:
 # Towards Uncertainty-aware Robotic Perception via Mixed-signal BNN Engine Leveraging Probabilistic Quantum Tunneling
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: Design。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Design</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com">DES4: Digital and Analog Circuits</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132881">https://dl.acm.org/doi/10.1109/DAC63849.2025.11132881</a></p>
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> </p>
 </div>
-
-**论文链接**：
-**作者**：Sven Beyer, Ningyuan Cao, Boyang Cheng, Stefan Duenkel, Mengxue Hou, Wanxin Huang, Dominik Kleimaier, Halid Mulaosmanovic, Michael Niemier, Likai Pei, Xingtian Wang, Xueji Zhao, Yu Zhou
-**会议**：DAC 2025（第62届）
-**Session**：DES4: Digital and Analog Circuits
 
 ---
 

@@ -8,15 +8,13 @@ tags:
 
 # HH-PIM: Dynamic Optimization of Power and Performance with Heterogeneous-Hybrid PIM for Edge AI Devices
 
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: Design。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Design</p>
-</div>
 
-**论文链接**：
-**作者**：Sangmin Jeon, Kangju Lee, Kyeongwon Lee, Woojoo Lee
-**会议**：DAC 2025（第62届）
-**Session**：DES2B: In-memory and Near-memory Computing Architectures, Applications and Systems
+<div class="paper-seo-summary">
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com">DES2B: In-memory and Near-memory Computing Architectures, Applications and Systems</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://arxiv.org/abs/2504.01468">https://arxiv.org/abs/2504.01468</a></p>
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> </p>
+</div>
 
 ---
 

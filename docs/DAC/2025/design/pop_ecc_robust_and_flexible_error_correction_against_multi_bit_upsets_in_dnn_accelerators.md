@@ -9,14 +9,11 @@ tags:
 # PoP-ECC: Robust and Flexible Error Correction against Multi-Bit Upsets in DNN Accelerators
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: Design。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Design</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com">DES4: Digital and Analog Circuits</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/document/11133373">https://ieeexplore.ieee.org/document/11133373</a></p>
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> </p>
 </div>
-
-**论文链接**：
-**作者**：Saeid Gorgin, Dongwhee Kim, Jungrae Kim, Taewon Park, Jaeho Shin, Michael B. Sullivan
-**会议**：DAC 2025（第62届）
-**Session**：DES4: Digital and Analog Circuits
 
 ---
 

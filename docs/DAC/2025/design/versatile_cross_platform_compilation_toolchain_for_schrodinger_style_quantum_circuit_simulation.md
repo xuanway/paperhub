@@ -9,14 +9,12 @@ tags:
 # Versatile Cross-platform Compilation Toolchain for Schrodinger-style Quantum Circuit Simulation
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: Design。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Design</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com">DES6: Quantum Computing</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://arxiv.org/abs/2503.19894">https://arxiv.org/abs/2503.19894</a></p>
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> </p>
 </div>
 
-**论文链接**：
-**作者**：Ce Guo, Paul Kelly, Shuang Liang, Yuncheng Lu, Wayne Luk
-**会议**：DAC 2025（第62届）
-**Session**：DES6: Quantum Computing
 
 ---
 

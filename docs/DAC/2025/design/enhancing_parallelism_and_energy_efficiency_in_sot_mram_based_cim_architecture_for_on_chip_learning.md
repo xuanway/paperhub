@@ -9,14 +9,12 @@ tags:
 # Enhancing Parallelism and Energy-Efficiency in SOT-MRAM based CIM Architecture for On-Chip Learning
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: Design。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Design</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">DES5: Emerging Device and Interconnect Technologies</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/11424425">https://ieeexplore.ieee.org/abstract/document/11424425</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> </p>
 </div>
 
-**论文链接**：
-**作者**：Rajendra Bishnoi, Seema Dhull, Sumit Diware, Sourajeet Roy, Anubha Sehgal, Sonal Shreya, Alok Shukla, Sandeep Soni
-**会议**：DAC 2025（第62届）
-**Session**：DES5: Emerging Device and Interconnect Technologies
 
 ---
 

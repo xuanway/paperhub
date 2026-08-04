@@ -8,15 +8,13 @@ tags:
 
 # HiSpTRSV: Exploring Tile-Level Parallelism for SpTRSV Acceleration on FPGAs
 
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: Design。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Design</p>
-</div>
 
-**论文链接**：
-**作者**：Fang Dong, Dian Shen, Fan Sun
-**会议**：DAC 2025（第62届）
-**Session**：DES1: SoC, Heterogeneous, and Reconfigurable Architectures
+<div class="paper-seo-summary">
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com">DES1: SoC, Heterogeneous, and Reconfigurable Architectures</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11133234">https://dl.acm.org/doi/10.1109/DAC63849.2025.11133234</a></p>
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> </p>
+</div>
 
 ---
 
