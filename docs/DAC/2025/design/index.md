@@ -187,7 +187,7 @@ Storage Meets Computing Power for Advancing AI and Data Processing Efficiency (8
 
 | 中英论文题目 | 中英关键词 |
 |------------|-----------|
-| [PICK: An SRAM-based Processing-in-Memory Accelerator for K-Nearest-Neighbor Search in Point Clouds*](pick_an_sram_based_processing_in_memory_accelerator_for_k_nearest_neighbor_search_in_point_clouds.md) | DES2B: In-memory and Near-memory Computing Architectures, Applications and Systems |
+| [PICK: An SRAM-based Processing-in-Memory Accelerator for K-Nearest-Neighbor Search in Point Clouds](pick_an_sram_based_processing_in_memory_accelerator_for_k_nearest_neighbor_search_in_point_clouds.md) | DES2B: In-memory and Near-memory Computing Architectures, Applications and Systems |
 | [HH-PIM: Dynamic Optimization of Power and Performance with Heterogeneous-Hybrid PIM for Edge AI Devices](hh_pim_dynamic_optimization_of_power_and_performance_with_heterogeneous_hybrid_pim_for_edge_ai_devices.md) | DES2B: In-memory and Near-memory Computing Architectures, Applications and Systems |
 | [Anchor First, Accelerate Next: Revolutionizing GNNs with PIM by Harnessing Stationary Data](anchor_first_accelerate_next_revolutionizing_gnns_with_pim_by_harnessing_stationary_data.md) | DES2B: In-memory and Near-memory Computing Architectures, Applications and Systems |
 | [3D-SubG: A 3D Stacked Hybrid Processing Near/In-Memory Accelerator for Subgraph GNNs](3d_subg_a_3d_stacked_hybrid_processing_near_in_memory_accelerator_for_subgraph_gnns.md) | DES2B: In-memory and Near-memory Computing Architectures, Applications and Systems |

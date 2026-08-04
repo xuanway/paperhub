@@ -1124,7 +1124,7 @@ nav:
         - "P-DAC: Power-Efficient Photonic Accelerators for LLM Inference": DAC/2025/design/p_dac_power_efficient_photonic_accelerators_for_llm_inference.md
         - "PairGraph: An Efficient Search-space-aware Accelerator for High-performance Concurrent Pairwise Queries": DAC/2025/design/pairgraph_an_efficient_search_space_aware_accelerator_for_high_performance_concurrent_pairwise_queries.md
         - "Phoenix: Pauli-based High-level Optimization Engine for Instruction Execution on NISQ devices": DAC/2025/design/phoenix_pauli_based_high_level_optimization_engine_for_instruction_execution_on_nisq_devices.md
-        - "PICK: An SRAM-based Processing-in-Memory Accelerator for K-Nearest-Neighbor Search in Point Clouds*": DAC/2025/design/pick_an_sram_based_processing_in_memory_accelerator_for_k_nearest_neighbor_search_in_point_clouds.md
+        - "PICK: An SRAM-based Processing-in-Memory Accelerator for K-Nearest-Neighbor Search in Point Clouds": DAC/2025/design/pick_an_sram_based_processing_in_memory_accelerator_for_k_nearest_neighbor_search_in_point_clouds.md
         - "PIMDup: An Optimized Deduplication Design on a Real Processing-in-Memory System": DAC/2025/design/pimdup_an_optimized_deduplication_design_on_a_real_processing_in_memory_system.md
         - "PIMoE: Towards Efficient MoE Transformer Deployment on NPU-PIM System through Throttle-Aware Task Offloading": DAC/2025/design/pimoe_towards_efficient_moe_transformer_deployment_on_npu_pim_system_through_throttle_aware_task_offloading.md
         - "PIMPAL: Accelerating LLM Inference on Edge Devices via In-DRAM Arithmetic Lookup": DAC/2025/design/pimpal_accelerating_llm_inference_on_edge_devices_via_in_dram_arithmetic_lookup.md
