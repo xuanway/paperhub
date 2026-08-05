@@ -13,46 +13,53 @@ tags:
 # SeDA: Secure and Efficient DNN Accelerators with Hardware/Software Synergy
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · Session: SEC1。提出 SeDA——基于硬件-软件协同设计的安全 DNN 加速器架构，通过硬件加密引擎与软件调度策略的深度协同，在边缘设备上同时保障 DNN 推理的机密性与完整性，实现细粒度内存保护与低开销的平衡。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Security · DNN Accelerator · Hardware-Software Codesign · Encryption · Memory Protection</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">SEC1: AI/ML Security/Privacy</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://arxiv.org/abs/2508.18924">https://arxiv.org/abs/2508.18924</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 内存保护，安全深度神经网络加速器，机密性与完整性，深度神经网络 </p>
 </div>
 
-| 项目 | 详情 |
-|------|------|
-| 会议 | 第 62 届设计自动化会议（DAC 2025） |
-| 论文标题 | SeDA: Secure and Efficient DNN Accelerators with Hardware/Software Synergy（SeDA：基于硬件-软件协同的安全高效 DNN 加速器） |
-| 作者 | Wei Xuan, Zhongrui Wang, Lang Feng, Ning Lin, Zihao Xuan, Rongliang Fu, Tsung-Yi Ho, Yuzhong Jiao, Luhong Liang |
-| 机构 | AI Chip Center for Emerging Smart Systems (ACCESS, 香港) / 南方科大 / 中大 / 港大 |
-| 领域 | AI/ML 安全 |
-| 投稿方向 | Security（Session: SEC1） |
-| 关键词 | DNN 加速器、硬件-软件协同(Hardware-Software Codesign)、加密(Encryption)、内存保护(Memory Protection) |
-| 核心资源 | [IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11133180) |
-
 ---
 
-## 一、一句话核心摘要
+## 研究概要
+本文提出软硬件协同安全DNN加速器SeDA，针对现有加密多AES引擎硬件开销、完整性校验海量片外访存两大痛点。设计带宽感知加密机制抵御SECA攻击，多层MAC完整性方案防御重排列攻击。在服务器、边缘NPU验证，性能开销降低12%以上，硬件面积功耗开销远低于多引擎方案。
 
-> 边缘 DNN 加速器面临模型窃取和数据隐私双重威胁——纯硬件方案开销大，纯软件方案性能差。SeDA 通过**硬件加密引擎 + 软件调度策略的深度协同**，在 DNN 推理过程中实现细粒度、低开销的内存保护：硬件负责线速加解密（块 cipher），软件根据层敏感度自适应调节保护粒度，在安全保障与推理性能之间取得最优平衡。
+## 背景和动机
+1. DNN权重/特征存储于不可信片外DRAM，存在模型窃取、数据篡改、重放攻击风险，需加密+完整性双重防护。
+2. 传统并行多AES引擎方案满足带宽，但带来巨大面积、功耗开销，边缘NPU资源难以承载。
+3. 单AES搭配整块共享OTP易受SECA单元素碰撞攻击，泄露全部明文数据。
+4. 现有完整性方案（Merkle树、单层MAC）产生大量安全元数据，频繁片外读写大幅拖慢推理速度。
+5. 层级XOR-MAC易遭RePA重排列攻击，篡改块顺序仍能通过校验，存在安全漏洞；且未适配层内分块重叠、跨层分块差异，产生冗余校验。
 
----
+## 相关工作
+1. SGX类可信内存：基于Merkle树、VN版本号，元数据访存开销极高，不适合高吞吐NPU。
+2. MGX/TN：采用粗粒度版本号缓存，减少VN访存，但MAC校验带来显著流量开销，未解决RePA漏洞。
+3. Securator：层级XOR-MAC降低元数据，但忽略分块重叠产生重复校验，无法抵御块重排列攻击。
+4. GuardNN/SEAL：选择性加密、小规模TCB优化，未同时解决加密硬件资源与完整性访存两大核心瓶颈。
+5. 传统并行AES加密：多引擎堆叠提升带宽，硬件成本成倍上升，资源受限边缘设备不适用。
 
-## 二、核心方法
+## 本文解决方案
+### 1 带宽感知B-AES单引擎加密机制
+仅使用一套AES核，复用密钥扩展模块生成多组派生OTP；每个128bit子块分配独立一次性掩码，抵御SECA碰撞攻击。仅增加少量异或门，替代多AES引擎，大幅削减面积功耗。
+### 2 最优分块optBlk搜索策略
+基于DNN层内重叠、跨层分块尺寸差异，搜索无冗余校验的最优保护粒度，避免重复MAC计算，减少元数据生成量。
+### 3 三层分级完整性校验架构
+optBlk块级MAC记录块/层/特征/偏移完整位置信息，阻断RePA重排列攻击；同层块MAC异或生成层MAC存入片上SR；全局模型MAC用于推理结束终检。
+### 4 软硬件协同调度
+软件预计算各层optBlk尺寸，硬件密码引擎并行完成OTP生成与推理乘加计算，校验元数据尽量驻留片上，消除绝大多数片外元数据访问。
+### 5 双重攻击防御逻辑
+针对SECA：派生多OTP隔离子块；针对RePA：MAC绑定完整空间位置信息，块打乱后校验失败。
 
-### 硬件-软件分工
+## 实验分析
+1. 仿真环境：SCALE-Sim2加速器仿真、Ramulator2内存仿真，28nm工艺评估硬件，覆盖CNN/推荐/语音等13类模型，对比SGX/MGX基线。
+2. 硬件开销：B-AES单引擎随带宽提升面积/功耗增长平缓，同等吞吐下远优于多T-AES并行方案。
+3. 内存流量：SGX-64B流量涨幅超30%，MGX-64B约12.5%，Se仅提升0.12%（服务器）、0.03%（边缘）。
+4. 推理性能：服务器NPU开销降低12.26%，边缘NPU降低12.29%，相比SGX、MGX提速显著。
+5. 安全验证：可完全阻断SECA、RePA两类针对内存防护的新型攻击，保密性与完整性安全强度与多引擎方案持平。
 
-| 层级 | 职责 |
-|------|------|
-| **硬件** | 块加密引擎（AES-like）、MAC 生成/验证、密钥管理 |
-| **软件** | 调度策略：根据每层的参数敏感性动态开关保护、调节保护粒度 |
-
-### 设计关键
-
-并非所有 DNN 层的权重都同等敏感——第一层和最后一层通常泄漏最多信息。SeDA 的软件调度器自动识别高敏感层并仅对它们启用全强度保护。
-
----
-
-## 三、总结
-
-SeDA 代表了安全 DNN 加速器从"一刀切全加密"到"自适应选择性保护"的演进趋势——与 Data Oblivious CPU、POLARIS 等工作的"选择性防护"哲学一脉相承。
-
-**相关资源**：[IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11133180)
+## 研究启发
+1. 无需堆叠多AES引擎，复用AES密钥扩展模块派生多OTP，可在极低硬件开销下满足高带宽加密需求。
+2. DNN分块重叠是传统完整性方案冗余根源，层感知最优分块可大幅减少MAC计算与元数据传输。
+3. 简单层内块异或MAC存在重排列漏洞，MAC必须绑定完整空间位置信息才能抵御RePA攻击。
+4. 安全加速器优化需软硬件协同：软件预处理分块策略，硬件做轻量密码单元，双管齐下降低访存开销。
+5. 片上SRAM缓存层级MAC是消除完整性校验片外流量的关键，能实现近零推理性能损耗。

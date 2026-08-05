@@ -42,7 +42,7 @@ Trusted AI Acceleration: Secure Architectures, Privacy, and Resilience in ML Har
 
 | 中英论文题目 | 中英关键词 |
 |------------|-----------|
-| [Power-Based Side-Channel Attack on XGBoost Accelerator](power_based_side_channel_attack_on_xgboost_accelerator.md) | SEC1: AI/ML Security/Privacy |
+| [Exploiting Power Side-Channel Vulnerabilities in XGBoost Accelerator](power_based_side_channel_attack_on_xgboost_accelerator.md) | SEC1: AI/ML Security/Privacy |
 | [zkVC: Fast Zero-Knowledge Proof for Private and Verifiable Computing](zkvc_fast_zero_knowledge_proof_for_private_and_verifiable_computing.md) | SEC1: AI/ML Security/Privacy |
 | [ABC-FHE: A Resource-Efficient Accelerator Enabling Bootstrappable Parameters for Client-Side Fully Homomorphic Encryption](abc_fhe_a_resource_efficient_accelerator_enabling_bootstrappable_parameters_for_client_side_fully_homomorphic_encryption.md) | SEC1: AI/ML Security/Privacy |
 | [SeDA: Secure and Efficient DNN Accelerators with Hardware/Software Synergy](seda_secure_and_efficient_dnn_accelerators_with_hardware_software_synergy.md) | SEC1: AI/ML Security/Privacy |

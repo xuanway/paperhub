@@ -13,53 +13,54 @@ tags:
 # zkVC: Fast Zero-Knowledge Proof for Private and Verifiable Computing
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · Session: SEC1。针对可验证计算中矩阵乘法 ZKP 的证明生成效率瓶颈，提出 zkVC——通过约束缩减多项式电路（CRPC）和前缀和查询（PSQ）两个模块，相比此前 zkSNARK 方法实现 >12× 证明生成加速。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Security · Zero-Knowledge Proof · Matrix Multiplication · zkSNARK · Verifiable Computing</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">SEC1: AI/ML Security/Privacy</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://arxiv.org/abs/2504.12217">https://arxiv.org/abs/2504.12217</a></p> 
+<p class="paper-seo-summary__meta"><strong>源码链接:</strong> <a href="https://github.com/UCF-Lou-Lab-PET/zkformer">https://github.com/UCF-Lou-Lab-PET/zkformer</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 隐私保护与可验证计算，零知识证明，机器学习</p>
 </div>
 
-| 项目 | 详情 |
-|------|------|
-| 会议 | 第 62 届设计自动化会议（DAC 2025） |
-| 论文标题 | zkVC: Fast Zero-Knowledge Proof for Private and Verifiable Computing（zkVC：面向隐私可验证计算的快速零知识证明） |
-| 作者 | Yancheng Zhang, Mengxin Zheng, Yan Solihin, Qian Lou (UCF), Xun Chen (Samsung), Jingtong Hu (Pitt), Weidong Shi (UH), Lei Ju (山东大学) |
-| 机构 | UCF / Samsung Research America / Pitt / Houston / 山东大学 |
-| 领域 | AI/ML 安全 / ZKP |
-| 投稿方向 | Security（Session: SEC1） |
-| 关键词 | 零知识证明(ZKP)、矩阵乘法(Matrix Multiplication)、zkSNARK、可验证计算(Verifiable Computing) |
-| 核心资源 | [IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11132681) · [GitHub: UCF-Lou-Lab-PET/zkformer](https://github.com/UCF-Lou-Lab-PET/zkformer) |
-
 ---
 
-## 一、一句话核心摘要
+## 研究概要
+本文提出zkVC高效零知识证明框架，面向矩阵乘法与Transformer推理优化。设计CRPC约束缩减电路将复杂度从O(n³)降至O(n)，搭配PS前缀求和机制进一步削减变量；对SoftMax/GELU做多项式近似。矩阵证明速度提升12倍，ViT等Transformer端到端提速超15倍，支持无可信设置Spartan后端。
 
-> 在客户端-服务器场景中，客户端将矩阵乘法外包给不可信服务器，需要零知识证明来验证计算结果——但矩阵乘法的 ZKP 证明生成极为昂贵。zkVC 通过两个创新模块大幅加速：**CRPC**（约束缩减多项式电路）将矩阵乘法的 R1CS 约束数显著压缩；**PSQ**（前缀和查询）加速验证阶段的求和聚合。两者结合实现 >12× 于此前 zkSNARK 方法的证明生成加速。
+## 背景和动机
+1. 云ML推理场景下传统zk-SNARK验证矩阵乘法开销极大，中等规模矩阵证明耗时可达数分钟，无法落地ViT、BERT等大模型。
+2. 现有vCNN等优化仅针对卷积，无法通用适配矩阵乘，直接套用会激增中间变量，整体效率下降。
+3. 标准R1CS电路每个点积对应多条乘法约束，矩阵乘约束规模呈立方增长，成为ZKP性能瓶颈。
+4. Transformer的SoftMax、GELU非线性函数难以用算术电路精确表达，现有近似方案精度与开销失衡。
+5. 多数验证ML方案依赖交互证明或可信初始化，客户端部署门槛高，缺少透明无交互通用优化方案。
 
----
+## 相关工作
+1. 卷积专用ZKP优化（vCNN/pvCNN）：将卷积转为多项式乘，但无法通用矩阵运算，泛化性差。
+2. 通用可验证ML（VeriML/ZEN/zkML）：仅采用量化等轻量优化，未重构矩阵乘电路，提速幅度有限。
+3. 交互式zkCNN：证明速度快，但持续双向通信，客户端在线开销大、证明尺寸臃肿。
+4. 基础zk-SNARK（Groth16/Spartan）：原生电路未做矩阵专用化简，点积约束数量爆炸。
+5. 同态加密推理：仅保证数据隐私，无法提供计算完整性证明，和ZKP目标不兼容。
 
-## 二、核心方法
+## 本文解决方案
+### 1 CRPC约束缩减多项式电路
+利用中间随机变量Z重构矩阵行列多项式，把a×n × n×b矩阵乘的O(n³)约束降至O(n)，保证完备与可靠，消除冗余乘积项，从根源降低R1CS规模。
+### 2 PSQ前缀求和查询机制
+将点积分步存储前缀和，消除长加法链带来的大量中间变量，R1CS计算开销降低70%，与CRPC组合实现12倍整体加速。
+### 3 非线性函数多项式近似
+SoftMax输入平移至负数区间，泰勒展开近似指数；GELU采用低阶多项式拟合，仅少量分解与乘法约束即可高精度复现激活效果。
+### 4 混合Transformer验证策略
+高分辨率图像用无SoftMax线性注意力加速，短序列层保留SoftMax平衡精度；支持Groth16（轻验证）、Spartan（无可信设置）双后端。
+### 5 完整端到端验证流水线
+适配ViT视觉、BERT语言两类Transformer，整数量化模型兼容，提供可复用电路转换工具链开源实现。
 
-### 2.1 CRPC：约束缩减多项式电路
+## 实验分析
+1. 测试平台：16核AMD线程撕裂者+RTX3090，基准vCNN/ZEN/zkML，分Groth16、Spartan两套密码后端。
+2. 矩阵微基准：同等矩阵规模，zkVC证明耗时仅为vCNN的1/12.5，CRPC单独提速9倍，叠加PSQ再提升30%。
+3. Transformer视觉：ImageNet ViT证明时长从万秒级降至3457秒，精度仅损失1.7%；CIFAR-10提速40%、精度降幅<2%。
+4. NLP任务：BERT系列相比线性注意力方案提速15%，四类GL任务平均精度仅下降约3%。
+5. 方案对比：非交互、常数证明尺寸、无需可信初始化、原生支持矩阵/Transformer，综合指标优于所有现有基线。
 
-- 针对矩阵乘法中大量重复的同构约束（矩阵每个元素乘法产生相同形式的 R1CS 约束）
-- 通过多项式电路将多组约束"折叠"为单组 → 约束数大幅降低 → 证明生成加速
-
-### 2.2 PSQ：前缀和查询
-
-- 矩阵乘法的验证需要累加大量点积结果
-- PSQ 用 O(logN) 的查询复杂度替代 O(N) 的逐元素验证
-
-### 2.3 实验结果
-
-| 指标 | 结果 |
-|------|------|
-| **证明生成加速** | **>12×** vs 此前 zkSNARK 方法 |
-| 引用 | FWCI=5.67（前 10%），已被 2 篇论文引用 |
-| 代码 | GitHub 开源 |
-
----
-
-## 三、总结
-
-zkVC 将矩阵乘法的 ZKP 证明生成从"昂贵到不可用"推进到"可实用"——对 zkML（零知识机器学习推理）和 zkRollup 等需要大规模矩阵运算证明的场景具有直接的应用价值。
-
-**核心资源**：[IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11132681) · [GitHub](https://github.com/UCF-Lou-Lab-PET/zkformer)
+## 研究启发
+1. ZKP性能瓶颈核心在算术电路约束规模，针对矩阵乘这类高频运算重构多项式表示是最优优化路径。
+2. 长累加链会引入大量冗余中间变量，前缀求和结构可低成本缩减R1CS变量数。
+3. Transformer推理无需全程SoftMax，长短序列分层混合策略可兼顾证明效率与模型精度。
+4. 专用电路优化具备通用性，矩阵优化方案可无缝迁移至视觉、NLP各类Transformer架构。
+5. 双密码后端设计更适配多云场景：低延迟需求选Groth16，无可信部署场景选用Spartan透明方案。

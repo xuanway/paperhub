@@ -14,56 +14,53 @@ tags:
 # "OOPS!": Out-Of-Band Remote Power Side-Channel Attacks on Intel SGX and TDX
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · Session: SEC3。绕过 Intel 对 MSR 功耗遥测的过滤防御，首次利用服务器 BMC 带外管理接口（OOB）获取 Package Configuration Space 中的功耗数据，在 Intel Sapphire Rapids 上对 SGX 和 TDX 实施远程功耗侧信道攻击——恢复 SGX 中 2048-bit RSA 密钥并泄漏 TDX 中 AESNI 密钥。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Security · Intel SGX · Intel TDX · Power Side-Channel · OOB · Confidential Computing</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">SEC3: Hardware Security: Attack & Defense</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://kislay536.github.io/assets/pdf/oob_dac.pdf">https://kislay536.github.io/assets/pdf/oob_dac.pdf</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 电源侧信道，英特尔软件保护扩展，英特尔信任域扩展 </p>
 </div>
 
-| 项目 | 详情 |
-|------|------|
-| 会议 | 第 62 届设计自动化会议（DAC 2025） |
-| 论文标题 | "OOPS!": Out-Of-Band Remote Power Side-Channel Attacks on Intel SGX and TDX（OOPS!：面向 Intel SGX 和 TDX 的带外远程功耗侧信道攻击） |
-| 作者 | Nimish Mishra, Kislay Arya, Sarani Bhattacharya (IIT Kharagpur), Paritosh Saxena (Intel), Debdeep Mukhopadhyay (IIT Kharagpur) |
-| 机构 | IIT Kharagpur / Intel |
-| 领域 | 硬件安全 / 机密计算 |
-| 投稿方向 | Security（Session: SEC3） |
-| 关键词 | Intel SGX、Intel TDX、功耗侧信道(Power Side-Channel)、带外(OOB)、BMC、机密计算(Confidential Computing) |
-| 核心资源 | [IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11132941) |
-
 ---
 
-## 一、一句话核心摘要
+## 研究概要
+本文提出OOPS跨带远程功耗侧信道攻击，针对开启RAPL过滤防护的Intel Sapphire Rapids服务器。逆向PECI协议RdPkgConfig指令，发现PCS能量读数不受噪声过滤；设计PMC同步通道，分别从SGX窃取2048位RSA密钥、从TDX恢复AESNI密钥，证明BMC带外管理接口是新型TEE泄露面。
 
-> Intel 发现 MSR_PKG_Energy_Status 等功耗遥测寄存器被用于远程功耗侧信道攻击后，引入了 IA32_MISC_PACKAGE_CTLS 过滤机制阻断此类攻击。但 OOPS! 发现了一条**完全绕开该过滤器的秘密通道**：服务器 BMC（基板管理控制器）的带外管理接口可读 Package Configuration Space（PCS）中的功耗数据——该路径完全不在 IA32_MISC_PACKAGE_CTLS 的过滤范围内。在 Intel Sapphire Rapids 上成功恢复 SGX 中的 2048-bit RSA 密钥（单步假设）和泄漏 TDX 中的 AESNI 密钥（无需单步）。
+## 背景和动机
+1. 现有Platypus等攻击利用RAPL MSR读取内核功耗，Intel推出RAPL噪声过滤机制，业界认为该防护可阻断此类远程功耗攻击。
+2. 现有侧信道研究仅聚焦CPU内核带内MSR接口，忽略服务器BMC带外(OOB)管理通道的遥测数据泄露风险。
+3. PECI协议PCS包级功耗读取通道未纳入RAPL过滤管控，厂商安全范围仅覆盖带内寄存器，未评估带外接口威胁。
+4. 带外BMC采集与飞地执行难以时序对齐，缺少无硬件修改的同步机制，限制带外侧信道攻击落地。
+5. SGX、TDX两类可信执行环境未做PCS功耗隔离，包级能量数据可跨可信边界泄露密码运算特征。
 
----
+## 相关工作
+1. 带内功耗侧信道：Platypus、Hertzbleed等利用RAPL MSR读取内核功耗，依赖未过滤寄存器，开启RAPL防护后失效。
+2. TEE微架构攻击：Spectre类瞬态攻击、缓存侧信道，均基于内核执行痕迹，不涉及服务器BMC带外接口。
+3. BMC/PECI安全研究：仅研究故障注入、温度泄露，未挖掘PCS功耗遥测带来密钥窃取能力。
+4. SGX/TDX防护方案：针对缓存、分支预测、内核MSR加固，未覆盖带外PECI功耗读取通道漏洞。
+5. 远程CPA密钥恢复：全部依赖内核采集的功耗轨迹，无基于带外管理遥测的攻击方案。
 
-## 二、核心方法
+## 本文解决方案
+### 1 PECI协议逆向，识别未过滤PCS读取指令
+逆向OpenBMC中PECI通信结构，区分RdIAMSR（同步内核MSR、受RAPL过滤）与RdPkgConfig（读取PCS包级能耗、无噪声干扰）；确定索引3、参数0xff可获取1ms高精度功耗数据。
+### 2 基于禁用PMC的带内-带外同步通道
+利用默认失效IA32_PMC0性能寄存器构建单向同步信号：带内程序改写PMC最低位，BMC持续轮询感知，精准对齐密码运算起止与功耗采样窗口。
+### 3 SGX RSA密钥提取攻击
+基于单步/零步进假设，采集RdPkgConfig功耗轨迹，区分平方/乘运算功耗差异，通过滑动窗口指数分析恢复2048位RSA私钥。
+### 4 TDX AESNI无假设CPA攻击
+无需单步调试，采集多轮AES加密PCS功耗，基于汉明重量功耗模型做相关性分析，拟合轮密钥字节，完整恢复128位AES密钥。
+### 5 威胁边界验证
+证实PCS为包级全局统计数据，不受SGX核心隔离、TDX MSR虚拟化保护，厂商现有TEE安全模型存在边界遗漏。
 
-### 2.1 带外 vs 带内
+## 实验分析
+1. 实验平台：Intel Xeon Platinum 8481C（Sapphire Rapids），OpenBMC基板管理控制器，RAPL过滤功能开启。
+2. 通道对比：RdIAMSR与PCS功耗相关性仅0.04，PCS无噪声叠加，数据方差远低于过滤后的RAPL读数。
+3. SGX RSA结果：采集一万条功耗样本，5小时恢复97.4%的2048位RSA密钥，剩余比特可格归约补齐。
+4. TDX AES结果：百万条轨迹下猜测熵持续下降，成功还原13字节AES轮密钥，剩余3字节熵极低可穷举。
+5. 厂商反馈：Intel确认该OOB通道不在SGX/TDX原生安全防护范围内，未纳入现有TEE威胁模型。
 
-| 路径 | 传统 MSR 攻击 | OOPS! OOB 攻击 |
-|------|:----------:|:----------:|
-| 访问方式 | 带内 RDMSR 指令 | 带外 BMC→PCS |
-| 被 IA32_MISC_PACKAGE_CTLS 阻止？ | ✅ 是 | ❌ 否 |
-| 权限要求 | Ring 0 (内核) | BMC 网络访问 |
-
-### 2.2 技术路径
-
-1. 逆向工程 BMC→PCS 的带外协议
-2. 通过 OOB 接口读取 Package 功耗（只读、无需更高权限）
-3. 功耗迹线 → CPA 攻击 → 密钥恢复
-
-### 2.3 实验结果
-
-| 目标 | 环境 | 结果 |
-|------|------|------|
-| RSA-2048 | MbedTLS in SGX | ✅ 密钥恢复（单步假设） |
-| AESNI | TDX (Sapphire Rapids) | ✅ 密钥泄漏（无需单步） |
-
----
-
-## 三、总结
-
-OOPS! 展示了机密计算安全边界的一个致命盲区：**BMC 是数据中心管理的必要组件，但它本质上是硬件级的后门**——带外访问绕过所有 OS/VMM/Enclave 安全边界。云服务商需要在 BMC 网络隔离和访问审计上加强防线。
-
-**相关资源**：[IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11132941)
+## 研究启发
+1. TEE安全评估不能仅局限CPU内核带内接口，服务器BMC、PECI等带外管理通道存在独立侧信道攻击面。
+2 单一部件防护（RAPL过滤）存在安全盲区，需统一管控内核与包级所有功耗遥测读取接口。
+3. 芯片包级全局功耗统计不受逻辑隔离保护，SGX/TDX仅隔离核心执行上下文，无法阻断整机能耗特征泄露。
+4. BMC作为TCB外组件，其遥测采集权限会形成跨可信边界隐蔽泄露通路，云服务器安全审计必须纳入带外固件。
+5. 可信硬件威胁模型需扩展至整机管理子系统，不能仅局限处理器内核与指令集防护机制。

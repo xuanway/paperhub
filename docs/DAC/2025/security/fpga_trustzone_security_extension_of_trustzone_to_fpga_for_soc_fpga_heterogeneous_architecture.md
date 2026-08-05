@@ -14,103 +14,60 @@ tags:
 # FPGA-TrustZone: Security Extension of TrustZone to FPGA for SoC-FPGA Heterogeneous Architecture
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · Session: SEC2 — Hardware Security: Primitives & Architecture, Design & Test。ARM TrustZone 为 CPU 侧提供了成熟的可信执行环境（TEE），但无法覆盖 SoC-FPGA 异构架构中的 FPGA 侧。本文提出 FPGA-TrustZone——将 TrustZone 安全模型系统性地扩展到 FPGA 可编程逻辑，构建统一的 SoC-FPGA TEE 框架，在真实开发板上实现高性能低开销的安全隔离。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Security · TrustZone · FPGA · TEE · SoC-FPGA · Heterogeneous Architecture</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">SEC2: Hardware Security: Primitives & Architecture, Design & Test</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132548">https://dl.acm.org/doi/10.1109/DAC63849.2025.11132548</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 可信执行环境，片上系统FPGA，ARM信任区，安全扩展</p>
 </div>
 
-| 项目 | 详情 |
-|------|------|
-| 会议 | 第 62 届设计自动化会议（DAC 2025） |
-| 论文标题 | FPGA-TrustZone: Security Extension of TrustZone to FPGA for SoC-FPGA Heterogeneous Architecture（FPGA-TrustZone：面向 SoC-FPGA 异构架构的 TrustZone 安全扩展至 FPGA） |
-| 作者 | Shuchen Wang, Fan Xindong, Xiao Xu, Shupeng Wang, Lei Ju, Zimeng Zhou |
-| 机构 | 山东大学等 |
-| 领域 | 硬件安全 / FPGA 安全（Hardware Security / FPGA Security） |
-| 投稿方向 | Security（Session: SEC2 — Hardware Security: Primitives & Architecture, Design & Test） |
-| 关键词 | TrustZone、FPGA、可信执行环境(TEE)、SoC-FPGA、异构计算(Heterogeneous Computing) |
-| 核心资源 | [IEEE Xplore](https://ieeexplore.ieee.org)（DAC 2025 Proceedings） |
 
 ---
 
-## 一、一句话核心摘要
 
-> ARM TrustZone 为 CPU 上的可信执行环境（TEE）提供了成熟的安全隔离机制——但当前 SoC-FPGA 异构平台的 FPGA 侧完全暴露在 TrustZone 的保护伞之外：FPGA 上的硬件加速器可以直接访问安全世界的物理内存，打破了 TrustZone 的安全模型。FPGA-TrustZone 首次将 TrustZone 的安全隔离从 CPU 系统性扩展到 FPGA 可编程逻辑，通过硬件-软件协同设计在真实 SoC-FPGA 开发板上实现了统一的 TEE 框架，兼具高安全性与低性能开销。
+## 研究概要
+本文提出FPGA-TrustZone安全框架，将ARM TrustZone可信执行环境扩展至SoC-FPGA异构平台。设计FPGA安全监视器、CPU侧扩展监视器、BRAM保护三大核心组件，实现FPGA区域隔离、可信启动、AXI传输加密与BRAM存储加密。ZCU102板实测硬件资源占用低于9%，运算开销18%~23%，可抵御四类跨域攻击。
 
----
+## 背景和动机
+1. ARM TrustZone仅保护CPU，Zynq等SoC-FPGA架构中FPGA逻辑、BRAM、AXI总线存在独立攻击面，缺乏配套TEE隔离方案。
+2. 现有FPGA可信方案存在短板：部分不支持FPGA安全启动，部分跨CPU-FPGA通信开销巨大，缺少BRAM硬件加密防护。
+3. SoC-FPGA存在四类典型威胁：FPGA内部恶意IP窃取、被攻破FPGA攻击CPU、恶意CPU入侵FPGA、AXI总线窃听篡改。
+4. 多FPGA业务并行场景下，IP/存储资源无细粒度隔离，不同任务敏感数据易相互泄露。
+5. 现有防护框架硬件开销过高，难以适配资源受限嵌入式FPGA开发板。
 
-## 二、研究背景与动机
+## 相关工作
+1. RCTEE：支持云端FPGA动态IP部署，但缺少FPGA可信启动与片上BRAM加密机制。
+2. SGX-FPGA：打通SGX与FPGA安全通路，未实现FPGA内部多区域隔离，无总线事务校验机制。
+3. Ambassy：构建FPGA次级TEE，但未设计安全比特流加载流程，冷启动攻击防护薄弱。
+4. TEEOD：为每个应用分配独立FPGA处理器，资源与通信开销极大，工程落地困难。
+5. TPM/PUF-TrustZone：仅CPU侧安全增强，无FPGA侧隔离、BRAM加密、非法事务拦截能力。
 
-### 2.1 TrustZone 的工作机制
+## 本文解决方案
+### 1 三层协同整体架构
+CPU侧SM-Extension扩展TrustZone监视器，FPGA端FPGA-SM作为核心管控单元，搭配BRAM Protector存储加密模块，基于AXI AxPROT/AxRegion实现安全域划分。
+### 2 FPGA-SM三大核心能力
+可信启动：双层AES-GCM加密比特流，芯片PUF生成根密钥，防止镜像篡改窃取；资源隔离：基于DeviceID建立区域访问白名单，拦截跨域非法事务；安全传输：AXI事务加解密，非法访问返回错误或重定向空地址。
+### 3 CPU侧SM-Extension
+对接原生TrustZone安全世界，提供FPGA区域全生命周期API，完成CPU-FPGA事务加解密、安全指令转发与动态配置。
+### 4 BRAM Protector存储防护
+融合仲裁+环振荡器PUF生成AES-CBC初始向量，BRAM读写可配置加密开关，密钥隔离在安全监视器，上层区域无法获取。
+### 5 全局PM监控单元
+实时监测AXI与区域访问行为，捕获非法操作触发中断上报，形成全链路安全数据流管控。
 
-ARM TrustZone 将 CPU 的硬件和软件状态划分为两个"世界"：
-- **安全世界（Secure World）**：运行 TEE OS（如 OP-TEE）、处理密钥/加密/认证
-- **普通世界（Normal World）**：运行标准 OS（Linux/Android）
+## 实验分析
+1. 实验平台：Xilinx ZCU102 MPSoC，对比SGX-FPGA、TPM-TrustZone等主流架构。
+2. 硬件资源：PUF仅占0.04%LUT，BRAM加密模块2.47%，FPGA-SM为1.25%，整套框架总资源占用<9%。
+3. 时序开销：AES-CBC单轮14.5周期，向量运算开销22.28%、矩阵乘18.59%，并行计算性能损耗更低。
+4. 安全对比：独有FPGA可信启动、BRAM加密、非法事务投毒、PMU中断检测能力，可抵御全部四类异构攻击。
+5. 功能验证：多隔离区域并发运行无信息泄露，比特流、BRAM、总线数据均密文传输，冷启动攻击失效。
 
-关键隔离机制：NS 位（Non-Secure bit）被添加到 AXI 总线的读写事务中——安全世界的物理内存通过 NS=0 标记，总线互连硬件阻止普通世界的 NS=1 事务访问安全内存。
+## 研究启发
+1. 传统CPU TEE无法覆盖FPGA攻击面，异构SoC需要双向联动的扩展可信架构，兼顾CPU与FPGA安全域。
+2. FPGA防护必须覆盖启动、运行、存储、总线全链路，仅逻辑隔离不足以抵御比特流窃取与BRAM数据泄露。
+3. 基于AXI原生AxPROT、AxRegion扩展隔离逻辑，无需大幅修改总线，轻量化实现多任务资源分区。
+4. PUF是FPGA可信启动与存储加密理想密钥源，可避免硬编码密钥泄露，兼顾安全性与硬件开销。
+5. 安全框架需分层开销设计，基础计算模块控制20%以内性能损耗，才能适配边缘嵌入式FPGA业务。
 
-### 2.2 FPGA 侧是 TrustZone 的"阿喀琉斯之踵"
 
-在 Zynq 等 SoC-FPGA 平台上，FPGA 可编程逻辑通过 AXI 主端口直接连接到内存互连。问题：**FPGA 主端口发起的 AXI 事务的 NS 位由 FPGA 逻辑自身决定——恶意或漏洞 FPGA 设计可以将 NS 位设为 0，从而自由访问安全世界内存。**
-
-### 2.3 现有方法的局限
-
-| 方法 | 局限 |
-|------|------|
-| **系统 MMU (SMMU)** | 需要为 FPGA 单独配置页表，性能开销大、配置复杂 |
-| **完全禁用 FPGA 访问安全内存** | 否定了 FPGA 加速安全敏感工作负载（如硬件加密引擎）的价值 |
-| **静态分区** | 缺乏灵活性，无法适应动态 TEE 工作负载 |
-
-### 2.4 本文贡献
-
-1. **FPGA-TrustZone 框架**：将 TrustZone 的双世界安全模型扩展到 FPGA 侧。
-2. **硬件安全扩展**：在 FPGA 与内存互连之间插入 FPGA-TZ 控制器，强制执行 NS 位策略。
-3. **真实硬件验证**：在 SoC-FPGA 开发板上实现并评估，低性能开销。
-
----
-
-## 三、提出的解决方案
-
-### 3.1 架构
-
-FPGA-TrustZone 的核心是**FPGA-TZ 控制器**——位于 FPGA AXI 主端口与系统内存互连之间：
-
-- **安全世界 FPGA 区域**：用于加速安全敏感计算（如加密、安全启动验证）
-- **普通世界 FPGA 区域**：用于常规加速（如视频编解码）
-- **FPGA-TZ 控制器**：根据 FPGA 逻辑区域的身份（由配置寄存器决定），强制为 AXI 事务注入正确的 NS 位
-
-### 3.2 动态分区与访问控制
-
-- TEE OS (OP-TEE) 可以通过安全监视器调用（SMC）动态配置 FPGA-TZ 控制器的分区寄存器
-- 不同 FPGA 逻辑区域被分配不同的 AXI ID，FPGA-TZ 控制器基于 AXI ID 查找表注入 NS 位
-- 物理上阻止普通世界 FPGA 逻辑伪造 NS=0
-
-### 3.3 性能开销
-
-FPGA-TZ 控制器在 AXI 事务路径上只增加一个查找表延迟（1-2 个时钟周期），对 FPGA 加速器的带宽和延迟影响可忽略。
-
----
-
-## 四、实验评估
-
-| 指标 | 结果 |
-|------|------|
-| **安全性** | 硬件强制 NS 位策略，恶意 FPGA 逻辑无法绕过 |
-| **性能开销** | 低——AXI 路径仅增加 1-2 周期查找延迟 |
-| **平台** | 真实 SoC-FPGA 开发板（Zynq 系列） |
-
-### 局限性
-
-- **AXI 协议依赖性**：FPGA-TZ 控制器依赖 AXI 的 NS/AWPROT 信号，对其他总线协议需适配。
-- **FPGA 重配置的原子性**：FPGA 部分重配置时，需确保 TZ 分区配置的原子更新。(个人观点)
-
----
-
-## 五、总结与展望
-
-FPGA-TrustZone 填补了 TrustZone 安全模型在 SoC-FPGA 异构平台上的空白——首次将双世界隔离从 CPU 系统性地扩展到 FPGA 可编程逻辑。这对于将 FPGA 加速器纳入 TEE 安全边界具有重要的工程价值。
-
-### 未来方向
-
-> **与 Confidential Computing 的融合**：将 FPGA-TrustZone 扩展至 CCA (Confidential Compute Architecture) 的 Realm 模型。
 
 ### 相关资源
 

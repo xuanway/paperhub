@@ -14,171 +14,59 @@ tags:
 # DeepPUFSCA: Deep Learning for PUF Attack Based on Side Channel Analysis
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · Session: SEC3 — Hardware Security: Attack & Defense。针对物理不可克隆函数（PUF）面对机器学习和侧信道联合攻击的脆弱性，提出 DeepPUFSCA——首个深度融合激励-响应对（CRP）与功耗侧信道信息的深度学习 PUF 攻击模型，在 FPGA 上实现 Arbiter PUF 并采集功耗数据，攻击精度超越所有 ML 基准方法（含集成算法）。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Security · PUF · Side-Channel Analysis · Deep Learning · Arbiter PUF · FPGA · Hardware Security</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">SEC3: Hardware Security: Attack & Defense</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://pureadmin.qub.ac.uk/ws/portalfiles/portal/633404316/DAC_2025_camera_ready.pdf">https://pureadmin.qub.ac.uk/ws/portalfiles/portal/633404316/DAC_2025_camera_ready.pdf</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 人工智能与机器学习，FPGA系统，安全与隐私 </p>
 </div>
 
-| 项目 | 详情 |
-|------|------|
-| 会议 | 第 62 届设计自动化会议（DAC 2025） |
-| 论文标题 | DeepPUFSCA: Deep learning for Physical Unclonable Function attack based on Side Channel Analysis support（DeepPUFSCA：基于侧信道分析辅助的深度学习 PUF 攻击） |
-| 作者 | Ngoc Phu Doan, Tuan Dung Pham, Zichi Zhang, Hung Viet Tran, Jack Miskelly, Hans Vandierendonck, Anh-Tuan Hoang, Maire O'Neill, Thai Son Mai |
-| 机构 | Queen's University Belfast (QUB) |
-| 领域 | 硬件安全 / PUF 安全（Hardware Security / PUF Security） |
-| 投稿方向 | Security（Session: SEC3 — Hardware Security: Attack & Defense） |
-| 关键词 | 物理不可克隆函数(PUF)、侧信道分析(Side-Channel Analysis)、深度学习(Deep Learning)、Arbiter PUF、FPGA |
-| 核心资源 | [QUB Pure 预印本](https://pure.qub.ac.uk/en/publications/deeppufsca)（CC BY） · [IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11132394) |
-
 ---
 
-## 一、一句话核心摘要
+## 研究概要
+本文提出DeepPUFSCA深度学习混合攻击框架，针对宣称抗建模的4×4仲裁PUF，同时输入激励与功耗侧信道轨迹双特征。推导PUF激励、功耗与响应数学关联，双分支网络分别提取两类特征融合预测。FPGA实测最高建模准确率81.11%，相比传统机器学习提升显著，证明侧信道信息可有效强化PUF建模攻击能力。
 
-> 物理不可克隆函数（PUF）利用芯片制造过程中的随机工艺偏差生成唯一"指纹"，是硬件安全的核心原语——但研究发现，单纯依赖激励-响应对（CRP）的机器学习攻击和单纯依赖侧信道（功耗/电磁）的攻击各自存在局限。DeepPUFSCA 首次将两者**深度融合**——在单个深度学习模型中同时输入 CRP 和功耗侧信道迹线进行 PUF 建模攻击，在 FPGA 上自建 Arbiter PUF 并采集实测功耗数据集，攻击精度超越所有 ML 基准方法。
+## 背景和动机
+1. 4×4仲裁PUF采用多路并行MUX结构，复杂度更高，现有方案声称其可抵御传统机器学习建模攻击，安全边界缺乏验证。
+2. 传统PUF建模仅使用激励-响应对(CRP)，忽略电路开关跳变带来功耗泄露，丢失大量内部时序特征。
+3. 单一机器学习/深度学习模型仅依赖CRP，面对高复杂度多比特PUF拟合能力不足，预测准确率偏低。
+4. 现有混合攻击未独立设计双特征提取网络，无法充分挖掘功耗轨迹携带的内部路径信息。
+5. 缺少针对4×4 APUF的专用深度学习攻击方案，该PUF的实际安全脆弱性有待实验验证。
 
----
+## 相关工作
+1. 传统机器学习PUF攻击：LR、SVM、集成树等仅利用CRP，线性拟合能力有限，对高维复杂PUF效果差。
+2. 纯深度学习PUF攻击：CNN/MLP仅输入激励，未引入侧信道辅助信息，建模精度存在明显上限。
+3 单一侧信道PUF攻击：仅依靠功耗/时序轨迹，无激励特征协同，特征信息不完整，泛化性弱。
+4. 早期混合攻击：简单拼接激励与侧信道编码，无分支特征提取，无法分离两类数据的独有特征。
+5. PUF防护设计：XOR、iPUF、4×4 APUF等通过增加非线性提升抗建模能力，但未完成全面攻防验证。
 
-## 二、研究背景与动机
+## 本文解决方案
+### 1 理论关联推导
+建立4×4 APUF数学模型，证明激励直接决定电路稳态路径；推导CMOS门动态功耗公式，证实功耗轨迹包含开关噪声与路径隐含信息，可补充CRP缺失的内部特征。
+### 2 双分支深度融合网络架构
+设计双输入分支：MLP分支提取二进制激励全局特征；CNN分支对一维功耗时序轨迹做卷积池化提取局部跳变特征，两路特征拼接后送入多层MLP完成多分类。
+### 3 标准化数据集构建
+基于FPGA+PICOscope采集系统，同步捕获激励、6比特响应、功耗轨迹；采用MinMax归一化消除采样噪声，划分4:1训练/测试集。
+### 4 超参优化训练策略
+多层堆叠网络，CNN核最优尺寸11，隐藏层神经元64；SGD优化+交叉熵损失，早停策略防止过拟合。
+### 5 分层评测指标体系
+设计整体准确率、Top-k准确率、平均秩、汉明距离、类别置信度多维度指标，全面评估模型建模效果与鲁棒性。
 
-### 2.1 PUF：硬件安全的"指纹"
+## 实验分析
+1. 实验平台：CW305 FPGA开发板、1GS/s PICO示波器，采集50万组样本，对比LR、LGBM、XGBoost等十余种主流算法。
+2. 精度对比：DeepPUFSCA整体准确率81.11%，比LGBM高11%、比逻辑回归高35%；引入功耗特征相比纯CRP提升2.54%。
+3. 细粒度性能：6路输出单比特准确率近95%，Top-3准确率达90%；错误样本汉明距离多为1~2，误判程度低。
+4. 消融实验：最优配置为MLP/CNN分类层各15层、隐藏层64、卷积核11，50万样本达到性能峰值。
+5. 鲁棒性验证：各类正确类别置信度显著高于随机猜测，最优/次优置信度差值普遍大于0.2，模型区分度强。
 
-PUF 的原理是利用芯片制造中不可控的随机工艺偏差——两个相同设计的 Arbiter PUF 在两个芯片上会产生完全不同的激励-响应映射。这种"指纹"特性使 PUF 成为：
-- **设备认证**：验证芯片身份
-- **密钥生成**：从 PUF 响应中提取稳定密钥（需 fuzzy extractor）
-- **防伪**：确认芯片来源
+## 研究启发
+1. 高复杂度4×4仲裁PUF无法完全抵御深度学习建模，仅增加多路非线性不足以规避机器学习攻击风险。
+2. 功耗侧信道包含PUF内部路径独有信息，将时序轨迹与激励融合可显著提升建模攻击准确率。
+3. 双分支异构网络分别处理离散激励与时序功耗，相比简单特征拼接能更充分挖掘两类数据特征。
+4. 评估PUF抗建模安全性，不能仅用传统机器学习，需结合深度学习+侧信道混合攻击做完整验证。
+5. 新型多路仲裁PUF防护设计需同步兼顾机器学习建模与功耗侧信道两类威胁，单一维度加固存在安全漏洞。
 
-### 2.2 PUF 面临的攻击威胁
+## 相关资源
 
-| 攻击类型 | 方法 | 需求 |
-|----------|------|------|
-| **CRP 建模攻击** | 收集大量激励-响应对，训练 ML 模型预测未见激励的响应 | 大量 CRP 数据（通常 10³–10⁶ 对） |
-| **侧信道攻击** | 测量 PUF 操作期间的功耗/电磁辐射，推断内部信号传播路径 | 物理访问设备 + 测量设备 |
-| **联合攻击（DeepPUFSCA）** | 融合 CRP + 功耗侧信道 | CRP 数据 + 物理测量 |
-
-### 2.3 论文的核心洞察
-
-**CRP 和侧信道信息是互补的：**
-- CRP 提供了 PUF 的"功能级"行为模型
-- 功耗侧信道提供了 PUF 内部信号传播的"物理级"信息——哪条路径快、哪条慢
-
-如果攻击者同时拥有两者，DL 模型可以从"外部行为 + 内部物理过程"两个维度联合建模 PUF，攻击精度天然优于单一信息源。
-
-### 2.4 本文贡献
-
-1. **首次深度融合 CRP + SCA**：提出 DeepPUFSCA，在单个 DL 模型中联合学习激励-响应映射和功耗侧信道特征。
-2. **FPGA 实测数据集**：在 FPGA 上实现 Arbiter PUF，采集包含 CRP 和功耗迹线的完整数据集。
-3. **超越所有 ML 基准**：攻击精度优于单独的 CRP 建模、SCA 攻击及集成组合方法。
-
----
-
-## 三、提出的解决方案
-
-### 3.1 Arbiter PUF 原理
-
-Arbiter PUF 的核心是一条对称的延迟链：
-
-- 输入激励比特（Challenge）决定每个开关的信号路径（直通/交叉）
-- 两条竞争信号的到达时间差（Δt）由 Arbiter（仲裁器）判决 → 输出响应比特
-- Δt 的正负取决于工艺偏差 → 每个 PUF 实例的 CRP 映射是唯一的
-
-### 3.2 DeepPUFSCA 模型架构
-
-```
-   ┌──────────────┐     ┌──────────────┐
-   │ 激励 (CRP)    │     │ 功耗迹线 (SCA)│
-   └──────┬───────┘     └──────┬───────┘
-          │                    │
-   ┌──────▼───────┐    ┌──────▼───────┐
-   │ 激励编码器    │    │ SCA 特征提取  │
-   │ (MLP/CNN)    │    │ (Conv1D)     │
-   └──────┬───────┘    └──────┬───────┘
-          │                    │
-          └────────┬───────────┘
-                   │
-          ┌───────▼────────┐
-          │  特征融合层     │
-          │ (Concat + FC)  │
-          └───────┬────────┘
-                   │
-          ┌───────▼────────┐
-          │  响应预测 (0/1) │
-          └────────────────┘
-```
-
-**关键设计选择**：
-- **激励编码器**：MLP 或小型 CNN，将激励比特向量映射到高维表征
-- **SCA 特征提取**：Conv1D 从功耗迹线中捕捉 Arbiter 判决时刻的精细时序特征
-- **融合策略**：拼接（Concatenation）后接全连接层，端到端训练
-
-### 3.3 数据采集实验
-
-作者在 FPGA 上实现了 Arbiter PUF，并通过：
-1. **CRP 采集**：遍历激励空间记录响应
-2. **功耗采集**：使用示波器捕捉每次 PUF 操作的功耗波形（在 Arbiter 判决瞬间有明显电流峰值）
-3. **对齐与预处理**：功耗迹线的触发对齐、去噪、归一化
-
-### 3.4 为什么融合更好？信息论视角
-
-从信息论的角度，CRP 建模提供的是 PUF 函数的**条件分布 P(Response | Challenge)**，而功耗侧信道提供的是 PUF 内部状态的**额外互信息 I(Response; Power_Trace | Challenge)**。DeepPUFSCA 的双路模型正是在利用这种条件互信息来缩小预测的不确定性。
-
----
-
-## 四、实验评估
-
-### 4.1 实验设置
-
-| 项目 | 详情 |
-|------|------|
-| PUF 类型 | Arbiter PUF |
-| 实现平台 | FPGA（具体型号见论文正文） |
-| 数据集 | 自建 FPGA 实测数据集（CRP + 功耗迹线） |
-| 对比基线 | MLP/CNN（仅 CRP）、模板 SCA 攻击、集成方法（CRP 模型 + SCA 模型 的投票/平均） |
-| 评估指标 | 响应预测准确率、攻击所需数据量 |
-
-### 4.2 核心实验结果
-
-| 指标 | 结果 |
-|------|------|
-| **攻击准确率** | DeepPUFSCA **超越所有 ML 基准方法**，包括集成算法 |
-| **融合增益** | CRP + SCA 联合训练显著优于单一信息源 |
-| **数据效率** | 在相同 CRP 数据量下，融合 SCA 使攻击准确率更快饱和 |
-
-### 4.3 局限性分析
-
-- **功耗测量的物理访问需求**：CRP 建模攻击可以仅通过软件 API 收集数据；而功耗 SCA 需要物理连接示波器——这在真实攻击场景中限制了可扩展性。但一旦攻击者拥有物理访问权限（如恶意内部人员），这种威胁是真实且严重的。
-- **功耗迹线的信噪比依赖**：FPGA 平台的噪声底噪和测量设备的精度影响 SCA 特征质量——高端示波器下的结果在低成本硬件上可能无法复现。(个人观点)
-- **其他 PUF 类型的适用性**：Arbiter PUF 的延迟竞争机制天然适合功耗分析，但 SRAM PUF 或 Ring Oscillator PUF 的泄漏模式可能不同。
-
----
-
-## 五、结论与展望
-
-### 5.1 论文结论
-
-DeepPUFSCA 证明了将 CRP 建模与功耗侧信道深度融合是一种比单独使用任一信息源更强的 PUF 攻击范式。这一发现对 PUF 安全评估具有重要启示：PUF 设计者在评估抗攻击能力时，必须同时考虑 CRP 和物理侧信道两个维度的联合威胁。
-
-### 5.2 工业价值
-
-- **PUF 安全评估的升级**：当前 PUF 安全评估通常独立测试 CRP 建模攻击和 SCA 攻击——DeepPUFSCA 证明这种分离式评估低估了真实攻击者的能力。联合评估应成为新的业界标准。
-- **PUF 设计启示**：对抗联合攻击需要在两个维度同时加强防护——CRP 混淆（如 XOR Arbiter PUF）+ 功耗掩蔽（如双轨逻辑）。
-
-### 5.3 未来方向
-
-> **联合攻击其他 PUF 类型**：将 CRP + SCA 深度融合方法扩展到 Ring Oscillator PUF、SRAM PUF、Butterfly PUF。
-> **EM + 功耗多模态融合**：将电磁辐射也纳入融合模型，构建三模态 PUF 攻击。
-
----
-
-## 六、个人思考
-
-1. **"孤立的防御假设"是 PUF 安全的最大盲区**：PUF 社区长期将 CRP 攻击和 SCA 攻击视为两个独立威胁，DeepPUFSCA 打破了这堵墙——攻击者永远会选择最有利的组合，防御者不应假设对手只用一种武器。
-
-2. **QUB 团队的 PUF 研究体系化优势**：从 DeepPUFSCA 到之前一批工作，QUB 团队展现了 PUF 攻击研究的体系化——从 FPGA 实测到 DL 方法论到开源数据集，形成了一个完整的评估 pipeline。
-
----
-
-## 七、相关资源与延伸阅读
-
-- **QUB Pure 预印本**：[https://pure.qub.ac.uk/en/publications/deeppufsca](https://pure.qub.ac.uk/en/publications/deeppufsca)（CC BY）
 - **PUF 综述**：Gao et al., "Physical Unclonable Functions" (Nature Electronics, 2020)
 - **CRP 建模攻击**：Rührmair et al., "PUF Modeling Attacks on Simulated and Silicon Data" (IEEE TIFS, 2013)
 - **Arbiter PUF**：Lim et al., "Extracting Secret Keys from Integrated Circuits" (IEEE TVLSI, 2005)

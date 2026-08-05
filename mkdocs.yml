@@ -1454,7 +1454,7 @@ nav:
         - "LeakyDSP: Exploiting Digital Signal Processing Blocks to Sense Voltage Fluctuations in FPGAs": DAC/2025/security/leakydsp_exploiting_digital_signal_processing_blocks_to_sense_voltage_fluctuations_in_fpgas.md
         - "On Bit-level Reverse Engineering of Vehicular CAN Bus": DAC/2025/security/on_bit_level_reverse_engineering_of_vehicular_can_bus.md
         - "POLARIS: Explainable Artificial Intelligence for Mitigating Power Side-Channel Leakage": DAC/2025/security/polaris_explainable_artificial_intelligence_for_mitigating_power_side_channel_leakage.md
-        - "Power-Based Side-Channel Attack on XGBoost Accelerator": DAC/2025/security/power_based_side_channel_attack_on_xgboost_accelerator.md
+        - "Exploiting Power Side-Channel Vulnerabilities in XGBoost Accelerator": DAC/2025/security/power_based_side_channel_attack_on_xgboost_accelerator.md
         - "Quorum: Zero-Training Unsupervised Anomaly Detection using Quantum Autoencoders": DAC/2025/security/quorum_zero_training_unsupervised_anomaly_detection_using_quantum_autoencoders.md
         - "RAGNAR: Exploring Volatile-Channel Vulnerabilities on RDMA NIC": DAC/2025/security/ragnar_exploring_volatile_channel_vulnerabilities_on_rdma_nic.md
         - "RAP-Track: Efficient Control Flow Attestation via Parallel Tracking in Commodity MCUs": DAC/2025/security/rap_track_efficient_control_flow_attestation_via_parallel_tracking_in_commodity_mcus.md

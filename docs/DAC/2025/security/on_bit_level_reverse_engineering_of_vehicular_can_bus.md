@@ -13,56 +13,53 @@ tags:
 # On Bit-level Reverse Engineering of Vehicular CAN Bus
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · Session: SEC4。针对车载 CAN 总线逆向工程中比特级信号映射的巨大搜索空间挑战，提出首个系统性比特级 CAN 逆向框架，在 Tesla Model 3 上成功识别 43 种车辆控制动作的比特级信号映射，并可部署于 Raspberry Pi 实现轻量级车载安全监控。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Security · CAN Bus · Automotive Security · Reverse Engineering · Tesla · Bit-level</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">SEC4: Embedded and Cross-Layer Security</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132421">https://dl.acm.org/doi/10.1109/DAC63849.2025.11132421</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> CAN总线逆向工程，信号边界识别，模糊测试 </p>
 </div>
 
-| 项目 | 详情 |
-|------|------|
-| 会议 | 第 62 届设计自动化会议（DAC 2025） |
-| 论文标题 | On Bit-level Reverse Engineering of Vehicular CAN Bus（车载 CAN 总线的比特级逆向工程） |
-| 作者 | Yunlang Cai, Hanxue Shi, Xiaohang Wang, Haoting Shen, Li Lu, Kui Ren |
-| 机构 | Zhejiang University（浙江大学） |
-| 领域 | 汽车安全 / 嵌入式安全（Automotive Security / Embedded Security） |
-| 投稿方向 | Security（Session: SEC4） |
-| 关键词 | CAN 总线(CAN Bus)、逆向工程(Reverse Engineering)、汽车安全(Automotive Security)、比特级(Bit-level)、Tesla |
-| 核心资源 | [IEEE Xplore](https://ieeexplore.ieee.org/document/11132421/) · 扩展版发表于 IEEE Trans. Computers (2026) |
-
 ---
 
-## 一、一句话核心摘要
+## 研究概要
+本文提出一套比特级车载CAN总线逆向框架，通过稳态/工况双采集、比特翻转率信号划分、关联ID筛选、定向模糊与控制比特解析实现CAN报文-车辆控制动作精准映射。在特斯拉Model 3、零跑C10/C11验证，单车型识别43类控制行为，树莓派即可轻量化部署，资源开销极低。
 
-> CAN 总线是现代汽车的神经中枢——但它缺乏认证/加密，攻击者一旦入侵即可注入恶意帧。防御的前提是**知道每个 CAN ID 和载荷比特对应什么物理控制动作**——但这需要逆向工程，而现有方法只能做到字节级（哪些字节和转向有关），无法精确到比特级（哪个比特控制左转灯）。本文提出首个系统性**比特级 CAN 逆向框架**，通过 Fuzzing 驱动自动化信号映射，在 Tesla Model 3、Leapmotor C10/C11 上实现精准比特级解析，其中 Tesla Model 3 成功识别了 43 种车辆控制动作。
+## 背景和动机
+1. 车载CAN无原生安全机制，厂商私有DBC文件加密信号定义，传统逆向难以定位操控对应比特，难以排查ECU漏洞。
+2. CAN ID数量庞大，单条64bit载荷组合空间爆炸，现有方法仅能做到ID/帧级解析，无法实现比特粒度映射。
+3. 现有逆向手段局限：信号划分方法无动作关联、机器学习仅区分ID、OBD方案只能解析诊断类报文，覆盖范围受限。
+4. 缺少轻量化、可便携的端到端逆向工具，多数方案依赖高性能主机，无法实车现场快速测试。
+5. 缺乏能同时识别正常控制与ECU异常响应的逆向流程，难以挖掘模糊触发的车载安全缺陷。
 
----
+## 相关工作
+1. 信号边界识别类：READ、LibreCAN、CA-CRE等仅划分载荷字段，无法绑定车辆操控动作，达不到比特级精度。
+2. 机器学习逆向：仅聚类关联CAN ID与功能，不拆解载荷内部每一位控制含义。
+3. OBD依赖方案：仅能解析厂商预设PID诊断报文，车窗、雨刮等非诊断控制信号无法覆盖。
+4 CAN模糊测试：仅随机注入报文，缺少基于信号特征的定向变异，挖掘漏洞效率低。
+5. 现有比特级逆向：仅适配单一车型，识别功能数量少，不支持异常故障响应挖掘。
 
-## 二、核心方法
+## 本文解决方案
+### 1 双状态CAN数据采集预处理
+分别采集车辆静止稳态、人为触发操控的工况CAN日志，按CAN ID分组，将载荷转为比特矩阵，区分基线与变化流量。
+### 2 比特翻转率BFR信号分类
+计算每比特翻转频率，将载荷划分为常量、增减计数器、共翻转、随机四类信号，生成信号分类向量。对比稳态/工况向量筛选和控制相关的CAN ID。
+### 3 基于信号特征的定向模糊生成
+依据各类比特的翻转规则变异载荷，避免无效随机注入；将构造报文注入CAN总线，收集触发车辆动作的有效载荷集合。
+### 4 两层控制比特解析
+共性分析筛除不影响动作的可变比特；逐比特翻转测试，定位改动后无法触发控制的关键比特，完成比特-动作一一映射。
+### 5 轻量化无线逆向工具
+基于树莓派4B+CAN FD硬件实现无线终端，低CPU、内存占用，支持实车现场离线逆向分析。
 
-### 2.1 比特级逆向的搜索空间挑战
+## 实验分析
+1. 实验对象：特斯拉Model 3、零跑C10/C11三款实车，涵盖车窗、车灯、门锁等15类手动操控。
+2. 功能覆盖：Model 3共识别43类车辆行为，包含29项常规控制、14类ECU异常故障响应，15种手动操控全覆盖。
+3. 精度对比：现有方案多为ID/帧级，本框架实现纯比特级精准映射，可定位单比特控制指令。
+4. 资源耗时：总流程仅20分钟，CPU平均占用6%、内存73MB，普通嵌入式板卡即可运行。
+5. 泛化能力：兼容多款不同厂商整车架构，可发现常规采集无法触发的ECU异常漏洞。
 
-- 典型 CAN 帧：11 位 ID × 8 字节载荷 = 64 个载荷比特
-- 每个比特可能独立控制一个功能，也可能与其他比特联合编码（如温度用 8-bit 整数）
-- 暴力枚举不可行
-
-### 2.2 方案：Fuzzing 驱动的比特级信号映射
-
-1. **CAN 帧注入**：通过 OBD-II 接口发送不同 ID/载荷组合的 CAN 帧
-2. **物理响应观测**：摄像头/传感器捕捉车辆物理响应（灯亮/窗动/锁门等）
-3. **相关性分析**：将比特翻转与物理动作变化进行统计关联
-4. **比特级映射输出**：输出"ID 0x123, Byte 2, Bit 3 = 左转向灯控制"
-
-### 2.3 实验结果
-
-| 指标 | Tesla Model 3 | Leapmotor C10/C11 |
-|------|:----------:|:--------------:|
-| 识别动作数 | **43** | 多平台验证 |
-| 分辨率 | 比特级 | 比特级 |
-| 部署平台 | Raspberry Pi | Raspberry Pi |
-
----
-
-## 三、总结
-
-该工作将 CAN 逆向工程从"字节级猜测"推进到"比特级精确映射"，为车载入侵检测系统（IDS）提供了精准的信号语义基础。Raspberry Pi 级别的轻量部署意味着该框架可实际集成到车载安全网关中。
-
-**相关资源**：[IEEE Xplore](https://ieeexplore.ieee.org/document/11132421/) · 扩展版：IEEE Trans. Computers (2026)
+## 研究启发
+1. 仅靠单状态流量无法区分控制信号，稳态+工况对比是缩小逆向搜索空间的核心思路。
+2. 基于比特翻转率的信号分类能精准划分载荷语义，大幅减少模糊测试无效样本。
+3. 定向模糊优于纯随机注入，既能识别常规控制，也能暴露厂商未定义ECU异常漏洞。
+4. 车载CAN逆向不能只关注正常功能，异常响应挖掘对整车入侵检测至关重要。
+5. 逆向工具轻量化、便携化是实车安全审计落地关键，嵌入式平台可承担完整分析流程。

@@ -13,49 +13,53 @@ tags:
 # Resilient Federated Learning on Embedded Devices with Constrained Network Connectivity
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · Session: SEC1。针对嵌入式 IoT 设备在网络受限条件下参与联邦学习时带宽不足的挑战，提出自适应联邦学习框架——仅当本地梯度与全局梯度相似时才传输压缩更新，相比 SOTA 方法节省 60-78% 带宽，在仿真和真实硬件上验证。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Security · Federated Learning · Embedded Devices · Network Constrained · Gradient Compression</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">SEC1: AI/ML Security/Privacy</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/abs/10.1109/DAC63849.2025.11133269">https://dl.acm.org/doi/abs/10.1109/DAC63849.2025.11133269</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 自适应联邦学习，网络约束，通信效率，梯度压缩 </p>
 </div>
 
-| 项目 | 详情 |
-|------|------|
-| 会议 | 第 62 届设计自动化会议（DAC 2025） |
-| 论文标题 | Resilient Federated Learning on Embedded Devices with Constrained Network Connectivity（网络受限嵌入式设备上的弹性联邦学习） |
-| 作者 | Zihan Li, Han Liu, Ao Li, Ching-Hsiang Chan, Yevgeniy Vorobeychik, William Yeoh (WashU), Wenjing Lou (Virginia Tech), Ning Zhang (WashU) |
-| 机构 | Washington University in St. Louis / Virginia Tech |
-| 领域 | AI/ML 安全与隐私 |
-| 投稿方向 | Security（Session: SEC1） |
-| 关键词 | 联邦学习(Federated Learning)、嵌入式设备(Embedded Devices)、梯度压缩(Gradient Compression)、自适应(Adaptive) |
-| 核心资源 | [IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11133269) |
-
 ---
 
-## 一、一句话核心摘要
+## 研究概要
+本文提出AdaFL自适应联邦学习框架，先实证发现20%客户端掉线对精度影响微弱、异步陈旧更新危害更大。基于梯度相似度与带宽计算效用分块，动态筛选客户端、自适应梯度压缩。在嵌入式设备实测，通信开销降低60%~78%，精度最高提升30%，额外CPU开销仅0.05%。
 
-> 联邦学习的"去中心化"理想在嵌入式 IoT 设备上遇到残酷的现实：蜂窝/NB-IoT 网络带宽仅数十 kbps、连接间歇性中断。现有梯度压缩方法（如 Top-K、QSGD）在所有轮次中均匀压缩——但并非所有轮次的梯度更新都同等重要。本文提出**自适应联邦框架**：当设备本地梯度与全局梯度方向高度相似时（说明本地学习方向正确），仅传输高度压缩的更新；方向偏离时才传输完整梯度。带宽节省达 60–78%。
+## 背景和动机
+1. 嵌入式终端带宽不稳定、链路时断，传统联邦学习固定客户端参与、固定压缩策略，网络差时通信成本极高、收敛缓慢。
+2. 现有通信优化方案均为静态配置，无法实时适配动态带宽与异构本地梯度贡献差异。
+3. 缺少系统性实证分析网络掉线、梯度陈旧对同步/异步FL的差异化影响，优化缺乏理论依据。
+4. 固定梯度压缩会丢失有效更新信息，固定客户端选取易浪费带宽传输低价值梯度。
+5. 面向资源受限嵌入式终端的轻量化自适应FL方案缺失，现有优化计算开销过高无法落地。
 
----
+## 相关工作
+1. 协议层优化（FedAT等）：按网络分层分组、并行通信，仅降低等待时延，未区分梯度价值，带宽浪费严重。
+2. 模型梯度压缩（DGC、QSGD）：固定量化/稀疏压缩比例，无法根据梯度贡献动态调整，易损失关键更新。
+3. 主流FL基线（FedAvg/FedProx/FedAsync）：客户端参与比例固定，未利用梯度相似度筛选有效更新。
+4. 数据驱动优化（FedDM、ProgFed）：侧重数据分布优化，未结合实时网络状态做自适应传输控制。
+5. 嵌入式联邦方案：多仅裁剪模型尺寸，缺少客户端动态选择+自适应压缩协同优化机制。
 
-## 二、核心方法
+## 本文解决方案
+### 1 网络影响实证分析
+在IID/非IID、同步/异步多场景仿真，验证少量掉线精度损失小、异步梯度陈旧负面影响远大于客户端丢失，为自适应策略提供依据。
+### 2 效用分数动态客户端筛选
+结合上下行带宽、本地与全局梯度余弦相似度计算效用分；热身期全客户端参与稳定模型，训练后期仅选取高分客户端上传梯度，过滤低价值更新。
+### 3 自适应梯度压缩机制
+基于DGC改进，效用得分越高压缩倍率越低；搭配动量校正、梯度裁剪，低价值梯度大幅压缩，本地累积微小更新减少上传频次。
+### 4 同步/异步双模式适配
+同步场景动态控制每轮参与客户端上限；异步场景实时过滤陈旧低效用更新，缓解梯度过时带来的精度衰减。
+### 5 嵌入式轻量化实现
+效用计算、压缩模块简化运算逻辑，树莓派嵌入式集群验证，额外计算开销可忽略，适配边缘低算力设备。
 
-### 2.1 相似度判断
+## 实验分析
+1. 测试环境：CNN-MNIST、ResNet/VGG-CIFAR，同步FedAvg/FedAdam，异步FedAsync/FedBuff为对比基线。
+2. 通信开销：同步场景带宽减少70.88%，异步降低78.5%，梯度压缩最高达210倍。
+3. 模型精度：非IID场景收敛速度提升显著，最高精度提升30%，同等训练轮次优于全部对比算法。
+4. 计算开销：效用与压缩模块合计仅增加0.05%CPU周期，嵌入式集群无性能瓶颈。
+5. 扩展性：客户端规模20~100均可稳定运行，动态参与策略在异构终端集群鲁棒性强。
 
-- 计算本地梯度 ∇L 与全局梯度 ∇G 的余弦相似度
-- 相似度 > 阈值 → 传输极致压缩版本（如 1-bit signSGD）
-- 相似度 < 阈值 → 传输完整梯度（本地模型需要纠偏）
-
-### 2.2 实验结果
-
-| 指标 | 结果 |
-|------|------|
-| **带宽节省 vs SOTA** | **60–78%** |
-| 模型精度 | 与无压缩 FL 持平 |
-| 验证平台 | 仿真 + 真实嵌入式硬件 |
-
----
-
-## 三、总结
-
-该工作将联邦学习从"实验室 WiFi 环境"推进到了"真实 IoT 网络约束"——60-78% 带宽节省意味着使用 NB-IoT 的传感器节点也能实际参与联邦训练。
-
-**相关资源**：[IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11133269)
+## 研究启发
+1. 联邦学习存在天然容错空间，适度丢弃低价值梯度不会损害模型精度，可作为带宽优化核心突破口。
+2. 异步FL的核心瓶颈是梯度陈旧而非客户端掉线，优化需优先控制更新时效性，而非单纯扩容客户端数量。
+3. 梯度相似度可精准量化本地更新贡献，结合实时带宽的双重筛选策略比单一压缩/选客户端效果更好。
+4. 面向嵌入式边缘的FL优化必须兼顾通信、计算双重开销，轻量梯度打分模块才能落地低算力设备。
+5. 静态网络优化难以适配真实动态边缘环境，梯度价值感知的自适应框架是异构终端联邦学习最优路线。

@@ -12,51 +12,53 @@ tags:
 # SCONE: A Logic Locking Technique Utilizing SMT Solver and Circuit Encoding Scheme
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">DAC 2025（第62届设计自动化会议）· Security Track · Session: SEC3。针对逻辑锁定中 SOTA 方案（SFLL + D2PIPs）的可扩展性和安全性挑战，提出 SCONE——结合 SMT 求解器与安全电路编码方案的新一代逻辑锁定技术，在 IBEX 处理器（16K 门）上实现 350× 可扩展性提升，同时抵御 5 种 I/O 或结构攻击。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · Security · Logic Locking · SMT Solver · Hardware IP Protection · IBEX</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">SEC3: Hardware Security: Attack & Defense</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132623">https://dl.acm.org/doi/10.1109/DAC63849.2025.11132623</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 逻辑锁定，编码方案，SMT求解器 </p>
 </div>
 
-| 项目 | 详情 |
-|------|------|
-| 会议 | 第 62 届设计自动化会议（DAC 2025） |
-| 论文标题 | SCONE: A Logic Locking Technique Utilizing SMT Solver and Circuit Encoding Scheme（SCONE：基于 SMT 求解器与电路编码方案的逻辑锁定技术） |
-| 作者 | Zhaokun Han, Daniel Xing, Kostas Amberiadis (NIST), Ankur Srivastava, Jeyavijayan Rajendran |
-| 机构 | Texas A&M / U. Maryland / NIST |
-| 领域 | 硬件安全 / 逻辑锁定 |
-| 投稿方向 | Security（Session: SEC3） |
-| 关键词 | 逻辑锁定(Logic Locking)、SMT 求解器、硬件 IP 保护、IBEX、可扩展性(Scalability) |
-| 核心资源 | [IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11132623) |
-
 ---
 
-## 一、一句话核心摘要
+## 研究概要
+本文提出SCONE逻辑锁定方案，基于SMT求解器与安全电路编码改进SFLL-D2PIP。SMT直接提取D2PIP规避PI表NP难转换，扩展异或编码增大密钥空间，分硬件编码/设计期编码两种实现。在IBEX等电路验证，处理速度提升350倍，可抵御SAT、SPS等五类输入/结构攻击，PPA开销可控。
 
-> 逻辑锁定（Logic Locking）通过在芯片网表中插入密钥控制门来防止 IP 盗用——但 SOTA 方案 SFLL + D2PIPs 在较大设计上可扩展性崩溃（复杂度指数增长），且面临结构攻击的威胁。SCONE 采用 **SMT 求解器**替代枚举式搜索，并用**安全电路编码方案**保证锁定后的电路不泄漏密钥信息，在 IBEX RISC-V 处理器（16K 门）上实现 **350× 可扩展性提升**，同时抵御 5 种已知的 I/O 和结构攻击。
+## 背景和动机
+1. 全球代工IC供应链存在IP盗版、逆向、木马威胁，逻辑锁定是主流硬件IP防护手段。
+2. 现有SFLL-D2PIP需生成完整质蕴含PI表提取保护输入，属于NP难问题，大规模电路极易超时，可扩展性极差。
+3. 原始方案D2PIP样本稀少、可选范围窄，密钥长度短，易遭受暴力破解，灵活性与安全性不足。
+4. SFLL-HD、SFLL-flex等传统锁定方案无法抵御SPI等结构攻击，仅D2PIP具备综合防御能力，但落地困难。
+5. 缺少兼顾可扩展、高灵活、抗多类攻击一体化SFLL优化方案。
 
----
+## 相关工作
+1. 基础SFLL系列（SFLL-HD、SFLL-flex）：依靠固定PIP混淆，易被SPI结构攻击攻破，无D2距离约束。
+2. SFLL-D2PIP：基于PI表筛选距离≥2的PIP，可抵御5类攻击，但PI提取指数级耗时，D2样本稀缺。
+3. 硬件编码STATION：仅面向有限状态机，依赖状态转换表，通用性差，无法适配通用组合电路。
+4. 各类逻辑攻击：SAT输入攻击、ATR/SPS/FALL/SPI四类结构攻击，可破解多数简易锁定电路。
+5. 机器学习类锁定攻击（SAIL、OMLA）：针对密钥门插入型锁定，对SFLL类剥离架构无有效破解能力。
 
-## 二、核心方法
+## 本文解决方案
+### 1 SMT快速D2PIP提取模块
+绕过PI表生成，通过Z3 SMT求解器布尔约束直接筛选最小项D2PIP；限定目标最小项所有汉明距离1邻域输出恒0，迭代遍历全输入空间，100%提取成功率。
+### 2 多层异或安全编码机制
+原始n位输入新增m位扩展输入，新增位由原始多输入异或生成；原始D2PIP映射为更长编码后PIP，指数扩大密钥空间，保持Dist2安全特性。
+### 3 两种SCONE硬件实现
+①硬件编码ES：设计阶段不改动原电路，集成可配置编码模块，原始输入空间不变，SAT抗性有限；②设计期编码：原生扩展输入位，密钥长度大幅提升，SAT迭代呈指数增长，安全性更强。
+### 4 三层防护电路架构
+由编码单元ES、剥离功能电路FSC、恢复单元组成；仅输入合法长密钥时输出原始功能，非法密钥输出随机错误值。
+### 5 标准化保护流程
+先SMT提取D2PIP，无充足样本则启用编码扩展；生成编码电路后与SFLL单元综合，输出锁定门级网表，兼容主流综合工具。
 
-### 2.1 SMT 求解器替代枚举
+## 实验分析
+1. 测试基准：ISCAS85、ITC99、MIPS、IBEX、GPS等多规模电路，对比原生D2PIP方案。
+2. 可扩展性：原生方案多数电路72小时超时，SCONE处理IBEX仅748秒，速度提升350倍，提取成功率100%。
+3. 安全性能：两种实现均抵御SAT、SPS、ATR、FALL、SPI五类攻击；设计期编码SAT迭代指数上涨，PIP≥17位攻击72小时超时。
+4. PPA开销：无硬件编码实现面积/功耗开销低于10%，部分电路时序小幅提升；带ES实现开销更高但仍可控。
+5. 灵活性：编码可自定义扩展位数，D2PIP可选数量、最大密钥长度远高于原有方案，暴力破解难度大幅上升。
 
-SOTA 方案使用枚举搜索寻找最优的密钥门插入位置——电路规模增长时组合爆炸。SCONE 将密钥门插入建模为 **SMT 约束满足问题**，利用高效 SMT 求解器（如 Z3）在多项式时间内找到满足安全性和开销约束的解。
-
-### 2.2 电路编码方案
-
-为防止攻击者通过结构分析（如子电路识别、信号概率分析）推断密钥，SCONE 引入编码方案使锁定后的电路网表在结构上与原始网表统计不可区分。
-
-### 2.3 实验结果
-
-| 指标 | 结果 |
-|------|------|
-| **可扩展性提升** | **350×**（IBEX, 16K gates） |
-| **抵御攻击** | 5 种 I/O 或结构攻击 |
-| 对比基线 | SFLL + D2PIPs (SOTA) |
-
----
-
-## 三、总结
-
-SCONE 将逻辑锁定的可扩展性从"学术 benchmark"级别推进到"真实处理器核心"级别（IBEX 16K 门）。NIST 的参与表明逻辑锁定在政府级硬件安全供应链中受到的重视。
-
-**相关资源**：[IEEE Xplore](https://doi.org/10.1109/DAC63849.2025.11132623)
+## 研究启发
+1. PI表遍历式D2PIP提取存在本质性能瓶颈，SMT布尔约束是大规模电路可扩展替代方案。
+2. 输入层轻量异或编码无需修改核心逻辑，低成本提升密钥长度与暴力攻击抗性，不破坏Dist2安全约束。
+3. 逻辑锁定需分设计流程提供两种实现路径，设计期原生编码安全上限更高，后加编码适配存量IP保护。
+4. 评估硬件锁安全必须同时覆盖输入SAT与多类结构攻击，单一防御手段存在漏洞。
+5. 硬件安全EDA流程中，SMT工具可大量替代NP难网表变换操作，兼顾效率与防护强度。
