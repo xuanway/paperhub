@@ -1173,7 +1173,7 @@ nav:
         - "AutoClock: Automated Clock Management for Power-Efficient HLS Designs on FPGAs": DAC/2025/eda/autoclock_automated_clock_management_for_power_efficient_hls_designs_on_fpgas.md
         - "Automated Generation of Decoders for Irregular Instruction Sets Using Information-Theoretic Decision Trees Construction Algorithms": DAC/2025/eda/automated_generation_of_decoders_for_irregular_instruction_sets_using_information_theoretic_decision_trees_construction_algorithms.md
         - "BlasPart: A Deterministic Parallel Partitioner for Balanced Large-Scale Hypergraph Partitioning": DAC/2025/eda/blaspart_a_deterministic_parallel_partitioner_for_balanced_large_scale_hypergraph_partitioning.md
-        - "BoolE: Exact Symbolic Reasoning via Boolean Equality Saturation*": DAC/2025/eda/boole_exact_symbolic_reasoning_via_boolean_equality_saturation.md
+        - "BoolE: Exact Symbolic Reasoning via Boolean Equality Saturation": DAC/2025/eda/boole_exact_symbolic_reasoning_via_boolean_equality_saturation.md
         - "Cayman: Custom Accelerator Generation with Control Flow and Data Access Optimization": DAC/2025/eda/cayman_custom_accelerator_generation_with_control_flow_and_data_access_optimization.md
         - "Centralized Training and Decentralized Control through the Actor-Critic Paradigm for Highly Optimized Multicores": DAC/2025/eda/centralized_training_and_decentralized_control_through_the_actor_critic_paradigm_for_highly_optimized_multicores.md
         - "ChatLS: Multimodal Retrieval-Augmented Generation and Chain-of-Thought for Logic Synthesis Script Customization": DAC/2025/eda/chatls_multimodal_retrieval_augmented_generation_and_chain_of_thought_for_logic_synthesis_script_customization.md
@@ -1188,7 +1188,7 @@ nav:
         - "Design and Technology Co-optimization Utilizing Flip-FET (FFET) Standard Cells": DAC/2025/eda/design_and_technology_co_optimization_utilizing_flip_fet_ffet_standard_cells.md
         - "Differentiable Net-Moving and Local Congestion Mitigation for Routability-Driven Global Placement": DAC/2025/eda/differentiable_net_moving_and_local_congestion_mitigation_for_routability_driven_global_placement.md
         - "DSPlacer: DSP Placement for FPGA-based CNN accelerator": DAC/2025/eda/dsplacer_dsp_placement_for_fpga_based_cnn_accelerator.md
-        - "Dynamic Local Usage: An accurate model for usage of tile-internal wiring in Global Routing": DAC/2025/eda/dynamic_local_usage_an_accurate_model_for_usage_of_tile_internal_wiring_in_global_routing.md
+        - "Dynamic Local Usage: An Accurate Model for Usage of Tile-internal Wiring in Global Routing": DAC/2025/eda/dynamic_local_usage_an_accurate_model_for_usage_of_tile_internal_wiring_in_global_routing.md
         - "E-morphic: Scalable Equality Saturation for Structural Exploration in Logic Synthesis": DAC/2025/eda/e_morphic_scalable_equality_saturation_for_structural_exploration_in_logic_synthesis.md
         - "EDGE: DBMS-Empowered Boolean Decomposition for GIG Synthesis": DAC/2025/eda/edge_dbms_empowered_boolean_decomposition_for_gig_synthesis.md
         - "Efficient Continuous Logic Optimization with Diffusion Model": DAC/2025/eda/efficient_continuous_logic_optimization_with_diffusion_model.md
@@ -1201,10 +1201,10 @@ nav:
         - "FT-MUX: A Fault-Tolerant Microfluidic Multiplexer": DAC/2025/eda/ft_mux_a_fault_tolerant_microfluidic_multiplexer.md
         - "G-SpNN: GPU-Accelerated Passivity Enforcement for S-Parameter Modeling with Neural Networks": DAC/2025/eda/g_spnn_gpu_accelerated_passivity_enforcement_for_s_parameter_modeling_with_neural_networks.md
         - "Gem5-AcceSys: Enabling System-Level Exploration of Standard Interconnects for Novel Accelerators": DAC/2025/eda/gem5_accesys_enabling_system_level_exploration_of_standard_interconnects_for_novel_accelerators.md
-        - "GEM: GPU-Accelerated Emulator-Inspired RTL Simulation*": DAC/2025/eda/gem_gpu_accelerated_emulator_inspired_rtl_simulation.md
+        - "GEM: GPU-Accelerated Emulator-Inspired RTL Simulation": DAC/2025/eda/gem_gpu_accelerated_emulator_inspired_rtl_simulation.md
         - "Generalizable Lithographic Hotspot Detection Using Asynchronous Meta-Learning with Only One Shot": DAC/2025/eda/generalizable_lithographic_hotspot_detection_using_asynchronous_meta_learning_with_only_one_shot.md
         - "Generative Model Based Standard Cell Timing Library Characterization": DAC/2025/eda/generative_model_based_standard_cell_timing_library_characterization.md
-        - "GLiTCH : GLiTCH induced Transitions for Secure Crypto-Hardware": DAC/2025/eda/glitch_glitch_induced_transitions_for_secure_crypto_hardware.md
+        - "GLiTCH induced Transitions for Secure Crypto-Hardware": DAC/2025/eda/glitch_glitch_induced_transitions_for_secure_crypto_hardware.md
         - "GLOVA: Global and Local Variation-Aware Analog Circuit Design with Risk-Sensitive Reinforcement Learning": DAC/2025/eda/glova_global_and_local_variation_aware_analog_circuit_design_with_risk_sensitive_reinforcement_learning.md
         - "GNN-MLS: Signal Routing in Mixed-Node 3D ICs through GNN-Assisted Metal Layer Sharing": DAC/2025/eda/gnn_mls_signal_routing_in_mixed_node_3d_ics_through_gnn_assisted_metal_layer_sharing.md
         - "GPart: A GNN-Enabled Multilevel Graph Partitioner": DAC/2025/eda/gpart_a_gnn_enabled_multilevel_graph_partitioner.md
@@ -1215,7 +1215,7 @@ nav:
         - "High-Performance Computing Architecture Exploration with Stage-Enhanced Bayesian Optimization": DAC/2025/eda/high_performance_computing_architecture_exploration_with_stage_enhanced_bayesian_optimization.md
         - "INSIGHT: A Universal Neural Simulator Framework for Analog Circuits with Autoregressive Transformers": DAC/2025/eda/insight_a_universal_neural_simulator_framework_for_analog_circuits_with_autoregressive_transformers.md
         - "Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design": DAC/2025/eda/insights_from_rights_and_wrongs_a_large_language_model_for_solving_assertion_failures_in_rtl_design.md
-        - "INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications*": DAC/2025/eda/insta_an_ultra_fast_differentiable_statistical_static_timing_analysis_engine_for_industrial_physical_design_applications.md
+        - "INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications": DAC/2025/eda/insta_an_ultra_fast_differentiable_statistical_static_timing_analysis_engine_for_industrial_physical_design_applications.md
         - "InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework": DAC/2025/eda/interconfuzz_a_fuzzing_based_comprehensive_noc_verification_framework.md
         - "IRGNN: A Graph-based Framework Integrating Numerical Solution and Point Cloud for Static IR Drop Prediction": DAC/2025/eda/irgnn_a_graph_based_framework_integrating_numerical_solution_and_point_cloud_for_static_ir_drop_prediction.md
         - "Leveraging Critical Proof Obligations for Efficient IC3 Verification": DAC/2025/eda/leveraging_critical_proof_obligations_for_efficient_ic3_verification.md
@@ -1223,7 +1223,7 @@ nav:
         - "Logic Optimization Meets SAT: A Novel Framework for Circuit-SAT Solving": DAC/2025/eda/logic_optimization_meets_sat_a_novel_framework_for_circuit_sat_solving.md
         - "Logic Restructuring with Preserved Logic Blocks": DAC/2025/eda/logic_restructuring_with_preserved_logic_blocks.md
         - "Look Before You Leap: A Self-Review Bayesian Optimization Method for Constrained High-Dimensional Design Space Exploration": DAC/2025/eda/look_before_you_leap_a_self_review_bayesian_optimization_method_for_constrained_high_dimensional_design_space_exploration.md
-        - "LVM-MO: A Large Vision Model Pioneer for Full-Chip Mask Optimization*": DAC/2025/eda/lvm_mo_a_large_vision_model_pioneer_for_full_chip_mask_optimization.md
+        - "LVM-MO: A Large Vision Model Pioneer for Full-Chip Mask Optimization": DAC/2025/eda/lvm_mo_a_large_vision_model_pioneer_for_full_chip_mask_optimization.md
         - "Machine Learning-Driven STL Generation for Enhancing Functional Safety of E/E Systems": DAC/2025/eda/machine_learning_driven_stl_generation_for_enhancing_functional_safety_of_e_e_systems.md
         - "MAGCS: Multi-Agent Guided Configuration Search for Optimization Fault Detection in Logic Synthesis": DAC/2025/eda/magcs_multi_agent_guided_configuration_search_for_optimization_fault_detection_in_logic_synthesis.md
         - "MAGE: A Multi-Agent Engine for Automated RTL Code Generation": DAC/2025/eda/mage_a_multi_agent_engine_for_automated_rtl_code_generation.md
@@ -1239,7 +1239,7 @@ nav:
         - "NeuralMesh: Neural Network For FEM Mesh Generation in 2.5D/3D Chiplet Thermal Simulation": DAC/2025/eda/neuralmesh_neural_network_for_fem_mesh_generation_in_2_5d_3d_chiplet_thermal_simulation.md
         - "New Time-Domain Preconditioners for HB Jacobian of RF Circuits": DAC/2025/eda/new_time_domain_preconditioners_for_hb_jacobian_of_rf_circuits.md
         - "On Design Space Exploration of Cache System in Multi-Chiplet Systems": DAC/2025/eda/on_design_space_exploration_of_cache_system_in_multi_chiplet_systems.md
-        - "Optimizing Recovery Logic in Speculative HLS": DAC/2025/eda/optimizing_recovery_logic_in_speculative_hls.md
+        - "Optimizing Recovery Logic in Speculative High-Level Synthesis": DAC/2025/eda/optimizing_recovery_logic_in_speculative_hls.md
         - "Parallel Dynamic Partitioning for Datapath Combinational Equivalence Checking": DAC/2025/eda/parallel_dynamic_partitioning_for_datapath_combinational_equivalence_checking.md
         - "PastATPG: A Hybrid ATPG Framework for Better Test Compaction with Partial Assignment SAT": DAC/2025/eda/pastatpg_a_hybrid_atpg_framework_for_better_test_compaction_with_partial_assignment_sat.md
         - "PatLabor: Pareto Optimization of Timing-Driven Routing Trees": DAC/2025/eda/patlabor_pareto_optimization_of_timing_driven_routing_trees.md
@@ -1258,10 +1258,10 @@ nav:
         - "RUPlace: Optimizing Routability via Unified Placement and Routing Formulation": DAC/2025/eda/ruplace_optimizing_routability_via_unified_placement_and_routing_formulation.md
         - "SDM-PEB: Spatial-Depthwise Mamba for Enhanced Post-Exposure Bake Simulation": DAC/2025/eda/sdm_peb_spatial_depthwise_mamba_for_enhanced_post_exposure_bake_simulation.md
         - "Secondary-Power-Cell-Aware Detailed Placement in Multiple Power Domain Designs": DAC/2025/eda/secondary_power_cell_aware_detailed_placement_in_multiple_power_domain_designs.md
-        - "SIMAX: Accelerating RTL Simulation for Large-Scale Design": DAC/2025/eda/simax_accelerating_rtl_simulation_for_large_scale_design.md
+        - "GSIM: Accelerating RTL Simulation for Large-Scale Designs": DAC/2025/eda/simax_accelerating_rtl_simulation_for_large_scale_design.md
         - "Simulation-based Parallel Sweeping: A New Perspective on Combinational Equivalence Checking": DAC/2025/eda/simulation_based_parallel_sweeping_a_new_perspective_on_combinational_equivalence_checking.md
         - "smaRTLy: RTL Optimization with Logic Inferencing and Structural Rebuilding": DAC/2025/eda/smartly_rtl_optimization_with_logic_inferencing_and_structural_rebuilding.md
-        - "SSDL-ILT: Efficient ILT utilizing a self-supervised deep learning model": DAC/2025/eda/ssdl_ilt_efficient_ilt_utilizing_a_self_supervised_deep_learning_model.md
+        - "SSDL-ILT: Efficient ILT Utilizing a Self-Supervised Deep Learning Model": DAC/2025/eda/ssdl_ilt_efficient_ilt_utilizing_a_self_supervised_deep_learning_model.md
         - "Synergistic Die-Level Router for Multi-FPGA System with Time-Division Multiplexing Optimization": DAC/2025/eda/synergistic_die_level_router_for_multi_fpga_system_with_time_division_multiplexing_optimization.md
         - "Synthesis of CFET Cell Library Leveraging Backside Metal Routing": DAC/2025/eda/synthesis_of_cfet_cell_library_leveraging_backside_metal_routing.md
         - "To Tackle Cost-Skew Tradeoff: An Adaptive Learning Approach for Hub Node Selection": DAC/2025/eda/to_tackle_cost_skew_tradeoff_an_adaptive_learning_approach_for_hub_node_selection.md

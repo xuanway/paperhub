@@ -1,35 +1,62 @@
 ---
-title: "SSDL-ILT: Efficient ILT utilizing a self-supervised deep learning model"
+title: "SSDL-ILT: Efficient ILT Utilizing a Self-Supervised Deep Learning Model"
 description: "DAC 2025 · EDA"
 tags:
   - "DAC2025"
   - "EDA"
 ---
 
-# SSDL-ILT: Efficient ILT utilizing a self-supervised deep learning model
+# SSDL-ILT: Efficient ILT Utilizing a Self-Supervised Deep Learning Model
 
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">EDA8: Design for Manufacturing and Reliability</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
-<p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11133136">https://dl.acm.org/doi/10.1109/DAC63849.2025.11133136</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 逆向光刻技术，自监督，深度学习，亚分辨率辅助图形，少样本学习 </p>
 </div>
 
 
 ---
 
-## 一句话总结
+## 研究概要
+本文提出自监督光刻逆成像框架SSDL-ILT，采用注意力R2U-Net网络，构造融合成像误差、工艺波动、掩模复杂度的物理损失函数，仅输入版图即可训练，端到端输出含SRAF优化掩模。ICCAD2013基准测试，成像L2误差平均降30%，推理提速最高12000倍，少样本迁移可适配陌生版图。
 
-> 该工作属于 EDA 方向，围绕关键系统瓶颈提出优化方案，并在 DAC 2025 语境下验证其价值。
+## 背景和动机
+1. 传统数值ILT迭代仿真开销巨大，单版图求解耗时数百秒，难以适配先进工艺大批量掩模优化需求。
+2. 现有深度学习ILT均为监督式，需海量版图-掩模配对标注数据，数据集获取成本极高。
+3. 主流DL-ILT模型仅输出初始掩模，仍需后端ILT二次迭代优化，完整流程总耗时依旧偏高。
+4. 模型缺少对工艺波动PVB与次分辨率辅助图形(SRAF)可控约束，工艺窗口与掩模可制造性难以平衡。
+5. 预训练模型跨陌生版图泛化能力弱，少量新设计下成像失真严重，缺少少样本适配方案。
 
-## 方法简述
+## 相关工作
+1. 传统数值ILT(MOSAIC等)：基于物理迭代优化，精度高但计算极慢，无法规模化部署。
+2. 监督式GAN-OPC：依赖成对标注数据，推理结果需二次ILT精修，整体TAT长。
+3. Neural-ILT/A2-ILT：U-Net类监督模型，兼顾速度，但训练数据门槛高，SRAF生成不可控。
+4. DevelSet：水平集DL光刻模型，同样需要标注样本，未引入工艺波动损失约束。
+5. 通用图像自监督学习：无光刻物理先验，无法适配掩模成像、工艺变化等EDA专用约束。
 
-- 识别该方向中的关键性能、能效或设计自动化瓶颈。
-- 通过软硬件协同或 EDA 工具链优化构建可落地方案。
-- 在典型工作负载上进行评估并分析设计权衡。
+## 本文解决方案
+### 1 注意力R2U-Net网络主干
+融合循环残差卷积与注意力门控，编码器提取版图多尺度特征，解码器结合跳跃连接还原高分辨率掩模，末端Sigmoid输出0-1灰度掩模。
+### 2 光刻物理自监督损失函数
+三项联合损失：L2成像误差损失保证晶圆图形贴合版图；PVB损失缩小剂量波动偏差；复杂度损失约束SRAF生成量，权重可调平衡工艺窗口与掩模复杂度。
+### 3 无标注自监督训练流水线
+仅输入目标版图，前向光刻仿真生成晶圆图回传计算损失，无需真实优化掩模标签；采用余弦退火学习率与早停策略防止过拟合。
+### 4 端到端掩模推理机制
+模型直接输出灰度掩模，0.5阈值二值化得到成品掩模，无需额外ILT迭代，内置可调权重自由控制SRAF多少。
+### 5 少样本迁移学习方案
+预训练模型冻结主干，少量陌生版图微调，快速适配全新几何特征版图，大幅缓解泛化不足问题。
 
-## 主要结果
+## 实验分析
+1. 测试基准：ICCAD2013掩模竞赛数据集、ISPD2019陌生版图，对比传统ILT与GAN-OPC、Neural-ILT、A2-ILT。
+2. 精度指标：平均L2误差24915，较主流DL-ILT降低约30%；PVB数值最优，工艺窗口更稳定。
+3. 推理效率：单版图推理仅0.031s，相较传统ILT提速上万倍，对比其他DL方案提速150倍以上。
+4. 数据优势：仅100张版图训练效果优于4000样本监督模型，2000样本即可收敛至最优精度。
+5. 可调性与泛化：调整损失γ权重可自由增减SRAF；少量样本微调后陌生版图成像孔洞、断线缺陷大幅减少。
 
-- 在目标指标（性能、能效或设计质量）上相对基线实现改进。
-- 展示了与现有 EDA 或系统栈集成的可行性。
-- 为后续扩展和工程化部署提供依据。
+## 研究启发
+1. 光刻优化可依托光刻前向仿真构建自监督范式，省去昂贵版图-掩模配对标注数据。
+2. DL掩模模型必须嵌入PVB、掩模复杂度等工艺物理约束，仅追求成像误差会牺牲制造鲁棒性。
+3. 端到端直接输出成品掩模是大幅缩短OPC流程的关键，避免二次ILT迭代带来额外耗时。
+4. 注意力循环残差网络能更好捕捉版图精细光刻特征，提升复杂图形优化保真度。
+5. 预训练+少样本微调可解决版图跨分布泛化难题，降低新工艺、新IP的模型重构成本。

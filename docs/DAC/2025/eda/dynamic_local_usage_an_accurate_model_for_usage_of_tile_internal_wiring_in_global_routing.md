@@ -1,35 +1,62 @@
 ---
-title: "Dynamic Local Usage: An accurate model for usage of tile-internal wiring in Global Routing"
+title: "Dynamic Local Usage: An Accurate Model for Usage of Tile-internal Wiring in Global Routing"
 description: "DAC 2025 · EDA"
 tags:
   - "DAC2025"
   - "EDA"
 ---
 
-# Dynamic Local Usage: An accurate model for usage of tile-internal wiring in Global Routing
+# Dynamic Local Usage: An Accurate Model for Usage of Tile-internal Wiring in Global Routing
 
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">EDA7: Physical Design and Verification</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
-<p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132507">https://dl.acm.org/doi/10.1109/DAC63849.2025.11132507</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 物理设计，超大规模集成电路，布局与布线 </p>
 </div>
 
 
 ---
 
-## 一句话总结
+## 研究概要
+本文提出DLU动态局部布线占用模型用于全局布线，引入尖端扩展惩罚精确刻画单元内部拥挤，配套RC感知斯坦纳树、XY局部优化、分层嵌入算法。在3/5nm工业电路测试，相较传统全局布线，过孔数、布线绕路、DR违规显著下降，时序裕量改善，仅小幅增加全局布线耗时。
 
-> 该工作属于 EDA 方向，围绕关键系统瓶颈提出优化方案，并在 DAC 2025 语境下验证其价值。
+## 背景和动机
+1. 传统全局布线将引脚简化至网格中心，仅静态预估局部布线占用，无法反映单元内真实布线拥挤，与详细布线结果偏差大。
+2. 未考虑导线尖端间距、布线拉伸带来的空间损耗，全局容量估算偏乐观，后置详细布线产生大量DR违规与长绕路。
+3. 现有全局算法缺少单元内XY坐标、分层协同优化，RC延迟预估粗糙，时序收敛难度高。
+4. 引脚微调、缓冲插入等增量设计场景下，静态占用模型无法动态更新拥挤评估，迭代优化收益差。
+5. 大尺寸全局网格会大幅降低传统模型精度，限制布线工具吞吐提升空间。
 
-## 方法简述
+## 相关工作
+1. BonnRoute基础全局布线：采用静态局部占用估算，无尖端损耗建模，单元内拥挤预测失真。
+2. Glare可布性评估工具：仅粗粒度网格容量统计，不区分导线/过孔形状，无法量化尖端空间开销。
+3. Sproute软容量全局布线：面向并行框架，未精确建模单元内引脚互连带来的局部资源消耗。
+4. 传统RC感知斯坦纳算法：仅优化网格间路径，缺少Tile内部坐标与分层联合优化。
+5. 固定分层分配方案：不基于子树RC代价动态选择布线层，时序与拥挤权衡能力弱。
 
-- 识别该方向中的关键性能、能效或设计自动化瓶颈。
-- 通过软硬件协同或 EDA 工具链优化构建可落地方案。
-- 在典型工作负载上进行评估并分析设计权衡。
+## 本文解决方案
+### 1 动态局部占用DL容量模型
+精确计算各类导线、过孔占用面积；提出尖端扩展惩罚项，建模布线拉伸、最小尖端间距带来额外空间开销；区分标准/宽导线，采用平均阻塞轨道计算单位占用。
+### 2 RC感知网格斯坦纳树求解
+将尖端惩罚转化节点代价重构斯坦纳问题；资源共享松弛求解+随机舍入，每条网络迭代更新DLU拥挤代价，兼顾线长、过孔与时序。
+### 3 Tile内部XY动态优化
+逆向拓扑动态规划调整斯坦纳节点平面坐标，同时评估局部拥挤与下游RC电容，独立优化X/Y维度，降低单元内布线冲突。
+### 4 动态规划分层嵌入算法
+自叶子向根遍历子树，枚举布线层与分支排布顺序；综合拥挤、过孔RC代价选择最优层分配，给出近似性能理论界。
+### 5 端到端全局布线流水线
+网格路径求解→单元内XY优化→分层分配，每轮迭代动态刷新DLU占用，输出可布性更优的全局布线方案。
 
-## 主要结果
+## 实验分析
+1. 实验环境：AMD EPYC 64核服务器，95组3/5nm无时序基准、17组5nm时序工业电路，对比商用传统全局布线器。
+2. 布线资源：全局线长平均降低0.61%，过孔总量下降8.08%；详细布线线长仅小幅上浮。
+3. 可布性：DR违规总数下降8.17%，违规过孔减少18.73%，25%/50%绕路网线分别下降43.44%、59.53%。
+4. 时序指标：总负TNS平均降低20.59%，最差负时序裕量显著改善。
+5. 运行代价：全局布线耗时提升约61.66%，但详细布线耗时大幅缩减，整体总迭代时间更优。
 
-- 在目标指标（性能、能效或设计质量）上相对基线实现改进。
-- 展示了与现有 EDA 或系统栈集成的可行性。
-- 为后续扩展和工程化部署提供依据。
+## 研究启发
+1. 全局布线不能简化忽略Tile内部引脚互连，尖端间距、布线拉伸等工艺损耗必须纳入容量模型。
+2. 动态实时更新局部拥挤占用，是缩小全局/详细布线偏差、减少后期DR修复的核心手段。
+3. 单元内XY坐标优化与分层分配需协同RC延迟，才能同步优化拥挤与时序两大目标。
+4. 尖端惩罚项可量化详细布线的空间损耗，大网格全局布局下仍能保持预测精度。
+5. 适度增加全局布线计算开销，能大幅降低详细布线修复成本，先进工艺设计收益显著。

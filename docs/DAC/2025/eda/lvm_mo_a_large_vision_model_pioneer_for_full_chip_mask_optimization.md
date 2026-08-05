@@ -1,35 +1,62 @@
 ---
-title: "LVM-MO: A Large Vision Model Pioneer for Full-Chip Mask Optimization*"
+title: "LVM-MO: A Large Vision Model Pioneer for Full-Chip Mask Optimization"
 description: "DAC 2025 · EDA"
 tags:
   - "DAC2025"
   - "EDA"
 ---
 
-# LVM-MO: A Large Vision Model Pioneer for Full-Chip Mask Optimization*
+# LVM-MO: A Large Vision Model Pioneer for Full-Chip Mask Optimization
 
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">EDA8: Design for Manufacturing and Reliability</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
-<p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dl.acm.org/doi/10.1109/DAC63849.2025.11132784">https://dl.acm.org/doi/10.1109/DAC63849.2025.11132784</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong> 大视觉模型，全芯片掩模优化，光刻数据驱动，版图特征提取器 </p>
 </div>
 
 
 ---
 
-## 一句话总结
+## 研究概要
+本文提出面向全版图掩模优化的大视觉模型LVM-MO，构建光刻感知自编码器，采用贴合衍射范围移位窗口注意力，分三阶段千万版图数据训练。支持零样本全版图推理，规避分块拼接失真；对比SOTA，L2/EPE指标平均提升超50%，推理速度提速1000倍，单卡秒级输出完整掩模。
 
-> 该工作属于 EDA 方向，围绕关键系统瓶颈提出优化方案，并在 DAC 2025 语境下验证其价值。
+## 背景和动机
+1. 先进低k1光刻下全版图ILT迭代计算量爆炸，传统分块OPC/ILT存在块边界拼接失真，晶圆成像保真度差。
+2. 现有神经网络OPC仅处理小版图片段，无法捕捉全局多边形长程衍射耦合，泛化至大芯片失效。
+3. 普通CNN/ViT全局注意力处理百万像素版图显存开销数百GB，工业硬件无法承载。
+4. 多数模型仅单一阶段训练，未分层学习几何、光刻、多尺度特征，大版图零样本泛化弱。
+5. 现有方案推理阶段仍反复迭代光刻仿真，全芯片TAT长达数小时，难以适配量产迭代需求。
 
-## 方法简述
+## 相关工作
+1. 分块类AI-OPC（EGAN-OPC、Neural-ILT）：采用分治策略，块间产生成像断层，全局优化能力缺失。
+2. Multi-ILT：多分辨率迭代，仍依赖分块拼接，大版图精度衰减明显。
+3. Full-ILT：纯数值逆光刻，无模型预加速，全芯片迭代耗时极长。
+4. 通用ViT/Swin Transformer：未结合光刻衍射物理约束，全局注意力显存成本极高。
+5. 传统光刻专用网络：仅适配小窗口版图，缺少千万级工业版图预训练范式，泛化不足。
 
-- 识别该方向中的关键性能、能效或设计自动化瓶颈。
-- 通过软硬件协同或 EDA 工具链优化构建可落地方案。
-- 在典型工作负载上进行评估并分析设计权衡。
+## 本文解决方案
+### 1 光刻感知自编码器主干
+由版图特征提取器与掩模解码器组成；大尺寸Patch嵌入适配全版图输入，附加可学习位置编码记录多边形空间坐标。
+### 2 光刻受限移位窗口多头注意力
+依据2μm光学衍射有效范围划定计算窗口；偶数层窗口偏移，消除分块边界断层，将注意力复杂度从O(N²)降至线性，大幅降低显存占用。
+### 3 三阶段分层训练流水线
+阶段1版图几何重构学习，掌握多边形空间分布；阶段2嵌入ILT前向仿真反向传播，学习光刻衍射与光刻胶特性；阶段3多尺度版图校准，实现全芯片零样本推理。
+### 4 千万级版图数据集构建
+基于开源RISC-V等设计抽取多层GDS版图，生成500万不同尺寸训练样本，覆盖多工艺版图分布。
+### 5 单卡零样本全版图推理
+训练开销前置，推理无需迭代光刻仿真，直接输出完整优化掩模，支持从微米到百微米级版图一次性处理。
 
-## 主要结果
+## 实验分析
+1. 测试基准：ICCAD2013标准案例+自研CHIP工业全版图（2~153μm²），对比EGAN-OPC、Neural-ILT、Multi-ILT、Full-ILT。
+2. 精度指标：4μm版图平均L2误差降低58%、平均EPE下降183%，PVB保持相近水平，晶圆成像一致性显著提升。
+3. 推理效率：60/150μm全版图仅需4s、28s，相较基线提速超1000倍，单A100即可完成全芯片运算。
+4. 消融实验：移位窗口注意力、三阶段训练、Patch尺寸均为关键模块，缺失任一会大幅提升L2误差。
+5. 工程优势：无分块拼接失真，无需多卡分布式迭代，适配先进工艺量产掩模快速迭代流程。
 
-- 在目标指标（性能、能效或设计质量）上相对基线实现改进。
-- 展示了与现有 EDA 或系统栈集成的可行性。
-- 为后续扩展和工程化部署提供依据。
+## 研究启发
+1. 光刻AI模型不能直接套用通用视觉Transformer，必须结合衍射物理约束设计窗口注意力，平衡精度与显存开销。
+2. 分治OPC/ILT的固有拼接缺陷只能通过全局大模型彻底解决，全局感知是全版图优化核心。
+3. 将高开销仿真迭代转移至训练阶段，推理端轻量化是光刻EDA落地关键“左移”思路。
+4. 分层训练由几何到光刻再到多尺度，可逐步构建版图-光刻联合表征，大幅提升大版图泛化能力。
+5. 千万级工业版图预训练大视觉模型，可实现不同设计零样本掩模优化，降低新流片适配成本。

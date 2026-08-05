@@ -72,9 +72,9 @@ Scaling, Learning, and Parallelizing the Future of Verification and Synthesis
 |------------|-----------|
 | [InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework](interconfuzz_a_fuzzing_based_comprehensive_noc_verification_framework.md) | EDA2: Design Verification and Validation |
 | [Multicore Environment State Representation for Agent-Directed Test Generation](multicore_environment_state_representation_for_agent_directed_test_generation.md) | EDA2: Design Verification and Validation |
-| [SIMAX: Accelerating RTL Simulation for Large-Scale Design](simax_accelerating_rtl_simulation_for_large_scale_design.md) | EDA2: Design Verification and Validation |
+| [GSIM: Accelerating RTL Simulation for Large-Scale Designs](simax_accelerating_rtl_simulation_for_large_scale_design.md) | EDA2: Design Verification and Validation |
 | [Insights from Rights and Wrongs: A Large Language Model for Solving Assertion Failures in RTL Design](insights_from_rights_and_wrongs_a_large_language_model_for_solving_assertion_failures_in_rtl_design.md) | EDA2: Design Verification and Validation |
-| [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation*](gem_gpu_accelerated_emulator_inspired_rtl_simulation.md) | EDA2: Design Verification and Validation |
+| [GEM: GPU-Accelerated Emulator-Inspired RTL Simulation](gem_gpu_accelerated_emulator_inspired_rtl_simulation.md) | EDA2: Design Verification and Validation |
 | [Simulation-based Parallel Sweeping: A New Perspective on Combinational Equivalence Checking](simulation_based_parallel_sweeping_a_new_perspective_on_combinational_equivalence_checking.md) | EDA2: Design Verification and Validation |
 | [MAGCS: Multi-Agent Guided Configuration Search for Optimization Fault Detection in Logic Synthesis](magcs_multi_agent_guided_configuration_search_for_optimization_fault_detection_in_logic_synthesis.md) | EDA2: Design Verification and Validation |
 | [Parallel Dynamic Partitioning for Datapath Combinational Equivalence Checking](parallel_dynamic_partitioning_for_datapath_combinational_equivalence_checking.md) | EDA2: Design Verification and Validation |
@@ -98,12 +98,12 @@ Breakthroughs in Timing Prediction, Analysis, and Optimization
 
 | 中英论文题目 | 中英关键词 |
 |------------|-----------|
-| [INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications*](insta_an_ultra_fast_differentiable_statistical_static_timing_analysis_engine_for_industrial_physical_design_applications.md) | EDA3: Timing Analysis and Optimization |
+| [INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications](insta_an_ultra_fast_differentiable_statistical_static_timing_analysis_engine_for_industrial_physical_design_applications.md) | EDA3: Timing Analysis and Optimization |
 | [GTN-Path: Efficient Path Timing Prediction through Waveform Propagation with Graph Transformer](gtn_path_efficient_path_timing_prediction_through_waveform_propagation_with_graph_transformer.md) | EDA3: Timing Analysis and Optimization |
 | [Generative Model Based Standard Cell Timing Library Characterization](generative_model_based_standard_cell_timing_library_characterization.md) | EDA3: Timing Analysis and Optimization |
 | [Truly Pre-Routing Timing Prediction via Considering Power Delivery Networks](truly_pre_routing_timing_prediction_via_considering_power_delivery_networks.md) | EDA3: Timing Analysis and Optimization |
 | [A Fast, Iterative Clock Skew Scheduling Algorithm with Dynamic Sequential Graph Extraction](a_fast_iterative_clock_skew_scheduling_algorithm_with_dynamic_sequential_graph_extraction.md) | EDA3: Timing Analysis and Optimization |
-| [GLiTCH : GLiTCH induced Transitions for Secure Crypto-Hardware](glitch_glitch_induced_transitions_for_secure_crypto_hardware.md) | EDA3: Timing Analysis and Optimization |
+| [GLiTCH induced Transitions for Secure Crypto-Hardware](glitch_glitch_induced_transitions_for_secure_crypto_hardware.md) | EDA3: Timing Analysis and Optimization |
 
 
 ## EDA4：功耗分析与优化 (8)
@@ -150,7 +150,7 @@ Follow the Logic: Advances in Logic Synthesis
 
 | 中英论文题目 | 中英关键词 |
 |------------|-----------|
-| [BoolE: Exact Symbolic Reasoning via Boolean Equality Saturation*](boole_exact_symbolic_reasoning_via_boolean_equality_saturation.md) | EDA5: RTL/Logic Level and High-level Synthesis |
+| [BoolE: Exact Symbolic Reasoning via Boolean Equality Saturation](boole_exact_symbolic_reasoning_via_boolean_equality_saturation.md) | EDA5: RTL/Logic Level and High-level Synthesis |
 | [E-morphic: Scalable Equality Saturation for Structural Exploration in Logic Synthesis](e_morphic_scalable_equality_saturation_for_structural_exploration_in_logic_synthesis.md) | EDA5: RTL/Logic Level and High-level Synthesis |
 | [EDGE: DBMS-Empowered Boolean Decomposition for GIG Synthesis](edge_dbms_empowered_boolean_decomposition_for_gig_synthesis.md) | EDA5: RTL/Logic Level and High-level Synthesis |
 | [Logic Restructuring with Preserved Logic Blocks](logic_restructuring_with_preserved_logic_blocks.md) | EDA5: RTL/Logic Level and High-level Synthesis |
@@ -195,7 +195,7 @@ Look Both Ways: New Directions in High-Level Synthesis and Approximate Computing
 | 中英论文题目 | 中英关键词 |
 |------------|-----------|
 | [PipeLink: a pipelined resource sharing system for dataflow high-level synthesis](pipelink_a_pipelined_resource_sharing_system_for_dataflow_high_level_synthesis.md) | xxx |
-| [Optimizing Recovery Logic in Speculative HLS](optimizing_recovery_logic_in_speculative_hls.md) | xxx |
+| [Optimizing Recovery Logic in Speculative High-Level Synthesis](optimizing_recovery_logic_in_speculative_hls.md) | xxx |
 | [AutoClock: Automated Clock Management for Power-Efficient HLS Designs on FPGAs](autoclock_automated_clock_management_for_power_efficient_hls_designs_on_fpgas.md) | xxx |
 | [Cayman: Custom Accelerator Generation with Control Flow and Data Access Optimization](cayman_custom_accelerator_generation_with_control_flow_and_data_access_optimization.md) | xxx |
 | [ADVISOR: Approximate Computing-frienDly High-LeVel Synthesis DesIgn Space ExplORer](advisor_approximate_computing_friendly_high_level_synthesis_design_space_explorer.md) | xxx |
@@ -287,7 +287,7 @@ All You Can Route Buffet
 |------------|-----------|
 | [PatLabor: Pareto Optimization of Timing-Driven Routing Trees](patlabor_pareto_optimization_of_timing_driven_routing_trees.md) | EDA7: Physical Design and Verification |
 | [Cost-Distance Steiner Trees for Timing-Constrained Global Routing](cost_distance_steiner_trees_for_timing_constrained_global_routing.md) | EDA7: Physical Design and Verification |
-| [Dynamic Local Usage: An accurate model for usage of tile-internal wiring in Global Routing](dynamic_local_usage_an_accurate_model_for_usage_of_tile_internal_wiring_in_global_routing.md) | EDA7: Physical Design and Verification |
+| [Dynamic Local Usage: An Accurate Model for Usage of Tile-internal Wiring in Global Routing](dynamic_local_usage_an_accurate_model_for_usage_of_tile_internal_wiring_in_global_routing.md) | EDA7: Physical Design and Verification |
 | [Reinforcement Learning-Driven Window Selection for Enhanced Window-Based Rip-up and Reroute in Chip Detailed Routing](reinforcement_learning_driven_window_selection_for_enhanced_window_based_rip_up_and_reroute_in_chip_detailed_routing.md) | EDA7: Physical Design and Verification |
 | [Mr.TPL: A New Multi-pin Routing Method for Triple Patterning Lithography](mr_tpl_a_new_multi_pin_routing_method_for_triple_patterning_lithography.md) | EDA7: Physical Design and Verification |
 | [TransRoute: A Novel Hierarchical Transistor-Level Routing Framework Beyond Standard-Cell Methodology](transroute_a_novel_hierarchical_transistor_level_routing_framework_beyond_standard_cell_methodology.md) | EDA7: Physical Design and Verification |
@@ -350,8 +350,8 @@ From Pixels to Chips: AI-Enhanced Layout & Mask Design
 
 | 中英论文题目 | 中英关键词 |
 |------------|-----------|
-| [LVM-MO: A Large Vision Model Pioneer for Full-Chip Mask Optimization*](lvm_mo_a_large_vision_model_pioneer_for_full_chip_mask_optimization.md) | EDA8: Design for Manufacturing and Reliability |
-| [SSDL-ILT: Efficient ILT utilizing a self-supervised deep learning model](ssdl_ilt_efficient_ilt_utilizing_a_self_supervised_deep_learning_model.md) | EDA8: Design for Manufacturing and Reliability |
+| [LVM-MO: A Large Vision Model Pioneer for Full-Chip Mask Optimization](lvm_mo_a_large_vision_model_pioneer_for_full_chip_mask_optimization.md) | EDA8: Design for Manufacturing and Reliability |
+| [SSDL-ILT: Efficient ILT Utilizing a Self-Supervised Deep Learning Model](ssdl_ilt_efficient_ilt_utilizing_a_self_supervised_deep_learning_model.md) | EDA8: Design for Manufacturing and Reliability |
 | [PatternPaint: Practical Layout Pattern Generation Using Diffusion-Based Inpainting](patternpaint_practical_layout_pattern_generation_using_diffusion_based_inpainting.md) | EDA8: Design for Manufacturing and Reliability |
 | [Generalizable Lithographic Hotspot Detection Using Asynchronous Meta-Learning with Only One Shot](generalizable_lithographic_hotspot_detection_using_asynchronous_meta_learning_with_only_one_shot.md) | EDA8: Design for Manufacturing and Reliability |
 | [Accuracy Is Not Always We Need: Precision-aware Bayesian Yield Optimization](accuracy_is_not_always_we_need_precision_aware_bayesian_yield_optimization.md) | EDA8: Design for Manufacturing and Reliability |
