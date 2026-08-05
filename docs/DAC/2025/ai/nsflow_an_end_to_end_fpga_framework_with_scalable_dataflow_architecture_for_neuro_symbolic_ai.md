@@ -9,14 +9,11 @@ tags:
 # NSFlow: An End-to-End FPGA Framework with Scalable Dataflow Architecture for Neuro-Symbolic AI
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: AI。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · AI</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI4: AI/ML System and Platform Design</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
-
-**论文链接**：
-**作者**：Tushar Krishna, Ziwei Li, Joongun Park, Ritik Raj, Ananda Samajdar, Hanchen Yang
-**会议**：DAC 2025（第62届）
-**Session**：AI4: AI/ML System and Platform Design
 
 ---
 
