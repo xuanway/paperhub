@@ -9,14 +9,12 @@ tags:
 # INSTA: An Ultra-Fast, Differentiable, Statistical Static Timing Analysis Engine for Industrial Physical Design Applications*
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: EDA。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · EDA</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">EDA3: Timing Analysis and Optimization</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 
-**论文链接**：
-**作者**：
-**会议**：DAC 2025（第62届）
-**Session**：EDA3: Timing Analysis and Optimization
 
 ---
 

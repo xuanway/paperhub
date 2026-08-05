@@ -9,14 +9,12 @@ tags:
 # H3Match: A Hybrid Heterogeneous Hypergraph Matching Method for Subcircuit Identification
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: EDA。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · EDA</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">EDA2: Design Verification and Validation</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 
-**论文链接**：
-**作者**：Tinghuan Chen, Bohao Li, Tianming Ni, Qingsong Peng, Changhong Wang
-**会议**：DAC 2025（第62届）
-**Session**：EDA2: Design Verification and Validation
 
 ---
 

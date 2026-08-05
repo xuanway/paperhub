@@ -9,14 +9,12 @@ tags:
 # Real-Time Dynamic IR-drop Prediction for IR ECO
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: EDA。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · EDA</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">EDA4: Power Analysis and Optimization</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 
-**论文链接**：
-**作者**：Shih-Chieh Chang, Yong-Fong Chang, Yu-Hsuan Chen, Yung-Chih Chen, Yu-Chen Cheng, Yu-Che Lee, Yi-Ting Li, Jia Wei Lin, Hsun-Wei Pao, Wuqian Tang, Chun-Yao Wang
-**会议**：DAC 2025（第62届）
-**Session**：EDA4: Power Analysis and Optimization
 
 ---
 

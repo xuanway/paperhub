@@ -9,14 +9,12 @@ tags:
 # Replay4NCL: An Efficient Memory Replay-based Methodology for Neuromorphic Continual Learning in Embedded AI Systems
 
 <div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 DAC 2025（第62届），所属 Track: AI。</p>
-<p class="paper-seo-summary__tags">DAC 2025 · AI</p>
+<p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
+<p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI1: AI/ML Algorithms</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 
-**论文链接**：
-**作者**：Falah Awwad, Osman Hasan, Mishal Minhas, Rachmad Vidya Wicaksana Putra
-**会议**：DAC 2025（第62届）
-**Session**：AI1: AI/ML Algorithms
 
 ---
 
