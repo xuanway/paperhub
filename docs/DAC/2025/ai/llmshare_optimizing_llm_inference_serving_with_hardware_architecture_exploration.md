@@ -11,7 +11,8 @@ tags:
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI4: AI/ML System and Platform Design</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://shipxu123.github.io/papers/C15-DAC2025-LLMShare.pdf">https://shipxu123.github.io/papers/C15-DAC2025-LLMShare.pdf</a></p>
+<p class="paper-seo-summary__meta"><strong>海报链接:</strong> <a href="https://www.cse.cuhk.edu.hk/~byu/papers/C270-DAC2025-LLMShare-poster.pdf">https://www.cse.cuhk.edu.hk/~byu/papers/C270-DAC2025-LLMShare-poster.pdf</a></p>
 <p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 

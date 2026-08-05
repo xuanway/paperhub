@@ -11,7 +11,7 @@ tags:
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI1: AI/ML Algorithms</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://nicsefc.ee.tsinghua.edu.cn/nics_file/pdf/a4960209-c46c-4a78-aceb-1ea756a5fdac.pdf">https://nicsefc.ee.tsinghua.edu.cn/nics_file/pdf/a4960209-c46c-4a78-aceb-1ea756a5fdac.pdf</a></p> 
 <p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 

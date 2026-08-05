@@ -11,7 +11,7 @@ tags:
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI3: AI/ML Architecture Design</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://dai.sjtu.edu.cn/my_file/pdf/64e0dc2d-66d6-46b6-9ea1-99c90e1cf293.pdf">https://dai.sjtu.edu.cn/my_file/pdf/64e0dc2d-66d6-46b6-9ea1-99c90e1cf293.pdf</a></p> 
 <p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 

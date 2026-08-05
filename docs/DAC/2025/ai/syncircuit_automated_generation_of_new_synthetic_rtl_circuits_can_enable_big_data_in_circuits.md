@@ -11,7 +11,7 @@ tags:
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI2: AI/ML Application and Infrastructure</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://zhiyaoxie.com/files/DAC25_SynCircuit.pdf">https://zhiyaoxie.com/files/DAC25_SynCircuit.pdf</a></p> 
 <p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 

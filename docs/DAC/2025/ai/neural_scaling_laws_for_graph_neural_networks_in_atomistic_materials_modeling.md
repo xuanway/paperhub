@@ -1,17 +1,17 @@
 ---
-title: "Neural Scaling Laws for Graph Neural Networks in Atomistic Materials Modeling"
+title: "Scaling Laws of Graph Neural Networks for Atomistic Materials Modeling"
 description: "DAC 2025 · AI"
 tags:
   - "DAC2025"
   - "AI"
 ---
 
-# Neural Scaling Laws for Graph Neural Networks in Atomistic Materials Modeling
+# Scaling Laws of Graph Neural Networks for Atomistic Materials Modeling
 
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI2: AI/ML Application and Infrastructure</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://arxiv.org/abs/2504.08112">https://arxiv.org/abs/2504.08112</a></p> 
 <p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 

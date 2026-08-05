@@ -1,17 +1,17 @@
 ---
-title: "SAGA: A Memory-Efficient \underline{A}ccelerator for \underline{GA}NN Construction via Harnessing Vertex \underline{S}imilarity"
+title: "SAGA: A Memory-Efficient Accelerator for GANN Construction via Harnessing Vertex Similarity"
 description: "DAC 2025 · AI"
 tags:
   - "DAC2025"
   - "AI"
 ---
 
-# SAGA: A Memory-Efficient \underline{A}ccelerator for \underline{GA}NN Construction via Harnessing Vertex \underline{S}imilarity
+# SAGA: A Memory-Efficient Accelerator for GANN Construction via Harnessing Vertex Similarity
 
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI3: AI/ML Architecture Design</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://ieeexplore.ieee.org/document/11133305">https://ieeexplore.ieee.org/document/11133305</a></p> 
 <p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 

@@ -1288,11 +1288,11 @@ nav:
         - "BLOOM: Bit-Slice Framework for DNN Acceleration with Mixed-Precision": DAC/2025/ai/bloom_bit_slice_framework_for_dnn_acceleration_with_mixed_precision.md
         - "Can Short Hypervectors Drive Feature-Rich GNNs? Strengthening the Graph Representation of Hyperdimensional Computing for Memory-efficient GNNs": DAC/2025/ai/can_short_hypervectors_drive_feature_rich_gnns_strengthening_the_graph_representation_of_hyperdimensional_computing_for_memory_efficient_gnns.md
         - "ChipAlign: Instruction Alignment in Large Language Models for Chip Design via Geodesic Interpolation": DAC/2025/ai/chipalign_instruction_alignment_in_large_language_models_for_chip_design_via_geodesic_interpolation.md
-        - "CirSTAG: Circuit Stability Analysis on Graph-based Manifolds*": DAC/2025/ai/cirstag_circuit_stability_analysis_on_graph_based_manifolds.md
+        - "CirSTAG: Circuit Stability Analysis on Graph-based Manifolds": DAC/2025/ai/cirstag_circuit_stability_analysis_on_graph_based_manifolds.md
         - "ClusterKV: Manipulating LLM KV Cache in Semantic Space for Recallable Compression": DAC/2025/ai/clusterkv_manipulating_llm_kv_cache_in_semantic_space_for_recallable_compression.md
         - "CVMAX: Accelerator Architecture with Polar Form Multiplication for Complex-Valued Neural Networks": DAC/2025/ai/cvmax_accelerator_architecture_with_polar_form_multiplication_for_complex_valued_neural_networks.md
         - "DataMaestro: A Versatile and Efficient Data Streaming Engine Bringing Decoupled Memory Access To Dataflow Accelerators": DAC/2025/ai/datamaestro_a_versatile_and_efficient_data_streaming_engine_bringing_decoupled_memory_access_to_dataflow_accelerators.md
-        - "DCDiff: : Enhancing JPEG Compression via Diffusion-based DC Coefficients Estimation": DAC/2025/ai/dcdiff_enhancing_jpeg_compression_via_diffusion_based_dc_coefficients_estimation.md
+        - "DCDiff: Enhancing JPEG Compression via Diffusion-based DC Coefficients Estimation": DAC/2025/ai/dcdiff_enhancing_jpeg_compression_via_diffusion_based_dc_coefficients_estimation.md
         - "Decoupling Analog Circuit Representation from Technology for Behavior-Centric Optimization": DAC/2025/ai/decoupling_analog_circuit_representation_from_technology_for_behavior_centric_optimization.md
         - "Delving into Topology Representation for Layout Pattern: A Novel Contrastive Learning Framework for Hotspot Detection": DAC/2025/ai/delving_into_topology_representation_for_layout_pattern_a_novel_contrastive_learning_framework_for_hotspot_detection.md
         - "DenSparSA: A Balanced Systolic Array Approach for Dense and Sparse Matrix Multiplication": DAC/2025/ai/densparsa_a_balanced_systolic_array_approach_for_dense_and_sparse_matrix_multiplication.md
@@ -1338,7 +1338,7 @@ nav:
         - "Move Less, Retrieve Fast: A Retrieval-in-Memory Architecture for Language Models": DAC/2025/ai/move_less_retrieve_fast_a_retrieval_in_memory_architecture_for_language_models.md
         - "Multi-Dimensional Reconfigurable, Physically Composable Hybrid Diffractive Optical Neural Network": DAC/2025/ai/multi_dimensional_reconfigurable_physically_composable_hybrid_diffractive_optical_neural_network.md
         - "NetTAG: A Multimodal RTL-and-Layout-Aligned Netlist Foundation Model via Text-Attributed Graph": DAC/2025/ai/nettag_a_multimodal_rtl_and_layout_aligned_netlist_foundation_model_via_text_attributed_graph.md
-        - "Neural Scaling Laws for Graph Neural Networks in Atomistic Materials Modeling": DAC/2025/ai/neural_scaling_laws_for_graph_neural_networks_in_atomistic_materials_modeling.md
+        - "Scaling Laws of Graph Neural Networks for Atomistic Materials Modeling": DAC/2025/ai/neural_scaling_laws_for_graph_neural_networks_in_atomistic_materials_modeling.md
         - "NN-AdderNet: Nonnegative and Sparse Weight Optimization for Ultra-Low Bitwidth AdderNet Quantization and Compression": DAC/2025/ai/nn_addernet_nonnegative_and_sparse_weight_optimization_for_ultra_low_bitwidth_addernet_quantization_and_compression.md
         - "NoiseZO: RRAM Noise-Driven Zero-Order Optimization for Efficient Forward-Only Training": DAC/2025/ai/noisezo_rram_noise_driven_zero_order_optimization_for_efficient_forward_only_training.md
         - "NSFlow: An End-to-End FPGA Framework with Scalable Dataflow Architecture for Neuro-Symbolic AI": DAC/2025/ai/nsflow_an_end_to_end_fpga_framework_with_scalable_dataflow_architecture_for_neuro_symbolic_ai.md

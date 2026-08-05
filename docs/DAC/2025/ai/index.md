@@ -21,7 +21,7 @@ Graphs & Topology: The New Frontier in AI Modeling
 | 中英论文题目 | 中英关键词 |
 |------------|-----------|
 | [Towards Training Robustness Against Dynamic Errors in Quantum Machine Learning](towards_training_robustness_against_dynamic_errors_in_quantum_machine_learning.md) | AI1: AI/ML Algorithms |
-| [CirSTAG: Circuit Stability Analysis on Graph-based Manifolds*](cirstag_circuit_stability_analysis_on_graph_based_manifolds.md) | AI1: AI/ML Algorithms |
+| [CirSTAG: Circuit Stability Analysis on Graph-based Manifolds](cirstag_circuit_stability_analysis_on_graph_based_manifolds.md) | AI1: AI/ML Algorithms |
 | [ParGNN: A Scalable Graph Neural Network Training Framework on multi-GPUs](pargnn_a_scalable_graph_neural_network_training_framework_on_multi_gpus.md) | AI1: AI/ML Algorithms |
 | [Delving into Topology Representation for Layout Pattern: A Novel Contrastive Learning Framework for Hotspot Detection](delving_into_topology_representation_for_layout_pattern_a_novel_contrastive_learning_framework_for_hotspot_detection.md) | AI1: AI/ML Algorithms |
 | [SuperFast: Fast Supernet Training using Initial Knowledge](superfast_fast_supernet_training_using_initial_knowledge.md) | AI1: AI/ML Algorithms |
@@ -114,7 +114,7 @@ Ready, Set, Scale! AI's Journey from Edge to Cloud Optimization
 | [DM-Tune: Quantizing Diffusion Models with Mixture-of-Gaussian Guided Noise Tuning](dm_tune_quantizing_diffusion_models_with_mixture_of_gaussian_guided_noise_tuning.md) | AI2: AI/ML Application and Infrastructure |
 | [Towards In-Situ Neuromorphic Computing Architecture for Event Stream Super-Resolution](towards_in_situ_neuromorphic_computing_architecture_for_event_stream_super_resolution.md) | AI2: AI/ML Application and Infrastructure |
 | [LearnGraph: A Learning-Based Architecture for Dynamic Graph Processing](learngraph_a_learning_based_architecture_for_dynamic_graph_processing.md) | AI2: AI/ML Application and Infrastructure |
-| [Neural Scaling Laws for Graph Neural Networks in Atomistic Materials Modeling](neural_scaling_laws_for_graph_neural_networks_in_atomistic_materials_modeling.md) | AI2: AI/ML Application and Infrastructure |
+| [Scaling Laws of Graph Neural Networks for Atomistic Materials Modeling](neural_scaling_laws_for_graph_neural_networks_in_atomistic_materials_modeling.md) | AI2: AI/ML Application and Infrastructure |
 | [VISTA: Optimizing GPU Scheduling through Versatile Locality-Aware Data Sharing](vista_optimizing_gpu_scheduling_through_versatile_locality_aware_data_sharing.md) | AI2: AI/ML Application and Infrastructure |
 | [Tropical: Enhancing SLO Attainment in Disaggregated LLM Serving via SLO-Aware Multiplexing](tropical_enhancing_slo_attainment_in_disaggregated_llm_serving_via_slo_aware_multiplexing.md) | AI2: AI/ML Application and Infrastructure |
 
@@ -252,7 +252,7 @@ We Has to Have These Hardware Accelerator Systems for Deep Learning!
 | [Discovering and Exploiting Untapped Buffer Resources in Many-Core DNN Accelerators](discovering_and_exploiting_untapped_buffer_resources_in_many_core_dnn_accelerators.md) | AI3: AI/ML Architecture Design |
 | [PacQ: A SIMT Microarchitecture for Efficient Dataflow in Hyper-asymmetric GEMMs](pacq_a_simt_microarchitecture_for_efficient_dataflow_in_hyper_asymmetric_gemms.md) | AI3: AI/ML Architecture Design |
 | [MetaDSE: A Few-Shot Meta-Learning Framework for Cross-Workload CPU Design Space Exploration](metadse_a_few_shot_meta_learning_framework_for_cross_workload_cpu_design_space_exploration.md) | AI3: AI/ML Architecture Design |
-| [SAGA: A Memory-Efficient \underline{A}ccelerator for \underline{GA}NN Construction via Harnessing Vertex \underline{S}imilarity](saga_a_memory_efficient_underline_a_ccelerator_for_underline_ga_nn_construction_via_harnessing_vertex_underline_s_imilarity.md) | AI3: AI/ML Architecture Design |
+| [SAGA: A Memory-Efficient Accelerator for GANN Construction via Harnessing Vertex Similarity](saga_a_memory_efficient_underline_a_ccelerator_for_underline_ga_nn_construction_via_harnessing_vertex_underline_s_imilarity.md) | AI3: AI/ML Architecture Design |
 
 
 

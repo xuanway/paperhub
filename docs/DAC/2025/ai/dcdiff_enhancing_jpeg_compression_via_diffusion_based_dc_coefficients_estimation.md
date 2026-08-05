@@ -1,17 +1,17 @@
 ---
-title: "DCDiff: : Enhancing JPEG Compression via Diffusion-based DC Coefficients Estimation"
+title: "DCDiff: Enhancing JPEG Compression via Diffusion-based DC Coefficients Estimation"
 description: "DAC 2025 · AI"
 tags:
   - "DAC2025"
   - "AI"
 ---
 
-# DCDiff: : Enhancing JPEG Compression via Diffusion-based DC Coefficients Estimation
+# DCDiff: Enhancing JPEG Compression via Diffusion-based DC Coefficients Estimation
 
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__meta"><strong>会议:</strong> DAC 2025</p> 
 <p class="paper-seo-summary__meta"><strong>专题:</strong> <a href="https://62dac.conference-program.com/">AI1: AI/ML Algorithms</a></p> 
-<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="X">X</a></p> 
+<p class="paper-seo-summary__meta"><strong>论文链接:</strong> <a href="https://netsec.ccert.edu.cn/files/papers/dac25-dcdiff.pdf">https://netsec.ccert.edu.cn/files/papers/dac25-dcdiff.pdf</a></p> 
 <p class="paper-seo-summary__meta"><strong>关键词:</strong>  </p>
 </div>
 
