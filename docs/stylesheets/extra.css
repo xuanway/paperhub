@@ -44,8 +44,21 @@
     max-width: min(96vw, 118rem);
   }
 
+  .md-main__inner {
+    max-width: min(98vw, 132rem);
+  }
+
+  .md-content {
+    max-width: none;
+    flex: 1 1 auto;
+  }
+
   .md-content__inner {
     max-width: none;
+  }
+
+  .md-typeset {
+    max-width: min(94vw, 108rem);
   }
 }
 
@@ -153,6 +166,11 @@
   background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
   --cube-shadow-1: #b45309;
   --cube-shadow-2: #b91c1c;
+}
+.conf-cube--hpdc {
+  background: linear-gradient(135deg, #334155 0%, #0f766e 100%);
+  --cube-shadow-1: #1e293b;
+  --cube-shadow-2: #115e59;
 }
 
 .conf-cube__icon {

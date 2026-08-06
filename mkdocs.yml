@@ -1,5 +1,5 @@
 site_name: 计算机体系结构论文
-site_description: "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC 顶会论文解读 | 聚焦可信高效计算 | 2025/2026年"
+site_description: "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC·HPDC 顶会论文解读 | 聚焦可信高效计算 | 2025/2026年"
 site_url: https://xuanway.github.io/paperhub/
 repo_url: https://github.com/xuanway/paperhub
 repo_name: GitHub
@@ -2066,3 +2066,126 @@ nav:
         - "Accelerating Nested Virtualization with HyperTurtle": ATC/2025/virtualization_and_isolation_security_sharing_and_performance/accelerating_nested_virtualization_with_hyperturtle.md
         - "Efficient Performance-Aware GPU Sharing with Compatibility and Isolation through Kernel Space Interception": ATC/2025/virtualization_and_isolation_security_sharing_and_performance/efficient_performance_aware_gpu_sharing_with_compatibility_and_isolation_through_kernel_space_interception.md
         - "AnchorNet: Bridging Live and Collaborative Streaming with a Unified Architecture": ATC/2025/virtualization_and_isolation_security_sharing_and_performance/anchornet_bridging_live_and_collaborative_streaming_with_a_unified_architecture.md
+
+  - 🖧 HPDC:
+    - HPDC 2026 (95):
+      - HPDC 2026: HPDC/2026/index.md
+      - "Machine Learning and LLM Systems (26)":
+        - "Machine Learning and LLM Systems": HPDC/2026/machine_learning_and_llm_systems/index.md
+        - "A Fully GPU-Accelerated Framework for High-Performance Configuration Interaction Selection with Neural Network Quantum States": HPDC/2026/machine_learning_and_llm_systems/a_fully_gpu_accelerated_framework_for_high_performance_configuration_interaction_selection_with_neural_network_quantum_states.md
+        - "Accelerating Block Low-Rank Foundation Model Inference on Memory-Constrained GPUs": HPDC/2026/machine_learning_and_llm_systems/accelerating_block_low_rank_foundation_model_inference_on_memory_constrained_gpus.md
+        - "ATLAS: Efficient Out-of-Core Inference for Billion-Scale Graph Neural Networks": HPDC/2026/machine_learning_and_llm_systems/atlas_efficient_out_of_core_inference_for_billion_scale_graph_neural_networks.md
+        - "Building an LLM Gateway as an RSE: Patterns, Pitfalls, and a Case Study from Public Health Data Discovery": HPDC/2026/machine_learning_and_llm_systems/building_an_llm_gateway_as_an_rse_patterns_pitfalls_and_a_case_study_from_public_health_data_discovery.md
+        - "CoDL: A Framework for Studying Cross-Component Interference in Deep Learning Training Pipelines": HPDC/2026/machine_learning_and_llm_systems/codl_a_framework_for_studying_cross_component_interference_in_deep_learning_training_pipelines.md
+        - "DiTango: Cost-Effective Parallel Diffusion Generation with Selective Attention State Reuse": HPDC/2026/machine_learning_and_llm_systems/ditango_cost_effective_parallel_diffusion_generation_with_selective_attention_state_reuse.md
+        - "Dynamo-MoE: Accelerating Sparse Large Model Inference with Dynamic Parallelization": HPDC/2026/machine_learning_and_llm_systems/dynamo_moe_accelerating_sparse_large_model_inference_with_dynamic_parallelization.md
+        - "Eliminating Python Overhead in Predictive Neural Compression: A Native C++/LibTorch Implementation of TEZip": HPDC/2026/machine_learning_and_llm_systems/eliminating_python_overhead_in_predictive_neural_compression_a_native_c_libtorch_implementation_of_tezip.md
+        - "GLANCED-IO: Taming I/O Optimization for Deep Learning at Scale": HPDC/2026/machine_learning_and_llm_systems/glanced_io_taming_i_o_optimization_for_deep_learning_at_scale.md
+        - "Graph Acceleration Techniques for Sparse Transformers": HPDC/2026/machine_learning_and_llm_systems/graph_acceleration_techniques_for_sparse_transformers.md
+        - "Group-TopK: Optimizing Distributed Training on Edge Devices via Communication Compression": HPDC/2026/machine_learning_and_llm_systems/group_topk_optimizing_distributed_training_on_edge_devices_via_communication_compression.md
+        - "Merkle-Tree Weight Snapshot Deduplication for Provenance-Aware Auditing of Neural Network Training": HPDC/2026/machine_learning_and_llm_systems/merkle_tree_weight_snapshot_deduplication_for_provenance_aware_auditing_of_neural_network_training.md
+        - "MoE-Lens: Towards the Hardware Limit of High-Throughput MoE LLM Serving Under Resource Constraints": HPDC/2026/machine_learning_and_llm_systems/moe_lens_towards_the_hardware_limit_of_high_throughput_moe_llm_serving_under_resource_constraints.md
+        - "Momentum-Buffered Local SGD for Zero-Payload Drift Correction in Federated Learning": HPDC/2026/machine_learning_and_llm_systems/momentum_buffered_local_sgd_for_zero_payload_drift_correction_in_federated_learning.md
+        - "Odin: Harnessing Rendering Visibility to Break Global Barriers in Distributed Point-Based Neural Rendering": HPDC/2026/machine_learning_and_llm_systems/odin_harnessing_rendering_visibility_to_break_global_barriers_in_distributed_point_based_neural_rendering.md
+        - "PKAS: Predictive KVCache-Aware Scheduling for Faster LLM and Transformer Inferences": HPDC/2026/machine_learning_and_llm_systems/pkas_predictive_kvcache_aware_scheduling_for_faster_llm_and_transformer_inferences.md
+        - "ResiHP: Taming LLM Training Failures with Dynamic Hybrid Parallelism": HPDC/2026/machine_learning_and_llm_systems/resihp_taming_llm_training_failures_with_dynamic_hybrid_parallelism.md
+        - "Resource-Aware Online Tuning for Heterogeneous Federated Learning": HPDC/2026/machine_learning_and_llm_systems/resource_aware_online_tuning_for_heterogeneous_federated_learning.md
+        - "Scaling Attention Beyond GPUs for LLM Inference": HPDC/2026/machine_learning_and_llm_systems/scaling_attention_beyond_gpus_for_llm_inference.md
+        - "Scheduling Optimization of Distributed LLM Inference": HPDC/2026/machine_learning_and_llm_systems/scheduling_optimization_of_distributed_llm_inference.md
+        - "STAR: Decode-Phase Rescheduling for LLM Inference": HPDC/2026/machine_learning_and_llm_systems/star_decode_phase_rescheduling_for_llm_inference.md
+        - "TACO: Efficient Communication Compression of Intermediate Tensors for Scalable Tensor-Parallel LLM Training": HPDC/2026/machine_learning_and_llm_systems/taco_efficient_communication_compression_of_intermediate_tensors_for_scalable_tensor_parallel_llm_training.md
+        - "Thermal-Aware Scheduling for DNN Inference on 3D Logic-to-DRAM Process-Near-Memory Architecture": HPDC/2026/machine_learning_and_llm_systems/thermal_aware_scheduling_for_dnn_inference_on_3d_logic_to_dram_process_near_memory_architecture.md
+        - "Toward Low-Latency and Memory-Efficient Deployment of Irregular Sparse Deep Learning Workloads": HPDC/2026/machine_learning_and_llm_systems/toward_low_latency_and_memory_efficient_deployment_of_irregular_sparse_deep_learning_workloads.md
+        - "UniEP: Unified Expert-Parallel MegaKernel MoE for LLM Training": HPDC/2026/machine_learning_and_llm_systems/uniep_unified_expert_parallel_megakernel_moe_for_llm_training.md
+        - "When RDMA Goes Long-Haul: Characterization, Modeling, and Verbs-Level Emulation with Implications for Federated Learning": HPDC/2026/machine_learning_and_llm_systems/when_rdma_goes_long_haul_characterization_modeling_and_verbs_level_emulation_with_implications_for_federated_learning.md
+      - "Accelerators and Heterogeneous Computing (15)":
+        - "Accelerators and Heterogeneous Computing": HPDC/2026/accelerators_and_heterogeneous_computing/index.md
+        - "Accelerating high-accuracy runtime estimation in adaptive sample selection for parallel scalability analysis with reiforcement learning": HPDC/2026/accelerators_and_heterogeneous_computing/accelerating_high_accuracy_runtime_estimation_in_adaptive_sample_selection_for_parallel_scalability_analysis_with_reiforcement_learning.md
+        - "BCCE: Block-Centric GPU Co-Design for Real-Time Range-Top-K Query at Scale": HPDC/2026/accelerators_and_heterogeneous_computing/bcce_block_centric_gpu_co_design_for_real_time_range_top_k_query_at_scale.md
+        - "Deterministic and Efficient Low Rank Approximation on GPUs": HPDC/2026/accelerators_and_heterogeneous_computing/deterministic_and_efficient_low_rank_approximation_on_gpus.md
+        - "FAME: A Framework for Accelerating Independent Multi-Agent Reinforcement Learning on Heterogeneous Platforms": HPDC/2026/accelerators_and_heterogeneous_computing/fame_a_framework_for_accelerating_independent_multi_agent_reinforcement_learning_on_heterogeneous_platforms.md
+        - "FluxZK: Scalable and Efficient Zero-Knowledge Proof Computation via GPU Acceleration": HPDC/2026/accelerators_and_heterogeneous_computing/fluxzk_scalable_and_efficient_zero_knowledge_proof_computation_via_gpu_acceleration.md
+        - "Full-Core Fluid-Structure-Interaction Simulation of Nuclear Reactor on CPU+GPU Hybrid Clusters": HPDC/2026/accelerators_and_heterogeneous_computing/full_core_fluid_structure_interaction_simulation_of_nuclear_reactor_on_cpu_gpu_hybrid_clusters.md
+        - "GICC: A High-Performance Runtime for GPU-Initiated Communication and Coordination in Modern HPC Systems": HPDC/2026/accelerators_and_heterogeneous_computing/gicc_a_high_performance_runtime_for_gpu_initiated_communication_and_coordination_in_modern_hpc_systems.md
+        - "Hardware-based Kernel-Bypass Exceptions to Accelerate Floating Point Tracing and Virtualization": HPDC/2026/accelerators_and_heterogeneous_computing/hardware_based_kernel_bypass_exceptions_to_accelerate_floating_point_tracing_and_virtualization.md
+        - "OPAL: On-demand Progressive Accelerated Scientific Lossy Compression": HPDC/2026/accelerators_and_heterogeneous_computing/opal_on_demand_progressive_accelerated_scientific_lossy_compression.md
+        - "POLAR-PIC: A Holistic Framework for Matrixized PIC with Co-Designed Compute, Layout, and Communication": HPDC/2026/accelerators_and_heterogeneous_computing/polar_pic_a_holistic_framework_for_matrixized_pic_with_co_designed_compute_layout_and_communication.md
+        - "PowerQuant: Architecture-Agnostic GPU Power Estimation via Quantile Regression": HPDC/2026/accelerators_and_heterogeneous_computing/powerquant_architecture_agnostic_gpu_power_estimation_via_quantile_regression.md
+        - "SIVF: GPU-Resident IVF Index for Streaming Vector Analytics": HPDC/2026/accelerators_and_heterogeneous_computing/sivf_gpu_resident_ivf_index_for_streaming_vector_analytics.md
+        - "SYCL++: A Unified Programming Framework for Heterogeneous Supercomputers at Scale": HPDC/2026/accelerators_and_heterogeneous_computing/sycl_a_unified_programming_framework_for_heterogeneous_supercomputers_at_scale.md
+        - "torch_cufft: Extending PyTorch FFT Capacity with Multi-GPU and Descriptor-Resident cuFFTXt Execution": HPDC/2026/accelerators_and_heterogeneous_computing/torch_cufft_extending_pytorch_fft_capacity_with_multi_gpu_and_descriptor_resident_cufftxt_execution.md
+        - "TZ: Achieving High-Ratio Scientific Data Compression on GPUs with Global Data Decomposition": HPDC/2026/accelerators_and_heterogeneous_computing/tz_achieving_high_ratio_scientific_data_compression_on_gpus_with_global_data_decomposition.md
+      - "Quantum Computing and Optimization (12)":
+        - "Quantum Computing and Optimization": HPDC/2026/quantum_computing_and_optimization/index.md
+        - "Delta-Based Rare Pattern Discovery with Quantum Speedup": HPDC/2026/quantum_computing_and_optimization/delta_based_rare_pattern_discovery_with_quantum_speedup.md
+        - "Distributed Scheduling for Modular Quantum Computing in Cloud": HPDC/2026/quantum_computing_and_optimization/distributed_scheduling_for_modular_quantum_computing_in_cloud.md
+        - "Evaluating QAOA and Quantum Annealing for Minimum Vertex Cover on NISQ Devices": HPDC/2026/quantum_computing_and_optimization/evaluating_qaoa_and_quantum_annealing_for_minimum_vertex_cover_on_nisq_devices.md
+        - "Expressibility, Noise, and Error Mitigation in VQE Ansatz Selection": HPDC/2026/quantum_computing_and_optimization/expressibility_noise_and_error_mitigation_in_vqe_ansatz_selection.md
+        - "Extracting Quantum-Ready Cores in Discrete Tomography": HPDC/2026/quantum_computing_and_optimization/extracting_quantum_ready_cores_in_discrete_tomography.md
+        - "Quantum Bit-Parallel Swap Matching": HPDC/2026/quantum_computing_and_optimization/quantum_bit_parallel_swap_matching.md
+        - "Quantum LCS in Practice: Circuits, Optimizations, and Evaluation": HPDC/2026/quantum_computing_and_optimization/quantum_lcs_in_practice_circuits_optimizations_and_evaluation.md
+        - "Scalability Bottlenecks in Quantum-Resilient Distributed Ledgers: A Comparative Analysis of Post-Quantum Blockchain Implementations": HPDC/2026/quantum_computing_and_optimization/scalability_bottlenecks_in_quantum_resilient_distributed_ledgers_a_comparative_analysis_of_post_quantum_blockchain_implementations.md
+        - "Scalable Quantum Circuit Simulation via Circuit Cutting and FPGA Acceleration": HPDC/2026/quantum_computing_and_optimization/scalable_quantum_circuit_simulation_via_circuit_cutting_and_fpga_acceleration.md
+        - "Stabilizing Grover Search via Density-Aware Phase Control": HPDC/2026/quantum_computing_and_optimization/stabilizing_grover_search_via_density_aware_phase_control.md
+        - "Structural Parallelism in Quantum Programs": HPDC/2026/quantum_computing_and_optimization/structural_parallelism_in_quantum_programs.md
+        - "The Energy Cost of Post-Quantum Transition: Benchmarking PQC Algorithms on Commodity Hardware": HPDC/2026/quantum_computing_and_optimization/the_energy_cost_of_post_quantum_transition_benchmarking_pqc_algorithms_on_commodity_hardware.md
+      - "Storage and I/O Systems (9)":
+        - "Storage and I/O Systems": HPDC/2026/storage_and_i_o_systems/index.md
+        - "Analysis of I/O Subsystem Utilization on the Theta Supercomputer": HPDC/2026/storage_and_i_o_systems/analysis_of_i_o_subsystem_utilization_on_the_theta_supercomputer.md
+        - "DPIO: A Unified I/O Architecture for Heterogeneous CPU and DPU NVMeoF": HPDC/2026/storage_and_i_o_systems/dpio_a_unified_i_o_architecture_for_heterogeneous_cpu_and_dpu_nvmeof.md
+        - "I/O Optimisation at the Compiler Level: IOOpt": HPDC/2026/storage_and_i_o_systems/i_o_optimisation_at_the_compiler_level_ioopt.md
+        - "Metis: Agentic Knowledge Synthesis for Explainable I/O Performance in HPC Systems": HPDC/2026/storage_and_i_o_systems/metis_agentic_knowledge_synthesis_for_explainable_i_o_performance_in_hpc_systems.md
+        - "Modernizing VPIC-Kokkos I/O: From Legacy Binary Output to Adaptive HDF5 Workflows": HPDC/2026/storage_and_i_o_systems/modernizing_vpic_kokkos_i_o_from_legacy_binary_output_to_adaptive_hdf5_workflows.md
+        - "Pome: Parallelizing I/Os and Computations for Efficient LSM-tree-based Data Storage": HPDC/2026/storage_and_i_o_systems/pome_parallelizing_i_os_and_computations_for_efficient_lsm_tree_based_data_storage.md
+        - "QProR: An Efficient Framework for Quantity-of-Interest Based Progressive Retrieval with Guaranteed Error Control": HPDC/2026/storage_and_i_o_systems/qpror_an_efficient_framework_for_quantity_of_interest_based_progressive_retrieval_with_guaranteed_error_control.md
+        - "Robust I/O Characterization of Machine Learning Workloads Across Performance Analysis Tools": HPDC/2026/storage_and_i_o_systems/robust_i_o_characterization_of_machine_learning_workloads_across_performance_analysis_tools.md
+        - "Towards Transparent Checkpointing with AI-driven Code Generation": HPDC/2026/storage_and_i_o_systems/towards_transparent_checkpointing_with_ai_driven_code_generation.md
+      - "Distributed and Networked Systems (6)":
+        - "Distributed and Networked Systems": HPDC/2026/distributed_and_networked_systems/index.md
+        - "Achieving 86% Peak GPU Throughput for Distributed QR Factorization": HPDC/2026/distributed_and_networked_systems/achieving_86_peak_gpu_throughput_for_distributed_qr_factorization.md
+        - "HAT-MPI: Hierarchical Auto Tuning of MPI Inter-Node Communication on InfiniBand Clusters": HPDC/2026/distributed_and_networked_systems/hat_mpi_hierarchical_auto_tuning_of_mpi_inter_node_communication_on_infiniband_clusters.md
+        - "NCCLZ: Compression-Enabled GPU Collectives with Decoupled Quantization and Entropy Coding": HPDC/2026/distributed_and_networked_systems/ncclz_compression_enabled_gpu_collectives_with_decoupled_quantization_and_entropy_coding.md
+        - "NCCLZ: Compression-Enabled GPU Collectives with Decoupled Quantization and Entropy Coding": HPDC/2026/distributed_and_networked_systems/ncclz_compression_enabled_gpu_collectives_with_decoupled_quantization_and_entropy_coding_2.md
+        - "Robust Ensemble Log Anomaly Detection for High-performance Parallel and Distributed Computing Systems": HPDC/2026/distributed_and_networked_systems/robust_ensemble_log_anomaly_detection_for_high_performance_parallel_and_distributed_computing_systems.md
+        - "SRAP: Sender-side Receiver-Aware Port Selection for Deterministic Flow-to-Core Mapping in Hash-Based Flow Steering": HPDC/2026/distributed_and_networked_systems/srap_sender_side_receiver_aware_port_selection_for_deterministic_flow_to_core_mapping_in_hash_based_flow_steering.md
+      - "Graph and Data Analytics (6)":
+        - "Graph and Data Analytics": HPDC/2026/graph_and_data_analytics/index.md
+        - "Challenges in Scaling R-tree Spatial Search on Processing-In-Memory": HPDC/2026/graph_and_data_analytics/challenges_in_scaling_r_tree_spatial_search_on_processing_in_memory.md
+        - "Efficient Tracking of Communities on Evolving Graphs with Leiden Algorithm": HPDC/2026/graph_and_data_analytics/efficient_tracking_of_communities_on_evolving_graphs_with_leiden_algorithm.md
+        - "ExCC: External Memory Connected Components on Large Graphs": HPDC/2026/graph_and_data_analytics/excc_external_memory_connected_components_on_large_graphs.md
+        - "Flux Fiction: Hopping Toward Storage Graph Scheduling With El Capitan's Rabbits": HPDC/2026/graph_and_data_analytics/flux_fiction_hopping_toward_storage_graph_scheduling_with_el_capitan_s_rabbits.md
+        - "SAGA: State-Aware Graph Analytics for Combinatorial Optimization on Dynamic Graphs": HPDC/2026/graph_and_data_analytics/saga_state_aware_graph_analytics_for_combinatorial_optimization_on_dynamic_graphs.md
+        - "νMG-LPA and νBM-LPA: Memory Efficient GPU-based Label Propagation Algorithms (LPA) for Community Detection": HPDC/2026/graph_and_data_analytics/mg_lpa_and_bm_lpa_memory_efficient_gpu_based_label_propagation_algorithms_lpa_for_community_detection.md
+      - "Performance Modeling and Analysis (5)":
+        - "Performance Modeling and Analysis": HPDC/2026/performance_modeling_and_analysis/index.md
+        - "A High-Performance Persistent Transactional Memory System via Cooperative Concurrency Control": HPDC/2026/performance_modeling_and_analysis/a_high_performance_persistent_transactional_memory_system_via_cooperative_concurrency_control.md
+        - "CXLMemSim: Practical Performance Simulation and Characterization of CXL 3.0 Memory Systems": HPDC/2026/performance_modeling_and_analysis/cxlmemsim_practical_performance_simulation_and_characterization_of_cxl_3_0_memory_systems.md
+        - "Lustre Query: Periodic Offline Metadata Monitoring from MDT Backups": HPDC/2026/performance_modeling_and_analysis/lustre_query_periodic_offline_metadata_monitoring_from_mdt_backups.md
+        - "Performance Analysis of Conveyors: Memory Dominates?": HPDC/2026/performance_modeling_and_analysis/performance_analysis_of_conveyors_memory_dominates.md
+        - "Performance Evaluation of Approximate Nearest Neighbor Search on NVIDIA BlueField-3 DPU": HPDC/2026/performance_modeling_and_analysis/performance_evaluation_of_approximate_nearest_neighbor_search_on_nvidia_bluefield_3_dpu.md
+      - "Compilers and Runtime Systems (4)":
+        - "Compilers and Runtime Systems": HPDC/2026/compilers_and_runtime_systems/index.md
+        - "A Lock-Free Work-Stealing Algorithm for Bulk Operations": HPDC/2026/compilers_and_runtime_systems/a_lock_free_work_stealing_algorithm_for_bulk_operations.md
+        - "CARBS: Compiler Autotuning via Randomized Biased Search": HPDC/2026/compilers_and_runtime_systems/carbs_compiler_autotuning_via_randomized_biased_search.md
+        - "Enabling Floating Point Virtualization With Tiny Numbers": HPDC/2026/compilers_and_runtime_systems/enabling_floating_point_virtualization_with_tiny_numbers.md
+        - "Motivating Regime-Aware User-Profiles for Runtime Prediction in Large-Scale HPC Systems": HPDC/2026/compilers_and_runtime_systems/motivating_regime_aware_user_profiles_for_runtime_prediction_in_large_scale_hpc_systems.md
+      - "Scheduling and Resource Management (4)":
+        - "Scheduling and Resource Management": HPDC/2026/scheduling_and_resource_management/index.md
+        - "Beyond Fixed Budgets: Characterizing the Inelasticity and Limitations of Tree-of-Thought Reasoning Strategies": HPDC/2026/scheduling_and_resource_management/beyond_fixed_budgets_characterizing_the_inelasticity_and_limitations_of_tree_of_thought_reasoning_strategies.md
+        - "Decay Driven Multi Objective Optimization for HPC nodes": HPDC/2026/scheduling_and_resource_management/decay_driven_multi_objective_optimization_for_hpc_nodes.md
+        - "Inkly: A Data-Informed and Context-Aware System for HPC Job Execution": HPDC/2026/scheduling_and_resource_management/inkly_a_data_informed_and_context_aware_system_for_hpc_job_execution.md
+        - "Omnia: Efficient RAG Serving through Speculative Scheduling": HPDC/2026/scheduling_and_resource_management/omnia_efficient_rag_serving_through_speculative_scheduling.md
+      - "Cloud and Serverless Systems (3)":
+        - "Cloud and Serverless Systems": HPDC/2026/cloud_and_serverless_systems/index.md
+        - "A New Era for the Open Science Data Federation: The Pelican Platform": HPDC/2026/cloud_and_serverless_systems/a_new_era_for_the_open_science_data_federation_the_pelican_platform.md
+        - "Enabling High-Utilization and Low-Contention FaaS: A Request-Level Resource Provisioning Approach": HPDC/2026/cloud_and_serverless_systems/enabling_high_utilization_and_low_contention_faas_a_request_level_resource_provisioning_approach.md
+        - "Krysha: Cost-Efficient Resource Orchestration for Geo-Distributed Serverless Microservices": HPDC/2026/cloud_and_serverless_systems/krysha_cost_efficient_resource_orchestration_for_geo_distributed_serverless_microservices.md
+      - "Security and Reliability (3)":
+        - "Security and Reliability": HPDC/2026/security_and_reliability/index.md
+        - "Cremes: Cost-Efficient and Reliable Microservice Execution on Spot Instances": HPDC/2026/security_and_reliability/cremes_cost_efficient_and_reliable_microservice_execution_on_spot_instances.md
+        - "Fault Tolerance of Accelerated Asynchronous Fixed-Point Iterations on Flexible Computing Infrastructure": HPDC/2026/security_and_reliability/fault_tolerance_of_accelerated_asynchronous_fixed_point_iterations_on_flexible_computing_infrastructure.md
+        - "JANUS: Resilient and Adaptive Data Transmission for Enabling Timely and Efficient Cross-Facility Scientific Workflows": HPDC/2026/security_and_reliability/janus_resilient_and_adaptive_data_transmission_for_enabling_timely_and_efficient_cross_facility_scientific_workflows.md
+      - "Scientific Computing and Applications (2)":
+        - "Scientific Computing and Applications": HPDC/2026/scientific_computing_and_applications/index.md
+        - "Bridging Information Theory and Practice for Scientific Lossy Compression": HPDC/2026/scientific_computing_and_applications/bridging_information_theory_and_practice_for_scientific_lossy_compression.md
+        - "Endeavor: Efficient PairHMM for Detection of DNA Variants in Genome-Scale Datasets": HPDC/2026/scientific_computing_and_applications/endeavor_efficient_pairhmm_for_detection_of_dna_variants_in_genome_scale_datasets.md

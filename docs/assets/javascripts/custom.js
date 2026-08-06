@@ -318,7 +318,8 @@
     var tableWrap = body.closest(".directions-table-wrap");
     var width = tableWrap ? tableWrap.clientWidth : window.innerWidth;
     var columns = getDirectionsColumnCount(width);
-    var html = '<tr><td class="directions-table__heading" colspan="' + columns + '">研究方向</td></tr>';
+    var directionsCount = (data.stats && (data.stats.keywords_count || data.stats.directions_count)) || keywords.length;
+    var html = '<tr><td class="directions-table__heading" colspan="' + columns + '">研究方向（' + directionsCount + '）</td></tr>';
 
     for (var index = 0; index < keywords.length; index += columns) {
       html += "<tr>";
@@ -545,7 +546,7 @@
         }
       });
 
-      // Conf-card counts (e.g. "19 篇 · 6 个方向 · Las Vegas, NV, USA")
+      // Conf-card counts (e.g. "19 篇 · Las Vegas, NV, USA")
       if (stats.per_conf) {
         confEls.forEach(function (el) {
           var key = el.getAttribute("data-conf-key");
@@ -553,7 +554,7 @@
           var info = stats.per_conf[key];
           if (info) {
             el.textContent =
-              info.total + " 篇 · " + info.tracks + " 个方向" +
+              info.total + " 篇" +
               (location ? " · " + location : "");
           }
         });

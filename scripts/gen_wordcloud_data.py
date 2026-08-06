@@ -7,7 +7,7 @@ Out:  docs/assets/word_data.json
 Called automatically by scripts/hooks.py on every mkdocs build.
 """
 
-import os, re, json, hashlib
+import os, re, json, hashlib, html
 from collections import defaultdict
 from datetime import datetime
 
@@ -111,6 +111,10 @@ ZH_TO_EN = {
     "T门优化":       "T-Gate Optimization",
     "QCCD":          "QCCD",
     "QOC":           "Quantum Opt. Control",
+    "三维集成电路":    "3D IC",
+    "标准单元合法化":  "Standard Cell Legalization",
+    "网络流":          "Network Flow",
+    "最小位移":        "Minimum Displacement",
 }
 
 # ── Tags to skip entirely ──────────────────────────────────────────────────
@@ -181,6 +185,66 @@ def normalize(tag):
     if has_chinese(tag):
         return None
     return tag
+
+
+def normalize_body_keyword(keyword):
+    """Normalize a keyword extracted from paper body '关键词' fields.
+
+    Returns a list to support bilingual expansion (Chinese term + mapped English term).
+    """
+    kw = re.sub(r"\s+", " ", str(keyword or "").strip())
+    kw = kw.strip("\"'`[](){}<>「」『』")
+    kw = kw.strip("。．.!?;；,:：")
+    if not kw:
+        return []
+
+    compact = kw.replace(" ", "")
+    if kw in SKIP_SET or compact in SKIP_SET:
+        return []
+
+    # Keep original keyword (Chinese or English), then add mapped English alias if available.
+    out = [kw]
+    mapped = ZH_TO_EN.get(kw) or ZH_TO_EN.get(compact)
+    if mapped and mapped not in out:
+        out.append(mapped)
+    return out
+
+
+def extract_body_keywords(body):
+    """Extract per-paper keywords from paper content blocks.
+
+    Supports patterns like:
+      <strong>关键词:</strong> 三维集成电路，标准单元合法化，网络流，最小位移
+      **关键词**：A, B, C
+    """
+    if not body:
+        return []
+
+    collected = []
+
+    html_matches = re.findall(
+        r"<strong>\s*关键词\s*[:：]\s*</strong>\s*(.*?)</p>",
+        body,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    for fragment in html_matches:
+        text = re.sub(r"<[^>]+>", " ", fragment)
+        text = html.unescape(text)
+        collected.append(text)
+
+    text_matches = re.findall(r"关键词\s*[:：]\s*([^\n<]+)", body)
+    collected.extend(text_matches)
+
+    if not collected:
+        return []
+
+    terms = []
+    for raw in collected:
+        for term in re.split(r"[，,、;；/|]", raw):
+            cleaned = re.sub(r"\s+", " ", term.strip())
+            if cleaned:
+                terms.append(cleaned)
+    return terms
 
 
 def update_mkdocs_nav(per_track_raw, per_conf_stats):
@@ -331,11 +395,12 @@ def generate():
                 # Block list: tags:\n  - "a"\n  - "b"
                 block = re.search(r'tags:\s*\n((?:[ \t]*-[^\n]*\n)+)', frontmatter)
                 if not block:
-                    continue
-                raw_tags = re.findall(
-                    r'-\s*["\']?([^"\'#\n\[\]]+?)["\']?\s*$',
-                    block.group(1), re.MULTILINE
-                )
+                    raw_tags = []
+                else:
+                    raw_tags = re.findall(
+                        r'-\s*["\']?([^"\'#\n\[\]]+?)["\']?\s*$',
+                        block.group(1), re.MULTILINE
+                    )
 
             paper_title = extract_heading(body) or extract_frontmatter_field(frontmatter, "title")
             paper_desc = extract_frontmatter_field(frontmatter, "description")
@@ -356,6 +421,19 @@ def generate():
                 tag_data[en]["count"] += 1
                 tag_data[en]["by_conf"][conf] += 1
                 tag_data[en]["papers"][paper_url] = paper_meta
+
+            # Detailed per-paper keywords from body (e.g. DAC 2025 "关键词" field)
+            body_keywords = extract_body_keywords(body)
+            if body_keywords:
+                seen_body_terms = set()
+                for raw_kw in body_keywords:
+                    for keyword in normalize_body_keyword(raw_kw):
+                        if keyword in seen_body_terms:
+                            continue
+                        seen_body_terms.add(keyword)
+                        tag_data[keyword]["count"] += 1
+                        tag_data[keyword]["by_conf"][conf] += 1
+                        tag_data[keyword]["papers"][paper_url] = paper_meta
 
     # Build output list with trend calculation
     keywords = []
@@ -412,18 +490,20 @@ def generate():
             "tracks": len(tracks_with_papers),
         }
 
-    # directions_count: unique canonical track names with papers
+    # directions_count: keyword entries shown on homepage direction table
     canonical_tracks = {
         TRACK_CANONICAL.get(k.split("/")[2], k.split("/")[2])
         for k in per_track_raw
         if per_track_raw[k] > 0 and len(k.split("/")) >= 3
     }
-    directions_count = len(canonical_tracks)
+    directions_count = len(keywords)
 
     stats = {
         "total_papers":       total_papers,
         "conferences_count":  conferences_count,
         "directions_count":   directions_count,
+        "track_directions_count": len(canonical_tracks),
+        "keywords_count":     len(keywords),
         "per_conf":           per_conf_stats,
         "per_track":          dict(per_track_raw),
     }
