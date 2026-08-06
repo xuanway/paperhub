@@ -16,9 +16,9 @@ The ‘Auto’ in Autonomous Systems
 
 > This session showcases innovations that put the "auto" in autonomous systems. Topics include real-time LiDAR odometry, event-based sensing, EEG-controlled prosthetics, safe controller synthesis, mutation testing and hyperparameter tuning for efficient computing. Whether it's enhancing autonomy in robotics, cyber-physical systems, or AI-driven hardware, this session explores cutting-edge research shaping the future of intelligent, self-sustaining systems.
 
-| 中英论文题目 | 中英关键词 |
+| 中英论文题目 | 研究概要 |
 |------------|-----------|
-| [LIO-DPC：基于动态位姿链的高精度快速激光雷达惯性里程计<br>LIO-DPC: Accurate and Fast LiDAR-Inertial Odometry with Dynamic Pose Chain](lio_dpc_accurate_and_fast_lidar_inertial_odometry_with_dynamic_pose_chain.md) | 激光雷达惯性里程计、同步定位与地图构建、状态估计 <br>LiDAR-inertial odometry, SLAM, State estimation|
+| [LIO-DPC：基于动态位姿链的高精度快速激光雷达惯性里程计<br>LIO-DPC: Accurate and Fast LiDAR-Inertial Odometry with Dynamic Pose Chain](lio_dpc_accurate_and_fast_lidar_inertial_odometry_with_dynamic_pose_chain.md) | 本文提出LIO-DPC激光惯性里程计框架，设计动态位链解耦滤波与图优化，实现并行运算；设计环路稀疏化指标筛选高质量回环约束。在多公开数据集验证，定位RMSE远优于FAST-LIO2、LIO-SAM等SOTA，单帧耗时接近轻量化滤波方案，兼顾实时性与长期精度。|
 | [Espresso：利用时空有序特性挖掘事件传感器的稀疏属性<br>Espresso: Exploiting the Sparsity Property in Event Sensors with Spatiotemporal Ordering](espresso_exploiting_the_sparsity_property_in_event_sensors_with_spatiotemporal_ordering.md) | 基于事件的视觉传感器、加速器、稀疏性、动态视觉 <br>Event-based Vision Sensor, Accelerator, Sparsity, Dynamic Vision|
 | [CognitiveArm：依托具身机器学习实现脑电实时控制假肢机械臂<br>CognitiveArm: Enabling Real-Time EEG-Controlled Prosthetic Arm Using Embodied Machine Learning](cognitivearm_enabling_real_time_eeg_controlled_prosthetic_arm_using_embodied_machine_learning.md) | 假肢、实时系统、脑建模、脑电图 <br>Prosthetic Limb, Real-time systems, Brain modeling, Electroencephalography |
 | [基于向量屏障证书、具备形式化保障的学习辅助型安全控制器综合方法<br>Learning-Aided Safe Controller Synthesis with Formal Guarantees via Vector Barrier Certificates](learning_aided_safe_controller_synthesis_with_formal_guarantees_via_vector_barrier_certificates.md) | 控制器综合、安全验证、向量障碍证书、强化学习、平方和 <br>Controller synthesis, Safety verification, Vector barrier certificate, Reinforcement learning, Sum-of-squares|
