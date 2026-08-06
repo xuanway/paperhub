@@ -21,7 +21,7 @@ hide:
 
 # 计算机体系结构论文导读
 
-<p class="hero-subtitle">📌聚焦中国计算机学会推荐国际学术会议（计算机体系结构/并行与分布计算/存储系统）<br>✨覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ACM SIGOPS ATC · HPDC A类顶级会议<br>🔄持续更新中✍️</p>
+<p class="hero-subtitle">📌聚焦<a href="ccflist/ccf2026‑ranked‑list.pdf" target="_blank">中国计算机学会推荐国际学术会议</a>（计算机体系结构/并行与分布计算/存储系统）<br>✨覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ACM SIGOPS ATC · HPDC 顶级会议<br>🔄持续更新中✍️</p>
 
 <!-- <p class="hero-subtitle">聚焦体系结构安全与高效计算 · 涵盖硬件安全 · AI加速器 · 同态加密 · 量子计算等前沿方向<br>覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC 顶级会议<br>持续更新中</p> -->
 
@@ -158,8 +158,8 @@ hide:
     <span class="homepage-pageviews__title">📊 Pageviews</span>
     <span class="homepage-pageviews__subtitle">实时访客地图 · 由 mapmyvisitors.com 提供</span>
   </div> -->
-  <div id="mmvst_globe_container" class="homepage-pageviews__globe">
-    <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=VK6_Uhjas4vA0CDps3EFeB0Fotb8hU50SYT4Fcq5nUI&cl=ffffff&w=a"></script>
+  <div id="mmvst_globe_container" class="homepage-pageviews__globe" aria-live="polite">
+    <div class="homepage-pageviews__loading">访客地图加载中...</div>
   </div>
 </div>
 

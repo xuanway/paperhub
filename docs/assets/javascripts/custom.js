@@ -577,7 +577,51 @@
   /* ───────────────────────────────────────────────────────────
      6. VISIT MAP
   ─────────────────────────────────────────────────────────── */
-  var _MMV_SRC = "//mapmyvisitors.com/map.js?d=VK6_Uhjas4vA0CDps3EFeB0Fotb8hU50SYT4Fcq5nUI&cl=ffffff&w=a";
+  var _MMV_SRC = "https://mapmyvisitors.com/map.js?d=VK6_Uhjas4vA0CDps3EFeB0Fotb8hU50SYT4Fcq5nUI&cl=ffffff&w=a";
+  var _mmvLoadTimer = null;
+
+  function clearVisitMapState(container) {
+    clearTimeout(_mmvLoadTimer);
+    while (container.firstChild) container.removeChild(container.firstChild);
+    var oldScript = document.getElementById("mapmyvisitors");
+    if (oldScript) oldScript.remove();
+    var oldWidget = document.getElementById("mapmyvisitors-widget");
+    if (oldWidget) oldWidget.remove();
+  }
+
+  function renderVisitMapFallback(container, reason) {
+    clearVisitMapState(container);
+
+    var panel = document.createElement("div");
+    panel.className = "homepage-pageviews__fallback";
+
+    var title = document.createElement("div");
+    title.className = "homepage-pageviews__fallback-title";
+    title.textContent = "实时访客地图暂不可用";
+
+    var desc = document.createElement("div");
+    desc.className = "homepage-pageviews__fallback-desc";
+    desc.textContent = reason || "地图服务连接超时，请稍后重试。";
+
+    var retry = document.createElement("button");
+    retry.type = "button";
+    retry.className = "homepage-pageviews__retry";
+    retry.textContent = "重试加载";
+    retry.addEventListener("click", function () {
+      initVisitMap();
+    });
+
+    panel.appendChild(title);
+    panel.appendChild(desc);
+    panel.appendChild(retry);
+    container.appendChild(panel);
+  }
+
+  function hasVisitMapWidget(container) {
+    if (!container) return false;
+    if (document.getElementById("mapmyvisitors-widget")) return true;
+    return !!container.querySelector("img, iframe, canvas");
+  }
 
   // Called on SPA navigation back to home — clears old widget and reinjects the script.
   // map.js has no $(window).load dependency: it auto-runs once its jQuery CDN load
@@ -585,16 +629,48 @@
   function initVisitMap() {
     var container = document.getElementById("mmvst_globe_container");
     if (!container) return;
-    while (container.firstChild) container.removeChild(container.firstChild);
-    var oldScript = document.getElementById("mapmyvisitors");
-    if (oldScript) oldScript.remove();
-    var old = document.getElementById("mapmyvisitors-widget");
-    if (old) old.remove();
+
+    clearVisitMapState(container);
+
+    var loading = document.createElement("div");
+    loading.className = "homepage-pageviews__loading";
+    loading.textContent = "访客地图加载中...";
+    container.appendChild(loading);
+
     var s = document.createElement("script");
     s.id = "mapmyvisitors";
     s.type = "text/javascript";
     s.src = _MMV_SRC;
+    s.async = true;
+
+    s.onerror = function () {
+      renderVisitMapFallback(container, "无法连接地图服务（网络或服务端不可达）。");
+    };
+
+    s.onload = function () {
+      // map.js may inject the widget asynchronously after script load.
+      var checks = 0;
+      var maxChecks = 12;
+      var poll = setInterval(function () {
+        checks += 1;
+        if (hasVisitMapWidget(container)) {
+          clearInterval(poll);
+          var loadingNode = container.querySelector(".homepage-pageviews__loading");
+          if (loadingNode) loadingNode.remove();
+        } else if (checks >= maxChecks) {
+          clearInterval(poll);
+          renderVisitMapFallback(container, "地图脚本已加载，但未返回可渲染内容。");
+        }
+      }, 500);
+    };
+
     container.appendChild(s);
+
+    _mmvLoadTimer = setTimeout(function () {
+      if (!hasVisitMapWidget(container)) {
+        renderVisitMapFallback(container, "地图加载超时，请检查网络后重试。");
+      }
+    }, 9000);
   }
 
   /* ───────────────────────────────────────────────────────────
@@ -614,8 +690,8 @@
     initSearch();
     initHeroStats();
     initDirectionsTable();
+    initVisitMap();
     loadWCD().catch(function () {});
-    // map.js <script> is statically embedded in index.md and self-initialises.
   }
 
   if (document.readyState === "loading") {
