@@ -385,9 +385,8 @@ def generate():
             "papers":      sorted(info["papers"].values(), key=paper_sort_key),
         })
 
-    # Sort by count descending, keep top 50
+    # Sort by count descending and keep the full keyword set for the homepage table
     keywords.sort(key=lambda x: (-x["count"], x["text"]))
-    keywords = keywords[:50]
 
     # ── Build stats section ──────────────────────────────────────────────
     # conferences_count: top-level conf dirs in docs/ (e.g. HPCA, ISCA, ...)

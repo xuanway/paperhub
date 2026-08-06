@@ -35,31 +35,6 @@ hide:
 
 ---
 
-<div class="wc-section">
-<div class="wc-section__title">🔍 关键词热度词云</div>
-<div class="wc-section__subtitle">点击关键词跳转相关论文 · 字体大小 = 论文覆盖频次 · 颜色深浅 = 热度趋势</div>
-<div class="wc-legend">
-  <span class="wc-legend-item"><span class="wc-legend-dot" style="background:#2d0a6e"></span> 热度上升</span>
-  <span class="wc-legend-item"><span class="wc-legend-dot" style="background:#5b2d9e"></span> 热度平稳</span>
-  <span class="wc-legend-item"><span class="wc-legend-dot" style="background:#9c7dcf"></span> 热度下降</span>
-</div>
-<div class="wc-canvas-wrap">
-  <canvas id="wordcloud-canvas" width="600" height="600"></canvas>
-  <div class="wc-loading" id="wc-loading">词云加载中…</div>
-</div>
-
-<div class="wc-results" id="keyword-results">
-  <div class="wc-results__eyebrow">Keyword Paper List</div>
-  <div class="wc-results__title" id="keyword-results-title">点击词云中的关键词查看对应论文列表</div>
-  <div class="wc-results__meta" id="keyword-results-meta">每个关键词都会展示对应论文；点击论文标题可进入详细解读页面。</div>
-  <div class="wc-results__list" id="keyword-results-list">
-    <div class="wc-results__empty">选择一个关键词后，这里会展示匹配论文的标题、会议信息和简介。</div>
-  </div>
-</div>
-</div>
-
----
-
 <div class="conf-cubes">
 
 <div class="conf-cube conf-cube--hpca">
@@ -174,5 +149,28 @@ hide:
   </div> -->
   <div id="mmvst_globe_container" class="homepage-pageviews__globe">
     <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=VK6_Uhjas4vA0CDps3EFeB0Fotb8hU50SYT4Fcq5nUI&cl=ffffff&w=a"></script>
+  </div>
+</div>
+
+---
+
+<div class="directions-section">
+  <div class="directions-table-wrap">
+    <table class="directions-table" aria-label="研究方向关键词表">
+      <tbody id="directions-table-body">
+        <tr>
+          <td class="directions-table__loading">研究方向加载中…</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="wc-results" id="keyword-results">
+  <div class="wc-results__eyebrow">Research Directions</div>
+  <div class="wc-results__title" id="keyword-results-title">点击下方研究方向查看对应论文列表</div>
+  <div class="wc-results__meta" id="keyword-results-meta">所有关键词按表格方式展示；点击任意关键词即可查看对应论文、会议信息与简介。</div>
+  <div class="wc-results__list" id="keyword-results-list">
+    <div class="wc-results__empty">选择一个研究方向后，这里会展示匹配论文的标题、会议信息和简介。</div>
   </div>
 </div>

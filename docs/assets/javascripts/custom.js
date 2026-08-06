@@ -227,6 +227,9 @@
   var _lastData  = null;
   var _scrollTipBound = false;
   var _resizeListenerAdded = false;
+  var _directionsData = null;
+  var _directionsResizeTmr = null;
+  var _directionsResizeAdded = false;
 
   function getKeywordParam() {
     try {
@@ -261,8 +264,8 @@
 
     if (!keywordData || !keywordData.papers || !keywordData.papers.length) {
       title.textContent = "没有找到对应论文";
-      meta.textContent = keyword ? (keyword + " 当前没有可展示的论文列表。") : "点击词云中的关键词查看对应论文列表";
-      list.innerHTML = '<div class="wc-results__empty">选择一个关键词后，这里会展示匹配论文的标题、会议信息和简介。</div>';
+      meta.textContent = keyword ? (keyword + " 当前没有可展示的论文列表。") : "点击下方研究方向查看对应论文列表";
+      list.innerHTML = '<div class="wc-results__empty">选择一个研究方向后，这里会展示匹配论文的标题、会议信息和简介。</div>';
       section.classList.remove("is-active");
       setKeywordParam("");
       return;
@@ -285,6 +288,99 @@
 
     if (shouldScroll) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
+  function getDirectionsColumnCount(width) {
+    if (width >= 1440) return 6;
+    if (width >= 1120) return 5;
+    if (width >= 840) return 4;
+    if (width >= 620) return 3;
+    return 2;
+  }
+
+  function renderDirectionsTable(data) {
+    var body = document.getElementById("directions-table-body");
+    if (!body) return;
+
+    _directionsData = data;
+
+    var keywords = (data.keywords || []).slice().sort(function (left, right) {
+      if (right.count !== left.count) return right.count - left.count;
+      return String(left.text).localeCompare(String(right.text));
+    });
+
+    if (!keywords.length) {
+      body.innerHTML = '<tr><td class="directions-table__loading">暂无研究方向数据</td></tr>';
+      return;
+    }
+
+    var tableWrap = body.closest(".directions-table-wrap");
+    var width = tableWrap ? tableWrap.clientWidth : window.innerWidth;
+    var columns = getDirectionsColumnCount(width);
+    var html = '<tr><td class="directions-table__heading" colspan="' + columns + '">研究方向</td></tr>';
+
+    for (var index = 0; index < keywords.length; index += columns) {
+      html += "<tr>";
+      for (var offset = 0; offset < columns; offset++) {
+        var keywordData = keywords[index + offset];
+        if (keywordData) {
+          html +=
+            '<td class="directions-table__cell">' +
+              '<button type="button" class="directions-table__button" data-keyword-index="' + (index + offset) + '">' +
+                '<span class="directions-table__text">' + esc(keywordData.text) + '</span>' +
+                '<span class="directions-table__count">' + keywordData.count + '</span>' +
+              '</button>' +
+            '</td>';
+        } else {
+          html += '<td class="directions-table__cell directions-table__cell--empty"></td>';
+        }
+      }
+      html += "</tr>";
+    }
+
+    body.innerHTML = html;
+
+    body.querySelectorAll(".directions-table__button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var keywordIndex = parseInt(button.getAttribute("data-keyword-index") || "-1", 10);
+        var selected = keywordIndex >= 0 ? (keywords[keywordIndex] || null) : null;
+        var keyword = selected ? selected.text : "";
+        renderKeywordResults(keyword, selected, true);
+      });
+    });
+
+    var initialKeyword = getKeywordParam();
+    if (initialKeyword) {
+      var initialData = keywords.find(function (entry) {
+        return entry.text === initialKeyword;
+      }) || null;
+      renderKeywordResults(initialKeyword, initialData, false);
+    }
+  }
+
+  function initDirectionsTable() {
+    var body = document.getElementById("directions-table-body");
+    if (!body) return;
+
+    loadWCD()
+      .then(function (data) {
+        renderDirectionsTable(data);
+      })
+      .catch(function () {
+        body.innerHTML = '<tr><td class="directions-table__loading">研究方向加载失败</td></tr>';
+      });
+
+    if (!_directionsResizeAdded) {
+      window.addEventListener("resize", function () {
+        clearTimeout(_directionsResizeTmr);
+        _directionsResizeTmr = setTimeout(function () {
+          if (_directionsData && document.getElementById("directions-table-body")) {
+            renderDirectionsTable(_directionsData);
+          }
+        }, 180);
+      });
+      _directionsResizeAdded = true;
     }
   }
 
@@ -508,12 +604,7 @@
     initHomeBtn();
     initSearch();
     initHeroStats();
-    if (document.getElementById("wordcloud-canvas")) {
-      // Reset per-render state so the new canvas draws fresh
-      _lastData = null;
-      _scrollTipBound = false;
-      initWordCloud();
-    }
+    initDirectionsTable();
     initVisitMap();
   }
 
@@ -521,8 +612,8 @@
     initHomeBtn();
     initSearch();
     initHeroStats();
+    initDirectionsTable();
     loadWCD().catch(function () {});
-    if (document.getElementById("wordcloud-canvas")) initWordCloud();
     // map.js <script> is statically embedded in index.md and self-initialises.
   }
 

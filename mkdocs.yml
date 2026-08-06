@@ -49,7 +49,6 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
-  - assets/javascripts/wordcloud2.js
   - assets/javascripts/custom.js
 
 plugins:
