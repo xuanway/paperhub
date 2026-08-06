@@ -578,10 +578,43 @@
      6. VISIT MAP
   ─────────────────────────────────────────────────────────── */
   var _MMV_SRC = "https://mapmyvisitors.com/map.js?d=VK6_Uhjas4vA0CDps3EFeB0Fotb8hU50SYT4Fcq5nUI&cl=ffffff&w=a";
+  var _VISITOR_GEO_API = "https://ipwho.is/?lang=zh";
   var _mmvLoadTimer = null;
+  var _mmvPollTimer = null;
+  var _visitorHintPromise = null;
+
+  function loadVisitorHint() {
+    if (_visitorHintPromise) return _visitorHintPromise;
+
+    _visitorHintPromise = fetch(_VISITOR_GEO_API, { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function (d) {
+        if (!d || d.success === false) throw new Error("geo lookup failed");
+        var city = d.city || d.region || "未知城市";
+        var country = d.country || "未知国家";
+        return "当前访问来源：" + city + "，" + country;
+      })
+      .catch(function () {
+        var tz = "";
+        try {
+          tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+        } catch (_err) {}
+        return tz
+          ? "当前访问时区：" + tz + "（定位服务受限）"
+          : "当前访问来源：定位信息暂不可用";
+      });
+
+    return _visitorHintPromise;
+  }
 
   function clearVisitMapState(container) {
+    clearInterval(_mmvPollTimer);
     clearTimeout(_mmvLoadTimer);
+    _mmvPollTimer = null;
+    _mmvLoadTimer = null;
     while (container.firstChild) container.removeChild(container.firstChild);
     var oldScript = document.getElementById("mapmyvisitors");
     if (oldScript) oldScript.remove();
@@ -595,24 +628,42 @@
     var panel = document.createElement("div");
     panel.className = "homepage-pageviews__fallback";
 
+    var mapFrame = document.createElement("div");
+    mapFrame.className = "homepage-pageviews__fallback-mapframe";
+
+    var mapImg = document.createElement("img");
+    mapImg.className = "homepage-pageviews__fallback-map";
+    mapImg.src = getBase() + "assets/world.svg";
+    mapImg.alt = "世界地图底图";
+    mapFrame.appendChild(mapImg);
+
     var title = document.createElement("div");
     title.className = "homepage-pageviews__fallback-title";
-    title.textContent = "实时访客地图暂不可用";
+    title.textContent = "实时访客地图服务不可达";
 
     var desc = document.createElement("div");
     desc.className = "homepage-pageviews__fallback-desc";
     desc.textContent = reason || "地图服务连接超时，请稍后重试。";
 
+    var loc = document.createElement("div");
+    loc.className = "homepage-pageviews__fallback-loc";
+    loc.textContent = "正在获取当前访问来源...";
+    loadVisitorHint().then(function (msg) {
+      loc.textContent = msg;
+    });
+
     var retry = document.createElement("button");
     retry.type = "button";
     retry.className = "homepage-pageviews__retry";
-    retry.textContent = "重试加载";
+    retry.textContent = "重试实时地图";
     retry.addEventListener("click", function () {
       initVisitMap();
     });
 
+    panel.appendChild(mapFrame);
     panel.appendChild(title);
     panel.appendChild(desc);
+    panel.appendChild(loc);
     panel.appendChild(retry);
     container.appendChild(panel);
   }
@@ -620,7 +671,14 @@
   function hasVisitMapWidget(container) {
     if (!container) return false;
     if (document.getElementById("mapmyvisitors-widget")) return true;
-    return !!container.querySelector("img, iframe, canvas");
+
+    var script = document.getElementById("mapmyvisitors");
+    if (script && script.nextElementSibling) {
+      var html = script.nextElementSibling.outerHTML || "";
+      if (/mapmyvisitors/i.test(html)) return true;
+    }
+
+    return false;
   }
 
   // Called on SPA navigation back to home — clears old widget and reinjects the script.
@@ -650,15 +708,17 @@
     s.onload = function () {
       // map.js may inject the widget asynchronously after script load.
       var checks = 0;
-      var maxChecks = 12;
-      var poll = setInterval(function () {
+      var maxChecks = 6;
+      _mmvPollTimer = setInterval(function () {
         checks += 1;
         if (hasVisitMapWidget(container)) {
-          clearInterval(poll);
+          clearInterval(_mmvPollTimer);
+          _mmvPollTimer = null;
           var loadingNode = container.querySelector(".homepage-pageviews__loading");
           if (loadingNode) loadingNode.remove();
         } else if (checks >= maxChecks) {
-          clearInterval(poll);
+          clearInterval(_mmvPollTimer);
+          _mmvPollTimer = null;
           renderVisitMapFallback(container, "地图脚本已加载，但未返回可渲染内容。");
         }
       }, 500);
@@ -670,7 +730,7 @@
       if (!hasVisitMapWidget(container)) {
         renderVisitMapFallback(container, "地图加载超时，请检查网络后重试。");
       }
-    }, 9000);
+    }, 3500);
   }
 
   /* ───────────────────────────────────────────────────────────
