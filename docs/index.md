@@ -37,7 +37,7 @@ hide:
 
 <div class="conf-cubes">
 
-<div class="conf-cube conf-cube--hpca">
+<div class="conf-cube conf-cube--hpca" href="HPCA/2026/">
   <span class="conf-cube__icon">🚀</span>
   <div class="conf-cube__name">HPCA</div>
   <div class="conf-cube__full">High-Performance Computer Architecture</div>
