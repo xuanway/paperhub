@@ -1,15 +1,15 @@
 ---
 title: "计算机体系结构论文 · 顶会论文解读"
-description: "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC·HPDC 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
+description: "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC·HPDC 顶会论文解读。"
 tags:
-  - "可信计算"
-  - "高效计算"
+  # - "可信计算"
+  # - "高效计算"
   - "体系结构"
-  - "硬件安全"
-  - "AI加速"
-  - "HPCA"
-  - "ISCA"
-  - "MICRO"
+  # - "硬件安全"
+  # - "AI加速"
+  # - "HPCA"
+  # - "ISCA"
+  # - "MICRO"
 search:
   exclude: true
 hide:
@@ -24,10 +24,10 @@ hide:
 <p class="hero-subtitle">📌聚焦<a href="ccflist/ccf2026‑ranked‑list.pdf" target="_blank">中国计算机学会推荐国际学术会议</a>（计算机体系结构/并行与分布计算/存储系统）<br>✨覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC · HPDC 顶级会议<br>🔄持续更新中✍️</p>
 
 
-<div class="hero-stats">
+<!-- <div class="hero-stats">
 <div class="stat"><span class="stat-number" data-stat-key="papers">169</span><span class="stat-label">篇论文</span></div>
 <div class="stat"><span class="stat-number" data-stat-key="conferences">11</span><span class="stat-label">个会议</span></div>
-</div>
+</div> -->
 
 <!-- <a class="github-link" href="https://github.com/xuanway/paperhub" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" style="vertical-align:middle;margin-right:6px;fill:currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</a> -->
 
