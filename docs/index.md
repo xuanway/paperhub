@@ -130,7 +130,7 @@ hide:
 </div>
 
 <div class="conf-cube conf-cube--hpdc">
-  <span class="conf-cube__icon">🖧</span>
+  <span class="conf-cube__icon">🧩</span>
   <div class="conf-cube__name">HPDC</div>
   <div class="conf-cube__full">ACM International Symposium on High-Performance Parallel and Distributed Computing</div>
   <div class="conf-cube__years">
