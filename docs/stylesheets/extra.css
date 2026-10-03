@@ -81,6 +81,7 @@
 
 .conf-cube {
   position: relative;
+  display: block;
   border-radius: 14px;
   padding: 1.4rem 1.2rem 1.15rem;
   color: #fff;

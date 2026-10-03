@@ -56,10 +56,14 @@ hide:
 </div>
 
 
-<div class="conf-cube conf-cube--isca" href="ISCA/2025/">
+<div class="conf-cube conf-cube--isca">
   <span class="conf-cube__icon">🏗️</span>
   <div class="conf-cube__name">ISCA</div>
   <div class="conf-cube__full">International Symposium on Computer Architecture</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="ISCA/2025/">2025</a>
+  </div>
+  <div class="conf-cube__stat" data-conf-key="ISCA 2025" data-conf-location="Tokyo, Japan">135 篇 · Tokyo, Japan</div>
 </div>
 
 <div class="conf-cube conf-cube--micro">
