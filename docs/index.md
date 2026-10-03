@@ -37,7 +37,7 @@ hide:
 
 <div class="conf-cubes">
 
-<!-- <div class="conf-cube conf-cube--hpca">
+<div class="conf-cube conf-cube--hpca">
   <span class="conf-cube__icon">🚀</span>
   <div class="conf-cube__name">HPCA</div>
   <div class="conf-cube__full">IEEE International Symposium on High-Performance Computer Architecture</div>
@@ -45,21 +45,16 @@ hide:
     <a class="conf-cube__year-link" href="HPCA/2026/">2026</a>
     <a class="conf-cube__year-link" href="HPCA/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat">246 篇 · Las Vegas / Sydney</div>
-</div> -->
-
-
-<div class="conf-cube conf-cube--hpca" href="HPCA/2026/">
-  <span class="conf-cube__icon">🚀</span>
-  <div class="conf-cube__name">HPCA</div>
-  <div class="conf-cube__full">IEEE International Symposium on High-Performance Computer Architecture</div>
 </div>
 
 
-<div class="conf-cube conf-cube--isca" href="ISCA/2025/">
+<div class="conf-cube conf-cube--isca">
   <span class="conf-cube__icon">🏗️</span>
   <div class="conf-cube__name">ISCA</div>
   <div class="conf-cube__full">International Symposium on Computer Architecture</div>
+  <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="ISCA/2025/">2025</a>
+  </div>
 </div>
 
 <div class="conf-cube conf-cube--micro">
@@ -69,7 +64,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="MICRO/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="MICRO 2025" data-conf-location="Seoul, Korea">123 篇 · Seoul, Korea</div>
 </div>
 
 <div class="conf-cube conf-cube--asplos">
@@ -79,7 +73,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="ASPLOS/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="ASPLOS 2025" data-conf-location="Rotterdam">184 篇 · Rotterdam</div>
 </div>
 
 <div class="conf-cube conf-cube--dac">
@@ -89,7 +82,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="DAC/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="DAC 2025" data-conf-location="San Francisco, CA">419 篇 · San Francisco, CA</div>
 </div>
 
 <div class="conf-cube conf-cube--fast">
@@ -99,7 +91,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="FAST/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="FAST 2025" data-conf-location="Santa Clara, CA">36 篇 · Santa Clara, CA</div>
 </div>
 
 <div class="conf-cube conf-cube--sc">
@@ -109,7 +100,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="SC/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="SC 2025" data-conf-location="St. Louis, MO">136 篇 · St. Louis, MO</div>
 </div>
 
 <div class="conf-cube conf-cube--eurosys">
@@ -119,7 +109,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="EuroSys/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="EuroSys 2025" data-conf-location="Rotterdam, Netherlands">85 篇 · Rotterdam, Netherlands</div>
 </div>
 
 <div class="conf-cube conf-cube--ppopp">
@@ -129,7 +118,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="PPoPP/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="PPoPP 2025" data-conf-location="Las Vegas, NV">38 篇 · Las Vegas, NV</div>
 </div>
 
 <div class="conf-cube conf-cube--atc">
@@ -139,7 +127,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="ATC/2025/">2025</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="ATC 2025" data-conf-location="Boston, MA">100 篇 · Boston, MA</div>
 </div>
 
 <div class="conf-cube conf-cube--hpdc">
@@ -149,7 +136,6 @@ hide:
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="HPDC/2026/">2026</a>
   </div>
-  <div class="conf-cube__stat" data-conf-key="HPDC 2026" data-conf-location="Cleveland, OH">95 篇 · Cleveland, OH</div>
 </div>
 
 </div>
