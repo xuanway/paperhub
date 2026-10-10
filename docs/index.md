@@ -23,6 +23,14 @@ hide:
 
 <p class="hero-subtitle">📌聚焦<a href="ccflist/ccf2026‑ranked‑list.pdf" target="_blank">中国计算机学会推荐国际学术会议</a>（计算机体系结构/并行与分布计算/存储系统）<br>✨覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC · HPDC 顶级会议<br>🔄持续更新中✍️</p>
 
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com/convert-pdf-to-jpg" target="_blank" rel="noopener" title="Convert PDF to JPG free">
+<img src="https://www.hitwebcounter.com/counter/counter.php?page=21523563&amp;style=0005&amp;nbdigits=8&amp;type=page" alt="Convert PDF to JPG free" decoding="async" style="border:0;max-width:100%;height:auto;" />
+</a>
+<br />
+<a href="https://www.hitwebcounter.com/" target="_blank" rel="noopener" style="font-family:Geneva, Arial, Helvetica, sans-serif;;font-size:9px;color:#9C9795;text-decoration:none;font-weight:bold;">hitwebcount</a>
+<!-- hitwebcounter Code END -->
+
 
 <!-- <div class="hero-stats">
 <div class="stat"><span class="stat-number" data-stat-key="papers">169</span><span class="stat-label">篇论文</span></div>
