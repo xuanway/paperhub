@@ -10,8 +10,8 @@ title: "Session 6D: CXL-Based Tiered Memory & Storage"
 
 | 英文标题 | 中文标题 |
 | --- | --- |
-| [Terracotta: Enabling the Adoption of New DRAM Techniques via a Flexible DRAM Interface and Memory Controller](terracotta-enabling-the-adoption-of-new-dram-techniques-via-a-flexible-dram-interface-and-memory-controller.md) | Terracotta：通过灵活的 DRAM 接口与内存控制器促进新型 DRAM 技术应用 |
-| [CacheFlex: Direct Software-Managed Access to Higher-Level Cache for Scalable Vector Support](cacheflex-direct-software-managed-access-to-higher-level-cache-for-scalable-vector-support.md) | CacheFlex：通过软件直接管理的高层级缓存访问实现可扩展向量支持 |
+| [Terracotta: Enabling the Adoption of New DRAM Techniques via a Flexible DRAM Interface and Memory Controller](terracotta-enabling-the-adoption-of-new-dram-techniques-via-a-flexible-dram-interface-and-memory-controller.md) ([code](https://github.com/CMU-SAFARI/Terracotta)) | Terracotta：通过灵活的 DRAM 接口与内存控制器促进新型 DRAM 技术应用 |
+| [CacheFlex: Direct Software-Managed Access to Higher-Level Cache for Scalable Vector Support](cacheflex-direct-software-managed-access-to-higher-level-cache-for-scalable-vector-support.md) ([code](https://github.com/JingqunZhang/cacheflex-ae)) | CacheFlex：通过软件直接管理的高层级缓存访问实现可扩展向量支持 |
 | [CXL AnySSD: A Composable CXL SSD Using a CXL Type-2 Device and Any SSDs](cxl-anyssd-a-composable-cxl-ssd-using-a-cxl-type-2-device-and-any-ssds.md) | CXL AnySSD：利用 CXL Type-2 设备与任意 SSD 构建可组合 CXL SSD |
 | [HYDRA: Hybrid DRAM Caching for Dynamic Complementary Multi-to-One Page Mapping in CXL Tiered Memory](hydra-hybrid-dram-caching-for-dynamic-complementary-multi-to-one-page-mapping-in-cxl-tiered-memory.md) | HYDRA：面向 CXL 分层内存中动态互补多对一页映射的混合 DRAM 缓存 |
 | [CODA: Algorithm-Hardware Co-Design for Edge Video Diffusion via NMP-Enabled Compute-Cache Operator Disaggregation](coda-algorithm-hardware-co-design-for-edge-video-diffusion-via-nmp-enabled-compute-cache-operator-disaggregation.md) | CODA：通过近存处理支持的计算与缓存算子分离，实现边缘视频扩散的算法与硬件协同设计 |

@@ -10,8 +10,8 @@ title: "Session 7C: Vision-Language & Multimodal Model Acceleration"
 
 | 英文标题 | 中文标题 |
 | --- | --- |
-| [MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration](mix-micro-inverted-scaling-for-end-to-end-low-bit-vision-language-model-acceleration.md) | MiX：用于端到端低比特视觉语言模型加速的微粒度逆缩放 |
-| [SCARF: A Scene-Adaptive Depth-Guided G-3DGS Encoder Accelerator with Semantic Reuse and Fused Dataflow](scarf-a-scene-adaptive-depth-guided-g-3dgs-encoder-accelerator-with-semantic-reuse-and-fused-dataflow.md) | SCARF：具备语义复用与融合数据流的场景自适应深度引导 G-3DGS 编码器加速器 |
+| [MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration](mix-micro-inverted-scaling-for-end-to-end-low-bit-vision-language-model-acceleration.md) ([code](https://doi.org/10.5281/zenodo.21530344)) | MiX：用于端到端低比特视觉语言模型加速的微粒度逆缩放 |
+| [SCARF: A Scene-Adaptive Depth-Guided G-3DGS Encoder Accelerator with Semantic Reuse and Fused Dataflow](scarf-a-scene-adaptive-depth-guided-g-3dgs-encoder-accelerator-with-semantic-reuse-and-fused-dataflow.md) ([code](https://github.com/MAdrid1011/SCARF)) | SCARF：具备语义复用与融合数据流的场景自适应深度引导 G-3DGS 编码器加速器 |
 | [Hermes: Architecting Congestion Management for Large-Scale NoCs](hermes-architecting-congestion-management-for-large-scale-nocs.md) | Hermes：面向大规模片上网络的拥塞管理架构设计 |
 | [PECO: Prediction-Execution Co-Optimized Constant-Memory Sparse Attention Accelerator for Foundational Diffusion Model](peco-prediction-execution-co-optimized-constant-memory-sparse-attention-accelerator-for-foundational-diffusion-model.md) | PECO：面向基础扩散模型、协同优化预测与执行的恒定内存稀疏注意力加速器 |
 | [Deltoris: Enabling Real-Time VLA Inference in Embodied AI via Bit-Level Sparsity and Speculative Inference](deltoris-enabling-real-time-vla-inference-in-embodied-ai-via-bit-level-sparsity-and-speculative-inference.md) | Deltoris：通过比特级稀疏性与推测推理实现具身 AI 的实时 VLA 推理 |

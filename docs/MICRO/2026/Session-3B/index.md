@@ -10,7 +10,7 @@ title: "Session 3B: Design Methodology: Simulation & Performance Modeling"
 
 | 英文标题 | 中文标题 |
 | --- | --- |
-| [FlashGPU-sim: Enabling GPU Modeling for Modern Architectures and AI Workloads](flashgpu-sim-enabling-gpu-modeling-for-modern-architectures-and-ai-workloads.md) | FlashGPU-sim：面向现代架构与 AI 工作负载的 GPU 建模 |
+| [FlashGPU-sim: Enabling GPU Modeling for Modern Architectures and AI Workloads](flashgpu-sim-enabling-gpu-modeling-for-modern-architectures-and-ai-workloads.md) ([code](https://github.com/FlashGPU-Sim/FlashGPU-Sim)) | FlashGPU-sim：面向现代架构与 AI 工作负载的 GPU 建模 |
 | [Accurate & Scalable Time-Based Sampling of Full-System Simulation](accurate-scalable-time-based-sampling-of-full-system-simulation.md) | 精确且可扩展的全系统仿真时间采样 |
 | [KAIROS: Fast Microarchitectural Design Space Exploration by Bridging Architectural Semantics and Logic Gates](kairos-fast-microarchitectural-design-space-exploration-by-bridging-architectural-semantics-and-logic-gates.md) | KAIROS：连接架构语义与逻辑门，实现快速微架构设计空间探索 |
 | [Fidelio: Agentic AI Framework for Synthesizing Microarchitecture-Faithful Datacenter Benchmarks](fidelio-agentic-ai-framework-for-synthesizing-microarchitecture-faithful-datacenter-benchmarks.md) | Fidelio：用于合成忠实反映微架构特征的数据中心基准测试的智能体 AI 框架 |

@@ -10,7 +10,7 @@ title: "Session 7D: Cache & Memory-Level Parallelism"
 
 | 英文标题 | 中文标题 |
 | --- | --- |
-| [Acyclic Cost-Effective Requester-Stalls Hardware Transactional Memory](acyclic-cost-effective-requester-stalls-hardware-transactional-memory.md) | 无环且低成本的请求方停顿式硬件事务内存 |
+| [Acyclic Cost-Effective Requester-Stalls Hardware Transactional Memory](acyclic-cost-effective-requester-stalls-hardware-transactional-memory.md) ([code](https://doi.org/10.5281/zenodo.22303584)) | 无环且低成本的请求方停顿式硬件事务内存 |
 | [MORIA: Mining the Cache for Miss Parallelism](moria-mining-the-cache-for-miss-parallelism.md) | MORIA：从缓存中挖掘未命中并行性 |
 | [The Path to BTB Storage Efficiency Goes Through Tags](the-path-to-btb-storage-efficiency-goes-through-tags.md) | 通过标签提高分支目标缓冲区存储效率 |
 | [VAMOs: Versatile Atomic Memory Operations for High-Performance Many-Core Architectures](vamos-versatile-atomic-memory-operations-for-high-performance-many-core-architectures.md) | VAMOs：面向高性能众核架构的多功能原子内存操作 |

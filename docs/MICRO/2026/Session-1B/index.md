@@ -10,7 +10,7 @@ title: "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving"
 
 | 英文标题 | 中文标题 |
 | --- | --- |
-| [ATLAS: Pathfinding Efficient 3D-DRAM-Based LLM Inference Accelerator Design via Silicon-Proven Full-Stack Simulation](atlas-pathfinding-efficient-3d-dram-based-llm-inference-accelerator-design-via-silicon-proven-full-stack-simulation.md) | ATLAS：通过经芯片验证的全栈仿真探索高效三维 DRAM 大语言模型推理加速器设计 |
+| [ATLAS: Pathfinding Efficient 3D-DRAM-Based LLM Inference Accelerator Design via Silicon-Proven Full-Stack Simulation](atlas-pathfinding-efficient-3d-dram-based-llm-inference-accelerator-design-via-silicon-proven-full-stack-simulation.md) ([code](https://github.com/pku-gsun/ATLAS-MICRO-2026)) | ATLAS：通过经芯片验证的全栈仿真探索高效三维 DRAM 大语言模型推理加速器设计 |
 | [HiLLM: Heterogeneous CPU-GPU Inference for Interactive MoE LLM Serving on Local Systems](hillm-heterogeneous-cpu-gpu-inference-for-interactive-moe-llm-serving-on-local-systems.md) | HiLLM：面向本地交互式 MoE 大语言模型服务的 CPU-GPU 异构推理 |
 | [DART: A Cache-Enabled Diffusion Transformer Accelerator via Feature-Gated Scheduling and Hierarchical Quantization](dart-a-cache-enabled-diffusion-transformer-accelerator-via-feature-gated-scheduling-and-hierarchical-quantization.md) | DART：通过特征门控调度与分层量化实现缓存支持的扩散 Transformer 加速器 |
 | [HyPIM: A Unified PIM Architecture for Accelerating Mamba-Transformer Hybrid Model Inference](hypim-a-unified-pim-architecture-for-accelerating-mamba-transformer-hybrid-model-inference.md) | HyPIM：用于加速 Mamba-Transformer 混合模型推理的统一存内处理架构 |

@@ -10,7 +10,7 @@ title: "Session 1D: Low-Bit LUT-Based & Sparse Inference"
 
 | 英文标题 | 中文标题 |
 | --- | --- |
-| [Sparse by Command: Task-Conditional Compute Skipping for Multi-Task Inference Accelerators](sparse-by-command-task-conditional-compute-skipping-for-multi-task-inference-accelerators.md) | Sparse by Command：面向多任务推理加速器的任务条件计算跳过机制 |
+| [Sparse by Command: Task-Conditional Compute Skipping for Multi-Task Inference Accelerators](sparse-by-command-task-conditional-compute-skipping-for-multi-task-inference-accelerators.md) ([code](https://github.com/afzalxo/sparse-by-command)) | Sparse by Command：面向多任务推理加速器的任务条件计算跳过机制 |
 | [Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations](kaleido-algorithm-hardware-co-design-for-video-diffusion-transformers-by-exploiting-latent-space-correlations.md) | Kaleido：利用潜在空间相关性的视频扩散 Transformer 算法与硬件协同设计 |
 | [FUSE: A Fragmentation-Free Spatial Multi-Tenant DNN Accelerator via Edge-Universal Graph](fuse-a-fragmentation-free-spatial-multi-tenant-dnn-accelerator-via-edge-universal-graph.md) | FUSE：通过边通用图实现无碎片的空间多租户 DNN 加速器 |
 | [RAIL: A Reconfigurable Spatial Accelerator for Linear-Time Sequence Model Inference](rail-a-reconfigurable-spatial-accelerator-for-linear-time-sequence-model-inference.md) | RAIL：面向线性时间序列模型推理的可重构空间加速器 |

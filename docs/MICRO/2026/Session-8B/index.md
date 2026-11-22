@@ -10,7 +10,7 @@ title: "Session 8B: DRAM Reliability, ECC & Address Translation"
 
 | 英文标题 | 中文标题 |
 | --- | --- |
-| [NB-Walker: Non-Blocking Page Table Walker to Enhance Address Translation in NUMA GPUs](nb-walker-non-blocking-page-table-walker-to-enhance-address-translation-in-numa-gpus.md) | NB-Walker：增强 NUMA GPU 地址转换的非阻塞页表遍历器 |
+| [NB-Walker: Non-Blocking Page Table Walker to Enhance Address Translation in NUMA GPUs](nb-walker-non-blocking-page-table-walker-to-enhance-address-translation-in-numa-gpus.md) ([code](https://doi.org/10.5281/zenodo.21488604)) | NB-Walker：增强 NUMA GPU 地址转换的非阻塞页表遍历器 |
 | [PARE: A Power and Area-Efficient Memory Controller for High-Bandwidth DRAM](pare-a-power-and-area-efficient-memory-controller-for-high-bandwidth-dram.md) | PARE：面向高带宽 DRAM 的功耗与面积高效内存控制器 |
 | [HUME: Heterogeneous Unified Mirroring with Encoded Replica for Resilient Tiered Memory Systems](hume-heterogeneous-unified-mirroring-with-encoded-replica-for-resilient-tiered-memory-systems.md) | HUME：通过编码副本实现弹性分层内存系统的异构统一镜像 |
 | [Shared Metadata Field: A Dynamic ECC/DBI Allocation to Improve Reliability and I/O Power Efficiency for LPDDR6](shared-metadata-field-a-dynamic-ecc-dbi-allocation-to-improve-reliability-and-i-o-power-efficiency-for-lpddr6.md) | 共享元数据字段：动态分配 ECC 与 DBI 以提高 LPDDR6 可靠性及 I/O 能效 |

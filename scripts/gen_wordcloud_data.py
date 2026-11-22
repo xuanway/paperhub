@@ -362,7 +362,7 @@ def generate():
         # Skip non-content dirs
         dirs[:] = [d for d in dirs if d not in ("assets", "stylesheets", ".git", "site")]
         for fname in files:
-            if fname == "index.md" or not fname.endswith(".md"):
+            if fname in {"index.md", "Code-and-Artifacts.md"} or not fname.endswith(".md"):
                 continue
             fpath = os.path.join(root, fname)
             relpath = os.path.relpath(fpath, DOCS_DIR)
