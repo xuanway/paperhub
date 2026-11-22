@@ -775,6 +775,296 @@ nav:
         - "AxCore: A Quantization-Aware Approximate GEMM Unit for LLM Inference": MICRO/2025/systems_for_ai_quantization/axcore_a_quantization_aware_approximate_gemm_unit_for_llm_inference.md
         - "Amove: Accelerating LLMs through Mitigating Outliers and Salient Points via Fine-Grained Grouped Vectorized Data Type": MICRO/2025/systems_for_ai_quantization/amove_accelerating_llms_through_mitigating_outliers_and_salient_points_via_fine_grained_grouped_vectorized_data_type.md
         - "MX+: Pushing the Limits of Microscaling Formats for Efficient Large Language Model Serving": MICRO/2025/systems_for_ai_quantization/mx_pushing_the_limits_of_microscaling_formats_for_efficient_large_language_model_serving.md
+    - MICRO 2026 (220):
+      - MICRO 2026: MICRO/2026/index.md
+      - "Session 1A: GPU Microarchitecture & Numerical Precision (7)":
+        - "Session 1A": MICRO/2026/Session-1A/index.md
+        - "Ray-by-Ray: Fine-Grained Resource Management for GPU Ray Tracing Units": MICRO/2026/Session-1A/ray-by-ray-fine-grained-resource-management-for-gpu-ray-tracing-units.md
+        - "Bit-Accurate Modeling of GPU Matrix Multiply-Accumulate Units: Demystifying Numerical Discrepancy and Accuracy": MICRO/2026/Session-1A/bit-accurate-modeling-of-gpu-matrix-multiply-accumulate-units-demystifying-numerical-discrepancy-and-accuracy.md
+        - "Not All Dot Products Are Equal: The Hidden MMA Arithmetic Design Space Drives Cross-Architecture LLM Inference Gaps": MICRO/2026/Session-1A/not-all-dot-products-are-equal-the-hidden-mma-arithmetic-design-space-drives-cross-architecture-llm-inference-gaps.md
+        - "Better Call SoL: Enhancing GPUs with a Sea of LUTs Core": MICRO/2026/Session-1A/better-call-sol-enhancing-gpus-with-a-sea-of-luts-core.md
+        - "Complex Tensor Core: Software-Hardware Co-Design for Accelerating Complex-Valued Neural Networks on GPUs": MICRO/2026/Session-1A/complex-tensor-core-software-hardware-co-design-for-accelerating-complex-valued-neural-networks-on-gpus.md
+        - "RESCU: Optimizing GPU Register Management for Effective Kernel Fusion": MICRO/2026/Session-1A/rescu-optimizing-gpu-register-management-for-effective-kernel-fusion.md
+        - "SnakeCharmer: Orchestrating Utility, Timeliness, and Placement in GPU Prefetching": MICRO/2026/Session-1A/snakecharmer-orchestrating-utility-timeliness-and-placement-in-gpu-prefetching.md
+      - "Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving (7)":
+        - "Session 1B": MICRO/2026/Session-1B/index.md
+        - "ATLAS: Pathfinding Efficient 3D-DRAM-Based LLM Inference Accelerator Design via Silicon-Proven Full-Stack Simulation": MICRO/2026/Session-1B/atlas-pathfinding-efficient-3d-dram-based-llm-inference-accelerator-design-via-silicon-proven-full-stack-simulation.md
+        - "HiLLM: Heterogeneous CPU-GPU Inference for Interactive MoE LLM Serving on Local Systems": MICRO/2026/Session-1B/hillm-heterogeneous-cpu-gpu-inference-for-interactive-moe-llm-serving-on-local-systems.md
+        - "DART: A Cache-Enabled Diffusion Transformer Accelerator via Feature-Gated Scheduling and Hierarchical Quantization": MICRO/2026/Session-1B/dart-a-cache-enabled-diffusion-transformer-accelerator-via-feature-gated-scheduling-and-hierarchical-quantization.md
+        - "HyPIM: A Unified PIM Architecture for Accelerating Mamba-Transformer Hybrid Model Inference": MICRO/2026/Session-1B/hypim-a-unified-pim-architecture-for-accelerating-mamba-transformer-hybrid-model-inference.md
+        - "NFC: A 3D NAND Flash-CIM Centric Architecture for Efficient On-Device MoE LLM Inference": MICRO/2026/Session-1B/nfc-a-3d-nand-flash-cim-centric-architecture-for-efficient-on-device-moe-llm-inference.md
+        - "TNT: A Unified LUT-Centric Architecture for Ultra-Low-Bit LLM Inference via Native KV Computation": MICRO/2026/Session-1B/tnt-a-unified-lut-centric-architecture-for-ultra-low-bit-llm-inference-via-native-kv-computation.md
+        - "Gossamer: A Utility-Driven Architecture for Constant-Budget KV Cache Compression in Reasoning LLMs": MICRO/2026/Session-1B/gossamer-a-utility-driven-architecture-for-constant-budget-kv-cache-compression-in-reasoning-llms.md
+      - "Session 1C: Industry Session (7)":
+        - "Session 1C": MICRO/2026/Session-1C/index.md
+        - "AIPerf: Meta's Performance Modeling and HW/SW Co-Design Framework for Datacenter-Scale LLM Training": MICRO/2026/Session-1C/aiperf-meta-s-performance-modeling-and-hw-sw-co-design-framework-for-datacenter-scale-llm-training.md
+        - "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs": MICRO/2026/Session-1C/architecting-for-hardware-diversity-meta-s-end-to-end-co-design-for-high-performance-ai-training-on-amd-gpus.md
+        - "MTIA-RT: Enabling a Native PyTorch Experience on Custom AI ASICs": MICRO/2026/Session-1C/mtia-rt-enabling-a-native-pytorch-experience-on-custom-ai-asics.md
+        - "DMA-Latte: Expanding the Reach of DMA Offloads to Latency-Bound ML Communication": MICRO/2026/Session-1C/dma-latte-expanding-the-reach-of-dma-offloads-to-latency-bound-ml-communication.md
+        - "BoostX™-RNIC: Fast, Scalable and Flexible AI RNIC": MICRO/2026/Session-1C/boostx-rnic-fast-scalable-and-flexible-ai-rnic.md
+        - "Performance Verification of the AmpereOne® CPU Core": MICRO/2026/Session-1C/performance-verification-of-the-ampereone-cpu-core.md
+        - "Practical Prefetching of a MAC Scheduler on ARM Neoverse": MICRO/2026/Session-1C/practical-prefetching-of-a-mac-scheduler-on-arm-neoverse.md
+      - "Session 1D: Low-Bit LUT-Based & Sparse Inference (7)":
+        - "Session 1D": MICRO/2026/Session-1D/index.md
+        - "Sparse by Command: Task-Conditional Compute Skipping for Multi-Task Inference Accelerators": MICRO/2026/Session-1D/sparse-by-command-task-conditional-compute-skipping-for-multi-task-inference-accelerators.md
+        - "Kaleido: Algorithm-Hardware Co-Design for Video Diffusion Transformers by Exploiting Latent Space Correlations": MICRO/2026/Session-1D/kaleido-algorithm-hardware-co-design-for-video-diffusion-transformers-by-exploiting-latent-space-correlations.md
+        - "FUSE: A Fragmentation-Free Spatial Multi-Tenant DNN Accelerator via Edge-Universal Graph": MICRO/2026/Session-1D/fuse-a-fragmentation-free-spatial-multi-tenant-dnn-accelerator-via-edge-universal-graph.md
+        - "RAIL: A Reconfigurable Spatial Accelerator for Linear-Time Sequence Model Inference": MICRO/2026/Session-1D/rail-a-reconfigurable-spatial-accelerator-for-linear-time-sequence-model-inference.md
+        - "FLUTE: A LUT-Based Floating-Point Engine for Efficient LLM Acceleration Exploiting Core-Tail Hierarchical Alignment": MICRO/2026/Session-1D/flute-a-lut-based-floating-point-engine-for-efficient-llm-acceleration-exploiting-core-tail-hierarchical-alignment.md
+        - "High-Density LUT mpGEMM Architecture with Unified INT/FP Support for Low-Bit LLM Inference": MICRO/2026/Session-1D/high-density-lut-mpgemm-architecture-with-unified-int-fp-support-for-low-bit-llm-inference.md
+        - "AUSA: A Complementary Row-Pairing GEMM Accelerator for Pruned LLMs Exploiting Asymmetric Unstructured Sparsity": MICRO/2026/Session-1D/ausa-a-complementary-row-pairing-gemm-accelerator-for-pruned-llms-exploiting-asymmetric-unstructured-sparsity.md
+      - "Session 2A: ML System Interconnect (7)":
+        - "Session 2A": MICRO/2026/Session-2A/index.md
+        - "Glaive: Cleaving Bandwidth and Latency Scheduling for Efficient Non-Uniform All-to-All Collective Communication": MICRO/2026/Session-2A/glaive-cleaving-bandwidth-and-latency-scheduling-for-efficient-non-uniform-all-to-all-collective-communication.md
+        - "RAFO: Reconfigurable AWGR-Based nD-Fullmesh Optical Interconnect for MoE Serving Acceleration": MICRO/2026/Session-2A/rafo-reconfigurable-awgr-based-nd-fullmesh-optical-interconnect-for-moe-serving-acceleration.md
+        - "HeteroMosaic: Exposing and Exploiting Heterogeneous Opportunities for Energy-Efficient Edge LLM Inference": MICRO/2026/Session-2A/heteromosaic-exposing-and-exploiting-heterogeneous-opportunities-for-energy-efficient-edge-llm-inference.md
+        - "SNN-4-All: Breaking the Edge Fine-Tuning Barrier with Heterogeneous Sparsity Exploitation": MICRO/2026/Session-2A/snn-4-all-breaking-the-edge-fine-tuning-barrier-with-heterogeneous-sparsity-exploitation.md
+        - "Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving": MICRO/2026/Session-2A/auto-scaling-heterogeneous-neural-processing-units-for-energy-and-cost-efficient-llm-serving.md
+        - "Beyond Prefill-Decode Disaggregation: Dissecting LLM Inference for Heterogeneous Platforms via Dynamic Operator Scheduling": MICRO/2026/Session-2A/beyond-prefill-decode-disaggregation-dissecting-llm-inference-for-heterogeneous-platforms-via-dynamic-operator-scheduling.md
+        - "In-Flight Collectives: Characterizing and Accelerating Compute-Communication Overlap in Distributed LLM System": MICRO/2026/Session-2A/in-flight-collectives-characterizing-and-accelerating-compute-communication-overlap-in-distributed-llm-system.md
+      - "Session 2B: Memory System Power, Refresh & Predictive Prefetching (7)":
+        - "Session 2B": MICRO/2026/Session-2B/index.md
+        - "Understanding the Power Consumption of Modern High Bandwidth Memory: Experimental Analysis and Modeling Using Real HBM2 DRAM Chips": MICRO/2026/Session-2B/understanding-the-power-consumption-of-modern-high-bandwidth-memory-experimental-analysis-and-modeling-using-real-hbm2-dram-chips.md
+        - "MORDOR: Mitigating Overheads of Read Disturbance Preventive Operations via Elastic Refresh Scheduling": MICRO/2026/Session-2B/mordor-mitigating-overheads-of-read-disturbance-preventive-operations-via-elastic-refresh-scheduling.md
+        - "PRISM: A Miss-Attribution-Guided Temporal Prefetcher Beyond Metadata Management": MICRO/2026/Session-2B/prism-a-miss-attribution-guided-temporal-prefetcher-beyond-metadata-management.md
+        - "ARC: Adaptive Reconfigurable CXL Hotness Monitoring": MICRO/2026/Session-2B/arc-adaptive-reconfigurable-cxl-hotness-monitoring.md
+        - "HSPref: Efficient Software Prefetching for ARM SME Outer-Products": MICRO/2026/Session-2B/hspref-efficient-software-prefetching-for-arm-sme-outer-products.md
+        - "From Bit-Position Sensitivity to Unequal Error Protection for DNN Inference Memory": MICRO/2026/Session-2B/from-bit-position-sensitivity-to-unequal-error-protection-for-dnn-inference-memory.md
+        - "Maverick: Leveraging Address Translation to Mitigate Memory Latency in Server Workloads": MICRO/2026/Session-2B/maverick-leveraging-address-translation-to-mitigate-memory-latency-in-server-workloads.md
+      - "Session 2C: Distinguished Papers I - Memory Systems & Microarchitecture (6)":
+        - "Session 2C": MICRO/2026/Session-2C/index.md
+        - "Caerus: Prefetching by Thinking Globally and Acting Locally": MICRO/2026/Session-2C/caerus-prefetching-by-thinking-globally-and-acting-locally.md
+        - "Synapse: Decoupling Protocol, Topology, and Policy for Automated Synthesis of Coherence Controllers": MICRO/2026/Session-2C/synapse-decoupling-protocol-topology-and-policy-for-automated-synthesis-of-coherence-controllers.md
+        - "SagePTE: Co-Locating Guest and Host PTEs to Accelerate Virtual Memory Translation": MICRO/2026/Session-2C/sagepte-co-locating-guest-and-host-ptes-to-accelerate-virtual-memory-translation.md
+        - "Rebasing and Optimizing Cache Miss Handling: Fetching Beyond MSHR Capacity": MICRO/2026/Session-2C/rebasing-and-optimizing-cache-miss-handling-fetching-beyond-mshr-capacity.md
+        - "Same Cache, Different Latency: Understanding and Exploiting L2 Domain Locality in GPUs": MICRO/2026/Session-2C/same-cache-different-latency-understanding-and-exploiting-l2-domain-locality-in-gpus.md
+        - "SecPIMlet: Confidential Computing for Spatio-Temporally Shared Processing-in-Memory": MICRO/2026/Session-2C/secpimlet-confidential-computing-for-spatio-temporally-shared-processing-in-memory.md
+      - "Session 2D: Accelerators for Robotics, Vision & Graph Workloads (7)":
+        - "Session 2D": MICRO/2026/Session-2D/index.md
+        - "TriOoO: An Extensible DSA Framework for Machine Learning Molecular Dynamics": MICRO/2026/Session-2D/triooo-an-extensible-dsa-framework-for-machine-learning-molecular-dynamics.md
+        - "AMG: AMX-GPU Cooperative Acceleration of Billion-Scale ANNS via GEMM Reformulation": MICRO/2026/Session-2D/amg-amx-gpu-cooperative-acceleration-of-billion-scale-anns-via-gemm-reformulation.md
+        - "HiCAM: Accelerating Parallel Triangle Counting via Bit-Efficient Content Addressable Memory on FPGA": MICRO/2026/Session-2D/hicam-accelerating-parallel-triangle-counting-via-bit-efficient-content-addressable-memory-on-fpga.md
+        - "Arborist: Algorithm-Hardware Co-Design for Fast and Efficient Motion Planning": MICRO/2026/Session-2D/arborist-algorithm-hardware-co-design-for-fast-and-efficient-motion-planning.md
+        - "MVP: A Motion-Predictive Speculative Vision Pipeline with Non-Blocking Drift Correction": MICRO/2026/Session-2D/mvp-a-motion-predictive-speculative-vision-pipeline-with-non-blocking-drift-correction.md
+        - "DeGS: A Scalable 3DGS Architecture via Decoupled Workload Parsing and Reorganization": MICRO/2026/Session-2D/degs-a-scalable-3dgs-architecture-via-decoupled-workload-parsing-and-reorganization.md
+        - "SAFT: Memory Sensitivity Analysis and Adaptive Fusion for Sparse Accelerators": MICRO/2026/Session-2D/saft-memory-sensitivity-analysis-and-adaptive-fusion-for-sparse-accelerators.md
+      - "Session 3A: Branch Prediction & Instruction-Level Prefetching (7)":
+        - "Session 3A": MICRO/2026/Session-3A/index.md
+        - "TEMPO: A Tag-Based Framework For Efficient Memory Ordering": MICRO/2026/Session-3A/tempo-a-tag-based-framework-for-efficient-memory-ordering.md
+        - "Prefetching for Hierarchical Branch Target Buffers": MICRO/2026/Session-3A/prefetching-for-hierarchical-branch-target-buffers.md
+        - "Exploiting Program Semantics for Hardware Prefetching": MICRO/2026/Session-3A/exploiting-program-semantics-for-hardware-prefetching.md
+        - "Towards a Noise-Resilient TAGE via PURE": MICRO/2026/Session-3A/towards-a-noise-resilient-tage-via-pure.md
+        - "Non-Speculative Redundant Load Elimination": MICRO/2026/Session-3A/non-speculative-redundant-load-elimination.md
+        - "ParaAhead: Practical Multi-Taken Branch Prediction via Concurrent Ahead Pipelining": MICRO/2026/Session-3A/paraahead-practical-multi-taken-branch-prediction-via-concurrent-ahead-pipelining.md
+        - "Catalyst-Length Instruction Fusion Prediction": MICRO/2026/Session-3A/catalyst-length-instruction-fusion-prediction.md
+      - "Session 3B: Design Methodology: Simulation & Performance Modeling (7)":
+        - "Session 3B": MICRO/2026/Session-3B/index.md
+        - "FlashGPU-sim: Enabling GPU Modeling for Modern Architectures and AI Workloads": MICRO/2026/Session-3B/flashgpu-sim-enabling-gpu-modeling-for-modern-architectures-and-ai-workloads.md
+        - "Accurate & Scalable Time-Based Sampling of Full-System Simulation": MICRO/2026/Session-3B/accurate-scalable-time-based-sampling-of-full-system-simulation.md
+        - "KAIROS: Fast Microarchitectural Design Space Exploration by Bridging Architectural Semantics and Logic Gates": MICRO/2026/Session-3B/kairos-fast-microarchitectural-design-space-exploration-by-bridging-architectural-semantics-and-logic-gates.md
+        - "Fidelio: Agentic AI Framework for Synthesizing Microarchitecture-Faithful Datacenter Benchmarks": MICRO/2026/Session-3B/fidelio-agentic-ai-framework-for-synthesizing-microarchitecture-faithful-datacenter-benchmarks.md
+        - "Perf-IR: A Portable Intermediate Representation for Cross-Platform GPU Performance Prediction": MICRO/2026/Session-3B/perf-ir-a-portable-intermediate-representation-for-cross-platform-gpu-performance-prediction.md
+        - "GPU-Tile-Sim: A Tile-Centric GPU Simulation Framework for LLM Hardware-Software Co-Design": MICRO/2026/Session-3B/gpu-tile-sim-a-tile-centric-gpu-simulation-framework-for-llm-hardware-software-co-design.md
+        - "P-PLUS: Prefetch Profiling with Lightweight Unified Sampling": MICRO/2026/Session-3B/p-plus-prefetch-profiling-with-lightweight-unified-sampling.md
+      - "Session 3C: Distinguished Papers II - Security, Verification & Efficient ML Systems (6)":
+        - "Session 3C": MICRO/2026/Session-3C/index.md
+        - "Uncovering Contention-Based Side-Channel Threats in AMD Zen Chiplet Architectures": MICRO/2026/Session-3C/uncovering-contention-based-side-channel-threats-in-amd-zen-chiplet-architectures.md
+        - "DiffTest-L: A Hostless Co-Simulation Architecture for Hardware-Accelerated CPU Verification": MICRO/2026/Session-3C/difftest-l-a-hostless-co-simulation-architecture-for-hardware-accelerated-cpu-verification.md
+        - "Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving": MICRO/2026/Session-3C/enabling-spatially-fine-grained-dvfs-in-neural-processing-units-for-energy-efficient-llm-serving.md
+        - "EdgeXpert: An Edge Device for Memory-Efficient LLM Inference with Mixture-of-Experts and Speculative Decoding": MICRO/2026/Session-3C/edgexpert-an-edge-device-for-memory-efficient-llm-inference-with-mixture-of-experts-and-speculative-decoding.md
+        - "PoCer: Fast RTL Fuzzing for Time-Shared Microarchitectural Leakage Detection via Pre-Fuzzing Acceleration and Cross-Context-Supported Fuzzer": MICRO/2026/Session-3C/pocer-fast-rtl-fuzzing-for-time-shared-microarchitectural-leakage-detection-via-pre-fuzzing-acceleration-and-cross-context-supported-fuzzer.md
+        - "Pistil - A Decoupled Pipeline Architecture for Sustained Memory Bandwidth Across a 20-Chiplet 2.5D SiP for Edge SLM Inference": MICRO/2026/Session-3C/pistil-a-decoupled-pipeline-architecture-for-sustained-memory-bandwidth-across-a-20-chiplet-2-5d-sip-for-edge-slm-inference.md
+      - "Session 3D: Quantum (7)":
+        - "Session 3D": MICRO/2026/Session-3D/index.md
+        - "NAQsim: Full-Stack Architecture Simulation Framework for Fast and Space-Efficient Neutral Atom Quantum Computing": MICRO/2026/Session-3D/naqsim-full-stack-architecture-simulation-framework-for-fast-and-space-efficient-neutral-atom-quantum-computing.md
+        - "GadIR: A Spatial-Topology Preserving Compiler for Quantum Many-Body Systems Simulation": MICRO/2026/Session-3D/gadir-a-spatial-topology-preserving-compiler-for-quantum-many-body-systems-simulation.md
+        - "NC-Fusion: Optimizing T-Gate Cost for Hamiltonian Simulation": MICRO/2026/Session-3D/nc-fusion-optimizing-t-gate-cost-for-hamiltonian-simulation.md
+        - "QROB: Quantifying Realization Overhead in Quantum Compilation via Reverse Construction": MICRO/2026/Session-3D/qrob-quantifying-realization-overhead-in-quantum-compilation-via-reverse-construction.md
+        - "Efficient Logical Error Mitigation with Decoder Soft Information": MICRO/2026/Session-3D/efficient-logical-error-mitigation-with-decoder-soft-information.md
+        - "HINT: Reducing Memory Overheads in a Disaggregated Quantum Memory Hierarchy": MICRO/2026/Session-3D/hint-reducing-memory-overheads-in-a-disaggregated-quantum-memory-hierarchy.md
+        - "Rings Around the Ancilla: A Workload-Aware FTQC Architecture": MICRO/2026/Session-3D/rings-around-the-ancilla-a-workload-aware-ftqc-architecture.md
+      - "Session 4A: NDP and PIM Design Exploration (5)":
+        - "Session 4A": MICRO/2026/Session-4A/index.md
+        - "PNMAX: Mapping-Architecture Co-Exploration Framework for Processing Near Memory": MICRO/2026/Session-4A/pnmax-mapping-architecture-co-exploration-framework-for-processing-near-memory.md
+        - "NiF: Hybrid In-Flash and In-Storage Acceleration for Approximate Nearest Neighbor Search": MICRO/2026/Session-4A/nif-hybrid-in-flash-and-in-storage-acceleration-for-approximate-nearest-neighbor-search.md
+        - "PIM-AUTODSE: Automated ISA and Design Space Exploration for PIM": MICRO/2026/Session-4A/pim-autodse-automated-isa-and-design-space-exploration-for-pim.md
+        - "LUTHE: Breaking the Memory Wall of High-Precision Encrypted LLM Nonlinearities via GPU-CSD Co-Design": MICRO/2026/Session-4A/luthe-breaking-the-memory-wall-of-high-precision-encrypted-llm-nonlinearities-via-gpu-csd-co-design.md
+        - "DBX-DIMM: Scalable and Reliable Near-Data Processing with Concurrent Host Access through Buffer-Centric Pseudo-Channels": MICRO/2026/Session-4A/dbx-dimm-scalable-and-reliable-near-data-processing-with-concurrent-host-access-through-buffer-centric-pseudo-channels.md
+      - "Session 4B: Side-Channel Attacks & Confidential Computing (5)":
+        - "Session 4B": MICRO/2026/Session-4B/index.md
+        - "Compute eXpress Leak: New Cache Attacks Using CXL Devices": MICRO/2026/Session-4B/compute-express-leak-new-cache-attacks-using-cxl-devices.md
+        - "Helios: Melting Kernel Boundaries for GPU-Accelerated HE via Graph Rewriting and Microarchitecture-Aware Mapping": MICRO/2026/Session-4B/helios-melting-kernel-boundaries-for-gpu-accelerated-he-via-graph-rewriting-and-microarchitecture-aware-mapping.md
+        - "OptiPrime: Optimizing Private Inference through Protocol-Hardware Co-Design": MICRO/2026/Session-4B/optiprime-optimizing-private-inference-through-protocol-hardware-co-design.md
+        - "SMExplode: Cross-Core and Cache-Agnostic Side-Channel Attack on Apple Silicon via SME Engine": MICRO/2026/Session-4B/smexplode-cross-core-and-cache-agnostic-side-channel-attack-on-apple-silicon-via-sme-engine.md
+        - "GhostAccess: Attacking the GPU on the Multi-Tenant Cloud via CPU LLC Under Unified Memory": MICRO/2026/Session-4B/ghostaccess-attacking-the-gpu-on-the-multi-tenant-cloud-via-cpu-llc-under-unified-memory.md
+      - "Session 4C: Thermal-Aware 3D-Stacked LLM Accelerators (5)":
+        - "Session 4C": MICRO/2026/Session-4C/index.md
+        - "Exploring the Efficiency of 3D-Stacked AI Chip Architecture for LLM Inference with VOXEL": MICRO/2026/Session-4C/exploring-the-efficiency-of-3d-stacked-ai-chip-architecture-for-llm-inference-with-voxel.md
+        - "Beyond Linear Scaling for LLM Training on Wafer-Scale GPUs": MICRO/2026/Session-4C/beyond-linear-scaling-for-llm-training-on-wafer-scale-gpus.md
+        - "NOVA: Technology-Architecture Co-Design of Near-Memory Processing for Attention-SSM-MoE Hybrid LLM Inference": MICRO/2026/Session-4C/nova-technology-architecture-co-design-of-near-memory-processing-for-attention-ssm-moe-hybrid-llm-inference.md
+        - "CrossSpec: A Draft-Verify Aggregated 3D LLM Accelerator with Thermal-Aware Cross Floorplan and Stack-Layer-Wise Dynamic Refresh for Parallel Speculative Decoding": MICRO/2026/Session-4C/crossspec-a-draft-verify-aggregated-3d-llm-accelerator-with-thermal-aware-cross-floorplan-and-stack-layer-wise-dynamic-refresh-for-parallel-speculative-decoding.md
+        - "TESSA: A Thermal-Centric, Sensor-Free Framework with Spatially Aware Elastic Execution for 3D-Stacked-DRAM-Based LLM Accelerators": MICRO/2026/Session-4C/tessa-a-thermal-centric-sensor-free-framework-with-spatially-aware-elastic-execution-for-3d-stacked-dram-based-llm-accelerators.md
+      - "Session 5A: Accelerator Spatial Mapping & High-Level Synthesis (5)":
+        - "Session 5A": MICRO/2026/Session-5A/index.md
+        - "SNECKO: Efficient GEMM Mapping on Versal ACAP Heterogeneous Spatial Architecture": MICRO/2026/Session-5A/snecko-efficient-gemm-mapping-on-versal-acap-heterogeneous-spatial-architecture.md
+        - "MCHA: A Memory-Centric Hierarchical Architecture for Parallel-Sequential Computing": MICRO/2026/Session-5A/mcha-a-memory-centric-hierarchical-architecture-for-parallel-sequential-computing.md
+        - "Potluck: High-Level Synthesis for Architectural Design via Automated Module Extraction and Sharing": MICRO/2026/Session-5A/potluck-high-level-synthesis-for-architectural-design-via-automated-module-extraction-and-sharing.md
+        - "The Turbo-Charged Mapper: Fast and Optimal Mapping for Energy-Efficient and Low-Latency Accelerator Design": MICRO/2026/Session-5A/the-turbo-charged-mapper-fast-and-optimal-mapping-for-energy-efficient-and-low-latency-accelerator-design.md
+        - "UDYR: An Adaptive Accelerator for Optimization-Based Humanoid Robot Control": MICRO/2026/Session-5A/udyr-an-adaptive-accelerator-for-optimization-based-humanoid-robot-control.md
+      - "Session 5B: Emerging Technologies and Reliability (5)":
+        - "Session 5B": MICRO/2026/Session-5B/index.md
+        - "Fengshui: Demystifying Chiplet Ecosystem and Bespoke Neural Network Accelerator Codesign": MICRO/2026/Session-5B/fengshui-demystifying-chiplet-ecosystem-and-bespoke-neural-network-accelerator-codesign.md
+        - "ITHICA: Intra-Thread Instruction Checking Approach for Defect-Induced Silent Data Corruptions": MICRO/2026/Session-5B/ithica-intra-thread-instruction-checking-approach-for-defect-induced-silent-data-corruptions.md
+        - "ResSpec: Self-Speculative Decoding via In-Situ Drafting on Residual ReRAM CIM": MICRO/2026/Session-5B/resspec-self-speculative-decoding-via-in-situ-drafting-on-residual-reram-cim.md
+        - "XAT: A Quantum-Like Digital SAT Accelerator with Non-Intuitive Clause-to-Variable Feedback": MICRO/2026/Session-5B/xat-a-quantum-like-digital-sat-accelerator-with-non-intuitive-clause-to-variable-feedback.md
+        - "Helios: Enabling Dynamic KV Cache Management for Near-Memory Processing via Hybrid-Bonding-Based 3D-DRAM": MICRO/2026/Session-5B/helios-enabling-dynamic-kv-cache-management-for-near-memory-processing-via-hybrid-bonding-based-3d-dram.md
+      - "Session 5C: CXL, Caching & GPU Bandwidth Management (5)":
+        - "Session 5C": MICRO/2026/Session-5C/index.md
+        - "Rethinking Compression for CXL Memory Expanders at Hyperscale": MICRO/2026/Session-5C/rethinking-compression-for-cxl-memory-expanders-at-hyperscale.md
+        - "Trail: Scalable and Low-Cost Temporal TLB Prefetching via Page-Table-Embedded Deltas": MICRO/2026/Session-5C/trail-scalable-and-low-cost-temporal-tlb-prefetching-via-page-table-embedded-deltas.md
+        - "DUALign: A Hardware-Assisted Memory Mapping Strategy for PNM-Accelerated LLM Serving": MICRO/2026/Session-5C/dualign-a-hardware-assisted-memory-mapping-strategy-for-pnm-accelerated-llm-serving.md
+        - "Lazy-LLC: Reducing GPU LLC Thrashing with Shared-Data and Reusability Filters": MICRO/2026/Session-5C/lazy-llc-reducing-gpu-llc-thrashing-with-shared-data-and-reusability-filters.md
+        - "Dynamically Sharing Local and Remote Memory Bandwidth in Memory-Centric MCM-GPU Systems": MICRO/2026/Session-5C/dynamically-sharing-local-and-remote-memory-bandwidth-in-memory-centric-mcm-gpu-systems.md
+      - "Session 6A: Microarchitecture & Compilers (7)":
+        - "Session 6A": MICRO/2026/Session-6A/index.md
+        - "Loop-Decoupled Prefetcher for Linked Data Structure": MICRO/2026/Session-6A/loop-decoupled-prefetcher-for-linked-data-structure.md
+        - "TRANS-FETCH: Driving Translation Prefetching with Deep Lookahead from L2 Data Prefetch Events": MICRO/2026/Session-6A/trans-fetch-driving-translation-prefetching-with-deep-lookahead-from-l2-data-prefetch-events.md
+        - "CuLifter: Lifting GPU Binaries to Typed IR": MICRO/2026/Session-6A/culifter-lifting-gpu-binaries-to-typed-ir.md
+        - "coMulator: Coordinate Cross-Architecture Compilation and Emulation to Accelerate Dynamic Binary Translation": MICRO/2026/Session-6A/comulator-coordinate-cross-architecture-compilation-and-emulation-to-accelerate-dynamic-binary-translation.md
+        - "Capstone: Power-Capped Pipelining for Coarse-Grained Reconfigurable Array Compilers": MICRO/2026/Session-6A/capstone-power-capped-pipelining-for-coarse-grained-reconfigurable-array-compilers.md
+        - "MMAscope: Microarchitectural Characterization of Multi-Precision Arithmetic Pipelines in Modern Tensor Cores": MICRO/2026/Session-6A/mmascope-microarchitectural-characterization-of-multi-precision-arithmetic-pipelines-in-modern-tensor-cores.md
+        - "Superscalar Loop Processors": MICRO/2026/Session-6A/superscalar-loop-processors.md
+      - "Session 6B: Energy-Constrained & Fault-Tolerant Systems (7)":
+        - "Session 6B": MICRO/2026/Session-6B/index.md
+        - "Kairos: Rethinking Architectural Support for Synaptic Delays in Spiking Neural Networks": MICRO/2026/Session-6B/kairos-rethinking-architectural-support-for-synaptic-delays-in-spiking-neural-networks.md
+        - "SLOTH: Lightweight Detection and Localization of On-Chip Fail-Slow Failures for DNN Accelerators": MICRO/2026/Session-6B/sloth-lightweight-detection-and-localization-of-on-chip-fail-slow-failures-for-dnn-accelerators.md
+        - "Enhancing the Efficiency of Embodied AI Systems with Squeezed Analog Perception": MICRO/2026/Session-6B/enhancing-the-efficiency-of-embodied-ai-systems-with-squeezed-analog-perception.md
+        - "Themis: Improving Performance and Fairness in Multi-Stream NVMe SSDs": MICRO/2026/Session-6B/themis-improving-performance-and-fairness-in-multi-stream-nvme-ssds.md
+        - "iGPU: Enabling GPUs for Intermittent AI on Batteryless Systems": MICRO/2026/Session-6B/igpu-enabling-gpus-for-intermittent-ai-on-batteryless-systems.md
+        - "PEEK: Heterogeneous Parallelism for Privileged Error Detection in Safety-Critical Processors": MICRO/2026/Session-6B/peek-heterogeneous-parallelism-for-privileged-error-detection-in-safety-critical-processors.md
+        - "SafeMind: A Battery-Free Processing System for Safely Implantable Brain-Computer Interfaces": MICRO/2026/Session-6B/safemind-a-battery-free-processing-system-for-safely-implantable-brain-computer-interfaces.md
+      - "Session 6C: Low-Bit Quantization for LLM Inference (7)":
+        - "Session 6C": MICRO/2026/Session-6C/index.md
+        - "HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference": MICRO/2026/Session-6C/hbq-hierarchical-scaling-block-quantization-with-hardware-efficiency-aware-design-for-accurate-llm-inference.md
+        - "FlexPosit: Tunable Fractional Precision for LLM Inference Accelerators": MICRO/2026/Session-6C/flexposit-tunable-fractional-precision-for-llm-inference-accelerators.md
+        - "Software-Hardware Co-Design of Prior-Aware W4A4 Micro-Block Quantization for Robust LLM Inference Across Model Families": MICRO/2026/Session-6C/software-hardware-co-design-of-prior-aware-w4a4-micro-block-quantization-for-robust-llm-inference-across-model-families.md
+        - "OzCore: An Ozaki-Scheme-II-Based GEMM Architecture for Unified Integer and Floating-Point Computation": MICRO/2026/Session-6C/ozcore-an-ozaki-scheme-ii-based-gemm-architecture-for-unified-integer-and-floating-point-computation.md
+        - "SkewQ: Skewness-Aware Cross-Layer Quantization for Efficient LLM Inference via Software-Hardware Co-Design": MICRO/2026/Session-6C/skewq-skewness-aware-cross-layer-quantization-for-efficient-llm-inference-via-software-hardware-co-design.md
+        - "MOSAIC: An Accelerator Design for Heterophilic Graph Learning": MICRO/2026/Session-6C/mosaic-an-accelerator-design-for-heterophilic-graph-learning.md
+        - "DSTAR: Accelerating Diffusion Transformers via Spatial and Temporal Redundancy Reduction": MICRO/2026/Session-6C/dstar-accelerating-diffusion-transformers-via-spatial-and-temporal-redundancy-reduction.md
+      - "Session 6D: CXL-Based Tiered Memory & Storage (7)":
+        - "Session 6D": MICRO/2026/Session-6D/index.md
+        - "Terracotta: Enabling the Adoption of New DRAM Techniques via a Flexible DRAM Interface and Memory Controller": MICRO/2026/Session-6D/terracotta-enabling-the-adoption-of-new-dram-techniques-via-a-flexible-dram-interface-and-memory-controller.md
+        - "CacheFlex: Direct Software-Managed Access to Higher-Level Cache for Scalable Vector Support": MICRO/2026/Session-6D/cacheflex-direct-software-managed-access-to-higher-level-cache-for-scalable-vector-support.md
+        - "CXL AnySSD: A Composable CXL SSD Using a CXL Type-2 Device and Any SSDs": MICRO/2026/Session-6D/cxl-anyssd-a-composable-cxl-ssd-using-a-cxl-type-2-device-and-any-ssds.md
+        - "HYDRA: Hybrid DRAM Caching for Dynamic Complementary Multi-to-One Page Mapping in CXL Tiered Memory": MICRO/2026/Session-6D/hydra-hybrid-dram-caching-for-dynamic-complementary-multi-to-one-page-mapping-in-cxl-tiered-memory.md
+        - "CODA: Algorithm-Hardware Co-Design for Edge Video Diffusion via NMP-Enabled Compute-Cache Operator Disaggregation": MICRO/2026/Session-6D/coda-algorithm-hardware-co-design-for-edge-video-diffusion-via-nmp-enabled-compute-cache-operator-disaggregation.md
+        - "DIKTAMO: Extending CXL for Resilience to CPU Failures": MICRO/2026/Session-6D/diktamo-extending-cxl-for-resilience-to-cpu-failures.md
+        - "ReclaimX: Device-Side Memory Reclamation via Stalled GPU Execution for UVM Oversubscription": MICRO/2026/Session-6D/reclaimx-device-side-memory-reclamation-via-stalled-gpu-execution-for-uvm-oversubscription.md
+      - "Session 7A: Memory & Pipeline Efficiency Techniques for GPU (7)":
+        - "Session 7A": MICRO/2026/Session-7A/index.md
+        - "TinyAct: Activation Functions are (Almost) Linear in Floating Point Representation": MICRO/2026/Session-7A/tinyact-activation-functions-are-almost-linear-in-floating-point-representation.md
+        - "Make Every Batch Count: Fault Entry Merging for Efficient Batching in Unified Virtual Memory": MICRO/2026/Session-7A/make-every-batch-count-fault-entry-merging-for-efficient-batching-in-unified-virtual-memory.md
+        - "SPMC: Speculative Multicast for GPU Address Translation Sharing": MICRO/2026/Session-7A/spmc-speculative-multicast-for-gpu-address-translation-sharing.md
+        - "C2P-Cache: Scalable GPU L1 Cache Sharing via Concurrent Candidate Pruning": MICRO/2026/Session-7A/c2p-cache-scalable-gpu-l1-cache-sharing-via-concurrent-candidate-pruning.md
+        - "Attention, Watch Your Progress: Balancing Warp-Specialized GPU Pipelines": MICRO/2026/Session-7A/attention-watch-your-progress-balancing-warp-specialized-gpu-pipelines.md
+        - "RoboGPU: Accelerating GPU Collision Detection for Robotics": MICRO/2026/Session-7A/robogpu-accelerating-gpu-collision-detection-for-robotics.md
+        - "Efficient GPU Inference for Discrete Neural Networks": MICRO/2026/Session-7A/efficient-gpu-inference-for-discrete-neural-networks.md
+      - "Session 7B: Performance & Power Modeling for DSE (7)":
+        - "Session 7B": MICRO/2026/Session-7B/index.md
+        - "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference": MICRO/2026/Session-7B/deepstack-facilitating-co-design-exploration-of-3d-dram-stacked-accelerators-for-distributed-llm-inference.md
+        - "Aneto: Predicting System Performance by Exploiting Cross-Workload Regularity": MICRO/2026/Session-7B/aneto-predicting-system-performance-by-exploiting-cross-workload-regularity.md
+        - "Off-Piste: Navigating in the Non-Convex Tensor Accelerator Design Space": MICRO/2026/Session-7B/off-piste-navigating-in-the-non-convex-tensor-accelerator-design-space.md
+        - "Power Roofline": MICRO/2026/Session-7B/power-roofline.md
+        - "ARMOR: Accelerating RTL Simulation by Mitigating the Front-End Bottleneck Using Node Compression": MICRO/2026/Session-7B/armor-accelerating-rtl-simulation-by-mitigating-the-front-end-bottleneck-using-node-compression.md
+        - "Beyond SMARTS: Improving Simulation Accuracy with Ranked Set Sampling and Repeated Subsampling": MICRO/2026/Session-7B/beyond-smarts-improving-simulation-accuracy-with-ranked-set-sampling-and-repeated-subsampling.md
+        - "SCOPE: Pre-Silicon Power Optimization for Energy-Constrained Computational Vision Systems": MICRO/2026/Session-7B/scope-pre-silicon-power-optimization-for-energy-constrained-computational-vision-systems.md
+      - "Session 7C: Vision-Language & Multimodal Model Acceleration (7)":
+        - "Session 7C": MICRO/2026/Session-7C/index.md
+        - "MiX: Micro-Inverted-Scaling for End-to-End Low-Bit Vision-Language Model Acceleration": MICRO/2026/Session-7C/mix-micro-inverted-scaling-for-end-to-end-low-bit-vision-language-model-acceleration.md
+        - "SCARF: A Scene-Adaptive Depth-Guided G-3DGS Encoder Accelerator with Semantic Reuse and Fused Dataflow": MICRO/2026/Session-7C/scarf-a-scene-adaptive-depth-guided-g-3dgs-encoder-accelerator-with-semantic-reuse-and-fused-dataflow.md
+        - "Hermes: Architecting Congestion Management for Large-Scale NoCs": MICRO/2026/Session-7C/hermes-architecting-congestion-management-for-large-scale-nocs.md
+        - "PECO: Prediction-Execution Co-Optimized Constant-Memory Sparse Attention Accelerator for Foundational Diffusion Model": MICRO/2026/Session-7C/peco-prediction-execution-co-optimized-constant-memory-sparse-attention-accelerator-for-foundational-diffusion-model.md
+        - "Deltoris: Enabling Real-Time VLA Inference in Embodied AI via Bit-Level Sparsity and Speculative Inference": MICRO/2026/Session-7C/deltoris-enabling-real-time-vla-inference-in-embodied-ai-via-bit-level-sparsity-and-speculative-inference.md
+        - "BitDense: Dense Bit-Slice Architecture with Dynamic-Sized Group Quantization for Precision-Scalable Low-Bit AI Inference": MICRO/2026/Session-7C/bitdense-dense-bit-slice-architecture-with-dynamic-sized-group-quantization-for-precision-scalable-low-bit-ai-inference.md
+        - "SpecVLA: Enabling Efficient Robotic Manipulation via Speculative VLA Inference and Verification": MICRO/2026/Session-7C/specvla-enabling-efficient-robotic-manipulation-via-speculative-vla-inference-and-verification.md
+      - "Session 7D: Cache & Memory-Level Parallelism (7)":
+        - "Session 7D": MICRO/2026/Session-7D/index.md
+        - "Acyclic Cost-Effective Requester-Stalls Hardware Transactional Memory": MICRO/2026/Session-7D/acyclic-cost-effective-requester-stalls-hardware-transactional-memory.md
+        - "MORIA: Mining the Cache for Miss Parallelism": MICRO/2026/Session-7D/moria-mining-the-cache-for-miss-parallelism.md
+        - "The Path to BTB Storage Efficiency Goes Through Tags": MICRO/2026/Session-7D/the-path-to-btb-storage-efficiency-goes-through-tags.md
+        - "VAMOs: Versatile Atomic Memory Operations for High-Performance Many-Core Architectures": MICRO/2026/Session-7D/vamos-versatile-atomic-memory-operations-for-high-performance-many-core-architectures.md
+        - "Retrofitting Contextual Learning into Set Dueling": MICRO/2026/Session-7D/retrofitting-contextual-learning-into-set-dueling.md
+        - "Same Code ≠ Same Speed: Exposing and Mitigating Cacheline Contention Asymmetry on Multicore Processors": MICRO/2026/Session-7D/same-code-same-speed-exposing-and-mitigating-cacheline-contention-asymmetry-on-multicore-processors.md
+        - "Rivera: Turbo-Boosting Vector Architectures for Irregular Memory Access Patterns": MICRO/2026/Session-7D/rivera-turbo-boosting-vector-architectures-for-irregular-memory-access-patterns.md
+      - "Session 8A: PIM & Near-Memory Long-Context LLM Serving (7)":
+        - "Session 8A": MICRO/2026/Session-8A/index.md
+        - "SYMPHONY: Harmonizing Memory and Communication in LLM Inference on 3D DRAM Accelerators": MICRO/2026/Session-8A/symphony-harmonizing-memory-and-communication-in-llm-inference-on-3d-dram-accelerators.md
+        - "AMMA: A Multi-Chiplet Memory-Centric Architecture for Low-Latency 1M Context Attention Serving": MICRO/2026/Session-8A/amma-a-multi-chiplet-memory-centric-architecture-for-low-latency-1m-context-attention-serving.md
+        - "NELSSA: A GPU-PNM Heterogeneous System for Mixed-Length LLM Serving via Length-Based Request Placement": MICRO/2026/Session-8A/nelssa-a-gpu-pnm-heterogeneous-system-for-mixed-length-llm-serving-via-length-based-request-placement.md
+        - "ULTRA: Bridging the VQ Gap in Anisotropic LLM Quantization via a Unified LUT-Based TRansformer Architecture": MICRO/2026/Session-8A/ultra-bridging-the-vq-gap-in-anisotropic-llm-quantization-via-a-unified-lut-based-transformer-architecture.md
+        - "MOSAIC: Exploiting Structured Tolerance for Adaptive LLM Inference Mapping in Heterogeneous PIM Accelerators": MICRO/2026/Session-8A/mosaic-exploiting-structured-tolerance-for-adaptive-llm-inference-mapping-in-heterogeneous-pim-accelerators.md
+        - "Rethinking Unified Memory for NPU-PIM Systems: Dual-View Memory for Dynamic Inference of LLM": MICRO/2026/Session-8A/rethinking-unified-memory-for-npu-pim-systems-dual-view-memory-for-dynamic-inference-of-llm.md
+        - "MemLLM: End-to-end In-Storage Acceleration of On-Device Retrieval-Augmented Generation using Precomputed KV Caches": MICRO/2026/Session-8A/memllm-end-to-end-in-storage-acceleration-of-on-device-retrieval-augmented-generation-using-precomputed-kv-caches.md
+      - "Session 8B: DRAM Reliability, ECC & Address Translation (7)":
+        - "Session 8B": MICRO/2026/Session-8B/index.md
+        - "NB-Walker: Non-Blocking Page Table Walker to Enhance Address Translation in NUMA GPUs": MICRO/2026/Session-8B/nb-walker-non-blocking-page-table-walker-to-enhance-address-translation-in-numa-gpus.md
+        - "PARE: A Power and Area-Efficient Memory Controller for High-Bandwidth DRAM": MICRO/2026/Session-8B/pare-a-power-and-area-efficient-memory-controller-for-high-bandwidth-dram.md
+        - "HUME: Heterogeneous Unified Mirroring with Encoded Replica for Resilient Tiered Memory Systems": MICRO/2026/Session-8B/hume-heterogeneous-unified-mirroring-with-encoded-replica-for-resilient-tiered-memory-systems.md
+        - "Shared Metadata Field: A Dynamic ECC/DBI Allocation to Improve Reliability and I/O Power Efficiency for LPDDR6": MICRO/2026/Session-8B/shared-metadata-field-a-dynamic-ecc-dbi-allocation-to-improve-reliability-and-i-o-power-efficiency-for-lpddr6.md
+        - "RowScope: ML-Accelerated Reverse-Engineering for Precise Characterization of DRAM Internal Physical Organization": MICRO/2026/Session-8B/rowscope-ml-accelerated-reverse-engineering-for-precise-characterization-of-dram-internal-physical-organization.md
+        - "Don't Get Stuck in Traffic: A Case for Contention-Aware Translation Offloading": MICRO/2026/Session-8B/don-t-get-stuck-in-traffic-a-case-for-contention-aware-translation-offloading.md
+        - "Hera: Eliminating the I/O Tax of RAID on High-Capacity SSDs": MICRO/2026/Session-8B/hera-eliminating-the-i-o-tax-of-raid-on-high-capacity-ssds.md
+      - "Session 8C: Systolic & Dataflow Innovations for LLM/GNN Inference (7)":
+        - "Session 8C": MICRO/2026/Session-8C/index.md
+        - "Despoina: Depth-Amortized Incremental Inference for Deep Dynamic GNN Acceleration": MICRO/2026/Session-8C/despoina-depth-amortized-incremental-inference-for-deep-dynamic-gnn-acceleration.md
+        - "SCOPE: Array-Native Nonlinear Acceleration for LLM Inference via Shape-Constrained Neural Approximation": MICRO/2026/Session-8C/scope-array-native-nonlinear-acceleration-for-llm-inference-via-shape-constrained-neural-approximation.md
+        - "SystolicAttention: Fusing FlashAttention within a Single Systolic Array": MICRO/2026/Session-8C/systolicattention-fusing-flashattention-within-a-single-systolic-array.md
+        - "NeuroFlex: Lossless Element-Level ANN-SNN Co-Execution for Efficient Sparse Inference": MICRO/2026/Session-8C/neuroflex-lossless-element-level-ann-snn-co-execution-for-efficient-sparse-inference.md
+        - "VQVLA: Motion-Aware Vector Quantization with Computation Fusion for VLA Acceleration": MICRO/2026/Session-8C/vqvla-motion-aware-vector-quantization-with-computation-fusion-for-vla-acceleration.md
+        - "One Chiplet to Build Them All: Cost-Efficient Hardware Specialization for Stage-Disaggregated LLM Inference": MICRO/2026/Session-8C/one-chiplet-to-build-them-all-cost-efficient-hardware-specialization-for-stage-disaggregated-llm-inference.md
+        - "BITE: Boosting LLM Training via Sandwich-Bite Dataflow and Dynamic Subspace Auto-Alignment": MICRO/2026/Session-8C/bite-boosting-llm-training-via-sandwich-bite-dataflow-and-dynamic-subspace-auto-alignment.md
+      - "Session 8D: Quantum & Emerging Technologies (7)":
+        - "Session 8D": MICRO/2026/Session-8D/index.md
+        - "MCMit: Hardware-Software Co-Design for Mid-Circuit Measurement Error Mitigation": MICRO/2026/Session-8D/mcmit-hardware-software-co-design-for-mid-circuit-measurement-error-mitigation.md
+        - "Scalable Benchmarking Framework for Dynamic Quantum Circuits": MICRO/2026/Session-8D/scalable-benchmarking-framework-for-dynamic-quantum-circuits.md
+        - "DARTH: Lookahead-Driven Compilation Exploiting Transient Qubits for Distributed Quantum Computing": MICRO/2026/Session-8D/darth-lookahead-driven-compilation-exploiting-transient-qubits-for-distributed-quantum-computing.md
+        - "TensorMLD: A Tensorized and Compressed qLDPC Maximum-Likelihood Decoder for Accurate and Fast Detection of the Most Likely Logical Error": MICRO/2026/Session-8D/tensormld-a-tensorized-and-compressed-qldpc-maximum-likelihood-decoder-for-accurate-and-fast-detection-of-the-most-likely-logical-error.md
+        - "Tenkai: Accurate Syndrome Extraction Circuit Design and Shadow-Guided Decoding for Tackling Atom Loss on the Surface Code": MICRO/2026/Session-8D/tenkai-accurate-syndrome-extraction-circuit-design-and-shadow-guided-decoding-for-tackling-atom-loss-on-the-surface-code.md
+        - "Hades: A Hardware-Resident Substrate for Energy Admission in Intermittent Computing": MICRO/2026/Session-8D/hades-a-hardware-resident-substrate-for-energy-admission-in-intermittent-computing.md
+        - "AmpReX: Overcoming the Heat Load Bottleneck in SFQ Architectures through Current Recycling": MICRO/2026/Session-8D/amprex-overcoming-the-heat-load-bottleneck-in-sfq-architectures-through-current-recycling.md
+      - "Session 9A: FPGA / CGRA Accelerators (6)":
+        - "Session 9A": MICRO/2026/Session-9A/index.md
+        - "Ultra-DSP: A Universal Lossless DSP Overpacking Framework for Low-Bit LLM Inference": MICRO/2026/Session-9A/ultra-dsp-a-universal-lossless-dsp-overpacking-framework-for-low-bit-llm-inference.md
+        - "Elastic LLM Serving on FPGAs via Partial Reconfiguration: A Case Study Using the FPGA AI Suite": MICRO/2026/Session-9A/elastic-llm-serving-on-fpgas-via-partial-reconfiguration-a-case-study-using-the-fpga-ai-suite.md
+        - "HeteroReason: Heterogeneous FPGA-GPU Acceleration for Disaggregated Speculative Reasoning": MICRO/2026/Session-9A/heteroreason-heterogeneous-fpga-gpu-acceleration-for-disaggregated-speculative-reasoning.md
+        - "Ariadne: An Efficient Deadlock-Free Temporal RDA with Local Tags and Interleaved Switching": MICRO/2026/Session-9A/ariadne-an-efficient-deadlock-free-temporal-rda-with-local-tags-and-interleaved-switching.md
+        - "RAICHU: Rendering Acceleration Integrating CGRA arcHitecture for Unified VR Pipelines": MICRO/2026/Session-9A/raichu-rendering-acceleration-integrating-cgra-architecture-for-unified-vr-pipelines.md
+        - "Argus: An Efficient Accelerator Design for Sparse Nonlinear Solver": MICRO/2026/Session-9A/argus-an-efficient-accelerator-design-for-sparse-nonlinear-solver.md
+      - "Session 9B: Near-Memory & In-Storage Search Acceleration (6)":
+        - "Session 9B": MICRO/2026/Session-9B/index.md
+        - "MFNNS: A Multiplier-Free Near-Memory Accelerator for Graph-Based ANNS": MICRO/2026/Session-9B/mfnns-a-multiplier-free-near-memory-accelerator-for-graph-based-anns.md
+        - "PipeDRAM: Eliminating Runtime Data Transposition Requirements for In-DRAM Computation via Hardware/Software Pipelining": MICRO/2026/Session-9B/pipedram-eliminating-runtime-data-transposition-requirements-for-in-dram-computation-via-hardware-software-pipelining.md
+        - "WiFlash: Wordline-Parallel Approximate Nearest Neighbor Search Inside Flash Cell Array": MICRO/2026/Session-9B/wiflash-wordline-parallel-approximate-nearest-neighbor-search-inside-flash-cell-array.md
+        - "C3: Collaborative CPU-Commodity DRAM Computation for Reliable LLM Acceleration": MICRO/2026/Session-9B/c3-collaborative-cpu-commodity-dram-computation-for-reliable-llm-acceleration.md
+        - "FastAP: Unleashing Bit-Level Parallelism in Associative Processor Architectures.": MICRO/2026/Session-9B/fastap-unleashing-bit-level-parallelism-in-associative-processor-architectures.md
+        - "D-NOVA: In-Storage Retrieval Accelerator via Dual-Bound 3D NAND-Optimized Similarity Search with Vector Adaptation": MICRO/2026/Session-9B/d-nova-in-storage-retrieval-accelerator-via-dual-bound-3d-nand-optimized-similarity-search-with-vector-adaptation.md
+      - "Session 9C: Parallel Architectures / Datacenter Systems (6)":
+        - "Session 9C": MICRO/2026/Session-9C/index.md
+        - "Heterogeneity-Aware Cross-Layer Mapping Optimization for Sparse LLMs on Layered Supernodes": MICRO/2026/Session-9C/heterogeneity-aware-cross-layer-mapping-optimization-for-sparse-llms-on-layered-supernodes.md
+        - "Orbital AI Datacenter: An Architectural Analysis": MICRO/2026/Session-9C/orbital-ai-datacenter-an-architectural-analysis.md
+        - "A Harmony of Ice and Fire: Mitigating Cold Last-Level Cache Effects in Serverless Computing on Commodity Hardware": MICRO/2026/Session-9C/a-harmony-of-ice-and-fire-mitigating-cold-last-level-cache-effects-in-serverless-computing-on-commodity-hardware.md
+        - "SERenaDE: Hardware Acceleration of Serialization Frameworks": MICRO/2026/Session-9C/serenade-hardware-acceleration-of-serialization-frameworks.md
+        - "RidgeBridge: Random Access Optimized Interconnect Architecture for Scalable Graph Random Walks": MICRO/2026/Session-9C/ridgebridge-random-access-optimized-interconnect-architecture-for-scalable-graph-random-walks.md
+        - "Arcalís: Accelerating Remote Procedure Calls Using a Líghtweight Near-Cache Solution": MICRO/2026/Session-9C/arcal-s-accelerating-remote-procedure-calls-using-a-l-ghtweight-near-cache-solution.md
+      - "Session 9D: Secure Memory Sharing & Cryptographic Acceleration (6)":
+        - "Session 9D": MICRO/2026/Session-9D/index.md
+        - "ShareMMU: Supporting Secure Address Translation Sharing Among Untrusted Accelerators": MICRO/2026/Session-9D/sharemmu-supporting-secure-address-translation-sharing-among-untrusted-accelerators.md
+        - "HSMEM: Heterogeneous Secure Memory with Scalable and Energy-Efficient Data Transfer": MICRO/2026/Session-9D/hsmem-heterogeneous-secure-memory-with-scalable-and-energy-efficient-data-transfer.md
+        - "DireLeak: Cross-Socket Cache Timing Channels Exploiting Memory Directory": MICRO/2026/Session-9D/direleak-cross-socket-cache-timing-channels-exploiting-memory-directory.md
+        - "VAXEN: A Versatile AVX Extension for Zero-Knowledge Proof and Post-Quantum Cryptography": MICRO/2026/Session-9D/vaxen-a-versatile-avx-extension-for-zero-knowledge-proof-and-post-quantum-cryptography.md
+        - "NetFED: Network-Aware Acceleration for Multi-Key Privacy-Preserving Federated Learning Aggregation": MICRO/2026/Session-9D/netfed-network-aware-acceleration-for-multi-key-privacy-preserving-federated-learning-aggregation.md
+        - "Decoupled-DSM: A Scalable Secure Trusted Execution Environment for Multi-Host CXL Disaggregated Shared Memory": MICRO/2026/Session-9D/decoupled-dsm-a-scalable-secure-trusted-execution-environment-for-multi-host-cxl-disaggregated-shared-memory.md
   - 🔄 ASPLOS:
     - ASPLOS 2025 (184):
       - ASPLOS 2025: ASPLOS/2025/index.md

@@ -71,6 +71,7 @@ hide:
   <div class="conf-cube__full">IEEE/ACM International Symposium on Microarchitecture</div>
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="MICRO/2025/">2025</a>
+    <a class="conf-cube__year-link" href="MICRO/2026/">2026</a>
   </div>
 </div>
 

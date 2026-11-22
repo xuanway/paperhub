@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-10",
-  "content_hash": "e1d9a81c9948d1d5",
-  "total_papers": 1598,
+  "updated": "2026-11-23",
+  "content_hash": "610392db2c56c443",
+  "total_papers": 1818,
   "stats": {
-    "total_papers": 1598,
+    "total_papers": 1818,
     "conferences_count": 12,
-    "directions_count": 1571,
-    "track_directions_count": 225,
-    "keywords_count": 1571,
+    "directions_count": 1584,
+    "track_directions_count": 259,
+    "keywords_count": 1584,
     "per_conf": {
       "ASPLOS 2025": {
         "total": 184,
@@ -49,6 +49,10 @@
         "total": 123,
         "tracks": 26
       },
+      "MICRO 2026": {
+        "total": 220,
+        "tracks": 34
+      },
       "PPOPP 2025": {
         "total": 38,
         "tracks": 0
@@ -85,6 +89,40 @@
       "MICRO/2025/microarchitecture": 7,
       "MICRO/2025/systems_for_ai_quantization": 3,
       "MICRO/2025/quantum": 8,
+      "MICRO/2026/Session-3D": 7,
+      "MICRO/2026/Session-3C": 6,
+      "MICRO/2026/Session-9C": 6,
+      "MICRO/2026/Session-9D": 6,
+      "MICRO/2026/Session-5A": 5,
+      "MICRO/2026/Session-3B": 7,
+      "MICRO/2026/Session-6A": 7,
+      "MICRO/2026/Session-9B": 6,
+      "MICRO/2026/Session-4C": 5,
+      "MICRO/2026/Session-8A": 7,
+      "MICRO/2026/Session-7B": 7,
+      "MICRO/2026/Session-2A": 7,
+      "MICRO/2026/Session-7C": 7,
+      "MICRO/2026/Session-7D": 7,
+      "MICRO/2026/Session-4B": 5,
+      "MICRO/2026/Session-1A": 7,
+      "MICRO/2026/Session-6C": 7,
+      "MICRO/2026/Session-6D": 7,
+      "MICRO/2026/Session-5B": 5,
+      "MICRO/2026/Session-5C": 5,
+      "MICRO/2026/Session-9A": 6,
+      "MICRO/2026/Session-6B": 7,
+      "MICRO/2026/Session-3A": 7,
+      "MICRO/2026/Session-2B": 7,
+      "MICRO/2026/Session-1C": 7,
+      "MICRO/2026/Session-1D": 7,
+      "MICRO/2026/Session-7A": 7,
+      "MICRO/2026/Session-8B": 7,
+      "MICRO/2026/Session-1B": 7,
+      "MICRO/2026/Session-2D": 7,
+      "MICRO/2026/Session-2C": 6,
+      "MICRO/2026/Session-8C": 7,
+      "MICRO/2026/Session-8D": 7,
+      "MICRO/2026/Session-4A": 5,
       "SC/2025/data_analytics_visualization_and_storage": 4,
       "SC/2025/system_software_and_cloud_computing_resource_utilization": 4,
       "SC/2025/algorithms_sparse_matrix_and_tensor_computation": 4,
@@ -825,6 +863,390 @@
       ]
     },
     {
+      "text": "LLM Inference",
+      "count": 34,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (4 papers) · MICRO 2026 (30 papers)",
+      "search_term": "LLM Inference",
+      "papers": [
+        {
+          "title": "AIPerf: Meta's Performance Modeling and HW/SW Co-Design Framework for Datacenter-Scale LLM Training",
+          "url": "MICRO/2026/Session-1C/aiperf-meta-s-performance-modeling-and-hw-sw-co-design-framework-for-datacenter-scale-llm-training/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1C · AIPerf：Meta 面向数据中心规模大语言模型训练的性能建模与软硬件协同设计框架"
+        },
+        {
+          "title": "ATLAS: Pathfinding Efficient 3D-DRAM-Based LLM Inference Accelerator Design via Silicon-Proven Full-Stack Simulation",
+          "url": "MICRO/2026/Session-1B/atlas-pathfinding-efficient-3d-dram-based-llm-inference-accelerator-design-via-silicon-proven-full-stack-simulation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1B · ATLAS：通过经芯片验证的全栈仿真探索高效三维 DRAM 大语言模型推理加速器设计"
+        },
+        {
+          "title": "Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving",
+          "url": "MICRO/2026/Session-2A/auto-scaling-heterogeneous-neural-processing-units-for-energy-and-cost-efficient-llm-serving/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 2A · 面向高能效与低成本 LLM 服务的异构神经处理单元自动扩缩容"
+        },
+        {
+          "title": "BITE: Boosting LLM Training via Sandwich-Bite Dataflow and Dynamic Subspace Auto-Alignment",
+          "url": "MICRO/2026/Session-8C/bite-boosting-llm-training-via-sandwich-bite-dataflow-and-dynamic-subspace-auto-alignment/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8C · BITE：通过 Sandwich-Bite 数据流与动态子空间自动对齐加速 LLM 训练"
+        },
+        {
+          "title": "Beyond Linear Scaling for LLM Training on Wafer-Scale GPUs",
+          "url": "MICRO/2026/Session-4C/beyond-linear-scaling-for-llm-training-on-wafer-scale-gpus/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4C · 突破晶圆级 GPU 上 LLM 训练的线性扩展限制"
+        },
+        {
+          "title": "C3: Collaborative CPU-Commodity DRAM Computation for Reliable LLM Acceleration",
+          "url": "MICRO/2026/Session-9B/c3-collaborative-cpu-commodity-dram-computation-for-reliable-llm-acceleration/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 9B · C3：面向可靠 LLM 加速的 CPU 与商用 DRAM 协同计算"
+        },
+        {
+          "title": "CrossSpec: A Draft-Verify Aggregated 3D LLM Accelerator with Thermal-Aware Cross Floorplan and Stack-Layer-Wise Dynamic Refresh for Parallel Speculative Decoding",
+          "url": "MICRO/2026/Session-4C/crossspec-a-draft-verify-aggregated-3d-llm-accelerator-with-thermal-aware-cross-floorplan-and-stack-layer-wise-dynamic-refresh-for-parallel-speculative-decoding/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4C · CrossSpec：面向并行推测解码、融合草拟与验证并采用热感知交叉布局及逐堆叠层动态刷新的三维 LLM 加速器"
+        },
+        {
+          "title": "DUALign: A Hardware-Assisted Memory Mapping Strategy for PNM-Accelerated LLM Serving",
+          "url": "MICRO/2026/Session-5C/dualign-a-hardware-assisted-memory-mapping-strategy-for-pnm-accelerated-llm-serving/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 5C · DUALign：面向近存处理加速 LLM 服务的硬件辅助内存映射策略"
+        },
+        {
+          "title": "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference",
+          "url": "MICRO/2026/Session-7B/deepstack-facilitating-co-design-exploration-of-3d-dram-stacked-accelerators-for-distributed-llm-inference/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 7B · DeepStack：支持分布式 LLM 推理的三维 DRAM 堆叠加速器协同设计探索"
+        },
+        {
+          "title": "Elastic LLM Serving on FPGAs via Partial Reconfiguration: A Case Study Using the FPGA AI Suite",
+          "url": "MICRO/2026/Session-9A/elastic-llm-serving-on-fpgas-via-partial-reconfiguration-a-case-study-using-the-fpga-ai-suite/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 9A · 通过部分重配置实现 FPGA 上的弹性 LLM 服务：基于 FPGA AI Suite 的案例研究"
+        },
+        {
+          "title": "Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving",
+          "url": "MICRO/2026/Session-3C/enabling-spatially-fine-grained-dvfs-in-neural-processing-units-for-energy-efficient-llm-serving/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3C · 在神经处理单元中实现空间细粒度 DVFS，以提高 LLM 服务能效"
+        },
+        {
+          "title": "GPU-Tile-Sim: A Tile-Centric GPU Simulation Framework for LLM Hardware-Software Co-Design",
+          "url": "MICRO/2026/Session-3B/gpu-tile-sim-a-tile-centric-gpu-simulation-framework-for-llm-hardware-software-co-design/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3B · GPU-Tile-Sim：面向 LLM 软硬件协同设计的分块 GPU 仿真框架"
+        },
+        {
+          "title": "Gossamer: A Utility-Driven Architecture for Constant-Budget KV Cache Compression in Reasoning LLMs",
+          "url": "MICRO/2026/Session-1B/gossamer-a-utility-driven-architecture-for-constant-budget-kv-cache-compression-in-reasoning-llms/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1B · Gossamer：面向推理型大语言模型的固定预算 KV 缓存压缩效用驱动架构"
+        },
+        {
+          "title": "HBQ: Hierarchical Scaling Block Quantization with Hardware-Efficiency-Aware Design for Accurate LLM Inference",
+          "url": "MICRO/2026/Session-6C/hbq-hierarchical-scaling-block-quantization-with-hardware-efficiency-aware-design-for-accurate-llm-inference/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6C · HBQ：面向精确 LLM 推理、采用硬件效率感知设计的分层缩放块量化"
+        },
+        {
+          "title": "HeteroMosaic: Exposing and Exploiting Heterogeneous Opportunities for Energy-Efficient Edge LLM Inference",
+          "url": "MICRO/2026/Session-2A/heteromosaic-exposing-and-exploiting-heterogeneous-opportunities-for-energy-efficient-edge-llm-inference/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 2A · HeteroMosaic：挖掘并利用异构机会实现高能效端侧 LLM 推理"
+        },
+        {
+          "title": "High-Density LUT mpGEMM Architecture with Unified INT/FP Support for Low-Bit LLM Inference",
+          "url": "MICRO/2026/Session-1D/high-density-lut-mpgemm-architecture-with-unified-int-fp-support-for-low-bit-llm-inference/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1D · 面向低比特 LLM 推理、统一支持整数与浮点运算的高密度查找表 mpGEMM 架构"
+        },
+        {
+          "title": "LUTHE: Breaking the Memory Wall of High-Precision Encrypted LLM Nonlinearities via GPU-CSD Co-Design",
+          "url": "MICRO/2026/Session-4A/luthe-breaking-the-memory-wall-of-high-precision-encrypted-llm-nonlinearities-via-gpu-csd-co-design/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4A · LUTHE：通过 GPU-CSD 协同设计突破高精度加密 LLM 非线性运算的内存墙"
+        },
+        {
+          "title": "MOSAIC: Exploiting Structured Tolerance for Adaptive LLM Inference Mapping in Heterogeneous PIM Accelerators",
+          "url": "MICRO/2026/Session-8A/mosaic-exploiting-structured-tolerance-for-adaptive-llm-inference-mapping-in-heterogeneous-pim-accelerators/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8A · MOSAIC：利用结构化容错性实现异构存内处理加速器上的自适应 LLM 推理映射"
+        },
+        {
+          "title": "NELSSA: A GPU-PNM Heterogeneous System for Mixed-Length LLM Serving via Length-Based Request Placement",
+          "url": "MICRO/2026/Session-8A/nelssa-a-gpu-pnm-heterogeneous-system-for-mixed-length-llm-serving-via-length-based-request-placement/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8A · NELSSA：通过基于长度的请求放置实现混合长度 LLM 服务的 GPU-PNM 异构系统"
+        },
+        {
+          "title": "NOVA: Technology-Architecture Co-Design of Near-Memory Processing for Attention-SSM-MoE Hybrid LLM Inference",
+          "url": "MICRO/2026/Session-4C/nova-technology-architecture-co-design-of-near-memory-processing-for-attention-ssm-moe-hybrid-llm-inference/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4C · NOVA：面向注意力、SSM 与 MoE 混合 LLM 推理的近存处理技术与架构协同设计"
+        },
+        {
+          "title": "Not All Dot Products Are Equal: The Hidden MMA Arithmetic Design Space Drives Cross-Architecture LLM Inference Gaps",
+          "url": "MICRO/2026/Session-1A/not-all-dot-products-are-equal-the-hidden-mma-arithmetic-design-space-drives-cross-architecture-llm-inference-gaps/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · 并非所有点积都相同：隐藏的 MMA 算术设计空间导致跨架构 LLM 推理差异"
+        },
+        {
+          "title": "Rethinking Unified Memory for NPU-PIM Systems: Dual-View Memory for Dynamic Inference of LLM",
+          "url": "MICRO/2026/Session-8A/rethinking-unified-memory-for-npu-pim-systems-dual-view-memory-for-dynamic-inference-of-llm/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8A · 重新思考 NPU-PIM 系统的统一内存：面向 LLM 动态推理的双视图内存"
+        },
+        {
+          "title": "SCOPE: Array-Native Nonlinear Acceleration for LLM Inference via Shape-Constrained Neural Approximation",
+          "url": "MICRO/2026/Session-8C/scope-array-native-nonlinear-acceleration-for-llm-inference-via-shape-constrained-neural-approximation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8C · SCOPE：通过形状约束神经近似实现 LLM 推理的阵列原生非线性加速"
+        },
+        {
+          "title": "SYMPHONY: Harmonizing Memory and Communication in LLM Inference on 3D DRAM Accelerators",
+          "url": "MICRO/2026/Session-8A/symphony-harmonizing-memory-and-communication-in-llm-inference-on-3d-dram-accelerators/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8A · SYMPHONY：协调三维 DRAM 加速器上 LLM 推理的内存与通信"
+        },
+        {
+          "title": "SkewQ: Skewness-Aware Cross-Layer Quantization for Efficient LLM Inference via Software-Hardware Co-Design",
+          "url": "MICRO/2026/Session-6C/skewq-skewness-aware-cross-layer-quantization-for-efficient-llm-inference-via-software-hardware-co-design/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6C · SkewQ：通过软硬件协同设计实现偏度感知跨层量化与高效 LLM 推理"
+        },
+        {
+          "title": "Software-Hardware Co-Design of Prior-Aware W4A4 Micro-Block Quantization for Robust LLM Inference Across Model Families",
+          "url": "MICRO/2026/Session-6C/software-hardware-co-design-of-prior-aware-w4a4-micro-block-quantization-for-robust-llm-inference-across-model-families/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6C · 先验感知 W4A4 微块量化的软硬件协同设计，实现跨模型家族的稳健 LLM 推理"
+        },
+        {
+          "title": "TESSA: A Thermal-Centric, Sensor-Free Framework with Spatially Aware Elastic Execution for 3D-Stacked-DRAM-Based LLM Accelerators",
+          "url": "MICRO/2026/Session-4C/tessa-a-thermal-centric-sensor-free-framework-with-spatially-aware-elastic-execution-for-3d-stacked-dram-based-llm-accelerators/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4C · TESSA：面向三维堆叠 DRAM LLM 加速器、具备空间感知弹性执行的无传感器热管理框架"
+        },
+        {
+          "title": "TNT: A Unified LUT-Centric Architecture for Ultra-Low-Bit LLM Inference via Native KV Computation",
+          "url": "MICRO/2026/Session-1B/tnt-a-unified-lut-centric-architecture-for-ultra-low-bit-llm-inference-via-native-kv-computation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1B · TNT：通过原生 KV 计算实现超低比特大语言模型推理的统一查找表架构"
+        },
+        {
+          "title": "ULTRA: Bridging the VQ Gap in Anisotropic LLM Quantization via a Unified LUT-Based TRansformer Architecture",
+          "url": "MICRO/2026/Session-8A/ultra-bridging-the-vq-gap-in-anisotropic-llm-quantization-via-a-unified-lut-based-transformer-architecture/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8A · ULTRA：通过统一查找表 Transformer 架构弥合各向异性 LLM 量化中的向量量化差距"
+        },
+        {
+          "title": "Ultra-DSP: A Universal Lossless DSP Overpacking Framework for Low-Bit LLM Inference",
+          "url": "MICRO/2026/Session-9A/ultra-dsp-a-universal-lossless-dsp-overpacking-framework-for-low-bit-llm-inference/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 9A · Ultra-DSP：面向低比特 LLM 推理的通用无损 DSP 超额打包框架"
+        },
+        {
+          "title": "DeepSeek-V3: Inference Architecture and System Optimization",
+          "url": "ISCA/2025/systems/deepseek_v3/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025产业论文解读：DeepSeek团队介绍DeepSeek-V3模型的推理架构设计，包括MoE架构优化、KV Cache管理和多节点推理部署经验。"
+        },
+        {
+          "title": "LIA: A Single-GPU LLM Inference Acceleration with Cooperative AMX-Enabled CPU-GPU Computation and CXL Offloading",
+          "url": "ISCA/2025/llm/lia/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：LIA利用Intel AMX指令集加速CPU端LLM计算，配合CXL内存扩展，构建CPU-GPU协作的高效单节点LLM推理系统。"
+        },
+        {
+          "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
+          "url": "ISCA/2025/llm/specee/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：SpecEE提出推测早退机制，通过预测LLM token何时可提前退出中间层，在不损失精度的前提下减少大量计算。"
+        },
+        {
+          "title": "WSC-LLM: Efficient LLM Service and Architecture Co-exploration for Wafer-scale Chips",
+          "url": "ISCA/2025/ml_accelerator/wsc_llm/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：WSC-LLM针对晶圆级（wafer-scale）芯片的独特互联拓扑和计算特性，系统探索LLM推理部署的最优体系结构配置。"
+        }
+      ]
+    },
+    {
+      "text": "GPU",
+      "count": 27,
+      "trend": 1,
+      "conf_info": "DAC 2025 (3 papers) · ISCA 2025 (4 papers) · MICRO 2026 (20 papers)",
+      "search_term": "GPU",
+      "papers": [
+        {
+          "title": "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs",
+          "url": "MICRO/2026/Session-1C/architecting-for-hardware-diversity-meta-s-end-to-end-co-design-for-high-performance-ai-training-on-amd-gpus/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1C · 面向硬件多样性的架构设计：Meta 在 AMD GPU 上实现高性能 AI 训练的端到端协同设计"
+        },
+        {
+          "title": "Better Call SoL: Enhancing GPUs with a Sea of LUTs Core",
+          "url": "MICRO/2026/Session-1A/better-call-sol-enhancing-gpus-with-a-sea-of-luts-core/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · Better Call SoL：通过查找表海洋核心增强 GPU"
+        },
+        {
+          "title": "Beyond Linear Scaling for LLM Training on Wafer-Scale GPUs",
+          "url": "MICRO/2026/Session-4C/beyond-linear-scaling-for-llm-training-on-wafer-scale-gpus/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4C · 突破晶圆级 GPU 上 LLM 训练的线性扩展限制"
+        },
+        {
+          "title": "Bit-Accurate Modeling of GPU Matrix Multiply-Accumulate Units: Demystifying Numerical Discrepancy and Accuracy",
+          "url": "MICRO/2026/Session-1A/bit-accurate-modeling-of-gpu-matrix-multiply-accumulate-units-demystifying-numerical-discrepancy-and-accuracy/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · GPU 矩阵乘累加单元的位精确建模：揭示数值差异与精度问题"
+        },
+        {
+          "title": "C2P-Cache: Scalable GPU L1 Cache Sharing via Concurrent Candidate Pruning",
+          "url": "MICRO/2026/Session-7A/c2p-cache-scalable-gpu-l1-cache-sharing-via-concurrent-candidate-pruning/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 7A · C2P-Cache：通过并发候选剪枝实现可扩展 GPU L1 缓存共享"
+        },
+        {
+          "title": "Complex Tensor Core: Software-Hardware Co-Design for Accelerating Complex-Valued Neural Networks on GPUs",
+          "url": "MICRO/2026/Session-1A/complex-tensor-core-software-hardware-co-design-for-accelerating-complex-valued-neural-networks-on-gpus/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · 复数张量核：通过软硬件协同设计加速 GPU 上的复值神经网络"
+        },
+        {
+          "title": "Efficient GPU Inference for Discrete Neural Networks",
+          "url": "MICRO/2026/Session-7A/efficient-gpu-inference-for-discrete-neural-networks/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 7A · 离散神经网络的高效 GPU 推理"
+        },
+        {
+          "title": "GPU-Tile-Sim: A Tile-Centric GPU Simulation Framework for LLM Hardware-Software Co-Design",
+          "url": "MICRO/2026/Session-3B/gpu-tile-sim-a-tile-centric-gpu-simulation-framework-for-llm-hardware-software-co-design/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3B · GPU-Tile-Sim：面向 LLM 软硬件协同设计的分块 GPU 仿真框架"
+        },
+        {
+          "title": "Helios: Melting Kernel Boundaries for GPU-Accelerated HE via Graph Rewriting and Microarchitecture-Aware Mapping",
+          "url": "MICRO/2026/Session-4B/helios-melting-kernel-boundaries-for-gpu-accelerated-he-via-graph-rewriting-and-microarchitecture-aware-mapping/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4B · Helios：通过图重写与微架构感知映射消除 GPU 同态加密加速中的内核边界"
+        },
+        {
+          "title": "HeteroReason: Heterogeneous FPGA-GPU Acceleration for Disaggregated Speculative Reasoning",
+          "url": "MICRO/2026/Session-9A/heteroreason-heterogeneous-fpga-gpu-acceleration-for-disaggregated-speculative-reasoning/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 9A · HeteroReason：面向分离式推测推理的 FPGA-GPU 异构加速"
+        },
+        {
+          "title": "HiLLM: Heterogeneous CPU-GPU Inference for Interactive MoE LLM Serving on Local Systems",
+          "url": "MICRO/2026/Session-1B/hillm-heterogeneous-cpu-gpu-inference-for-interactive-moe-llm-serving-on-local-systems/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1B · HiLLM：面向本地交互式 MoE 大语言模型服务的 CPU-GPU 异构推理"
+        },
+        {
+          "title": "LUTHE: Breaking the Memory Wall of High-Precision Encrypted LLM Nonlinearities via GPU-CSD Co-Design",
+          "url": "MICRO/2026/Session-4A/luthe-breaking-the-memory-wall-of-high-precision-encrypted-llm-nonlinearities-via-gpu-csd-co-design/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4A · LUTHE：通过 GPU-CSD 协同设计突破高精度加密 LLM 非线性运算的内存墙"
+        },
+        {
+          "title": "NB-Walker: Non-Blocking Page Table Walker to Enhance Address Translation in NUMA GPUs",
+          "url": "MICRO/2026/Session-8B/nb-walker-non-blocking-page-table-walker-to-enhance-address-translation-in-numa-gpus/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8B · NB-Walker：增强 NUMA GPU 地址转换的非阻塞页表遍历器"
+        },
+        {
+          "title": "NELSSA: A GPU-PNM Heterogeneous System for Mixed-Length LLM Serving via Length-Based Request Placement",
+          "url": "MICRO/2026/Session-8A/nelssa-a-gpu-pnm-heterogeneous-system-for-mixed-length-llm-serving-via-length-based-request-placement/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8A · NELSSA：通过基于长度的请求放置实现混合长度 LLM 服务的 GPU-PNM 异构系统"
+        },
+        {
+          "title": "Not All Dot Products Are Equal: The Hidden MMA Arithmetic Design Space Drives Cross-Architecture LLM Inference Gaps",
+          "url": "MICRO/2026/Session-1A/not-all-dot-products-are-equal-the-hidden-mma-arithmetic-design-space-drives-cross-architecture-llm-inference-gaps/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · 并非所有点积都相同：隐藏的 MMA 算术设计空间导致跨架构 LLM 推理差异"
+        },
+        {
+          "title": "RESCU: Optimizing GPU Register Management for Effective Kernel Fusion",
+          "url": "MICRO/2026/Session-1A/rescu-optimizing-gpu-register-management-for-effective-kernel-fusion/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · RESCU：优化 GPU 寄存器管理以实现高效内核融合"
+        },
+        {
+          "title": "Ray-by-Ray: Fine-Grained Resource Management for GPU Ray Tracing Units",
+          "url": "MICRO/2026/Session-1A/ray-by-ray-fine-grained-resource-management-for-gpu-ray-tracing-units/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · Ray-by-Ray：面向 GPU 光线追踪单元的细粒度资源管理"
+        },
+        {
+          "title": "SPMC: Speculative Multicast for GPU Address Translation Sharing",
+          "url": "MICRO/2026/Session-7A/spmc-speculative-multicast-for-gpu-address-translation-sharing/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 7A · SPMC：用于 GPU 地址转换共享的推测式多播"
+        },
+        {
+          "title": "Same Cache, Different Latency: Understanding and Exploiting L2 Domain Locality in GPUs",
+          "url": "MICRO/2026/Session-2C/same-cache-different-latency-understanding-and-exploiting-l2-domain-locality-in-gpus/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 2C · 相同缓存，不同时延：理解并利用 GPU 的 L2 域局部性"
+        },
+        {
+          "title": "SnakeCharmer: Orchestrating Utility, Timeliness, and Placement in GPU Prefetching",
+          "url": "MICRO/2026/Session-1A/snakecharmer-orchestrating-utility-timeliness-and-placement-in-gpu-prefetching/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · SnakeCharmer：统筹 GPU 预取的效用、及时性与数据放置"
+        },
+        {
+          "title": "DM-Tune: Quantizing Diffusion Models with Mixture-of-Gaussian Guided Noise Tuning",
+          "url": "DAC/2025/ai/dm_tune_quantizing_diffusion_models_with_mixture_of_gaussian_guided_noise_tuning/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · AI"
+        },
+        {
+          "title": "GoPTX: Fine-grained GPU Kernel Fusion by PTX-level Instruction Flow Weaving",
+          "url": "DAC/2025/design/goptx_fine_grained_gpu_kernel_fusion_by_ptx_level_instruction_flow_weaving/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "VISTA: Optimizing GPU Scheduling through Versatile Locality-Aware Data Sharing",
+          "url": "DAC/2025/ai/vista_optimizing_gpu_scheduling_through_versatile_locality_aware_data_sharing/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · AI"
+        },
+        {
+          "title": "Avant-Garde: Empowering GPUs with Scaled Numeric Formats",
+          "url": "ISCA/2025/gpu/avant_garde/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：Avant-Garde为GPU引入缩放数值格式（Scaled Numeric Formats），通过格式感知的硬件支持提升低精度计算精度，减少模型精度损失。"
+        },
+        {
+          "title": "CoopRT: Accelerating BVH Traversal for Ray Tracing via Cooperative Threads",
+          "url": "ISCA/2025/gpu/cooprt/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：CoopRT让多个GPU线程协作执行单个光线的BVH遍历，通过负载均衡解决光线遍历路径差异导致的warp分歧问题。"
+        },
+        {
+          "title": "Forest: Access-aware GPU UVM Management",
+          "url": "ISCA/2025/gpu/forest/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：Forest通过分析GPU内存访问模式实现访问感知的UVM（统一虚拟内存）管理策略，降低页面迁移开销。"
+        },
+        {
+          "title": "Heliostat: Harnessing Ray Tracing Accelerators for Page Table Walks",
+          "url": "ISCA/2025/gpu/heliostat/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：Heliostat将GPU中的RT核（光线追踪加速器）复用为页表遍历的BVH遍历引擎，显著加速地址翻译。"
+        }
+      ]
+    },
+    {
       "text": "Processing-in-Memory",
       "count": 26,
       "trend": -1,
@@ -986,6 +1408,171 @@
           "url": "ISCA/2025/pim/optipim/",
           "conf": "ISCA 2025",
           "summary": "ISCA 2025论文解读：OptiPIM将PIM加速器的任务映射和调度问题形式化为整数线性规划(ILP)，找到最优执行策略。"
+        }
+      ]
+    },
+    {
+      "text": "Quantum Computing",
+      "count": 26,
+      "trend": -1,
+      "conf_info": "DAC 2025 (6 papers) · ISCA 2025 (13 papers) · MICRO 2026 (7 papers)",
+      "search_term": "Quantum Computing",
+      "papers": [
+        {
+          "title": "DARTH: Lookahead-Driven Compilation Exploiting Transient Qubits for Distributed Quantum Computing",
+          "url": "MICRO/2026/Session-8D/darth-lookahead-driven-compilation-exploiting-transient-qubits-for-distributed-quantum-computing/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8D · DARTH：利用瞬态量子比特的前瞻驱动分布式量子计算编译"
+        },
+        {
+          "title": "GadIR: A Spatial-Topology Preserving Compiler for Quantum Many-Body Systems Simulation",
+          "url": "MICRO/2026/Session-3D/gadir-a-spatial-topology-preserving-compiler-for-quantum-many-body-systems-simulation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3D · GadIR：面向量子多体系统仿真的空间拓扑保持编译器"
+        },
+        {
+          "title": "Maverick: Leveraging Address Translation to Mitigate Memory Latency in Server Workloads",
+          "url": "MICRO/2026/Session-2B/maverick-leveraging-address-translation-to-mitigate-memory-latency-in-server-workloads/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 2B · Maverick：利用地址转换降低服务器工作负载的内存访问时延"
+        },
+        {
+          "title": "NAQsim: Full-Stack Architecture Simulation Framework for Fast and Space-Efficient Neutral Atom Quantum Computing",
+          "url": "MICRO/2026/Session-3D/naqsim-full-stack-architecture-simulation-framework-for-fast-and-space-efficient-neutral-atom-quantum-computing/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3D · NAQsim：面向快速且空间高效的中性原子量子计算的全栈架构仿真框架"
+        },
+        {
+          "title": "NC-Fusion: Optimizing T-Gate Cost for Hamiltonian Simulation",
+          "url": "MICRO/2026/Session-3D/nc-fusion-optimizing-t-gate-cost-for-hamiltonian-simulation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3D · NC-Fusion：优化哈密顿量模拟中的 T 门成本"
+        },
+        {
+          "title": "QROB: Quantifying Realization Overhead in Quantum Compilation via Reverse Construction",
+          "url": "MICRO/2026/Session-3D/qrob-quantifying-realization-overhead-in-quantum-compilation-via-reverse-construction/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3D · QROB：通过逆向构造量化量子编译中的实现开销"
+        },
+        {
+          "title": "VAXEN: A Versatile AVX Extension for Zero-Knowledge Proof and Post-Quantum Cryptography",
+          "url": "MICRO/2026/Session-9D/vaxen-a-versatile-avx-extension-for-zero-knowledge-proof-and-post-quantum-cryptography/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 9D · VAXEN：面向零知识证明与后量子密码学的多功能 AVX 扩展"
+        },
+        {
+          "title": "DDRoute: a Novel Depth-Driven Approach to the Qubit Routing Problem",
+          "url": "DAC/2025/design/ddroute_a_novel_depth_driven_approach_to_the_qubit_routing_problem/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "Enhancing LLM-based Quantum Code Generation with Multi-Agent Optimization and Quantum Error Correction",
+          "url": "DAC/2025/ai/enhancing_llm_based_quantum_code_generation_with_multi_agent_optimization_and_quantum_error_correction/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · AI"
+        },
+        {
+          "title": "Joint Cutting for Hybrid Schrödinger-Feynman Simulation of Quantum Circuits",
+          "url": "DAC/2025/design/joint_cutting_for_hybrid_schr_dinger_feynman_simulation_of_quantum_circuits/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "Measurement-based uncomputation of quantum circuits for modular arithmetic",
+          "url": "DAC/2025/design/measurement_based_uncomputation_of_quantum_circuits_for_modular_arithmetic/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "Optimizing windowed arithmetic for quantum attacks against RSA2048",
+          "url": "DAC/2025/design/optimizing_windowed_arithmetic_for_quantum_attacks_against_rsa2048/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "ZXNet: ZX Calculus-Driven Graph Neural Network Framework for Quantum Circuit Equivalence Checking",
+          "url": "DAC/2025/design/zxnet_zx_calculus_driven_graph_neural_network_framework_for_quantum_circuit_equivalence_checking/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "ARTERY: Fast Quantum Feedback using Branch Prediction",
+          "url": "ISCA/2025/quantum/artery/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：ARTERY将经典处理器的分支预测思想引入量子测量反馈路径，提前推测测量结果并执行条件门，减少量子计算延迟。"
+        },
+        {
+          "title": "CaliQEC: In-situ Qubit Calibration for Surface Code Quantum Error Correction",
+          "url": "ISCA/2025/quantum/caliqec/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：CaliQEC提出在量子纠错执行期间原位进行量子比特校准，无需暂停计算即可维持高量子比特质量。"
+        },
+        {
+          "title": "Genesis: A Compiler for Hamiltonian Simulation on Hybrid CV-DV Quantum Computers",
+          "url": "ISCA/2025/quantum/genesis/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：Genesis专为混合连续变量(CV)和离散变量(DV)量子硬件设计Hamiltonian模拟编译器，充分利用两种量子模态的互补优势。"
+        },
+        {
+          "title": "Hardware-aware Calibration Protocol for Quantum Computers",
+          "url": "ISCA/2025/quantum/hw_calibration/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：面向量子计算机的硬件感知校准协议，通过联合优化门级和系统级参数提升量子操作保真度。"
+        },
+        {
+          "title": "QR-Map: A Map-Based Approach to Quantum Circuit Abstraction for Qubit Reuse Optimization",
+          "url": "ISCA/2025/quantum/qr_map/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：QR-Map提出地图抽象方法将量子电路分析转化为图映射问题，实现高效的量子比特复用优化。"
+        },
+        {
+          "title": "Qplacer: Frequency-Aware Component Placement for Superconducting Quantum Computers",
+          "url": "ISCA/2025/quantum/qplacer/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：Qplacer提出频率感知的超导量子比特布局优化工具，通过减少频率碰撞提高量子处理器的整体性能。"
+        },
+        {
+          "title": "Qtenon: Towards Low-Latency Architecture Integration for Accelerating Hybrid Quantum-Classical Computing",
+          "url": "ISCA/2025/quantum/qtenon/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：Qtenon提出低延迟经典-量子接口架构，通过紧耦合集成减少混合量子-经典算法中的通信开销。"
+        },
+        {
+          "title": "Reinforcement Learning-Guided Graph State Generation in Photonic Quantum Computers",
+          "url": "ISCA/2025/quantum/rl_graph_state/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：利用强化学习优化光子量子计算机中图态的生成电路，减少资源消耗并提升生成保真度。"
+        },
+        {
+          "title": "Resource Analysis of Low-Overhead Transversal Architectures for Reconfigurable Atom Arrays",
+          "url": "ISCA/2025/quantum/transversal/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：分析可重构原子阵列平台上横向（transversal）量子门架构的资源开销，揭示其相对于表面码的优势。"
+        },
+        {
+          "title": "S-SYNC: Shuttle and Swap Co-Optimization in Quantum Charge-Coupled Devices",
+          "url": "ISCA/2025/quantum/ssync/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：S-SYNC提出QCCD架构中穿梭（Shuttle）与交换（Swap）操作的协同优化策略，降低量子比特移动开销。"
+        },
+        {
+          "title": "SWIPER: Minimizing Fault-Tolerant Quantum Program Latency via Speculative Window Decoding",
+          "url": "ISCA/2025/quantum/swiper/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：SWIPER将推测执行思想引入量子错误纠正解码，通过预测解码结果并推测性执行后续量子操作，降低容错量子计算延迟。"
+        },
+        {
+          "title": "Synchronization for Fault-Tolerant Quantum Computers",
+          "url": "ISCA/2025/quantum/sync_ftqc/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：研究容错量子计算机中不同逻辑量子比特操作的同步问题，提出高效同步协议减少空闲等待开销。"
+        },
+        {
+          "title": "Variational Quantum Algorithms in the era of Early Fault Tolerance",
+          "url": "ISCA/2025/quantum/variational_qa/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：分析早期容错量子计算（early fault tolerance）阶段VQA算法的资源需求和优化策略。"
         }
       ]
     },
@@ -1409,129 +1996,6 @@
           "url": "ISCA/2025/ml_accelerator/wsc_llm/",
           "conf": "ISCA 2025",
           "summary": "ISCA 2025论文解读：WSC-LLM针对晶圆级（wafer-scale）芯片的独特互联拓扑和计算特性，系统探索LLM推理部署的最优体系结构配置。"
-        }
-      ]
-    },
-    {
-      "text": "Quantum Computing",
-      "count": 19,
-      "trend": -1,
-      "conf_info": "DAC 2025 (6 papers) · ISCA 2025 (13 papers)",
-      "search_term": "Quantum Computing",
-      "papers": [
-        {
-          "title": "DDRoute: a Novel Depth-Driven Approach to the Qubit Routing Problem",
-          "url": "DAC/2025/design/ddroute_a_novel_depth_driven_approach_to_the_qubit_routing_problem/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "Enhancing LLM-based Quantum Code Generation with Multi-Agent Optimization and Quantum Error Correction",
-          "url": "DAC/2025/ai/enhancing_llm_based_quantum_code_generation_with_multi_agent_optimization_and_quantum_error_correction/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · AI"
-        },
-        {
-          "title": "Joint Cutting for Hybrid Schrödinger-Feynman Simulation of Quantum Circuits",
-          "url": "DAC/2025/design/joint_cutting_for_hybrid_schr_dinger_feynman_simulation_of_quantum_circuits/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "Measurement-based uncomputation of quantum circuits for modular arithmetic",
-          "url": "DAC/2025/design/measurement_based_uncomputation_of_quantum_circuits_for_modular_arithmetic/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "Optimizing windowed arithmetic for quantum attacks against RSA2048",
-          "url": "DAC/2025/design/optimizing_windowed_arithmetic_for_quantum_attacks_against_rsa2048/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "ZXNet: ZX Calculus-Driven Graph Neural Network Framework for Quantum Circuit Equivalence Checking",
-          "url": "DAC/2025/design/zxnet_zx_calculus_driven_graph_neural_network_framework_for_quantum_circuit_equivalence_checking/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "ARTERY: Fast Quantum Feedback using Branch Prediction",
-          "url": "ISCA/2025/quantum/artery/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：ARTERY将经典处理器的分支预测思想引入量子测量反馈路径，提前推测测量结果并执行条件门，减少量子计算延迟。"
-        },
-        {
-          "title": "CaliQEC: In-situ Qubit Calibration for Surface Code Quantum Error Correction",
-          "url": "ISCA/2025/quantum/caliqec/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：CaliQEC提出在量子纠错执行期间原位进行量子比特校准，无需暂停计算即可维持高量子比特质量。"
-        },
-        {
-          "title": "Genesis: A Compiler for Hamiltonian Simulation on Hybrid CV-DV Quantum Computers",
-          "url": "ISCA/2025/quantum/genesis/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Genesis专为混合连续变量(CV)和离散变量(DV)量子硬件设计Hamiltonian模拟编译器，充分利用两种量子模态的互补优势。"
-        },
-        {
-          "title": "Hardware-aware Calibration Protocol for Quantum Computers",
-          "url": "ISCA/2025/quantum/hw_calibration/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：面向量子计算机的硬件感知校准协议，通过联合优化门级和系统级参数提升量子操作保真度。"
-        },
-        {
-          "title": "QR-Map: A Map-Based Approach to Quantum Circuit Abstraction for Qubit Reuse Optimization",
-          "url": "ISCA/2025/quantum/qr_map/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：QR-Map提出地图抽象方法将量子电路分析转化为图映射问题，实现高效的量子比特复用优化。"
-        },
-        {
-          "title": "Qplacer: Frequency-Aware Component Placement for Superconducting Quantum Computers",
-          "url": "ISCA/2025/quantum/qplacer/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Qplacer提出频率感知的超导量子比特布局优化工具，通过减少频率碰撞提高量子处理器的整体性能。"
-        },
-        {
-          "title": "Qtenon: Towards Low-Latency Architecture Integration for Accelerating Hybrid Quantum-Classical Computing",
-          "url": "ISCA/2025/quantum/qtenon/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Qtenon提出低延迟经典-量子接口架构，通过紧耦合集成减少混合量子-经典算法中的通信开销。"
-        },
-        {
-          "title": "Reinforcement Learning-Guided Graph State Generation in Photonic Quantum Computers",
-          "url": "ISCA/2025/quantum/rl_graph_state/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：利用强化学习优化光子量子计算机中图态的生成电路，减少资源消耗并提升生成保真度。"
-        },
-        {
-          "title": "Resource Analysis of Low-Overhead Transversal Architectures for Reconfigurable Atom Arrays",
-          "url": "ISCA/2025/quantum/transversal/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：分析可重构原子阵列平台上横向（transversal）量子门架构的资源开销，揭示其相对于表面码的优势。"
-        },
-        {
-          "title": "S-SYNC: Shuttle and Swap Co-Optimization in Quantum Charge-Coupled Devices",
-          "url": "ISCA/2025/quantum/ssync/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：S-SYNC提出QCCD架构中穿梭（Shuttle）与交换（Swap）操作的协同优化策略，降低量子比特移动开销。"
-        },
-        {
-          "title": "SWIPER: Minimizing Fault-Tolerant Quantum Program Latency via Speculative Window Decoding",
-          "url": "ISCA/2025/quantum/swiper/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：SWIPER将推测执行思想引入量子错误纠正解码，通过预测解码结果并推测性执行后续量子操作，降低容错量子计算延迟。"
-        },
-        {
-          "title": "Synchronization for Fault-Tolerant Quantum Computers",
-          "url": "ISCA/2025/quantum/sync_ftqc/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：研究容错量子计算机中不同逻辑量子比特操作的同步问题，提出高效同步协议减少空闲等待开销。"
-        },
-        {
-          "title": "Variational Quantum Algorithms in the era of Early Fault Tolerance",
-          "url": "ISCA/2025/quantum/variational_qa/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：分析早期容错量子计算（early fault tolerance）阶段VQA算法的资源需求和优化策略。"
         }
       ]
     },
@@ -1989,6 +2453,69 @@
       ]
     },
     {
+      "text": "Quantization",
+      "count": 9,
+      "trend": -1,
+      "conf_info": "DAC 2025 (4 papers) · ISCA 2025 (3 papers) · MICRO 2026 (2 papers)",
+      "search_term": "Quantization",
+      "papers": [
+        {
+          "title": "SkewQ: Skewness-Aware Cross-Layer Quantization for Efficient LLM Inference via Software-Hardware Co-Design",
+          "url": "MICRO/2026/Session-6C/skewq-skewness-aware-cross-layer-quantization-for-efficient-llm-inference-via-software-hardware-co-design/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6C · SkewQ：通过软硬件协同设计实现偏度感知跨层量化与高效 LLM 推理"
+        },
+        {
+          "title": "Software-Hardware Co-Design of Prior-Aware W4A4 Micro-Block Quantization for Robust LLM Inference Across Model Families",
+          "url": "MICRO/2026/Session-6C/software-hardware-co-design-of-prior-aware-w4a4-micro-block-quantization-for-robust-llm-inference-across-model-families/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6C · 先验感知 W4A4 微块量化的软硬件协同设计，实现跨模型家族的稳健 LLM 推理"
+        },
+        {
+          "title": "DM-Tune: Quantizing Diffusion Models with Mixture-of-Gaussian Guided Noise Tuning",
+          "url": "DAC/2025/ai/dm_tune_quantizing_diffusion_models_with_mixture_of_gaussian_guided_noise_tuning/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · AI"
+        },
+        {
+          "title": "OutlierCIM: Outlier-Aware Digital CIM-Based LLM Accelerator with Hybrid-Strategy Quantization and Unified FP-INT Computation",
+          "url": "DAC/2025/design/outliercim_outlier_aware_digital_cim_based_llm_accelerator_with_hybrid_strategy_quantization_and_unified_fp_int_computation/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "Precon: A Precision-Convertible Architecture for Accelerating Quantized Deep Learning Models across Various Domains Including LLMs",
+          "url": "DAC/2025/ai/precon_a_precision_convertible_architecture_for_accelerating_quantized_deep_learning_models_across_various_domains_including_llms/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · AI"
+        },
+        {
+          "title": "SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity",
+          "url": "DAC/2025/ai/sq_dm_accelerating_diffusion_models_with_aggressive_quantization_and_temporal_sparsity/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · AI"
+        },
+        {
+          "title": "Avant-Garde: Empowering GPUs with Scaled Numeric Formats",
+          "url": "ISCA/2025/gpu/avant_garde/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：Avant-Garde为GPU引入缩放数值格式（Scaled Numeric Formats），通过格式感知的硬件支持提升低精度计算精度，减少模型精度损失。"
+        },
+        {
+          "title": "LightNobel: Protein Structure Prediction with Activation Quantization",
+          "url": "ISCA/2025/domain_specific/lightnobel/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：LightNobel针对AlphaFold等蛋白质结构预测模型设计激活量化方案和专用硬件，实现高效结构预测推理。"
+        },
+        {
+          "title": "Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization",
+          "url": "ISCA/2025/llm/oaken/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：Oaken提出在线/离线混合KV Cache量化方案，针对长上下文LLM服务场景大幅降低内存占用并提升吞吐量。"
+        }
+      ]
+    },
+    {
       "text": "强化学习",
       "count": 9,
       "trend": -1,
@@ -2235,53 +2762,53 @@
       ]
     },
     {
-      "text": "GPU",
+      "text": "DRAM",
       "count": 7,
-      "trend": -1,
-      "conf_info": "DAC 2025 (3 papers) · ISCA 2025 (4 papers)",
-      "search_term": "GPU",
+      "trend": 1,
+      "conf_info": "MICRO 2026 (7 papers)",
+      "search_term": "DRAM",
       "papers": [
         {
-          "title": "DM-Tune: Quantizing Diffusion Models with Mixture-of-Gaussian Guided Noise Tuning",
-          "url": "DAC/2025/ai/dm_tune_quantizing_diffusion_models_with_mixture_of_gaussian_guided_noise_tuning/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · AI"
+          "title": "ATLAS: Pathfinding Efficient 3D-DRAM-Based LLM Inference Accelerator Design via Silicon-Proven Full-Stack Simulation",
+          "url": "MICRO/2026/Session-1B/atlas-pathfinding-efficient-3d-dram-based-llm-inference-accelerator-design-via-silicon-proven-full-stack-simulation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1B · ATLAS：通过经芯片验证的全栈仿真探索高效三维 DRAM 大语言模型推理加速器设计"
         },
         {
-          "title": "GoPTX: Fine-grained GPU Kernel Fusion by PTX-level Instruction Flow Weaving",
-          "url": "DAC/2025/design/goptx_fine_grained_gpu_kernel_fusion_by_ptx_level_instruction_flow_weaving/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
+          "title": "DeepStack: Facilitating Co-Design Exploration of 3D DRAM-Stacked Accelerators for Distributed LLM Inference",
+          "url": "MICRO/2026/Session-7B/deepstack-facilitating-co-design-exploration-of-3d-dram-stacked-accelerators-for-distributed-llm-inference/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 7B · DeepStack：支持分布式 LLM 推理的三维 DRAM 堆叠加速器协同设计探索"
         },
         {
-          "title": "VISTA: Optimizing GPU Scheduling through Versatile Locality-Aware Data Sharing",
-          "url": "DAC/2025/ai/vista_optimizing_gpu_scheduling_through_versatile_locality_aware_data_sharing/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · AI"
+          "title": "HYDRA: Hybrid DRAM Caching for Dynamic Complementary Multi-to-One Page Mapping in CXL Tiered Memory",
+          "url": "MICRO/2026/Session-6D/hydra-hybrid-dram-caching-for-dynamic-complementary-multi-to-one-page-mapping-in-cxl-tiered-memory/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6D · HYDRA：面向 CXL 分层内存中动态互补多对一页映射的混合 DRAM 缓存"
         },
         {
-          "title": "Avant-Garde: Empowering GPUs with Scaled Numeric Formats",
-          "url": "ISCA/2025/gpu/avant_garde/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Avant-Garde为GPU引入缩放数值格式（Scaled Numeric Formats），通过格式感知的硬件支持提升低精度计算精度，减少模型精度损失。"
+          "title": "Helios: Enabling Dynamic KV Cache Management for Near-Memory Processing via Hybrid-Bonding-Based 3D-DRAM",
+          "url": "MICRO/2026/Session-5B/helios-enabling-dynamic-kv-cache-management-for-near-memory-processing-via-hybrid-bonding-based-3d-dram/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 5B · Helios：利用混合键合三维 DRAM 实现近存处理中的动态 KV 缓存管理"
         },
         {
-          "title": "CoopRT: Accelerating BVH Traversal for Ray Tracing via Cooperative Threads",
-          "url": "ISCA/2025/gpu/cooprt/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：CoopRT让多个GPU线程协作执行单个光线的BVH遍历，通过负载均衡解决光线遍历路径差异导致的warp分歧问题。"
+          "title": "PARE: A Power and Area-Efficient Memory Controller for High-Bandwidth DRAM",
+          "url": "MICRO/2026/Session-8B/pare-a-power-and-area-efficient-memory-controller-for-high-bandwidth-dram/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8B · PARE：面向高带宽 DRAM 的功耗与面积高效内存控制器"
         },
         {
-          "title": "Forest: Access-aware GPU UVM Management",
-          "url": "ISCA/2025/gpu/forest/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Forest通过分析GPU内存访问模式实现访问感知的UVM（统一虚拟内存）管理策略，降低页面迁移开销。"
+          "title": "TESSA: A Thermal-Centric, Sensor-Free Framework with Spatially Aware Elastic Execution for 3D-Stacked-DRAM-Based LLM Accelerators",
+          "url": "MICRO/2026/Session-4C/tessa-a-thermal-centric-sensor-free-framework-with-spatially-aware-elastic-execution-for-3d-stacked-dram-based-llm-accelerators/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4C · TESSA：面向三维堆叠 DRAM LLM 加速器、具备空间感知弹性执行的无传感器热管理框架"
         },
         {
-          "title": "Heliostat: Harnessing Ray Tracing Accelerators for Page Table Walks",
-          "url": "ISCA/2025/gpu/heliostat/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Heliostat将GPU中的RT核（光线追踪加速器）复用为页表遍历的BVH遍历引擎，显著加速地址翻译。"
+          "title": "Understanding the Power Consumption of Modern High Bandwidth Memory: Experimental Analysis and Modeling Using Real HBM2 DRAM Chips",
+          "url": "MICRO/2026/Session-2B/understanding-the-power-consumption-of-modern-high-bandwidth-memory-experimental-analysis-and-modeling-using-real-hbm2-dram-chips/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 2B · 理解现代高带宽内存的功耗：基于真实 HBM2 DRAM 芯片的实验分析与建模"
         }
       ]
     },
@@ -2333,57 +2860,6 @@
           "url": "index copy/",
           "conf": "Unknown",
           "summary": "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC·HPDC 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
-        }
-      ]
-    },
-    {
-      "text": "Quantization",
-      "count": 7,
-      "trend": -1,
-      "conf_info": "DAC 2025 (4 papers) · ISCA 2025 (3 papers)",
-      "search_term": "Quantization",
-      "papers": [
-        {
-          "title": "DM-Tune: Quantizing Diffusion Models with Mixture-of-Gaussian Guided Noise Tuning",
-          "url": "DAC/2025/ai/dm_tune_quantizing_diffusion_models_with_mixture_of_gaussian_guided_noise_tuning/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · AI"
-        },
-        {
-          "title": "OutlierCIM: Outlier-Aware Digital CIM-Based LLM Accelerator with Hybrid-Strategy Quantization and Unified FP-INT Computation",
-          "url": "DAC/2025/design/outliercim_outlier_aware_digital_cim_based_llm_accelerator_with_hybrid_strategy_quantization_and_unified_fp_int_computation/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "Precon: A Precision-Convertible Architecture for Accelerating Quantized Deep Learning Models across Various Domains Including LLMs",
-          "url": "DAC/2025/ai/precon_a_precision_convertible_architecture_for_accelerating_quantized_deep_learning_models_across_various_domains_including_llms/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · AI"
-        },
-        {
-          "title": "SQ-DM: Accelerating Diffusion Models with Aggressive Quantization and Temporal Sparsity",
-          "url": "DAC/2025/ai/sq_dm_accelerating_diffusion_models_with_aggressive_quantization_and_temporal_sparsity/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · AI"
-        },
-        {
-          "title": "Avant-Garde: Empowering GPUs with Scaled Numeric Formats",
-          "url": "ISCA/2025/gpu/avant_garde/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Avant-Garde为GPU引入缩放数值格式（Scaled Numeric Formats），通过格式感知的硬件支持提升低精度计算精度，减少模型精度损失。"
-        },
-        {
-          "title": "LightNobel: Protein Structure Prediction with Activation Quantization",
-          "url": "ISCA/2025/domain_specific/lightnobel/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：LightNobel针对AlphaFold等蛋白质结构预测模型设计激活量化方案和专用硬件，实现高效结构预测推理。"
-        },
-        {
-          "title": "Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization",
-          "url": "ISCA/2025/llm/oaken/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：Oaken提出在线/离线混合KV Cache量化方案，针对长上下文LLM服务场景大幅降低内存占用并提升吞吐量。"
         }
       ]
     },
@@ -2537,6 +3013,96 @@
           "url": "DAC/2025/eda/mixed_structural_choice_operator_enhancing_technology_mapping_with_heterogeneous_representations/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · EDA"
+        }
+      ]
+    },
+    {
+      "text": "CXL",
+      "count": 6,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (2 papers) · MICRO 2026 (4 papers)",
+      "search_term": "CXL",
+      "papers": [
+        {
+          "title": "ARC: Adaptive Reconfigurable CXL Hotness Monitoring",
+          "url": "MICRO/2026/Session-2B/arc-adaptive-reconfigurable-cxl-hotness-monitoring/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 2B · ARC：自适应可重构 CXL 热度监测"
+        },
+        {
+          "title": "CXL AnySSD: A Composable CXL SSD Using a CXL Type-2 Device and Any SSDs",
+          "url": "MICRO/2026/Session-6D/cxl-anyssd-a-composable-cxl-ssd-using-a-cxl-type-2-device-and-any-ssds/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6D · CXL AnySSD：利用 CXL Type-2 设备与任意 SSD 构建可组合 CXL SSD"
+        },
+        {
+          "title": "Compute eXpress Leak: New Cache Attacks Using CXL Devices",
+          "url": "MICRO/2026/Session-4B/compute-express-leak-new-cache-attacks-using-cxl-devices/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4B · Compute eXpress Leak：利用 CXL 设备的新型缓存攻击"
+        },
+        {
+          "title": "HYDRA: Hybrid DRAM Caching for Dynamic Complementary Multi-to-One Page Mapping in CXL Tiered Memory",
+          "url": "MICRO/2026/Session-6D/hydra-hybrid-dram-caching-for-dynamic-complementary-multi-to-one-page-mapping-in-cxl-tiered-memory/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6D · HYDRA：面向 CXL 分层内存中动态互补多对一页映射的混合 DRAM 缓存"
+        },
+        {
+          "title": "LIA: A Single-GPU LLM Inference Acceleration with Cooperative AMX-Enabled CPU-GPU Computation and CXL Offloading",
+          "url": "ISCA/2025/llm/lia/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：LIA利用Intel AMX指令集加速CPU端LLM计算，配合CXL内存扩展，构建CPU-GPU协作的高效单节点LLM推理系统。"
+        },
+        {
+          "title": "XHarvest: Rethinking High-Performance and Cost-Efficient SSD Architecture with CXL-Driven Harvesting",
+          "url": "ISCA/2025/storage/xharvest/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：XHarvest利用CXL接口的内存语义重新设计SSD内部架构，通过利用SSD内部DRAM缓冲实现高性能存储。"
+        }
+      ]
+    },
+    {
+      "text": "Energy Efficiency",
+      "count": 6,
+      "trend": 0,
+      "conf_info": "DAC 2025 (2 papers) · ISCA 2025 (1 paper) · MICRO 2026 (3 papers)",
+      "search_term": "Energy Efficiency",
+      "papers": [
+        {
+          "title": "Auto-Scaling Heterogeneous Neural Processing Units for Energy and Cost-Efficient LLM Serving",
+          "url": "MICRO/2026/Session-2A/auto-scaling-heterogeneous-neural-processing-units-for-energy-and-cost-efficient-llm-serving/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 2A · 面向高能效与低成本 LLM 服务的异构神经处理单元自动扩缩容"
+        },
+        {
+          "title": "Capstone: Power-Capped Pipelining for Coarse-Grained Reconfigurable Array Compilers",
+          "url": "MICRO/2026/Session-6A/capstone-power-capped-pipelining-for-coarse-grained-reconfigurable-array-compilers/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6A · Capstone：面向粗粒度可重构阵列编译器的功率受限流水线化"
+        },
+        {
+          "title": "Enabling Spatially Fine-Grained DVFS in Neural Processing Units for Energy-Efficient LLM Serving",
+          "url": "MICRO/2026/Session-3C/enabling-spatially-fine-grained-dvfs-in-neural-processing-units-for-energy-efficient-llm-serving/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3C · 在神经处理单元中实现空间细粒度 DVFS，以提高 LLM 服务能效"
+        },
+        {
+          "title": "Dual-Issue Execution of Mixed Integer and Floating-Point Workloads on Energy-Efficient In-Order RISC-V Cores",
+          "url": "DAC/2025/design/dual_issue_execution_of_mixed_integer_and_floating_point_workloads_on_energy_efficient_in_order_risc_v_cores/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "VISTA: Optimizing GPU Scheduling through Versatile Locality-Aware Data Sharing",
+          "url": "DAC/2025/ai/vista_optimizing_gpu_scheduling_through_versatile_locality_aware_data_sharing/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · AI"
+        },
+        {
+          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
+          "url": "ISCA/2025/ml_accelerator/lighttml/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025论文解读：LightML提出基于光子计算的ML推理加速架构，利用光子矩阵乘法在能效上比数字加速器提升10×以上。"
         }
       ]
     },
@@ -2805,6 +3371,45 @@
         {
           "title": "SDISC: A Spike-Driven Human-Machine Interface with In-Situ Computing for Real-Time Low-Power Interaction",
           "url": "DAC/2025/design/sdisc_a_spike_driven_human_machine_interface_with_in_situ_computing_for_real_time_low_power_interaction/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        }
+      ]
+    },
+    {
+      "text": "FPGA",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "DAC 2025 (3 papers) · MICRO 2026 (2 papers)",
+      "search_term": "FPGA",
+      "papers": [
+        {
+          "title": "Better Call SoL: Enhancing GPUs with a Sea of LUTs Core",
+          "url": "MICRO/2026/Session-1A/better-call-sol-enhancing-gpus-with-a-sea-of-luts-core/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · Better Call SoL：通过查找表海洋核心增强 GPU"
+        },
+        {
+          "title": "Elastic LLM Serving on FPGAs via Partial Reconfiguration: A Case Study Using the FPGA AI Suite",
+          "url": "MICRO/2026/Session-9A/elastic-llm-serving-on-fpgas-via-partial-reconfiguration-a-case-study-using-the-fpga-ai-suite/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 9A · 通过部分重配置实现 FPGA 上的弹性 LLM 服务：基于 FPGA AI Suite 的案例研究"
+        },
+        {
+          "title": "A Data-Centric Hardware Accelerator for Efficient Adaptive Radix Tree",
+          "url": "DAC/2025/design/a_data_centric_hardware_accelerator_for_efficient_adaptive_radix_tree/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "An Energy-Efficient Kalman Filter Architecture with Tunable Accuracy for Brain-Computer Interfaces",
+          "url": "DAC/2025/design/an_energy_efficient_kalman_filter_architecture_with_tunable_accuracy_for_brain_computer_interfaces/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        },
+        {
+          "title": "Monolithic 3D FPGA Design and Synthesis with Back-End-of-Line Configuration Memories",
+          "url": "DAC/2025/design/monolithic_3d_fpga_design_and_synthesis_with_back_end_of_line_configuration_memories/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Design"
         }
@@ -3084,35 +3689,35 @@
       ]
     },
     {
-      "text": "LLM Inference",
+      "text": "Cache",
       "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "LLM Inference",
+      "trend": 1,
+      "conf_info": "MICRO 2026 (4 papers)",
+      "search_term": "Cache",
       "papers": [
         {
-          "title": "DeepSeek-V3: Inference Architecture and System Optimization",
-          "url": "ISCA/2025/systems/deepseek_v3/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025产业论文解读：DeepSeek团队介绍DeepSeek-V3模型的推理架构设计，包括MoE架构优化、KV Cache管理和多节点推理部署经验。"
+          "title": "CODA: Algorithm-Hardware Co-Design for Edge Video Diffusion via NMP-Enabled Compute-Cache Operator Disaggregation",
+          "url": "MICRO/2026/Session-6D/coda-algorithm-hardware-co-design-for-edge-video-diffusion-via-nmp-enabled-compute-cache-operator-disaggregation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6D · CODA：通过近存处理支持的计算与缓存算子分离，实现边缘视频扩散的算法与硬件协同设计"
         },
         {
-          "title": "LIA: A Single-GPU LLM Inference Acceleration with Cooperative AMX-Enabled CPU-GPU Computation and CXL Offloading",
-          "url": "ISCA/2025/llm/lia/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：LIA利用Intel AMX指令集加速CPU端LLM计算，配合CXL内存扩展，构建CPU-GPU协作的高效单节点LLM推理系统。"
+          "title": "DART: A Cache-Enabled Diffusion Transformer Accelerator via Feature-Gated Scheduling and Hierarchical Quantization",
+          "url": "MICRO/2026/Session-1B/dart-a-cache-enabled-diffusion-transformer-accelerator-via-feature-gated-scheduling-and-hierarchical-quantization/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1B · DART：通过特征门控调度与分层量化实现缓存支持的扩散 Transformer 加速器"
         },
         {
-          "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
-          "url": "ISCA/2025/llm/specee/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：SpecEE提出推测早退机制，通过预测LLM token何时可提前退出中间层，在不损失精度的前提下减少大量计算。"
+          "title": "MemLLM: End-to-end In-Storage Acceleration of On-Device Retrieval-Augmented Generation using Precomputed KV Caches",
+          "url": "MICRO/2026/Session-8A/memllm-end-to-end-in-storage-acceleration-of-on-device-retrieval-augmented-generation-using-precomputed-kv-caches/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8A · MemLLM：利用预计算 KV 缓存实现端侧检索增强生成的端到端存储内加速"
         },
         {
-          "title": "WSC-LLM: Efficient LLM Service and Architecture Co-exploration for Wafer-scale Chips",
-          "url": "ISCA/2025/ml_accelerator/wsc_llm/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：WSC-LLM针对晶圆级（wafer-scale）芯片的独特互联拓扑和计算特性，系统探索LLM推理部署的最优体系结构配置。"
+          "title": "SMExplode: Cross-Core and Cache-Agnostic Side-Channel Attack on Apple Silicon via SME Engine",
+          "url": "MICRO/2026/Session-4B/smexplode-cross-core-and-cache-agnostic-side-channel-attack-on-apple-silicon-via-sme-engine/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4B · SMExplode：利用 SME 引擎对 Apple Silicon 发起跨核心、与缓存无关的侧信道攻击"
         }
       ]
     },
@@ -3924,60 +4529,6 @@
       ]
     },
     {
-      "text": "Energy Efficiency",
-      "count": 3,
-      "trend": -1,
-      "conf_info": "DAC 2025 (2 papers) · ISCA 2025 (1 paper)",
-      "search_term": "Energy Efficiency",
-      "papers": [
-        {
-          "title": "Dual-Issue Execution of Mixed Integer and Floating-Point Workloads on Energy-Efficient In-Order RISC-V Cores",
-          "url": "DAC/2025/design/dual_issue_execution_of_mixed_integer_and_floating_point_workloads_on_energy_efficient_in_order_risc_v_cores/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "VISTA: Optimizing GPU Scheduling through Versatile Locality-Aware Data Sharing",
-          "url": "DAC/2025/ai/vista_optimizing_gpu_scheduling_through_versatile_locality_aware_data_sharing/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · AI"
-        },
-        {
-          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
-          "url": "ISCA/2025/ml_accelerator/lighttml/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：LightML提出基于光子计算的ML推理加速架构，利用光子矩阵乘法在能效上比数字加速器提升10×以上。"
-        }
-      ]
-    },
-    {
-      "text": "FPGA",
-      "count": 3,
-      "trend": -1,
-      "conf_info": "DAC 2025 (3 papers)",
-      "search_term": "FPGA",
-      "papers": [
-        {
-          "title": "A Data-Centric Hardware Accelerator for Efficient Adaptive Radix Tree",
-          "url": "DAC/2025/design/a_data_centric_hardware_accelerator_for_efficient_adaptive_radix_tree/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "An Energy-Efficient Kalman Filter Architecture with Tunable Accuracy for Brain-Computer Interfaces",
-          "url": "DAC/2025/design/an_energy_efficient_kalman_filter_architecture_with_tunable_accuracy_for_brain_computer_interfaces/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "Monolithic 3D FPGA Design and Synthesis with Back-End-of-Line Configuration Memories",
-          "url": "DAC/2025/design/monolithic_3d_fpga_design_and_synthesis_with_back_end_of_line_configuration_memories/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        }
-      ]
-    },
-    {
       "text": "ICT CAS",
       "count": 3,
       "trend": -1,
@@ -4055,6 +4606,33 @@
           "url": "ISCA/2025/systems/llama3_scaling/",
           "conf": "ISCA 2025",
           "summary": "ISCA 2025产业论文解读：介绍Llama 3模型大规模训练的硬件基础设施、并行策略、容错机制和效率优化实践。"
+        }
+      ]
+    },
+    {
+      "text": "Near-Memory Computing",
+      "count": 3,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (3 papers)",
+      "search_term": "Near-Memory Computing",
+      "papers": [
+        {
+          "title": "Helios: Enabling Dynamic KV Cache Management for Near-Memory Processing via Hybrid-Bonding-Based 3D-DRAM",
+          "url": "MICRO/2026/Session-5B/helios-enabling-dynamic-kv-cache-management-for-near-memory-processing-via-hybrid-bonding-based-3d-dram/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 5B · Helios：利用混合键合三维 DRAM 实现近存处理中的动态 KV 缓存管理"
+        },
+        {
+          "title": "MFNNS: A Multiplier-Free Near-Memory Accelerator for Graph-Based ANNS",
+          "url": "MICRO/2026/Session-9B/mfnns-a-multiplier-free-near-memory-accelerator-for-graph-based-anns/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 9B · MFNNS：面向基于图的近似最近邻搜索的无乘法器近存加速器"
+        },
+        {
+          "title": "NOVA: Technology-Architecture Co-Design of Near-Memory Processing for Attention-SSM-MoE Hybrid LLM Inference",
+          "url": "MICRO/2026/Session-4C/nova-technology-architecture-co-design-of-near-memory-processing-for-attention-ssm-moe-hybrid-llm-inference/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4C · NOVA：面向注意力、SSM 与 MoE 混合 LLM 推理的近存处理技术与架构协同设计"
         }
       ]
     },
@@ -4190,6 +4768,33 @@
           "url": "DAC/2025/ai/vista_optimizing_gpu_scheduling_through_versatile_locality_aware_data_sharing/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · AI"
+        }
+      ]
+    },
+    {
+      "text": "Simulation",
+      "count": 3,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (3 papers)",
+      "search_term": "Simulation",
+      "papers": [
+        {
+          "title": "ARMOR: Accelerating RTL Simulation by Mitigating the Front-End Bottleneck Using Node Compression",
+          "url": "MICRO/2026/Session-7B/armor-accelerating-rtl-simulation-by-mitigating-the-front-end-bottleneck-using-node-compression/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 7B · ARMOR：利用节点压缩缓解前端瓶颈，加速 RTL 仿真"
+        },
+        {
+          "title": "GPU-Tile-Sim: A Tile-Centric GPU Simulation Framework for LLM Hardware-Software Co-Design",
+          "url": "MICRO/2026/Session-3B/gpu-tile-sim-a-tile-centric-gpu-simulation-framework-for-llm-hardware-software-co-design/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3B · GPU-Tile-Sim：面向 LLM 软硬件协同设计的分块 GPU 仿真框架"
+        },
+        {
+          "title": "GadIR: A Spatial-Topology Preserving Compiler for Quantum Many-Body Systems Simulation",
+          "url": "MICRO/2026/Session-3D/gadir-a-spatial-topology-preserving-compiler-for-quantum-many-body-systems-simulation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 3D · GadIR：面向量子多体系统仿真的空间拓扑保持编译器"
         }
       ]
     },
@@ -4782,23 +5387,44 @@
       ]
     },
     {
-      "text": "CXL",
+      "text": "Compiler",
       "count": 2,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (2 papers)",
-      "search_term": "CXL",
+      "trend": 0,
+      "conf_info": "DAC 2025 (1 paper) · MICRO 2026 (1 paper)",
+      "search_term": "Compiler",
       "papers": [
         {
-          "title": "LIA: A Single-GPU LLM Inference Acceleration with Cooperative AMX-Enabled CPU-GPU Computation and CXL Offloading",
-          "url": "ISCA/2025/llm/lia/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：LIA利用Intel AMX指令集加速CPU端LLM计算，配合CXL内存扩展，构建CPU-GPU协作的高效单节点LLM推理系统。"
+          "title": "Capstone: Power-Capped Pipelining for Coarse-Grained Reconfigurable Array Compilers",
+          "url": "MICRO/2026/Session-6A/capstone-power-capped-pipelining-for-coarse-grained-reconfigurable-array-compilers/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 6A · Capstone：面向粗粒度可重构阵列编译器的功率受限流水线化"
         },
         {
-          "title": "XHarvest: Rethinking High-Performance and Cost-Efficient SSD Architecture with CXL-Driven Harvesting",
-          "url": "ISCA/2025/storage/xharvest/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025论文解读：XHarvest利用CXL接口的内存语义重新设计SSD内部架构，通过利用SSD内部DRAM缓冲实现高性能存储。"
+          "title": "Efficient Weight Mapping and Resource Scheduling on Crossbar-based Multi-core CIM Systems",
+          "url": "DAC/2025/design/efficient_weight_mapping_and_resource_scheduling_on_crossbar_based_multi_core_cim_systems/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
+        }
+      ]
+    },
+    {
+      "text": "Cryptography",
+      "count": 2,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (2 papers)",
+      "search_term": "Cryptography",
+      "papers": [
+        {
+          "title": "Helios: Melting Kernel Boundaries for GPU-Accelerated HE via Graph Rewriting and Microarchitecture-Aware Mapping",
+          "url": "MICRO/2026/Session-4B/helios-melting-kernel-boundaries-for-gpu-accelerated-he-via-graph-rewriting-and-microarchitecture-aware-mapping/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4B · Helios：通过图重写与微架构感知映射消除 GPU 同态加密加速中的内核边界"
+        },
+        {
+          "title": "LUTHE: Breaking the Memory Wall of High-Precision Encrypted LLM Nonlinearities via GPU-CSD Co-Design",
+          "url": "MICRO/2026/Session-4A/luthe-breaking-the-memory-wall-of-high-precision-encrypted-llm-nonlinearities-via-gpu-csd-co-design/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 4A · LUTHE：通过 GPU-CSD 协同设计突破高精度加密 LLM 非线性运算的内存墙"
         }
       ]
     },
@@ -4971,6 +5597,27 @@
       ]
     },
     {
+      "text": "Graph Processing",
+      "count": 2,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (2 papers)",
+      "search_term": "Graph Processing",
+      "papers": [
+        {
+          "title": "FUSE: A Fragmentation-Free Spatial Multi-Tenant DNN Accelerator via Edge-Universal Graph",
+          "url": "MICRO/2026/Session-1D/fuse-a-fragmentation-free-spatial-multi-tenant-dnn-accelerator-via-edge-universal-graph/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1D · FUSE：通过边通用图实现无碎片的空间多租户 DNN 加速器"
+        },
+        {
+          "title": "RidgeBridge: Random Access Optimized Interconnect Architecture for Scalable Graph Random Walks",
+          "url": "MICRO/2026/Session-9C/ridgebridge-random-access-optimized-interconnect-architecture-for-scalable-graph-random-walks/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 9C · RidgeBridge：面向可扩展图随机游走的随机访问优化互连架构"
+        }
+      ]
+    },
+    {
       "text": "Harvard",
       "count": 2,
       "trend": -1,
@@ -5118,6 +5765,27 @@
       ]
     },
     {
+      "text": "Prefetching",
+      "count": 2,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (2 papers)",
+      "search_term": "Prefetching",
+      "papers": [
+        {
+          "title": "SnakeCharmer: Orchestrating Utility, Timeliness, and Placement in GPU Prefetching",
+          "url": "MICRO/2026/Session-1A/snakecharmer-orchestrating-utility-timeliness-and-placement-in-gpu-prefetching/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · SnakeCharmer：统筹 GPU 预取的效用、及时性与数据放置"
+        },
+        {
+          "title": "Trail: Scalable and Low-Cost Temporal TLB Prefetching via Page-Table-Embedded Deltas",
+          "url": "MICRO/2026/Session-5C/trail-scalable-and-low-cost-temporal-tlb-prefetching-via-page-table-embedded-deltas/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 5C · Trail：通过页表内嵌差分实现可扩展低成本时序 TLB 预取"
+        }
+      ]
+    },
+    {
       "text": "Quantum Error Correction",
       "count": 2,
       "trend": -1,
@@ -5198,6 +5866,27 @@
           "url": "DAC/2025/eda/pastatpg_a_hybrid_atpg_framework_for_better_test_compaction_with_partial_assignment_sat/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · EDA"
+        }
+      ]
+    },
+    {
+      "text": "Tensor Core",
+      "count": 2,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (2 papers)",
+      "search_term": "Tensor Core",
+      "papers": [
+        {
+          "title": "Bit-Accurate Modeling of GPU Matrix Multiply-Accumulate Units: Demystifying Numerical Discrepancy and Accuracy",
+          "url": "MICRO/2026/Session-1A/bit-accurate-modeling-of-gpu-matrix-multiply-accumulate-units-demystifying-numerical-discrepancy-and-accuracy/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · GPU 矩阵乘累加单元的位精确建模：揭示数值差异与精度问题"
+        },
+        {
+          "title": "Complex Tensor Core: Software-Hardware Co-Design for Accelerating Complex-Valued Neural Networks on GPUs",
+          "url": "MICRO/2026/Session-1A/complex-tensor-core-software-hardware-co-design-for-accelerating-complex-valued-neural-networks-on-gpus/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · 复数张量核：通过软硬件协同设计加速 GPU 上的复值神经网络"
         }
       ]
     },
@@ -7662,21 +8351,6 @@
       ]
     },
     {
-      "text": "Compiler",
-      "count": 1,
-      "trend": -1,
-      "conf_info": "DAC 2025 (1 paper)",
-      "search_term": "Compiler",
-      "papers": [
-        {
-          "title": "Efficient Weight Mapping and Resource Scheduling on Crossbar-based Multi-core CIM Systems",
-          "url": "DAC/2025/design/efficient_weight_mapping_and_resource_scheduling_on_crossbar_based_multi_core_cim_systems/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        }
-      ]
-    },
-    {
       "text": "DAG模型构建",
       "count": 1,
       "trend": -1,
@@ -8112,6 +8786,21 @@
       ]
     },
     {
+      "text": "HW-SW Co-design",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (1 paper)",
+      "search_term": "HW-SW Co-design",
+      "papers": [
+        {
+          "title": "AIPerf: Meta's Performance Modeling and HW/SW Co-Design Framework for Datacenter-Scale LLM Training",
+          "url": "MICRO/2026/Session-1C/aiperf-meta-s-performance-modeling-and-hw-sw-co-design-framework-for-datacenter-scale-llm-training/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1C · AIPerf：Meta 面向数据中心规模大语言模型训练的性能建模与软硬件协同设计框架"
+        }
+      ]
+    },
+    {
       "text": "HyperPlonk",
       "count": 1,
       "trend": -1,
@@ -8213,6 +8902,21 @@
           "url": "ISCA/2025/llm/lia/",
           "conf": "ISCA 2025",
           "summary": "ISCA 2025论文解读：LIA利用Intel AMX指令集加速CPU端LLM计算，配合CXL内存扩展，构建CPU-GPU协作的高效单节点LLM推理系统。"
+        }
+      ]
+    },
+    {
+      "text": "Interconnect",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (1 paper)",
+      "search_term": "Interconnect",
+      "papers": [
+        {
+          "title": "RAFO: Reconfigurable AWGR-Based nD-Fullmesh Optical Interconnect for MoE Serving Acceleration",
+          "url": "MICRO/2026/Session-2A/rafo-reconfigurable-awgr-based-nd-fullmesh-optical-interconnect-for-moe-serving-acceleration/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 2A · RAFO：面向 MoE 服务加速的可重构 AWGR 多维全互连光互连"
         }
       ]
     },
@@ -8348,6 +9052,21 @@
           "url": "ISCA/2025/memory/magicache/",
           "conf": "ISCA 2025",
           "summary": "ISCA 2025论文解读：MagiCache提出在LLC（最后级缓存）内构建虚拟计算引擎，利用缓存数据路径执行轻量级计算，减少CPU-内存往返。"
+        }
+      ]
+    },
+    {
+      "text": "LLM Training",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (1 paper)",
+      "search_term": "LLM Training",
+      "papers": [
+        {
+          "title": "SCOPE: Array-Native Nonlinear Acceleration for LLM Inference via Shape-Constrained Neural Approximation",
+          "url": "MICRO/2026/Session-8C/scope-array-native-nonlinear-acceleration-for-llm-inference-via-shape-constrained-neural-approximation/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 8C · SCOPE：通过形状约束神经近似实现 LLM 推理的阵列原生非线性加速"
         }
       ]
     },
@@ -9023,6 +9742,36 @@
           "url": "DAC/2025/eda/from_flatland_to_forest_exploring_pareto_optimal_design_through_rtl_hierarchy_trees/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · EDA"
+        }
+      ]
+    },
+    {
+      "text": "Ray Tracing",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (1 paper)",
+      "search_term": "Ray Tracing",
+      "papers": [
+        {
+          "title": "Ray-by-Ray: Fine-Grained Resource Management for GPU Ray Tracing Units",
+          "url": "MICRO/2026/Session-1A/ray-by-ray-fine-grained-resource-management-for-gpu-ray-tracing-units/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · Ray-by-Ray：面向 GPU 光线追踪单元的细粒度资源管理"
+        }
+      ]
+    },
+    {
+      "text": "Register Management",
+      "count": 1,
+      "trend": 1,
+      "conf_info": "MICRO 2026 (1 paper)",
+      "search_term": "Register Management",
+      "papers": [
+        {
+          "title": "RESCU: Optimizing GPU Register Management for Effective Kernel Fusion",
+          "url": "MICRO/2026/Session-1A/rescu-optimizing-gpu-register-management-for-effective-kernel-fusion/",
+          "conf": "MICRO 2026",
+          "summary": "MICRO 2026 · Session 1A · RESCU：优化 GPU 寄存器管理以实现高效内核融合"
         }
       ]
     },

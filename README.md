@@ -13,6 +13,7 @@ memory reliability, homomorphic encryption, LLM inference acceleration, PIM, and
 - HPCA 2026
 - ISCA 2025
 - MICRO 2025
+- MICRO 2026 (34 sessions, 220 papers)
 - ASPLOS 2025
 - DAC 2025
 - NeurSys 2025
