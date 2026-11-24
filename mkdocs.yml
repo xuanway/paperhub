@@ -6,6 +6,10 @@ repo_name: GitHub
 docs_dir: docs
 site_dir: site
 
+not_in_nav: |
+  /ISCA/2026/Session-*/*.md
+  !/ISCA/2026/Session-*/index.md
+
 theme:
   name: material
   language: zh
@@ -1139,6 +1143,248 @@ nav:
         - "NetFED: Network-Aware Acceleration for Multi-Key Privacy-Preserving Federated Learning Aggregation": MICRO/2026/Session-9D/netfed-network-aware-acceleration-for-multi-key-privacy-preserving-federated-learning-aggregation.md
         - "Decoupled-DSM: A Scalable Secure Trusted Execution Environment for Multi-Host CXL Disaggregated Shared Memory": MICRO/2026/Session-9D/decoupled-dsm-a-scalable-secure-trusted-execution-environment-for-multi-host-cxl-disaggregated-shared-memory.md
   - 🔄 ASPLOS:
+    - ASPLOS 2026 (168):
+      - ASPLOS 2026: ASPLOS/2026/index.md
+      - "Session 1A: LLM Serving: Throughput Optimization (5)":
+        - "Session 1A": ASPLOS/2026/Session-1A/index.md
+        - "Towards High-Goodput LLM Serving with Prefill-decode Multiplexing": ASPLOS/2026/Session-1A/towards-high-goodput-llm-serving-with-prefill-decode-multiplexing.md
+        - "Bullet: Boosting GPU Utilization for LLM Serving via Dynamic Spatial-Temporal Orchestration": ASPLOS/2026/Session-1A/bullet-boosting-gpu-utilization-for-llm-serving-via-dynamic-spatial-temporal-orchestration.md
+        - "QoServe: Breaking the Silos of LLM Inference Serving": ASPLOS/2026/Session-1A/qoserve-breaking-the-silos-of-llm-inference-serving.md
+        - "Shift Parallelism: Low-Latency, High-Throughput LLM Inference for Dynamic Workloads": ASPLOS/2026/Session-1A/shift-parallelism-low-latency-high-throughput-llm-inference-for-dynamic-workloads.md
+        - "XY-Serve: End-to-End Versatile Production Serving for Dynamic LLM Workloads": ASPLOS/2026/Session-1A/xy-serve-end-to-end-versatile-production-serving-for-dynamic-llm-workloads.md
+      - "Session 1B: LLM Serving: Latency & Scheduling (5)":
+        - "Session 1B": ASPLOS/2026/Session-1B/index.md
+        - "PAT: Accelerating LLM Decoding via Prefix-Aware Attention with Resource Efficient Multi-Tile Kernel": ASPLOS/2026/Session-1B/pat-accelerating-llm-decoding-via-prefix-aware-attention-with-resource-efficient-multi-tile-kernel.md
+        - "ZipServ: Fast and Memory-Efficient LLM Inference with Hardware-Aware Lossless Compression": ASPLOS/2026/Session-1B/zipserv-fast-and-memory-efficient-llm-inference-with-hardware-aware-lossless-compression.md
+        - "BlendServe: Optimizing Offline Inference with Resource-Aware Batching": ASPLOS/2026/Session-1B/blendserve-optimizing-offline-inference-with-resource-aware-batching.md
+        - "BAT: Efficient Generative Recommender Serving with Bipartite Attention": ASPLOS/2026/Session-1B/bat-efficient-generative-recommender-serving-with-bipartite-attention.md
+        - "MoE-APEX: An Efficient MoE Inference System with Adaptive Precision Expert Offloading": ASPLOS/2026/Session-1B/moe-apex-an-efficient-moe-inference-system-with-adaptive-precision-expert-offloading.md
+      - "Session 1C: Quantum Computing: Compilation (5)":
+        - "Session 1C": ASPLOS/2026/Session-1C/index.md
+        - "PowerMove: Optimizing Compilation for Neutral Atom Quantum Computers with Zoned Architecture": ASPLOS/2026/Session-1C/powermove-optimizing-compilation-for-neutral-atom-quantum-computers-with-zoned-architecture.md
+        - "Reconfigurable Quantum Instruction Set Computers for High Performance Attainable on Hardware": ASPLOS/2026/Session-1C/reconfigurable-quantum-instruction-set-computers-for-high-performance-attainable-on-hardware.md
+        - "QTurbo: A Robust and Efficient Compiler for Analog Quantum Simulation": ASPLOS/2026/Session-1C/qturbo-a-robust-and-efficient-compiler-for-analog-quantum-simulation.md
+        - "Reducing T Gates with Unitary Synthesis": ASPLOS/2026/Session-1C/reducing-t-gates-with-unitary-synthesis.md
+        - "Borrowing Dirty Qubits in Quantum Programs": ASPLOS/2026/Session-1C/borrowing-dirty-qubits-in-quantum-programs.md
+      - "Session 1D: CXL & Memory Fabric (5)":
+        - "Session 1D": ASPLOS/2026/Session-1D/index.md
+        - "HybridTier: An Adaptive and Lightweight CXL-Memory Tiering System": ASPLOS/2026/Session-1D/hybridtier-an-adaptive-and-lightweight-cxl-memory-tiering-system.md
+        - "vCXLGen: Automated Synthesis and Verification of CXL Bridges for Heterogeneous Architectures": ASPLOS/2026/Session-1D/vcxlgen-automated-synthesis-and-verification-of-cxl-bridges-for-heterogeneous-architectures.md
+        - "CXLMC: Model Checking CXL Shared Memory Programs": ASPLOS/2026/Session-1D/cxlmc-model-checking-cxl-shared-memory-programs.md
+        - "A Programming Model for Disaggregated Memory over CXL": ASPLOS/2026/Session-1D/a-programming-model-for-disaggregated-memory-over-cxl.md
+        - "Cxlalloc: Safe and Efficient Memory Allocation for a CXL Pod": ASPLOS/2026/Session-1D/cxlalloc-safe-and-efficient-memory-allocation-for-a-cxl-pod.md
+      - "Session 2A: LLM Training Systems (5)":
+        - "Session 2A": ASPLOS/2026/Session-2A/index.md
+        - "SNIP: An Adaptive Mixed Precision Framework for Subbyte Large Language Model Training": ASPLOS/2026/Session-2A/snip-an-adaptive-mixed-precision-framework-for-subbyte-large-language-model-training.md
+        - "Fine-grained and Non-intrusive LLM Training Monitoring via Microsecond-level Traffic Measurement": ASPLOS/2026/Session-2A/fine-grained-and-non-intrusive-llm-training-monitoring-via-microsecond-level-traffic-measurement.md
+        - "SuperOffload: Unleashing the Power of Large-Scale LLM Training on Superchips": ASPLOS/2026/Session-2A/superoffload-unleashing-the-power-of-large-scale-llm-training-on-superchips.md
+        - "DIP: Efficient Large Multimodal Model Training with Dynamic Interleaved Pipeline": ASPLOS/2026/Session-2A/dip-efficient-large-multimodal-model-training-with-dynamic-interleaved-pipeline.md
+        - "Dynamic Sparsity in Large-Scale Video DiT Training": ASPLOS/2026/Session-2A/dynamic-sparsity-in-large-scale-video-dit-training.md
+      - "Session 2B: Speculative Decoding (5)":
+        - "Session 2B": ASPLOS/2026/Session-2B/index.md
+        - "DFVG: A Heterogeneous Architecture for Speculative Decoding with Draft-on-FPGA and Verify-on-GPU": ASPLOS/2026/Session-2B/dfvg-a-heterogeneous-architecture-for-speculative-decoding-with-draft-on-fpga-and-verify-on-gpu.md
+        - "SwiftSpec: Disaggregated Speculative Decoding and Fused Kernels for Low-Latency LLM Inference": ASPLOS/2026/Session-2B/swiftspec-disaggregated-speculative-decoding-and-fused-kernels-for-low-latency-llm-inference.md
+        - "SpeContext: Enabling Efficient Long-context Reasoning with Speculative Context Sparsity in LLMs": ASPLOS/2026/Session-2B/specontext-enabling-efficient-long-context-reasoning-with-speculative-context-sparsity-in-llms.md
+        - "SpecProto: A Parallelizing Compiler for Speculative Decoding of Large Protocol Buffers Data": ASPLOS/2026/Session-2B/specproto-a-parallelizing-compiler-for-speculative-decoding-of-large-protocol-buffers-data.md
+        - "EARTH: An Efficient MoE Accelerator with Entropy-Aware Speculative Prefetch and Result Reuse": ASPLOS/2026/Session-2B/earth-an-efficient-moe-accelerator-with-entropy-aware-speculative-prefetch-and-result-reuse.md
+      - "Session 2C: GPU Systems & Scheduling (5)":
+        - "Session 2C": ASPLOS/2026/Session-2C/index.md
+        - "gShare: Efficient GPU Sharing with Aggressive Scheduling in Multi-tenant FaaS platform": ASPLOS/2026/Session-2C/gshare-efficient-gpu-sharing-with-aggressive-scheduling-in-multi-tenant-faas-platform.md
+        - "GFS: A Preemption-aware Scheduling Framework for GPU Clusters with Predictive Spot Instance Management": ASPLOS/2026/Session-2C/gfs-a-preemption-aware-scheduling-framework-for-gpu-clusters-with-predictive-spot-instance-management.md
+        - "Asynchrony and GPUs: Bridging this Dichotomy for I/O with AGIO": ASPLOS/2026/Session-2C/asynchrony-and-gpus-bridging-this-dichotomy-for-i-o-with-agio.md
+        - "MSCCL++: Rethinking GPU Communication Abstractions for AI Inference": ASPLOS/2026/Session-2C/msccl-rethinking-gpu-communication-abstractions-for-ai-inference.md
+        - "Insum: Sparse GPU Kernels Simplified and Optimized with Indirect Einsums": ASPLOS/2026/Session-2C/insum-sparse-gpu-kernels-simplified-and-optimized-with-indirect-einsums.md
+      - "Session 2D: DRAM Reliability & Security (5)":
+        - "Session 2D": ASPLOS/2026/Session-2D/index.md
+        - "RowArmor: Efficient and Comprehensive Protection Against DRAM Disturbance Errors": ASPLOS/2026/Session-2D/rowarmor-efficient-and-comprehensive-protection-against-dram-disturbance-errors.md
+        - "APT: Securing Against DRAM Read Disturbance via Adaptive Probabilistic In-DRAM Trackers": ASPLOS/2026/Session-2D/apt-securing-against-dram-read-disturbance-via-adaptive-probabilistic-in-dram-trackers.md
+        - "STRAW: Stress-Aware WL-Based Read Disturbance Management for High-Density NAND Flash Memory": ASPLOS/2026/Session-2D/straw-stress-aware-wl-based-read-disturbance-management-for-high-density-nand-flash-memory.md
+        - "Trust-V: Toward Secure and Reliable Storage for Trusted Execution Environments": ASPLOS/2026/Session-2D/trust-v-toward-secure-and-reliable-storage-for-trusted-execution-environments.md
+        - "Optimizer-Friendly Instrumentation for Event Quantification with PRUE Algorithm": ASPLOS/2026/Session-2D/optimizer-friendly-instrumentation-for-event-quantification-with-prue-algorithm.md
+      - "Session 3A: LLM Attention & KV Cache (5)":
+        - "Session 3A": ASPLOS/2026/Session-3A/index.md
+        - "I/O Analysis is All You Need: An I/O Analysis for Long-Sequence Attention": ASPLOS/2026/Session-3A/i-o-analysis-is-all-you-need-an-i-o-analysis-for-long-sequence-attention.md
+        - "REPA: Reconfigurable PIM for the Joint Acceleration of KV Cache Offloading and Processing": ASPLOS/2026/Session-3A/repa-reconfigurable-pim-for-the-joint-acceleration-of-kv-cache-offloading-and-processing.md
+        - "STARC: Selective Token Access with Remapping and Clustering for Efficient LLM Decoding on PIM Systems": ASPLOS/2026/Session-3A/starc-selective-token-access-with-remapping-and-clustering-for-efficient-llm-decoding-on-pim-systems.md
+        - "Mugi: Value Level Parallelism For Efficient LLMs": ASPLOS/2026/Session-3A/mugi-value-level-parallelism-for-efficient-llms.md
+        - "TPLA: Tensor Parallel Latent Attention for Efficient Disaggregated Prefill & Decode Inference": ASPLOS/2026/Session-3A/tpla-tensor-parallel-latent-attention-for-efficient-disaggregated-prefill-decode-inference.md
+      - "Session 3B: Mixture-of-Experts & Efficient Inference (5)":
+        - "Session 3B": ASPLOS/2026/Session-3B/index.md
+        - "LAER-MoE: Load-Adaptive Expert Re-layout for Efficient Mixture-of-Experts Training": ASPLOS/2026/Session-3B/laer-moe-load-adaptive-expert-re-layout-for-efficient-mixture-of-experts-training.md
+        - "oFFN: Outlier and Neuron-aware Structured FFN for Fast yet Accurate LLM Inference": ASPLOS/2026/Session-3B/offn-outlier-and-neuron-aware-structured-ffn-for-fast-yet-accurate-llm-inference.md
+        - "MoDM: Efficient Serving for Image Generation via Mixture-of-Diffusion Models": ASPLOS/2026/Session-3B/modm-efficient-serving-for-image-generation-via-mixture-of-diffusion-models.md
+        - "Taming the Long-Tail: Efficient Reasoning RL Training with Adaptive Drafter": ASPLOS/2026/Session-3B/taming-the-long-tail-efficient-reasoning-rl-training-with-adaptive-drafter.md
+        - "FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning": ASPLOS/2026/Session-3B/fasttts-accelerating-test-time-scaling-for-edge-llm-reasoning.md
+      - "Session 3C: 3D Gaussian Splatting & Rendering (5)":
+        - "Session 3C": ASPLOS/2026/Session-3C/index.md
+        - "GS-Scale: Unlocking Large-Scale 3D Gaussian Splatting Training via Host Offloading": ASPLOS/2026/Session-3C/gs-scale-unlocking-large-scale-3d-gaussian-splatting-training-via-host-offloading.md
+        - "Neo: Real-Time On-Device 3D Gaussian Splatting with Reuse-and-Update Sorting Acceleration": ASPLOS/2026/Session-3C/neo-real-time-on-device-3d-gaussian-splatting-with-reuse-and-update-sorting-acceleration.md
+        - "CLM: Removing the GPU Memory Barrier for 3D Gaussian Splatting": ASPLOS/2026/Session-3C/clm-removing-the-gpu-memory-barrier-for-3d-gaussian-splatting.md
+        - "Nebula: Infinite-Scale 3D Gaussian Splatting in VR via Collaborative Rendering and Accelerated Stereo Rasterization": ASPLOS/2026/Session-3C/nebula-infinite-scale-3d-gaussian-splatting-in-vr-via-collaborative-rendering-and-accelerated-stereo-rasterization.md
+        - "AGS: Accelerating 3D Gaussian Splatting SLAM via CODEC-Assisted Frame Covisibility Detection": ASPLOS/2026/Session-3C/ags-accelerating-3d-gaussian-splatting-slam-via-codec-assisted-frame-covisibility-detection.md
+      - "Session 3D: Trusted Execution Environments (5)":
+        - "Session 3D": ASPLOS/2026/Session-3D/index.md
+        - "Detecting Inconsistencies in ARM CCA’s Formally Verified Specification": ASPLOS/2026/Session-3D/detecting-inconsistencies-in-arm-cca-s-formally-verified-specification.md
+        - "WorksetEnclave: Towards Optimizing Cold Starts in Confidential Serverless with Workset-Based Enclave Restore": ASPLOS/2026/Session-3D/worksetenclave-towards-optimizing-cold-starts-in-confidential-serverless-with-workset-based-enclave-restore.md
+        - "TEEM³: Core-Independent and Cooperating Trusted Execution Environments": ASPLOS/2026/Session-3D/teem3-core-independent-and-cooperating-trusted-execution-environments.md
+        - "WAVE: Leveraging Architecture Observation for Privacy-Preserving Model Oversight": ASPLOS/2026/Session-3D/wave-leveraging-architecture-observation-for-privacy-preserving-model-oversight.md
+        - "Compass: Navigating the Design Space of Taint Schemes for RTL Security Verification": ASPLOS/2026/Session-3D/compass-navigating-the-design-space-of-taint-schemes-for-rtl-security-verification.md
+      - "Session 4A: ML Training & Monitoring (5)":
+        - "Session 4A": ASPLOS/2026/Session-4A/index.md
+        - "T-Control: An Efficient Dynamic Tensor Rematerialization System for DNN Training": ASPLOS/2026/Session-4A/t-control-an-efficient-dynamic-tensor-rematerialization-system-for-dnn-training.md
+        - "NotebookOS: A Replicated Notebook Platform for Interactive Training with On-Demand GPUs": ASPLOS/2026/Session-4A/notebookos-a-replicated-notebook-platform-for-interactive-training-with-on-demand-gpus.md
+        - "DeepContext: A Context-aware, Cross-platform, and Cross-framework Tool for Performance Profiling and Analysis of Deep Learning Workloads": ASPLOS/2026/Session-4A/deepcontext-a-context-aware-cross-platform-and-cross-framework-tool-for-performance-profiling-and-analysis-of-deep-learning-workloads.md
+        - "Triton-Sanitizer: A Fast and Device-Agnostic Memory Sanitizer for Triton with Rich Diagnostic Context": ASPLOS/2026/Session-4A/triton-sanitizer-a-fast-and-device-agnostic-memory-sanitizer-for-triton-with-rich-diagnostic-context.md
+        - "LAIKA: Machine Learning-Assisted In-Kernel APU Acceleration": ASPLOS/2026/Session-4A/laika-machine-learning-assisted-in-kernel-apu-acceleration.md
+      - "Session 4B: ML Compilers & Tensor Programs (5)":
+        - "Session 4B": ASPLOS/2026/Session-4B/index.md
+        - "FuseFlow: A Fusion-Centric Compilation Framework for Sparse Deep Learning on Streaming Dataflow": ASPLOS/2026/Session-4B/fuseflow-a-fusion-centric-compilation-framework-for-sparse-deep-learning-on-streaming-dataflow.md
+        - "Trinity: Three-Dimensional Tensor Program Optimization via Tile-level Equality Saturation": ASPLOS/2026/Session-4B/trinity-three-dimensional-tensor-program-optimization-via-tile-level-equality-saturation.md
+        - "RedFuser: An Automatic Operator Fusion Framework for Cascaded Reductions on AI Accelerators": ASPLOS/2026/Session-4B/redfuser-an-automatic-operator-fusion-framework-for-cascaded-reductions-on-ai-accelerators.md
+        - "Linear Layouts: Robust Code Generation of Efficient Tensor Computation Using F2": ASPLOS/2026/Session-4B/linear-layouts-robust-code-generation-of-efficient-tensor-computation-using-f2.md
+        - "Streaming Tensor Program: A streaming abstraction for dynamic parallelism": ASPLOS/2026/Session-4B/streaming-tensor-program-a-streaming-abstraction-for-dynamic-parallelism.md
+      - "Session 4C: Quantum Error Correction (5)":
+        - "Session 4C": ASPLOS/2026/Session-4C/index.md
+        - "AlphaSyndrome: Tackling the Syndrome Measurement Circuit Scheduling Problem for QEC Codes": ASPLOS/2026/Session-4C/alphasyndrome-tackling-the-syndrome-measurement-circuit-scheduling-problem-for-qec-codes.md
+        - "PropHunt: Automated Optimization of Quantum Syndrome Measurement Circuits": ASPLOS/2026/Session-4C/prophunt-automated-optimization-of-quantum-syndrome-measurement-circuits.md
+        - "iSwitch: QEC on Demand via In-Situ Encoding of Bare Qubits for Ion Trap Architectures": ASPLOS/2026/Session-4C/iswitch-qec-on-demand-via-in-situ-encoding-of-bare-qubits-for-ion-trap-architectures.md
+        - "Architecting Scalable Trapped Ion Quantum Computers using Surface Codes": ASPLOS/2026/Session-4C/architecting-scalable-trapped-ion-quantum-computers-using-surface-codes.md
+        - "Accelerating Computation in Quantum LDPC Code": ASPLOS/2026/Session-4C/accelerating-computation-in-quantum-ldpc-code.md
+      - "Session 4D: Processing-in-Memory (5)":
+        - "Session 4D": ASPLOS/2026/Session-4D/index.md
+        - "DARTH-PUM: A Hybrid Processing-Using-Memory Architecture": ASPLOS/2026/Session-4D/darth-pum-a-hybrid-processing-using-memory-architecture.md
+        - "PUSHtap: PIM-based In-Memory HTAP with Unified Data Storage Format": ASPLOS/2026/Session-4D/pushtap-pim-based-in-memory-htap-with-unified-data-storage-format.md
+        - "CoGraf: Fully Accelerating Graph Applications with Fine-Grained PIM": ASPLOS/2026/Session-4D/cograf-fully-accelerating-graph-applications-with-fine-grained-pim.md
+        - "Ouroboros: Wafer-Scale SRAM CIM with Token-Grained Pipelining for Large Language Model Inference": ASPLOS/2026/Session-4D/ouroboros-wafer-scale-sram-cim-with-token-grained-pipelining-for-large-language-model-inference.md
+        - "A Cost-Effective Near-Storage Processing Solution for Offline Inference of Long-Context LLMs": ASPLOS/2026/Session-4D/a-cost-effective-near-storage-processing-solution-for-offline-inference-of-long-context-llms.md
+      - "Session 5A: Generative Model Serving (5)":
+        - "Session 5A": ASPLOS/2026/Session-5A/index.md
+        - "TetriServe: Efficiently Serving Mixed DiT Workloads": ASPLOS/2026/Session-5A/tetriserve-efficiently-serving-mixed-dit-workloads.md
+        - "Segment Only Where You Look: Leveraging Human Gaze Behavior for Efficient Computer Vision Applications in Augmented Reality": ASPLOS/2026/Session-5A/segment-only-where-you-look-leveraging-human-gaze-behavior-for-efficient-computer-vision-applications-in-augmented-reality.md
+        - "Compositional AI Beyond LLMs: System Implications of Neuro-Symbolic-Probabilistic Architectures": ASPLOS/2026/Session-5A/compositional-ai-beyond-llms-system-implications-of-neuro-symbolic-probabilistic-architectures.md
+        - "It Takes Two to Entangle": ASPLOS/2026/Session-5A/it-takes-two-to-entangle.md
+        - "Tilus: A Tile-Level GPGPU Programming Language for Low-Precision Computation": ASPLOS/2026/Session-5A/tilus-a-tile-level-gpgpu-programming-language-for-low-precision-computation.md
+      - "Session 5B: On-Device & Edge AI (5)":
+        - "Session 5B": ASPLOS/2026/Session-5B/index.md
+        - "Neuralink: Fast on-Device LLM Inference with Neuron Co-Activation Linking": ASPLOS/2026/Session-5B/neuralink-fast-on-device-llm-inference-with-neuron-co-activation-linking.md
+        - "Lifetime-Aware Design for Item-Level Intelligence at the Extreme Edge": ASPLOS/2026/Session-5B/lifetime-aware-design-for-item-level-intelligence-at-the-extreme-edge.md
+        - "FlashMem: Supporting Modern DNN Workloads on Mobile with GPU Memory Hierarchy Optimizations": ASPLOS/2026/Session-5B/flashmem-supporting-modern-dnn-workloads-on-mobile-with-gpu-memory-hierarchy-optimizations.md
+        - "ASDR: Exploiting Adaptive Sampling and Data Reuse for CIM-based Instant Neural Rendering": ASPLOS/2026/Session-5B/asdr-exploiting-adaptive-sampling-and-data-reuse-for-cim-based-instant-neural-rendering.md
+        - "BitRed: Taming Non-Uniform Bit-Level Sparsity with a Programmable RISC-V ISA for DNN Acceleration": ASPLOS/2026/Session-5B/bitred-taming-non-uniform-bit-level-sparsity-with-a-programmable-risc-v-isa-for-dnn-acceleration.md
+      - "Session 5C: Formal Verification (5)":
+        - "Session 5C": ASPLOS/2026/Session-5C/index.md
+        - "Graphiti: Formally Verified Out-of-Order Execution in Dataflow Circuits": ASPLOS/2026/Session-5C/graphiti-formally-verified-out-of-order-execution-in-dataflow-circuits.md
+        - "Highly Automated Verification of Security Properties for Unmodified System Software": ASPLOS/2026/Session-5C/highly-automated-verification-of-security-properties-for-unmodified-system-software.md
+        - "SylQ-SV: Scaling Symbolic Execution of Hardware Designs with Query Caching": ASPLOS/2026/Session-5C/sylq-sv-scaling-symbolic-execution-of-hardware-designs-with-query-caching.md
+        - "Once-for-All: Skeleton-Guided SMT Solver Fuzzing with LLM-Synthesized Generators": ASPLOS/2026/Session-5C/once-for-all-skeleton-guided-smt-solver-fuzzing-with-llm-synthesized-generators.md
+        - "LPO: Discovering Missed Peephole Optimizations with Large Language Models": ASPLOS/2026/Session-5C/lpo-discovering-missed-peephole-optimizations-with-large-language-models.md
+      - "Session 5D: Storage & Caching (5)":
+        - "Session 5D": ASPLOS/2026/Session-5D/index.md
+        - "Nemo: A Low-Write-Amplification Cache for Tiny Objects on Log-Structured Flash Devices": ASPLOS/2026/Session-5D/nemo-a-low-write-amplification-cache-for-tiny-objects-on-log-structured-flash-devices.md
+        - "ICARUS: Criticality and Reuse based Instruction Caching for Datacenter Applications": ASPLOS/2026/Session-5D/icarus-criticality-and-reuse-based-instruction-caching-for-datacenter-applications.md
+        - "CacheMind: From Miss Rates to Why – Natural-Language, Trace-Grounded Reasoning for Cache Replacement": ASPLOS/2026/Session-5D/cachemind-from-miss-rates-to-why-natural-language-trace-grounded-reasoning-for-cache-replacement.md
+        - "Toasty: Speeding up network I/O with cache-warm buffers": ASPLOS/2026/Session-5D/toasty-speeding-up-network-i-o-with-cache-warm-buffers.md
+        - "Hitchhike: Efficient Request Submission via Deferred Enforcement of Address Contiguity": ASPLOS/2026/Session-5D/hitchhike-efficient-request-submission-via-deferred-enforcement-of-address-contiguity.md
+      - "Session 6A: Neural Network Acceleration (5)":
+        - "Session 6A": ASPLOS/2026/Session-6A/index.md
+        - "History Doesn’t Repeat Itself but Rollouts Rhyme: Accelerating Reinforcement Learning with HistoRL": ASPLOS/2026/Session-6A/history-doesn-t-repeat-itself-but-rollouts-rhyme-accelerating-reinforcement-learning-with-historl.md
+        - "Hardwired-Neuron Language Processing Units as General-Purpose Cognitive Substrates": ASPLOS/2026/Session-6A/hardwired-neuron-language-processing-units-as-general-purpose-cognitive-substrates.md
+        - "Voyager: Input-Adaptive Algebraic Transformations for High-Performance Graph Neural Networks": ASPLOS/2026/Session-6A/voyager-input-adaptive-algebraic-transformations-for-high-performance-graph-neural-networks.md
+        - "CREATE: Cross-Layer Resilience Characterization and Optimization for Efficient yet Reliable Embodied AI Systems": ASPLOS/2026/Session-6A/create-cross-layer-resilience-characterization-and-optimization-for-efficient-yet-reliable-embodied-ai-systems.md
+        - "Syno: Structured Synthesis for Neural Operators": ASPLOS/2026/Session-6A/syno-structured-synthesis-for-neural-operators.md
+      - "Session 6B: Hardware Design Languages (5)":
+        - "Session 6B": ASPLOS/2026/Session-6B/index.md
+        - "Parameterized Hardware Design with Latency-Abstract Interfaces": ASPLOS/2026/Session-6B/parameterized-hardware-design-with-latency-abstract-interfaces.md
+        - "Anvil: A General-Purpose Timing-Safe Hardware Description Language": ASPLOS/2026/Session-6B/anvil-a-general-purpose-timing-safe-hardware-description-language.md
+        - "Rage Against the State Machine: Type-Stated Hardware Peripherals for Increased Driver Correctness": ASPLOS/2026/Session-6B/rage-against-the-state-machine-type-stated-hardware-peripherals-for-increased-driver-correctness.md
+        - "RTeAAL Sim: Using Tensor Algebra to Represent and Accelerate RTL Simulation": ASPLOS/2026/Session-6B/rteaal-sim-using-tensor-algebra-to-represent-and-accelerate-rtl-simulation.md
+        - "Sequential Specifications for Precise Hardware Exceptions": ASPLOS/2026/Session-6B/sequential-specifications-for-precise-hardware-exceptions.md
+      - "Session 6C: Graph & Sparse Computing (5)":
+        - "Session 6C": ASPLOS/2026/Session-6C/index.md
+        - "TempGraph: An Efficient Chain-driven Temporal Graph Computing Framework on the GPU": ASPLOS/2026/Session-6C/tempgraph-an-efficient-chain-driven-temporal-graph-computing-framework-on-the-gpu.md
+        - "Leveraging Sparsity to Accelerate Automata Processing": ASPLOS/2026/Session-6C/leveraging-sparsity-to-accelerate-automata-processing.md
+        - "SLAWS: Spatial Locality Analysis and Workload Orchestration for Sparse Matrix Multiplication": ASPLOS/2026/Session-6C/slaws-spatial-locality-analysis-and-workload-orchestration-for-sparse-matrix-multiplication.md
+        - "Efficient Temporal Graph Network Training via Unified Redundancy Elimination": ASPLOS/2026/Session-6C/efficient-temporal-graph-network-training-via-unified-redundancy-elimination.md
+        - "Understanding Query Optimization Bugs in Graph Database Systems": ASPLOS/2026/Session-6C/understanding-query-optimization-bugs-in-graph-database-systems.md
+      - "Session 6D: Disaggregated Memory Systems (5)":
+        - "Session 6D": ASPLOS/2026/Session-6D/index.md
+        - "Efficient Remote Memory Ordering for Non-Coherent Systems": ASPLOS/2026/Session-6D/efficient-remote-memory-ordering-for-non-coherent-systems.md
+        - "CPU-Oblivious Offloading of Failure-Atomic Transactions for Disaggregated Memory": ASPLOS/2026/Session-6D/cpu-oblivious-offloading-of-failure-atomic-transactions-for-disaggregated-memory.md
+        - "PIPM: Partial and Incremental Page Migration for Multi-host CXL Disaggregated Shared Memory": ASPLOS/2026/Session-6D/pipm-partial-and-incremental-page-migration-for-multi-host-cxl-disaggregated-shared-memory.md
+        - "CREST: High-Performance Contention Resolution for Disaggregated Transactions": ASPLOS/2026/Session-6D/crest-high-performance-contention-resolution-for-disaggregated-transactions.md
+        - "Understanding and Optimizing Database Pushdown on Disaggregated Storage": ASPLOS/2026/Session-6D/understanding-and-optimizing-database-pushdown-on-disaggregated-storage.md
+      - "Session 7A: Fully Homomorphic Encryption (4)":
+        - "Session 7A": ASPLOS/2026/Session-7A/index.md
+        - "A Framework for Developing and Optimizing Fully Homomorphic Encryption Programs on GPUs": ASPLOS/2026/Session-7A/a-framework-for-developing-and-optimizing-fully-homomorphic-encryption-programs-on-gpus.md
+        - "HEPIC: Private Inference over Homomorphic Encryption with Client Intervention": ASPLOS/2026/Session-7A/hepic-private-inference-over-homomorphic-encryption-with-client-intervention.md
+        - "Falcon: Algorithm-Hardware Co-Design for Efficient Fully Homomorphic Encryption Accelerator": ASPLOS/2026/Session-7A/falcon-algorithm-hardware-co-design-for-efficient-fully-homomorphic-encryption-accelerator.md
+        - "Maverick: Rethinking TFHE Bootstrapping on GPUs via Algorithm-Hardware Co-Design": ASPLOS/2026/Session-7A/maverick-rethinking-tfhe-bootstrapping-on-gpus-via-algorithm-hardware-co-design.md
+      - "Session 7B: Compilers & Code Generation (4)":
+        - "Session 7B": ASPLOS/2026/Session-7B/index.md
+        - "COGENT: Adaptable Compiler Toolchain for Tagging RISC-V Binaries": ASPLOS/2026/Session-7B/cogent-adaptable-compiler-toolchain-for-tagging-risc-v-binaries.md
+        - "Finding Reusable Instructions via E-Graph Anti-Unification": ASPLOS/2026/Session-7B/finding-reusable-instructions-via-e-graph-anti-unification.md
+        - "LOOPRAG: Enhancing Loop Transformation Optimization with Retrieval-Augmented Large Language Models": ASPLOS/2026/Session-7B/looprag-enhancing-loop-transformation-optimization-with-retrieval-augmented-large-language-models.md
+        - "Evaluating Compiler Optimization Impacts on zkVM Performance": ASPLOS/2026/Session-7B/evaluating-compiler-optimization-impacts-on-zkvm-performance.md
+      - "Session 7C: Testing & Fuzzing (4)":
+        - "Session 7C": ASPLOS/2026/Session-7C/index.md
+        - "DejaVuzz: Disclosing Transient Execution Bugs with Dynamic Swappable Memory and Differential Information Flow Tracking assisted Processor Fuzzing": ASPLOS/2026/Session-7C/dejavuzz-disclosing-transient-execution-bugs-with-dynamic-swappable-memory-and-differential-information-flow-tracking-assisted-processor-fuzzing.md
+        - "Signal Breaker: Fuzzing Digital Signal Processors": ASPLOS/2026/Session-7C/signal-breaker-fuzzing-digital-signal-processors.md
+        - "Scaling Automated Database System Testing": ASPLOS/2026/Session-7C/scaling-automated-database-system-testing.md
+        - "SEVI: Silent Data Corruption of Vector Instructions in Hyper-Scale Datacenters": ASPLOS/2026/Session-7C/sevi-silent-data-corruption-of-vector-instructions-in-hyper-scale-datacenters.md
+      - "Session 7D: Processor Microarchitecture (4)":
+        - "Session 7D": ASPLOS/2026/Session-7D/index.md
+        - "Co-Exploration of RISC-V Processor Microarchitectures and FreeRTOS Extensions for Lower Context Switch Latency": ASPLOS/2026/Session-7D/co-exploration-of-risc-v-processor-microarchitectures-and-freertos-extensions-for-lower-context-switch-latency.md
+        - "Chips Need DIP: Time-Proportional Per-Instruction Cycle Stacks at Dispatch": ASPLOS/2026/Session-7D/chips-need-dip-time-proportional-per-instruction-cycle-stacks-at-dispatch.md
+        - "Arm Weak Memory Consistency on Apple Silicon: What Is It Good For?": ASPLOS/2026/Session-7D/arm-weak-memory-consistency-on-apple-silicon-what-is-it-good-for.md
+        - "A Data-Driven Dynamic Execution Orchestration Architecture": ASPLOS/2026/Session-7D/a-data-driven-dynamic-execution-orchestration-architecture.md
+      - "Session 8A: GPU Programming (4)":
+        - "Session 8A": ASPLOS/2026/Session-8A/index.md
+        - "cuJSON: A Highly Parallel JSON Parser for GPUs": ASPLOS/2026/Session-8A/cujson-a-highly-parallel-json-parser-for-gpus.md
+        - "CHERI-SIMT: Implementing Capability Memory Protection in GPGPUs": ASPLOS/2026/Session-8A/cheri-simt-implementing-capability-memory-protection-in-gpgpus.md
+        - "Lobster: A GPU-Accelerated Framework for Neurosymbolic Programming": ASPLOS/2026/Session-8A/lobster-a-gpu-accelerated-framework-for-neurosymbolic-programming.md
+        - "ReliaFHE: Resilient Design for Fully Homomorphic Encryption Accelerators": ASPLOS/2026/Session-8A/reliafhe-resilient-design-for-fully-homomorphic-encryption-accelerators.md
+      - "Session 8B: Serverless & Cloud Networking (4)":
+        - "Session 8B": ASPLOS/2026/Session-8B/index.md
+        - "Lambda-trim: Reducing Monetary and Performance Cost of Serverless Cold Starts with Cost-driven Application Debloating": ASPLOS/2026/Session-8B/lambda-trim-reducing-monetary-and-performance-cost-of-serverless-cold-starts-with-cost-driven-application-debloating.md
+        - "Skyler: Static Analysis for Predicting API-Driven Costs in Serverless Applications": ASPLOS/2026/Session-8B/skyler-static-analysis-for-predicting-api-driven-costs-in-serverless-applications.md
+        - "Enabling fast networking in the public cloud": ASPLOS/2026/Session-8B/enabling-fast-networking-in-the-public-cloud.md
+        - "SG-IOV: Socket-Granular I/O Virtualization for SmartNIC-Based Container Networks": ASPLOS/2026/Session-8B/sg-iov-socket-granular-i-o-virtualization-for-smartnic-based-container-networks.md
+      - "Session 8C: Memory Hierarchy & Performance (4)":
+        - "Session 8C": ASPLOS/2026/Session-8C/index.md
+        - "PACT: A Criticality-First Design for Tiered Memory": ASPLOS/2026/Session-8C/pact-a-criticality-first-design-for-tiered-memory.md
+        - "CounterPoint: Using Hardware Event Counters to Refute and Refine Microarchitectural Assumptions": ASPLOS/2026/Session-8C/counterpoint-using-hardware-event-counters-to-refute-and-refine-microarchitectural-assumptions.md
+        - "Performance Predictability in Heterogeneous Memory": ASPLOS/2026/Session-8C/performance-predictability-in-heterogeneous-memory.md
+        - "PF-LLM: Large Language Model Hinted Hardware Prefetching": ASPLOS/2026/Session-8C/pf-llm-large-language-model-hinted-hardware-prefetching.md
+      - "Session 8D: Reconfigurable Architectures (4)":
+        - "Session 8D": ASPLOS/2026/Session-8D/index.md
+        - "Neura: A Unified Framework for Hierarchical and Adaptive CGRAs": ASPLOS/2026/Session-8D/neura-a-unified-framework-for-hierarchical-and-adaptive-cgras.md
+        - "Transforming Torus Fabrics for Efficient Multi-tenant ML": ASPLOS/2026/Session-8D/transforming-torus-fabrics-for-efficient-multi-tenant-ml.md
+        - "The Configuration Wall: Characterization and Elimination of Accelerator Configuration Overhead": ASPLOS/2026/Session-8D/the-configuration-wall-characterization-and-elimination-of-accelerator-configuration-overhead.md
+        - "Static Analysis for Efficient Streaming Tokenization": ASPLOS/2026/Session-8D/static-analysis-for-efficient-streaming-tokenization.md
+      - "Session 9A: Systems Profiling & Optimization (4)":
+        - "Session 9A": ASPLOS/2026/Session-9A/index.md
+        - "Arancini: A Hybrid Binary Translator for Weak Memory Model Architectures": ASPLOS/2026/Session-9A/arancini-a-hybrid-binary-translator-for-weak-memory-model-architectures.md
+        - "Wax: Optimizing Data Center Applications With Stale Profile": ASPLOS/2026/Session-9A/wax-optimizing-data-center-applications-with-stale-profile.md
+        - "M2XFP: A Metadata-Augmented Microscaling Data Format for Efficient Low-bit Quantization": ASPLOS/2026/Session-9A/m2xfp-a-metadata-augmented-microscaling-data-format-for-efficient-low-bit-quantization.md
+        - "Cheddar: A Swift Fully Homomorphic Encryption Library Designed for GPU Architectures": ASPLOS/2026/Session-9A/cheddar-a-swift-fully-homomorphic-encryption-library-designed-for-gpu-architectures.md
+      - "Session 9B: Quantum & Emerging Computing (4)":
+        - "Session 9B": ASPLOS/2026/Session-9B/index.md
+        - "COMPAS: A Distributed Multi-Party SWAP Test for Parallel Quantum Algorithms": ASPLOS/2026/Session-9B/compas-a-distributed-multi-party-swap-test-for-parallel-quantum-algorithms.md
+        - "TreeVQA: A Tree-Structured Execution Framework for Shot Reduction in Variational Quantum Algorithms": ASPLOS/2026/Session-9B/treevqa-a-tree-structured-execution-framework-for-shot-reduction-in-variational-quantum-algorithms.md
+        - "CHEHAB RL: Learning to Optimize Fully Homomorphic Encryption Computations": ASPLOS/2026/Session-9B/chehab-rl-learning-to-optimize-fully-homomorphic-encryption-computations.md
+        - "CEMU: Enabling Full-System Emulation of Computational Storage beyond Hardware Limits": ASPLOS/2026/Session-9B/cemu-enabling-full-system-emulation-of-computational-storage-beyond-hardware-limits.md
+      - "Session 9C: Reliability & Fault Tolerance (4)":
+        - "Session 9C": ASPLOS/2026/Session-9C/index.md
+        - "Fault Escaping: Improving Robustness of DPU Enhanced Platform with Mutual Assisted VM Recovery": ASPLOS/2026/Session-9C/fault-escaping-improving-robustness-of-dpu-enhanced-platform-with-mutual-assisted-vm-recovery.md
+        - "Radshield: Software Radiation Protection for Commodity Hardware in Space": ASPLOS/2026/Session-9C/radshield-software-radiation-protection-for-commodity-hardware-in-space.md
+        - "TierX: A Simulation Framework for Multi-tier BCI System Design Evaluation and Exploration": ASPLOS/2026/Session-9C/tierx-a-simulation-framework-for-multi-tier-bci-system-design-evaluation-and-exploration.md
+        - "PrioriFI: More Informed Fault Injection for Edge Neural Networks": ASPLOS/2026/Session-9C/priorifi-more-informed-fault-injection-for-edge-neural-networks.md
+      - "Session 9D: Network & Cloud Infrastructure (4)":
+        - "Session 9D": ASPLOS/2026/Session-9D/index.md
+        - "TiNA: Tiered Network Buffer Architecture for Fast Networking in Chiplet-based CPU": ASPLOS/2026/Session-9D/tina-tiered-network-buffer-architecture-for-fast-networking-in-chiplet-based-cpu.md
+        - "An MLIR Lowering Pipeline for Stencils at Wafer-Scale": ASPLOS/2026/Session-9D/an-mlir-lowering-pipeline-for-stencils-at-wafer-scale.md
+        - "JOSer: Just-In-Time Object Serialization for Heavy Java Serialization Workloads": ASPLOS/2026/Session-9D/joser-just-in-time-object-serialization-for-heavy-java-serialization-workloads.md
+        - "Wave: Offloading Resource Management to SmartNIC Cores": ASPLOS/2026/Session-9D/wave-offloading-resource-management-to-smartnic-cores.md
     - ASPLOS 2025 (184):
       - ASPLOS 2025: ASPLOS/2025/index.md
       - "ML Systems (10)":

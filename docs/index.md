@@ -81,6 +81,7 @@ hide:
   <div class="conf-cube__name">ASPLOS</div>
   <div class="conf-cube__full">ACM International Conference on Architectural Support for Programming Languages and Operating Systems</div>
   <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="ASPLOS/2026/">2026</a>
     <a class="conf-cube__year-link" href="ASPLOS/2025/">2025</a>
   </div>
 </div>

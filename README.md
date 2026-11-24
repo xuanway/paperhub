@@ -9,17 +9,17 @@ memory reliability, homomorphic encryption, LLM inference acceleration, PIM, and
 
 ## Current Coverage
 
-- HPCA 2025
-- HPCA 2026
-- ISCA 2025
-- MICRO 2025
-- MICRO 2026 (34 sessions, 220 papers)
-- ASPLOS 2025
-- DAC 2025
-- NeurSys 2025
-- FAST 2025
-- PPoPP 2025
-- ATC 2025
+- HPCA: IEEE International Symposium on High-Performance Computer Architecture
+- ISCA: International Symposium on Computer Architecture
+- MICRO: IEEE/ACM International Symposium on Microarchitecture
+- ASPLOS: ACM International Conference on Architectural Support for Programming Languages and Operating Systems
+- DAC: Design Automation Conference
+- FAST: USENIX Conference on File and Storage Technologies
+- SC: International Conference for High Performance Computing, Networking, Storage and Analysis
+- EuroSys: European Conference on Computer Systems
+- PPoPP: ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming
+- ATC: ACM SIGOPS Annual Technical Conference
+- HPDC: ACM International Symposium on High-Performance Parallel and Distributed Computing
 
 ## Main Features
 
@@ -70,7 +70,8 @@ bash scripts/new_paper.sh <conference> <track> <slug> "Paper Title"
 
 2. Fill in the generated markdown content (metadata, summary, method, results).
 
-3. Add the new page to `nav` in mkdocs.yml.
+3. Add the new page to `nav` in mkdocs.yml. ISCA 2026 paper pages are an exception:
+   link them from their Session index instead; they are intentionally omitted from the sidebar.
 
 4. Commit and push:
 
@@ -98,6 +99,18 @@ mkdocs build
 ```
 
 The generated static site is written to `site/`.
+
+The checked-in requirements pin the tested MkDocs and Material versions. Material may
+print its advisory about future MkDocs 2.0 compatibility even when building with
+MkDocs 1.x; this is not a build failure. To hide that advisory for a single build:
+
+```bash
+NO_MKDOCS_2_WARNING=1 mkdocs build
+```
+
+ISCA 2026 paper pages are built and linked from the Session indexes, but intentionally
+excluded from the sidebar via `not_in_nav`. Other pages missing from `nav` still produce
+the normal MkDocs notification.
 
 ## Test The Site Locally
 
