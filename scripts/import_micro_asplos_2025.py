@@ -104,11 +104,11 @@ def parse_program(conf: Conference) -> Dict[str, List[Paper]]:
         if not heading:
             continue
         txt = " ".join(heading.get_text(" ", strip=True).split())
-        m = re.search(r"Session\s+\d+[A-Z]:\s*(.+)$", txt)
+        m = re.search(r"Session\s+(\d+[A-Z]):\s*(.+)$", txt)
         if not m:
             continue
 
-        track = normalize_track(m.group(1))
+        track = f"Session {m.group(1)}: {normalize_track(m.group(2))}"
         papers: List[Paper] = []
 
         for p in panel.select("div.paper"):
@@ -353,7 +353,11 @@ def build_conf_docs(conf: Conference, tracks: Dict[str, List[Paper]]) -> Tuple[i
     seen_track_slug: Dict[str, int] = {}
 
     for track in tracks:
-        s = slugify(track)
+        if conf.key == "ASPLOS":
+            session_match = re.match(r"Session\s+(\d+[A-Z]):", track)
+            s = f"Session-{session_match.group(1)}" if session_match else slugify(track)
+        else:
+            s = slugify(track)
         if s in seen_track_slug:
             seen_track_slug[s] += 1
             s = f"{s}_{seen_track_slug[s]}"
