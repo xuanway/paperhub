@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-24",
-  "content_hash": "bd9c29dfefa18854",
-  "total_papers": 2157,
+  "updated": "2026-11-25",
+  "content_hash": "3651493cc977afc3",
+  "total_papers": 2359,
   "stats": {
-    "total_papers": 2157,
+    "total_papers": 2359,
     "conferences_count": 12,
-    "directions_count": 1536,
-    "track_directions_count": 229,
-    "keywords_count": 1536,
+    "directions_count": 1580,
+    "track_directions_count": 274,
+    "keywords_count": 1580,
     "per_conf": {
       "ASPLOS 2025": {
         "total": 184,
@@ -21,6 +21,14 @@
         "total": 100,
         "tracks": 22
       },
+      "ATC 2026": {
+        "total": 135,
+        "tracks": 29
+      },
+      "CCFLIST ccf2026-ranked-list.md": {
+        "total": 1,
+        "tracks": 0
+      },
       "DAC 2025": {
         "total": 419,
         "tracks": 5
@@ -29,9 +37,17 @@
         "total": 85,
         "tracks": 0
       },
+      "FAST 2024": {
+        "total": 22,
+        "tracks": 7
+      },
       "FAST 2025": {
         "total": 36,
         "tracks": 8
+      },
+      "FAST 2026": {
+        "total": 44,
+        "tracks": 10
       },
       "HPCA 2025": {
         "total": 121,
@@ -217,6 +233,35 @@
       "ATC/2025/finding_faults_concurrency_numerics_and_kernel_fuzzing": 5,
       "ATC/2025/distributed_systems_communication_consensus_and_data_structures": 5,
       "ATC/2025/storage_innovations_logs_tiers_and_modern_flash": 5,
+      "ATC/2026/Session-3": 5,
+      "ATC/2026/Session-4": 5,
+      "ATC/2026/Session-5": 5,
+      "ATC/2026/Session-2": 5,
+      "ATC/2026/Session-21": 3,
+      "ATC/2026/Session-26": 5,
+      "ATC/2026/Session-19": 3,
+      "ATC/2026/Session-10": 5,
+      "ATC/2026/Session-17": 5,
+      "ATC/2026/Session-28": 5,
+      "ATC/2026/Session-16": 5,
+      "ATC/2026/Session-29": 4,
+      "ATC/2026/Session-11": 5,
+      "ATC/2026/Session-27": 5,
+      "ATC/2026/Session-18": 5,
+      "ATC/2026/Session-20": 3,
+      "ATC/2026/Session-9": 5,
+      "ATC/2026/Session-7": 5,
+      "ATC/2026/Session-1": 5,
+      "ATC/2026/Session-6": 5,
+      "ATC/2026/Session-8": 5,
+      "ATC/2026/Session-25": 5,
+      "ATC/2026/Session-22": 5,
+      "ATC/2026/Session-14": 4,
+      "ATC/2026/Session-13": 4,
+      "ATC/2026/Session-12": 5,
+      "ATC/2026/Session-15": 4,
+      "ATC/2026/Session-23": 5,
+      "ATC/2026/Session-24": 5,
       "FAST/2025/machine_learning_and_storage": 5,
       "FAST/2025/hardware_assist": 5,
       "FAST/2025/security_integrity_and_consistency": 5,
@@ -225,6 +270,23 @@
       "FAST/2025/more_machine_learning": 4,
       "FAST/2025/file_systems": 5,
       "FAST/2025/cloud_storage": 4,
+      "FAST/2024/key-value-systems": 4,
+      "FAST/2024/ai-and-storage": 3,
+      "FAST/2024/file-systems": 3,
+      "FAST/2024/cloud-storage": 3,
+      "FAST/2024/distributed-storage": 3,
+      "FAST/2024/caching": 3,
+      "FAST/2024/flash-storage": 3,
+      "FAST/2026/cloud-technologies-ii": 4,
+      "FAST/2026/virtualization": 4,
+      "FAST/2026/ai-and-llms-ii": 5,
+      "FAST/2026/cloud-technologies-i": 4,
+      "FAST/2026/ssds-and-cxl": 5,
+      "FAST/2026/ai-and-llms-i": 4,
+      "FAST/2026/integrity": 4,
+      "FAST/2026/tiering-mobile-and-ssds": 5,
+      "FAST/2026/os": 4,
+      "FAST/2026/indexing": 5,
       "ASPLOS/2025/Session-3D": 5,
       "ASPLOS/2025/Session-3C": 5,
       "ASPLOS/2025/Session-9C": 5,
@@ -7426,6 +7488,84 @@
       ]
     },
     {
+      "text": "File Systems",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "FAST 2025 (5 papers)",
+      "search_term": "File Systems",
+      "papers": [
+        {
+          "title": "Boosting File Systems Elegantly: A Transparent NVM Write-ahead Log for Disk File Systems",
+          "url": "FAST/2025/file_systems/boosting_file_systems_elegantly_a_transparent_nvm_write_ahead_log_for_disk_file_systems/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 用 NVM 写前日志只吸收同步写，为磁盘文件系统透明加速最高 15.09 倍"
+        },
+        {
+          "title": "DJFS : Directory-Granularity Filesystem Journaling for CMM-H SSDs",
+          "url": "FAST/2025/file_systems/djfs_directory_granularity_filesystem_journaling_for_cmm_h_ssds/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 把日志事务粒度改成目录，让不同目录并行提交，在 CMM-H SSD 上最高提速 4.5 倍"
+        },
+        {
+          "title": "Fast, Transparent Filesystem Microkernel Recovery with Ananke",
+          "url": "FAST/2025/file_systems/fast_transparent_filesystem_microkernel_recovery_with_ananke/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 利用微内核进程崩溃时宿主 OS 仍存活的时机，以内存 p-log 实现无损、透明的文件系统恢复"
+        },
+        {
+          "title": "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs",
+          "url": "FAST/2025/file_systems/rethinking_the_request_to_io_transformation_process_of_file_systems_for_full_utilization_of_high_bandwidth_ssds/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 把写拆成 SSD 页对齐 IO 与残余 NVM 小 IO，写性能最高提升 29.76 倍"
+        },
+        {
+          "title": "ScaleLFS: A Log-Structured File System with Scalable Garbage Collection for Commodity SSDs",
+          "url": "FAST/2025/file_systems/scalelfs_a_log_structured_file_system_with_scalable_garbage_collection_for_commodity_ssds/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 把 LFS 的垃圾回收改成每核独立回收器加并发受害者管理，持续性能最高提升 3.5 倍"
+        }
+      ]
+    },
+    {
+      "text": "Hardware Assist",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "FAST 2025 (5 papers)",
+      "search_term": "Hardware Assist",
+      "papers": [
+        {
+          "title": "AegonKV: A High Bandwidth, Low Tail Latency, and Low Storage Cost KV-Separated LSM Store with SmartSSD-based GC Offloading",
+          "url": "FAST/2025/hardware_assist/aegonkv_a_high_bandwidth_low_tail_latency_and_low_storage_cost_kv_separated_lsm_store_with_smartssd_based_gc_offloading/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 把 KV 分离的 GC 卸载到 SmartSSD，吞吐最高 3.3 倍、尾延迟降 66%"
+        },
+        {
+          "title": "D2FS: Device-Driven Filesystem Garbage Collection",
+          "url": "FAST/2025/hardware_assist/d2fs_device_driven_filesystem_garbage_collection/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 让闪存设备替 F2FS 回收空闲段，FIO 下吞吐比 F2FS 高 3 倍"
+        },
+        {
+          "title": "HaSiS: A Hardware-assisted Single-index Store for Hybrid Transactional and Analytical Processing",
+          "url": "FAST/2025/hardware_assist/hasis_a_hardware_assisted_single_index_store_for_hybrid_transactional_and_analytical_processing/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 以透明压缩 CSD 支撑单个 B+-树索引，让 HTAP 分析查询看到即时的交易更新"
+        },
+        {
+          "title": "Selective On-Device Execution of Data-Dependent Read I/Os",
+          "url": "FAST/2025/hardware_assist/selective_on_device_execution_of_data_dependent_read_i_os/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 在设备内选择性重提交数据依赖读，B+-树 KV 吞吐最高提升 41%"
+        },
+        {
+          "title": "ShiftLock: Mitigate One-sided RDMA Lock Contention via Handover",
+          "url": "FAST/2025/hardware_assist/shiftlock_mitigate_one_sided_rdma_lock_contention_via_handover/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 让 RDMA 客户端直接移交锁而不重试，有效吞吐最高提升 3.62 倍"
+        }
+      ]
+    },
+    {
       "text": "Hardware Security",
       "count": 5,
       "trend": -1,
@@ -7461,6 +7601,84 @@
           "url": "DAC/2025/design/pufim_a_robust_and_efficient_fefet_based_security_solution_merging_physical_unclonable_function_with_compute_in_memory_for_edge_ai/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Design"
+        }
+      ]
+    },
+    {
+      "text": "Machine Learning and Storage",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "FAST 2025 (5 papers)",
+      "search_term": "Machine Learning and Storage",
+      "papers": [
+        {
+          "title": "GPHash: An Efficient Hash Index for GPU with Byte-Granularity Persistent Memory",
+          "url": "FAST/2025/machine_learning_and_storage/gphash_an_efficient_hash_index_for_gpu_with_byte_granularity_persistent_memory/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · GPU 直连持久内存上的无锁哈希索引，吞吐最高提升 27.62 倍"
+        },
+        {
+          "title": "GeminiFS: A Companion File System for GPUs",
+          "url": "FAST/2025/machine_learning_and_storage/geminifs_a_companion_file_system_for_gpus/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · GPU 绕过 CPU 按文件直读 NVMe 的伴生文件系统，训练卸载耗时降 94.5%"
+        },
+        {
+          "title": "IMPRESS: An Importance-Informed Multi-Tier Prefix KV Storage System for Large Language Model Inference",
+          "url": "FAST/2025/machine_learning_and_storage/impress_an_importance_informed_multi_tier_prefix_kv_storage_system_for_large_language_model_inference/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · 只加载重要前缀 KV 的三层 KV 存储，TTFT 最多缩短至 1/2.8"
+        },
+        {
+          "title": "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot",
+          "url": "FAST/2025/machine_learning_and_storage/mooncake_trading_more_storage_for_less_computation_a_kvcache_centric_architecture_for_serving_llm_chatbot/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · 以 KVCache 为中心的分离式架构，池化存储替代重复预填充，容量提升 59%~498%"
+        },
+        {
+          "title": "Towards High-throughput and Low-latency Billion-scale Vector Search via CPU/GPU Collaborative Filtering and Re-ranking",
+          "url": "FAST/2025/machine_learning_and_storage/towards_high_throughput_and_low_latency_billion_scale_vector_search_via_cpu_gpu_collaborative_filtering_and_re_ranking/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · 单张入门级 GPU 加 SSD 做协同过滤与重排序，QPS 最高提升 13.1 倍"
+        }
+      ]
+    },
+    {
+      "text": "Security, Integrity, and Consistency",
+      "count": 5,
+      "trend": -1,
+      "conf_info": "FAST 2025 (5 papers)",
+      "search_term": "Security, Integrity, and Consistency",
+      "papers": [
+        {
+          "title": "AWUPF Rediscovered: Atomic Writes to Unleash Pivotal Fault-Tolerance in SSDs",
+          "url": "FAST/2025/security_integrity_and_consistency/awupf_rediscovered_atomic_writes_to_unleash_pivotal_fault_tolerance_in_ssds/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 用 NVMe 的 4 KB AWUPF 原子写替掉日志，随机写最高提升 3.6 倍"
+        },
+        {
+          "title": "AtomicDisk: A Secure Virtual Disk for TEEs against Eviction Attacks",
+          "url": "FAST/2025/security_integrity_and_consistency/atomicdisk_a_secure_virtual_disk_for_tees_against_eviction_attacks/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 为 TEE 安全盘定义 sync 原子性，用内部提交把被逐出的未提交写与已同步写分开"
+        },
+        {
+          "title": "OPIMQ: Order Preserving IO stack for Multi-Queue Block Device",
+          "url": "FAST/2025/security_integrity_and_consistency/opimq_order_preserving_io_stack_for_multi_queue_block_device/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 用 cache barrier 保住多队列并行度，IO 栈吞吐提升 2.9 倍"
+        },
+        {
+          "title": "On Scalable Integrity Checking for Secure Cloud Disks",
+          "url": "FAST/2025/security_integrity_and_consistency/on_scalable_integrity_checking_for_secure_cloud_disks/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 把完整性哈希树改成随访问热度自调整的不平衡结构，吞吐最高提升 2.2 倍"
+        },
+        {
+          "title": "Silhouette: Leveraging Consistency Mechanisms to Detect Bugs in Persistent Memory-Based File Systems",
+          "url": "FAST/2025/security_integrity_and_consistency/silhouette_leveraging_consistency_mechanisms_to_detect_bugs_in_persistent_memory_based_file_systems/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 用持久化不变量剪掉受保护写，把 PM 文件系统测试提速 10 倍"
         }
       ]
     },
@@ -7765,6 +7983,105 @@
       ]
     },
     {
+      "text": "Cloud Storage",
+      "count": 4,
+      "trend": -1,
+      "conf_info": "FAST 2025 (4 papers)",
+      "search_term": "Cloud Storage",
+      "papers": [
+        {
+          "title": "Cloudscape: A Study of Storage Services in Modern Cloud Architectures",
+          "url": "FAST/2025/cloud_storage/cloudscape_a_study_of_storage_services_in_modern_cloud_architectures/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Cloud Storage · 把 396 个 AWS 架构访谈视频标注成可查询数据集，量化云上存储服务的真实用法"
+        },
+        {
+          "title": "FlacIO: Flat and Collective I/O for Container Image Service",
+          "url": "FAST/2025/cloud_storage/flacio_flat_and_collective_i_o_for_container_image_service/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Cloud Storage · 以记录内存状态的运行时镜像替代按磁盘状态组织的容器镜像，冷启动最高快 23 倍"
+        },
+        {
+          "title": "Maat: Analyzing and Optimizing Overcharge on Blockchain Storage",
+          "url": "FAST/2025/cloud_storage/maat_analyzing_and_optimizing_overcharge_on_blockchain_storage/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Cloud Storage · 把 gas 核算从 opcode 下沉到存储操作，消除共识安全的重复计费，手续费降 32%"
+        },
+        {
+          "title": "Revisiting Network Coding for Warm Blob Storage",
+          "url": "FAST/2025/cloud_storage/revisiting_network_coding_for_warm_blob_storage/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Cloud Storage · 小 blob 改用非系统化 MSR 码以避开非连续 I/O，单块修复时间最多降 45.0%"
+        }
+      ]
+    },
+    {
+      "text": "Compression and Deduplication",
+      "count": 4,
+      "trend": -1,
+      "conf_info": "FAST 2025 (4 papers)",
+      "search_term": "Compression and Deduplication",
+      "papers": [
+        {
+          "title": "Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices",
+          "url": "FAST/2025/compression_and_deduplication/archer_adaptive_memory_compression_with_page_association_rule_awareness_for_high_speed_response_of_mobile_devices/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 按页关联规则做变粒度内存压缩，应用启动快 1.55 倍"
+        },
+        {
+          "title": "Don't Maintain Twice, It's Alright: Merged Metadata Management in Deduplication File System with GogetaFS",
+          "url": "FAST/2025/compression_and_deduplication/don_t_maintain_twice_it_s_alright_merged_metadata_management_in_deduplication_file_system_with_gogetafs/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 把去重指纹映射并入文件系统 L2P，吞吐高 5.6%–35.0%"
+        },
+        {
+          "title": "MedFS: Pursuing Low Update Overhead via Metadata-Enabled Delta Compression for Log-structured File System on Mobile Device",
+          "url": "FAST/2025/compression_and_deduplication/medfs_pursuing_low_update_overhead_via_metadata_enabled_delta_compression_for_log_structured_file_system_on_mobile_device/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 把增量块写进 inode 内联区，移动端写流量降 55.1%"
+        },
+        {
+          "title": "VectorCDC: Accelerating Data Deduplication with Vector Instructions",
+          "url": "FAST/2025/compression_and_deduplication/vectorcdc_accelerating_data_deduplication_with_vector_instructions/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 用 SSE/AVX 加速无哈希 CDC，吞吐比现有向量方案高 21–46 倍"
+        }
+      ]
+    },
+    {
+      "text": "More Machine Learning",
+      "count": 4,
+      "trend": -1,
+      "conf_info": "FAST 2025 (4 papers)",
+      "search_term": "More Machine Learning",
+      "papers": [
+        {
+          "title": "3L-Cache: Low Overhead and Precise Learning-based Eviction Policy for Caches",
+          "url": "FAST/2025/more_machine_learning/3l_cache_low_overhead_and_precise_learning_based_eviction_policy_for_caches/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · More Machine Learning · 过滤冗余训练请求并双向采样，把学习型淘汰策略的 CPU 开销较 HALP 降低 60.9%"
+        },
+        {
+          "title": "HiDPU: A DPU-Oriented Hybrid Indexing Scheme for Disaggregated Storage Systems",
+          "url": "FAST/2025/more_machine_learning/hidpu_a_dpu_oriented_hybrid_indexing_scheme_for_disaggregated_storage_systems/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · More Machine Learning · DPU 上按地址连续性分段做混合索引，内存最多省 92%、查询快 6.3 倍"
+        },
+        {
+          "title": "LeapGNN: Accelerating Distributed GNN Training Leveraging Feature-Centric Model Migration",
+          "url": "FAST/2025/more_machine_learning/leapgnn_accelerating_distributed_gnn_training_leveraging_feature_centric_model_migration/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · More Machine Learning · 把 GNN 模型搬到顶点特征所在服务器，微图调度让分布式训练比 P3 最高快 4.2 倍"
+        },
+        {
+          "title": "PIMLex: A High-Performance Learned Index with Processing-in-Memory",
+          "url": "FAST/2025/more_machine_learning/pimlex_a_high_performance_learned_index_with_processing_in_memory/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · More Machine Learning · learned index 搜索层进 PIM、数据层留 DRAM，吞吐增 36.5 倍"
+        }
+      ]
+    },
+    {
       "text": "RISC-V",
       "count": 4,
       "trend": -1,
@@ -7794,6 +8111,39 @@
           "url": "DAC/2025/security/zion_a_practical_confidential_virtual_machine_architecture_on_commodity_risc_v_processors/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "Storage Diversity and Heterogeneity",
+      "count": 4,
+      "trend": -1,
+      "conf_info": "FAST 2025 (4 papers)",
+      "search_term": "Storage Diversity and Heterogeneity",
+      "papers": [
+        {
+          "title": "DNA data storage: A generative tool for Motif-based DNA storage",
+          "url": "FAST/2025/storage_diversity_and_heterogeneity/dna_data_storage_a_generative_tool_for_motif_based_dna_storage/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Storage Diversity and Heterogeneity · 用 MDP 生成 DNA motif 集合，2.54 秒产出全部合规序列"
+        },
+        {
+          "title": "Liquid-State Drive: A Case for DNA Block Device for Enormous Data",
+          "url": "FAST/2025/storage_diversity_and_heterogeneity/liquid_state_drive_a_case_for_dna_block_device_for_enormous_data/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Storage Diversity and Heterogeneity · 用 SSD 存轻量翻译表，把 DNA 块设备写代价降至 1/2,927"
+        },
+        {
+          "title": "Oasis: An Out-of-core Approximate Graph System via All-Distances Sketches",
+          "url": "FAST/2025/storage_diversity_and_heterogeneity/oasis_an_out_of_core_approximate_graph_system_via_all_distances_sketches/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Storage Diversity and Heterogeneity · 把 ADS 图处理搬到外存：内存省 13.8 倍，构图仅慢 1.8 倍"
+        },
+        {
+          "title": "PolyStore: Exploiting Combined Capabilities of Heterogeneous Storage",
+          "url": "FAST/2025/storage_diversity_and_heterogeneity/polystore_exploiting_combined_capabilities_of_heterogeneous_storage/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Storage Diversity and Heterogeneity · 把 PM 与 NVMe 摆成同一层，微基准最高提升 9.38 倍"
         }
       ]
     },
@@ -9556,6 +9906,27 @@
       ]
     },
     {
+      "text": "persistent memory",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "FAST 2025 (2 papers)",
+      "search_term": "persistent memory",
+      "papers": [
+        {
+          "title": "GPHash: An Efficient Hash Index for GPU with Byte-Granularity Persistent Memory",
+          "url": "FAST/2025/machine_learning_and_storage/gphash_an_efficient_hash_index_for_gpu_with_byte_granularity_persistent_memory/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · GPU 直连持久内存上的无锁哈希索引，吞吐最高提升 27.62 倍"
+        },
+        {
+          "title": "Silhouette: Leveraging Consistency Mechanisms to Detect Bugs in Persistent Memory-Based File Systems",
+          "url": "FAST/2025/security_integrity_and_consistency/silhouette_leveraging_consistency_mechanisms_to_detect_bugs_in_persistent_memory_based_file_systems/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 用持久化不变量剪掉受保护写，把 PM 文件系统测试提速 10 倍"
+        }
+      ]
+    },
+    {
       "text": "power-side-channel",
       "count": 2,
       "trend": -1,
@@ -9573,6 +9944,27 @@
           "url": "DAC/2025/security/polaris_explainable_artificial_intelligence_for_mitigating_power_side_channel_leakage/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "processing-in-memory",
+      "count": 2,
+      "trend": -1,
+      "conf_info": "DAC 2025 (1 paper) · FAST 2025 (1 paper)",
+      "search_term": "processing-in-memory",
+      "papers": [
+        {
+          "title": "Guarder: A Stable and Lightweight Reconfigurable RRAM-based PIM Accelerator for DNN IP Protection",
+          "url": "DAC/2025/security/guarder_a_stable_and_lightweight_reconfigurable_rram_based_pim_accelerator_for_dnn_ip_protection/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
+        },
+        {
+          "title": "PIMLex: A High-Performance Learned Index with Processing-in-Memory",
+          "url": "FAST/2025/more_machine_learning/pimlex_a_high_performance_learned_index_with_processing_in_memory/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · More Machine Learning · learned index 搜索层进 PIM、数据层留 DRAM，吞吐增 36.5 倍"
         }
       ]
     },
@@ -11422,6 +11814,21 @@
       ]
     },
     {
+      "text": "AWUPF",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "AWUPF",
+      "papers": [
+        {
+          "title": "AWUPF Rediscovered: Atomic Writes to Unleash Pivotal Fault-Tolerance in SSDs",
+          "url": "FAST/2025/security_integrity_and_consistency/awupf_rediscovered_atomic_writes_to_unleash_pivotal_fault_tolerance_in_ssds/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 用 NVMe 的 4 KB AWUPF 原子写替掉日志，随机写最高提升 3.6 倍"
+        }
+      ]
+    },
+    {
       "text": "AXI协议",
       "count": 1,
       "trend": -1,
@@ -11433,6 +11840,21 @@
           "url": "DAC/2025/security/a_novel_covert_timing_channel_for_cloud_fpgas/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "All-Distances Sketch",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "All-Distances Sketch",
+      "papers": [
+        {
+          "title": "Oasis: An Out-of-core Approximate Graph System via All-Distances Sketches",
+          "url": "FAST/2025/storage_diversity_and_heterogeneity/oasis_an_out_of_core_approximate_graph_system_via_all_distances_sketches/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Storage Diversity and Heterogeneity · 把 ADS 图处理搬到外存：内存省 13.8 倍，构图仅慢 1.8 倍"
         }
       ]
     },
@@ -11632,6 +12054,36 @@
       ]
     },
     {
+      "text": "DNA data storage",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "DNA data storage",
+      "papers": [
+        {
+          "title": "DNA data storage: A generative tool for Motif-based DNA storage",
+          "url": "FAST/2025/storage_diversity_and_heterogeneity/dna_data_storage_a_generative_tool_for_motif_based_dna_storage/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Storage Diversity and Heterogeneity · 用 MDP 生成 DNA motif 集合，2.54 秒产出全部合规序列"
+        }
+      ]
+    },
+    {
+      "text": "DNA storage",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "DNA storage",
+      "papers": [
+        {
+          "title": "Liquid-State Drive: A Case for DNA Block Device for Enormous Data",
+          "url": "FAST/2025/storage_diversity_and_heterogeneity/liquid_state_drive_a_case_for_dna_block_device_for_enormous_data/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Storage Diversity and Heterogeneity · 用 SSD 存轻量翻译表，把 DNA 块设备写代价降至 1/2,927"
+        }
+      ]
+    },
+    {
       "text": "DRAM内处理",
       "count": 1,
       "trend": -1,
@@ -11767,6 +12219,21 @@
       ]
     },
     {
+      "text": "GPU-centric storage",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "GPU-centric storage",
+      "papers": [
+        {
+          "title": "GeminiFS: A Companion File System for GPUs",
+          "url": "FAST/2025/machine_learning_and_storage/geminifs_a_companion_file_system_for_gpus/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · GPU 绕过 CPU 按文件直读 NVMe 的伴生文件系统，训练卸载耗时降 94.5%"
+        }
+      ]
+    },
+    {
       "text": "GPU内存访问加速",
       "count": 1,
       "trend": -1,
@@ -11887,6 +12354,21 @@
       ]
     },
     {
+      "text": "HTAP",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "HTAP",
+      "papers": [
+        {
+          "title": "HaSiS: A Hardware-assisted Single-index Store for Hybrid Transactional and Analytical Processing",
+          "url": "FAST/2025/hardware_assist/hasis_a_hardware_assisted_single_index_store_for_hybrid_transactional_and_analytical_processing/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 以透明压缩 CSD 支撑单个 B+-树索引，让 HTAP 分析查询看到即时的交易更新"
+        }
+      ]
+    },
+    {
       "text": "HW-SW Co-design",
       "count": 1,
       "trend": 1,
@@ -11973,6 +12455,36 @@
           "url": "DAC/2025/ai/dcdiff_enhancing_jpeg_compression_via_diffusion_based_dc_coefficients_estimation/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · AI"
+        }
+      ]
+    },
+    {
+      "text": "KV Cache",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "KV Cache",
+      "papers": [
+        {
+          "title": "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot",
+          "url": "FAST/2025/machine_learning_and_storage/mooncake_trading_more_storage_for_less_computation_a_kvcache_centric_architecture_for_serving_llm_chatbot/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · 以 KVCache 为中心的分离式架构，池化存储替代重复预填充，容量提升 59%~498%"
+        }
+      ]
+    },
+    {
+      "text": "KV separation",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "KV separation",
+      "papers": [
+        {
+          "title": "AegonKV: A High Bandwidth, Low Tail Latency, and Low Storage Cost KV-Separated LSM Store with SmartSSD-based GC Offloading",
+          "url": "FAST/2025/hardware_assist/aegonkv_a_high_bandwidth_low_tail_latency_and_low_storage_cost_kv_separated_lsm_store_with_smartssd_based_gc_offloading/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 把 KV 分离的 GC 卸载到 SmartSSD，吞吐最高 3.3 倍、尾延迟降 66%"
         }
       ]
     },
@@ -12127,6 +12639,21 @@
       ]
     },
     {
+      "text": "Merkle hash tree",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "Merkle hash tree",
+      "papers": [
+        {
+          "title": "On Scalable Integrity Checking for Secure Cloud Disks",
+          "url": "FAST/2025/security_integrity_and_consistency/on_scalable_integrity_checking_for_secure_cloud_disks/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 把完整性哈希树改成随访问热度自调整的不平衡结构，吞吐最高提升 2.2 倍"
+        }
+      ]
+    },
+    {
       "text": "Minimum Displacement",
       "count": 1,
       "trend": -1,
@@ -12183,6 +12710,21 @@
           "url": "DAC/2025/systems/nvr_vector_runahead_on_npus_for_sparse_memory_access/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Systems"
+        }
+      ]
+    },
+    {
+      "text": "NVM",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "NVM",
+      "papers": [
+        {
+          "title": "Boosting File Systems Elegantly: A Transparent NVM Write-ahead Log for Disk File Systems",
+          "url": "FAST/2025/file_systems/boosting_file_systems_elegantly_a_transparent_nvm_write_ahead_log_for_disk_file_systems/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 用 NVM 写前日志只吸收同步写，为磁盘文件系统透明加速最高 15.09 倍"
         }
       ]
     },
@@ -12348,6 +12890,21 @@
           "url": "DAC/2025/design/epoc_a_novel_pulse_generation_framework_incorporating_advanced_synthesis_techniques_for_quantum_circuits/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Design"
+        }
+      ]
+    },
+    {
+      "text": "RDMA",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "RDMA",
+      "papers": [
+        {
+          "title": "ShiftLock: Mitigate One-sided RDMA Lock Contention via Handover",
+          "url": "FAST/2025/hardware_assist/shiftlock_mitigate_one_sided_rdma_lock_contention_via_handover/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 让 RDMA 客户端直接移交锁而不重试，有效吞吐最高提升 3.62 倍"
         }
       ]
     },
@@ -12622,6 +13179,21 @@
       ]
     },
     {
+      "text": "SSD",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "SSD",
+      "papers": [
+        {
+          "title": "Rethinking the Request-to-IO Transformation Process of File Systems for Full Utilization of High-Bandwidth SSDs",
+          "url": "FAST/2025/file_systems/rethinking_the_request_to_io_transformation_process_of_file_systems_for_full_utilization_of_high_bandwidth_ssds/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 把写拆成 SSD 页对齐 IO 与残余 NVM 小 IO，写性能最高提升 29.76 倍"
+        }
+      ]
+    },
+    {
       "text": "SSD存储",
       "count": 1,
       "trend": -1,
@@ -12708,6 +13280,21 @@
           "url": "DAC/2025/eda/3d_flow_flow_based_standard_cell_legalization_for_3d_ics/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · EDA"
+        }
+      ]
+    },
+    {
+      "text": "TEE",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "TEE",
+      "papers": [
+        {
+          "title": "AtomicDisk: A Secure Virtual Disk for TEEs against Eviction Attacks",
+          "url": "FAST/2025/security_integrity_and_consistency/atomicdisk_a_secure_virtual_disk_for_tees_against_eviction_attacks/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 为 TEE 安全盘定义 sync 原子性，用内部提交把被逐出的未提交写与已同步写分开"
         }
       ]
     },
@@ -13072,6 +13659,21 @@
       ]
     },
     {
+      "text": "approximate nearest neighbor search",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "approximate nearest neighbor search",
+      "papers": [
+        {
+          "title": "Towards High-throughput and Low-latency Billion-scale Vector Search via CPU/GPU Collaborative Filtering and Re-ranking",
+          "url": "FAST/2025/machine_learning_and_storage/towards_high_throughput_and_low_latency_billion_scale_vector_search_via_cpu_gpu_collaborative_filtering_and_re_ranking/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · 单张入门级 GPU 加 SSD 做协同过滤与重排序，QPS 最高提升 13.1 倍"
+        }
+      ]
+    },
+    {
       "text": "approximate-computing",
       "count": 1,
       "trend": -1,
@@ -13177,6 +13779,21 @@
       ]
     },
     {
+      "text": "blockchain storage",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "blockchain storage",
+      "papers": [
+        {
+          "title": "Maat: Analyzing and Optimizing Overcharge on Blockchain Storage",
+          "url": "FAST/2025/cloud_storage/maat_analyzing_and_optimizing_overcharge_on_blockchain_storage/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Cloud Storage · 把 gas 核算从 opcode 下沉到存储操作，消除共识安全的重复计费，手续费降 32%"
+        }
+      ]
+    },
+    {
       "text": "bootstrapping",
       "count": 1,
       "trend": -1,
@@ -13188,6 +13805,21 @@
           "url": "DAC/2025/security/abc_fhe_a_resource_efficient_accelerator_enabling_bootstrappable_parameters_for_client_side_fully_homomorphic_encryption/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "cache eviction",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "cache eviction",
+      "papers": [
+        {
+          "title": "3L-Cache: Low Overhead and Precise Learning-based Eviction Policy for Caches",
+          "url": "FAST/2025/more_machine_learning/3l_cache_low_overhead_and_precise_learning_based_eviction_policy_for_caches/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · More Machine Learning · 过滤冗余训练请求并双向采样，把学习型淘汰策略的 CPU 开销较 HALP 降低 60.9%"
         }
       ]
     },
@@ -13233,6 +13865,21 @@
           "url": "DAC/2025/security/tetrislock_quantum_circuit_split_compilation_with_interlocking_patterns/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "cloud architecture",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "cloud architecture",
+      "papers": [
+        {
+          "title": "Cloudscape: A Study of Storage Services in Modern Cloud Architectures",
+          "url": "FAST/2025/cloud_storage/cloudscape_a_study_of_storage_services_in_modern_cloud_architectures/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Cloud Storage · 把 396 个 AWS 架构访谈视频标注成可查询数据集，量化云上存储服务的真实用法"
         }
       ]
     },
@@ -13308,6 +13955,36 @@
           "url": "DAC/2025/security/cmfuzz_parallel_fuzzing_of_iot_protocols_by_configuration_model_identification_and_scheduling/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "container image",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "container image",
+      "papers": [
+        {
+          "title": "FlacIO: Flat and Collective I/O for Container Image Service",
+          "url": "FAST/2025/cloud_storage/flacio_flat_and_collective_i_o_for_container_image_service/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Cloud Storage · 以记录内存状态的运行时镜像替代按磁盘状态组织的容器镜像，冷启动最高快 23 倍"
+        }
+      ]
+    },
+    {
+      "text": "content-defined chunking",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "content-defined chunking",
+      "papers": [
+        {
+          "title": "VectorCDC: Accelerating Data Deduplication with Vector Instructions",
+          "url": "FAST/2025/compression_and_deduplication/vectorcdc_accelerating_data_deduplication_with_vector_instructions/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 用 SSE/AVX 加速无哈希 CDC，吞吐比现有向量方案高 21–46 倍"
         }
       ]
     },
@@ -13432,6 +14109,21 @@
       ]
     },
     {
+      "text": "deduplication file system",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "deduplication file system",
+      "papers": [
+        {
+          "title": "Don't Maintain Twice, It's Alright: Merged Metadata Management in Deduplication File System with GogetaFS",
+          "url": "FAST/2025/compression_and_deduplication/don_t_maintain_twice_it_s_alright_merged_metadata_management_in_deduplication_file_system_with_gogetafs/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 把去重指纹映射并入文件系统 L2P，吞吐高 5.6%–35.0%"
+        }
+      ]
+    },
+    {
       "text": "deep-learning",
       "count": 1,
       "trend": -1,
@@ -13443,6 +14135,81 @@
           "url": "DAC/2025/security/deeppufsca_deep_learning_for_physical_unclonable_function_attack_based_on_side_channel_analysis_support/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "delta compression",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "delta compression",
+      "papers": [
+        {
+          "title": "MedFS: Pursuing Low Update Overhead via Metadata-Enabled Delta Compression for Log-structured File System on Mobile Device",
+          "url": "FAST/2025/compression_and_deduplication/medfs_pursuing_low_update_overhead_via_metadata_enabled_delta_compression_for_log_structured_file_system_on_mobile_device/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 把增量块写进 inode 内联区，移动端写流量降 55.1%"
+        }
+      ]
+    },
+    {
+      "text": "disaggregated architecture",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "disaggregated architecture",
+      "papers": [
+        {
+          "title": "Mooncake: Trading More Storage for Less Computation — A KVCache-centric Architecture for Serving LLM Chatbot",
+          "url": "FAST/2025/machine_learning_and_storage/mooncake_trading_more_storage_for_less_computation_a_kvcache_centric_architecture_for_serving_llm_chatbot/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · 以 KVCache 为中心的分离式架构，池化存储替代重复预填充，容量提升 59%~498%"
+        }
+      ]
+    },
+    {
+      "text": "disaggregated storage",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "disaggregated storage",
+      "papers": [
+        {
+          "title": "HiDPU: A DPU-Oriented Hybrid Indexing Scheme for Disaggregated Storage Systems",
+          "url": "FAST/2025/more_machine_learning/hidpu_a_dpu_oriented_hybrid_indexing_scheme_for_disaggregated_storage_systems/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · More Machine Learning · DPU 上按地址连续性分段做混合索引，内存最多省 92%、查询快 6.3 倍"
+        }
+      ]
+    },
+    {
+      "text": "distributed GNN training",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "distributed GNN training",
+      "papers": [
+        {
+          "title": "LeapGNN: Accelerating Distributed GNN Training Leveraging Feature-Centric Model Migration",
+          "url": "FAST/2025/more_machine_learning/leapgnn_accelerating_distributed_gnn_training_leveraging_feature_centric_model_migration/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · More Machine Learning · 把 GNN 模型搬到顶点特征所在服务器，微图调度让分布式训练比 P3 最高快 4.2 倍"
+        }
+      ]
+    },
+    {
+      "text": "distributed lock",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "distributed lock",
+      "papers": [
+        {
+          "title": "ShiftLock: Mitigate One-sided RDMA Lock Contention via Handover",
+          "url": "FAST/2025/hardware_assist/shiftlock_mitigate_one_sided_rdma_lock_contention_via_handover/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 让 RDMA 客户端直接移交锁而不重试，有效吞吐最高提升 3.62 倍"
         }
       ]
     },
@@ -13597,6 +14364,21 @@
       ]
     },
     {
+      "text": "erasure coding",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "erasure coding",
+      "papers": [
+        {
+          "title": "Revisiting Network Coding for Warm Blob Storage",
+          "url": "FAST/2025/cloud_storage/revisiting_network_coding_for_warm_blob_storage/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Cloud Storage · 小 blob 改用非系统化 MSR 码以避开非连续 I/O，单块修复时间最多降 45.0%"
+        }
+      ]
+    },
+    {
       "text": "explainable-ai",
       "count": 1,
       "trend": -1,
@@ -13732,6 +14514,21 @@
       ]
     },
     {
+      "text": "heterogeneous storage",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "heterogeneous storage",
+      "papers": [
+        {
+          "title": "PolyStore: Exploiting Combined Capabilities of Heterogeneous Storage",
+          "url": "FAST/2025/storage_diversity_and_heterogeneity/polystore_exploiting_combined_capabilities_of_heterogeneous_storage/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Storage Diversity and Heterogeneity · 把 PM 与 NVMe 摆成同一层，微基准最高提升 9.38 倍"
+        }
+      ]
+    },
+    {
       "text": "information-leakage",
       "count": 1,
       "trend": -1,
@@ -13837,6 +14634,21 @@
       ]
     },
     {
+      "text": "journaling file system",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "journaling file system",
+      "papers": [
+        {
+          "title": "DJFS : Directory-Granularity Filesystem Journaling for CMM-H SSDs",
+          "url": "FAST/2025/file_systems/djfs_directory_granularity_filesystem_journaling_for_cmm_h_ssds/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 把日志事务粒度改成目录，让不同目录并行提交，在 CMM-H SSD 上最高提速 4.5 倍"
+        }
+      ]
+    },
+    {
       "text": "knowledge-distillation",
       "count": 1,
       "trend": -1,
@@ -13863,6 +14675,36 @@
           "url": "DAC/2025/security/zenleak_practical_last_level_cache_side_channel_attacks_on_amd_zen_processors/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "log-structured file system",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "log-structured file system",
+      "papers": [
+        {
+          "title": "ScaleLFS: A Log-Structured File System with Scalable Garbage Collection for Commodity SSDs",
+          "url": "FAST/2025/file_systems/scalelfs_a_log_structured_file_system_with_scalable_garbage_collection_for_commodity_ssds/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · File Systems · 把 LFS 的垃圾回收改成每核独立回收器加并发受害者管理，持续性能最高提升 3.5 倍"
+        }
+      ]
+    },
+    {
+      "text": "log-structured filesystem",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "log-structured filesystem",
+      "papers": [
+        {
+          "title": "D2FS: Device-Driven Filesystem Garbage Collection",
+          "url": "FAST/2025/hardware_assist/d2fs_device_driven_filesystem_garbage_collection/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 让闪存设备替 F2FS 回收空闲段，FIO 下吞吐比 F2FS 高 3 倍"
         }
       ]
     },
@@ -13972,6 +14814,21 @@
       ]
     },
     {
+      "text": "memory compression",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "memory compression",
+      "papers": [
+        {
+          "title": "Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices",
+          "url": "FAST/2025/compression_and_deduplication/archer_adaptive_memory_compression_with_page_association_rule_awareness_for_high_speed_response_of_mobile_devices/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 按页关联规则做变粒度内存压缩，应用启动快 1.55 倍"
+        }
+      ]
+    },
+    {
       "text": "memory-security",
       "count": 1,
       "trend": -1,
@@ -13983,6 +14840,21 @@
           "url": "DAC/2025/security/autoskewbmt_autonomously_synthesizing_optimized_integrity_authentication_mechanism_for_dnn_accelerators/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "metadata management",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "metadata management",
+      "papers": [
+        {
+          "title": "Don't Maintain Twice, It's Alright: Merged Metadata Management in Deduplication File System with GogetaFS",
+          "url": "FAST/2025/compression_and_deduplication/don_t_maintain_twice_it_s_alright_merged_metadata_management_in_deduplication_file_system_with_gogetafs/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Compression and Deduplication · 把去重指纹映射并入文件系统 L2P，吞吐高 5.6%–35.0%"
         }
       ]
     },
@@ -14062,6 +14934,21 @@
       ]
     },
     {
+      "text": "on-device computing",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "on-device computing",
+      "papers": [
+        {
+          "title": "Selective On-Device Execution of Data-Dependent Read I/Os",
+          "url": "FAST/2025/hardware_assist/selective_on_device_execution_of_data_dependent_read_i_os/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Hardware Assist · 在设备内选择性重提交数据依赖读，B+-树 KV 吞吐最高提升 41%"
+        }
+      ]
+    },
+    {
       "text": "out-of-band",
       "count": 1,
       "trend": -1,
@@ -14122,17 +15009,17 @@
       ]
     },
     {
-      "text": "processing-in-memory",
+      "text": "prefix KV cache",
       "count": 1,
       "trend": -1,
-      "conf_info": "DAC 2025 (1 paper)",
-      "search_term": "processing-in-memory",
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "prefix KV cache",
       "papers": [
         {
-          "title": "Guarder: A Stable and Lightweight Reconfigurable RRAM-based PIM Accelerator for DNN IP Protection",
-          "url": "DAC/2025/security/guarder_a_stable_and_lightweight_reconfigurable_rram_based_pim_accelerator_for_dnn_ip_protection/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Security"
+          "title": "IMPRESS: An Importance-Informed Multi-Tier Prefix KV Storage System for Large Language Model Inference",
+          "url": "FAST/2025/machine_learning_and_storage/impress_an_importance_informed_multi_tier_prefix_kv_storage_system_for_large_language_model_inference/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Machine Learning and Storage · 只加载重要前缀 KV 的三层 KV 存储，TTFT 最多缩短至 1/2.8"
         }
       ]
     },
@@ -14358,6 +15245,21 @@
           "url": "DAC/2025/security/bpufuzzer_effective_fuzz_testing_for_branching_transient_execution_vulnerabilities_of_risc_v_cpu/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Security"
+        }
+      ]
+    },
+    {
+      "text": "storage order",
+      "count": 1,
+      "trend": -1,
+      "conf_info": "FAST 2025 (1 paper)",
+      "search_term": "storage order",
+      "papers": [
+        {
+          "title": "OPIMQ: Order Preserving IO stack for Multi-Queue Block Device",
+          "url": "FAST/2025/security_integrity_and_consistency/opimq_order_preserving_io_stack_for_multi_queue_block_device/",
+          "conf": "FAST 2025",
+          "summary": "FAST 2025 · Security, Integrity, and Consistency · 用 cache barrier 保住多队列并行度，IO 栈吞吐提升 2.9 倍"
         }
       ]
     },

@@ -1,6 +1,6 @@
 ---
 title: "Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference"
-description: "ATC 2025 · Serving Intelligence: Efficient LLM Inference at the Edge and Cloud · "
+description: "ATC 2025 · Serving Intelligence: Efficient LLM Inference at the Edge and Cloud · Torpor：面向低延迟、资源高效推理的 GPU 无服务器计算"
 tags:
   - "ATC2025"
   - "Serving Intelligence: Efficient LLM Inference at the Edge and Cloud"
@@ -8,31 +8,14 @@ tags:
 
 # Torpor: GPU-Enabled Serverless Computing for Low-Latency, Resource-Efficient Inference
 
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 ATC 2025，所属方向：Serving Intelligence: Efficient LLM Inference at the Edge and Cloud。</p>
-<p class="paper-seo-summary__tags">ATC 2025 · Serving Intelligence: Efficient LLM Inference at the Edge and Cloud</p>
-</div>
+**中文标题**：Torpor：面向低延迟、资源高效推理的 GPU 无服务器计算
 
-**USENIX 页面**：[https://www.usenix.org/conference/atc25/presentation/yu](https://www.usenix.org/conference/atc25/presentation/yu)
+**所属 Session**：[Serving Intelligence: Efficient LLM Inference at the Edge and Cloud](index.md) · [ATC 2025](../index.md)
 
-**作者**：
+**作者**：Minchen Yu, The Chinese University of Hong Kong, Shenzhen; and Hong Kong University of Science and Technology; Ao Wang, Alibaba Group; Dong Chen, Haoxuan Yu, Xiaonan Luo, Zhuohao Li, and Wei Wang, Hong Kong University of Science and Technology; Ruichuan Chen, Nokia Bell Labs; Dapeng Nie, Haoran Yang, and Yu Ding, Alibaba Group
 
 **会议**：ATC 2025 · Boston, MA
 
----
+**USENIX 页面**：[论文摘要与资料](https://www.usenix.org/conference/atc25/presentation/yu)
 
-## 一句话总结
-
-> 该工作属于 Serving Intelligence: Efficient LLM Inference at the Edge and Cloud 方向，在系统软件与云计算领域提出关键优化或设计，在 ATC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别操作系统、存储或云计算中的关键瓶颈。
-- 提出系统级设计或优化方案，兼顾实用性与可部署性。
-- 在真实系统或代表性基准上进行评估。
-
-## 主要结果
-
-- 在性能、可靠性或效率方面相对基线实现显著改进。
-- 与现有系统软件栈兼容，具备实际部署价值。
-- 为后续系统软件研究提供新的设计视角。
+[返回 Serving Intelligence: Efficient LLM Inference at the Edge and Cloud](index.md) · [返回 ATC 2025](../index.md)

@@ -21,7 +21,10 @@ hide:
 
 # 计算机体系结构论文导读
 
-<p class="hero-subtitle">📌聚焦<a href="ccflist/ccf2026‑ranked‑list.pdf" target="_blank">中国计算机学会推荐国际学术会议</a>（计算机体系结构/并行与分布计算/存储系统）<br>✨覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC · HPDC 顶级会议<br>🔄持续更新中✍️</p>
+<p class="hero-subtitle">📌聚焦<a href="ccflist/ccf2026-ranked-list.pdf" target="_blank" rel="noopener noreferrer">中国计算机学会推荐国际学术会议</a>（计算机体系结构/并行与分布计算/存储系统）<br>✨覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC · HPDC 顶级会议<br>🔄持续更新中✍️</p>
+
+
+📚 [查看 CCF 2026 推荐国际学术会议和期刊目录](ccflist/ccf2026-ranked-list.md)
 
 <!-- hitwebcounter Code START -->
 <!-- <a href="https://www.hitwebcounter.com/convert-pdf-to-jpg" target="_blank" rel="noopener" title="Convert PDF to JPG free">
@@ -71,8 +74,8 @@ hide:
   <div class="conf-cube__name">MICRO</div>
   <div class="conf-cube__full">IEEE/ACM International Symposium on Microarchitecture</div>
   <div class="conf-cube__years">
-    <a class="conf-cube__year-link" href="MICRO/2025/">2025</a>
     <a class="conf-cube__year-link" href="MICRO/2026/">2026</a>
+    <a class="conf-cube__year-link" href="MICRO/2025/">2025</a>
   </div>
 </div>
 
@@ -100,7 +103,9 @@ hide:
   <div class="conf-cube__name">FAST</div>
   <div class="conf-cube__full">USENIX Conference on File and Storage Technologies</div>
   <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="FAST/2026/">2026</a>
     <a class="conf-cube__year-link" href="FAST/2025/">2025</a>
+    <a class="conf-cube__year-link" href="FAST/2024/">2024</a>
   </div>
 </div>
 
@@ -136,6 +141,7 @@ hide:
   <div class="conf-cube__name">ATC</div>
   <div class="conf-cube__full">ACM SIGOPS Annual Technical Conference</div>
   <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="ATC/2026/">2026</a>
     <a class="conf-cube__year-link" href="ATC/2025/">2025</a>
   </div>
 </div>

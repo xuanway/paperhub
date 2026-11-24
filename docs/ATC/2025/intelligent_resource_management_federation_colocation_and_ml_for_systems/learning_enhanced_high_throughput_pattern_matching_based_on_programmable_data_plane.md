@@ -1,6 +1,6 @@
 ---
 title: "Learning-Enhanced High-Throughput Pattern Matching Based on Programmable Data Plane"
-description: "ATC 2025 · Intelligent Resource Management: Federation, Colocation, and ML for Systems · "
+description: "ATC 2025 · Intelligent Resource Management: Federation, Colocation, and ML for Systems · 基于可编程数据平面的学习增强型高吞吐模式匹配"
 tags:
   - "ATC2025"
   - "Intelligent Resource Management: Federation, Colocation, and ML for Systems"
@@ -8,31 +8,14 @@ tags:
 
 # Learning-Enhanced High-Throughput Pattern Matching Based on Programmable Data Plane
 
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 ATC 2025，所属方向：Intelligent Resource Management: Federation, Colocation, and ML for Systems。</p>
-<p class="paper-seo-summary__tags">ATC 2025 · Intelligent Resource Management: Federation, Colocation, and ML for Systems</p>
-</div>
+**中文标题**：基于可编程数据平面的学习增强型高吞吐模式匹配
 
-**USENIX 页面**：[https://www.usenix.org/conference/atc25/presentation/duan-guanglin](https://www.usenix.org/conference/atc25/presentation/duan-guanglin)
+**所属 Session**：[Intelligent Resource Management: Federation, Colocation, and ML for Systems](index.md) · [ATC 2025](../index.md)
 
-**作者**：
+**作者**：Guanglin Duan and Yucheng Huang, Peng Cheng Laboratory, Tsinghua Shenzhen International Graduate School; Zhengxin Zhang, Peng Cheng Laboratory, Tsinghua Shenzhen International Graduate School, and Cornell University; Qing Li and Dan Zhao, Peng Cheng Laboratory; Zili Meng, Hong Kong University of Science and Technology; Dirk Kutscher, Hong Kong University of Science and Technology (Guangzhou); Ruoyu Li, Shenzhen University and Peng Cheng Laboratory; Yong Jiang, Tsinghua Shenzhen International Graduate School; Mingwei Xu, Tsinghua University
 
 **会议**：ATC 2025 · Boston, MA
 
----
+**USENIX 页面**：[论文摘要与资料](https://www.usenix.org/conference/atc25/presentation/duan-guanglin)
 
-## 一句话总结
-
-> 该工作属于 Intelligent Resource Management: Federation, Colocation, and ML for Systems 方向，在系统软件与云计算领域提出关键优化或设计，在 ATC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别操作系统、存储或云计算中的关键瓶颈。
-- 提出系统级设计或优化方案，兼顾实用性与可部署性。
-- 在真实系统或代表性基准上进行评估。
-
-## 主要结果
-
-- 在性能、可靠性或效率方面相对基线实现显著改进。
-- 与现有系统软件栈兼容，具备实际部署价值。
-- 为后续系统软件研究提供新的设计视角。
+[返回 Intelligent Resource Management: Federation, Colocation, and ML for Systems](index.md) · [返回 ATC 2025](../index.md)

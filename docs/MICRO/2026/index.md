@@ -1,52 +1,55 @@
 ---
 title: "MICRO 2026 论文集"
-description: "MICRO 2026 · 34 个正式论文 Session · 220 篇论文的中英文标题与摘要"
+description: "MICRO 2026 Main Program 全部 34 个论文 Session、220 篇论文的中英文摘要索引与研究制品链接。"
+tags:
+  - "MICRO2026"
+  - "Computer Architecture"
 ---
 
 # MICRO 2026
 
-MICRO 2026 共收到 842 篇论文投稿，主研究赛道接收 213 篇（录用率为 25.3%）；本届首次设置的 Industry Track 共接收 7 篇论文，全部安排在 Session 1C。
-
-[官方日程](https://www.microarch.org/micro59/program/)
+本页参照 [MICRO 2025 论文集](../2025/index.md) 的组织方式，按 [MICRO 2026 Main Program](https://www.microarch.org/micro59/program/) 收录全部 **34 个论文 Session、220 篇论文**。MICRO 2026 共收到 842 篇论文投稿；主研究赛道接收 213 篇（录用率 25.3%），首次设置的 Industry Track 接收 7 篇论文，全部安排在 Session 1C。
 
 ## Session 导航 {#session-nav}
 
+按会议日程浏览 Session；点击 Session 名称可查看该场次的论文列表。
+
 | Session | 中文主题 | 论文数 |
-| --- | --- | --- |
-| [Session 1A](#session-1a) | GPU 微架构与数值精度 | 7 |
-| [Session 1B](#session-1b) | 面向 LLM/MoE 服务的三维堆叠与存内处理架构 | 7 |
-| [Session 1C](#session-1c) | 产业专题 | 7 |
-| [Session 1D](#session-1d) | 低比特查找表与稀疏推理 | 7 |
-| [Session 2A](#session-2a) | 机器学习系统互连 | 7 |
-| [Session 2B](#session-2b) | 内存系统功耗、刷新与预测式预取 | 7 |
-| [Session 2C](#session-2c) | 杰出论文 I：内存系统与微架构 | 6 |
-| [Session 2D](#session-2d) | 机器人、视觉与图工作负载加速器 | 7 |
-| [Session 3A](#session-3a) | 分支预测与指令级预取 | 7 |
-| [Session 3B](#session-3b) | 设计方法：仿真与性能建模 | 7 |
-| [Session 3C](#session-3c) | 杰出论文 II：安全、验证与高效机器学习系统 | 6 |
-| [Session 3D](#session-3d) | 量子计算 | 7 |
-| [Session 4A](#session-4a) | 近数据处理与存内处理设计探索 | 5 |
-| [Session 4B](#session-4b) | 侧信道攻击与机密计算 | 5 |
-| [Session 4C](#session-4c) | 热感知三维堆叠 LLM 加速器 | 5 |
-| [Session 5A](#session-5a) | 加速器空间映射与高层次综合 | 5 |
-| [Session 5B](#session-5b) | 新兴技术与可靠性 | 5 |
-| [Session 5C](#session-5c) | CXL、缓存与 GPU 带宽管理 | 5 |
-| [Session 6A](#session-6a) | 微架构与编译器 | 7 |
-| [Session 6B](#session-6b) | 能量受限与容错系统 | 7 |
-| [Session 6C](#session-6c) | 面向 LLM 推理的低比特量化 | 7 |
-| [Session 6D](#session-6d) | 基于 CXL 的分层内存与存储 | 7 |
-| [Session 7A](#session-7a) | GPU 内存与流水线效率技术 | 7 |
-| [Session 7B](#session-7b) | 面向设计空间探索的性能与功耗建模 | 7 |
-| [Session 7C](#session-7c) | 视觉语言与多模态模型加速 | 7 |
-| [Session 7D](#session-7d) | 缓存与内存级并行 | 7 |
-| [Session 8A](#session-8a) | 存内处理与近存长上下文 LLM 服务 | 7 |
-| [Session 8B](#session-8b) | DRAM 可靠性、纠错码与地址转换 | 7 |
-| [Session 8C](#session-8c) | 面向 LLM/GNN 推理的脉动阵列与数据流创新 | 7 |
-| [Session 8D](#session-8d) | 量子计算与新兴技术 | 7 |
-| [Session 9A](#session-9a) | FPGA/CGRA 加速器 | 6 |
-| [Session 9B](#session-9b) | 近存与存储内搜索加速 | 6 |
-| [Session 9C](#session-9c) | 并行架构与数据中心系统 | 6 |
-| [Session 9D](#session-9d) | 安全内存共享与密码计算加速 | 6 |
+| --- | --- | ---: |
+| [Session 1A: GPU Microarchitecture & Numerical Precision](Session-1A/index.md) | GPU 微架构与数值精度 | 7 |
+| [Session 1B: 3D-Stacked & PIM Architectures for LLM/MoE Serving](Session-1B/index.md) | 面向 LLM/MoE 服务的三维堆叠与存内处理架构 | 7 |
+| [Session 1C: Industry Session](Session-1C/index.md) | 产业专题 | 7 |
+| [Session 1D: Low-Bit LUT-Based & Sparse Inference](Session-1D/index.md) | 低比特查找表与稀疏推理 | 7 |
+| [Session 2A: ML System Interconnect](Session-2A/index.md) | 机器学习系统互连 | 7 |
+| [Session 2B: Memory System Power, Refresh & Predictive Prefetching](Session-2B/index.md) | 内存系统功耗、刷新与预测式预取 | 7 |
+| [Session 2C: Distinguished Papers I - Memory Systems & Microarchitecture](Session-2C/index.md) | 杰出论文 I：内存系统与微架构 | 6 |
+| [Session 2D: Accelerators for Robotics, Vision & Graph Workloads](Session-2D/index.md) | 机器人、视觉与图工作负载加速器 | 7 |
+| [Session 3A: Branch Prediction & Instruction-Level Prefetching](Session-3A/index.md) | 分支预测与指令级预取 | 7 |
+| [Session 3B: Design Methodology: Simulation & Performance Modeling](Session-3B/index.md) | 设计方法：仿真与性能建模 | 7 |
+| [Session 3C: Distinguished Papers II - Security, Verification & Efficient ML Systems](Session-3C/index.md) | 杰出论文 II：安全、验证与高效机器学习系统 | 6 |
+| [Session 3D: Quantum](Session-3D/index.md) | 量子计算 | 7 |
+| [Session 4A: NDP and PIM Design Exploration](Session-4A/index.md) | 近数据处理与存内处理设计探索 | 5 |
+| [Session 4B: Side-Channel Attacks & Confidential Computing](Session-4B/index.md) | 侧信道攻击与机密计算 | 5 |
+| [Session 4C: Thermal-Aware 3D-Stacked LLM Accelerators](Session-4C/index.md) | 热感知三维堆叠 LLM 加速器 | 5 |
+| [Session 5A: Accelerator Spatial Mapping & High-Level Synthesis](Session-5A/index.md) | 加速器空间映射与高层次综合 | 5 |
+| [Session 5B: Emerging Technologies and Reliability](Session-5B/index.md) | 新兴技术与可靠性 | 5 |
+| [Session 5C: CXL, Caching & GPU Bandwidth Management](Session-5C/index.md) | CXL、缓存与 GPU 带宽管理 | 5 |
+| [Session 6A: Microarchitecture & Compilers](Session-6A/index.md) | 微架构与编译器 | 7 |
+| [Session 6B: Energy-Constrained & Fault-Tolerant Systems](Session-6B/index.md) | 能量受限与容错系统 | 7 |
+| [Session 6C: Low-Bit Quantization for LLM Inference](Session-6C/index.md) | 面向 LLM 推理的低比特量化 | 7 |
+| [Session 6D: CXL-Based Tiered Memory & Storage](Session-6D/index.md) | 基于 CXL 的分层内存与存储 | 7 |
+| [Session 7A: Memory & Pipeline Efficiency Techniques for GPU](Session-7A/index.md) | GPU 内存与流水线效率技术 | 7 |
+| [Session 7B: Performance & Power Modeling for DSE](Session-7B/index.md) | 面向设计空间探索的性能与功耗建模 | 7 |
+| [Session 7C: Vision-Language & Multimodal Model Acceleration](Session-7C/index.md) | 视觉语言与多模态模型加速 | 7 |
+| [Session 7D: Cache & Memory-Level Parallelism](Session-7D/index.md) | 缓存与内存级并行 | 7 |
+| [Session 8A: PIM & Near-Memory Long-Context LLM Serving](Session-8A/index.md) | 存内处理与近存长上下文 LLM 服务 | 7 |
+| [Session 8B: DRAM Reliability, ECC & Address Translation](Session-8B/index.md) | DRAM 可靠性、纠错码与地址转换 | 7 |
+| [Session 8C: Systolic & Dataflow Innovations for LLM/GNN Inference](Session-8C/index.md) | 面向 LLM/GNN 推理的脉动阵列与数据流创新 | 7 |
+| [Session 8D: Quantum & Emerging Technologies](Session-8D/index.md) | 量子计算与新兴技术 | 7 |
+| [Session 9A: FPGA / CGRA Accelerators](Session-9A/index.md) | FPGA/CGRA 加速器 | 6 |
+| [Session 9B: Near-Memory & In-Storage Search Acceleration](Session-9B/index.md) | 近存与存储内搜索加速 | 6 |
+| [Session 9C: Parallel Architectures / Datacenter Systems](Session-9C/index.md) | 并行架构与数据中心系统 | 6 |
+| [Session 9D: Secure Memory Sharing & Cryptographic Acceleration](Session-9D/index.md) | 安全内存共享与密码计算加速 | 6 |
 
 ## Session 1A: GPU Microarchitecture & Numerical Precision {#session-1a}
 

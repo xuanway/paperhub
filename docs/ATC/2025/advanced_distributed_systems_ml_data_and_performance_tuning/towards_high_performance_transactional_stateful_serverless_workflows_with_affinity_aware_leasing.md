@@ -1,6 +1,6 @@
 ---
 title: "Towards High-Performance Transactional Stateful Serverless Workflows with Affinity-Aware Leasing"
-description: "ATC 2025 · Advanced Distributed Systems: ML, Data, and Performance Tuning · "
+description: "ATC 2025 · Advanced Distributed Systems: ML, Data, and Performance Tuning · 通过亲和性感知租约实现高性能事务性有状态无服务器工作流"
 tags:
   - "ATC2025"
   - "Advanced Distributed Systems: ML, Data, and Performance Tuning"
@@ -8,31 +8,14 @@ tags:
 
 # Towards High-Performance Transactional Stateful Serverless Workflows with Affinity-Aware Leasing
 
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 ATC 2025，所属方向：Advanced Distributed Systems: ML, Data, and Performance Tuning。</p>
-<p class="paper-seo-summary__tags">ATC 2025 · Advanced Distributed Systems: ML, Data, and Performance Tuning</p>
-</div>
+**中文标题**：通过亲和性感知租约实现高性能事务性有状态无服务器工作流
 
-**USENIX 页面**：[https://www.usenix.org/conference/atc25/presentation/zhao-jianjun](https://www.usenix.org/conference/atc25/presentation/zhao-jianjun)
+**所属 Session**：[Advanced Distributed Systems: ML, Data, and Performance Tuning](index.md) · [ATC 2025](../index.md)
 
-**作者**：
+**作者**：Jianjun Zhao, Haikun Liu, Shuhao Zhang, and Haodi Lu, Huazhong University of Science and Technology; Yancan Mao, School of Computing, National University of Singapore; Zhuohui Duan, Xiaofei Liao, and Hai Jin, Huazhong University of Science and Technology
 
 **会议**：ATC 2025 · Boston, MA
 
----
+**USENIX 页面**：[论文摘要与资料](https://www.usenix.org/conference/atc25/presentation/zhao-jianjun)
 
-## 一句话总结
-
-> 该工作属于 Advanced Distributed Systems: ML, Data, and Performance Tuning 方向，在系统软件与云计算领域提出关键优化或设计，在 ATC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别操作系统、存储或云计算中的关键瓶颈。
-- 提出系统级设计或优化方案，兼顾实用性与可部署性。
-- 在真实系统或代表性基准上进行评估。
-
-## 主要结果
-
-- 在性能、可靠性或效率方面相对基线实现显著改进。
-- 与现有系统软件栈兼容，具备实际部署价值。
-- 为后续系统软件研究提供新的设计视角。
+[返回 Advanced Distributed Systems: ML, Data, and Performance Tuning](index.md) · [返回 ATC 2025](../index.md)

@@ -1,6 +1,6 @@
 ---
 title: "The Koala Benchmarks for the Shell: Characterization and Implications"
-description: "ATC 2025 · Performance: Benchmarking, Caching, and Workload Characterization · "
+description: "ATC 2025 · Performance: Benchmarking, Caching, and Workload Characterization · Koala Shell 基准测试：特征分析及其启示"
 tags:
   - "ATC2025"
   - "Performance: Benchmarking, Caching, and Workload Characterization"
@@ -8,31 +8,14 @@ tags:
 
 # The Koala Benchmarks for the Shell: Characterization and Implications
 
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 ATC 2025，所属方向：Performance: Benchmarking, Caching, and Workload Characterization。</p>
-<p class="paper-seo-summary__tags">ATC 2025 · Performance: Benchmarking, Caching, and Workload Characterization</p>
-</div>
+**中文标题**：Koala Shell 基准测试：特征分析及其启示
 
-**USENIX 页面**：[https://www.usenix.org/conference/atc25/presentation/lamprou](https://www.usenix.org/conference/atc25/presentation/lamprou)
+**所属 Session**：[Performance: Benchmarking, Caching, and Workload Characterization](index.md) · [ATC 2025](../index.md)
 
-**作者**：
+**作者**：Evangelos Lamprou and Ethan Williams, Brown University; Georgios Kaoukis, National Technical University of Athens; Zhuoxuan Zhang, Brown University; Michael Greenberg, Stevens Institute of Technology; Konstantinos Kallas, University of California, Los Angeles; Lukas Lazarek and Nikos Vasilakis, Brown University Awarded Best Paper!
 
-**会议**：ATC 2025 · Boston, MA
+**会议**：ATC 2025 · Boston, MA · **最佳论文**
 
----
+**USENIX 页面**：[论文摘要与资料](https://www.usenix.org/conference/atc25/presentation/lamprou)
 
-## 一句话总结
-
-> 该工作属于 Performance: Benchmarking, Caching, and Workload Characterization 方向，在系统软件与云计算领域提出关键优化或设计，在 ATC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别操作系统、存储或云计算中的关键瓶颈。
-- 提出系统级设计或优化方案，兼顾实用性与可部署性。
-- 在真实系统或代表性基准上进行评估。
-
-## 主要结果
-
-- 在性能、可靠性或效率方面相对基线实现显著改进。
-- 与现有系统软件栈兼容，具备实际部署价值。
-- 为后续系统软件研究提供新的设计视角。
+[返回 Performance: Benchmarking, Caching, and Workload Characterization](index.md) · [返回 ATC 2025](../index.md)

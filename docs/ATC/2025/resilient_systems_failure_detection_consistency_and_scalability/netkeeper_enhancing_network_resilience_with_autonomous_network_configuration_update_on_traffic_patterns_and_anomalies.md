@@ -1,6 +1,6 @@
 ---
 title: "NetKeeper: Enhancing Network Resilience with Autonomous Network Configuration Update on Traffic Patterns and Anomalies"
-description: "ATC 2025 · Resilient Systems: Failure Detection, Consistency, and Scalability · "
+description: "ATC 2025 · Resilient Systems: Failure Detection, Consistency, and Scalability · NetKeeper：根据流量模式与异常自主更新网络配置以增强网络韧性"
 tags:
   - "ATC2025"
   - "Resilient Systems: Failure Detection, Consistency, and Scalability"
@@ -8,31 +8,14 @@ tags:
 
 # NetKeeper: Enhancing Network Resilience with Autonomous Network Configuration Update on Traffic Patterns and Anomalies
 
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 ATC 2025，所属方向：Resilient Systems: Failure Detection, Consistency, and Scalability。</p>
-<p class="paper-seo-summary__tags">ATC 2025 · Resilient Systems: Failure Detection, Consistency, and Scalability</p>
-</div>
+**中文标题**：NetKeeper：根据流量模式与异常自主更新网络配置以增强网络韧性
 
-**USENIX 页面**：[https://www.usenix.org/conference/atc25/presentation/wan](https://www.usenix.org/conference/atc25/presentation/wan)
+**所属 Session**：[Resilient Systems: Failure Detection, Consistency, and Scalability](index.md) · [ATC 2025](../index.md)
 
-**作者**：
+**作者**：Zhaoyang Wan, Rongxin Han, Haifeng Sun, Qi Qi, Zirui Zhuang, and Bo He, State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications; Liang Zhang, Huawei Technologies Co., Ltd; Jianxin Liao and Jingyu Wang, State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications
 
 **会议**：ATC 2025 · Boston, MA
 
----
+**USENIX 页面**：[论文摘要与资料](https://www.usenix.org/conference/atc25/presentation/wan)
 
-## 一句话总结
-
-> 该工作属于 Resilient Systems: Failure Detection, Consistency, and Scalability 方向，在系统软件与云计算领域提出关键优化或设计，在 ATC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别操作系统、存储或云计算中的关键瓶颈。
-- 提出系统级设计或优化方案，兼顾实用性与可部署性。
-- 在真实系统或代表性基准上进行评估。
-
-## 主要结果
-
-- 在性能、可靠性或效率方面相对基线实现显著改进。
-- 与现有系统软件栈兼容，具备实际部署价值。
-- 为后续系统软件研究提供新的设计视角。
+[返回 Resilient Systems: Failure Detection, Consistency, and Scalability](index.md) · [返回 ATC 2025](../index.md)

@@ -6,11 +6,11 @@ Updates:
 2) mkdocs.yml        – rebuilds the ATC 2025 nav block
 3) docs/index.md     – updates the ATC 2025 card count & stat
 
-Run:
+Run with an empty docs/ATC/2025 directory:
   python3 scripts/import_atc_2025.py
 """
 from __future__ import annotations
-import os, re, subprocess
+import re, subprocess
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -25,7 +25,7 @@ INDEX_MD = DOCS / "index.md"
 CONF = "ATC"
 YEAR = "2025"
 LOCATION = "Boston, MA"
-DATE = "2025年7月9日 - 7月11日"
+DATE = "2025年7月7日 - 7月9日"
 URL = "https://www.usenix.org/conference/atc25/technical-sessions"
 BASE_URL = "https://www.usenix.org"
 SKIP_SESSIONS = {"Opening", "Keynote Address", "Closing Remarks", "Awards", "Invited Talk", "Keynote", "Reception"}
@@ -88,8 +88,10 @@ def parse_usenix_sessions(html: str) -> Dict[str, List[Paper]]:
             if not title:
                 continue
 
-            auth_div = pap.find("div", class_=lambda c: c and "presented-by" in (c or ""))
-            authors = " ".join(auth_div.get_text(" ", strip=True).split()) if auth_div else ""
+            auth_div = pap.find("div", class_="field-name-field-paper-people-text")
+            if not auth_div or not auth_div.get_text(" ", strip=True):
+                raise ValueError(f"Missing authors for paper: {title}")
+            authors = " ".join(auth_div.get_text(" ", strip=True).split())
 
             media_div = pap.find("div", class_=lambda c: c and "group-available-media" in (c or ""))
             pdf = slides = video = ""
@@ -214,17 +216,9 @@ hide:
 
 def build_docs(tracks: Dict[str, List[Paper]]) -> Tuple[int, Dict[str, str]]:
     base = DOCS / CONF / YEAR
+    if base.exists() and any(base.iterdir()):
+        raise FileExistsError(f"Refusing to overwrite existing conference content: {base}")
     base.mkdir(parents=True, exist_ok=True)
-    for child in base.iterdir():
-        if child.is_dir():
-            for r, ds, fs in os.walk(child, topdown=False):
-                for f in fs:
-                    Path(r, f).unlink()
-                for d in ds:
-                    Path(r, d).rmdir()
-            child.rmdir()
-        elif child.name.endswith(".md"):
-            child.unlink()
 
     slug_map: Dict[str, str] = {}
     used_slugs: Dict[str, int] = {}

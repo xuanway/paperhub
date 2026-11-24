@@ -1,6 +1,6 @@
 ---
 title: "PPipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism"
-description: "ATC 2025 · Optimizing ML Execution: Compilers, Pipelines, and Runtimes · "
+description: "ATC 2025 · Optimizing ML Execution: Compilers, Pipelines, and Runtimes · PPipe：通过基于池的流水线并行在异构 GPU 集群上高效提供视频分析服务"
 tags:
   - "ATC2025"
   - "Optimizing ML Execution: Compilers, Pipelines, and Runtimes"
@@ -8,31 +8,14 @@ tags:
 
 # PPipe: Efficient Video Analytics Serving on Heterogeneous GPU Clusters via Pool-Based Pipeline Parallelism
 
-<div class="paper-seo-summary">
-<p class="paper-seo-summary__desc">该论文收录于 ATC 2025，所属方向：Optimizing ML Execution: Compilers, Pipelines, and Runtimes。</p>
-<p class="paper-seo-summary__tags">ATC 2025 · Optimizing ML Execution: Compilers, Pipelines, and Runtimes</p>
-</div>
+**中文标题**：PPipe：通过基于池的流水线并行在异构 GPU 集群上高效提供视频分析服务
 
-**USENIX 页面**：[https://www.usenix.org/conference/atc25/presentation/kong](https://www.usenix.org/conference/atc25/presentation/kong)
+**所属 Session**：[Optimizing ML Execution: Compilers, Pipelines, and Runtimes](index.md) · [ATC 2025](../index.md)
 
-**作者**：
+**作者**：Z. Jonny Kong, Qiang Xu, and Y. Charlie Hu, Purdue University
 
 **会议**：ATC 2025 · Boston, MA
 
----
+**USENIX 页面**：[论文摘要与资料](https://www.usenix.org/conference/atc25/presentation/kong)
 
-## 一句话总结
-
-> 该工作属于 Optimizing ML Execution: Compilers, Pipelines, and Runtimes 方向，在系统软件与云计算领域提出关键优化或设计，在 ATC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别操作系统、存储或云计算中的关键瓶颈。
-- 提出系统级设计或优化方案，兼顾实用性与可部署性。
-- 在真实系统或代表性基准上进行评估。
-
-## 主要结果
-
-- 在性能、可靠性或效率方面相对基线实现显著改进。
-- 与现有系统软件栈兼容，具备实际部署价值。
-- 为后续系统软件研究提供新的设计视角。
+[返回 Optimizing ML Execution: Compilers, Pipelines, and Runtimes](index.md) · [返回 ATC 2025](../index.md)
