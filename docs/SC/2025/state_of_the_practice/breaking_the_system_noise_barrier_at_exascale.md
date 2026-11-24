@@ -8,6 +8,10 @@ tags:
 
 # Breaking the System Noise Barrier at Exascale
 
+**中文标题：** 在百亿亿次规模突破系统噪声屏障
+
+**所属 Session：** [State of the Practice](index.md) · [SC 2025](../index.md)
+
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__desc">该论文收录于 SC 2025，所属方向：State of the Practice。</p>
 <p class="paper-seo-summary__tags">SC 2025 · State of the Practice</p>
@@ -17,23 +21,14 @@ tags:
 
 **会议**：SC 2025 · St. Louis, MO
 
-## 摘要
+**官方资料：** [论文详情](https://sc25.conference-program.com/?post_type=page&p=14&id=pap257&sess=sess301)（摘要、论文及演示材料以官方页面提供情况为准）
 
-To meet the increasing demands of parallel scientific applications, supercomputers continue to grow in both scale and complexity. The fastest supercomputer in the world, El Capitan, features over a million CPU cores and tens of thousands of GPUs. Applications running on such large-scale systems are particularly susceptible to system noise or interference caused by the operating system (OS) and other services running on the same compute nodes as the application. In this paper, we address this critical performance and scalability challenge on El Capitan, enabling scientific applications to better leverage the benefits of the world's fastest supercomputer. Our strategy comprises two key components: (1) isolating system services from applications and (2) applying OS-level tuning to maintain minimal application interference. As part of this effort, we provide a distribution-independent tuning guide applicable to any Linux system, and we propose and evaluate general strategies for isolating 
+## 摘要摘录
+
+原有摘录在 1000 字符处截断；完整摘要请查看官方论文详情。
+
+To meet the increasing demands of parallel scientific applications, supercomputers continue to grow in both scale and complexity. The fastest supercomputer in the world, El Capitan, features over a million CPU cores and tens of thousands of GPUs. Applications running on such large-scale systems are particularly susceptible to system noise or interference caused by the operating system (OS) and other services running on the same compute nodes as the application. In this paper, we address this critical performance and scalability challenge on El Capitan, enabling scientific applications to better leverage the benefits of the world's fastest supercomputer. Our strategy comprises two key components: (1) isolating system services from applications and (2) applying OS-level tuning to maintain minimal application interference. As part of this effort, we provide a distribution-independent tuning guide applicable to any Linux system, and we propose and evaluate general strategies for isolating
 
 ---
 
-## 一句话总结
-
-> 该工作属于 State of the Practice 方向，在高性能计算领域提出关键设计，在 SC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别 HPC 系统中的核心挑战或性能瓶颈。
-- 提出系统级或算法级优化方案，注重可扩展性。
-- 在超算或大规模集群上进行充分评估。
-
-## 主要结果
-
-- 在性能、可扩展性或能效方面相对基线实现改进。
-- 为 State of the Practice 领域贡献新的设计范式或评估框架。
+[返回 Session](index.md) · [SC 2025 主页](../index.md)

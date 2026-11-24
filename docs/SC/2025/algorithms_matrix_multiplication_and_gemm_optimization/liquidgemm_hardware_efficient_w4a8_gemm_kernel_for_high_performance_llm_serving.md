@@ -8,6 +8,10 @@ tags:
 
 # LiquidGEMM: Hardware-Efficient W4A8 GEMM Kernel for High-Performance LLM Serving
 
+**中文标题：** 面向高性能大语言模型服务的硬件高效 W4A8 GEMM 内核
+
+**所属 Session：** [Algorithms: Matrix Multiplication and GEMM Optimization](index.md) · [SC 2025](../index.md)
+
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__desc">该论文收录于 SC 2025，所属方向：Algorithms: Matrix Multiplication and GEMM Optimization。</p>
 <p class="paper-seo-summary__tags">SC 2025 · Algorithms: Matrix Multiplication and GEMM Optimization</p>
@@ -17,23 +21,14 @@ tags:
 
 **会议**：SC 2025 · St. Louis, MO
 
-## 摘要
+**官方资料：** [论文详情](https://sc25.conference-program.com/?post_type=page&p=14&id=pap605&sess=sess285)（摘要、论文及演示材料以官方页面提供情况为准）
+
+## 摘要摘录
+
+原有摘录在 1000 字符处截断；完整摘要请查看官方论文详情。
 
 Quantization is a critical technique for accelerating LLM inference by reducing memory footprint and improving computational efficiency. Among various schemes, 4-bit weight and 8-bit activation quantization (W4A8) offers a strong balance between accuracy and performance. However, existing W4A8 GEMM kernels fall short in practice due to inefficient dequantization on CUDA Cores, which cannot keep pace with the high throughput of Tensor Cores. In this paper, we present LiquidGEMM, a hardware-efficient W4A8 GEMM kernel for efficient LLM serving. LiquidGEMM designs two key techniques: LiquidQuant, a hardware-efficient quantization method that enables fast, overflow-safe dequantization using just two arithmetic instructions per four elements; and an implicit fine-grained pipeline that fully overlaps weight loading, dequantization, and MMA across warp groups without software synchronization or redundant memory traffic. Experimental results show that LiquidGEMM achieves up to 2.90x speedup ove
 
 ---
 
-## 一句话总结
-
-> 该工作属于 Algorithms: Matrix Multiplication and GEMM Optimization 方向，在高性能计算领域提出关键设计，在 SC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别 HPC 系统中的核心挑战或性能瓶颈。
-- 提出系统级或算法级优化方案，注重可扩展性。
-- 在超算或大规模集群上进行充分评估。
-
-## 主要结果
-
-- 在性能、可扩展性或能效方面相对基线实现改进。
-- 为 Algorithms: Matrix Multiplication and GEMM Optimization 领域贡献新的设计范式或评估框架。
+[返回 Session](index.md) · [SC 2025 主页](../index.md)

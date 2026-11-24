@@ -8,6 +8,10 @@ tags:
 
 # TraceFlow: Efficient Trace Analysis for Large-Scale Parallel Applications via Interaction Pattern-Aware Trace Distribution
 
+**中文标题：** 通过交互模式感知的轨迹分发高效分析大规模并行应用轨迹
+
+**所属 Session：** [Performance: Analysis Tools](index.md) · [SC 2025](../index.md)
+
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__desc">该论文收录于 SC 2025，所属方向：Performance: Analysis Tools。</p>
 <p class="paper-seo-summary__tags">SC 2025 · Performance: Analysis Tools</p>
@@ -17,23 +21,14 @@ tags:
 
 **会议**：SC 2025 · St. Louis, MO
 
-## 摘要
+**官方资料：** [论文详情](https://sc25.conference-program.com/?post_type=page&p=14&id=pap155&sess=sess342)（摘要、论文及演示材料以官方页面提供情况为准）
+
+## 摘要摘录
+
+原有摘录在 1000 字符处截断；完整摘要请查看官方论文详情。
 
 Trace analysis of large-scale parallel applications is crucial for understanding and optimizing performance. It primarily focuses on the interaction behaviors between different parallel processes, such as synchronization waits and asynchronous overlaps. The trace size explodes as the parallel scale of applications, thus current methods analyze traces in parallel to ensure analysis speed. However, due to the interaction pattern-agnostic trace distribution, they often introduce inter-process communications to fetch non-local event data during interaction analysis, leading to excessively long trace analysis time. To address this issue, we propose TraceFlow, a trace analysis tool for large-scale parallel applications, which achieves a nearly communication-free analysis through an interaction pattern-aware trace distribution strategy. We evaluate the efficiency of TraceFlow on widely used benchmarks and several real-world applications with up to 8,192 processes. Experimental results show th
 
 ---
 
-## 一句话总结
-
-> 该工作属于 Performance: Analysis Tools 方向，在高性能计算领域提出关键设计，在 SC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别 HPC 系统中的核心挑战或性能瓶颈。
-- 提出系统级或算法级优化方案，注重可扩展性。
-- 在超算或大规模集群上进行充分评估。
-
-## 主要结果
-
-- 在性能、可扩展性或能效方面相对基线实现改进。
-- 为 Performance: Analysis Tools 领域贡献新的设计范式或评估框架。
+[返回 Session](index.md) · [SC 2025 主页](../index.md)

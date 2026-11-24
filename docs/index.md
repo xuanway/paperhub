@@ -114,6 +114,7 @@ hide:
   <div class="conf-cube__name">SC</div>
   <div class="conf-cube__full">International Conference for High Performance Computing, Networking, Storage and Analysis</div>
   <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="SC/2026/">2026</a>
     <a class="conf-cube__year-link" href="SC/2025/">2025</a>
   </div>
 </div>

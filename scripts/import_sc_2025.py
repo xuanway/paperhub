@@ -15,9 +15,11 @@ Updates:
 
 Run:
   python3 scripts/import_sc_2025.py
+
+The importer refuses to overwrite an existing non-empty SC 2025 directory.
 """
 from __future__ import annotations
-import os, re, subprocess, time
+import re, subprocess, time
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -194,19 +196,16 @@ hide:
 """
 
 
-def build_docs(tracks: Dict[str, List[Paper]]) -> Tuple[int, Dict[str, str]]:
+def empty_target() -> Path:
     base = DOCS / CONF / YEAR
+    if base.exists() and any(base.iterdir()):
+        raise FileExistsError(f"Refusing to overwrite existing conference content: {base}")
+    return base
+
+
+def build_docs(tracks: Dict[str, List[Paper]]) -> Tuple[int, Dict[str, str]]:
+    base = empty_target()
     base.mkdir(parents=True, exist_ok=True)
-    for child in base.iterdir():
-        if child.is_dir():
-            for r, ds, fs in os.walk(child, topdown=False):
-                for f in fs:
-                    Path(r, f).unlink()
-                for d in ds:
-                    Path(r, d).rmdir()
-            child.rmdir()
-        elif child.name.endswith(".md"):
-            child.unlink()
 
     slug_map: Dict[str, str] = {}
     used_slugs: Dict[str, int] = {}
@@ -261,26 +260,21 @@ def nav_block(tracks: Dict[str, List[Paper]], slug_map: Dict[str, str], total: i
 
 def replace_nav(content: str, new_block: List[str]) -> str:
     lines = content.splitlines(keepends=True)
-    start = end = None
-    for i, l in enumerate(lines):
-        if re.match(r"  - 🌩️ SC:", l):
-            start = i; break
+    start = next((i for i, line in enumerate(lines) if line.startswith("  - 🌩️ SC:")), None)
     if start is None:
         raise RuntimeError("Cannot find '🌩️ SC:' nav section in mkdocs.yml")
-    sub_start = None
-    for i in range(start + 1, len(lines)):
-        if lines[i].startswith("    - "):
-            sub_start = i; break
-    if sub_start is None:
-        sub_start = start + 1
-        end = start + 1
-    else:
-        for i in range(sub_start, len(lines)):
-            if lines[i].startswith("  - "):
-                end = i; break
-        if end is None:
-            end = len(lines)
-    return "".join(lines[:sub_start] + new_block + lines[end:])
+    end = next((i for i in range(start + 1, len(lines)) if lines[i].startswith("  - ")), len(lines))
+    years: List[Tuple[int, int]] = []
+    for i in range(start + 1, end):
+        match = re.match(r"    - SC (\d{4})(?: \(\d+\))?:", lines[i])
+        if match:
+            years.append((i, int(match.group(1))))
+    existing = next((pos for pos, year in years if year == int(YEAR)), None)
+    if existing is not None:
+        block_end = next((i for i in range(existing + 1, end) if lines[i].startswith("    - ")), end)
+        return "".join(lines[:existing] + new_block + lines[block_end:])
+    insert = next((pos for pos, year in years if year < int(YEAR)), end)
+    return "".join(lines[:insert] + new_block + lines[insert:])
 
 
 def update_index(total: int) -> None:
@@ -294,6 +288,7 @@ def update_index(total: int) -> None:
 
 
 def main() -> None:
+    empty_target()
     print(f"Fetching contributors list from {CONTRIBUTORS_URL} ...")
     contrib_html = curl_fetch(CONTRIBUTORS_URL)
     paper_refs = discover_papers(contrib_html)

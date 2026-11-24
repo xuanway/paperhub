@@ -8,6 +8,10 @@ tags:
 
 # EDDE: Container Deployment Framework Beyond the Cloud
 
+**中文标题：** 超越云环境的容器部署框架
+
+**所属 Session：** [Containerization and Software Deployment](index.md) · [SC 2025](../index.md)
+
 <div class="paper-seo-summary">
 <p class="paper-seo-summary__desc">该论文收录于 SC 2025，所属方向：Containerization and Software Deployment。</p>
 <p class="paper-seo-summary__tags">SC 2025 · Containerization and Software Deployment</p>
@@ -17,23 +21,14 @@ tags:
 
 **会议**：SC 2025 · St. Louis, MO
 
-## 摘要
+**官方资料：** [论文详情](https://sc25.conference-program.com/?post_type=page&p=14&id=pap624&sess=sess171)（摘要、论文及演示材料以官方页面提供情况为准）
+
+## 摘要摘录
+
+原有摘录在 1000 字符处截断；完整摘要请查看官方论文详情。
 
 Existing cloud-oriented container deployment frameworks fail to address the unique challenges of edge environments, including geographic distribution, device heterogeneity, and resource constraints. This leads to suboptimal performance for latency-sensitive edge services like HPC/AI-powered autonomous driving, which demand rapid startup and immediate responsiveness. Current on-demand image solutions require excessive client-registry communication, resulting in prolonged round-trip time (RTT)—a particularly severe limitation in geographically distributed edge platforms. Furthermore, the user-space file system (FUSE), typically employed to handle device heterogeneity, introduces substantial overhead to the native I/O stack. Our findings reveal that on-demand image solutions exacerbate storage pressure on resource-constrained edge devices. To overcome these challenges, we introduce EDDE, an edge-optimized container deployment framework that redesigns the on-demand image pipeline. When com
 
 ---
 
-## 一句话总结
-
-> 该工作属于 Containerization and Software Deployment 方向，在高性能计算领域提出关键设计，在 SC 2025 语境下验证其价值。
-
-## 方法简述
-
-- 识别 HPC 系统中的核心挑战或性能瓶颈。
-- 提出系统级或算法级优化方案，注重可扩展性。
-- 在超算或大规模集群上进行充分评估。
-
-## 主要结果
-
-- 在性能、可扩展性或能效方面相对基线实现改进。
-- 为 Containerization and Software Deployment 领域贡献新的设计范式或评估框架。
+[返回 Session](index.md) · [SC 2025 主页](../index.md)
