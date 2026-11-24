@@ -33,10 +33,6 @@ Spiking neural networks, single spike, neuromorphic computing, accelerator
 
 人工神经网络, 时间编码, 单脉冲计算, 时域存储器
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731027)

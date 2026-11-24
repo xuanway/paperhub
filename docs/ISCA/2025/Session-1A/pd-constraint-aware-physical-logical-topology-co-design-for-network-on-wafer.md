@@ -37,10 +37,6 @@ Network on Wafer, Physical Topology, Logical Topology, Wafer-Scale Chips, LLM Tr
 
 晶圆级网络, 物理拓扑, 逻辑拓扑, 晶圆级芯片, 大语言模型训练
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731045)

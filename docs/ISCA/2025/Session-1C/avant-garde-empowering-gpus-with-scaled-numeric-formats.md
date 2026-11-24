@@ -50,10 +50,6 @@ GPU, Deep Neural Network, Scaled Numeric Format
 
 GPU, 深度神经网络, 缩放数值格式
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731100)

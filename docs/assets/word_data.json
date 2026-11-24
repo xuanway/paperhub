@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-23",
-  "content_hash": "1568b8553df725e2",
-  "total_papers": 1818,
+  "updated": "2026-11-24",
+  "content_hash": "7c7a5fb3edab8c8f",
+  "total_papers": 1989,
   "stats": {
-    "total_papers": 1818,
+    "total_papers": 1989,
     "conferences_count": 12,
-    "directions_count": 1527,
-    "track_directions_count": 257,
-    "keywords_count": 1527,
+    "directions_count": 1535,
+    "track_directions_count": 260,
+    "keywords_count": 1535,
     "per_conf": {
       "ASPLOS 2025": {
         "total": 184,
@@ -44,6 +44,10 @@
       "ISCA 2025": {
         "total": 135,
         "tracks": 28
+      },
+      "ISCA 2026": {
+        "total": 172,
+        "tracks": 37
       },
       "MICRO 2025": {
         "total": 123,
@@ -353,7 +357,44 @@
       "ISCA/2025/Session-1B": 4,
       "ISCA/2025/Session-8C": 5,
       "ISCA/2025/Session-4A": 6,
-      "ISCA/2025/Session-10C": 4
+      "ISCA/2025/Session-10C": 4,
+      "ISCA/2026/Session-3D": 5,
+      "ISCA/2026/Session-3C": 5,
+      "ISCA/2026/Session-9C": 4,
+      "ISCA/2026/Session-9D": 4,
+      "ISCA/2026/Session-5A": 6,
+      "ISCA/2026/Session-3B": 5,
+      "ISCA/2026/Session-6A": 5,
+      "ISCA/2026/Session-9B": 4,
+      "ISCA/2026/Session-4D": 5,
+      "ISCA/2026/Session-4C": 5,
+      "ISCA/2026/Session-10A": 4,
+      "ISCA/2026/Session-8A": 3,
+      "ISCA/2026/Session-7B": 6,
+      "ISCA/2026/Session-2A": 3,
+      "ISCA/2026/Session-7C": 6,
+      "ISCA/2026/Session-7D": 6,
+      "ISCA/2026/Session-4B": 5,
+      "ISCA/2026/Session-1A": 5,
+      "ISCA/2026/Session-6C": 5,
+      "ISCA/2026/Session-6D": 5,
+      "ISCA/2026/Session-5B": 6,
+      "ISCA/2026/Session-5D": 6,
+      "ISCA/2026/Session-5C": 6,
+      "ISCA/2026/Session-9A": 4,
+      "ISCA/2026/Session-6B": 5,
+      "ISCA/2026/Session-3A": 5,
+      "ISCA/2026/Session-2B": 3,
+      "ISCA/2026/Session-10B": 5,
+      "ISCA/2026/Session-7A": 6,
+      "ISCA/2026/Session-8B": 3,
+      "ISCA/2026/Session-2D": 3,
+      "ISCA/2026/Session-2C": 3,
+      "ISCA/2026/Session-8C": 3,
+      "ISCA/2026/Session-8D": 3,
+      "ISCA/2026/Session-10D": 5,
+      "ISCA/2026/Session-4A": 5,
+      "ISCA/2026/Session-10C": 5
     }
   },
   "keywords": [
@@ -2053,6 +2094,1107 @@
       ]
     },
     {
+      "text": "Session 7A",
+      "count": 12,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (6 papers) · ISCA 2026 (6 papers)",
+      "search_term": "Session 7A",
+      "papers": [
+        {
+          "title": "ConBin: A Performance-Convergence Framework for Wafer-Scale Chip Binning",
+          "url": "ISCA/2026/Session-7A/conbin-a-performance-convergence-framework-for-wafer-scale-chip-binning/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7A · ConBin: A Performance-Convergence Framework for Wafer-Scale Chip Binning"
+        },
+        {
+          "title": "DICE: Detailed Inter-Chiplet End-to-End PHY Modeling for Accurate Chiplet Simulation",
+          "url": "ISCA/2026/Session-7A/dice-detailed-inter-chiplet-end-to-end-phy-modeling-for-accurate-chiplet-simulation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7A · DICE: Detailed Inter-Chiplet End-to-End PHY Modeling for Accurate Chiplet Simulation"
+        },
+        {
+          "title": "DS-ISA: Instruction Set Architecture for Dynamical System Units",
+          "url": "ISCA/2026/Session-7A/ds-isa-instruction-set-architecture-for-dynamical-system-units/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7A · DS-ISA: Instruction Set Architecture for Dynamical System Units"
+        },
+        {
+          "title": "Omelet: A Packaging-Aware Hierarchical Interconnect Simulator for 2.5D/3D Chiplet Architectures",
+          "url": "ISCA/2026/Session-7A/omelet-a-packaging-aware-hierarchical-interconnect-simulator-for-2-5d-3d-chiplet-architectures/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7A · Omelet: A Packaging-Aware Hierarchical Interconnect Simulator for 2.5D/3D Chiplet Architectures"
+        },
+        {
+          "title": "PhaseWeave: Phase-Aware Execution on Heterogeneous Chiplet Architectures for Datacenters",
+          "url": "ISCA/2026/Session-7A/phaseweave-phase-aware-execution-on-heterogeneous-chiplet-architectures-for-datacenters/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7A · PhaseWeave: Phase-Aware Execution on Heterogeneous Chiplet Architectures for Datacenters"
+        },
+        {
+          "title": "WaferBRAIN: Whole-Brain Scale Neuromorphic Architecture Based on Wafer-Scale Integration",
+          "url": "ISCA/2026/Session-7A/waferbrain-whole-brain-scale-neuromorphic-architecture-based-on-wafer-scale-integration/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7A · WaferBRAIN: Whole-Brain Scale Neuromorphic Architecture Based on Wafer-Scale Integration"
+        },
+        {
+          "title": "Cambricon-SR: An Accelerator for Neural Scene Representation with Sparse Encoding Table",
+          "url": "ISCA/2025/Session-7A/cambricon-sr-an-accelerator-for-neural-scene-representation-with-sparse-encoding-table/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7A · Cambricon-SR：面向稀疏编码表神经场景表示的加速器"
+        },
+        {
+          "title": "Chip Architectures Under Advanced Computing Sanctions",
+          "url": "ISCA/2025/Session-7A/chip-architectures-under-advanced-computing-sanctions/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7A · 先进计算制裁下的芯片架构"
+        },
+        {
+          "title": "DiTile-DGNN: An Efficient Accelerator for Distributed Dynamic Graph Neural Network Inference",
+          "url": "ISCA/2025/Session-7A/ditile-dgnn-an-efficient-accelerator-for-distributed-dynamic-graph-neural-network-inference/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7A · DiTile-DGNN：面向分布式动态图神经网络推理的高效加速器"
+        },
+        {
+          "title": "FATE: Boosting the Performance of Hyper-Dimensional Computing Intelligence with Flexible Numerical DAta TypE",
+          "url": "ISCA/2025/Session-7A/fate-boosting-the-performance-of-hyper-dimensional-computing-intelligence-with-flexible-numerical-data-type/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7A · FATE：利用灵活数值数据类型提升超维计算智能性能"
+        },
+        {
+          "title": "MicroScopiQ: Accelerating Foundational Models through Outlier-Aware Microscaling Quantization",
+          "url": "ISCA/2025/Session-7A/microscopiq-accelerating-foundational-models-through-outlier-aware-microscaling-quantization/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7A · MicroScopiQ：通过离群值感知微缩放量化加速基础模型"
+        },
+        {
+          "title": "Topology-Aware Virtualization over Inter-Core Connected Neural Processing Units",
+          "url": "ISCA/2025/Session-7A/topology-aware-virtualization-over-inter-core-connected-neural-processing-units/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7A · 面向核间互连神经处理器的拓扑感知虚拟化"
+        }
+      ]
+    },
+    {
+      "text": "Session 7B",
+      "count": 12,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (6 papers) · ISCA 2026 (6 papers)",
+      "search_term": "Session 7B",
+      "papers": [
+        {
+          "title": "BULLETTIME: Time Dilation for High-Fidelity Tracing",
+          "url": "ISCA/2026/Session-7B/bullettime-time-dilation-for-high-fidelity-tracing/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7B · BULLETTIME: Time Dilation for High-Fidelity Tracing"
+        },
+        {
+          "title": "Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation",
+          "url": "ISCA/2026/Session-7B/lotus-a-multi-fpga-task-dataflow-architecture-to-accelerate-cycle-level-simulation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7B · Lotus: A Multi-FPGA Task Dataflow Architecture to Accelerate Cycle-Level Simulation"
+        },
+        {
+          "title": "NeRArch-Sim: A Unified Simulator for Benchmarking and DSE of Neural Rendering Accelerators",
+          "url": "ISCA/2026/Session-7B/nerarch-sim-a-unified-simulator-for-benchmarking-and-dse-of-neural-rendering-accelerators/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7B · NeRArch-Sim: A Unified Simulator for Benchmarking and DSE of Neural Rendering Accelerators"
+        },
+        {
+          "title": "PIPEWEAVE: Synergizing Analytical and Learning Models for Unified GPU Performance Prediction",
+          "url": "ISCA/2026/Session-7B/pipeweave-synergizing-analytical-and-learning-models-for-unified-gpu-performance-prediction/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7B · PIPEWEAVE: Synergizing Analytical and Learning Models for Unified GPU Performance Prediction"
+        },
+        {
+          "title": "R2D2: Robotized Reconfigurable Network for Disaggregated Datacenters",
+          "url": "ISCA/2026/Session-7B/r2d2-robotized-reconfigurable-network-for-disaggregated-datacenters/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7B · R2D2: Robotized Reconfigurable Network for Disaggregated Datacenters"
+        },
+        {
+          "title": "SSBench: Automated Characterization of Memory Dependence Predictors on Modern CPUs",
+          "url": "ISCA/2026/Session-7B/ssbench-automated-characterization-of-memory-dependence-predictors-on-modern-cpus/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7B · SSBench: Automated Characterization of Memory Dependence Predictors on Modern CPUs"
+        },
+        {
+          "title": "CORD: Low-Latency, Bandwidth-Efficient and Scalable Release Consistency via Directory Ordering",
+          "url": "ISCA/2025/Session-7B/cord-low-latency-bandwidth-efficient-and-scalable-release-consistency-via-directory-ordering/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7B · CORD：通过目录排序实现低延迟、带宽高效且可扩展的释放一致性"
+        },
+        {
+          "title": "HPVM-HDC: A Heterogeneous Programming System for Accelerating Hyperdimensional Computing",
+          "url": "ISCA/2025/Session-7B/hpvm-hdc-a-heterogeneous-programming-system-for-accelerating-hyperdimensional-computing/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7B · HPVM-HDC：用于加速超维计算的异构编程系统"
+        },
+        {
+          "title": "Neoscope: How Resilient Is My SoC to Workload Churn?",
+          "url": "ISCA/2025/Session-7B/neoscope-how-resilient-is-my-soc-to-workload-churn/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7B · Neoscope：我的 SoC 对负载变动有多强的韧性？"
+        },
+        {
+          "title": "Nyx: Virtualizing Dataflow Execution on Shared FPGA Platforms",
+          "url": "ISCA/2025/Session-7B/nyx-virtualizing-dataflow-execution-on-shared-fpga-platforms/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7B · Nyx：在共享 FPGA 平台上虚拟化数据流执行"
+        },
+        {
+          "title": "UGPU: Dynamically Constructing Unbalanced GPUs for Enhanced Resource Efficiency",
+          "url": "ISCA/2025/Session-7B/ugpu-dynamically-constructing-unbalanced-gpus-for-enhanced-resource-efficiency/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7B · UGPU：动态构建非均衡 GPU 以提升资源效率"
+        },
+        {
+          "title": "WindServe: Efficient Phase-Disaggregated LLM Serving with Stream-based Dynamic Scheduling",
+          "url": "ISCA/2025/Session-7B/windserve-efficient-phase-disaggregated-llm-serving-with-stream-based-dynamic-scheduling/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7B · WindServe：基于流式动态调度的高效阶段解耦 LLM 服务"
+        }
+      ]
+    },
+    {
+      "text": "Session 7C",
+      "count": 12,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (6 papers) · ISCA 2026 (6 papers)",
+      "search_term": "Session 7C",
+      "papers": [
+        {
+          "title": "DESSCam: An Event-Driven Architecture with In-Sensor Epitopological Sparse Sampling to Break the Latency-Power Tradeoff in Eye Tracking",
+          "url": "ISCA/2026/Session-7C/desscam-an-event-driven-architecture-with-in-sensor-epitopological-sparse-sampling-to-break-the-latency-power-tradeoff-in-eye-tracking/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7C · DESSCam: An Event-Driven Architecture with In-Sensor Epitopological Sparse Sampling to Break the Latency-Power Tradeoff in Eye Tracking"
+        },
+        {
+          "title": "ECHO: Efficient Head-Orientation-Guided Real-Time Sound Spatialization for Virtual Reality",
+          "url": "ISCA/2026/Session-7C/echo-efficient-head-orientation-guided-real-time-sound-spatialization-for-virtual-reality/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7C · ECHO: Efficient Head-Orientation-Guided Real-Time Sound Spatialization for Virtual Reality"
+        },
+        {
+          "title": "Enabling Continuous, In-Field Introspection: The Programmable IPU Architecture",
+          "url": "ISCA/2026/Session-7C/enabling-continuous-in-field-introspection-the-programmable-ipu-architecture/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7C · Enabling Continuous, In-Field Introspection: The Programmable IPU Architecture"
+        },
+        {
+          "title": "ParetoES: Hardware-Accelerated Sparse Embedding Similarity via Pareto-Optimal Pruning",
+          "url": "ISCA/2026/Session-7C/paretoes-hardware-accelerated-sparse-embedding-similarity-via-pareto-optimal-pruning/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7C · ParetoES: Hardware-Accelerated Sparse Embedding Similarity via Pareto-Optimal Pruning"
+        },
+        {
+          "title": "SLICE: A Selective Local Inference Framework with Codec Exploitation for Accelerating Video Super-Resolution",
+          "url": "ISCA/2026/Session-7C/slice-a-selective-local-inference-framework-with-codec-exploitation-for-accelerating-video-super-resolution/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7C · SLICE: A Selective Local Inference Framework with Codec Exploitation for Accelerating Video Super-Resolution"
+        },
+        {
+          "title": "SegFold: Accelerating Sparse GEMM with a Fine-Grained Dynamic Dataflow",
+          "url": "ISCA/2026/Session-7C/segfold-accelerating-sparse-gemm-with-a-fine-grained-dynamic-dataflow/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7C · SegFold: Accelerating Sparse GEMM with a Fine-Grained Dynamic Dataflow"
+        },
+        {
+          "title": "CaliQEC: In-situ Qubit Calibration for Surface Code Quantum Error Correction",
+          "url": "ISCA/2025/Session-7C/caliqec-in-situ-qubit-calibration-for-surface-code-quantum-error-correction/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7C · CaliQEC: 表面码量子纠错的原位量子比特校准"
+        },
+        {
+          "title": "Resource Analysis of Low-Overhead Transversal Architectures for Reconfigurable Atom Arrays",
+          "url": "ISCA/2025/Session-7C/resource-analysis-of-low-overhead-transversal-architectures-for-reconfigurable-atom-arrays/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7C · 面向可重构原子阵列的低开销横向架构资源分析"
+        },
+        {
+          "title": "SWIPER: Minimizing Fault-Tolerant Quantum Program Latency via Speculative Window Decoding",
+          "url": "ISCA/2025/Session-7C/swiper-minimizing-fault-tolerant-quantum-program-latency-via-speculative-window-decoding/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7C · SWIPER: 通过推测窗口解码最小化容错量子程序延迟"
+        },
+        {
+          "title": "SwitchQNet: Optimizing Distributed Quantum Computing for Quantum Data Centers with Switch Networks",
+          "url": "ISCA/2025/Session-7C/switchqnet-optimizing-distributed-quantum-computing-for-quantum-data-centers-with-switch-networks/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7C · SwitchQNet: 面向量子数据中心的交换网络分布式量子计算优化"
+        },
+        {
+          "title": "Synchronization for Fault-Tolerant Quantum Computers",
+          "url": "ISCA/2025/Session-7C/synchronization-for-fault-tolerant-quantum-computers/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7C · 容错量子计算机的同步机制"
+        },
+        {
+          "title": "Variational Quantum Algorithms in the Era of Early Fault Tolerance",
+          "url": "ISCA/2025/Session-7C/variational-quantum-algorithms-in-the-era-of-early-fault-tolerance/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 7C · 早期容错时代的变分量子算法"
+        }
+      ]
+    },
+    {
+      "text": "Session 4A",
+      "count": 11,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (6 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 4A",
+      "papers": [
+        {
+          "title": "CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM",
+          "url": "ISCA/2026/Session-4A/chime-a-case-for-efficient-long-context-attention-fc-disaggregated-inference-with-dimm-pim/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4A · CHIME: A Case for Efficient Long-Context Attention-FC Disaggregated Inference with DIMM-PIM"
+        },
+        {
+          "title": "HybridSpec: Exploiting Hybrid-Bonding Memory to Accelerate LLM Serving through Heterogeneous Architecture and Speculative Decoding",
+          "url": "ISCA/2026/Session-4A/hybridspec-exploiting-hybrid-bonding-memory-to-accelerate-llm-serving-through-heterogeneous-architecture-and-speculative-decoding/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4A · HybridSpec: Exploiting Hybrid-Bonding Memory to Accelerate LLM Serving through Heterogeneous Architecture and Speculative Decoding"
+        },
+        {
+          "title": "P3-LLM: An Integrated NPU-PIM Accelerator for Edge LLM Inference Using Hybrid Numerical Formats",
+          "url": "ISCA/2026/Session-4A/p3-llm-an-integrated-npu-pim-accelerator-for-edge-llm-inference-using-hybrid-numerical-formats/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4A · P3-LLM: An Integrated NPU-PIM Accelerator for Edge LLM Inference Using Hybrid Numerical Formats"
+        },
+        {
+          "title": "SHyLA: 3D-Stacked NVM-DRAM Hybrid LLM-Inference Architecture Exploiting Data and Memory Heterogeneity",
+          "url": "ISCA/2026/Session-4A/shyla-3d-stacked-nvm-dram-hybrid-llm-inference-architecture-exploiting-data-and-memory-heterogeneity/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4A · SHyLA: 3D-Stacked NVM-DRAM Hybrid LLM-Inference Architecture Exploiting Data and Memory Heterogeneity"
+        },
+        {
+          "title": "SMOOTH: Hardware-Assisted Fine-Grained On-Chip Memory Management for Efficient On-Device LLM Inference",
+          "url": "ISCA/2026/Session-4A/smooth-hardware-assisted-fine-grained-on-chip-memory-management-for-efficient-on-device-llm-inference/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4A · SMOOTH: Hardware-Assisted Fine-Grained On-Chip Memory Management for Efficient On-Device LLM Inference"
+        },
+        {
+          "title": "AiF: Accelerating On-Device LLM Inference Using In-Flash Processing",
+          "url": "ISCA/2025/Session-4A/aif-accelerating-on-device-llm-inference-using-in-flash-processing/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4A · AiF: 利用片内闪存处理实现端侧LLM推理加速"
+        },
+        {
+          "title": "Chimera: Communication Fusion for Hybrid Parallelism in Large Language Models",
+          "url": "ISCA/2025/Session-4A/chimera-communication-fusion-for-hybrid-parallelism-in-large-language-models/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4A · Chimera: 大语言模型混合并行通信融合"
+        },
+        {
+          "title": "LIA: A Single-GPU LLM Inference Acceleration with Cooperative AMX-Enabled CPU-GPU Computation and CXL Offloading",
+          "url": "ISCA/2025/Session-4A/lia-a-single-gpu-llm-inference-acceleration-with-cooperative-amx-enabled-cpu-gpu-computation-and-cxl-offloading/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4A · LIA: 基于AMX的CPU-GPU协作与CXL卸载的单GPU LLM推理加速"
+        },
+        {
+          "title": "LUT Tensor Core: A Software-Hardware Co-Design for LUT-Based Low-Bit LLM Inference",
+          "url": "ISCA/2025/Session-4A/lut-tensor-core-a-software-hardware-co-design-for-lut-based-low-bit-llm-inference/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4A · LUT Tensor Core: 基于查找表的低比特LLM推理软硬件协同"
+        },
+        {
+          "title": "Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization",
+          "url": "ISCA/2025/Session-4A/oaken-fast-and-efficient-llm-serving-with-online-offline-hybrid-kv-cache-quantization/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4A · Oaken: 在线/离线混合KV Cache量化的高效LLM服务"
+        },
+        {
+          "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
+          "url": "ISCA/2025/Session-4A/specee-accelerating-large-language-model-inference-with-speculative-early-exiting/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4A · SpecEE: 利用推测早退加速LLM推理"
+        }
+      ]
+    },
+    {
+      "text": "Session 4C",
+      "count": 11,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (6 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 4C",
+      "papers": [
+        {
+          "title": "Accelerator Polymorphism: Transcending Domain-Specific Architectures with Robotics",
+          "url": "ISCA/2026/Session-4C/accelerator-polymorphism-transcending-domain-specific-architectures-with-robotics/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4C · Accelerator Polymorphism: Transcending Domain-Specific Architectures with Robotics"
+        },
+        {
+          "title": "GRAINS: Enabling High-Performance and Low-Cost Graph-Based Genome Analysis via Storage-Aware Algorithm-Architecture Co-Design",
+          "url": "ISCA/2026/Session-4C/grains-enabling-high-performance-and-low-cost-graph-based-genome-analysis-via-storage-aware-algorithm-architecture-co-design/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4C · GRAINS: Enabling High-Performance and Low-Cost Graph-Based Genome Analysis via Storage-Aware Algorithm-Architecture Co-Design"
+        },
+        {
+          "title": "Graph.hls: A Compiler Framework for Composable Graph Accelerator Design",
+          "url": "ISCA/2026/Session-4C/graph-hls-a-compiler-framework-for-composable-graph-accelerator-design/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4C · Graph.hls: A Compiler Framework for Composable Graph Accelerator Design"
+        },
+        {
+          "title": "Lembas: Cost-Efficient Genome Alignment with External Memory and FPGA Acceleration",
+          "url": "ISCA/2026/Session-4C/lembas-cost-efficient-genome-alignment-with-external-memory-and-fpga-acceleration/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4C · Lembas: Cost-Efficient Genome Alignment with External Memory and FPGA Acceleration"
+        },
+        {
+          "title": "LoRA: Towards Improved Applicability of Reconfigurable Architecture for Versatile Nonlinear Functions",
+          "url": "ISCA/2026/Session-4C/lora-towards-improved-applicability-of-reconfigurable-architecture-for-versatile-nonlinear-functions/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4C · LoRA: Towards Improved Applicability of Reconfigurable Architecture for Versatile Nonlinear Functions"
+        },
+        {
+          "title": "A4: Microarchitecture-Aware LLC Management for Datacenter Servers with Emerging I/O Devices",
+          "url": "ISCA/2025/Session-4C/a4-microarchitecture-aware-llc-management-for-datacenter-servers-with-emerging-i-o-devices/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4C · A4：面向新兴 I/O 设备数据中心服务器的微架构感知 LLC 管理"
+        },
+        {
+          "title": "Cramming a Data Center into One Cabinet, a Co-Exploration of Computing and Hardware Architecture of Waferscale Chip",
+          "url": "ISCA/2025/Session-4C/cramming-a-data-center-into-one-cabinet-a-co-exploration-of-computing-and-hardware-architecture-of-waferscale-chip/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4C · 将数据中心装进一个机柜：晶圆级芯片计算与硬件架构协同探索"
+        },
+        {
+          "title": "Dynamic Load Balancer in Intel Xeon Scalable Processor: Performance Analyses, Enhancements, and Guidelines",
+          "url": "ISCA/2025/Session-4C/dynamic-load-balancer-in-intel-xeon-scalable-processor-performance-analyses-enhancements-and-guidelines/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4C · 英特尔至强可扩展处理器中的动态负载均衡器：性能分析、增强与指南"
+        },
+        {
+          "title": "Fair-CO2: Fair Attribution for Cloud Carbon Emissions",
+          "url": "ISCA/2025/Session-4C/fair-co2-fair-attribution-for-cloud-carbon-emissions/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4C · Fair-CO2：云碳排放的公平归因"
+        },
+        {
+          "title": "HardHarvest: Hardware-Supported Core Harvesting for Microservices",
+          "url": "ISCA/2025/Session-4C/hardharvest-hardware-supported-core-harvesting-for-microservices/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4C · HardHarvest：面向微服务的硬件支持核心收割"
+        },
+        {
+          "title": "Single-Address-Space FaaS with Jord",
+          "url": "ISCA/2025/Session-4C/single-address-space-faas-with-jord/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4C · 基于 Jord 的单地址空间 FaaS"
+        }
+      ]
+    },
+    {
+      "text": "Session 6A",
+      "count": 11,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (6 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 6A",
+      "papers": [
+        {
+          "title": "ENEC: A Lossless AI Model Compression Method Enabling Fast Inference on Ascend NPUs",
+          "url": "ISCA/2026/Session-6A/enec-a-lossless-ai-model-compression-method-enabling-fast-inference-on-ascend-npus/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6A · ENEC: A Lossless AI Model Compression Method Enabling Fast Inference on Ascend NPUs"
+        },
+        {
+          "title": "EVA: Accelerating LLM Decoding via an Efficient Vector Quantization Architecture",
+          "url": "ISCA/2026/Session-6A/eva-accelerating-llm-decoding-via-an-efficient-vector-quantization-architecture/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6A · EVA: Accelerating LLM Decoding via an Efficient Vector Quantization Architecture"
+        },
+        {
+          "title": "SMoE: An Algorithm-System Co-Design for Pushing MoE to the Edge via Expert Substitution",
+          "url": "ISCA/2026/Session-6A/smoe-an-algorithm-system-co-design-for-pushing-moe-to-the-edge-via-expert-substitution/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6A · SMoE: An Algorithm-System Co-Design for Pushing MoE to the Edge via Expert Substitution"
+        },
+        {
+          "title": "STEP: Adaptive Spatio-Temporal Expert Prefetching for Low-Latency and Memory-Efficient MoE Inference",
+          "url": "ISCA/2026/Session-6A/step-adaptive-spatio-temporal-expert-prefetching-for-low-latency-and-memory-efficient-moe-inference/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6A · STEP: Adaptive Spatio-Temporal Expert Prefetching for Low-Latency and Memory-Efficient MoE Inference"
+        },
+        {
+          "title": "Tetris: Efficient Long-context LLM Serving with Chunkwise Dynamic Sequence Parallelism",
+          "url": "ISCA/2026/Session-6A/tetris-efficient-long-context-llm-serving-with-chunkwise-dynamic-sequence-parallelism/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6A · Tetris: Efficient Long-context LLM Serving with Chunkwise Dynamic Sequence Parallelism"
+        },
+        {
+          "title": "Bishop: Sparsified Bundling Spiking Transformers on Heterogeneous Cores with Error-constrained Pruning",
+          "url": "ISCA/2025/Session-6A/bishop-sparsified-bundling-spiking-transformers-on-heterogeneous-cores-with-error-constrained-pruning/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6A · Bishop：通过误差约束剪枝在异构核心上稀疏捆绑脉冲 Transformer"
+        },
+        {
+          "title": "Hermes: Algorithm-System Co-design for Efficient Retrieval-Augmented Generation At-Scale",
+          "url": "ISCA/2025/Session-6A/hermes-algorithm-system-co-design-for-efficient-retrieval-augmented-generation-at-scale/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6A · Hermes：面向大规模高效检索增强生成的算法—系统协同设计"
+        },
+        {
+          "title": "Phi: Leveraging Pattern-based Hierarchical Sparsity for High-Efficiency Spiking Neural Networks",
+          "url": "ISCA/2025/Session-6A/phi-leveraging-pattern-based-hierarchical-sparsity-for-high-efficiency-spiking-neural-networks/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6A · Phi：利用基于模式的层次稀疏性实现高效脉冲神经网络"
+        },
+        {
+          "title": "RAGO: Systematic Performance Optimization for Retrieval-Augmented Generation Serving",
+          "url": "ISCA/2025/Session-6A/rago-systematic-performance-optimization-for-retrieval-augmented-generation-serving/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6A · RAGO：面向检索增强生成服务的系统化性能优化"
+        },
+        {
+          "title": "Single Spike Artificial Neural Networks",
+          "url": "ISCA/2025/Session-6A/single-spike-artificial-neural-networks/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6A · 单脉冲人工神经网络"
+        },
+        {
+          "title": "Transitive Array: An Efficient GEMM Accelerator with Result Reuse",
+          "url": "ISCA/2025/Session-6A/transitive-array-an-efficient-gemm-accelerator-with-result-reuse/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6A · Transitive Array：支持结果复用的高效 GEMM 加速器"
+        }
+      ]
+    },
+    {
+      "text": "Session 6B",
+      "count": 11,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (6 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 6B",
+      "papers": [
+        {
+          "title": "AQuant: Repurposing CODEC for VLM Acceleration via Adaptive Quantization",
+          "url": "ISCA/2026/Session-6B/aquant-repurposing-codec-for-vlm-acceleration-via-adaptive-quantization/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6B · AQuant: Repurposing CODEC for VLM Acceleration via Adaptive Quantization"
+        },
+        {
+          "title": "Bringing Near Data Processing into the Low-Bit Floating-Point Era",
+          "url": "ISCA/2026/Session-6B/bringing-near-data-processing-into-the-low-bit-floating-point-era/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6B · Bringing Near Data Processing into the Low-Bit Floating-Point Era"
+        },
+        {
+          "title": "LoKA: Low-precision Kernel Applications for Recommendation Models At Scale",
+          "url": "ISCA/2026/Session-6B/loka-low-precision-kernel-applications-for-recommendation-models-at-scale/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6B · LoKA: Low-precision Kernel Applications for Recommendation Models At Scale"
+        },
+        {
+          "title": "NasZip: Software and Hardware Co-Design to Accelerate Approximate Nearest Neighbor Search with DIMM-Based Near-Data Processing",
+          "url": "ISCA/2026/Session-6B/naszip-software-and-hardware-co-design-to-accelerate-approximate-nearest-neighbor-search-with-dimm-based-near-data-processing/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6B · NasZip: Software and Hardware Co-Design to Accelerate Approximate Nearest Neighbor Search with DIMM-Based Near-Data Processing"
+        },
+        {
+          "title": "Random-Access Hardware Sequence Compression",
+          "url": "ISCA/2026/Session-6B/random-access-hardware-sequence-compression/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6B · Random-Access Hardware Sequence Compression"
+        },
+        {
+          "title": "Caravan: A Hardware/Software Co-Design for Efficient SIMD Neighbor Search on Point Clouds",
+          "url": "ISCA/2025/Session-6B/caravan-a-hardware-software-co-design-for-efficient-simd-neighbor-search-on-point-clouds/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6B · Caravan：面向点云高效 SIMD 邻域搜索的软硬件协同设计"
+        },
+        {
+          "title": "Evaluating Ruche Networks: Physically Scalable, Cost-Effective, Bandwidth-Flexible NoCs",
+          "url": "ISCA/2025/Session-6B/evaluating-ruche-networks-physically-scalable-cost-effective-bandwidth-flexible-nocs/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6B · 评估 Ruche 网络：物理可扩展、经济高效且带宽灵活的片上网络"
+        },
+        {
+          "title": "Garibaldi: A Pairwise Instruction-Data Management for Enhancing Shared Last-Level Cache Performance in Server Workloads",
+          "url": "ISCA/2025/Session-6B/garibaldi-a-pairwise-instruction-data-management-for-enhancing-shared-last-level-cache-performance-in-server-workloads/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6B · Garibaldi：通过成对指令—数据管理提升服务器负载共享末级缓存性能"
+        },
+        {
+          "title": "Light-weight Cache Replacement for Instruction Heavy Workloads",
+          "url": "ISCA/2025/Session-6B/light-weight-cache-replacement-for-instruction-heavy-workloads/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6B · 面向指令密集型负载的轻量级缓存替换"
+        },
+        {
+          "title": "NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems",
+          "url": "ISCA/2025/Session-6B/netcrafter-tailoring-network-traffic-for-non-uniform-bandwidth-multi-gpu-systems/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6B · NetCrafter：为非均匀带宽多 GPU 系统定制网络流量"
+        },
+        {
+          "title": "The Sparsity-Aware LazyGPU Architecture",
+          "url": "ISCA/2025/Session-6B/the-sparsity-aware-lazygpu-architecture/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6B · 稀疏感知 LazyGPU 架构"
+        }
+      ]
+    },
+    {
+      "text": "Session 6C",
+      "count": 11,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (6 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 6C",
+      "papers": [
+        {
+          "title": "Coarse-Grained Duplication First, Fine-Grained Deduplication Later: Duplication-Centric Multi-GPU Memory Management",
+          "url": "ISCA/2026/Session-6C/coarse-grained-duplication-first-fine-grained-deduplication-later-duplication-centric-multi-gpu-memory-management/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6C · Coarse-Grained Duplication First, Fine-Grained Deduplication Later: Duplication-Centric Multi-GPU Memory Management"
+        },
+        {
+          "title": "Observability-aided GPU Memory Oversubscription",
+          "url": "ISCA/2026/Session-6C/observability-aided-gpu-memory-oversubscription/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6C · Observability-aided GPU Memory Oversubscription"
+        },
+        {
+          "title": "Reducing Page Faults via Invalidation-based Mapping Propagation in Multi-GPU Systems",
+          "url": "ISCA/2026/Session-6C/reducing-page-faults-via-invalidation-based-mapping-propagation-in-multi-gpu-systems/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6C · Reducing Page Faults via Invalidation-based Mapping Propagation in Multi-GPU Systems"
+        },
+        {
+          "title": "sCROOGe: Circuit-level Design and Optimization Framework for RISC-V Out-of-Order GPUs",
+          "url": "ISCA/2026/Session-6C/scrooge-circuit-level-design-and-optimization-framework-for-risc-v-out-of-order-gpus/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6C · sCROOGe: Circuit-level Design and Optimization Framework for RISC-V Out-of-Order GPUs"
+        },
+        {
+          "title": "æSIP: µArch-aware ASIP-ISA Co-Design via Program Synthesis, Equality Saturation, and External Don’t Cares",
+          "url": "ISCA/2026/Session-6C/sip-arch-aware-asip-isa-co-design-via-program-synthesis-equality-saturation-and-external-don-t-cares/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6C · æSIP: µArch-aware ASIP-ISA Co-Design via Program Synthesis, Equality Saturation, and External Don’t Cares"
+        },
+        {
+          "title": "ANSMET: Approximate Nearest Neighbor Search with Near-Memory Processing and Hybrid Early Termination",
+          "url": "ISCA/2025/Session-6C/ansmet-approximate-nearest-neighbor-search-with-near-memory-processing-and-hybrid-early-termination/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6C · ANSMET: 近存处理与混合早停的近似最近邻搜索"
+        },
+        {
+          "title": "DReX: Accurate and Scalable Dense Retrieval Acceleration via Algorithmic-Hardware Codesign",
+          "url": "ISCA/2025/Session-6C/drex-accurate-and-scalable-dense-retrieval-acceleration-via-algorithmic-hardware-codesign/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6C · DReX: 算法-硬件协同的高精度可扩展稠密检索加速"
+        },
+        {
+          "title": "EOD: Enabling Low Latency GNN Inference via Near-Memory Concatenate Aggregation",
+          "url": "ISCA/2025/Session-6C/eod-enabling-low-latency-gnn-inference-via-near-memory-concatenate-aggregation/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6C · EOD: 通过近存合并聚合实现低延迟GNN推理"
+        },
+        {
+          "title": "Hybrid SLC-MLC RRAM Mixed-Signal Processing-in-Memory Architecture for Transformer Acceleration via Gradient Redistribution",
+          "url": "ISCA/2025/Session-6C/hybrid-slc-mlc-rram-mixed-signal-processing-in-memory-architecture-for-transformer-acceleration-via-gradient-redistribution/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6C · 混合SLC-MLC RRAM混信号PIM架构：通过梯度重分布实现Transformer加速"
+        },
+        {
+          "title": "RAP: Reconfigurable Automata Processor",
+          "url": "ISCA/2025/Session-6C/rap-reconfigurable-automata-processor/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6C · RAP: 可重配自动机处理器"
+        },
+        {
+          "title": "REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing",
+          "url": "ISCA/2025/Session-6C/reis-a-high-performance-and-energy-efficient-retrieval-system-with-in-storage-processing/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 6C · REIS: 高性能高能效存储内检索系统"
+        }
+      ]
+    },
+    {
+      "text": "Session 3A",
+      "count": 10,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (5 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 3A",
+      "papers": [
+        {
+          "title": "OASIS: Outlier-Aware LUT-Based GEMM with Dual-Side Quantization for LLM Inference Acceleration",
+          "url": "ISCA/2026/Session-3A/oasis-outlier-aware-lut-based-gemm-with-dual-side-quantization-for-llm-inference-acceleration/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3A · OASIS: Outlier-Aware LUT-Based GEMM with Dual-Side Quantization for LLM Inference Acceleration"
+        },
+        {
+          "title": "Omni-LUT: Energy-Efficient LUT-based Accelerator with Hardware-Aware KV Cache Quantization",
+          "url": "ISCA/2026/Session-3A/omni-lut-energy-efficient-lut-based-accelerator-with-hardware-aware-kv-cache-quantization/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3A · Omni-LUT: Energy-Efficient LUT-based Accelerator with Hardware-Aware KV Cache Quantization"
+        },
+        {
+          "title": "QiMeng-Tensify: Scaling up Tensor Computation Optimization via Architecture-Aware LLM-Guided MCTS",
+          "url": "ISCA/2026/Session-3A/qimeng-tensify-scaling-up-tensor-computation-optimization-via-architecture-aware-llm-guided-mcts/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3A · QiMeng-Tensify: Scaling up Tensor Computation Optimization via Architecture-Aware LLM-Guided MCTS"
+        },
+        {
+          "title": "Shining light on Silicon Photonic DNN Accelerators",
+          "url": "ISCA/2026/Session-3A/shining-light-on-silicon-photonic-dnn-accelerators/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3A · Shining light on Silicon Photonic DNN Accelerators"
+        },
+        {
+          "title": "TensorPrism: Rethinking Sparse High-order Tensor Acceleration via Co-occurrence Graph",
+          "url": "ISCA/2026/Session-3A/tensorprism-rethinking-sparse-high-order-tensor-acceleration-via-co-occurrence-graph/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3A · TensorPrism: Rethinking Sparse High-order Tensor Acceleration via Co-occurrence Graph"
+        },
+        {
+          "title": "ARTERY: Fast Quantum Feedback using Branch Prediction",
+          "url": "ISCA/2025/Session-3A/artery-fast-quantum-feedback-using-branch-prediction/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3A · ARTERY: 利用分支预测实现快速量子反馈"
+        },
+        {
+          "title": "Constant-Rate Entanglement Distillation for Fast Quantum Interconnects",
+          "url": "ISCA/2025/Session-3A/constant-rate-entanglement-distillation-for-fast-quantum-interconnects/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3A · 面向高速量子互连的恒定速率纠缠蒸馏"
+        },
+        {
+          "title": "Hardware-aware Calibration Protocol for Quantum Computers",
+          "url": "ISCA/2025/Session-3A/hardware-aware-calibration-protocol-for-quantum-computers/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3A · 面向量子计算机的硬件感知校准协议"
+        },
+        {
+          "title": "Qtenon: Towards Low-Latency Architecture Integration for Accelerating Hybrid Quantum-Classical Computing",
+          "url": "ISCA/2025/Session-3A/qtenon-towards-low-latency-architecture-integration-for-accelerating-hybrid-quantum-classical-computing/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3A · Qtenon: 低延迟架构集成加速混合量子-经典计算"
+        },
+        {
+          "title": "S-SYNC: Shuttle and Swap Co-Optimization in Quantum Charge-Coupled Devices",
+          "url": "ISCA/2025/Session-3A/s-sync-shuttle-and-swap-co-optimization-in-quantum-charge-coupled-devices/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3A · S-SYNC: 量子电荷耦合器件中的Shuttle与Swap协同优化"
+        }
+      ]
+    },
+    {
+      "text": "Session 3B",
+      "count": 10,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (5 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 3B",
+      "papers": [
+        {
+          "title": "BAAP: Coupling Compute-in-SRAM with DRAM Banks for Near-Memory Processing",
+          "url": "ISCA/2026/Session-3B/baap-coupling-compute-in-sram-with-dram-banks-for-near-memory-processing/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3B · BAAP: Coupling Compute-in-SRAM with DRAM Banks for Near-Memory Processing"
+        },
+        {
+          "title": "MERIDIAN: In-Memory Acceleration for RAG with Document Attention Decomposition",
+          "url": "ISCA/2026/Session-3B/meridian-in-memory-acceleration-for-rag-with-document-attention-decomposition/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3B · MERIDIAN: In-Memory Acceleration for RAG with Document Attention Decomposition"
+        },
+        {
+          "title": "PipeIMC: a Pipelined In-SRAM Computing Architecture",
+          "url": "ISCA/2026/Session-3B/pipeimc-a-pipelined-in-sram-computing-architecture/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3B · PipeIMC: a Pipelined In-SRAM Computing Architecture"
+        },
+        {
+          "title": "PuDGhost: Experimental Analysis of Computation Result Corruption in Processing-using-DRAM Operations on Real DRAM Chips and Implications for Future Systems",
+          "url": "ISCA/2026/Session-3B/pudghost-experimental-analysis-of-computation-result-corruption-in-processing-using-dram-operations-on-real-dram-chips-and-implications-for-future-systems/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3B · PuDGhost: Experimental Analysis of Computation Result Corruption in Processing-using-DRAM Operations on Real DRAM Chips and Implications for Future Systems"
+        },
+        {
+          "title": "Taking Analytic Databases to the Bank",
+          "url": "ISCA/2026/Session-3B/taking-analytic-databases-to-the-bank/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3B · Taking Analytic Databases to the Bank"
+        },
+        {
+          "title": "AQB8: Energy-Efficient Ray Tracing Accelerator through Multi-Level Quantization",
+          "url": "ISCA/2025/Session-3B/aqb8-energy-efficient-ray-tracing-accelerator-through-multi-level-quantization/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3B · AQB8：基于多级量化的高能效光线追踪加速器"
+        },
+        {
+          "title": "Dadu-Corki: Algorithm-Architecture Co-Design for Embodied AI-powered Robotic Manipulation",
+          "url": "ISCA/2025/Session-3B/dadu-corki-algorithm-architecture-co-design-for-embodied-ai-powered-robotic-manipulation/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3B · Dadu-Corki：面向具身智能机器人操控的算法—架构协同设计"
+        },
+        {
+          "title": "HiPER: Hierarchically-Composed Processing for Efficient Robot Learning-Based Control",
+          "url": "ISCA/2025/Session-3B/hiper-hierarchically-composed-processing-for-efficient-robot-learning-based-control/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3B · HiPER：面向高效机器人学习控制的分层组合处理"
+        },
+        {
+          "title": "Process Only Where You Look: Hardware and Algorithm Co-optimization for Efficient Gaze-Tracked Foveated Rendering in Virtual Reality",
+          "url": "ISCA/2025/Session-3B/process-only-where-you-look-hardware-and-algorithm-co-optimization-for-efficient-gaze-tracked-foveated-rendering-in-virtual-reality/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3B · 只处理注视区域：面向虚拟现实高效眼动追踪注视点渲染的软硬件协同优化"
+        },
+        {
+          "title": "RTSpMSpM: Harnessing Ray Tracing for Efficient Sparse Matrix Computations",
+          "url": "ISCA/2025/Session-3B/rtspmspm-harnessing-ray-tracing-for-efficient-sparse-matrix-computations/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3B · RTSpMSpM：利用光线追踪实现高效稀疏矩阵计算"
+        }
+      ]
+    },
+    {
+      "text": "Session 3C",
+      "count": 10,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (5 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 3C",
+      "papers": [
+        {
+          "title": "Helium: Quantifying Microarchitectural Side-Channel Leakage with Probabilistic Guarantees",
+          "url": "ISCA/2026/Session-3C/helium-quantifying-microarchitectural-side-channel-leakage-with-probabilistic-guarantees/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3C · Helium: Quantifying Microarchitectural Side-Channel Leakage with Probabilistic Guarantees"
+        },
+        {
+          "title": "LÆGIS: Pinpointing and Addressing Performance Overheads of GPU-based Confidential Computing",
+          "url": "ISCA/2026/Session-3C/l-gis-pinpointing-and-addressing-performance-overheads-of-gpu-based-confidential-computing/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3C · LÆGIS: Pinpointing and Addressing Performance Overheads of GPU-based Confidential Computing"
+        },
+        {
+          "title": "MC-ORAM: A Mask-Assisted and Counter-Based Non-Deterministic ORAM inside VM-Based TEEs",
+          "url": "ISCA/2026/Session-3C/mc-oram-a-mask-assisted-and-counter-based-non-deterministic-oram-inside-vm-based-tees/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3C · MC-ORAM: A Mask-Assisted and Counter-Based Non-Deterministic ORAM inside VM-Based TEEs"
+        },
+        {
+          "title": "TimeGaps Channels: Exploiting CPU Halted Time for Fun and Profit",
+          "url": "ISCA/2026/Session-3C/timegaps-channels-exploiting-cpu-halted-time-for-fun-and-profit/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3C · TimeGaps Channels: Exploiting CPU Halted Time for Fun and Profit"
+        },
+        {
+          "title": "Towards Practical Interrupt Side-Channel Attacks on macOS for Apple Silicon",
+          "url": "ISCA/2026/Session-3C/towards-practical-interrupt-side-channel-attacks-on-macos-for-apple-silicon/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3C · Towards Practical Interrupt Side-Channel Attacks on macOS for Apple Silicon"
+        },
+        {
+          "title": "ANVIL: An In-Storage Accelerator for Name–Value Data Stores",
+          "url": "ISCA/2025/Session-3C/anvil-an-in-storage-accelerator-for-name-value-data-stores/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3C · ANVIL: 键值存储的存储内加速器"
+        },
+        {
+          "title": "ArtMem: Adaptive Migration in Reinforcement Learning-Enabled Tiered Memory",
+          "url": "ISCA/2025/Session-3C/artmem-adaptive-migration-in-reinforcement-learning-enabled-tiered-memory/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3C · ArtMem: 强化学习驱动的分层内存自适应迁移"
+        },
+        {
+          "title": "In-Storage Acceleration of Retrieval Augmented Generation as a Service",
+          "url": "ISCA/2025/Session-3C/in-storage-acceleration-of-retrieval-augmented-generation-as-a-service/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3C · 面向检索增强生成即服务的存内加速"
+        },
+        {
+          "title": "UPP: Universal Predicate Pushdown to Smart Storage",
+          "url": "ISCA/2025/Session-3C/upp-universal-predicate-pushdown-to-smart-storage/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3C · UPP: 通用谓词下推到智能存储"
+        },
+        {
+          "title": "XHarvest: Rethinking High-Performance and Cost-Efficient SSD Architecture with CXL-Driven Harvesting",
+          "url": "ISCA/2025/Session-3C/xharvest-rethinking-high-performance-and-cost-efficient-ssd-architecture-with-cxl-driven-harvesting/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 3C · XHarvest: CXL驱动的高性能低成本SSD架构"
+        }
+      ]
+    },
+    {
+      "text": "Session 4B",
+      "count": 10,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (5 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 4B",
+      "papers": [
+        {
+          "title": "A Silicon-Proven Unified Low-Latency CXL Controller and Port-Based Routing Switch for Memory-Centric Fabrics",
+          "url": "ISCA/2026/Session-4B/a-silicon-proven-unified-low-latency-cxl-controller-and-port-based-routing-switch-for-memory-centric-fabrics/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4B · A Silicon-Proven Unified Low-Latency CXL Controller and Port-Based Routing Switch for Memory-Centric Fabrics"
+        },
+        {
+          "title": "From Lab to Fleet: Building and Deploying a Practical Rowhammer Defense in Cloud SoCs",
+          "url": "ISCA/2026/Session-4B/from-lab-to-fleet-building-and-deploying-a-practical-rowhammer-defense-in-cloud-socs/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4B · From Lab to Fleet: Building and Deploying a Practical Rowhammer Defense in Cloud SoCs"
+        },
+        {
+          "title": "KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta",
+          "url": "ISCA/2026/Session-4B/kernelevolve-scaling-agentic-kernel-coding-for-heterogeneous-ai-accelerators-at-meta/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4B · KernelEvolve: Scaling Agentic Kernel Coding for Heterogeneous AI Accelerators at Meta"
+        },
+        {
+          "title": "SPEC CPU: the next generation",
+          "url": "ISCA/2026/Session-4B/spec-cpu-the-next-generation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4B · SPEC CPU: the next generation"
+        },
+        {
+          "title": "Vistara: Making CXL Real—Full Path from ASIC Design and OS Support to Hyperscale Deployment",
+          "url": "ISCA/2026/Session-4B/vistara-making-cxl-real-full-path-from-asic-design-and-os-support-to-hyperscale-deployment/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4B · Vistara: Making CXL Real—Full Path from ASIC Design and OS Support to Hyperscale Deployment"
+        },
+        {
+          "title": "Enabling Ahead Prediction with Practical Energy Constraints",
+          "url": "ISCA/2025/Session-4B/enabling-ahead-prediction-with-practical-energy-constraints/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4B · 在实际能耗约束下实现超前预测"
+        },
+        {
+          "title": "Leveraging Control-flow Similarity to Reduce Branch Predictor Cold Effects in Microservices",
+          "url": "ISCA/2025/Session-4B/leveraging-control-flow-similarity-to-reduce-branch-predictor-cold-effects-in-microservices/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4B · 利用控制流相似性降低微服务中的分支预测器冷启动效应"
+        },
+        {
+          "title": "Magellan: A High-Performance Loop-Guided Prefetcher for Indirect Memory Access",
+          "url": "ISCA/2025/Session-4B/magellan-a-high-performance-loop-guided-prefetcher-for-indirect-memory-access/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4B · Magellan：面向间接内存访问的高性能循环引导预取器"
+        },
+        {
+          "title": "Profile-Guided Temporal Prefetching",
+          "url": "ISCA/2025/Session-4B/profile-guided-temporal-prefetching/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4B · 配置文件引导的时序预取"
+        },
+        {
+          "title": "WarmCache: Exploiting STT-RAM Cache for Low-Power Intermittent Systems",
+          "url": "ISCA/2025/Session-4B/warmcache-exploiting-stt-ram-cache-for-low-power-intermittent-systems/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 4B · WarmCache：利用 STT-RAM 缓存构建低功耗间歇系统"
+        }
+      ]
+    },
+    {
+      "text": "Session 5A",
+      "count": 10,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (6 papers)",
+      "search_term": "Session 5A",
+      "papers": [
+        {
+          "title": "Accelerating MoE with Dynamic In-Switch Computing on Multi-GPUs",
+          "url": "ISCA/2026/Session-5A/accelerating-moe-with-dynamic-in-switch-computing-on-multi-gpus/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5A · Accelerating MoE with Dynamic In-Switch Computing on Multi-GPUs"
+        },
+        {
+          "title": "ConServe: Contiguity-Preserving Memory Management for Multi-Turn LLM Serving",
+          "url": "ISCA/2026/Session-5A/conserve-contiguity-preserving-memory-management-for-multi-turn-llm-serving/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5A · ConServe: Contiguity-Preserving Memory Management for Multi-Turn LLM Serving"
+        },
+        {
+          "title": "DIAMoND: Dynamic Inference for Adaptive Edge MoE with Heterogeneous In-NAND and Near-DRAM Compute Architecture",
+          "url": "ISCA/2026/Session-5A/diamond-dynamic-inference-for-adaptive-edge-moe-with-heterogeneous-in-nand-and-near-dram-compute-architecture/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5A · DIAMoND: Dynamic Inference for Adaptive Edge MoE with Heterogeneous In-NAND and Near-DRAM Compute Architecture"
+        },
+        {
+          "title": "DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries",
+          "url": "ISCA/2026/Session-5A/dynopipe-heterogeneous-edge-cloud-llm-serving-with-dynamically-orchestrated-pipeline-boundaries/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5A · DynoPipe: Heterogeneous Edge-Cloud LLM Serving with Dynamically Orchestrated Pipeline Boundaries"
+        },
+        {
+          "title": "Mapping and Communication Optimizations with Fault Tolerance for Wafer-Scale LLM Inference",
+          "url": "ISCA/2026/Session-5A/mapping-and-communication-optimizations-with-fault-tolerance-for-wafer-scale-llm-inference/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5A · Mapping and Communication Optimizations with Fault Tolerance for Wafer-Scale LLM Inference"
+        },
+        {
+          "title": "SingularBit: Exploiting Synergy of Singular Value Decomposition and Low-Bit Quantization for Weight and KV Compression in LLM Inference",
+          "url": "ISCA/2026/Session-5A/singularbit-exploiting-synergy-of-singular-value-decomposition-and-low-bit-quantization-for-weight-and-kv-compression-in-llm-inference/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5A · SingularBit: Exploiting Synergy of Singular Value Decomposition and Low-Bit Quantization for Weight and KV Compression in LLM Inference"
+        },
+        {
+          "title": "DREAM: Enabling Low-Overhead Rowhammer Mitigation via Directed Refresh Management",
+          "url": "ISCA/2025/Session-5A/dream-enabling-low-overhead-rowhammer-mitigation-via-directed-refresh-management/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5A · DREAM: 基于定向刷新管理的低开销Rowhammer缓解"
+        },
+        {
+          "title": "MoPAC: Efficiently Mitigating Rowhammer with Probabilistic Activation Counting",
+          "url": "ISCA/2025/Session-5A/mopac-efficiently-mitigating-rowhammer-with-probabilistic-activation-counting/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5A · MoPAC: 基于概率激活计数的高效Rowhammer缓解"
+        },
+        {
+          "title": "PuDHammer: Experimental Analysis of Read Disturbance Effects of Processing-using-DRAM in Real DRAM Chips",
+          "url": "ISCA/2025/Session-5A/pudhammer-experimental-analysis-of-read-disturbance-effects-of-processing-using-dram-in-real-dram-chips/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5A · PuDHammer: 真实DRAM芯片中PuD读干扰效应实验分析"
+        },
+        {
+          "title": "When Mitigations Backfire: Timing Channel Attacks and Defense for PRAC-Based RowHammer Mitigations",
+          "url": "ISCA/2025/Session-5A/when-mitigations-backfire-timing-channel-attacks-and-defense-for-prac-based-rowhammer-mitigations/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5A · When Mitigations Backfire: PRAC时序侧信道攻击与防御"
+        }
+      ]
+    },
+    {
+      "text": "Session 5B",
+      "count": 10,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (6 papers)",
+      "search_term": "Session 5B",
+      "papers": [
+        {
+          "title": "BoostX™-NTI: Fast, Scalable and Flexible Storage Architecture with NVMe/TCP Initiator Acceleration",
+          "url": "ISCA/2026/Session-5B/boostx-nti-fast-scalable-and-flexible-storage-architecture-with-nvme-tcp-initiator-acceleration/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5B · BoostX™-NTI: Fast, Scalable and Flexible Storage Architecture with NVMe/TCP Initiator Acceleration"
+        },
+        {
+          "title": "M100: An Orchestrated Dataflow Architecture Powering General AI Computing",
+          "url": "ISCA/2026/Session-5B/m100-an-orchestrated-dataflow-architecture-powering-general-ai-computing/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5B · M100: An Orchestrated Dataflow Architecture Powering General AI Computing"
+        },
+        {
+          "title": "MTIA 300: Meta’s First Training Chip Featuring Built-in NICs and Collective Offloading Engines",
+          "url": "ISCA/2026/Session-5B/mtia-300-meta-s-first-training-chip-featuring-built-in-nics-and-collective-offloading-engines/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5B · MTIA 300: Meta’s First Training Chip Featuring Built-in NICs and Collective Offloading Engines"
+        },
+        {
+          "title": "Optimized Memory Tagging on AmpereOne® Processors",
+          "url": "ISCA/2026/Session-5B/optimized-memory-tagging-on-ampereone-processors/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5B · Optimized Memory Tagging on AmpereOne® Processors"
+        },
+        {
+          "title": "Prometheus: Toward Resilient Data Centers through Optimized Cooling Infrastructure",
+          "url": "ISCA/2026/Session-5B/prometheus-toward-resilient-data-centers-through-optimized-cooling-infrastructure/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5B · Prometheus: Toward Resilient Data Centers through Optimized Cooling Infrastructure"
+        },
+        {
+          "title": "Understanding Inference Scaling for LLMs: Bottlenecks, Trade-offs, and Performance Principles",
+          "url": "ISCA/2026/Session-5B/understanding-inference-scaling-for-llms-bottlenecks-trade-offs-and-performance-principles/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5B · Understanding Inference Scaling for LLMs: Bottlenecks, Trade-offs, and Performance Principles"
+        },
+        {
+          "title": "Ecco: Improving Memory Bandwidth and Capacity for LLMs via Entropy-Aware Cache Compression",
+          "url": "ISCA/2025/Session-5B/ecco-improving-memory-bandwidth-and-capacity-for-llms-via-entropy-aware-cache-compression/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5B · Ecco：通过熵感知缓存压缩提升 LLM 的内存带宽与容量"
+        },
+        {
+          "title": "Hybe: GPU-NPU Hybrid System for Efficient LLM Inference with Million-Token Context Window",
+          "url": "ISCA/2025/Session-5B/hybe-gpu-npu-hybrid-system-for-efficient-llm-inference-with-million-token-context-window/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5B · Hybe：面向百万词元上下文高效 LLM 推理的 GPU-NPU 混合系统"
+        },
+        {
+          "title": "MeshSlice: Efficient 2D Tensor Parallelism for Distributed DNN Training",
+          "url": "ISCA/2025/Session-5B/meshslice-efficient-2d-tensor-parallelism-for-distributed-dnn-training/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5B · MeshSlice：面向分布式 DNN 训练的高效二维张量并行"
+        },
+        {
+          "title": "Zettafly: A Network Topology with Flexible Non-blocking Regions for Large-scale AI and HPC Systems",
+          "url": "ISCA/2025/Session-5B/zettafly-a-network-topology-with-flexible-non-blocking-regions-for-large-scale-ai-and-hpc-systems/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5B · Zettafly：面向大规模 AI 与 HPC 系统的灵活无阻塞区域网络拓扑"
+        }
+      ]
+    },
+    {
+      "text": "Session 5C",
+      "count": 10,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (6 papers)",
+      "search_term": "Session 5C",
+      "papers": [
+        {
+          "title": "AutoFHE: An Automatic Hardware Generation Framework for Domain-Specific FHE Accelerators",
+          "url": "ISCA/2026/Session-5C/autofhe-an-automatic-hardware-generation-framework-for-domain-specific-fhe-accelerators/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5C · AutoFHE: An Automatic Hardware Generation Framework for Domain-Specific FHE Accelerators"
+        },
+        {
+          "title": "DarkStream: Exploiting Internal Throughput Contention in Data Streaming Accelerator for Timing Attacks",
+          "url": "ISCA/2026/Session-5C/darkstream-exploiting-internal-throughput-contention-in-data-streaming-accelerator-for-timing-attacks/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5C · DarkStream: Exploiting Internal Throughput Contention in Data Streaming Accelerator for Timing Attacks"
+        },
+        {
+          "title": "Intermittence-Aware Speculative Page Coloring for Secure NVM",
+          "url": "ISCA/2026/Session-5C/intermittence-aware-speculative-page-coloring-for-secure-nvm/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5C · Intermittence-Aware Speculative Page Coloring for Secure NVM"
+        },
+        {
+          "title": "IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving",
+          "url": "ISCA/2026/Session-5C/iroknight-ownership-preserving-neural-acceleration-for-inference-serving/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5C · IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving"
+        },
+        {
+          "title": "LIPPEN: A Lightweight In-Place Pointer Encryption Architecture for Pointer Integrity",
+          "url": "ISCA/2026/Session-5C/lippen-a-lightweight-in-place-pointer-encryption-architecture-for-pointer-integrity/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5C · LIPPEN: A Lightweight In-Place Pointer Encryption Architecture for Pointer Integrity"
+        },
+        {
+          "title": "µRNG: A Framework for Assessing Randomness in Intermittent Computing Devices",
+          "url": "ISCA/2026/Session-5C/urng-a-framework-for-assessing-randomness-in-intermittent-computing-devices/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5C · µRNG: A Framework for Assessing Randomness in Intermittent Computing Devices"
+        },
+        {
+          "title": "AIM: Software and Hardware Co-design for Architecture-level IR-drop Mitigation in High-performance PIM",
+          "url": "ISCA/2025/Session-5C/aim-software-and-hardware-co-design-for-architecture-level-ir-drop-mitigation-in-high-performance-pim/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5C · AIM: 高性能PIM中架构级IR降压缓解的软硬件协同设计"
+        },
+        {
+          "title": "ATiM: Autotuning Tensor Programs for Processing-in-DRAM",
+          "url": "ISCA/2025/Session-5C/atim-autotuning-tensor-programs-for-processing-in-dram/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5C · ATiM: 自调优Processing-in-DRAM张量程序"
+        },
+        {
+          "title": "HeterRAG: Heterogeneous Processing-in-Memory Acceleration for Retrieval-augmented Generation",
+          "url": "ISCA/2025/Session-5C/heterrag-heterogeneous-processing-in-memory-acceleration-for-retrieval-augmented-generation/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5C · HeterRAG: 异构存内计算加速检索增强生成"
+        },
+        {
+          "title": "OptiPIM: Optimizing Processing-in-Memory Acceleration Using Integer Linear Programming",
+          "url": "ISCA/2025/Session-5C/optipim-optimizing-processing-in-memory-acceleration-using-integer-linear-programming/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 5C · OptiPIM: 用整数线性规划优化PIM加速"
+        }
+      ]
+    },
+    {
       "text": "硬件加速器",
       "count": 10,
       "trend": -1,
@@ -2187,6 +3329,258 @@
           "url": "DAC/2025/design/swift_or_exact_boosting_efficient_microarchitecture_dse_via_multi_fidelity_partial_order_prediction/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Design"
+        }
+      ]
+    },
+    {
+      "text": "Session 10A",
+      "count": 9,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (5 papers) · ISCA 2026 (4 papers)",
+      "search_term": "Session 10A",
+      "papers": [
+        {
+          "title": "DisDP: Disaggregating Compute, Network, and Storage for Model-Sharded Data-Parallel Training",
+          "url": "ISCA/2026/Session-10A/disdp-disaggregating-compute-network-and-storage-for-model-sharded-data-parallel-training/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10A · DisDP: Disaggregating Compute, Network, and Storage for Model-Sharded Data-Parallel Training"
+        },
+        {
+          "title": "MoE-Hub: Taming Software Complexity for Seamless MoE Overlap with Hardware-Accelerated Communication on Multi-GPU Systems",
+          "url": "ISCA/2026/Session-10A/moe-hub-taming-software-complexity-for-seamless-moe-overlap-with-hardware-accelerated-communication-on-multi-gpu-systems/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10A · MoE-Hub: Taming Software Complexity for Seamless MoE Overlap with Hardware-Accelerated Communication on Multi-GPU Systems"
+        },
+        {
+          "title": "Scalable Synthesis of distributed LLM workloads through Symbolic Tensor Graphs",
+          "url": "ISCA/2026/Session-10A/scalable-synthesis-of-distributed-llm-workloads-through-symbolic-tensor-graphs/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10A · Scalable Synthesis of distributed LLM workloads through Symbolic Tensor Graphs"
+        },
+        {
+          "title": "Symbiotic MLLM Serving: Dynamically Balancing Parallelism Across GPUs and Resources Within GPUs",
+          "url": "ISCA/2026/Session-10A/symbiotic-mllm-serving-dynamically-balancing-parallelism-across-gpus-and-resources-within-gpus/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10A · Symbiotic MLLM Serving: Dynamically Balancing Parallelism Across GPUs and Resources Within GPUs"
+        },
+        {
+          "title": "BingoGCN: Towards Scalable and Efficient GNN Acceleration with Fine-Grained Partitioning and SLT",
+          "url": "ISCA/2025/Session-10A/bingogcn-towards-scalable-and-efficient-gnn-acceleration-with-fine-grained-partitioning-and-slt/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10A · BingoGCN: 细粒度分区与SLT实现可扩展高效GNN加速"
+        },
+        {
+          "title": "DS-TPU: Dynamical System for on-Device Lifelong Graph Learning with Nonlinear Node Interaction",
+          "url": "ISCA/2025/Session-10A/ds-tpu-dynamical-system-for-on-device-lifelong-graph-learning-with-nonlinear-node-interaction/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10A · DS-TPU：面向设备端终身图学习的非线性节点交互动力系统"
+        },
+        {
+          "title": "FlexNeRFer: A Multi-Dataflow, Adaptive Sparsity-Aware Accelerator for On-Device NeRF Rendering",
+          "url": "ISCA/2025/Session-10A/flexnerfer-a-multi-dataflow-adaptive-sparsity-aware-accelerator-for-on-device-nerf-rendering/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10A · FlexNeRFer：面向设备端 NeRF 渲染的多数据流自适应稀疏感知加速器"
+        },
+        {
+          "title": "Reconfigurable Stream Network Architecture",
+          "url": "ISCA/2025/Session-10A/reconfigurable-stream-network-architecture/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10A · 可重构流网络架构"
+        },
+        {
+          "title": "TRACI: Network Acceleration of Input-Dynamic Communication for Large-Scale Deep Learning Recommendation Model",
+          "url": "ISCA/2025/Session-10A/traci-network-acceleration-of-input-dynamic-communication-for-large-scale-deep-learning-recommendation-model/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10A · TRACI：面向大规模深度学习推荐模型输入动态通信的网络加速"
+        }
+      ]
+    },
+    {
+      "text": "Session 10B",
+      "count": 9,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 10B",
+      "papers": [
+        {
+          "title": "Dynamic Scheduling for AI Accelerators via TISA",
+          "url": "ISCA/2026/Session-10B/dynamic-scheduling-for-ai-accelerators-via-tisa/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10B · Dynamic Scheduling for AI Accelerators via TISA"
+        },
+        {
+          "title": "ELSA: An ELastic SNN Inference Architecture for Efficient Neuromorphic Computing",
+          "url": "ISCA/2026/Session-10B/elsa-an-elastic-snn-inference-architecture-for-efficient-neuromorphic-computing/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10B · ELSA: An ELastic SNN Inference Architecture for Efficient Neuromorphic Computing"
+        },
+        {
+          "title": "MXFFP: Microscaling Flexible Floating Point Format for Large-Scale AI Model Acceleration",
+          "url": "ISCA/2026/Session-10B/mxffp-microscaling-flexible-floating-point-format-for-large-scale-ai-model-acceleration/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10B · MXFFP: Microscaling Flexible Floating Point Format for Large-Scale AI Model Acceleration"
+        },
+        {
+          "title": "UniCore: A Bit-Width Scalable GEMM Unit for Unified LLM Inference",
+          "url": "ISCA/2026/Session-10B/unicore-a-bit-width-scalable-gemm-unit-for-unified-llm-inference/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10B · UniCore: A Bit-Width Scalable GEMM Unit for Unified LLM Inference"
+        },
+        {
+          "title": "XtraMAC: An Efficient MAC Architecture for Mixed-Precision LLM Inference on FPGA",
+          "url": "ISCA/2026/Session-10B/xtramac-an-efficient-mac-architecture-for-mixed-precision-llm-inference-on-fpga/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10B · XtraMAC: An Efficient MAC Architecture for Mixed-Precision LLM Inference on FPGA"
+        },
+        {
+          "title": "InfiniMind: A Learning-Optimized Large-Scale Brain-Computer Interface",
+          "url": "ISCA/2025/Session-10B/infinimind-a-learning-optimized-large-scale-brain-computer-interface/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10B · InfiniMind：面向学习优化的大规模脑机接口"
+        },
+        {
+          "title": "LightNobel: Improving Sequence Length Limitation in Protein Structure Prediction Model via Adaptive Activation Quantization",
+          "url": "ISCA/2025/Session-10B/lightnobel-improving-sequence-length-limitation-in-protein-structure-prediction-model-via-adaptive-activation-quantization/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10B · LightNobel：通过自适应激活量化突破蛋白质结构预测模型的序列长度限制"
+        },
+        {
+          "title": "Lumina: Real-Time Neural Rendering by Exploiting Computational Redundancy",
+          "url": "ISCA/2025/Session-10B/lumina-real-time-neural-rendering-by-exploiting-computational-redundancy/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10B · Lumina：利用计算冗余实现实时神经渲染"
+        },
+        {
+          "title": "MD-pipe: A Strong Scaling Enhanced Pipeline Architecture for Ab Initio Accuracy Molecular Dynamics",
+          "url": "ISCA/2025/Session-10B/md-pipe-a-strong-scaling-enhanced-pipeline-architecture-for-ab-initio-accuracy-molecular-dynamics/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10B · MD-pipe：面向从头算精度分子动力学的强扩展增强流水线架构"
+        }
+      ]
+    },
+    {
+      "text": "Session 10C",
+      "count": 9,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 10C",
+      "papers": [
+        {
+          "title": "AXLE: Coordinated Offloading with Asynchronous Back-Streaming in Computational Memory Systems",
+          "url": "ISCA/2026/Session-10C/axle-coordinated-offloading-with-asynchronous-back-streaming-in-computational-memory-systems/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10C · AXLE: Coordinated Offloading with Asynchronous Back-Streaming in Computational Memory Systems"
+        },
+        {
+          "title": "Bridging Efficiency and Scalability in LLM System via 3D Hybrid PIM with 2D In-Transit Computation",
+          "url": "ISCA/2026/Session-10C/bridging-efficiency-and-scalability-in-llm-system-via-3d-hybrid-pim-with-2d-in-transit-computation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10C · Bridging Efficiency and Scalability in LLM System via 3D Hybrid PIM with 2D In-Transit Computation"
+        },
+        {
+          "title": "DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures",
+          "url": "ISCA/2026/Session-10C/dcc-data-centric-compilation-of-machine-learning-kernels-for-processing-in-memory-architectures/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10C · DCC: Data-Centric Compilation of Machine Learning Kernels for Processing-In-Memory Architectures"
+        },
+        {
+          "title": "Early Silicon of Raptor: The First 3D-DRAM Accelerator for Generative Inference",
+          "url": "ISCA/2026/Session-10C/early-silicon-of-raptor-the-first-3d-dram-accelerator-for-generative-inference/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10C · Early Silicon of Raptor: The First 3D-DRAM Accelerator for Generative Inference"
+        },
+        {
+          "title": "Optimizing Spatial Data Structure with Near-Cache Acceleration by Exploiting Physical Locality",
+          "url": "ISCA/2026/Session-10C/optimizing-spatial-data-structure-with-near-cache-acceleration-by-exploiting-physical-locality/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10C · Optimizing Spatial Data Structure with Near-Cache Acceleration by Exploiting Physical Locality"
+        },
+        {
+          "title": "Adaptive CHERI Compartmentalization for Heterogeneous Accelerators",
+          "url": "ISCA/2025/Session-10C/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10C · 面向异构加速器的自适应 CHERI 隔离"
+        },
+        {
+          "title": "Need for zkSpeed: Accelerating HyperPlonk for Zero-Knowledge Proofs",
+          "url": "ISCA/2025/Session-10C/need-for-zkspeed-accelerating-hyperplonk-for-zero-knowledge-proofs/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10C · Need for zkSpeed: 为零知识证明加速HyperPlonk"
+        },
+        {
+          "title": "SpecASan: Mitigating Transient Execution Attacks Using Speculative Address Sanitization",
+          "url": "ISCA/2025/Session-10C/specasan-mitigating-transient-execution-attacks-using-speculative-address-sanitization/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10C · SpecASan: 利用推测地址消毒缓解瞬态执行攻击"
+        },
+        {
+          "title": "Unified Memory Protection with Multi-granular MAC and Integrity Tree for Heterogeneous Processors",
+          "url": "ISCA/2025/Session-10C/unified-memory-protection-with-multi-granular-mac-and-integrity-tree-for-heterogeneous-processors/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 10C · 面向异构处理器的多粒度 MAC 与完整性树统一内存保护"
+        }
+      ]
+    },
+    {
+      "text": "Session 1A",
+      "count": 9,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (5 papers)",
+      "search_term": "Session 1A",
+      "papers": [
+        {
+          "title": "CODO: An Automated Compiler for Comprehensive Dataflow Optimization",
+          "url": "ISCA/2026/Session-1A/codo-an-automated-compiler-for-comprehensive-dataflow-optimization/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 1A · CODO: An Automated Compiler for Comprehensive Dataflow Optimization"
+        },
+        {
+          "title": "COSM: A Cooperative Scheduling Framework for Concurrent PIM and CPU Execution on Mobile Devices",
+          "url": "ISCA/2026/Session-1A/cosm-a-cooperative-scheduling-framework-for-concurrent-pim-and-cpu-execution-on-mobile-devices/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 1A · COSM: A Cooperative Scheduling Framework for Concurrent PIM and CPU Execution on Mobile Devices"
+        },
+        {
+          "title": "Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection",
+          "url": "ISCA/2026/Session-1A/cerberus-cross-layer-ecc-co-design-for-robust-and-efficient-memory-protection/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 1A · Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection"
+        },
+        {
+          "title": "MLX: Multi-Layer Execution for Structured LLM Workload Acceleration on Spatial Architectures",
+          "url": "ISCA/2026/Session-1A/mlx-multi-layer-execution-for-structured-llm-workload-acceleration-on-spatial-architectures/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 1A · MLX: Multi-Layer Execution for Structured LLM Workload Acceleration on Spatial Architectures"
+        },
+        {
+          "title": "Patterns behind Chaos: Forecasting Data Movement for Efficient Large-Scale MoE LLM Inference",
+          "url": "ISCA/2026/Session-1A/patterns-behind-chaos-forecasting-data-movement-for-efficient-large-scale-moe-llm-inference/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 1A · Patterns behind Chaos: Forecasting Data Movement for Efficient Large-Scale MoE LLM Inference"
+        },
+        {
+          "title": "FRED: A Wafer-scale Fabric for 3D Parallel DNN Training",
+          "url": "ISCA/2025/Session-1A/fred-a-wafer-scale-fabric-for-3d-parallel-dnn-training/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 1A · FRED: 用于3D并行DNN训练的Wafer-scale互联结构"
+        },
+        {
+          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
+          "url": "ISCA/2025/Session-1A/lightml-a-photonic-accelerator-for-efficient-general-purpose-machine-learning/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 1A · LightML: 高效通用机器学习的光子加速器"
+        },
+        {
+          "title": "PD Constraint-aware Physical/Logical Topology Co-Design for Network on Wafer",
+          "url": "ISCA/2025/Session-1A/pd-constraint-aware-physical-logical-topology-co-design-for-network-on-wafer/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 1A · 面向晶圆网络的物理/逻辑拓扑感知协同设计"
+        },
+        {
+          "title": "WSC-LLM: Efficient LLM Service and Architecture Co-exploration for Wafer-scale Chips",
+          "url": "ISCA/2025/Session-1A/wsc-llm-efficient-llm-service-and-architecture-co-exploration-for-wafer-scale-chips/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 1A · WSC-LLM: 面向Wafer-scale芯片的高效LLM服务与体系结构协同探索"
         }
       ]
     },
@@ -2380,6 +3774,291 @@
       ]
     },
     {
+      "text": "Session 8A",
+      "count": 8,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (5 papers) · ISCA 2026 (3 papers)",
+      "search_term": "Session 8A",
+      "papers": [
+        {
+          "title": "Efficient 3D Gaussian Splatting with Axis-Shared Rasterization and Order-independent Transmittance",
+          "url": "ISCA/2026/Session-8A/efficient-3d-gaussian-splatting-with-axis-shared-rasterization-and-order-independent-transmittance/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8A · Efficient 3D Gaussian Splatting with Axis-Shared Rasterization and Order-independent Transmittance"
+        },
+        {
+          "title": "GauTracer: Extending Ray Tracing Accelerator for Gaussian-based Scene Representation",
+          "url": "ISCA/2026/Session-8A/gautracer-extending-ray-tracing-accelerator-for-gaussian-based-scene-representation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8A · GauTracer: Extending Ray Tracing Accelerator for Gaussian-based Scene Representation"
+        },
+        {
+          "title": "TTP: A Hardware-Efficient Design for Precise Prefetching in Ray Tracing",
+          "url": "ISCA/2026/Session-8A/ttp-a-hardware-efficient-design-for-precise-prefetching-in-ray-tracing/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8A · TTP: A Hardware-Efficient Design for Precise Prefetching in Ray Tracing"
+        },
+        {
+          "title": "AMALI: An Analytical Model for Accurately Modeling LLM Inference on Modern GPUs",
+          "url": "ISCA/2025/Session-8A/amali-an-analytical-model-for-accurately-modeling-llm-inference-on-modern-gpus/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8A · AMALI：精确建模现代 GPU 上 LLM 推理的分析模型"
+        },
+        {
+          "title": "Assassyn: A Unified Abstraction for Architectural Simulation and Implementation",
+          "url": "ISCA/2025/Session-8A/assassyn-a-unified-abstraction-for-architectural-simulation-and-implementation/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8A · Assassyn：面向体系结构仿真与实现的统一抽象"
+        },
+        {
+          "title": "Concorde: Fast and Accurate CPU Performance Modeling with Compositional Analytical-ML Fusion",
+          "url": "ISCA/2025/Session-8A/concorde-fast-and-accurate-cpu-performance-modeling-with-compositional-analytical-ml-fusion/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8A · Concorde：基于组合式分析—机器学习融合的快速精准 CPU 性能建模"
+        },
+        {
+          "title": "GCStack+GCScaler: Fast and Accurate GPU Performance Analyses Using Fine-Grained Stall Cycle Accounting and Interval Analysis",
+          "url": "ISCA/2025/Session-8A/gcstack-gcscaler-fast-and-accurate-gpu-performance-analyses-using-fine-grained-stall-cycle-accounting-and-interval-analysis/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8A · GCStack+GCScaler：基于细粒度停顿周期计数与区间分析的快速精准 GPU 性能分析"
+        },
+        {
+          "title": "TrioSim: A Lightweight Simulator for Large-Scale DNN Workloads on Multi-GPU Systems",
+          "url": "ISCA/2025/Session-8A/triosim-a-lightweight-simulator-for-large-scale-dnn-workloads-on-multi-gpu-systems/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8A · TrioSim：面向多 GPU 系统大规模 DNN 负载的轻量级模拟器"
+        }
+      ]
+    },
+    {
+      "text": "Session 8B",
+      "count": 8,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (5 papers) · ISCA 2026 (3 papers)",
+      "search_term": "Session 8B",
+      "papers": [
+        {
+          "title": "Bumper: Hinting Instruction Usefulness for Robust Unified Caches",
+          "url": "ISCA/2026/Session-8B/bumper-hinting-instruction-usefulness-for-robust-unified-caches/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8B · Bumper: Hinting Instruction Usefulness for Robust Unified Caches"
+        },
+        {
+          "title": "ICP: Exploiting Instruction Correlation for Prefetching Irregular Memory Accesses",
+          "url": "ISCA/2026/Session-8B/icp-exploiting-instruction-correlation-for-prefetching-irregular-memory-accesses/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8B · ICP: Exploiting Instruction Correlation for Prefetching Irregular Memory Accesses"
+        },
+        {
+          "title": "Revelator: Rapid Data Fetching via System-Software-Guided Hash-based Speculative Address Translation",
+          "url": "ISCA/2026/Session-8B/revelator-rapid-data-fetching-via-system-software-guided-hash-based-speculative-address-translation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8B · Revelator: Rapid Data Fetching via System-Software-Guided Hash-based Speculative Address Translation"
+        },
+        {
+          "title": "Accelerating Simulation of Quantum Circuits under Noise via Computational Reuse",
+          "url": "ISCA/2025/Session-8B/accelerating-simulation-of-quantum-circuits-under-noise-via-computational-reuse/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8B · 通过计算复用加速噪声环境下的量子电路模拟"
+        },
+        {
+          "title": "Genesis: A Compiler for Hamiltonian Simulation on Hybrid CV-DV Quantum Computers",
+          "url": "ISCA/2025/Session-8B/genesis-a-compiler-for-hamiltonian-simulation-on-hybrid-cv-dv-quantum-computers/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8B · Genesis: 混合CV-DV量子计算机的Hamiltonian模拟编译器"
+        },
+        {
+          "title": "QPlacer: Frequency-Aware Component Placement for Superconducting Quantum Computers",
+          "url": "ISCA/2025/Session-8B/qplacer-frequency-aware-component-placement-for-superconducting-quantum-computers/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8B · Qplacer: 超导量子计算机的频率感知元件布局"
+        },
+        {
+          "title": "QR-Map: A Map-Based Approach to Quantum Circuit Abstraction for Qubit Reuse Optimization",
+          "url": "ISCA/2025/Session-8B/qr-map-a-map-based-approach-to-quantum-circuit-abstraction-for-qubit-reuse-optimization/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8B · QR-Map: 基于地图的量子电路抽象与量子比特复用优化"
+        },
+        {
+          "title": "Reinforcement Learning-Guided Graph State Generation in Photonic Quantum Computers",
+          "url": "ISCA/2025/Session-8B/reinforcement-learning-guided-graph-state-generation-in-photonic-quantum-computers/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8B · 强化学习引导的光子量子计算机图态生成"
+        }
+      ]
+    },
+    {
+      "text": "Session 8C",
+      "count": 8,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (5 papers) · ISCA 2026 (3 papers)",
+      "search_term": "Session 8C",
+      "papers": [
+        {
+          "title": "Distilling Magic States in the Bicycle Architecture",
+          "url": "ISCA/2026/Session-8C/distilling-magic-states-in-the-bicycle-architecture/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8C · Distilling Magic States in the Bicycle Architecture"
+        },
+        {
+          "title": "Leveraging Phase Polynomials for Quantum Circuit Optimization",
+          "url": "ISCA/2026/Session-8C/leveraging-phase-polynomials-for-quantum-circuit-optimization/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8C · Leveraging Phase Polynomials for Quantum Circuit Optimization"
+        },
+        {
+          "title": "O3LS: Optimizing Lattice Surgery via Automatic Layout Searching and Loose Scheduling",
+          "url": "ISCA/2026/Session-8C/o3ls-optimizing-lattice-surgery-via-automatic-layout-searching-and-loose-scheduling/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8C · O3LS: Optimizing Lattice Surgery via Automatic Layout Searching and Loose Scheduling"
+        },
+        {
+          "title": "DX100: Programmable Data Access Accelerator for Indirection",
+          "url": "ISCA/2025/Session-8C/dx100-programmable-data-access-accelerator-for-indirection/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8C · DX100：面向间接访问的可编程数据访问加速器"
+        },
+        {
+          "title": "HYTE: Flexible Tiling for Sparse Accelerators via Hybrid Static-Dynamic Approaches",
+          "url": "ISCA/2025/Session-8C/hyte-flexible-tiling-for-sparse-accelerators-via-hybrid-static-dynamic-approaches/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8C · HYTE：通过静态—动态混合方法为稀疏加速器实现灵活分块"
+        },
+        {
+          "title": "IDEA-GP: Instruction-Driven Architecture with Efficient Online Workload Allocation for Geometric Perception",
+          "url": "ISCA/2025/Session-8C/idea-gp-instruction-driven-architecture-with-efficient-online-workload-allocation-for-geometric-perception/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8C · IDEA-GP：面向几何感知高效在线负载分配的指令驱动架构"
+        },
+        {
+          "title": "NUPEA: Optimizing Critical Loads on Spatial Dataflow Architectures via Non-Uniform Processing-Element Access",
+          "url": "ISCA/2025/Session-8C/nupea-optimizing-critical-loads-on-spatial-dataflow-architectures-via-non-uniform-processing-element-access/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8C · NUPEA：通过非均匀处理单元访问优化空间数据流架构中的关键加载"
+        },
+        {
+          "title": "SEAL: A Single-Event Architecture for In-Sensor Visual Localization",
+          "url": "ISCA/2025/Session-8C/seal-a-single-event-architecture-for-in-sensor-visual-localization/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 8C · SEAL：面向传感器内视觉定位的单事件架构"
+        }
+      ]
+    },
+    {
+      "text": "Session 9A",
+      "count": 8,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (4 papers)",
+      "search_term": "Session 9A",
+      "papers": [
+        {
+          "title": "Democratizing and Accelerating Hardware Verification with Software-Native Optimization",
+          "url": "ISCA/2026/Session-9A/democratizing-and-accelerating-hardware-verification-with-software-native-optimization/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9A · Democratizing and Accelerating Hardware Verification with Software-Native Optimization"
+        },
+        {
+          "title": "HARTBREAKER: Deterministic Fuzzing of Multi-Hart RISC-V CPUs with Non-Deterministic Programs",
+          "url": "ISCA/2026/Session-9A/hartbreaker-deterministic-fuzzing-of-multi-hart-risc-v-cpus-with-non-deterministic-programs/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9A · HARTBREAKER: Deterministic Fuzzing of Multi-Hart RISC-V CPUs with Non-Deterministic Programs"
+        },
+        {
+          "title": "QED: Scalable Consistency Verification of Memory Instruction Reordering in Hardware",
+          "url": "ISCA/2026/Session-9A/qed-scalable-consistency-verification-of-memory-instruction-reordering-in-hardware/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9A · QED: Scalable Consistency Verification of Memory Instruction Reordering in Hardware"
+        },
+        {
+          "title": "täkōFormal: Enabling Robust Software for Programmable Memory Hierarchies",
+          "url": "ISCA/2026/Session-9A/t-k-formal-enabling-robust-software-for-programmable-memory-hierarchies/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9A · täkōFormal: Enabling Robust Software for Programmable Memory Hierarchies"
+        },
+        {
+          "title": "DCPerf: An Open-Source, Battle-Tested Performance Benchmark Suite for Datacenter Workloads",
+          "url": "ISCA/2025/Session-9A/dcperf-an-open-source-battle-tested-performance-benchmark-suite-for-datacenter-workloads/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9A · DCPerf：经实战检验的开源数据中心负载性能基准套件"
+        },
+        {
+          "title": "Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures",
+          "url": "ISCA/2025/Session-9A/insights-into-deepseek-v3-scaling-challenges-and-reflections-on-hardware-for-ai-architectures/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9A · 洞察 DeepSeek-V3：扩展挑战与 AI 体系结构硬件反思"
+        },
+        {
+          "title": "Meta’s Second Generation AI Chip: Model-Chip Co-Design and Productionization Experiences",
+          "url": "ISCA/2025/Session-9A/meta-s-second-generation-ai-chip-model-chip-co-design-and-productionization-experiences/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9A · Meta 第二代 AI 芯片：模型—芯片协同设计与产品化经验"
+        },
+        {
+          "title": "Scaling Llama 3 Training with Efficient Parallelism Strategies",
+          "url": "ISCA/2025/Session-9A/scaling-llama-3-training-with-efficient-parallelism-strategies/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9A · 利用高效并行策略扩展 Llama 3 训练"
+        }
+      ]
+    },
+    {
+      "text": "Session 9B",
+      "count": 8,
+      "trend": 0,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (4 papers)",
+      "search_term": "Session 9B",
+      "papers": [
+        {
+          "title": "Enhancing Instruction Prefetching via Cache and TLB Management",
+          "url": "ISCA/2026/Session-9B/enhancing-instruction-prefetching-via-cache-and-tlb-management/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9B · Enhancing Instruction Prefetching via Cache and TLB Management"
+        },
+        {
+          "title": "From Memorization to Generalization: A Practical Neural Network Prefetching Framework",
+          "url": "ISCA/2026/Session-9B/from-memorization-to-generalization-a-practical-neural-network-prefetching-framework/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9B · From Memorization to Generalization: A Practical Neural Network Prefetching Framework"
+        },
+        {
+          "title": "LIBRA: A High-Accuracy, Cost-Aware, and Coordinated Multi-GPU Page Prefetcher",
+          "url": "ISCA/2026/Session-9B/libra-a-high-accuracy-cost-aware-and-coordinated-multi-gpu-page-prefetcher/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9B · LIBRA: A High-Accuracy, Cost-Aware, and Coordinated Multi-GPU Page Prefetcher"
+        },
+        {
+          "title": "R-Max: Extending Bélády’s MIN with Prefetching to Bound Realistic Cache Performance",
+          "url": "ISCA/2026/Session-9B/r-max-extending-b-l-dy-s-min-with-prefetching-to-bound-realistic-cache-performance/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9B · R-Max: Extending Bélády’s MIN with Prefetching to Bound Realistic Cache Performance"
+        },
+        {
+          "title": "Avalanche: Optimizing Cache Utilization via Matrix Reordering for Sparse Matrix Multiplication Accelerator",
+          "url": "ISCA/2025/Session-9B/avalanche-optimizing-cache-utilization-via-matrix-reordering-for-sparse-matrix-multiplication-accelerator/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9B · Avalanche：通过矩阵重排优化稀疏矩阵乘法加速器的缓存利用率"
+        },
+        {
+          "title": "Debunking the CUDA Myth Towards GPU-based AI Systems: Evaluation of the Performance and Programmability of Intel’s Gaudi NPU for AI Model Serving",
+          "url": "ISCA/2025/Session-9B/debunking-the-cuda-myth-towards-gpu-based-ai-systems-evaluation-of-the-performance-and-programmability-of-intel-s-gaudi-npu-for-ai-model-serving/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9B · 破除 GPU AI 系统的 CUDA 迷思：英特尔 Gaudi NPU 在 AI 模型服务中的性能与可编程性评估"
+        },
+        {
+          "title": "GPUs All Grown-Up: Fully Device-Driven SpMV Using GPU Work Graphs",
+          "url": "ISCA/2025/Session-9B/gpus-all-grown-up-fully-device-driven-spmv-using-gpu-work-graphs/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9B · 成熟的 GPU：利用 GPU 工作图实现完全设备驱动的 SpMV"
+        },
+        {
+          "title": "Telos: A Dataflow Accelerator for Sparse Triangular Solver of Partial Differential Equations",
+          "url": "ISCA/2025/Session-9B/telos-a-dataflow-accelerator-for-sparse-triangular-solver-of-partial-differential-equations/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9B · Telos：面向偏微分方程稀疏三角求解器的数据流加速器"
+        }
+      ]
+    },
+    {
       "text": "算法-硬件协同设计",
       "count": 8,
       "trend": -1,
@@ -2488,6 +4167,108 @@
       ]
     },
     {
+      "text": "Session 2A",
+      "count": 7,
+      "trend": -1,
+      "conf_info": "ISCA 2025 (4 papers) · ISCA 2026 (3 papers)",
+      "search_term": "Session 2A",
+      "papers": [
+        {
+          "title": "Approaching Shannon Bound with Lossless LLM Weight Compression",
+          "url": "ISCA/2026/Session-2A/approaching-shannon-bound-with-lossless-llm-weight-compression/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2A · Approaching Shannon Bound with Lossless LLM Weight Compression"
+        },
+        {
+          "title": "Cassandra: Enabling Reasoning LLMs at Edge via Self-Speculative Decoding",
+          "url": "ISCA/2026/Session-2A/cassandra-enabling-reasoning-llms-at-edge-via-self-speculative-decoding/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2A · Cassandra: Enabling Reasoning LLMs at Edge via Self-Speculative Decoding"
+        },
+        {
+          "title": "Combating the Memory Walls: Optimization Pathways for Long-Context Agentic LLM Inference",
+          "url": "ISCA/2026/Session-2A/combating-the-memory-walls-optimization-pathways-for-long-context-agentic-llm-inference/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2A · Combating the Memory Walls: Optimization Pathways for Long-Context Agentic LLM Inference"
+        },
+        {
+          "title": "H2-LLM: Hardware-Dataflow Co-Exploration for Heterogeneous Hybrid-Bonding-based Low-Batch LLM Inference",
+          "url": "ISCA/2025/Session-2A/h2-llm-hardware-dataflow-co-exploration-for-heterogeneous-hybrid-bonding-based-low-batch-llm-inference/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 2A · H2-LLM：面向异构混合键合低批量 LLM 推理的硬件—数据流协同探索"
+        },
+        {
+          "title": "Precise Exceptions in Relaxed Architectures",
+          "url": "ISCA/2025/Session-2A/precise-exceptions-in-relaxed-architectures/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 2A · 松弛架构中的精确异常"
+        },
+        {
+          "title": "Rethinking Prefetching for Intermittent Computing",
+          "url": "ISCA/2025/Session-2A/rethinking-prefetching-for-intermittent-computing/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 2A · 重新思考间歇计算中的预取"
+        },
+        {
+          "title": "The XOR Cache: A Catalyst for Compression",
+          "url": "ISCA/2025/Session-2A/the-xor-cache-a-catalyst-for-compression/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 2A · XOR Cache：压缩的催化剂"
+        }
+      ]
+    },
+    {
+      "text": "Session 9C",
+      "count": 7,
+      "trend": 1,
+      "conf_info": "ISCA 2025 (3 papers) · ISCA 2026 (4 papers)",
+      "search_term": "Session 9C",
+      "papers": [
+        {
+          "title": "Photonic Quantum Computing on Spin Memory Architecture with Tree-Encoded Fusion",
+          "url": "ISCA/2026/Session-9C/photonic-quantum-computing-on-spin-memory-architecture-with-tree-encoded-fusion/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9C · Photonic Quantum Computing on Spin Memory Architecture with Tree-Encoded Fusion"
+        },
+        {
+          "title": "SATIC: An Optimizing Ising Compiler for SAT(isfiability)",
+          "url": "ISCA/2026/Session-9C/satic-an-optimizing-ising-compiler-for-sat-isfiability/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9C · SATIC: An Optimizing Ising Compiler for SAT(isfiability)"
+        },
+        {
+          "title": "TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation",
+          "url": "ISCA/2026/Session-9C/tusq-tracking-uncomputation-and-sampling-for-noisy-quantum-simulation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9C · TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation"
+        },
+        {
+          "title": "Unifying Qubit Routing Across Diverse Quantum ISAs via Canonical Representation",
+          "url": "ISCA/2026/Session-9C/unifying-qubit-routing-across-diverse-quantum-isas-via-canonical-representation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9C · Unifying Qubit Routing Across Diverse Quantum ISAs via Canonical Representation"
+        },
+        {
+          "title": "Folded Banks: 3D-Stacked HBM Design for Fine-Grained Random-Access Bandwidth",
+          "url": "ISCA/2025/Session-9C/folded-banks-3d-stacked-hbm-design-for-fine-grained-random-access-bandwidth/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9C · Folded Banks: 面向细粒度随机访问带宽的3D堆叠HBM设计"
+        },
+        {
+          "title": "MagiCache: A Virtual In-Cache Computing Engine",
+          "url": "ISCA/2025/Session-9C/magicache-a-virtual-in-cache-computing-engine/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9C · MagiCache: 虚拟片内计算引擎"
+        },
+        {
+          "title": "NMP-PaK: Near-Memory Processing Acceleration of Scalable De Novo Genome Assembly",
+          "url": "ISCA/2025/Session-9C/nmp-pak-near-memory-processing-acceleration-of-scalable-de-novo-genome-assembly/",
+          "conf": "ISCA 2025",
+          "summary": "ISCA 2025 · Session 9C · NMP-PaK: 近存处理加速可扩展从头基因组装"
+        }
+      ]
+    },
+    {
       "text": "机器学习",
       "count": 7,
       "trend": -1,
@@ -2590,51 +4371,6 @@
       ]
     },
     {
-      "text": "Hardware Security",
-      "count": 6,
-      "trend": -1,
-      "conf_info": "DAC 2025 (5 papers) · Unknown (1 paper)",
-      "search_term": "Hardware Security",
-      "papers": [
-        {
-          "title": "Exploiting Power Side-Channel Vulnerabilities in XGBoost Accelerator",
-          "url": "DAC/2025/security/power_based_side_channel_attack_on_xgboost_accelerator/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Security"
-        },
-        {
-          "title": "FastPath: A Hybrid Approach for Efficient Hardware Security Verification",
-          "url": "DAC/2025/security/fastpath_a_hybrid_approach_for_efficient_hardware_security_verification/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Security"
-        },
-        {
-          "title": "InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework",
-          "url": "DAC/2025/eda/interconfuzz_a_fuzzing_based_comprehensive_noc_verification_framework/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · EDA"
-        },
-        {
-          "title": "POLARIS: Explainable Artificial Intelligence for Mitigating Power Side-Channel Leakage",
-          "url": "DAC/2025/security/polaris_explainable_artificial_intelligence_for_mitigating_power_side_channel_leakage/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Security"
-        },
-        {
-          "title": "PUFiM: A Robust and Efficient FeFET-Based Security Solution Merging Physical Unclonable Function with Compute-in-Memory for Edge AI",
-          "url": "DAC/2025/design/pufim_a_robust_and_efficient_fefet_based_security_solution_merging_physical_unclonable_function_with_compute_in_memory_for_edge_ai/",
-          "conf": "DAC 2025",
-          "summary": "DAC 2025 · Design"
-        },
-        {
-          "title": "计算机体系结构论文导读",
-          "url": "index copy/",
-          "conf": "Unknown",
-          "summary": "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC·HPDC 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
-        }
-      ]
-    },
-    {
       "text": "Quantization",
       "count": 6,
       "trend": -1,
@@ -2680,362 +4416,92 @@
       ]
     },
     {
-      "text": "Session 4A",
+      "text": "Session 5D",
       "count": 6,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (6 papers)",
-      "search_term": "Session 4A",
+      "trend": 1,
+      "conf_info": "ISCA 2026 (6 papers)",
+      "search_term": "Session 5D",
       "papers": [
         {
-          "title": "AiF: Accelerating On-Device LLM Inference Using In-Flash Processing",
-          "url": "ISCA/2025/Session-4A/aif-accelerating-on-device-llm-inference-using-in-flash-processing/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4A · AiF: 利用片内闪存处理实现端侧LLM推理加速"
+          "title": "L-PCN: A Point Cloud Accelerator Exploiting Spatial Locality through Octree-based Islandization",
+          "url": "ISCA/2026/Session-5D/l-pcn-a-point-cloud-accelerator-exploiting-spatial-locality-through-octree-based-islandization/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5D · L-PCN: A Point Cloud Accelerator Exploiting Spatial Locality through Octree-based Islandization"
         },
         {
-          "title": "Chimera: Communication Fusion for Hybrid Parallelism in Large Language Models",
-          "url": "ISCA/2025/Session-4A/chimera-communication-fusion-for-hybrid-parallelism-in-large-language-models/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4A · Chimera: 大语言模型混合并行通信融合"
+          "title": "NS-FPS: Accelerating Farthest Point Sampling via Neighbor Search in Large-Scale Point Clouds",
+          "url": "ISCA/2026/Session-5D/ns-fps-accelerating-farthest-point-sampling-via-neighbor-search-in-large-scale-point-clouds/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5D · NS-FPS: Accelerating Farthest Point Sampling via Neighbor Search in Large-Scale Point Clouds"
         },
         {
-          "title": "LIA: A Single-GPU LLM Inference Acceleration with Cooperative AMX-Enabled CPU-GPU Computation and CXL Offloading",
-          "url": "ISCA/2025/Session-4A/lia-a-single-gpu-llm-inference-acceleration-with-cooperative-amx-enabled-cpu-gpu-computation-and-cxl-offloading/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4A · LIA: 基于AMX的CPU-GPU协作与CXL卸载的单GPU LLM推理加速"
+          "title": "RangeGuard: Efficient, Bounded Approximate Error Correction for Reliable DNNs",
+          "url": "ISCA/2026/Session-5D/rangeguard-efficient-bounded-approximate-error-correction-for-reliable-dnns/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5D · RangeGuard: Efficient, Bounded Approximate Error Correction for Reliable DNNs"
         },
         {
-          "title": "LUT Tensor Core: A Software-Hardware Co-Design for LUT-Based Low-Bit LLM Inference",
-          "url": "ISCA/2025/Session-4A/lut-tensor-core-a-software-hardware-co-design-for-lut-based-low-bit-llm-inference/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4A · LUT Tensor Core: 基于查找表的低比特LLM推理软硬件协同"
+          "title": "RoCC: Harnessing Raster Operations Pipeline for Efficient Tensor Collective Communication",
+          "url": "ISCA/2026/Session-5D/rocc-harnessing-raster-operations-pipeline-for-efficient-tensor-collective-communication/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5D · RoCC: Harnessing Raster Operations Pipeline for Efficient Tensor Collective Communication"
         },
         {
-          "title": "Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization",
-          "url": "ISCA/2025/Session-4A/oaken-fast-and-efficient-llm-serving-with-online-offline-hybrid-kv-cache-quantization/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4A · Oaken: 在线/离线混合KV Cache量化的高效LLM服务"
+          "title": "STEP: Spatial Footprint Prefetcher with Multi-Point Temporal Triggers",
+          "url": "ISCA/2026/Session-5D/step-spatial-footprint-prefetcher-with-multi-point-temporal-triggers/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5D · STEP: Spatial Footprint Prefetcher with Multi-Point Temporal Triggers"
         },
         {
-          "title": "SpecEE: Accelerating Large Language Model Inference with Speculative Early Exiting",
-          "url": "ISCA/2025/Session-4A/specee-accelerating-large-language-model-inference-with-speculative-early-exiting/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4A · SpecEE: 利用推测早退加速LLM推理"
+          "title": "TDMSim: Enabling High-Density and Energy-Efficient GPU DRAM Caches with 2D-Materials for Data-Intensive Applications",
+          "url": "ISCA/2026/Session-5D/tdmsim-enabling-high-density-and-energy-efficient-gpu-dram-caches-with-2d-materials-for-data-intensive-applications/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 5D · TDMSim: Enabling High-Density and Energy-Efficient GPU DRAM Caches with 2D-Materials for Data-Intensive Applications"
         }
       ]
     },
     {
-      "text": "Session 4C",
+      "text": "Session 7D",
       "count": 6,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (6 papers)",
-      "search_term": "Session 4C",
+      "trend": 1,
+      "conf_info": "ISCA 2026 (6 papers)",
+      "search_term": "Session 7D",
       "papers": [
         {
-          "title": "A4: Microarchitecture-Aware LLC Management for Datacenter Servers with Emerging I/O Devices",
-          "url": "ISCA/2025/Session-4C/a4-microarchitecture-aware-llc-management-for-datacenter-servers-with-emerging-i-o-devices/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4C · A4：面向新兴 I/O 设备数据中心服务器的微架构感知 LLC 管理"
+          "title": "FEnc²: Unifying Data Packing for Efficient Private Inference via Convolution and Architecture-Aware Fragment Encoding",
+          "url": "ISCA/2026/Session-7D/fenc2-unifying-data-packing-for-efficient-private-inference-via-convolution-and-architecture-aware-fragment-encoding/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7D · FEnc²: Unifying Data Packing for Efficient Private Inference via Convolution and Architecture-Aware Fragment Encoding"
         },
         {
-          "title": "Cramming a Data Center into One Cabinet, a Co-Exploration of Computing and Hardware Architecture of Waferscale Chip",
-          "url": "ISCA/2025/Session-4C/cramming-a-data-center-into-one-cabinet-a-co-exploration-of-computing-and-hardware-architecture-of-waferscale-chip/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4C · 将数据中心装进一个机柜：晶圆级芯片计算与硬件架构协同探索"
+          "title": "FlashTFHE: A Scalable Architecture for Efficient Multi-bit Fully Homomorphic Encryption",
+          "url": "ISCA/2026/Session-7D/flashtfhe-a-scalable-architecture-for-efficient-multi-bit-fully-homomorphic-encryption/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7D · FlashTFHE: A Scalable Architecture for Efficient Multi-bit Fully Homomorphic Encryption"
         },
         {
-          "title": "Dynamic Load Balancer in Intel Xeon Scalable Processor: Performance Analyses, Enhancements, and Guidelines",
-          "url": "ISCA/2025/Session-4C/dynamic-load-balancer-in-intel-xeon-scalable-processor-performance-analyses-enhancements-and-guidelines/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4C · 英特尔至强可扩展处理器中的动态负载均衡器：性能分析、增强与指南"
+          "title": "HE²: A Communication-Light Heterogeneous Architecture for Efficient Fully Homomorphic Encryption",
+          "url": "ISCA/2026/Session-7D/he2-a-communication-light-heterogeneous-architecture-for-efficient-fully-homomorphic-encryption/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7D · HE²: A Communication-Light Heterogeneous Architecture for Efficient Fully Homomorphic Encryption"
         },
         {
-          "title": "Fair-CO2: Fair Attribution for Cloud Carbon Emissions",
-          "url": "ISCA/2025/Session-4C/fair-co2-fair-attribution-for-cloud-carbon-emissions/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4C · Fair-CO2：云碳排放的公平归因"
+          "title": "HyperDrive: Hierarchical Exploitation of Memory Efficiency for GPU-Based FHE Acceleration",
+          "url": "ISCA/2026/Session-7D/hyperdrive-hierarchical-exploitation-of-memory-efficiency-for-gpu-based-fhe-acceleration/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7D · HyperDrive: Hierarchical Exploitation of Memory Efficiency for GPU-Based FHE Acceleration"
         },
         {
-          "title": "HardHarvest: Hardware-Supported Core Harvesting for Microservices",
-          "url": "ISCA/2025/Session-4C/hardharvest-hardware-supported-core-harvesting-for-microservices/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4C · HardHarvest：面向微服务的硬件支持核心收割"
+          "title": "MNEMOS: A GPU-based TFHE Acceleration Framework with Memory Access Optimization",
+          "url": "ISCA/2026/Session-7D/mnemos-a-gpu-based-tfhe-acceleration-framework-with-memory-access-optimization/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7D · MNEMOS: A GPU-based TFHE Acceleration Framework with Memory Access Optimization"
         },
         {
-          "title": "Single-Address-Space FaaS with Jord",
-          "url": "ISCA/2025/Session-4C/single-address-space-faas-with-jord/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4C · 基于 Jord 的单地址空间 FaaS"
-        }
-      ]
-    },
-    {
-      "text": "Session 6A",
-      "count": 6,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (6 papers)",
-      "search_term": "Session 6A",
-      "papers": [
-        {
-          "title": "Bishop: Sparsified Bundling Spiking Transformers on Heterogeneous Cores with Error-constrained Pruning",
-          "url": "ISCA/2025/Session-6A/bishop-sparsified-bundling-spiking-transformers-on-heterogeneous-cores-with-error-constrained-pruning/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6A · Bishop：通过误差约束剪枝在异构核心上稀疏捆绑脉冲 Transformer"
-        },
-        {
-          "title": "Hermes: Algorithm-System Co-design for Efficient Retrieval-Augmented Generation At-Scale",
-          "url": "ISCA/2025/Session-6A/hermes-algorithm-system-co-design-for-efficient-retrieval-augmented-generation-at-scale/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6A · Hermes：面向大规模高效检索增强生成的算法—系统协同设计"
-        },
-        {
-          "title": "Phi: Leveraging Pattern-based Hierarchical Sparsity for High-Efficiency Spiking Neural Networks",
-          "url": "ISCA/2025/Session-6A/phi-leveraging-pattern-based-hierarchical-sparsity-for-high-efficiency-spiking-neural-networks/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6A · Phi：利用基于模式的层次稀疏性实现高效脉冲神经网络"
-        },
-        {
-          "title": "RAGO: Systematic Performance Optimization for Retrieval-Augmented Generation Serving",
-          "url": "ISCA/2025/Session-6A/rago-systematic-performance-optimization-for-retrieval-augmented-generation-serving/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6A · RAGO：面向检索增强生成服务的系统化性能优化"
-        },
-        {
-          "title": "Single Spike Artificial Neural Networks",
-          "url": "ISCA/2025/Session-6A/single-spike-artificial-neural-networks/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6A · 单脉冲人工神经网络"
-        },
-        {
-          "title": "Transitive Array: An Efficient GEMM Accelerator with Result Reuse",
-          "url": "ISCA/2025/Session-6A/transitive-array-an-efficient-gemm-accelerator-with-result-reuse/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6A · Transitive Array：支持结果复用的高效 GEMM 加速器"
-        }
-      ]
-    },
-    {
-      "text": "Session 6B",
-      "count": 6,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (6 papers)",
-      "search_term": "Session 6B",
-      "papers": [
-        {
-          "title": "Caravan: A Hardware/Software Co-Design for Efficient SIMD Neighbor Search on Point Clouds",
-          "url": "ISCA/2025/Session-6B/caravan-a-hardware-software-co-design-for-efficient-simd-neighbor-search-on-point-clouds/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6B · Caravan：面向点云高效 SIMD 邻域搜索的软硬件协同设计"
-        },
-        {
-          "title": "Evaluating Ruche Networks: Physically Scalable, Cost-Effective, Bandwidth-Flexible NoCs",
-          "url": "ISCA/2025/Session-6B/evaluating-ruche-networks-physically-scalable-cost-effective-bandwidth-flexible-nocs/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6B · 评估 Ruche 网络：物理可扩展、经济高效且带宽灵活的片上网络"
-        },
-        {
-          "title": "Garibaldi: A Pairwise Instruction-Data Management for Enhancing Shared Last-Level Cache Performance in Server Workloads",
-          "url": "ISCA/2025/Session-6B/garibaldi-a-pairwise-instruction-data-management-for-enhancing-shared-last-level-cache-performance-in-server-workloads/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6B · Garibaldi：通过成对指令—数据管理提升服务器负载共享末级缓存性能"
-        },
-        {
-          "title": "Light-weight Cache Replacement for Instruction Heavy Workloads",
-          "url": "ISCA/2025/Session-6B/light-weight-cache-replacement-for-instruction-heavy-workloads/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6B · 面向指令密集型负载的轻量级缓存替换"
-        },
-        {
-          "title": "NetCrafter: Tailoring Network Traffic for Non-Uniform Bandwidth Multi-GPU Systems",
-          "url": "ISCA/2025/Session-6B/netcrafter-tailoring-network-traffic-for-non-uniform-bandwidth-multi-gpu-systems/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6B · NetCrafter：为非均匀带宽多 GPU 系统定制网络流量"
-        },
-        {
-          "title": "The Sparsity-Aware LazyGPU Architecture",
-          "url": "ISCA/2025/Session-6B/the-sparsity-aware-lazygpu-architecture/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6B · 稀疏感知 LazyGPU 架构"
-        }
-      ]
-    },
-    {
-      "text": "Session 6C",
-      "count": 6,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (6 papers)",
-      "search_term": "Session 6C",
-      "papers": [
-        {
-          "title": "ANSMET: Approximate Nearest Neighbor Search with Near-Memory Processing and Hybrid Early Termination",
-          "url": "ISCA/2025/Session-6C/ansmet-approximate-nearest-neighbor-search-with-near-memory-processing-and-hybrid-early-termination/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6C · ANSMET: 近存处理与混合早停的近似最近邻搜索"
-        },
-        {
-          "title": "DReX: Accurate and Scalable Dense Retrieval Acceleration via Algorithmic-Hardware Codesign",
-          "url": "ISCA/2025/Session-6C/drex-accurate-and-scalable-dense-retrieval-acceleration-via-algorithmic-hardware-codesign/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6C · DReX: 算法-硬件协同的高精度可扩展稠密检索加速"
-        },
-        {
-          "title": "EOD: Enabling Low Latency GNN Inference via Near-Memory Concatenate Aggregation",
-          "url": "ISCA/2025/Session-6C/eod-enabling-low-latency-gnn-inference-via-near-memory-concatenate-aggregation/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6C · EOD: 通过近存合并聚合实现低延迟GNN推理"
-        },
-        {
-          "title": "Hybrid SLC-MLC RRAM Mixed-Signal Processing-in-Memory Architecture for Transformer Acceleration via Gradient Redistribution",
-          "url": "ISCA/2025/Session-6C/hybrid-slc-mlc-rram-mixed-signal-processing-in-memory-architecture-for-transformer-acceleration-via-gradient-redistribution/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6C · 混合SLC-MLC RRAM混信号PIM架构：通过梯度重分布实现Transformer加速"
-        },
-        {
-          "title": "RAP: Reconfigurable Automata Processor",
-          "url": "ISCA/2025/Session-6C/rap-reconfigurable-automata-processor/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6C · RAP: 可重配自动机处理器"
-        },
-        {
-          "title": "REIS: A High-Performance and Energy-Efficient Retrieval System with In-Storage Processing",
-          "url": "ISCA/2025/Session-6C/reis-a-high-performance-and-energy-efficient-retrieval-system-with-in-storage-processing/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 6C · REIS: 高性能高能效存储内检索系统"
-        }
-      ]
-    },
-    {
-      "text": "Session 7A",
-      "count": 6,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (6 papers)",
-      "search_term": "Session 7A",
-      "papers": [
-        {
-          "title": "Cambricon-SR: An Accelerator for Neural Scene Representation with Sparse Encoding Table",
-          "url": "ISCA/2025/Session-7A/cambricon-sr-an-accelerator-for-neural-scene-representation-with-sparse-encoding-table/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7A · Cambricon-SR：面向稀疏编码表神经场景表示的加速器"
-        },
-        {
-          "title": "Chip Architectures Under Advanced Computing Sanctions",
-          "url": "ISCA/2025/Session-7A/chip-architectures-under-advanced-computing-sanctions/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7A · 先进计算制裁下的芯片架构"
-        },
-        {
-          "title": "DiTile-DGNN: An Efficient Accelerator for Distributed Dynamic Graph Neural Network Inference",
-          "url": "ISCA/2025/Session-7A/ditile-dgnn-an-efficient-accelerator-for-distributed-dynamic-graph-neural-network-inference/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7A · DiTile-DGNN：面向分布式动态图神经网络推理的高效加速器"
-        },
-        {
-          "title": "FATE: Boosting the Performance of Hyper-Dimensional Computing Intelligence with Flexible Numerical DAta TypE",
-          "url": "ISCA/2025/Session-7A/fate-boosting-the-performance-of-hyper-dimensional-computing-intelligence-with-flexible-numerical-data-type/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7A · FATE：利用灵活数值数据类型提升超维计算智能性能"
-        },
-        {
-          "title": "MicroScopiQ: Accelerating Foundational Models through Outlier-Aware Microscaling Quantization",
-          "url": "ISCA/2025/Session-7A/microscopiq-accelerating-foundational-models-through-outlier-aware-microscaling-quantization/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7A · MicroScopiQ：通过离群值感知微缩放量化加速基础模型"
-        },
-        {
-          "title": "Topology-Aware Virtualization over Inter-Core Connected Neural Processing Units",
-          "url": "ISCA/2025/Session-7A/topology-aware-virtualization-over-inter-core-connected-neural-processing-units/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7A · 面向核间互连神经处理器的拓扑感知虚拟化"
-        }
-      ]
-    },
-    {
-      "text": "Session 7B",
-      "count": 6,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (6 papers)",
-      "search_term": "Session 7B",
-      "papers": [
-        {
-          "title": "CORD: Low-Latency, Bandwidth-Efficient and Scalable Release Consistency via Directory Ordering",
-          "url": "ISCA/2025/Session-7B/cord-low-latency-bandwidth-efficient-and-scalable-release-consistency-via-directory-ordering/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7B · CORD：通过目录排序实现低延迟、带宽高效且可扩展的释放一致性"
-        },
-        {
-          "title": "HPVM-HDC: A Heterogeneous Programming System for Accelerating Hyperdimensional Computing",
-          "url": "ISCA/2025/Session-7B/hpvm-hdc-a-heterogeneous-programming-system-for-accelerating-hyperdimensional-computing/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7B · HPVM-HDC：用于加速超维计算的异构编程系统"
-        },
-        {
-          "title": "Neoscope: How Resilient Is My SoC to Workload Churn?",
-          "url": "ISCA/2025/Session-7B/neoscope-how-resilient-is-my-soc-to-workload-churn/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7B · Neoscope：我的 SoC 对负载变动有多强的韧性？"
-        },
-        {
-          "title": "Nyx: Virtualizing Dataflow Execution on Shared FPGA Platforms",
-          "url": "ISCA/2025/Session-7B/nyx-virtualizing-dataflow-execution-on-shared-fpga-platforms/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7B · Nyx：在共享 FPGA 平台上虚拟化数据流执行"
-        },
-        {
-          "title": "UGPU: Dynamically Constructing Unbalanced GPUs for Enhanced Resource Efficiency",
-          "url": "ISCA/2025/Session-7B/ugpu-dynamically-constructing-unbalanced-gpus-for-enhanced-resource-efficiency/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7B · UGPU：动态构建非均衡 GPU 以提升资源效率"
-        },
-        {
-          "title": "WindServe: Efficient Phase-Disaggregated LLM Serving with Stream-based Dynamic Scheduling",
-          "url": "ISCA/2025/Session-7B/windserve-efficient-phase-disaggregated-llm-serving-with-stream-based-dynamic-scheduling/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7B · WindServe：基于流式动态调度的高效阶段解耦 LLM 服务"
-        }
-      ]
-    },
-    {
-      "text": "Session 7C",
-      "count": 6,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (6 papers)",
-      "search_term": "Session 7C",
-      "papers": [
-        {
-          "title": "CaliQEC: In-situ Qubit Calibration for Surface Code Quantum Error Correction",
-          "url": "ISCA/2025/Session-7C/caliqec-in-situ-qubit-calibration-for-surface-code-quantum-error-correction/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7C · CaliQEC: 表面码量子纠错的原位量子比特校准"
-        },
-        {
-          "title": "Resource Analysis of Low-Overhead Transversal Architectures for Reconfigurable Atom Arrays",
-          "url": "ISCA/2025/Session-7C/resource-analysis-of-low-overhead-transversal-architectures-for-reconfigurable-atom-arrays/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7C · 面向可重构原子阵列的低开销横向架构资源分析"
-        },
-        {
-          "title": "SWIPER: Minimizing Fault-Tolerant Quantum Program Latency via Speculative Window Decoding",
-          "url": "ISCA/2025/Session-7C/swiper-minimizing-fault-tolerant-quantum-program-latency-via-speculative-window-decoding/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7C · SWIPER: 通过推测窗口解码最小化容错量子程序延迟"
-        },
-        {
-          "title": "SwitchQNet: Optimizing Distributed Quantum Computing for Quantum Data Centers with Switch Networks",
-          "url": "ISCA/2025/Session-7C/switchqnet-optimizing-distributed-quantum-computing-for-quantum-data-centers-with-switch-networks/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7C · SwitchQNet: 面向量子数据中心的交换网络分布式量子计算优化"
-        },
-        {
-          "title": "Synchronization for Fault-Tolerant Quantum Computers",
-          "url": "ISCA/2025/Session-7C/synchronization-for-fault-tolerant-quantum-computers/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7C · 容错量子计算机的同步机制"
-        },
-        {
-          "title": "Variational Quantum Algorithms in the Era of Early Fault Tolerance",
-          "url": "ISCA/2025/Session-7C/variational-quantum-algorithms-in-the-era-of-early-fault-tolerance/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 7C · 早期容错时代的变分量子算法"
+          "title": "Unlocking Pipeline Parallelism for Bootstrapping: A Pipelined Multi-Chiplet TFHE Accelerator",
+          "url": "ISCA/2026/Session-7D/unlocking-pipeline-parallelism-for-bootstrapping-a-pipelined-multi-chiplet-tfhe-accelerator/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 7D · Unlocking Pipeline Parallelism for Bootstrapping: A Pipelined Multi-Chiplet TFHE Accelerator"
         }
       ]
     },
@@ -3433,314 +4899,197 @@
       ]
     },
     {
-      "text": "Session 10A",
+      "text": "Hardware Security",
       "count": 5,
       "trend": -1,
-      "conf_info": "ISCA 2025 (5 papers)",
-      "search_term": "Session 10A",
+      "conf_info": "DAC 2025 (5 papers)",
+      "search_term": "Hardware Security",
       "papers": [
         {
-          "title": "BingoGCN: Towards Scalable and Efficient GNN Acceleration with Fine-Grained Partitioning and SLT",
-          "url": "ISCA/2025/Session-10A/bingogcn-towards-scalable-and-efficient-gnn-acceleration-with-fine-grained-partitioning-and-slt/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10A · BingoGCN: 细粒度分区与SLT实现可扩展高效GNN加速"
+          "title": "Exploiting Power Side-Channel Vulnerabilities in XGBoost Accelerator",
+          "url": "DAC/2025/security/power_based_side_channel_attack_on_xgboost_accelerator/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         },
         {
-          "title": "DS-TPU: Dynamical System for on-Device Lifelong Graph Learning with Nonlinear Node Interaction",
-          "url": "ISCA/2025/Session-10A/ds-tpu-dynamical-system-for-on-device-lifelong-graph-learning-with-nonlinear-node-interaction/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10A · DS-TPU：面向设备端终身图学习的非线性节点交互动力系统"
+          "title": "FastPath: A Hybrid Approach for Efficient Hardware Security Verification",
+          "url": "DAC/2025/security/fastpath_a_hybrid_approach_for_efficient_hardware_security_verification/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         },
         {
-          "title": "FlexNeRFer: A Multi-Dataflow, Adaptive Sparsity-Aware Accelerator for On-Device NeRF Rendering",
-          "url": "ISCA/2025/Session-10A/flexnerfer-a-multi-dataflow-adaptive-sparsity-aware-accelerator-for-on-device-nerf-rendering/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10A · FlexNeRFer：面向设备端 NeRF 渲染的多数据流自适应稀疏感知加速器"
+          "title": "InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework",
+          "url": "DAC/2025/eda/interconfuzz_a_fuzzing_based_comprehensive_noc_verification_framework/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · EDA"
         },
         {
-          "title": "Reconfigurable Stream Network Architecture",
-          "url": "ISCA/2025/Session-10A/reconfigurable-stream-network-architecture/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10A · 可重构流网络架构"
+          "title": "POLARIS: Explainable Artificial Intelligence for Mitigating Power Side-Channel Leakage",
+          "url": "DAC/2025/security/polaris_explainable_artificial_intelligence_for_mitigating_power_side_channel_leakage/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Security"
         },
         {
-          "title": "TRACI: Network Acceleration of Input-Dynamic Communication for Large-Scale Deep Learning Recommendation Model",
-          "url": "ISCA/2025/Session-10A/traci-network-acceleration-of-input-dynamic-communication-for-large-scale-deep-learning-recommendation-model/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10A · TRACI：面向大规模深度学习推荐模型输入动态通信的网络加速"
+          "title": "PUFiM: A Robust and Efficient FeFET-Based Security Solution Merging Physical Unclonable Function with Compute-in-Memory for Edge AI",
+          "url": "DAC/2025/design/pufim_a_robust_and_efficient_fefet_based_security_solution_merging_physical_unclonable_function_with_compute_in_memory_for_edge_ai/",
+          "conf": "DAC 2025",
+          "summary": "DAC 2025 · Design"
         }
       ]
     },
     {
-      "text": "Session 3A",
+      "text": "Session 10D",
       "count": 5,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (5 papers)",
-      "search_term": "Session 3A",
+      "trend": 1,
+      "conf_info": "ISCA 2026 (5 papers)",
+      "search_term": "Session 10D",
       "papers": [
         {
-          "title": "ARTERY: Fast Quantum Feedback using Branch Prediction",
-          "url": "ISCA/2025/Session-3A/artery-fast-quantum-feedback-using-branch-prediction/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3A · ARTERY: 利用分支预测实现快速量子反馈"
+          "title": "DICE: Enabling Efficient General-Purpose SIMT Execution with Statically Scheduled Coarse-Grained Reconfigurable Arrays",
+          "url": "ISCA/2026/Session-10D/dice-enabling-efficient-general-purpose-simt-execution-with-statically-scheduled-coarse-grained-reconfigurable-arrays/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10D · DICE: Enabling Efficient General-Purpose SIMT Execution with Statically Scheduled Coarse-Grained Reconfigurable Arrays"
         },
         {
-          "title": "Constant-Rate Entanglement Distillation for Fast Quantum Interconnects",
-          "url": "ISCA/2025/Session-3A/constant-rate-entanglement-distillation-for-fast-quantum-interconnects/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3A · 面向高速量子互连的恒定速率纠缠蒸馏"
+          "title": "DiTPA: A DiT-based Action Planner Accelerator Exploiting Action-Denoising-Multimodality Redundancy for Embodied Artificial Intelligence",
+          "url": "ISCA/2026/Session-10D/ditpa-a-dit-based-action-planner-accelerator-exploiting-action-denoising-multimodality-redundancy-for-embodied-artificial-intelligence/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10D · DiTPA: A DiT-based Action Planner Accelerator Exploiting Action-Denoising-Multimodality Redundancy for Embodied Artificial Intelligence"
         },
         {
-          "title": "Hardware-aware Calibration Protocol for Quantum Computers",
-          "url": "ISCA/2025/Session-3A/hardware-aware-calibration-protocol-for-quantum-computers/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3A · 面向量子计算机的硬件感知校准协议"
+          "title": "GenZA: A General and Efficient Accelerator for Diverse Zero-Knowledge Proof Protocols",
+          "url": "ISCA/2026/Session-10D/genza-a-general-and-efficient-accelerator-for-diverse-zero-knowledge-proof-protocols/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10D · GenZA: A General and Efficient Accelerator for Diverse Zero-Knowledge Proof Protocols"
         },
         {
-          "title": "Qtenon: Towards Low-Latency Architecture Integration for Accelerating Hybrid Quantum-Classical Computing",
-          "url": "ISCA/2025/Session-3A/qtenon-towards-low-latency-architecture-integration-for-accelerating-hybrid-quantum-classical-computing/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3A · Qtenon: 低延迟架构集成加速混合量子-经典计算"
+          "title": "HiT: A Unified Sparsity-Adaptive Architecture for High-Throughput Matrix Multiplication",
+          "url": "ISCA/2026/Session-10D/hit-a-unified-sparsity-adaptive-architecture-for-high-throughput-matrix-multiplication/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10D · HiT: A Unified Sparsity-Adaptive Architecture for High-Throughput Matrix Multiplication"
         },
         {
-          "title": "S-SYNC: Shuttle and Swap Co-Optimization in Quantum Charge-Coupled Devices",
-          "url": "ISCA/2025/Session-3A/s-sync-shuttle-and-swap-co-optimization-in-quantum-charge-coupled-devices/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3A · S-SYNC: 量子电荷耦合器件中的Shuttle与Swap协同优化"
+          "title": "TAGT: An Efficient Graph Transformer Accelerator with Topology-aware Sparsification and Merging",
+          "url": "ISCA/2026/Session-10D/tagt-an-efficient-graph-transformer-accelerator-with-topology-aware-sparsification-and-merging/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 10D · TAGT: An Efficient Graph Transformer Accelerator with Topology-aware Sparsification and Merging"
         }
       ]
     },
     {
-      "text": "Session 3B",
+      "text": "Session 3D",
       "count": 5,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (5 papers)",
-      "search_term": "Session 3B",
+      "trend": 1,
+      "conf_info": "ISCA 2026 (5 papers)",
+      "search_term": "Session 3D",
       "papers": [
         {
-          "title": "AQB8: Energy-Efficient Ray Tracing Accelerator through Multi-Level Quantization",
-          "url": "ISCA/2025/Session-3B/aqb8-energy-efficient-ray-tracing-accelerator-through-multi-level-quantization/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3B · AQB8：基于多级量化的高能效光线追踪加速器"
+          "title": "Augmenting the Branch Predictor with a Squashed-Branch Reuse Buffer",
+          "url": "ISCA/2026/Session-3D/augmenting-the-branch-predictor-with-a-squashed-branch-reuse-buffer/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3D · Augmenting the Branch Predictor with a Squashed-Branch Reuse Buffer"
         },
         {
-          "title": "Dadu-Corki: Algorithm-Architecture Co-Design for Embodied AI-powered Robotic Manipulation",
-          "url": "ISCA/2025/Session-3B/dadu-corki-algorithm-architecture-co-design-for-embodied-ai-powered-robotic-manipulation/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3B · Dadu-Corki：面向具身智能机器人操控的算法—架构协同设计"
+          "title": "Dorado: Clustered Hardware Cache Coherence for 1,000+ Cores",
+          "url": "ISCA/2026/Session-3D/dorado-clustered-hardware-cache-coherence-for-1-000-cores/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3D · Dorado: Clustered Hardware Cache Coherence for 1,000+ Cores"
         },
         {
-          "title": "HiPER: Hierarchically-Composed Processing for Efficient Robot Learning-Based Control",
-          "url": "ISCA/2025/Session-3B/hiper-hierarchically-composed-processing-for-efficient-robot-learning-based-control/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3B · HiPER：面向高效机器人学习控制的分层组合处理"
+          "title": "Hierarchical Wakeup Logic of the Issue Queue for High Scalability",
+          "url": "ISCA/2026/Session-3D/hierarchical-wakeup-logic-of-the-issue-queue-for-high-scalability/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3D · Hierarchical Wakeup Logic of the Issue Queue for High Scalability"
         },
         {
-          "title": "Process Only Where You Look: Hardware and Algorithm Co-optimization for Efficient Gaze-Tracked Foveated Rendering in Virtual Reality",
-          "url": "ISCA/2025/Session-3B/process-only-where-you-look-hardware-and-algorithm-co-optimization-for-efficient-gaze-tracked-foveated-rendering-in-virtual-reality/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3B · 只处理注视区域：面向虚拟现实高效眼动追踪注视点渲染的软硬件协同优化"
+          "title": "RUNLTS: Branch Prediction with Register-Value Correlations and Hierarchical Table Orchestration",
+          "url": "ISCA/2026/Session-3D/runlts-branch-prediction-with-register-value-correlations-and-hierarchical-table-orchestration/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3D · RUNLTS: Branch Prediction with Register-Value Correlations and Hierarchical Table Orchestration"
         },
         {
-          "title": "RTSpMSpM: Harnessing Ray Tracing for Efficient Sparse Matrix Computations",
-          "url": "ISCA/2025/Session-3B/rtspmspm-harnessing-ray-tracing-for-efficient-sparse-matrix-computations/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3B · RTSpMSpM：利用光线追踪实现高效稀疏矩阵计算"
+          "title": "Revisiting Global Value Prediction: A Resurgent Complement to Local Predictors",
+          "url": "ISCA/2026/Session-3D/revisiting-global-value-prediction-a-resurgent-complement-to-local-predictors/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 3D · Revisiting Global Value Prediction: A Resurgent Complement to Local Predictors"
         }
       ]
     },
     {
-      "text": "Session 3C",
+      "text": "Session 4D",
       "count": 5,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (5 papers)",
-      "search_term": "Session 3C",
+      "trend": 1,
+      "conf_info": "ISCA 2026 (5 papers)",
+      "search_term": "Session 4D",
       "papers": [
         {
-          "title": "ANVIL: An In-Storage Accelerator for Name–Value Data Stores",
-          "url": "ISCA/2025/Session-3C/anvil-an-in-storage-accelerator-for-name-value-data-stores/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3C · ANVIL: 键值存储的存储内加速器"
+          "title": "A Streaming Architecture for Quantum Error Syndrome Compression at 4 Kelvin",
+          "url": "ISCA/2026/Session-4D/a-streaming-architecture-for-quantum-error-syndrome-compression-at-4-kelvin/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4D · A Streaming Architecture for Quantum Error Syndrome Compression at 4 Kelvin"
         },
         {
-          "title": "ArtMem: Adaptive Migration in Reinforcement Learning-Enabled Tiered Memory",
-          "url": "ISCA/2025/Session-3C/artmem-adaptive-migration-in-reinforcement-learning-enabled-tiered-memory/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3C · ArtMem: 强化学习驱动的分层内存自适应迁移"
+          "title": "Coset Ensemble Decoder for Quantum Error Correction with Algorithm–Hardware Co-Design",
+          "url": "ISCA/2026/Session-4D/coset-ensemble-decoder-for-quantum-error-correction-with-algorithm-hardware-co-design/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4D · Coset Ensemble Decoder for Quantum Error Correction with Algorithm–Hardware Co-Design"
         },
         {
-          "title": "In-Storage Acceleration of Retrieval Augmented Generation as a Service",
-          "url": "ISCA/2025/Session-3C/in-storage-acceleration-of-retrieval-augmented-generation-as-a-service/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3C · 面向检索增强生成即服务的存内加速"
+          "title": "Kernpiler: Compiler Optimization for Quantum Hamiltonian Simulation with Partial Trotterization",
+          "url": "ISCA/2026/Session-4D/kernpiler-compiler-optimization-for-quantum-hamiltonian-simulation-with-partial-trotterization/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4D · Kernpiler: Compiler Optimization for Quantum Hamiltonian Simulation with Partial Trotterization"
         },
         {
-          "title": "UPP: Universal Predicate Pushdown to Smart Storage",
-          "url": "ISCA/2025/Session-3C/upp-universal-predicate-pushdown-to-smart-storage/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3C · UPP: 通用谓词下推到智能存储"
+          "title": "Transpiler-Architecture Co-Design to Curb Clifford Costs in Fault-Tolerant Quantum Computing",
+          "url": "ISCA/2026/Session-4D/transpiler-architecture-co-design-to-curb-clifford-costs-in-fault-tolerant-quantum-computing/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4D · Transpiler-Architecture Co-Design to Curb Clifford Costs in Fault-Tolerant Quantum Computing"
         },
         {
-          "title": "XHarvest: Rethinking High-Performance and Cost-Efficient SSD Architecture with CXL-Driven Harvesting",
-          "url": "ISCA/2025/Session-3C/xharvest-rethinking-high-performance-and-cost-efficient-ssd-architecture-with-cxl-driven-harvesting/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 3C · XHarvest: CXL驱动的高性能低成本SSD架构"
+          "title": "Triage: An Adaptive Parallel Window Decoding Scheduler for Real-time Fault-Tolerant Quantum Computation",
+          "url": "ISCA/2026/Session-4D/triage-an-adaptive-parallel-window-decoding-scheduler-for-real-time-fault-tolerant-quantum-computation/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 4D · Triage: An Adaptive Parallel Window Decoding Scheduler for Real-time Fault-Tolerant Quantum Computation"
         }
       ]
     },
     {
-      "text": "Session 4B",
+      "text": "Session 6D",
       "count": 5,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (5 papers)",
-      "search_term": "Session 4B",
+      "trend": 1,
+      "conf_info": "ISCA 2026 (5 papers)",
+      "search_term": "Session 6D",
       "papers": [
         {
-          "title": "Enabling Ahead Prediction with Practical Energy Constraints",
-          "url": "ISCA/2025/Session-4B/enabling-ahead-prediction-with-practical-energy-constraints/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4B · 在实际能耗约束下实现超前预测"
+          "title": "ColumnKeeper: Efficient Solutions to the ColumnDisturb Vulnerability in DRAM-based Systems",
+          "url": "ISCA/2026/Session-6D/columnkeeper-efficient-solutions-to-the-columndisturb-vulnerability-in-dram-based-systems/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6D · ColumnKeeper: Efficient Solutions to the ColumnDisturb Vulnerability in DRAM-based Systems"
         },
         {
-          "title": "Leveraging Control-flow Similarity to Reduce Branch Predictor Cold Effects in Microservices",
-          "url": "ISCA/2025/Session-4B/leveraging-control-flow-similarity-to-reduce-branch-predictor-cold-effects-in-microservices/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4B · 利用控制流相似性降低微服务中的分支预测器冷启动效应"
+          "title": "DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully",
+          "url": "ISCA/2026/Session-6D/dejavu-why-you-should-write-to-your-dram-rows-twice-carefully/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6D · DejaVu: Why You Should Write to Your DRAM Rows Twice, Carefully"
         },
         {
-          "title": "Magellan: A High-Performance Loop-Guided Prefetcher for Indirect Memory Access",
-          "url": "ISCA/2025/Session-4B/magellan-a-high-performance-loop-guided-prefetcher-for-indirect-memory-access/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4B · Magellan：面向间接内存访问的高性能循环引导预取器"
+          "title": "Loaded Dice: Solving the Non-Selection Problem for Scalable Probabilistic RowHammer Defense",
+          "url": "ISCA/2026/Session-6D/loaded-dice-solving-the-non-selection-problem-for-scalable-probabilistic-rowhammer-defense/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6D · Loaded Dice: Solving the Non-Selection Problem for Scalable Probabilistic RowHammer Defense"
         },
         {
-          "title": "Profile-Guided Temporal Prefetching",
-          "url": "ISCA/2025/Session-4B/profile-guided-temporal-prefetching/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4B · 配置文件引导的时序预取"
+          "title": "PRowhammer: Propagating Bit-flips from CPU to GPU",
+          "url": "ISCA/2026/Session-6D/prowhammer-propagating-bit-flips-from-cpu-to-gpu/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6D · PRowhammer: Propagating Bit-flips from CPU to GPU"
         },
         {
-          "title": "WarmCache: Exploiting STT-RAM Cache for Low-Power Intermittent Systems",
-          "url": "ISCA/2025/Session-4B/warmcache-exploiting-stt-ram-cache-for-low-power-intermittent-systems/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 4B · WarmCache：利用 STT-RAM 缓存构建低功耗间歇系统"
-        }
-      ]
-    },
-    {
-      "text": "Session 8A",
-      "count": 5,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (5 papers)",
-      "search_term": "Session 8A",
-      "papers": [
-        {
-          "title": "AMALI: An Analytical Model for Accurately Modeling LLM Inference on Modern GPUs",
-          "url": "ISCA/2025/Session-8A/amali-an-analytical-model-for-accurately-modeling-llm-inference-on-modern-gpus/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8A · AMALI：精确建模现代 GPU 上 LLM 推理的分析模型"
-        },
-        {
-          "title": "Assassyn: A Unified Abstraction for Architectural Simulation and Implementation",
-          "url": "ISCA/2025/Session-8A/assassyn-a-unified-abstraction-for-architectural-simulation-and-implementation/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8A · Assassyn：面向体系结构仿真与实现的统一抽象"
-        },
-        {
-          "title": "Concorde: Fast and Accurate CPU Performance Modeling with Compositional Analytical-ML Fusion",
-          "url": "ISCA/2025/Session-8A/concorde-fast-and-accurate-cpu-performance-modeling-with-compositional-analytical-ml-fusion/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8A · Concorde：基于组合式分析—机器学习融合的快速精准 CPU 性能建模"
-        },
-        {
-          "title": "GCStack+GCScaler: Fast and Accurate GPU Performance Analyses Using Fine-Grained Stall Cycle Accounting and Interval Analysis",
-          "url": "ISCA/2025/Session-8A/gcstack-gcscaler-fast-and-accurate-gpu-performance-analyses-using-fine-grained-stall-cycle-accounting-and-interval-analysis/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8A · GCStack+GCScaler：基于细粒度停顿周期计数与区间分析的快速精准 GPU 性能分析"
-        },
-        {
-          "title": "TrioSim: A Lightweight Simulator for Large-Scale DNN Workloads on Multi-GPU Systems",
-          "url": "ISCA/2025/Session-8A/triosim-a-lightweight-simulator-for-large-scale-dnn-workloads-on-multi-gpu-systems/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8A · TrioSim：面向多 GPU 系统大规模 DNN 负载的轻量级模拟器"
-        }
-      ]
-    },
-    {
-      "text": "Session 8B",
-      "count": 5,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (5 papers)",
-      "search_term": "Session 8B",
-      "papers": [
-        {
-          "title": "Accelerating Simulation of Quantum Circuits under Noise via Computational Reuse",
-          "url": "ISCA/2025/Session-8B/accelerating-simulation-of-quantum-circuits-under-noise-via-computational-reuse/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8B · 通过计算复用加速噪声环境下的量子电路模拟"
-        },
-        {
-          "title": "Genesis: A Compiler for Hamiltonian Simulation on Hybrid CV-DV Quantum Computers",
-          "url": "ISCA/2025/Session-8B/genesis-a-compiler-for-hamiltonian-simulation-on-hybrid-cv-dv-quantum-computers/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8B · Genesis: 混合CV-DV量子计算机的Hamiltonian模拟编译器"
-        },
-        {
-          "title": "QPlacer: Frequency-Aware Component Placement for Superconducting Quantum Computers",
-          "url": "ISCA/2025/Session-8B/qplacer-frequency-aware-component-placement-for-superconducting-quantum-computers/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8B · Qplacer: 超导量子计算机的频率感知元件布局"
-        },
-        {
-          "title": "QR-Map: A Map-Based Approach to Quantum Circuit Abstraction for Qubit Reuse Optimization",
-          "url": "ISCA/2025/Session-8B/qr-map-a-map-based-approach-to-quantum-circuit-abstraction-for-qubit-reuse-optimization/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8B · QR-Map: 基于地图的量子电路抽象与量子比特复用优化"
-        },
-        {
-          "title": "Reinforcement Learning-Guided Graph State Generation in Photonic Quantum Computers",
-          "url": "ISCA/2025/Session-8B/reinforcement-learning-guided-graph-state-generation-in-photonic-quantum-computers/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8B · 强化学习引导的光子量子计算机图态生成"
-        }
-      ]
-    },
-    {
-      "text": "Session 8C",
-      "count": 5,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (5 papers)",
-      "search_term": "Session 8C",
-      "papers": [
-        {
-          "title": "DX100: Programmable Data Access Accelerator for Indirection",
-          "url": "ISCA/2025/Session-8C/dx100-programmable-data-access-accelerator-for-indirection/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8C · DX100：面向间接访问的可编程数据访问加速器"
-        },
-        {
-          "title": "HYTE: Flexible Tiling for Sparse Accelerators via Hybrid Static-Dynamic Approaches",
-          "url": "ISCA/2025/Session-8C/hyte-flexible-tiling-for-sparse-accelerators-via-hybrid-static-dynamic-approaches/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8C · HYTE：通过静态—动态混合方法为稀疏加速器实现灵活分块"
-        },
-        {
-          "title": "IDEA-GP: Instruction-Driven Architecture with Efficient Online Workload Allocation for Geometric Perception",
-          "url": "ISCA/2025/Session-8C/idea-gp-instruction-driven-architecture-with-efficient-online-workload-allocation-for-geometric-perception/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8C · IDEA-GP：面向几何感知高效在线负载分配的指令驱动架构"
-        },
-        {
-          "title": "NUPEA: Optimizing Critical Loads on Spatial Dataflow Architectures via Non-Uniform Processing-Element Access",
-          "url": "ISCA/2025/Session-8C/nupea-optimizing-critical-loads-on-spatial-dataflow-architectures-via-non-uniform-processing-element-access/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8C · NUPEA：通过非均匀处理单元访问优化空间数据流架构中的关键加载"
-        },
-        {
-          "title": "SEAL: A Single-Event Architecture for In-Sensor Visual Localization",
-          "url": "ISCA/2025/Session-8C/seal-a-single-event-architecture-for-in-sensor-visual-localization/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 8C · SEAL：面向传感器内视觉定位的单事件架构"
+          "title": "PVAC: A RowHammer Mitigation Architecture Exploiting Per-victim-row Counting",
+          "url": "ISCA/2026/Session-6D/pvac-a-rowhammer-mitigation-architecture-exploiting-per-victim-row-counting/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 6D · PVAC: A RowHammer Mitigation Architecture Exploiting Per-victim-row Counting"
         }
       ]
     },
@@ -4078,105 +5427,6 @@
       ]
     },
     {
-      "text": "Session 10B",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 10B",
-      "papers": [
-        {
-          "title": "InfiniMind: A Learning-Optimized Large-Scale Brain-Computer Interface",
-          "url": "ISCA/2025/Session-10B/infinimind-a-learning-optimized-large-scale-brain-computer-interface/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10B · InfiniMind：面向学习优化的大规模脑机接口"
-        },
-        {
-          "title": "LightNobel: Improving Sequence Length Limitation in Protein Structure Prediction Model via Adaptive Activation Quantization",
-          "url": "ISCA/2025/Session-10B/lightnobel-improving-sequence-length-limitation-in-protein-structure-prediction-model-via-adaptive-activation-quantization/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10B · LightNobel：通过自适应激活量化突破蛋白质结构预测模型的序列长度限制"
-        },
-        {
-          "title": "Lumina: Real-Time Neural Rendering by Exploiting Computational Redundancy",
-          "url": "ISCA/2025/Session-10B/lumina-real-time-neural-rendering-by-exploiting-computational-redundancy/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10B · Lumina：利用计算冗余实现实时神经渲染"
-        },
-        {
-          "title": "MD-pipe: A Strong Scaling Enhanced Pipeline Architecture for Ab Initio Accuracy Molecular Dynamics",
-          "url": "ISCA/2025/Session-10B/md-pipe-a-strong-scaling-enhanced-pipeline-architecture-for-ab-initio-accuracy-molecular-dynamics/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10B · MD-pipe：面向从头算精度分子动力学的强扩展增强流水线架构"
-        }
-      ]
-    },
-    {
-      "text": "Session 10C",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 10C",
-      "papers": [
-        {
-          "title": "Adaptive CHERI Compartmentalization for Heterogeneous Accelerators",
-          "url": "ISCA/2025/Session-10C/adaptive-cheri-compartmentalization-for-heterogeneous-accelerators/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10C · 面向异构加速器的自适应 CHERI 隔离"
-        },
-        {
-          "title": "Need for zkSpeed: Accelerating HyperPlonk for Zero-Knowledge Proofs",
-          "url": "ISCA/2025/Session-10C/need-for-zkspeed-accelerating-hyperplonk-for-zero-knowledge-proofs/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10C · Need for zkSpeed: 为零知识证明加速HyperPlonk"
-        },
-        {
-          "title": "SpecASan: Mitigating Transient Execution Attacks Using Speculative Address Sanitization",
-          "url": "ISCA/2025/Session-10C/specasan-mitigating-transient-execution-attacks-using-speculative-address-sanitization/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10C · SpecASan: 利用推测地址消毒缓解瞬态执行攻击"
-        },
-        {
-          "title": "Unified Memory Protection with Multi-granular MAC and Integrity Tree for Heterogeneous Processors",
-          "url": "ISCA/2025/Session-10C/unified-memory-protection-with-multi-granular-mac-and-integrity-tree-for-heterogeneous-processors/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 10C · 面向异构处理器的多粒度 MAC 与完整性树统一内存保护"
-        }
-      ]
-    },
-    {
-      "text": "Session 1A",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 1A",
-      "papers": [
-        {
-          "title": "FRED: A Wafer-scale Fabric for 3D Parallel DNN Training",
-          "url": "ISCA/2025/Session-1A/fred-a-wafer-scale-fabric-for-3d-parallel-dnn-training/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 1A · FRED: 用于3D并行DNN训练的Wafer-scale互联结构"
-        },
-        {
-          "title": "LightML: A Photonic Accelerator for Efficient General Purpose Machine Learning",
-          "url": "ISCA/2025/Session-1A/lightml-a-photonic-accelerator-for-efficient-general-purpose-machine-learning/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 1A · LightML: 高效通用机器学习的光子加速器"
-        },
-        {
-          "title": "PD Constraint-aware Physical/Logical Topology Co-Design for Network on Wafer",
-          "url": "ISCA/2025/Session-1A/pd-constraint-aware-physical-logical-topology-co-design-for-network-on-wafer/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 1A · 面向晶圆网络的物理/逻辑拓扑感知协同设计"
-        },
-        {
-          "title": "WSC-LLM: Efficient LLM Service and Architecture Co-exploration for Wafer-scale Chips",
-          "url": "ISCA/2025/Session-1A/wsc-llm-efficient-llm-service-and-architecture-co-exploration-for-wafer-scale-chips/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 1A · WSC-LLM: 面向Wafer-scale芯片的高效LLM服务与体系结构协同探索"
-        }
-      ]
-    },
-    {
       "text": "Session 1B",
       "count": 4,
       "trend": -1,
@@ -4243,200 +5493,35 @@
       ]
     },
     {
-      "text": "Session 2A",
+      "text": "Session 9D",
       "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 2A",
+      "trend": 1,
+      "conf_info": "ISCA 2026 (4 papers)",
+      "search_term": "Session 9D",
       "papers": [
         {
-          "title": "H2-LLM: Hardware-Dataflow Co-Exploration for Heterogeneous Hybrid-Bonding-based Low-Batch LLM Inference",
-          "url": "ISCA/2025/Session-2A/h2-llm-hardware-dataflow-co-exploration-for-heterogeneous-hybrid-bonding-based-low-batch-llm-inference/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 2A · H2-LLM：面向异构混合键合低批量 LLM 推理的硬件—数据流协同探索"
+          "title": "Lit Silicon: A Case Where Thermal Imbalance Couples Concurrent Execution in Multiple GPUs",
+          "url": "ISCA/2026/Session-9D/lit-silicon-a-case-where-thermal-imbalance-couples-concurrent-execution-in-multiple-gpus/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9D · Lit Silicon: A Case Where Thermal Imbalance Couples Concurrent Execution in Multiple GPUs"
         },
         {
-          "title": "Precise Exceptions in Relaxed Architectures",
-          "url": "ISCA/2025/Session-2A/precise-exceptions-in-relaxed-architectures/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 2A · 松弛架构中的精确异常"
+          "title": "Power Sloshing in Compound Servers for Large-Scale AI Inference Workloads",
+          "url": "ISCA/2026/Session-9D/power-sloshing-in-compound-servers-for-large-scale-ai-inference-workloads/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9D · Power Sloshing in Compound Servers for Large-Scale AI Inference Workloads"
         },
         {
-          "title": "Rethinking Prefetching for Intermittent Computing",
-          "url": "ISCA/2025/Session-2A/rethinking-prefetching-for-intermittent-computing/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 2A · 重新思考间歇计算中的预取"
+          "title": "PowerGrad: Hierarchical Power Management for Power-Limited ML Inference Clusters",
+          "url": "ISCA/2026/Session-9D/powergrad-hierarchical-power-management-for-power-limited-ml-inference-clusters/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9D · PowerGrad: Hierarchical Power Management for Power-Limited ML Inference Clusters"
         },
         {
-          "title": "The XOR Cache: A Catalyst for Compression",
-          "url": "ISCA/2025/Session-2A/the-xor-cache-a-catalyst-for-compression/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 2A · XOR Cache：压缩的催化剂"
-        }
-      ]
-    },
-    {
-      "text": "Session 5A",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 5A",
-      "papers": [
-        {
-          "title": "DREAM: Enabling Low-Overhead Rowhammer Mitigation via Directed Refresh Management",
-          "url": "ISCA/2025/Session-5A/dream-enabling-low-overhead-rowhammer-mitigation-via-directed-refresh-management/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5A · DREAM: 基于定向刷新管理的低开销Rowhammer缓解"
-        },
-        {
-          "title": "MoPAC: Efficiently Mitigating Rowhammer with Probabilistic Activation Counting",
-          "url": "ISCA/2025/Session-5A/mopac-efficiently-mitigating-rowhammer-with-probabilistic-activation-counting/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5A · MoPAC: 基于概率激活计数的高效Rowhammer缓解"
-        },
-        {
-          "title": "PuDHammer: Experimental Analysis of Read Disturbance Effects of Processing-using-DRAM in Real DRAM Chips",
-          "url": "ISCA/2025/Session-5A/pudhammer-experimental-analysis-of-read-disturbance-effects-of-processing-using-dram-in-real-dram-chips/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5A · PuDHammer: 真实DRAM芯片中PuD读干扰效应实验分析"
-        },
-        {
-          "title": "When Mitigations Backfire: Timing Channel Attacks and Defense for PRAC-Based RowHammer Mitigations",
-          "url": "ISCA/2025/Session-5A/when-mitigations-backfire-timing-channel-attacks-and-defense-for-prac-based-rowhammer-mitigations/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5A · When Mitigations Backfire: PRAC时序侧信道攻击与防御"
-        }
-      ]
-    },
-    {
-      "text": "Session 5B",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 5B",
-      "papers": [
-        {
-          "title": "Ecco: Improving Memory Bandwidth and Capacity for LLMs via Entropy-Aware Cache Compression",
-          "url": "ISCA/2025/Session-5B/ecco-improving-memory-bandwidth-and-capacity-for-llms-via-entropy-aware-cache-compression/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5B · Ecco：通过熵感知缓存压缩提升 LLM 的内存带宽与容量"
-        },
-        {
-          "title": "Hybe: GPU-NPU Hybrid System for Efficient LLM Inference with Million-Token Context Window",
-          "url": "ISCA/2025/Session-5B/hybe-gpu-npu-hybrid-system-for-efficient-llm-inference-with-million-token-context-window/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5B · Hybe：面向百万词元上下文高效 LLM 推理的 GPU-NPU 混合系统"
-        },
-        {
-          "title": "MeshSlice: Efficient 2D Tensor Parallelism for Distributed DNN Training",
-          "url": "ISCA/2025/Session-5B/meshslice-efficient-2d-tensor-parallelism-for-distributed-dnn-training/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5B · MeshSlice：面向分布式 DNN 训练的高效二维张量并行"
-        },
-        {
-          "title": "Zettafly: A Network Topology with Flexible Non-blocking Regions for Large-scale AI and HPC Systems",
-          "url": "ISCA/2025/Session-5B/zettafly-a-network-topology-with-flexible-non-blocking-regions-for-large-scale-ai-and-hpc-systems/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5B · Zettafly：面向大规模 AI 与 HPC 系统的灵活无阻塞区域网络拓扑"
-        }
-      ]
-    },
-    {
-      "text": "Session 5C",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 5C",
-      "papers": [
-        {
-          "title": "AIM: Software and Hardware Co-design for Architecture-level IR-drop Mitigation in High-performance PIM",
-          "url": "ISCA/2025/Session-5C/aim-software-and-hardware-co-design-for-architecture-level-ir-drop-mitigation-in-high-performance-pim/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5C · AIM: 高性能PIM中架构级IR降压缓解的软硬件协同设计"
-        },
-        {
-          "title": "ATiM: Autotuning Tensor Programs for Processing-in-DRAM",
-          "url": "ISCA/2025/Session-5C/atim-autotuning-tensor-programs-for-processing-in-dram/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5C · ATiM: 自调优Processing-in-DRAM张量程序"
-        },
-        {
-          "title": "HeterRAG: Heterogeneous Processing-in-Memory Acceleration for Retrieval-augmented Generation",
-          "url": "ISCA/2025/Session-5C/heterrag-heterogeneous-processing-in-memory-acceleration-for-retrieval-augmented-generation/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5C · HeterRAG: 异构存内计算加速检索增强生成"
-        },
-        {
-          "title": "OptiPIM: Optimizing Processing-in-Memory Acceleration Using Integer Linear Programming",
-          "url": "ISCA/2025/Session-5C/optipim-optimizing-processing-in-memory-acceleration-using-integer-linear-programming/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 5C · OptiPIM: 用整数线性规划优化PIM加速"
-        }
-      ]
-    },
-    {
-      "text": "Session 9A",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 9A",
-      "papers": [
-        {
-          "title": "DCPerf: An Open-Source, Battle-Tested Performance Benchmark Suite for Datacenter Workloads",
-          "url": "ISCA/2025/Session-9A/dcperf-an-open-source-battle-tested-performance-benchmark-suite-for-datacenter-workloads/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9A · DCPerf：经实战检验的开源数据中心负载性能基准套件"
-        },
-        {
-          "title": "Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures",
-          "url": "ISCA/2025/Session-9A/insights-into-deepseek-v3-scaling-challenges-and-reflections-on-hardware-for-ai-architectures/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9A · 洞察 DeepSeek-V3：扩展挑战与 AI 体系结构硬件反思"
-        },
-        {
-          "title": "Meta’s Second Generation AI Chip: Model-Chip Co-Design and Productionization Experiences",
-          "url": "ISCA/2025/Session-9A/meta-s-second-generation-ai-chip-model-chip-co-design-and-productionization-experiences/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9A · Meta 第二代 AI 芯片：模型—芯片协同设计与产品化经验"
-        },
-        {
-          "title": "Scaling Llama 3 Training with Efficient Parallelism Strategies",
-          "url": "ISCA/2025/Session-9A/scaling-llama-3-training-with-efficient-parallelism-strategies/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9A · 利用高效并行策略扩展 Llama 3 训练"
-        }
-      ]
-    },
-    {
-      "text": "Session 9B",
-      "count": 4,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (4 papers)",
-      "search_term": "Session 9B",
-      "papers": [
-        {
-          "title": "Avalanche: Optimizing Cache Utilization via Matrix Reordering for Sparse Matrix Multiplication Accelerator",
-          "url": "ISCA/2025/Session-9B/avalanche-optimizing-cache-utilization-via-matrix-reordering-for-sparse-matrix-multiplication-accelerator/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9B · Avalanche：通过矩阵重排优化稀疏矩阵乘法加速器的缓存利用率"
-        },
-        {
-          "title": "Debunking the CUDA Myth Towards GPU-based AI Systems: Evaluation of the Performance and Programmability of Intel’s Gaudi NPU for AI Model Serving",
-          "url": "ISCA/2025/Session-9B/debunking-the-cuda-myth-towards-gpu-based-ai-systems-evaluation-of-the-performance-and-programmability-of-intel-s-gaudi-npu-for-ai-model-serving/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9B · 破除 GPU AI 系统的 CUDA 迷思：英特尔 Gaudi NPU 在 AI 模型服务中的性能与可编程性评估"
-        },
-        {
-          "title": "GPUs All Grown-Up: Fully Device-Driven SpMV Using GPU Work Graphs",
-          "url": "ISCA/2025/Session-9B/gpus-all-grown-up-fully-device-driven-spmv-using-gpu-work-graphs/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9B · 成熟的 GPU：利用 GPU 工作图实现完全设备驱动的 SpMV"
-        },
-        {
-          "title": "Telos: A Dataflow Accelerator for Sparse Triangular Solver of Partial Differential Equations",
-          "url": "ISCA/2025/Session-9B/telos-a-dataflow-accelerator-for-sparse-triangular-solver-of-partial-differential-equations/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9B · Telos：面向偏微分方程稀疏三角求解器的数据流加速器"
+          "title": "PowerWeave: Unlocking Energy-Efficient ML on GPUs with OS-Level Spatial Power Management",
+          "url": "ISCA/2026/Session-9D/powerweave-unlocking-energy-efficient-ml-on-gpus-with-os-level-spatial-power-management/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 9D · PowerWeave: Unlocking Energy-Efficient ML on GPUs with OS-Level Spatial Power Management"
         }
       ]
     },
@@ -5170,29 +6255,110 @@
       ]
     },
     {
-      "text": "Session 9C",
+      "text": "Session 2B",
       "count": 3,
-      "trend": -1,
-      "conf_info": "ISCA 2025 (3 papers)",
-      "search_term": "Session 9C",
+      "trend": 1,
+      "conf_info": "ISCA 2026 (3 papers)",
+      "search_term": "Session 2B",
       "papers": [
         {
-          "title": "Folded Banks: 3D-Stacked HBM Design for Fine-Grained Random-Access Bandwidth",
-          "url": "ISCA/2025/Session-9C/folded-banks-3d-stacked-hbm-design-for-fine-grained-random-access-bandwidth/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9C · Folded Banks: 面向细粒度随机访问带宽的3D堆叠HBM设计"
+          "title": "ATX: Accelerator Task Extensions",
+          "url": "ISCA/2026/Session-2B/atx-accelerator-task-extensions/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2B · ATX: Accelerator Task Extensions"
         },
         {
-          "title": "MagiCache: A Virtual In-Cache Computing Engine",
-          "url": "ISCA/2025/Session-9C/magicache-a-virtual-in-cache-computing-engine/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9C · MagiCache: 虚拟片内计算引擎"
+          "title": "ECC Enabled Reliable and Performant Processing-in-Memory",
+          "url": "ISCA/2026/Session-2B/ecc-enabled-reliable-and-performant-processing-in-memory/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2B · ECC Enabled Reliable and Performant Processing-in-Memory"
         },
         {
-          "title": "NMP-PaK: Near-Memory Processing Acceleration of Scalable De Novo Genome Assembly",
-          "url": "ISCA/2025/Session-9C/nmp-pak-near-memory-processing-acceleration-of-scalable-de-novo-genome-assembly/",
-          "conf": "ISCA 2025",
-          "summary": "ISCA 2025 · Session 9C · NMP-PaK: 近存处理加速可扩展从头基因组装"
+          "title": "HBM-CASO: A Coordinated Approach to HBM System-Level and On-Die ECC",
+          "url": "ISCA/2026/Session-2B/hbm-caso-a-coordinated-approach-to-hbm-system-level-and-on-die-ecc/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2B · HBM-CASO: A Coordinated Approach to HBM System-Level and On-Die ECC"
+        }
+      ]
+    },
+    {
+      "text": "Session 2C",
+      "count": 3,
+      "trend": 1,
+      "conf_info": "ISCA 2026 (3 papers)",
+      "search_term": "Session 2C",
+      "papers": [
+        {
+          "title": "CAPA: Manufacturing Carbon Estimation for Advanced-Packaged Architectures",
+          "url": "ISCA/2026/Session-2C/capa-manufacturing-carbon-estimation-for-advanced-packaged-architectures/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2C · CAPA: Manufacturing Carbon Estimation for Advanced-Packaged Architectures"
+        },
+        {
+          "title": "RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems",
+          "url": "ISCA/2026/Session-2C/rhodes-robust-optimization-for-uncertainty-aware-design-of-co2-efficient-computing-systems/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2C · RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems"
+        },
+        {
+          "title": "Rearchitecting the Datacenter Lifecycle for AI",
+          "url": "ISCA/2026/Session-2C/rearchitecting-the-datacenter-lifecycle-for-ai/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2C · Rearchitecting the Datacenter Lifecycle for AI"
+        }
+      ]
+    },
+    {
+      "text": "Session 2D",
+      "count": 3,
+      "trend": 1,
+      "conf_info": "ISCA 2026 (3 papers)",
+      "search_term": "Session 2D",
+      "papers": [
+        {
+          "title": "Don’t Surrender to Low QPS/$: Fast and Cost-Efficient ANNS with TRIDENTANN",
+          "url": "ISCA/2026/Session-2D/don-t-surrender-to-low-qps-fast-and-cost-efficient-anns-with-tridentann/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2D · Don’t Surrender to Low QPS/$: Fast and Cost-Efficient ANNS with TRIDENTANN"
+        },
+        {
+          "title": "Five-Minute Rule 40 Years Later: A First-Principles Revisit for Modern Memory Hierarchy",
+          "url": "ISCA/2026/Session-2D/five-minute-rule-40-years-later-a-first-principles-revisit-for-modern-memory-hierarchy/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2D · Five-Minute Rule 40 Years Later: A First-Principles Revisit for Modern Memory Hierarchy"
+        },
+        {
+          "title": "LOONG: Utilizing Long-Stride Reprogramming to Enhance the Performance of SSDs",
+          "url": "ISCA/2026/Session-2D/loong-utilizing-long-stride-reprogramming-to-enhance-the-performance-of-ssds/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 2D · LOONG: Utilizing Long-Stride Reprogramming to Enhance the Performance of SSDs"
+        }
+      ]
+    },
+    {
+      "text": "Session 8D",
+      "count": 3,
+      "trend": 1,
+      "conf_info": "ISCA 2026 (3 papers)",
+      "search_term": "Session 8D",
+      "papers": [
+        {
+          "title": "Breaking Barriers in Atomic Scaling: A Hardware–Software-Collaborated Framework to Deconstruct RDMA Atomic",
+          "url": "ISCA/2026/Session-8D/breaking-barriers-in-atomic-scaling-a-hardware-software-collaborated-framework-to-deconstruct-rdma-atomic/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8D · Breaking Barriers in Atomic Scaling: A Hardware–Software-Collaborated Framework to Deconstruct RDMA Atomic"
+        },
+        {
+          "title": "Harmonia: A Unified Hierarchical Scheduling Framework for Sparse Matrix Multiplication",
+          "url": "ISCA/2026/Session-8D/harmonia-a-unified-hierarchical-scheduling-framework-for-sparse-matrix-multiplication/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8D · Harmonia: A Unified Hierarchical Scheduling Framework for Sparse Matrix Multiplication"
+        },
+        {
+          "title": "PipeComm: Maximizing Link Utilization through Pipeline-Aware Collective Communication Synthesis",
+          "url": "ISCA/2026/Session-8D/pipecomm-maximizing-link-utilization-through-pipeline-aware-collective-communication-synthesis/",
+          "conf": "ISCA 2026",
+          "summary": "ISCA 2026 · Session 8D · PipeComm: Maximizing Link Utilization through Pipeline-Aware Collective Communication Synthesis"
         }
       ]
     },
@@ -8557,21 +9723,6 @@
       ]
     },
     {
-      "text": "HPCA",
-      "count": 1,
-      "trend": 0,
-      "conf_info": "Unknown (1 paper)",
-      "search_term": "HPCA",
-      "papers": [
-        {
-          "title": "计算机体系结构论文导读",
-          "url": "index copy/",
-          "conf": "Unknown",
-          "summary": "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC·HPDC 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
-        }
-      ]
-    },
-    {
       "text": "HW-SW Co-design",
       "count": 1,
       "trend": 1,
@@ -8628,21 +9779,6 @@
           "url": "DAC/2025/design/phoenix_pauli_based_high_level_optimization_engine_for_instruction_execution_on_nisq_devices/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · Design"
-        }
-      ]
-    },
-    {
-      "text": "ISCA",
-      "count": 1,
-      "trend": 0,
-      "conf_info": "Unknown (1 paper)",
-      "search_term": "ISCA",
-      "papers": [
-        {
-          "title": "计算机体系结构论文导读",
-          "url": "index copy/",
-          "conf": "Unknown",
-          "summary": "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC·HPDC 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
         }
       ]
     },
@@ -8808,21 +9944,6 @@
           "url": "DAC/2025/ai/finding_the_pareto_frontier_of_low_precision_data_formats_and_mac_architecture_for_llm_inference/",
           "conf": "DAC 2025",
           "summary": "DAC 2025 · AI"
-        }
-      ]
-    },
-    {
-      "text": "MICRO",
-      "count": 1,
-      "trend": 0,
-      "conf_info": "Unknown (1 paper)",
-      "search_term": "MICRO",
-      "papers": [
-        {
-          "title": "计算机体系结构论文导读",
-          "url": "index copy/",
-          "conf": "Unknown",
-          "summary": "MICRO·ISCA·HPCA·ASPLOS·DAC·FAST·SC·EuroSys·PPoPP·ATC·HPDC 顶会论文解读，聚焦可信高效计算，覆盖硬件安全、AI加速器、同态加密、量子计算等方向。"
         }
       ]
     },

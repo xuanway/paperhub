@@ -35,10 +35,6 @@ quantum compiler, qubit reuse, quantum circuit optimization, mid-circuit measure
 
 量子编译器, 量子比特复用, 量子电路优化, 电路中间测量, 量子电路抽象
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731020)

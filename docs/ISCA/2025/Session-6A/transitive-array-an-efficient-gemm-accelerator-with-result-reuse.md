@@ -35,10 +35,6 @@ Matrix Multiplication, Quantization, Sparsity, Transitive Array
 
 矩阵乘法, 量化, 稀疏性, 传递阵列
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731043)

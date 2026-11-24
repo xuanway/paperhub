@@ -36,10 +36,6 @@ HBM, 3D-stacked memory, random access, memory bandwidth
 
 三维堆叠 HBM, 随机访问带宽, 混合键合
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731111)

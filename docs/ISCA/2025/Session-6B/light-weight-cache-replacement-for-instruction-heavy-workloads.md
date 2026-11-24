@@ -37,10 +37,6 @@ Microarchitecture, Cache Management, Replacement Policy, Insertion Promotion Vec
 
 微架构, 缓存管理, 替换策略, 插入提升向量, 末级缓存
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3730993)

@@ -37,10 +37,6 @@ Large language model (LLM), Context window, Heterogeneous (hybrid) system, Neura
 
 大语言模型（LLM）, 上下文窗口, 异构（混合）系统, 神经网络处理单元（NPU）, 调度
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731051)

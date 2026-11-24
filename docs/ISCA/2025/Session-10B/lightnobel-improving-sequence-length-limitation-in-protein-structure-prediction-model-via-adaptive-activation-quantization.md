@@ -37,10 +37,6 @@ Protein Structure Prediction Model (PPM), AlphaFold2, ESMFold, Attention-based M
 
 蛋白质结构预测模型, AlphaFold2, ESMFold, 基于注意力的模型, 量化, 硬件加速器, 软硬件协同设计
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731006)

@@ -35,10 +35,6 @@ Graph Neural Network, Near-Memory Processing, ML Acceleration, Data Compression,
 
 图神经网络, 近内存处理, 机器学习加速, 数据压缩, 实时服务
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731083)

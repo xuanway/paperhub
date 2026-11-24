@@ -33,10 +33,6 @@ Wafer-Scale Systems, Distributed DNN Training, Collective Communication, Network
 
 晶圆级系统, 分布式深度神经网络训练, 集合通信, 网络拓扑
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731055)

@@ -35,10 +35,6 @@ Large Language Model, Training, Parallelism, Distributed System
 
 大语言模型, 训练, 并行策略, 分布式系统
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731410)

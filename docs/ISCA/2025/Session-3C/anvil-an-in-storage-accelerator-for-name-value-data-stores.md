@@ -35,10 +35,6 @@ name–value pairs, in-storage processing, solid-state drives, key–value store
 
 名值对, 存储内计算, 固态硬盘, 键值存储, 村内计算, 哈希索引
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731000)

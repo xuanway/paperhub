@@ -438,6 +438,45 @@ nav:
         - "Characterizing Cloud-Native LLM Inference at ByteDance and Exposing Optimization Challenges and Opportunities for Future AI Accelerators": HPCA/2026/industry_track/characterizing_cloud_native_llm_inference_at_bytedance_and_exposing_optimization_challenges_and_opportunities_for_future_ai_accelerators.md
         - "eGPU: Production-Scale Elastic Sharing over 10,000 GPUs": HPCA/2026/industry_track/egpu_production_scale_elastic_sharing_over_10_000_gpus.md
   - 🏗️ ISCA:
+    - ISCA 2026 (172):
+      - ISCA 2026: ISCA/2026/index.md
+      - "Session 1A: Best Paper Candidate Session (5)": ISCA/2026/Session-1A/index.md
+      - "Session 2A: LLM 1 (3)": ISCA/2026/Session-2A/index.md
+      - "Session 3A: ML Accelerators 1 (5)": ISCA/2026/Session-3A/index.md
+      - "Session 4A: LLM 2 (5)": ISCA/2026/Session-4A/index.md
+      - "Session 5A: LLM 3 (6)": ISCA/2026/Session-5A/index.md
+      - "Session 6A: LLM 4 (5)": ISCA/2026/Session-6A/index.md
+      - "Session 7A: Emerging Technologies: Chiplet, Wafer-Scale, etc. (6)": ISCA/2026/Session-7A/index.md
+      - "Session 8A: Rendering (3)": ISCA/2026/Session-8A/index.md
+      - "Session 9A: Verification and Robustness (4)": ISCA/2026/Session-9A/index.md
+      - "Session 10A: LLM 5 (4)": ISCA/2026/Session-10A/index.md
+      - "Session 2B: Memory Systems and PIM/PNM (3)": ISCA/2026/Session-2B/index.md
+      - "Session 3B: DRAM and SRAM PIM/PNM (5)": ISCA/2026/Session-3B/index.md
+      - "Session 4B: Industry Track 1 (5)": ISCA/2026/Session-4B/index.md
+      - "Session 5B: Industry Track 2 (6)": ISCA/2026/Session-5B/index.md
+      - "Session 6B: Deep Learning / Memory Acceleration (5)": ISCA/2026/Session-6B/index.md
+      - "Session 7B: Performance Modeling / Datacenter (6)": ISCA/2026/Session-7B/index.md
+      - "Session 8B: Prefetching and Cache 1 (3)": ISCA/2026/Session-8B/index.md
+      - "Session 9B: Prefetching and Cache 2 (4)": ISCA/2026/Session-9B/index.md
+      - "Session 10B: ML Accelerators 2 (5)": ISCA/2026/Session-10B/index.md
+      - "Session 2C: Sustainability (3)": ISCA/2026/Session-2C/index.md
+      - "Session 3C: Security (5)": ISCA/2026/Session-3C/index.md
+      - "Session 4C: Domain Specific Accelerators 1 (5)": ISCA/2026/Session-4C/index.md
+      - "Session 5C: Crypto and Security (6)": ISCA/2026/Session-5C/index.md
+      - "Session 6C: GPUs and Compilation (5)": ISCA/2026/Session-6C/index.md
+      - "Session 7C: Domain Specific Accelerators 2 (6)": ISCA/2026/Session-7C/index.md
+      - "Session 8C: Quantum 2 (3)": ISCA/2026/Session-8C/index.md
+      - "Session 9C: Quantum 3 (4)": ISCA/2026/Session-9C/index.md
+      - "Session 10C: PIM/PNM, cont. (5)": ISCA/2026/Session-10C/index.md
+      - "Session 2D: Storage (3)": ISCA/2026/Session-2D/index.md
+      - "Session 3D: Microarchitecture (5)": ISCA/2026/Session-3D/index.md
+      - "Session 4D: Quantum 1 (5)": ISCA/2026/Session-4D/index.md
+      - "Session 5D: Potpourri (6)": ISCA/2026/Session-5D/index.md
+      - "Session 6D: Rowhammer and Security (5)": ISCA/2026/Session-6D/index.md
+      - "Session 7D: FHE (6)": ISCA/2026/Session-7D/index.md
+      - "Session 8D: HPC (3)": ISCA/2026/Session-8D/index.md
+      - "Session 9D: Sustainability and Energy Efficiency (4)": ISCA/2026/Session-9D/index.md
+      - "Session 10D: Domain Specific Accelerators 3 (5)": ISCA/2026/Session-10D/index.md
     - ISCA 2025 (135):
       - ISCA 2025: ISCA/2025/index.md
       - "Session 1A: ML Accelerators I (4)":

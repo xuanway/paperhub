@@ -39,10 +39,6 @@ De novo genome assembly, Near-memory processing, Hardware-software co-design
 
 从头基因组组装, 近内存处理, 软硬件协同设计
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731056)

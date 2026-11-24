@@ -35,10 +35,6 @@ sparse matrix, sparse matrix multiplication, accelerator, matrix reordering, til
 
 稀疏矩阵, 稀疏矩阵乘法, 加速器, 矩阵重排, 分块, 专用加速器
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3730990)

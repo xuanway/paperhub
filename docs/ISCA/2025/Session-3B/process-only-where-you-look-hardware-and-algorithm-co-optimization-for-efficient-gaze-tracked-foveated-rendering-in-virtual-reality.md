@@ -81,10 +81,6 @@ Foveated Rendering, Gaze Tracking, Saccade Detection, Hardware Accelerator, Virt
 
 焦点渲染, 眼动追踪, 扫视检测, 硬件加速器, 虚拟现实
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731110)

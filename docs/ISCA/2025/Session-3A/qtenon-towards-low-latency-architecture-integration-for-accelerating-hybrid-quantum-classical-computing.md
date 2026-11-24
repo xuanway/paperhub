@@ -59,10 +59,6 @@ Quantum computing, Instruction set architecture (ISA), Quantum-classical hybrid 
 
 量子计算, 指令集架构, 量子经典混合计算, RISC-V
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731087)

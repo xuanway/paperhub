@@ -36,10 +36,6 @@ multi-core architectures, cache microarchitecture, instruction caching, frontend
 
 众核架构, 缓存微架构, 指令缓存, 前端停顿, 数据中心
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731029)

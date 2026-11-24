@@ -35,10 +35,6 @@ Software Prefetcher, Indirect Memory Access, Memory Hierarchy
 
 软件预取器, 间接内存访问, 内存层次结构
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731054)

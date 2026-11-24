@@ -37,10 +37,6 @@ Nearest Neighbor Search, SIMD, 3D Computer Vision, Point Cloud, K-D Tree, ISA-Ex
 
 最近邻搜索, 单指令多数据, 三维计算机视觉, 点云, K-D树, 指令集扩展, 稀疏性
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731075)

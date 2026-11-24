@@ -37,10 +37,6 @@ Distributed LLM Inference, GPU Sharing, Scheduling Optimization
 
 分布式LLM推理, GPU共享, 调度优化
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3730999)

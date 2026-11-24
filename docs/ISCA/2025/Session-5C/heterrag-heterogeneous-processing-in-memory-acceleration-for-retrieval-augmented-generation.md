@@ -36,10 +36,6 @@ Retrieval-augmented generation, Large language models, Approximate nearest neigh
 
 检索增强生成, 大语言模型, 近似最近邻搜索, 存内计算, 双列直插内存模块, 高带宽内存
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731089)

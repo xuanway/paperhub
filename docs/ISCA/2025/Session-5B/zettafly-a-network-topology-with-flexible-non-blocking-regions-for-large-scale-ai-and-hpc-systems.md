@@ -35,10 +35,6 @@ Network topology, Non-blocking region, Zettascale computing
 
 网络拓扑, 无阻塞区域, Z级计算
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731098)

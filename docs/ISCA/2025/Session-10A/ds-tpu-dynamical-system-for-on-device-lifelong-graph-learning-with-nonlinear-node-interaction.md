@@ -37,10 +37,6 @@ Dynamical System, Energy-Based Model, Graph Learning
 
 动力系统, 基于能量的模型, 图学习
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731091)

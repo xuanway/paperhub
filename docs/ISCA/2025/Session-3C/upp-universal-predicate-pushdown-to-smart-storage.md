@@ -37,10 +37,6 @@ In-Storage Processing (ISP), Instruction Set Architecture (ISA), Com- putational
 
 存储内计算（ISP）, 指令集架构（ISA）, 计算存储盘（CSD）, 现场可编程门阵列（FPGA）, 数据库, 联机分析处理（OLAP）
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731005)

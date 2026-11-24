@@ -35,10 +35,6 @@ Molecular Dynamics, DeePMD, Computational Science, Accelerator, Domain Specific 
 
 分子动力学, DeePMD, 计算科学, 加速器, 领域专用架构
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731052)

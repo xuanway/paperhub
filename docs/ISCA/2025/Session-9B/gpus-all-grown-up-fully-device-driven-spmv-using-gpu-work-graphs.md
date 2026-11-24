@@ -39,10 +39,6 @@ Dynamic Scheduling, GPU Computing, HPC, SpMV, Work Graphs
 
 动态调度, GPU计算, 高性能计算, 稀疏矩阵向量乘法, 工作图
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731060)

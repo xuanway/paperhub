@@ -36,10 +36,6 @@ CPU performance modeling, microarchitectural bottleneck analysis, analytical–M
 
 CPU性能建模, 微架构瓶颈分析, 解析模型-机器学习融合, 设计空间探索, 性能归因, Shapley 值分析, 微架构机器学习
 
-## 代码与研究制品
-
-在现有本地资料中未找到可确认的公开代码或研究制品入口。
-
 ## 相关链接
 
 - [论文 DOI](https://doi.org/10.1145/3695053.3731037)
