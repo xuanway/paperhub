@@ -21,10 +21,13 @@ hide:
 
 # 计算机体系结构论文导读
 
-<p class="hero-subtitle">📌聚焦<a href="ccflist/ccf2026-ranked-list.pdf" target="_blank" rel="noopener noreferrer">中国计算机学会推荐国际学术会议</a>（计算机体系结构/并行与分布计算/存储系统）<br>✨覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC · HPDC 顶级会议<br>🔄持续更新中✍️</p>
+<p class="hero-subtitle">📌聚焦📄<a href="ccflist/ccf2026-ranked-list.pdf" target="_blank" rel="noopener noreferrer" title="在新窗口查阅 CCF 2026 推荐国际学术会议与期刊目录 PDF 版">中国计算机学会推荐国际学术会议</a>（计算机体系结构/并行与分布计算/存储系统）<br>✨覆盖 HPCA · ISCA · MICRO · ASPLOS · DAC · FAST · SC · EuroSys · PPoPP · ATC · HPDC 顶级会议<br>🔄持续更新中✍️</p>
+
+📚 [CCF 2026 推荐国际学术会议与期刊目录](ccflist/ccf2026-ranked-list.md "在线查阅 CCF 2026 推荐国际学术会议与期刊目录及 A/B/C 类分级（Markdown .md 版）")
 
 
-📚 [查看 CCF 2026 推荐国际学术会议和期刊目录](ccflist/ccf2026-ranked-list.md)
+📅 [CCF 推荐学术会议投稿日历](https://ccfddl.com/ "查询CCF A/B/C类会议、期刊及投稿截止日期")
+
 
 <!-- hitwebcounter Code START -->
 <!-- <a href="https://www.hitwebcounter.com/convert-pdf-to-jpg" target="_blank" rel="noopener" title="Convert PDF to JPG free">
@@ -94,6 +97,7 @@ hide:
   <div class="conf-cube__name">DAC</div>
   <div class="conf-cube__full">Design Automation Conference</div>
   <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="DAC/2026/">2026</a>
     <a class="conf-cube__year-link" href="DAC/2025/">2025</a>
   </div>
 </div>

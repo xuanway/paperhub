@@ -1,0 +1,15 @@
+Cachence: Fine-Grained Cache Partitioning in Both Time and Space
+Authors：
+[Liujia Li](https://63dac.conference-program.com/?post_type=page&p=15&uid=17634506465691165371)，[Yuanlong Li](https://63dac.conference-program.com/?post_type=page&p=15&uid=36447269614615897421)，[Yiming Yao](https://63dac.conference-program.com/?post_type=page&p=15&uid=66311602649927663921)，[Jianyu Wu](https://63dac.conference-program.com/?post_type=page&p=15&uid=977874807193310942)，[Yi Fan](https://63dac.conference-program.com/?post_type=page&p=15&uid=5478203606206511847)，[Jinhao Guo](https://63dac.conference-program.com/?post_type=page&p=15&uid=44076986449438940481)，[Liren Zhu](https://63dac.conference-program.com/?post_type=page&p=15&uid=69615801703026902141)，[Jie Zhang](https://63dac.conference-program.com/?post_type=page&p=15&uid=3031408747147996539)，[Xiaolin Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=596343)，[Yingwei Luo](https://63dac.conference-program.com/?post_type=page&p=15&uid=496343)，[Zhenlin Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=696343)，[Diyu Zhou](https://63dac.conference-program.com/?post_type=page&p=15&uid=7558521564547395728)
+
+## 中文标题
+
+Cachence：时间与空间双维度的细粒度缓存划分
+
+## 英文摘要
+
+Cache partitioning mechanisms improve system performance by judiciously allocating cache space among diverse applications. We found that the effectiveness of cache partitioning can be significantly improved for modern applications through fine-grained partitioning in both time and space. However, existing software and hardware solutions are limited to only one dimension. This paper presents Cachence, a novel cache partitioning mechanism that achieves both timely and high-granularity partitioning with two novel techniques. First, Cachence profiles cache access patterns by implementing a refined cache analytical model in hardware, enabling fine-grained miss-ratio curve profiling. The hardware-friendly optimization of the model provides high accuracy with theoretical guarantees in less than tens of million cycles, supporting timely partition while incurring only a small, about two kilobytes space overhead for each core. Second, Cachence leverages the characteristics of modern out-of-order processors and runtime microarchitectural statistics to propose a lightweight yet precise performance model, which supports a thousand of kilobytes-level cache partitioning. Cachence also proposes a special hardware cache partitioning tool, boosting the hit rate while minimizing storage and latency overhead. Our evaluation shows that, on a 16-core system, Cachence outperforms existing approaches by an average of 9.5% to 28.2%, and up to 48.8%.
+
+## 中文摘要
+
+缓存划分机制通过在多样化的应用之间合理分配缓存空间来提升系统性能。我们发现，通过对时间和空间两个维度进行细粒度划分，可以显著提升缓存划分在现代应用中的有效性。然而，现有的软件与硬件方案都只能覆盖其中一个维度。本文提出 Cachence，一种新颖的缓存划分机制，借助两项新技术实现了及时且高粒度的划分。首先，Cachence 通过在硬件中实现精细化的缓存分析模型来刻画缓存访问模式，从而实现细粒度的缺失率曲线（MRC）刻画。该模型对硬件友好的优化使其能够在数千万周期以内达到具有理论保证的高精度，从而支持及时划分，同时每个核仅带来约 2 KB 的空间开销。其次，Cachence 利用现代乱序处理器的特性以及运行时微架构统计信息，提出一个轻量却精确的性能模型，可支持上千 KB 量级的缓存划分。Cachence 还提出了一种专用的硬件缓存划分工具，在提升命中率的同时将存储与延迟开销降至最低。我们的评估表明，在 16 核系统上，Cachence 平均比现有方法优 9.5% 至 28.2%，最高可达 48.8%。

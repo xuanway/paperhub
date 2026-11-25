@@ -1,0 +1,15 @@
+EARL: Entropy-Aware RL Alignment of LLMs for Reliable RTL Code Generation
+Authors：
+[Jiahe Shi](https://63dac.conference-program.com/?post_type=page&p=15&uid=3361292896369769543)，[Zhengqi Gao](https://63dac.conference-program.com/?post_type=page&p=15&uid=128643)，[Ching-Yun Ko](https://63dac.conference-program.com/?post_type=page&p=15&uid=25416548901054083111)，[Duane Boning](https://63dac.conference-program.com/?post_type=page&p=15&uid=228643)
+
+## 中文标题
+
+EARL：面向可靠 RTL 代码生成的熵感知强化学习 LLM 对齐方法
+
+## 英文摘要
+
+Recent advances in large language models (LLMs) have demonstrated significant potential in hardware design automation, particularly in using natural language to synthesize Register-Transfer Level (RTL) code. Despite this progress, a gap remains between model capability and the demands of real-world RTL design, including syntax errors, functional hallucinations, and weak alignment to designer intent. Reinforcement Learning with Verifiable Rewards (RLVR) offers a promising approach to bridge this gap, as hardware provides executable and formally checkable signals that can be used to further align model outputs with design intent. However, in long, structured RTL code sequences, not all tokens contribute equally to functional correctness, and naïvely spreading gradients across all tokens dilutes learning signals. A key insight from our entropy analysis in RTL generation is that only a small fraction of tokens (e.g., always, if, assign, posedge) exhibit high uncertainty and largely influence control flow and module structure. To address these challenges, we present EARL, an Entropy-Aware Reinforcement Learning framework for Verilog generation. EARL performs policy optimization using verifiable reward signals and introduces entropy-guided selective updates that gate policy gradients to high-entropy tokens. This approach preserves training stability and concentrates gradient updates on functionally important regions of code. Our experiments on VerilogEval and RTLLM show that EARL improves functional pass rates over prior LLM baselines by up to 14.7%, while reducing unnecessary updates and improving training stability. These results indicate that focusing RL on critical, high-uncertainty tokens enables more reliable and targeted policy improvement for structured RTL code generation. Our code is publicly available at https://github.com/Coone21/Verilog-EARL.
+
+## 中文摘要
+
+近年来，大语言模型（LLM）的进展在硬件设计自动化领域展现出显著潜力，尤其是在利用自然语言合成寄存器传输级（RTL）代码方面。然而，尽管取得了这些进展，模型能力与实际 RTL 设计需求之间仍存在差距，具体表现为语法错误、功能性幻觉以及对设计者意图对齐不足。可验证奖励强化学习（RLVR）为弥合这一差距提供了有前景的途径，因为硬件可提供可执行且可形式化校验的信号，可用于进一步将模型输出与设计意图对齐。然而，在长而结构化的 RTL 代码序列中，并非所有 token 对功能正确性的贡献都相同，将梯度朴素地分散到全部 token 上会稀释学习信号。我们在 RTL 生成中的熵分析得到一个关键见解：只有很小一部分 token（例如 always、if、assign、posedge）表现出高不确定性，并在很大程度上影响控制流与模块结构。为应对这些挑战，我们提出 EARL，一个面向 Verilog 生成的熵感知强化学习框架。EARL 利用可验证奖励信号进行策略优化，并引入熵引导的选择性更新，将策略梯度门控至高熵 token。该方法保持了训练稳定性，并将梯度更新集中于代码中功能重要的区域。我们在 VerilogEval 与 RTLLM 上的实验表明，EARL 相较此前的 LLM 基线将功能通过率最高提升 14.7%，同时减少了不必要的更新并提升了训练稳定性。这些结果表明，将强化学习聚焦于关键的、高不确定性的 token，能够为结构化 RTL 代码生成带来更可靠、更具针对性的策略改进。我们的代码已公开于 https://github.com/Coone21/Verilog-EARL。

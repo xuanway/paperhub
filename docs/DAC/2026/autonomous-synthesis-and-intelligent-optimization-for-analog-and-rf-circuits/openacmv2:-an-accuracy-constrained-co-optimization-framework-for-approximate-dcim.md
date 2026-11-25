@@ -1,0 +1,15 @@
+OpenACMv2: An Accuracy-Constrained Co-Optimization Framework for Approximate DCiM
+Authors：
+[Yiqi Zhou](https://63dac.conference-program.com/?post_type=page&p=15&uid=79703328912484003871)，[Yue Yuan](https://63dac.conference-program.com/?post_type=page&p=15&uid=046530411219167152)，[Yikai Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=1949181396616829146)，[Bohao Liu](https://63dac.conference-program.com/?post_type=page&p=15&uid=6217903791013312913)，[Qinxin Mei](https://63dac.conference-program.com/?post_type=page&p=15&uid=0488261242156066519)，[Zhuohua Liu](https://63dac.conference-program.com/?post_type=page&p=15&uid=13428001996582328441)，[Shan Shen](https://63dac.conference-program.com/?post_type=page&p=15&uid=0559831925586243736)，[Wei Xing](https://63dac.conference-program.com/?post_type=page&p=15&uid=693843)，[Daying Sun](https://63dac.conference-program.com/?post_type=page&p=15&uid=30094324420240767301)，[Li Li](https://63dac.conference-program.com/?post_type=page&p=15&uid=97140002640103069151)，[Guozhu Liu](https://63dac.conference-program.com/?post_type=page&p=15&uid=43749587300129562181)
+
+## 中文标题
+
+OpenACMv2：面向近似 DCiM 的精度约束协同优化框架
+
+## 英文摘要
+
+Digital Compute-in-Memory (DCiM) accelerates neural networks by reducing data movement. Approximate DCiM can further improve power–performance–area (PPA), but demands accuracy-constrained co-optimization across coupled architecture and transistor-level choices. Building on OpenYield, we introduce Accuracy-Constrained Co-Optimization (ACCO) and present OpenACMv2, an open framework that operationalizes ACCO via two-level optimization: (1) accuracy-constrained architecture search of compressor combinations and SRAM macro parameters, driven by a fast GNN-based surrogate for PPA and error; and (2) variation-and PVT-aware transistor sizing for standard cells and SRAM bitcells using Monte Carlo. By decoupling ACCO into architecture-level exploration and circuit-level sizing, OpenACMv2 integrates classic single-and multi-objective optimizers to deliver strong PPA–accuracy tradeoffs and robust convergence. The workflow is compatible with FreePDK45 and OpenROAD, supporting reproducible evaluation and easy adoption. Experiments show that the proposed two-level ACCO framework achieves most of its accuracy-constrained efficiency gain at Level-1 through architecture exploration, delivering roughly 50%+ PDP reduction, while Level-2 transistor-level optimization provides a further single-digit PDP improvement while preserving accuracy, enabling rapid “what-if” exploration for approximate DCiM. The framework is available on GitHub.
+
+## 中文摘要
+
+数字存内计算（DCiM）通过减少数据移动来加速神经网络。近似 DCiM 可进一步改善功耗-性能-面积（PPA），但需要在相互耦合的架构级与晶体管级选择之间进行精度约束的协同优化。我们在 OpenYield 的基础上引入精度约束协同优化（ACCO），并提出 OpenACMv2，一个通过两级优化落地 ACCO 的开放框架：（1）由用于 PPA 与误差的快速 GNN 代理模型驱动，对压缩器组合与 SRAM 宏参数进行精度约束的架构搜索；（2）利用蒙特卡洛方法对标准单元和 SRAM 位单元进行考虑工艺偏差与 PVT 的晶体管尺寸设计。通过将 ACCO 解耦为架构级探索与电路级尺寸设计，OpenACMv2 集成了经典的单目标与多目标优化器，从而给出优异的 PPA-精度折中与稳健收敛。该流程兼容 FreePDK45 和 OpenROAD，支持可复现评估并易于采用。实验表明，所提出的两级 ACCO 框架在第一级通过架构探索即可获得精度约束下的大部分效率收益，实现约 50% 以上的 PDP 降低，而第二级晶体管级优化在保持精度的同时进一步带来个位数百分比的 PDP 改善，从而支持对近似 DCiM 的快速“假设分析”探索。该框架已在 GitHub 上公开。

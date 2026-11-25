@@ -1,0 +1,15 @@
+GRACE: A Ground Plane Generation and Re-Routing Aware Co-Design Engine
+Authors：
+[Tongkai Wu](https://63dac.conference-program.com/?post_type=page&p=15&uid=98421666137536202261)，[Beichen Li](https://63dac.conference-program.com/?post_type=page&p=15&uid=8032209977666039798)，[Yapeng Li](https://63dac.conference-program.com/?post_type=page&p=15&uid=1472746777532170421)，[Zuxun Duan](https://63dac.conference-program.com/?post_type=page&p=15&uid=5718791045907008518)，[Yanshi Liang](https://63dac.conference-program.com/?post_type=page&p=15&uid=9961222199750649487)，[Yihe Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=69888417141682717231)，[Baohui Xie](https://63dac.conference-program.com/?post_type=page&p=15&uid=44459964307206488851)，[Qunsong Ye](https://63dac.conference-program.com/?post_type=page&p=15&uid=1659221081924657213)，[Tinghuan Chen](https://63dac.conference-program.com/?post_type=page&p=15&uid=64168005757594372121)
+
+## 中文标题
+
+GRACE：地平面生成与重布线感知的协同设计引擎
+
+## 英文摘要
+
+In modern high-density Printed Circuit Board (PCB) design, the conventional sequential workflow often leads to a fractured ground plane, compromising signal integrity and system performance. Existing Electronic Design Automation (EDA) tools passively fill unoccupied space with copper post-routing, lacking the ability to modify wire segments to improve ground plane continuity. In this paper, we propose GRACE (A Ground Plane Generation and Re-routing Aware Co-design Engine), a novel, topology-aware framework that fundamentally shifts the paradigm from passive filling to an integrated co-design process. GRACE formulates ground plane generation as an optimization problem tightly coupled with automated rerouting. It partitions the layout into copper-pourable regions and blockages, and abstracts this into a novel weighted graph model, the Ground Plane Graph (GPGraph). We then formulate an Integer Linear Programming problem on the GPGraph to identify a globally optimal set of blockages to eliminate. By strategically rerouting a minimal number of power & signal wire segments, GRACE merges isolated copper islands to create a maximum and contiguous ground plane. Experimental results demonstrate that GRACE drastically increases the area of the ground plane by an average of 33.06% and reduces the number of ground plane polygons by 54.34% compared to open-source EDA tools. Moreover, our method offers a significant speedup over manual refinement while achieving comparable quality in terms of ground plane area and number of ground plane polygons.
+
+## 中文摘要
+
+在现代高密度印制电路板（PCB）设计中，传统的串行工作流程常常导致地平面破碎，从而损害信号完整性与系统性能。现有 EDA 工具在后布线阶段被动地用铜填充空闲区域，缺乏通过修改走线段来改善地平面连续性的能力。本文提出 GRACE（地平面生成与重布线感知的协同设计引擎），这是一个新颖的、拓扑感知的框架，从根本上将范式从被动填充转变为集成的协同设计过程。GRACE 将地平面生成建模为与自动重布线紧密耦合的优化问题。它将版图划分为可铺铜区域与阻挡区域，并将其抽象为一种新颖的加权图模型——地平面图（GPGraph）。随后，我们在 GPGraph 上构建整数线性规划问题，以确定全局最优的待消除阻挡集合。通过策略性地重布线最少数量的电源与信号走线段，GRACE 合并孤立的铜岛，从而构建出尽可能大且连续的地平面。实验结果表明，与开源 EDA 工具相比，GRACE 使地平面面积平均提升 33.06%，并将地平面多边形数量减少 54.34%。此外，与人工精修相比，我们的方法在取得相当的地平面面积与多边形数量质量的同时实现了显著加速。

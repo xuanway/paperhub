@@ -1,0 +1,15 @@
+Hyperwafer: Communication-Aware Sparse Matrix Multiplication on Wafer-Scale Chips
+Authors：
+[Zhongcheng Du](https://63dac.conference-program.com/?post_type=page&p=15&uid=96821170160489374241)，[Yu Huang](https://63dac.conference-program.com/?post_type=page&p=15&uid=427343)，[Yi Zhang](https://63dac.conference-program.com/?post_type=page&p=15&uid=7676833668777047982)，[Qihang Qiu](https://63dac.conference-program.com/?post_type=page&p=15&uid=364761304429460555)，[Chencheng Ye](https://63dac.conference-program.com/?post_type=page&p=15&uid=78510395707849610021)，[Huanyu Wu](https://63dac.conference-program.com/?post_type=page&p=15&uid=0075808427000607387)，[Qie Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=3557939790114208124)，[Xueqi Li](https://63dac.conference-program.com/?post_type=page&p=15&uid=77855308624011050141)，[Long Zheng](https://63dac.conference-program.com/?post_type=page&p=15&uid=976343)，[Xiaofei Liao](https://63dac.conference-program.com/?post_type=page&p=15&uid=630243)，[Hai Jin](https://63dac.conference-program.com/?post_type=page&p=15&uid=730243)
+
+## 中文标题
+
+HypeRWafeR：晶圆级芯片上通信感知的稀疏矩阵乘法
+
+## 英文摘要
+
+Sparse-matrix sparse-matrix multiplication (SpGEMM) is a key kernel across many domains, yet its performance on modern architectures is dominated by highly irregular data movement. Wafer-scale chips (WSCs) offer unprecedented bandwidth and massive parallelism, making them a compelling platform for SpGEMM. However, sparsity-induced irregularity generates substantial communication overheads, resulting in severe underutilization. In this work, we present HypeRWafeR, the first communication-aware SpGEMM framework for WSCs, combining a hypergraph-guided execution model with dedicated architectural support. HypeRWafeR captures SpGEMM’s inherently high-order dataflow dependencies, which arise from multiway row sharing and overlapping reduction scopes, using a weighted hypergraph abstraction that enables communication-centric partitioning and topology-aware mapping aligned with the wafer’s physical bandwidth distribution. To efficiently realize this model, HypeRWafeR integrates a sparsity-aware SpGEMM execution engine that sustains high per-PE throughput under irregular workloads together with a lightweight, congestion-sensitive runtime routing substrate that preserves effective on-wafer communication along hypergraph-optimized paths. Across diverse workloads, HypeRWafeR delivers average speedups of 979.97×, 125.23×, 12.14×, and 5.14× over state-of-the-art CPU, GPU, FPGA, and WSC SpGEMM implementations.
+
+## 中文摘要
+
+稀疏矩阵-稀疏矩阵乘法（SpGEMM）是众多领域中的关键核心算子，但其在现代架构上的性能主要由高度不规则的数据移动所决定。晶圆级芯片（WSC）提供空前的带宽与大规模并行能力，是运行 SpGEMM 的理想平台。然而，稀疏性所带来的不规则性会产生大量通信开销，导致严重的资源闲置。本文提出 HypeRWafeR，首个面向 WSC 的通信感知 SpGEMM 框架，将超图引导的执行模型与专门的架构支持相结合。HypeRWafeR 采用加权超图抽象刻画 SpGEMM 固有的高阶数据流依赖关系——这些依赖源于多路行共享与重叠的归约范围——从而实现以通信为中心的分区，以及与晶圆物理带宽分布相契合的拓扑感知映射。为高效实现该模型，HypeRWafeR 集成了一个稀疏感知的 SpGEMM 执行引擎，可在不规则负载下维持较高的单 PE 吞吐，并配以轻量、拥塞敏感的运行时路由基底，沿超图优化路径维持有效的片上通信。在多种负载下，HypeRWafeR 相比最先进的 CPU、GPU、FPGA 与 WSC 上的 SpGEMM 实现，分别取得 979.97 倍、125.23 倍、12.14 倍与 5.14 倍的平均加速。

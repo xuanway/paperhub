@@ -1,0 +1,15 @@
+Etherssd: An In-Storage Ethereum Analytics Platform with Minimized I/O and Authentication Overhead
+Authors：
+[Chenlin Ma](https://63dac.conference-program.com/?post_type=page&p=15&uid=4213970674159892189)，[Yongbiao Zhu](https://63dac.conference-program.com/?post_type=page&p=15&uid=65195261901369990381)，[Tianyu Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=4102639928273142851)，[Jiaxian Chen](https://63dac.conference-program.com/?post_type=page&p=15&uid=37582528852818661511)，[Kecheng Huang](https://63dac.conference-program.com/?post_type=page&p=15&uid=9023677625232671802)，[Rui Mao](https://63dac.conference-program.com/?post_type=page&p=15&uid=430343)，[Yi Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=030343)
+
+## 中文标题
+
+EtherSSD：一种最小化 I/O 与认证开销的存内以太坊分析平台
+
+## 英文摘要
+
+As a widely used blockchain system, Ethereum has generated massive amounts of data reaching the TB level, which inevitably presents significant challenges for efficient data analysis. To ensure trust in query results, Ethereum must provide auxiliary proofs (e.g., Merkle proofs) alongside returned data. This requirement forces both query results and associated verification objects to be transferred between storage and compute units, resulting in significant authentication overhead due to the large number of I/O operations. In this paper, we introduce EtherSSD, an innovative in-storage Ethereum analytics platform that leverages computational storage devices (CSDs) for more efficient, real-time data analysis. Our investigation begins with a systematic characterization of Ethereum’s performance under analytical workloads, revealing a critical bottleneck: the lengthy read path (comprising tens or even hundreds of serialized I/O operations) required for the data authentication. To address this issue, EtherSSD bridges the semantic gap between the host and CSDs, dissolving authenticated data queries into flattened (highly concurrent) in-CSD page accesses with slashed I/O operations from the host side. Additionally, EtherSSD incorporates an FPGA-accelerated authentication engine that offloads cryptographic verification computations from host CPUs. Finally, we implement EtherSSD on real CSD hardware and provide a programming interface that simplifies integration with the existing Ethereum blockchain system. Evaluations under real-world workloads demonstrate that EtherSSD achieves query performance improvements of 2.22× and 1.50× over Geth and SOTA, respectively.
+
+## 中文摘要
+
+作为广泛使用的区块链系统，以太坊已产生达到 TB 级的海量数据，这不可避免地给高效数据分析带来了重大挑战。为确保查询结果的可信性，以太坊必须在返回数据的同时提供辅助证明（例如 Merkle 证明）。这一要求迫使查询结果和相关验证对象在存储单元与计算单元之间传输，因大量 I/O 操作而产生显著的认证开销。本文提出了 EtherSSD，一种创新的存内以太坊分析平台，利用计算存储设备（CSD）实现更高效的实时数据分析。我们的研究首先系统刻画了以太坊在分析工作负载下的性能，揭示了一个关键瓶颈：数据认证所需的冗长读取路径（包含数十甚至数百次串行 I/O 操作）。为解决该问题，EtherSSD 弥合了主机与 CSD 之间的语义鸿沟，将带认证的数据查询分解为扁平的（高度并发的）CSD 内页访问，从而大幅削减主机侧 I/O 操作。此外，EtherSSD 集成了 FPGA 加速的认证引擎，将密码学验证计算从主机 CPU 卸载。最后，我们在真实 CSD 硬件上实现了 EtherSSD，并提供了简化与现有以太坊区块链系统集成的编程接口。真实工作负载下的评估表明，EtherSSD 的查询性能分别比 Geth 和当前最优方案提高 2.22 倍和 1.50 倍。

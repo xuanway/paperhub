@@ -1,0 +1,15 @@
+HW-Router: Hardware-Aware Routing for Scalable Multi-LLM Serving
+Authors：
+[Ahasan Kabir](https://63dac.conference-program.com/?post_type=page&p=15&uid=2622500956516309825)，[Jiaqi Xue](https://63dac.conference-program.com/?post_type=page&p=15&uid=61381647804824246601)，[Mengxin Zheng](https://63dac.conference-program.com/?post_type=page&p=15&uid=7043608771704783242)，[Qian Lou](https://63dac.conference-program.com/?post_type=page&p=15&uid=59469293988581540311)
+
+## 中文标题
+
+HW-Router：面向可扩展多 LLM 服务的硬件感知路由
+
+## 英文摘要
+
+Modern large language model (LLM) serving platforms deploy multiple models across different GPUs, requiring routers to direct incoming queries to appropriate LLMs. However, existing routing approaches primarily rely on static model attributes such as size or FLOPs to estimate serving costs. This static cost modeling fails to capture the dynamic behavior of real deployments, where the same model can exhibit vastly different inference latencies depending on hardware type (e.g., H100 vs. V100), current system load (e.g., running and waiting queue lengths), and resource contention (e.g., KV-cache usage and GPU utilization). Such hardware-agnostic routing leads to suboptimal decisions, resulting in SLO violations, queue buildup, and underutilized GPUs. To address these challenges, we present HW-Router, a dynamic routing framework that integrates real-time hardware signals into model selection to enable accurate latency prediction and intelligent, SLO-aware routing decisions. Our approach incorporates model-specific features (architecture, size, input length) alongside hardware metrics including queue lengths, KV-cache utilization, and recent TTFT/TPOT performance, and uses a lightweight latency predictor to estimate per-model-per-GPU serving time. Evaluations across diverse workloads show that HW-Router achieves 3.4–3.9× lower end-to-end latency, 46–48 percentage points higher SLO attainment, 6–8× lower GPU load skew, and a 3.1–3.4× reduction in waiting-queue fraction compared to state-of-the-art router baselines, CARROT and IRT, with only ~200μs of additional routing overhead and no loss in output quality. These results highlight the importance of real-time hardware feedback for scalable, predictable, and well-balanced multi-LLM serving. Code is available at https://github.com/UCF-ML-Research/HW-Router.
+
+## 中文摘要
+
+现代大语言模型（LLM）服务平台在不同 GPU 上部署多个模型，需要路由器将到达的查询导向合适的 LLM。然而，现有路由方法主要依赖模型规模或 FLOPs 等静态模型属性来估计服务开销。这种静态开销建模无法刻画真实部署中的动态行为：同一模型会因硬件类型（如 H100 与 V100）、当前系统负载（如运行队列与等待队列长度）以及资源竞争（如 KV-cache 占用与 GPU 利用率）而表现出迥异的推理延迟。这种与硬件无关的路由导致决策次优，造成 SLO 违约、队列堆积和 GPU 利用率不足。为应对这些挑战，我们提出 HW-Router，一个将实时硬件信号融入模型选择的动态路由框架，从而实现准确的延迟预测和智能的、SLO 感知的路由决策。我们的方法将模型相关特征（架构、规模、输入长度）与队列长度、KV-cache 利用率及近期 TTFT/TPOT 表现等硬件指标相结合，并使用轻量级延迟预测器估计每个模型在每个 GPU 上的服务时间。在多样化工作负载上的评估表明，与最先进的路由基线 CARROT 和 IRT 相比，HW-Router 将端到端延迟降低 3.4–3.9 倍，SLO 达成率提高 46–48 个百分点，GPU 负载偏斜降低 6–8 倍，等待队列占比减少 3.1–3.4 倍，而额外路由开销仅约 200μs，且输出质量无损。这些结果凸显了实时硬件反馈对于可扩展、可预测且负载均衡的多 LLM 服务的重要性。代码见 https://github.com/UCF-ML-Research/HW-Router。

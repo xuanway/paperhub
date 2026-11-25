@@ -1,0 +1,15 @@
+Accshield: Operator-Aware Robust Scheduling for Fault-Tolerant AI Accelerators
+Authors：
+[Chenyang Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=4740934013491690002)，[Hengshan Yue](https://63dac.conference-program.com/?post_type=page&p=15&uid=25276805876393597901)，[Qianhao Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=9101533852404579512)，[Tianle Li](https://63dac.conference-program.com/?post_type=page&p=15&uid=72086928275704011861)，[Yongzhe Ma](https://63dac.conference-program.com/?post_type=page&p=15&uid=05299607315968232331)，[Zeyu Guan](https://63dac.conference-program.com/?post_type=page&p=15&uid=79025949837902919801)，[Jingweijia Tan](https://63dac.conference-program.com/?post_type=page&p=15&uid=59601490899346968401)，[Xiaohui Wei](https://63dac.conference-program.com/?post_type=page&p=15&uid=4849888562402417171)
+
+## 中文标题
+
+AccShield：面向容错 AI 加速器的算子感知鲁棒调度
+
+## 英文摘要
+
+Modern AI accelerators increasingly adopt scale-out (multi-array) architectures to achieve high throughput for transformer-based models. However, such designs face growing reliability challenges: permanent stuck-at faults occurring in processing elements (PEs) propagate across arrays and operators, causing unpredictable accuracy degradation. Existing scale-out accelerator studies mainly pursue performance, and neglect reliability concerns. Recent hardware-software co-designed fault-tolerance techniques are effective in single-array accelerators. While extending these approaches to scale-out architectures, they suffer from high control and synchronization overhead as well as load-balancing constraints. In this paper, we propose AccShield, which proactively mitigates fault impact by operator-aware robust scheduling. We reveal that microarchitecture fault severity is dependent on fault position, direction, and quantity. Meanwhile, we observe that operator vulnerability differs across operator types and layers. Based on these observations, we construct a bit–direction fault severity table and an operator-level sensitivity metric to characterize hardware and software reliability, respectively. AccShield integrates them into a unified joint risk metric and performs dependency-preserving, load-balanced scheduling to preferentially assign sensitive operators to reliable arrays. Experiments on four Transformer-based models show that AccShield recovers up to 89.8% accuracy loss under severe faults, while maintaining less than 12% extra performance overhead on average.
+
+## 中文摘要
+
+现代 AI 加速器越来越多地采用 scale-out（多阵列）架构，以为基于 Transformer 的模型实现高吞吐。然而此类设计面临日益严峻的可靠性挑战：处理单元（PE）中出现的永久性固定故障会在阵列与算子之间传播，导致精度出现不可预测的下降。现有 scale-out 加速器研究主要追求性能，忽视了可靠性问题；近期的软硬件协同设计容错技术虽在单阵列加速器中行之有效，但扩展到 scale-out 架构时会遭遇高昂的控制与同步开销以及负载均衡约束。本文提出 AccShield，通过算子感知的鲁棒调度主动缓解故障影响。我们揭示出微架构故障的严重程度取决于故障位置、方向与数量；同时观察到算子脆弱性因算子类型与所在层而异。基于这些观察，我们构建位–方向故障严重程度表与算子级敏感度度量，分别刻画硬件与软件层面的可靠性。AccShield 将二者集成为统一的联合风险度量，并执行保持依赖关系、负载均衡的调度，优先将敏感算子分配到可靠阵列。在四个基于 Transformer 的模型上的实验表明，AccShield 在严重故障下最多可恢复 89.8% 的精度损失，同时平均额外性能开销低于 12%。

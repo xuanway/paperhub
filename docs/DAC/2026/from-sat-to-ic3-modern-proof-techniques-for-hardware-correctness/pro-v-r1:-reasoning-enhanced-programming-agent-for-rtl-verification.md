@@ -1,0 +1,15 @@
+PRO-V-R1: Reasoning Enhanced Programming Agent for RTL Verification
+Authors：
+[Yujie Zhao](https://63dac.conference-program.com/?post_type=page&p=15&uid=57240994238856865231)，[Zhijing Wu](https://63dac.conference-program.com/?post_type=page&p=15&uid=9973606526704962392)，[Boqin Yuan](https://63dac.conference-program.com/?post_type=page&p=15&uid=18872361476205447921)，[Zhongming Yu](https://63dac.conference-program.com/?post_type=page&p=15&uid=23125423436005654371)，[Hejia Zhang](https://63dac.conference-program.com/?post_type=page&p=15&uid=2851220841717301946)，[Wentao Ni](https://63dac.conference-program.com/?post_type=page&p=15&uid=21414707682504195651)，[Chia-Tung Ho](https://63dac.conference-program.com/?post_type=page&p=15&uid=083643)，[Haoxing Ren](https://63dac.conference-program.com/?post_type=page&p=15&uid=172643)，[Jishen Zhao](https://63dac.conference-program.com/?post_type=page&p=15&uid=31640972675556977411)
+
+## 中文标题
+
+PRO-V-R1：面向 RTL 验证的推理增强编程智能体
+
+## 英文摘要
+
+Register-Transfer Level (RTL) verification is a primary bottleneck consuming 60-70% of development time. While Large Language Models (LLMs) show promise for RTL automation, their performance and research focus have overwhelmingly centered on RTL generation rather than verification. Current methods for RTL verification rely on large scale proprietary models (e.g., GPT-4o) to generate Python-based functional references, incurring a high cost and raising data-privacy risks. To date, an end-to-end open-source solution for autonomous verification remains absent. We introduce PRO-V-R1, the first trainable open-source agentic framework for autonomous RTL verification. Our contributions are threefold: (1) we design PRO-V sys, a modular agentic system that couples LLM-based reasoning with programmatic tool use for RTL verification; (2) we establish a data construction pipeline that leverages existing RTL datasets to build simulation-validated, expert-level trajectories tailored for supervised fine-tuning (SFT) RTL verification agents; and (3) we implement an efficient reinforcement learning (RL) algorithm that uses verification-specific rewards derived from program-tool feedback to optimize the end-to-end verification workflow. Our empirical evaluation demonstrates PROV-R1 achieves a 57.7% functional correctness rate and 34.0% in robust fault detection, significantly outperforming the base model’s 25.7% and 21.8% (respectively) from the state-of-the-art (SOTA) automatic verification system. This configuration also outperforms large-scale proprietary LLMs in functional correctness and shows comparable robustness for fault detection.
+
+## 中文摘要
+
+寄存器传输级（RTL）验证是主要瓶颈，占据 60-70%的开发时间。尽管大语言模型（LLM）在 RTL 自动化方面展现出前景，但其性能与研究关注点绝大多数集中于 RTL 生成而非验证。当前的 RTL 验证方法依赖大规模专有模型（如 GPT-4o）生成基于 Python 的功能参考，成本高昂并带来数据隐私风险。迄今为止，仍缺乏用于自主验证的端到端开源解决方案。我们提出 PRO-V-R1，首个可训练的开源自主 RTL 验证智能体框架。我们的贡献有三：（1）设计 PRO-V sys，一个模块化的智能体系统，将基于 LLM 的推理与程序化工具使用相结合以完成 RTL 验证；（2）建立数据构建流水线，利用现有 RTL 数据集构建经仿真验证的、面向监督微调（SFT）RTL 验证智能体的专家级轨迹；（3）实现一种高效的强化学习（RL）算法，利用源自程序工具反馈的验证专用奖励来优化端到端验证工作流。我们的实证评估表明，PROV-R1 达到 57.7%的功能正确率和 34.0%的鲁棒故障检测率，显著优于基线模型（分别为 25.7%和 21.8%）以及最先进（SOTA）自动验证系统。该配置在功能正确性上同样优于大规模专有 LLM，并在故障检测的鲁棒性上与之相当。

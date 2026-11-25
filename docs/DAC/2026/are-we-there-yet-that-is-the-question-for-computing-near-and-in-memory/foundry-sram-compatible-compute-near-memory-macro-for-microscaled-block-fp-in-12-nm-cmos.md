@@ -1,0 +1,15 @@
+Foundry-SRAM-Compatible Compute-Near-Memory Macro for Microscaled Block-FP in 12-nm CMOS
+Authors：
+[Samir Rahman](https://63dac.conference-program.com/?post_type=page&p=15&uid=19624121306442490931)，[Arun George](https://63dac.conference-program.com/?post_type=page&p=15&uid=54998539671179179851)，[Shehab Naga](https://63dac.conference-program.com/?post_type=page&p=15&uid=59921957260667423231)，[Thomas Summe](https://63dac.conference-program.com/?post_type=page&p=15&uid=2288847860241429926)，[Yipin Guo](https://63dac.conference-program.com/?post_type=page&p=15&uid=0706937671156799544)，[Siddharth Joshi](https://63dac.conference-program.com/?post_type=page&p=15&uid=703143)
+
+## 中文标题
+
+12nm CMOS 中兼容代工 SRAM 的微缩放块浮点近存计算宏单元
+
+## 英文摘要
+
+Trillion-parameter Transformers across vision, language, and action increasingly rely on reduced-precision floating-point (e.g., FP8) for dynamic range and efficiency. While their compute-intensive operations might make in-memory solutions attractive, the incompatibility of FP operations with analog computing renders many optimizations untenable for emerging compute-in/near-memory (CIM/CNM) platforms. To address this incompatibility, we present MANTIS, a foundry-SRAM-compatible, mixed-signal, CNM/CIM macro that performs vector integer multiply-accumulate operations in the analog charge domain, while applying per-vector FP8 scaling factors digitally via microscaling (MXFP). The proposed design, in a commercially available 12 nm node, reuses the digital-to-analog converter (DAC) in a successive approximation register (SAR) analog-to-digital converter (ADC) as both a bit-plane charge-domain accumulator and as part of the ADC. The design is implemented as a 4kb macro, operating at 0.8V. Our 8b ADC delivers 7.62 effective number of bits (ENOB), resulting in a precision-scalable efficiency of 22.5 TOPS/W (for MXINT3×MXINT3) to 6.43 TOPS/W (MXINT8×MXINT3). In end-to-end evaluations on MMLU (5-shot) and HellaSwag (0-shot), our design only incurs a 0.15 percentage point accuracy degradation across multiple open-weight LLMs (vs. the MXINT8 activation × MXINT3 weight, quantized baseline). For reduced-precision activations (MXINT6 / MXINT3 + FP8 scalar), our results track within ±0.3% of the quantized models, with minimal impact from analog computation. The benchmark codes are available at https://github.com/Intelligent-Microsystems-Lab/Microscaled-CNM-MANTIS.
+
+## 中文摘要
+
+横跨视觉、语言与行动领域的万亿参数 Transformer 越来越依赖降精度浮点（如 FP8）来获得动态范围与能效。虽然其计算密集的算子可能使存内计算方案颇具吸引力，但浮点运算与模拟计算之间的不兼容性，使得许多优化在面向新兴的存内/近存计算（CIM/CNM）平台时难以成立。为解决这一不兼容问题，我们提出 MANTIS——一款与代工 SRAM 兼容的混合信号 CNM/CIM 宏单元，它在模拟电荷域中执行向量整数乘累加运算，同时以数字方式通过微缩放（MXFP）施加逐向量的 FP8 缩放因子。所提出的设计采用商用 12nm 工艺节点，复用逐次逼近寄存器（SAR）型模数转换器（ADC）中的数模转换器（DAC），使其既作为位平面电荷域累加器，又作为 ADC 的一部分。该设计实现为 4kb 宏单元，工作在 0.8V。我们的 8 位 ADC 达到 7.62 有效位数（ENOB），由此实现从 22.5 TOPS/W（MXINT3×MXINT3）到 6.43 TOPS/W（MXINT8×MXINT3）的精度可伸缩能效。在 MMLU（5-shot）与 HellaSwag（0-shot）上的端到端评测中，相对于 MXINT8 激活 × MXINT3 权重的量化基线，我们的设计在多个开放权重 LLM 上仅带来 0.15 个百分点的精度下降。对于降精度激活（MXINT6 / MXINT3 + FP8 标量），我们的结果与量化模型的偏差在 ±0.3% 以内，模拟计算的影响极小。基准测试代码可在 https://github.com/Intelligent-Microsystems-Lab/Microscaled-CNM-MANTIS 获取。

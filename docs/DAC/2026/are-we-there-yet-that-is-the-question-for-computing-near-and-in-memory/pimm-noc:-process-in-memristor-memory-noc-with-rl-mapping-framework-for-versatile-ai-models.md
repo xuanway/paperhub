@@ -1,0 +1,15 @@
+PiMM-NoC: Process-in-Memristor-Memory NoC with RL Mapping Framework for Versatile AI Models
+Authors：
+[Ziang Xie](https://63dac.conference-program.com/?post_type=page&p=15&uid=7653317508530811473)，[Yaoyu Tao](https://63dac.conference-program.com/?post_type=page&p=15&uid=2009983080015340538)，[Zelun Pan](https://63dac.conference-program.com/?post_type=page&p=15&uid=9789599869127909051)，[Haojun Chen](https://63dac.conference-program.com/?post_type=page&p=15&uid=0725728946502539632)，[Zhiyuan Li](https://63dac.conference-program.com/?post_type=page&p=15&uid=62286673311639349731)，[Qinghao Wang](https://63dac.conference-program.com/?post_type=page&p=15&uid=35196717896984762331)，[Zhiming Pan](https://63dac.conference-program.com/?post_type=page&p=15&uid=2984039753678329605)，[Yihang Zhu](https://63dac.conference-program.com/?post_type=page&p=15&uid=57506448899196063871)，[Zixiang Luo](https://63dac.conference-program.com/?post_type=page&p=15&uid=9020976551590455512)，[Yian Yang](https://63dac.conference-program.com/?post_type=page&p=15&uid=13735438616304180631)，[Guang Mo](https://63dac.conference-program.com/?post_type=page&p=15&uid=40019292622272243041)，[Kaiwen Long](https://63dac.conference-program.com/?post_type=page&p=15&uid=0760875354602336644)，[Yaodong Yang](https://63dac.conference-program.com/?post_type=page&p=15&uid=68469610446940213181)，[Yuchao Yang](https://63dac.conference-program.com/?post_type=page&p=15&uid=2470983435883587473)
+
+## 中文标题
+
+PiMM-NoC：面向通用 AI 模型的忆阻器存内处理片上网络及强化学习映射框架
+
+## 英文摘要
+
+Process-in-memristor-memory (PiMM) offers promising in-/near-memory compute capability. However, existing PiMM designs support only a narrow set of model types and depend on coarse static mapping strategies that overlook the vast design space, resulting in limited adaptability, scalability, and overall performance. In this work, we propose a Process-in-Memristor-Memory Network on Chip (PiMM-NoC) architecture combined with a reinforcement learning (RL)-based mapping framework to optimize on-chip latency for versatile AI workloads. PiMM-NoC integrates two types of tiles: PiMM tiles for weight-stationary operations and PU tiles for non-weight-stationary and nonlinear computations. A cycle-accurate architecture simulator is incorporated into an end-to-end hardware–software co-design framework that uses Monte Carlo Tree Search (MCTS) to automatically search efficient mapping strategies. Experiments show that PiMM-NoC with the RL-based mapping framework achieves a speedup of up to 3.45× in DNNs and 3.85× in LLMs over existing mapping strategies, and up to 71.6× higher performance and 6.7× better energy efficiency compared to state-of-the-art AI accelerators.
+
+## 中文摘要
+
+忆阻器存内处理（PiMM）提供了颇具前景的存内/近存计算能力。然而，现有 PiMM 设计仅支持少数模型类型，且依赖忽略庞大设计空间的粗粒度静态映射策略，导致适应性、可扩展性与整体性能受限。在本工作中，我们提出一种忆阻器存内处理片上网络（PiMM-NoC）架构，并结合基于强化学习（RL）的映射框架，针对多样化的 AI 负载优化片上延迟。PiMM-NoC 集成两类瓦片：用于权重驻留运算的 PiMM 瓦片，以及用于非权重驻留与非线性计算的 PU 瓦片。我们将周期精确的架构模拟器纳入端到端软硬件协同设计框架，利用蒙特卡洛树搜索（MCTS）自动搜索高效的映射策略。实验表明，与现有映射策略相比，采用 RL 映射框架的 PiMM-NoC 在 DNN 上最高取得 3.45× 加速、在 LLM 上最高取得 3.85× 加速；与最先进的 AI 加速器相比，性能最高提升 71.6×、能效最高提升 6.7×。
