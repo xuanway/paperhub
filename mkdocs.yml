@@ -2681,6 +2681,194 @@ nav:
         - "Ab-Initio Quantum Transport with the GW Approximation, 42,240 Atoms, and Sustained Exascale Performance": SC/2025/acm_gordon_bell_finalists_presentations/ab_initio_quantum_transport_with_the_gw_approximation_42_240_atoms_and_sustained_exascale_performance.md
         - "ORBIT-2: Scaling Exascale Vision Foundation Models for Weather and Climate Downscaling": SC/2025/acm_gordon_bell_finalists_presentations/orbit_2_scaling_exascale_vision_foundation_models_for_weather_and_climate_downscaling.md
   - ⚙️ EuroSys:
+    - EuroSys 2026 (138):
+      - EuroSys 2026: EuroSys/2026/index.md
+      - "Session 1.1: OS & Virtualization (5)":
+        - "Session 1.1: OS & Virtualization": EuroSys/2026/Session-1.1/index.md
+        - "RaidenSwap: A Multi-Swap Remote System for Multi-core Applications": EuroSys/2026/Session-1.1/raidenswap_a_multi_swap_remote_system_for_multi_core_applications.md
+        - "CofferOS: Hardening OS-level Virtualization with Rust": EuroSys/2026/Session-1.1/cofferos_hardening_os_level_virtualization_with_rust.md
+        - "Proteus: Heterogeneous FPGA Virtualization": EuroSys/2026/Session-1.1/proteus_heterogeneous_fpga_virtualization.md
+        - "TierScape: Harnessing Multiple Compressed Tiers to Tame Server Memory TCO": EuroSys/2026/Session-1.1/tierscape_harnessing_multiple_compressed_tiers_to_tame_server_memory_tco.md
+        - "PaCaR: Improved Buffered I/O Locality on NUMA Systems with Page Cache Replication": EuroSys/2026/Session-1.1/pacar_improved_buffered_i_o_locality_on_numa_systems_with_page_cache_replication.md
+      - "Session 2.1: File Systems & Storage (5)":
+        - "Session 2.1: File Systems & Storage": EuroSys/2026/Session-2.1/index.md
+        - "TCO-driven Storage Provisioning for Exascale Data Centers": EuroSys/2026/Session-2.1/tco_driven_storage_provisioning_for_exascale_data_centers.md
+        - "MesaFS: An I/O-Efficient Metadata Service for Distributed File Systems": EuroSys/2026/Session-2.1/mesafs_an_i_o_efficient_metadata_service_for_distributed_file_systems.md
+        - "A Logically Disaggregated Cache for Replicated Storage Systems": EuroSys/2026/Session-2.1/a_logically_disaggregated_cache_for_replicated_storage_systems.md
+        - "ASIC-based Compression Accelerators for Storage Systems: Design, Placement, and Profiling Insights": EuroSys/2026/Session-2.1/asic_based_compression_accelerators_for_storage_systems_design_placement_and_profiling_insights.md
+        - "SwitchFS: Asynchronous Metadata Updates for Distributed Filesystems with In-Network Coordination": EuroSys/2026/Session-2.1/switchfs_asynchronous_metadata_updates_for_distributed_filesystems_with_in_network_coordination.md
+      - "Session 3.1: LLM Training at Scale (6)":
+        - "Session 3.1: LLM Training at Scale": EuroSys/2026/Session-3.1/index.md
+        - "MegaScale-Data: Scaling DataLoader for Multisource Large Foundation Model Training": EuroSys/2026/Session-3.1/megascale_data_scaling_dataloader_for_multisource_large_foundation_model_training.md
+        - "MegaScale-MoE: Large-Scale Communication-Efficient Training of Mixture-of-Experts Models in Production": EuroSys/2026/Session-3.1/megascale_moe_large_scale_communication_efficient_training_of_mixture_of_experts_models_in_production.md
+        - "MegaScale-Omni: A Hyper-Scale, Workload-Resilient System for MultiModal LLM Training in Production": EuroSys/2026/Session-3.1/megascale_omni_a_hyper_scale_workload_resilient_system_for_multimodal_llm_training_in_production.md
+        - "HetAuto: Cross-Cluster Auto-Parallelism for Heterogeneous Distributed Training": EuroSys/2026/Session-3.1/hetauto_cross_cluster_auto_parallelism_for_heterogeneous_distributed_training.md
+        - "HARP: Orchestrating Automated Parallel Training on Heterogeneous GPU Clusters": EuroSys/2026/Session-3.1/harp_orchestrating_automated_parallel_training_on_heterogeneous_gpu_clusters.md
+        - "Suika: Efficient and High-quality Re-scheduling of 3D-parallelized LLM Training Jobs in Shared Clusters": EuroSys/2026/Session-3.1/suika_efficient_and_high_quality_re_scheduling_of_3d_parallelized_llm_training_jobs_in_shared_clusters.md
+      - "Session 3.2: Datacenter Network Fabrics & RDMA (6)":
+        - "Session 3.2: Datacenter Network Fabrics & RDMA": EuroSys/2026/Session-3.2/index.md
+        - "REPS: Recycled Entropy Packet Spraying for Adaptive Load Balancing and Failure Mitigation": EuroSys/2026/Session-3.2/reps_recycled_entropy_packet_spraying_for_adaptive_load_balancing_and_failure_mitigation.md
+        - "LCMP: Distributed Long-Haul Cost-Aware Multi-Path Routing for Inter-Datacenter RDMA Networks": EuroSys/2026/Session-3.2/lcmp_distributed_long_haul_cost_aware_multi_path_routing_for_inter_datacenter_rdma_networks.md
+        - "SmartNS: Enabling Line-rate and Flexible Network Stack with SmartNIC": EuroSys/2026/Session-3.2/smartns_enabling_line_rate_and_flexible_network_stack_with_smartnic.md
+        - "RoPeerTo: A Datacenter-Scale Architecture for Peer-To-Peer DMA between GPUs and FPGAs": EuroSys/2026/Session-3.2/ropeerto_a_datacenter_scale_architecture_for_peer_to_peer_dma_between_gpus_and_fpgas.md
+        - "Practical and Scalable RDMA Connection Sharing for HPC Workload": EuroSys/2026/Session-3.2/practical_and_scalable_rdma_connection_sharing_for_hpc_workload.md
+        - "Not A DPU in Name Only! Unleashing RDMA-capable DPUs in Multi-Tenant Serverless Clouds with NADINO": EuroSys/2026/Session-3.2/not_a_dpu_in_name_only_unleashing_rdma_capable_dpus_in_multi_tenant_serverless_clouds_with_nadino.md
+      - "Session 3.3: Cloud & Serverless Resource Management (6)":
+        - "Session 3.3: Cloud & Serverless Resource Management": EuroSys/2026/Session-3.3/index.md
+        - "iRoute: Local Routing Table-based Workflow Management in Serverless Computing": EuroSys/2026/Session-3.3/iroute_local_routing_table_based_workflow_management_in_serverless_computing.md
+        - "Efficient Data Passing for Serverless Inference Workflows: A GPU-Centric Approach": EuroSys/2026/Session-3.3/efficient_data_passing_for_serverless_inference_workflows_a_gpu_centric_approach.md
+        - "Serverless Replication of Object Storage across Multi-Vendor Clouds and Regions": EuroSys/2026/Session-3.3/serverless_replication_of_object_storage_across_multi_vendor_clouds_and_regions.md
+        - "MTTM: Dynamic Fast Memory Partitioning with Bandwidth Optimization for Multi-tenant Cloud": EuroSys/2026/Session-3.3/mttm_dynamic_fast_memory_partitioning_with_bandwidth_optimization_for_multi_tenant_cloud.md
+        - "Demystifying Serverless Costs on Public Platforms: Bridging Billing, Architecture, and OS Scheduling": EuroSys/2026/Session-3.3/demystifying_serverless_costs_on_public_platforms_bridging_billing_architecture_and_os_scheduling.md
+        - "In-Production Characterization of an Open Source Serverless Platform and New Scaling Strategies": EuroSys/2026/Session-3.3/in_production_characterization_of_an_open_source_serverless_platform_and_new_scaling_strategies.md
+      - "Session 4.1: On-Device & Federated Learning (6)":
+        - "Session 4.1: On-Device & Federated Learning": EuroSys/2026/Session-4.1/index.md
+        - "Federated Fine-Tuning of Sparsely-Activated Large Language Models on Resource-Constrained Devices": EuroSys/2026/Session-4.1/federated_fine_tuning_of_sparsely_activated_large_language_models_on_resource_constrained_devices.md
+        - "TailorLLM: Collaborative End-Cloud Inference of Large and Small Language Models Based on Low-Rank Adaptation": EuroSys/2026/Session-4.1/tailorllm_collaborative_end_cloud_inference_of_large_and_small_language_models_based_on_low_rank_adaptation.md
+        - "SwiftFL: Enabling Speculative Training for On-Device Federated Deep Learning": EuroSys/2026/Session-4.1/swiftfl_enabling_speculative_training_for_on_device_federated_deep_learning.md
+        - "viNPU: Optimizing Vision Transformer Inference on Mobile NPUs": EuroSys/2026/Session-4.1/vinpu_optimizing_vision_transformer_inference_on_mobile_npus.md
+        - "AIMS: Cost-Efficient LLM-Based Agent Deployment in Hybrid Cloud-Edge Environments": EuroSys/2026/Session-4.1/aims_cost_efficient_llm_based_agent_deployment_in_hybrid_cloud_edge_environments.md
+        - "Scaling LLM Test-Time Compute with Mobile NPU on Smartphones": EuroSys/2026/Session-4.1/scaling_llm_test_time_compute_with_mobile_npu_on_smartphones.md
+      - "Session 4.2: Distributed Consensus, Blockchain & Storage (6)":
+        - "Session 4.2: Distributed Consensus, Blockchain & Storage": EuroSys/2026/Session-4.2/index.md
+        - "Ethane: Debloating State Data using Compact Trie for Account-based Blockchain": EuroSys/2026/Session-4.2/ethane_debloating_state_data_using_compact_trie_for_account_based_blockchain.md
+        - "Scalable RDMA-accelerated Distributed Locks with Shared Stream Abstraction": EuroSys/2026/Session-4.2/scalable_rdma_accelerated_distributed_locks_with_shared_stream_abstraction.md
+        - "OptiLog: Assigning Roles in Byzantine Consensus": EuroSys/2026/Session-4.2/optilog_assigning_roles_in_byzantine_consensus.md
+        - "FicusDB: Scalable Multi-Versioned Authenticated Archival Storage": EuroSys/2026/Session-4.2/ficusdb_scalable_multi_versioned_authenticated_archival_storage.md
+        - "Towards Improving Throughput and Scalability of DAG-based BFT SMR": EuroSys/2026/Session-4.2/towards_improving_throughput_and_scalability_of_dag_based_bft_smr.md
+        - "ECCB: Boosting Block Propagation of Blockchain with Erasure-Coded Compact Block": EuroSys/2026/Session-4.2/eccb_boosting_block_propagation_of_blockchain_with_erasure_coded_compact_block.md
+      - "Session 4.3: Fault Tolerance, Reliability & Debugging (6)":
+        - "Session 4.3: Fault Tolerance, Reliability & Debugging": EuroSys/2026/Session-4.3/index.md
+        - "A Case for Elastic Quantum Error Correction Decoders": EuroSys/2026/Session-4.3/a_case_for_elastic_quantum_error_correction_decoders.md
+        - "Accurate and Ultra-Fast Launch-Time Validation of Idempotency for GPU Kernels": EuroSys/2026/Session-4.3/accurate_and_ultra_fast_launch_time_validation_of_idempotency_for_gpu_kernels.md
+        - "Fast and Parallelized Crash Consistency with Opportunistic Order Elimination": EuroSys/2026/Session-4.3/fast_and_parallelized_crash_consistency_with_opportunistic_order_elimination.md
+        - "Proactive Change Risk Detection in Production Cloud Systems: ByteDance’s Experience": EuroSys/2026/Session-4.3/proactive_change_risk_detection_in_production_cloud_systems_bytedance_s_experience.md
+        - "Rose: Reproducing External-Fault-Induced Failures in Distributed Systems with Lightweight Instrumentation": EuroSys/2026/Session-4.3/rose_reproducing_external_fault_induced_failures_in_distributed_systems_with_lightweight_instrumentation.md
+        - "Garen: Reliable Cluster Management with Atomic State Reconciliation": EuroSys/2026/Session-4.3/garen_reliable_cluster_management_with_atomic_state_reconciliation.md
+      - "Session 5.1: AI (5)":
+        - "Session 5.1: AI": EuroSys/2026/Session-5.1/index.md
+        - "STAlloc: Enhancing Memory Efficiency in Large-Scale Model Training with Spatio-Temporal Planning": EuroSys/2026/Session-5.1/stalloc_enhancing_memory_efficiency_in_large_scale_model_training_with_spatio_temporal_planning.md
+        - "SAS: Sparse Attention Synthesizer for Efficient Language Model Inference": EuroSys/2026/Session-5.1/sas_sparse_attention_synthesizer_for_efficient_language_model_inference.md
+        - "AdaServe: Accelerating Multi-SLO LLM Serving with SLO-Customized Speculative Decoding": EuroSys/2026/Session-5.1/adaserve_accelerating_multi_slo_llm_serving_with_slo_customized_speculative_decoding.md
+        - "TAO: Tolerance-Aware Optimistic Verification for Floating-Point Neural Networks": EuroSys/2026/Session-5.1/tao_tolerance_aware_optimistic_verification_for_floating_point_neural_networks.md
+        - "Arena: Efficiently Training Large Models via Dynamic Scheduling and Adaptive Parallelism Co-Design": EuroSys/2026/Session-5.1/arena_efficiently_training_large_models_via_dynamic_scheduling_and_adaptive_parallelism_co_design.md
+      - "Session 6.1: Security (5)":
+        - "Session 6.1: Security": EuroSys/2026/Session-6.1/index.md
+        - "CSnake: Detecting Self-Sustaining Cascading Failure via Causal Stitching of Fault Propagations": EuroSys/2026/Session-6.1/csnake_detecting_self_sustaining_cascading_failure_via_causal_stitching_of_fault_propagations.md
+        - "Five Minutes of DDoS Brings down Tor: DDoS Attacks on the Tor Directory Protocol and Mitigations": EuroSys/2026/Session-6.1/five_minutes_of_ddos_brings_down_tor_ddos_attacks_on_the_tor_directory_protocol_and_mitigations.md
+        - "Fuzzing Enterprise-Grade Blockchain Systems: Industrial Practice and Solutions": EuroSys/2026/Session-6.1/fuzzing_enterprise_grade_blockchain_systems_industrial_practice_and_solutions.md
+        - "Avicenna: Masking Slowdowns in Replicated State Machines with Counterfactual Evaluation": EuroSys/2026/Session-6.1/avicenna_masking_slowdowns_in_replicated_state_machines_with_counterfactual_evaluation.md
+        - "Concord: Learning Network Configuration Contracts": EuroSys/2026/Session-6.1/concord_learning_network_configuration_contracts.md
+      - "Session 7.1: LLM Inference (6)":
+        - "Session 7.1: LLM Inference": EuroSys/2026/Session-7.1/index.md
+        - "High Throughput and Low Latency LLM Serving via Adaptive KV Caching": EuroSys/2026/Session-7.1/high_throughput_and_low_latency_llm_serving_via_adaptive_kv_caching.md
+        - "FlexPipe: Adapting Dynamic LLM Serving Through Inflight Pipeline Refactoring in Fragmented Serverless Clusters": EuroSys/2026/Session-7.1/flexpipe_adapting_dynamic_llm_serving_through_inflight_pipeline_refactoring_in_fragmented_serverless_clusters.md
+        - "Taming Latency-Memory Trade-Off in MoE-Based LLM Serving via Fine-Grained Expert Offloading": EuroSys/2026/Session-7.1/taming_latency_memory_trade_off_in_moe_based_llm_serving_via_fine_grained_expert_offloading.md
+        - "PARD: Enhancing Goodput for Inference Pipeline via Proactive Request Dropping": EuroSys/2026/Session-7.1/pard_enhancing_goodput_for_inference_pipeline_via_proactive_request_dropping.md
+        - "TokenFlow: Responsive LLM Text Streaming Serving under Request Burst via Preemptive Scheduling": EuroSys/2026/Session-7.1/tokenflow_responsive_llm_text_streaming_serving_under_request_burst_via_preemptive_scheduling.md
+        - "KUNSERVE: Parameter-centric Memory Management for Efficient Memory Overloading Handling in LLM Serving": EuroSys/2026/Session-7.1/kunserve_parameter_centric_memory_management_for_efficient_memory_overloading_handling_in_llm_serving.md
+      - "Session 7.2: Traffic Engineering, CDNs & Congestion Control (6)":
+        - "Session 7.2: Traffic Engineering, CDNs & Congestion Control": EuroSys/2026/Session-7.2/index.md
+        - "Learn-to-Probe: Achieving Signal Distinguishability in Learning-based Congestion Control": EuroSys/2026/Session-7.2/learn_to_probe_achieving_signal_distinguishability_in_learning_based_congestion_control.md
+        - "Mitigating CDN Cache Misses with Scheduling: An Origin Shield for Billion-QPS Social Platforms": EuroSys/2026/Session-7.2/mitigating_cdn_cache_misses_with_scheduling_an_origin_shield_for_billion_qps_social_platforms.md
+        - "EMVOD: Elastic Multi-Path QUIC Scheduling for CDN Video-on-Demand Service": EuroSys/2026/Session-7.2/emvod_elastic_multi_path_quic_scheduling_for_cdn_video_on_demand_service.md
+        - "ECOTE: Priority-Aware Optical Restoration for WAN Traffic Engineering": EuroSys/2026/Session-7.2/ecote_priority_aware_optical_restoration_for_wan_traffic_engineering.md
+        - "RLive: Robust Delivery System for Scaling Live Streaming Services": EuroSys/2026/Session-7.2/rlive_robust_delivery_system_for_scaling_live_streaming_services.md
+        - "Canopy: Property-Driven Learning for Congestion Control": EuroSys/2026/Session-7.2/canopy_property_driven_learning_for_congestion_control.md
+      - "Session 7.3: Storage Systems (6)":
+        - "Session 7.3: Storage Systems": EuroSys/2026/Session-7.3/index.md
+        - "Once Rolling Hashing is Enough: Exploiting Rolling Hash Reuse in Delta Compression": EuroSys/2026/Session-7.3/once_rolling_hashing_is_enough_exploiting_rolling_hash_reuse_in_delta_compression.md
+        - "Scheduling Cloud Block Storage Proactively and Reactively with Omar": EuroSys/2026/Session-7.3/scheduling_cloud_block_storage_proactively_and_reactively_with_omar.md
+        - "PASS: A Power Adaptive Storage Server": EuroSys/2026/Session-7.3/pass_a_power_adaptive_storage_server.md
+        - "Million-Scale Text-to-Video Retrieval with Hyperdimensional Computing": EuroSys/2026/Session-7.3/million_scale_text_to_video_retrieval_with_hyperdimensional_computing.md
+        - "ColdCode: Cold Data Encoding for Enhanced Reliability and Lifetime in 3D NAND Flash": EuroSys/2026/Session-7.3/coldcode_cold_data_encoding_for_enhanced_reliability_and_lifetime_in_3d_nand_flash.md
+        - "2DIO: Configurable and Cache-Accurate Trace Generation for Storage Benchmarking": EuroSys/2026/Session-7.3/2dio_configurable_and_cache_accurate_trace_generation_for_storage_benchmarking.md
+      - "Session 8.1: LLM Serving & Agents (6)":
+        - "Session 8.1: LLM Serving & Agents": EuroSys/2026/Session-8.1/index.md
+        - "From Imperative to Declarative: Towards LLM-friendly OS Interfaces for Boosted Computer-Use Agents": EuroSys/2026/Session-8.1/from_imperative_to_declarative_towards_llm_friendly_os_interfaces_for_boosted_computer_use_agents.md
+        - "AdaGen: Workload-Adaptive Cluster Scheduler for Latency-Optimal LLM Inference Serving": EuroSys/2026/Session-8.1/adagen_workload_adaptive_cluster_scheduler_for_latency_optimal_llm_inference_serving.md
+        - "SkyWalker: A Locality-Aware Cross-Region Load Balancer for LLM Inference": EuroSys/2026/Session-8.1/skywalker_a_locality_aware_cross_region_load_balancer_for_llm_inference.md
+        - "MFS: An Efficient Model Family Serving System for LLMs": EuroSys/2026/Session-8.1/mfs_an_efficient_model_family_serving_system_for_llms.md
+        - "Efficient Multimodal Serving via Module Multiplexing": EuroSys/2026/Session-8.1/efficient_multimodal_serving_via_module_multiplexing.md
+        - "PiLLM: Resource-Efficient LLM Inference Using Workload Prediction": EuroSys/2026/Session-8.1/pillm_resource_efficient_llm_inference_using_workload_prediction.md
+      - "Session 8.2: Security, Privacy & Vulnerabilities (6)":
+        - "Session 8.2: Security, Privacy & Vulnerabilities": EuroSys/2026/Session-8.2/index.md
+        - "Effective On-Hardware Fuzzing of Embedded Operating Systems": EuroSys/2026/Session-8.2/effective_on_hardware_fuzzing_of_embedded_operating_systems.md
+        - "Digital Hole: Bypassing Commercial Audio DRM Solutions with DReaMcatcher": EuroSys/2026/Session-8.2/digital_hole_bypassing_commercial_audio_drm_solutions_with_dreamcatcher.md
+        - "TrustWeave: Integrity Measurement and Attestation For Multi-Cloud LLMs": EuroSys/2026/Session-8.2/trustweave_integrity_measurement_and_attestation_for_multi_cloud_llms.md
+        - "TZ-LLM: Protecting On-Device Large Language Models with Arm TrustZone": EuroSys/2026/Session-8.2/tz_llm_protecting_on_device_large_language_models_with_arm_trustzone.md
+        - "NecoFuzz: Effective Fuzzing of Nested Virtualization via Fuzz-Harness Virtual Machines": EuroSys/2026/Session-8.2/necofuzz_effective_fuzzing_of_nested_virtualization_via_fuzz_harness_virtual_machines.md
+        - "LifeFuzz: Lifecycle-Guided Fuzzing for Windows Driver Cross-Handler Vulnerabilities": EuroSys/2026/Session-8.2/lifefuzz_lifecycle_guided_fuzzing_for_windows_driver_cross_handler_vulnerabilities.md
+      - "Session 8.3: Architecture, Accelerators & Heterogeneous Computing (6)":
+        - "Session 8.3: Architecture, Accelerators & Heterogeneous Computing": EuroSys/2026/Session-8.3/index.md
+        - "Chimera: Transparent and High-Performance ISAX Heterogeneous Computing via Binary Rewriting": EuroSys/2026/Session-8.3/chimera_transparent_and_high_performance_isax_heterogeneous_computing_via_binary_rewriting.md
+        - "Reducing the GPU Memory Bottleneck with Lossless Compression for ML": EuroSys/2026/Session-8.3/reducing_the_gpu_memory_bottleneck_with_lossless_compression_for_ml.md
+        - "swKokkos: An Athread Backend for Enhanced Kokkos with the Sunway Heterogeneous Architecture": EuroSys/2026/Session-8.3/swkokkos_an_athread_backend_for_enhanced_kokkos_with_the_sunway_heterogeneous_architecture.md
+        - "Accelerating Transactional Execution via Processing-In-Memory": EuroSys/2026/Session-8.3/accelerating_transactional_execution_via_processing_in_memory.md
+        - "Matrix‑PIC: Harnessing Matrix Outer-product for High‑Performance Particle‑in‑Cell Simulations": EuroSys/2026/Session-8.3/matrix_pic_harnessing_matrix_outer_product_for_high_performance_particle_in_cell_simulations.md
+        - "CHARM: Chiplet Heterogeneity-Aware Runtime Mapping System": EuroSys/2026/Session-8.3/charm_chiplet_heterogeneity_aware_runtime_mapping_system.md
+      - "Session 9.1: Cloud (5)":
+        - "Session 9.1: Cloud": EuroSys/2026/Session-9.1/index.md
+        - "Prediction-Informed Power Management for General-Purpose Compute Servers": EuroSys/2026/Session-9.1/prediction_informed_power_management_for_general_purpose_compute_servers.md
+        - "Lessons Learned from Incorporating Formal Methods in Huawei Cloud Reliability": EuroSys/2026/Session-9.1/lessons_learned_from_incorporating_formal_methods_in_huawei_cloud_reliability.md
+        - "DROPS: Managing Serverless Resource Pools in Microsoft Azure Functions": EuroSys/2026/Session-9.1/drops_managing_serverless_resource_pools_in_microsoft_azure_functions.md
+        - "SKernel: An Elastic and Efficient Secure Container System at Scale with a Split-Kernel Architecture": EuroSys/2026/Session-9.1/skernel_an_elastic_and_efficient_secure_container_system_at_scale_with_a_split_kernel_architecture.md
+        - "Fix: externalizing network I/O in serverless computing": EuroSys/2026/Session-9.1/fix_externalizing_network_i_o_in_serverless_computing.md
+      - "Session 10.1: Distributed Systems and Multicore (5)":
+        - "Session 10.1: Distributed Systems and Multicore": EuroSys/2026/Session-10.1/index.md
+        - "Yield Not Thy Core": EuroSys/2026/Session-10.1/yield_not_thy_core.md
+        - "AEP: Achieving Hierarchical Fault Tolerance in DSM Through Atomic Execution Protection": EuroSys/2026/Session-10.1/aep_achieving_hierarchical_fault_tolerance_in_dsm_through_atomic_execution_protection.md
+        - "Enabling Packet Spraying over Commodity RNICs with In-Network Support": EuroSys/2026/Session-10.1/enabling_packet_spraying_over_commodity_rnics_with_in_network_support.md
+        - "FUR: Fast and Unlimited Reads on Persistent Memory Transactions": EuroSys/2026/Session-10.1/fur_fast_and_unlimited_reads_on_persistent_memory_transactions.md
+        - "Rearchitecting Programmable Networks For In-Network Computing: From Hardware To Language": EuroSys/2026/Session-10.1/rearchitecting_programmable_networks_for_in_network_computing_from_hardware_to_language.md
+      - "Session 11.1: Distributed Training & Collective Communication (6)":
+        - "Session 11.1: Distributed Training & Collective Communication": EuroSys/2026/Session-11.1/index.md
+        - "MinatoLoader: Accelerating Machine Learning Training Through Efficient Data Preprocessing": EuroSys/2026/Session-11.1/minatoloader_accelerating_machine_learning_training_through_efficient_data_preprocessing.md
+        - "Laminar: A Scalable Asynchronous RL Post-Training Framework": EuroSys/2026/Session-11.1/laminar_a_scalable_asynchronous_rl_post_training_framework.md
+        - "Multipath Collective Communication Beyond Scale-up Networks in GPU Clouds": EuroSys/2026/Session-11.1/multipath_collective_communication_beyond_scale_up_networks_in_gpu_clouds.md
+        - "Crimson: Collaborative Parameter Updates for Efficient Pipeline Training of Large Language Models": EuroSys/2026/Session-11.1/crimson_collaborative_parameter_updates_for_efficient_pipeline_training_of_large_language_models.md
+        - "Zeppelin: Balancing Variable-length Workloads in Data Parallel Large Model Training": EuroSys/2026/Session-11.1/zeppelin_balancing_variable_length_workloads_in_data_parallel_large_model_training.md
+        - "Efficient and Adaptable Overlapping for Computation and Communication via Signaling and Reordering": EuroSys/2026/Session-11.1/efficient_and_adaptable_overlapping_for_computation_and_communication_via_signaling_and_reordering.md
+      - "Session 11.2: Programmable Networks, SmartNICs & Accelerators (6)":
+        - "Session 11.2: Programmable Networks, SmartNICs & Accelerators": EuroSys/2026/Session-11.2/index.md
+        - "Handling Network Faults in Distributed AI Training: Failover is Now an Option": EuroSys/2026/Session-11.2/handling_network_faults_in_distributed_ai_training_failover_is_now_an_option.md
+        - "GeDES: GPU-Driven Discrete Event Network Simulator": EuroSys/2026/Session-11.2/gedes_gpu_driven_discrete_event_network_simulator.md
+        - "PatternSketch: General and Runtime Reconfigurable Time-series Network Traffic Pattern Detection": EuroSys/2026/Session-11.2/patternsketch_general_and_runtime_reconfigurable_time_series_network_traffic_pattern_detection.md
+        - "LightDSA: Enabling Efficient DSA Through Hardware-Aware Transparent Optimization": EuroSys/2026/Session-11.2/lightdsa_enabling_efficient_dsa_through_hardware_aware_transparent_optimization.md
+        - "NutCracker: A Compilation Framework for Hybrid DPU Architectures": EuroSys/2026/Session-11.2/nutcracker_a_compilation_framework_for_hybrid_dpu_architectures.md
+        - "BASK: Batch And SmartNIC-offloaded KSM": EuroSys/2026/Session-11.2/bask_batch_and_smartnic_offloaded_ksm.md
+      - "Session 11.3: Virtualization, Containers & OS Specialization (6)":
+        - "Session 11.3: Virtualization, Containers & OS Specialization": EuroSys/2026/Session-11.3/index.md
+        - "Practical and Efficient x86-64 Emulation on RISC-V": EuroSys/2026/Session-11.3/practical_and_efficient_x86_64_emulation_on_risc_v.md
+        - "Pyramid: A Secure, Resource-Efficient, and Pluggable Kubernetes for Multi-Tenancy": EuroSys/2026/Session-11.3/pyramid_a_secure_resource_efficient_and_pluggable_kubernetes_for_multi_tenancy.md
+        - "Wayfinder: Automated Operating System Specialization": EuroSys/2026/Session-11.3/wayfinder_automated_operating_system_specialization.md
+        - "Low-Compilation-Cost Register Allocation in LLVM-Based Binary Translation": EuroSys/2026/Session-11.3/low_compilation_cost_register_allocation_in_llvm_based_binary_translation.md
+        - "Everything You Need to Know About Virtual Machine Live Migration Between Heterogeneous Processors": EuroSys/2026/Session-11.3/everything_you_need_to_know_about_virtual_machine_live_migration_between_heterogeneous_processors.md
+        - "Squeezy: Rapid VM Memory Reclamation for Serverless Functions": EuroSys/2026/Session-11.3/squeezy_rapid_vm_memory_reclamation_for_serverless_functions.md
+      - "Session 12.1: ML Model Optimization: Compilers, Quantization & Fine-Tuning (6)":
+        - "Session 12.1: ML Model Optimization: Compilers, Quantization & Fine-Tuning": EuroSys/2026/Session-12.1/index.md
+        - "LoRAFusion: Efficient LoRA Fine-Tuning for LLMs": EuroSys/2026/Session-12.1/lorafusion_efficient_lora_fine_tuning_for_llms.md
+        - "LLMFolder: Revisiting Constant Folding in Large Language Models": EuroSys/2026/Session-12.1/llmfolder_revisiting_constant_folding_in_large_language_models.md
+        - "No More Translation at Runtime: LLM-Empowered Static Binary Translation": EuroSys/2026/Session-12.1/no_more_translation_at_runtime_llm_empowered_static_binary_translation.md
+        - "FlexiQ: Adaptive Mixed-Precision Quantization for Latency/Accuracy Trade-Offs in Deep Neural Networks": EuroSys/2026/Session-12.1/flexiq_adaptive_mixed_precision_quantization_for_latency_accuracy_trade_offs_in_deep_neural_networks.md
+        - "FlashPS: Efficient Generative Image Editing with Mask-aware Caching and Scheduling": EuroSys/2026/Session-12.1/flashps_efficient_generative_image_editing_with_mask_aware_caching_and_scheduling.md
+        - "Automated End-to-End Model Serving with Cooperative Compilation and Scheduling": EuroSys/2026/Session-12.1/automated_end_to_end_model_serving_with_cooperative_compilation_and_scheduling.md
+      - "Session 12.2: Edge Computing, IoT & Embedded AI (6)":
+        - "Session 12.2: Edge Computing, IoT & Embedded AI": EuroSys/2026/Session-12.2/index.md
+        - "On-device Semantic Selection Made Low Latency and Memory Efficient with Monolithic Forwarding": EuroSys/2026/Session-12.2/on_device_semantic_selection_made_low_latency_and_memory_efficient_with_monolithic_forwarding.md
+        - "Turnstile: Hybrid Information Flow Control Framework for Managing Privacy in Internet-of-Things Applications": EuroSys/2026/Session-12.2/turnstile_hybrid_information_flow_control_framework_for_managing_privacy_in_internet_of_things_applications.md
+        - "Efficient ML Model Updates for Deeply Embedded Microcontrollers": EuroSys/2026/Session-12.2/efficient_ml_model_updates_for_deeply_embedded_microcontrollers.md
+        - "Carbon-Aware Continuous Learning for Sustainable Real-Time Machine Learning Analytics": EuroSys/2026/Session-12.2/carbon_aware_continuous_learning_for_sustainable_real_time_machine_learning_analytics.md
+        - "E-Cube: Event Enhanced Efficient Video Streaming for Drones": EuroSys/2026/Session-12.2/e_cube_event_enhanced_efficient_video_streaming_for_drones.md
+        - "Neuro-C: Neural Inference Shaped by Hardware Limits": EuroSys/2026/Session-12.2/neuro_c_neural_inference_shaped_by_hardware_limits.md
+      - "Session 12.3: GPU Systems, Graph Computing & Applied ML (6)":
+        - "Session 12.3: GPU Systems, Graph Computing & Applied ML": EuroSys/2026/Session-12.3/index.md
+        - "Bridging the GPU Utilization Gap: Predictive Multi-Dimensional Resource Scheduling for AI Workloads": EuroSys/2026/Session-12.3/bridging_the_gpu_utilization_gap_predictive_multi_dimensional_resource_scheduling_for_ai_workloads.md
+        - "Untangling GPU Power Consumption: Job-Level Inference in Cloud Shared Settings": EuroSys/2026/Session-12.3/untangling_gpu_power_consumption_job_level_inference_in_cloud_shared_settings.md
+        - "PointShuffler: Accelerating Point Cloud Neural Networks on General-Purpose GPUs": EuroSys/2026/Session-12.3/pointshuffler_accelerating_point_cloud_neural_networks_on_general_purpose_gpus.md
+        - "FlexiWalker: Extensible GPU Framework for Efficient Dynamic Random Walks with Runtime Adaptation": EuroSys/2026/Session-12.3/flexiwalker_extensible_gpu_framework_for_efficient_dynamic_random_walks_with_runtime_adaptation.md
+        - "Gopher: Efficient Dynamic Graph Pattern Mining via DAG-Driven Execution": EuroSys/2026/Session-12.3/gopher_efficient_dynamic_graph_pattern_mining_via_dag_driven_execution.md
+        - "Maya: Optimizing Deep Learning Training Workloads using GPU Runtime Emulation": EuroSys/2026/Session-12.3/maya_optimizing_deep_learning_training_workloads_using_gpu_runtime_emulation.md
     - EuroSys 2025 (85):
       - EuroSys 2025: EuroSys/2025/index.md
       - "Session 1.1: Operating Systems (5)":
@@ -2809,68 +2997,201 @@ nav:
         - "Eva: Cost-Efficient Cloud-Based Cluster Scheduling": EuroSys/2025/Session-10.2/eva_cost_efficient_cloud_based_cluster_scheduling.md
         - "Byte vSwitch: A High-Performance Virtual Switch for Cloud Networking": EuroSys/2025/Session-10.2/byte_vswitch_a_high_performance_virtual_switch_for_cloud_networking.md
   - ⚡ PPoPP:
+    - PPoPP 2026 (51):
+      - PPoPP 2026: PPoPP/2026/index.md
+      - "Session 1 — Concurrency Control (4)":
+        - "Session 1 — Concurrency Control": PPoPP/2026/Session-1/index.md
+        - "Binary Compatible Critical Section Delegation": PPoPP/2026/Session-1/binary_compatible_critical_section_delegation.md
+        - "Hapax Locks: Scalable Value-Based Mutual Exclusion": PPoPP/2026/Session-1/hapax_locks_scalable_value_based_mutual_exclusion.md
+        - "Fixing Non-blocking Data Structures for Better Compatibility with Memory Reclamation Schemes": PPoPP/2026/Session-1/fixing_non_blocking_data_structures_for_better_compatibility_with_memory_reclamation_schemes.md
+        - "Multiverse: Transactional Memory with Dynamic Multiversioning": PPoPP/2026/Session-1/multiverse_transactional_memory_with_dynamic_multiversioning.md
+      - "Session 2 — Scheduling and Load Balancing (4)":
+        - "Session 2 — Scheduling and Load Balancing": PPoPP/2026/Session-2/index.md
+        - "Rethinking Thread Scheduling under Oversubscription: A User-Space Framework for Coordinating Multi-runtime and Multi-process Workloads": PPoPP/2026/Session-2/rethinking_thread_scheduling_under_oversubscription_a_user_space_framework_for_coordinating_multi_runtime_and_multi_process_workloads.md
+        - "Waste-Efficient Work Stealing": PPoPP/2026/Session-2/waste_efficient_work_stealing.md
+        - "DiggerBees: Depth First Search Leveraging Hierarchical Block-Level Stealing on GPUs": PPoPP/2026/Session-2/diggerbees_depth_first_search_leveraging_hierarchical_block_level_stealing_on_gpus.md
+        - "PANA: A Fine-Grained Runtime-Adaptive Load Balancing for Parallel SpMV on Multicore CPUs": PPoPP/2026/Session-2/pana_a_fine_grained_runtime_adaptive_load_balancing_for_parallel_spmv_on_multicore_cpus.md
+      - "Session 3 — Concurrent Data Structures (4)":
+        - "Session 3 — Concurrent Data Structures": PPoPP/2026/Session-3/index.md
+        - "UFO Trees: Practical and Provably-Efficient Parallel Batch-Dynamic Trees": PPoPP/2026/Session-3/ufo_trees_practical_and_provably_efficient_parallel_batch_dynamic_trees.md
+        - "Sharded Elimination and Combining for Highly-Efficient Concurrent Stacks": PPoPP/2026/Session-3/sharded_elimination_and_combining_for_highly_efficient_concurrent_stacks.md
+        - "Concurrent Balanced Augmented Trees": PPoPP/2026/Session-3/concurrent_balanced_augmented_trees.md
+        - "Parallel Dynamic Spatial Indexes": PPoPP/2026/Session-3/parallel_dynamic_spatial_indexes.md
+      - "Session 4 — GPU and Heterogeneous Computing (4)":
+        - "Session 4 — GPU and Heterogeneous Computing": PPoPP/2026/Session-4/index.md
+        - "PRISM: An Efficient GPU-Based Lossy Compression Framework for Progressive Data Retrieval with Multi-Level Interpolation": PPoPP/2026/Session-4/prism_an_efficient_gpu_based_lossy_compression_framework_for_progressive_data_retrieval_with_multi_level_interpolation.md
+        - "Dynamic Detection of Inefficient Data Mapping Patterns in Heterogeneous OpenMP Applications": PPoPP/2026/Session-4/dynamic_detection_of_inefficient_data_mapping_patterns_in_heterogeneous_openmp_applications.md
+        - "Root-Down Exposure for Maximal Clique Enumeration on GPUs": PPoPP/2026/Session-4/root_down_exposure_for_maximal_clique_enumeration_on_gpus.md
+        - "ROME: Maximizing GPU Efficiency for All-Pairs Shortest Path via Taming Fine-Grained Irregularities": PPoPP/2026/Session-4/rome_maximizing_gpu_efficiency_for_all_pairs_shortest_path_via_taming_fine_grained_irregularities.md
+      - "Session 5 — Stencil and Sparse Matrix Computation (4)":
+        - "Session 5 — Stencil and Sparse Matrix Computation": PPoPP/2026/Session-5/index.md
+        - "SPIDER: Unleashing Sparse Tensor Cores for Stencil Computation via Strided Swapping": PPoPP/2026/Session-5/spider_unleashing_sparse_tensor_cores_for_stencil_computation_via_strided_swapping.md
+        - "ASM-SpMM: Unleashing the Potential of Arm SME for Sparse Matrix Multiplication Acceleration": PPoPP/2026/Session-5/asm_spmm_unleashing_the_potential_of_arm_sme_for_sparse_matrix_multiplication_acceleration.md
+        - "Exploiting Efficient Mapping and Pipelined Execution for Accelerating SpMV on Tensor Cores": PPoPP/2026/Session-5/exploiting_efficient_mapping_and_pipelined_execution_for_accelerating_spmv_on_tensor_cores.md
+        - "VDHA: Vector-Driven Hash Aggregation for Sparse Matrix-Sparse Vector Multiplication on GPUs": PPoPP/2026/Session-5/vdha_vector_driven_hash_aggregation_for_sparse_matrix_sparse_vector_multiplication_on_gpus.md
+      - "Session 6 — Mixed Precision and Quantization (4)":
+        - "Session 6 — Mixed Precision and Quantization": PPoPP/2026/Session-6/index.md
+        - "RoMeo: Mitigating Dual-dimensional Outliers with Rotated Mixed Precision Quantization": PPoPP/2026/Session-6/romeo_mitigating_dual_dimensional_outliers_with_rotated_mixed_precision_quantization.md
+        - "High-Throughput Non-uniformly Quantized 3-bit LLM Inference": PPoPP/2026/Session-6/high_throughput_non_uniformly_quantized_3_bit_llm_inference.md
+        - "JanusQuant: Accurate and Efficient 2-bit KV Cache Quantization for Long-Context Inference": PPoPP/2026/Session-6/janusquant_accurate_and_efficient_2_bit_kv_cache_quantization_for_long_context_inference.md
+        - "HierCut: Enabling 16-bit Format Mixed Precision for Molecular Dynamics through Hierarchical Cutoff": PPoPP/2026/Session-6/hiercut_enabling_16_bit_format_mixed_precision_for_molecular_dynamics_through_hierarchical_cutoff.md
+      - "Session 7 — Cluster and Cloud Computing (4)":
+        - "Session 7 — Cluster and Cloud Computing": PPoPP/2026/Session-7/index.md
+        - "Cacheman: A Comprehensive Last-Level Cache Management System for Multi-tenant Clouds": PPoPP/2026/Session-7/cacheman_a_comprehensive_last_level_cache_management_system_for_multi_tenant_clouds.md
+        - "zBuffer: Zero-Copy and Metadata-Free Serialization for Fast RPC with Scatter-Gather Reflection": PPoPP/2026/Session-7/zbuffer_zero_copy_and_metadata_free_serialization_for_fast_rpc_with_scatter_gather_reflection.md
+        - "Scaling GPU-to-CPU Migration for Efficient Distributed Execution on CPU Clusters": PPoPP/2026/Session-7/scaling_gpu_to_cpu_migration_for_efficient_distributed_execution_on_cpu_clusters.md
+        - "Trojan Horse: Aggregate-and-Batch for Scaling Up Sparse Direct Solvers on GPU Clusters": PPoPP/2026/Session-7/trojan_horse_aggregate_and_batch_for_scaling_up_sparse_direct_solvers_on_gpu_clusters.md
+      - "Session 8 — Distributed Training (4)":
+        - "Session 8 — Distributed Training": PPoPP/2026/Session-8/index.md
+        - "COCCL: A Collective Communication Library Supporting Easy Integration and Configuration of Customized Compression for Scalable LLM Training": PPoPP/2026/Session-8/coccl_a_collective_communication_library_supporting_easy_integration_and_configuration_of_customized_compression_for_scalable_llm_training.md
+        - "Elastor: Elastic and Efficient Model Partitioning and Checkpointing for Fault-Tolerant Distributed Training": PPoPP/2026/Session-8/elastor_elastic_and_efficient_model_partitioning_and_checkpointing_for_fault_tolerant_distributed_training.md
+        - "HelixPipe: Efficient Distributed Training of Long Sequence Transformers with Attention Parallel Pipeline Parallelism": PPoPP/2026/Session-8/helixpipe_efficient_distributed_training_of_long_sequence_transformers_with_attention_parallel_pipeline_parallelism.md
+        - "CCL-D: A High-Precision Diagnostic System for Slow and Hang Anomalies in Large-Scale Model Training": PPoPP/2026/Session-8/ccl_d_a_high_precision_diagnostic_system_for_slow_and_hang_anomalies_in_large_scale_model_training.md
+      - "Session 9 — Parallel Algorithms (4)":
+        - "Session 9 — Parallel Algorithms": PPoPP/2026/Session-9/index.md
+        - "Pipelonk: Accelerating End-to-End Zero-Knowledge Proof Generation on GPUs for PLONK-Based Protocols": PPoPP/2026/Session-9/pipelonk_accelerating_end_to_end_zero_knowledge_proof_generation_on_gpus_for_plonk_based_protocols.md
+        - "ParDiff: Efficiently Parallelizing Reverse-Mode Automatic Differentiation with Direct Indexing": PPoPP/2026/Session-9/pardiff_efficiently_parallelizing_reverse_mode_automatic_differentiation_with_direct_indexing.md
+        - "Faster and Cheaper: Pushing the Sequence Alignment Throughput with Commercial CPUs": PPoPP/2026/Session-9/faster_and_cheaper_pushing_the_sequence_alignment_throughput_with_commercial_cpus.md
+        - "PIM-zd-tree: A Fast Space-Partitioning Index Leveraging Processing-in-Memory": PPoPP/2026/Session-9/pim_zd_tree_a_fast_space_partitioning_index_leveraging_processing_in_memory.md
+      - "Session 10 — ML Inference (4)":
+        - "Session 10 — ML Inference": PPoPP/2026/Session-10/index.md
+        - "BEEMS: Boosting Machine Vision Efficiency via Computation Graph-Based Memory Smoothing": PPoPP/2026/Session-10/beems_boosting_machine_vision_efficiency_via_computation_graph_based_memory_smoothing.md
+        - "Laser: Unlocking Layer-Level Scheduling for Efficient Multi-SLO LLM Serving": PPoPP/2026/Session-10/laser_unlocking_layer_level_scheduling_for_efficient_multi_slo_llm_serving.md
+        - "MixFusion: A Patch-Level Parallel Serving System for Mixed-Resolution Diffusion Models": PPoPP/2026/Session-10/mixfusion_a_patch_level_parallel_serving_system_for_mixed_resolution_diffusion_models.md
+        - "ChituDiffusion: A Data-Characteristic-Aware Serving System for Diffusion Models": PPoPP/2026/Session-10/chitudiffusion_a_data_characteristic_aware_serving_system_for_diffusion_models.md
+      - "Session 11 — Graphs and Graph Neural Networks (4)":
+        - "Session 11 — Graphs and Graph Neural Networks": PPoPP/2026/Session-11/index.md
+        - "ElasGNN: An Elastic Training Framework for Distributed GNN Training": PPoPP/2026/Session-11/elasgnn_an_elastic_training_framework_for_distributed_gnn_training.md
+        - "APERTURE: Algorithm-System Co-optimization for Temporal Graph Network Inference": PPoPP/2026/Session-11/aperture_algorithm_system_co_optimization_for_temporal_graph_network_inference.md
+        - "TAC: Cache-Based System for Accelerating Billion-Scale GNN Training on Multi-GPU Platform": PPoPP/2026/Session-11/tac_cache_based_system_for_accelerating_billion_scale_gnn_training_on_multi_gpu_platform.md
+        - "DTMiner: A Data-Centric System for Efficient Temporal Motif Mining": PPoPP/2026/Session-11/dtminer_a_data_centric_system_for_efficient_temporal_motif_mining.md
+      - "Session 12 — Optimizing Transformers (3)":
+        - "Session 12 — Optimizing Transformers": PPoPP/2026/Session-12/index.md
+        - "FlashAttention-T: Towards Fully Tensorized Attention by Exploiting Tensor-Vector Parallelism": PPoPP/2026/Session-12/flashattention_t_towards_fully_tensorized_attention_by_exploiting_tensor_vector_parallelism.md
+        - "Accelerating Sparse Transformer Inference on GPU": PPoPP/2026/Session-12/accelerating_sparse_transformer_inference_on_gpu.md
+        - "MetaAttention: A Unified and Performant Attention Framework across Hardware Backends": PPoPP/2026/Session-12/metaattention_a_unified_and_performant_attention_framework_across_hardware_backends.md
+      - "Session 13 — Matrix and Linear Algebra Algorithms (4)":
+        - "Session 13 — Matrix and Linear Algebra Algorithms": PPoPP/2026/Session-13/index.md
+        - "Towards Singular Value Decomposition for Rank-Deficient Matrices: An Efficient and Accurate Algorithm on GPU Architectures": PPoPP/2026/Session-13/towards_singular_value_decomposition_for_rank_deficient_matrices_an_efficient_and_accurate_algorithm_on_gpu_architectures.md
+        - "A Diagonal Block Memory-Aware Polynomial Preconditioner for Linear and Eigenvalue Solvers": PPoPP/2026/Session-13/a_diagonal_block_memory_aware_polynomial_preconditioner_for_linear_and_eigenvalue_solvers.md
+        - "A Distributed Matrix-Block-Vector Multiplication in Presence of System Performance Variability": PPoPP/2026/Session-13/a_distributed_matrix_block_vector_multiplication_in_presence_of_system_performance_variability.md
+        - "Characterizing Matrix Multiplication Units across General Parallel Patterns in Scientific Computing": PPoPP/2026/Session-13/characterizing_matrix_multiplication_units_across_general_parallel_patterns_in_scientific_computing.md
     - PPoPP 2025 (38):
       - PPoPP 2025: PPoPP/2025/index.md
-      - "Concurrent Data Structures and Synchronization I (4)":
-        - "Concurrent Data Structures and Synchronization I": PPoPP/2025/concurrent_data_structures_and_synchronization_i/index.md
-        - "Reciprocating Locks": PPoPP/2025/concurrent_data_structures_and_synchronization_i/reciprocating_locks.md
-        - "Aggregating Funnels for Faster Fetch&Add and Queues": PPoPP/2025/concurrent_data_structures_and_synchronization_i/aggregating_funnels_for_faster_fetch_and_add_and_queues.md
-        - "Fairer and More Scalable Reader-Writer Locks by Optimizing Queue Management": PPoPP/2025/concurrent_data_structures_and_synchronization_i/fairer_and_more_scalable_reader_writer_locks_by_optimizing_queue_management.md
-        - "Publish on Ping: A Better Way to Publish Reservations in Memory Reclamation for Concurrent Data Structures Distinguished Paper Award": PPoPP/2025/concurrent_data_structures_and_synchronization_i/publish_on_ping_a_better_way_to_publish_reservations_in_memory_reclamation_for_concurrent_data_structures_distinguished_paper_award.md
-      - "Concurrent Data Structures and Synchronization II (4)":
-        - "Concurrent Data Structures and Synchronization II": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/index.md
-        - "PANNS: Enhancing Graph-based Approximate Nearest Neighbor Search through Recency-aware Construction and Parameterized Search": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/panns_enhancing_graph_based_approximate_nearest_neighbor_search_through_recency_aware_construction_and_parameterized_search.md
-        - "Balanced Allocations over Efficient Queues: A Fast Relaxed FIFO Queue": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/balanced_allocations_over_efficient_queues_a_fast_relaxed_fifo_queue.md
-        - "LibRTS: A Spatial Indexing Library by Ray Tracing": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/librts_a_spatial_indexing_library_by_ray_tracing.md
-        - "Crystality: A Programming Model for Smart Contracts on Parallel EVMs": PPoPP/2025/concurrent_data_structures_and_synchronization_ii/crystality_a_programming_model_for_smart_contracts_on_parallel_evms.md
-      - "GPU II (4)":
-        - "GPU II": PPoPP/2025/gpu_ii/index.md
-        - "Popcorn: Accelerating Kernel K-means on GPUs through Sparse Linear Algebra": PPoPP/2025/gpu_ii/popcorn_accelerating_kernel_k_means_on_gpus_through_sparse_linear_algebra.md
-        - "Swift Unfolding of Communities: GPU-Accelerated Louvain Algorithm": PPoPP/2025/gpu_ii/swift_unfolding_of_communities_gpu_accelerated_louvain_algorithm.md
-        - "GLUMIN: Fast Connectivity Check Based on LUTs For Efficient Graph Pattern Mining": PPoPP/2025/gpu_ii/glumin_fast_connectivity_check_based_on_luts_for_efficient_graph_pattern_mining.md
-        - "Improving Tridiagonalization Performance on GPU Architectures": PPoPP/2025/gpu_ii/improving_tridiagonalization_performance_on_gpu_architectures.md
-      - "Parallel Algorithms and Applications (4)":
-        - "Parallel Algorithms and Applications": PPoPP/2025/parallel_algorithms_and_applications/index.md
-        - "Jigsaw: Toward Conflict-free Vectorized Stencil Computation by Tessellating Swizzled Registers": PPoPP/2025/parallel_algorithms_and_applications/jigsaw_toward_conflict_free_vectorized_stencil_computation_by_tessellating_swizzled_registers.md
-        - "Semi-StructMG: A Fast and Scalable Semi-Structured Algebraic Multigrid": PPoPP/2025/parallel_algorithms_and_applications/semi_structmg_a_fast_and_scalable_semi_structured_algebraic_multigrid.md
-        - "SBMGT: Scaling Bayesian Multinomial Group Testing": PPoPP/2025/parallel_algorithms_and_applications/sbmgt_scaling_bayesian_multinomial_group_testing.md
-        - "An AI-Enhanced 1km-Resolution Seamless Global Weather and Climate Model to Achieve Year-Scale Simulation Speed using 34 Million Cores": PPoPP/2025/parallel_algorithms_and_applications/an_ai_enhanced_1km_resolution_seamless_global_weather_and_climate_model_to_achieve_year_scale_simulation_speed_using_34_million_cores.md
-      - "Tensor Cores (4)":
-        - "Tensor Cores": PPoPP/2025/tensor_cores/index.md
-        - "FlashSparse: Minimizing Computation Redundancy for Fast Sparse Matrix Multiplications on Tensor Cores": PPoPP/2025/tensor_cores/flashsparse_minimizing_computation_redundancy_for_fast_sparse_matrix_multiplications_on_tensor_cores.md
-        - "Acc-SpMM: Accelerating General-purpose Sparse Matrix-Matrix Multiplication with GPU Tensor Cores": PPoPP/2025/tensor_cores/acc_spmm_accelerating_general_purpose_sparse_matrix_matrix_multiplication_with_gpu_tensor_cores.md
-        - "BerryBees: Breadth First Search by Bit-Tensor-Cores Distinguished Paper Award Best Artifact Award": PPoPP/2025/tensor_cores/berrybees_breadth_first_search_by_bit_tensor_cores_distinguished_paper_award_best_artifact_award.md
-        - "FlashFFTStencil: Bridging Fast Fourier Transforms to Memory-Efficient Stencil Computations on Tensor Core Units": PPoPP/2025/tensor_cores/flashfftstencil_bridging_fast_fourier_transforms_to_memory_efficient_stencil_computations_on_tensor_core_units.md
-      - "Deep Neural Network​s (3)":
-        - "Deep Neural Network​s": PPoPP/2025/deep_neural_network_s/index.md
-        - "FlashTensor: Optimizing Tensor Programs by Leveraging Fine-grained Tensor Property": PPoPP/2025/deep_neural_network_s/flashtensor_optimizing_tensor_programs_by_leveraging_fine_grained_tensor_property.md
-        - "Mario: Near Zero-cost Activation Checkpointing in Pipeline Parallelism": PPoPP/2025/deep_neural_network_s/mario_near_zero_cost_activation_checkpointing_in_pipeline_parallelism.md
-        - "COMPSO: Optimizing Gradient Compression for Distributed Training with Second-Order Optimizers": PPoPP/2025/deep_neural_network_s/compso_optimizing_gradient_compression_for_distributed_training_with_second_order_optimizers.md
-      - "GPU I ​ (3)":
-        - "GPU I ​": PPoPP/2025/gpu_i/index.md
-        - "RT–BarnesHut: Accelerating Barnes–Hut Using Ray-Tracing Hardware": PPoPP/2025/gpu_i/rt_barneshut_accelerating_barnes_hut_using_ray_tracing_hardware.md
-        - "EVeREST: An Effective and Versatile Runtime Energy Saving Tool for GPUs Distinguished Paper Award": PPoPP/2025/gpu_i/everest_an_effective_and_versatile_runtime_energy_saving_tool_for_gpus_distinguished_paper_award.md
-        - "TurboFFT: Co-Designed High-Performance and Fault-Tolerant Fast Fourier Transform on GPUs": PPoPP/2025/gpu_i/turbofft_co_designed_high_performance_and_fault_tolerant_fast_fourier_transform_on_gpus.md
-      - "Graph Neural Networks (3)":
-        - "Graph Neural Networks": PPoPP/2025/graph_neural_networks/index.md
-        - "Helios: Efficient Distributed Dynamic Graph Sampling for Online GNN Inference": PPoPP/2025/graph_neural_networks/helios_efficient_distributed_dynamic_graph_sampling_for_online_gnn_inference.md
-        - "Accelerating GNNs on GPU Sparse Tensor Cores through N:M Sparsity-Oriented Graph Reordering": PPoPP/2025/graph_neural_networks/accelerating_gnns_on_gpu_sparse_tensor_cores_through_n_m_sparsity_oriented_graph_reordering.md
-        - "Adaptive Parallel Training for Graph Neural Networks": PPoPP/2025/graph_neural_networks/adaptive_parallel_training_for_graph_neural_networks.md
-      - "Large Language Models (3)":
-        - "Large Language Models": PPoPP/2025/large_language_models/index.md
-        - "MARLIN: Mixed-Precision Auto-Regressive Parallel Inference on Large Language Models": PPoPP/2025/large_language_models/marlin_mixed_precision_auto_regressive_parallel_inference_on_large_language_models.md
-        - "WeiPipe: Weight Pipeline Parallelism for Communication-Effective Long-Context Large Model Training": PPoPP/2025/large_language_models/weipipe_weight_pipeline_parallelism_for_communication_effective_long_context_large_model_training.md
-        - "ATTNChecker: Highly-Optimized Fault Tolerant Attention for Large Language Model Training": PPoPP/2025/large_language_models/attnchecker_highly_optimized_fault_tolerant_attention_for_large_language_model_training.md
-      - "Memory (3)":
-        - "Memory": PPoPP/2025/memory/index.md
-        - "AC-Cache: A Memory-Efficient Caching System for Small Objects via Exploiting Access Correlations": PPoPP/2025/memory/ac_cache_a_memory_efficient_caching_system_for_small_objects_via_exploiting_access_correlations.md
-        - "Effectively Virtual Page Prefetching via Spatial-Temporal Patterns for Memory-intensive Cloud Applications": PPoPP/2025/memory/effectively_virtual_page_prefetching_via_spatial_temporal_patterns_for_memory_intensive_cloud_applications.md
-        - "Harnessing Inter-GPU Shared Memory for Seamless MoE Communication-Computation Fusion": PPoPP/2025/memory/harnessing_inter_gpu_shared_memory_for_seamless_moe_communication_computation_fusion.md
-      - "Scheduling and Resource Management (3)":
-        - "Scheduling and Resource Management": PPoPP/2025/scheduling_and_resource_management/index.md
-        - "SGDRC: Software-Defined Dynamic Resource Control for Concurrent DNN Inference on NVIDIA GPUs": PPoPP/2025/scheduling_and_resource_management/sgdrc_software_defined_dynamic_resource_control_for_concurrent_dnn_inference_on_nvidia_gpus.md
-        - "DORADD: Deterministic Parallel Execution in the Era of Microsecond-Scale Computing": PPoPP/2025/scheduling_and_resource_management/doradd_deterministic_parallel_execution_in_the_era_of_microsecond_scale_computing.md
-        - "WaterWise: Co-optimizing Carbon- and Water-Footprint Toward Environmentally Sustainable Cloud Computing": PPoPP/2025/scheduling_and_resource_management/waterwise_co_optimizing_carbon_and_water_footprint_toward_environmentally_sustainable_cloud_computing.md
+      - "Session 1 — Graph Neural Networks (3)":
+        - "Session 1 — Graph Neural Networks": PPoPP/2025/Session-1/index.md
+        - "Helios: Efficient Distributed Dynamic Graph Sampling for Online GNN Inference": PPoPP/2025/Session-1/helios_efficient_distributed_dynamic_graph_sampling_for_online_gnn_inference.md
+        - "Accelerating GNNs on GPU Sparse Tensor Cores through N:M Sparsity-Oriented Graph Reordering": PPoPP/2025/Session-1/accelerating_gnns_on_gpu_sparse_tensor_cores_through_n_m_sparsity_oriented_graph_reordering.md
+        - "Adaptive Parallel Training for Graph Neural Networks": PPoPP/2025/Session-1/adaptive_parallel_training_for_graph_neural_networks.md
+      - "Session 2 — GPU I (3)":
+        - "Session 2 — GPU I": PPoPP/2025/Session-2/index.md
+        - "RT–BarnesHut: Accelerating Barnes–Hut Using Ray-Tracing Hardware": PPoPP/2025/Session-2/rt_barneshut_accelerating_barnes_hut_using_ray_tracing_hardware.md
+        - "EVeREST: An Effective and Versatile Runtime Energy Saving Tool for GPUs": PPoPP/2025/Session-2/everest_an_effective_and_versatile_runtime_energy_saving_tool_for_gpus.md
+        - "TurboFFT: Co-Designed High-Performance and Fault-Tolerant Fast Fourier Transform on GPUs": PPoPP/2025/Session-2/turbofft_co_designed_high_performance_and_fault_tolerant_fast_fourier_transform_on_gpus.md
+      - "Session 3 — Concurrent Data Structures and Synchronization I (4)":
+        - "Session 3 — Concurrent Data Structures and Synchronization I": PPoPP/2025/Session-3/index.md
+        - "Reciprocating Locks": PPoPP/2025/Session-3/reciprocating_locks.md
+        - "Aggregating Funnels for Faster Fetch&Add and Queues": PPoPP/2025/Session-3/aggregating_funnels_for_faster_fetch_and_add_and_queues.md
+        - "Fairer and More Scalable Reader-Writer Locks by Optimizing Queue Management": PPoPP/2025/Session-3/fairer_and_more_scalable_reader_writer_locks_by_optimizing_queue_management.md
+        - "Publish on Ping: A Better Way to Publish Reservations in Memory Reclamation for Concurrent Data Structures": PPoPP/2025/Session-3/publish_on_ping_a_better_way_to_publish_reservations_in_memory_reclamation_for_concurrent_data_structures.md
+      - "Session 4 — Memory (3)":
+        - "Session 4 — Memory": PPoPP/2025/Session-4/index.md
+        - "AC-Cache: A Memory-Efficient Caching System for Small Objects via Exploiting Access Correlations": PPoPP/2025/Session-4/ac_cache_a_memory_efficient_caching_system_for_small_objects_via_exploiting_access_correlations.md
+        - "Effectively Virtual Page Prefetching via Spatial-Temporal Patterns for Memory-intensive Cloud Applications": PPoPP/2025/Session-4/effectively_virtual_page_prefetching_via_spatial_temporal_patterns_for_memory_intensive_cloud_applications.md
+        - "Harnessing Inter-GPU Shared Memory for Seamless MoE Communication-Computation Fusion": PPoPP/2025/Session-4/harnessing_inter_gpu_shared_memory_for_seamless_moe_communication_computation_fusion.md
+      - "Session 5 — Deep Neural Networks (3)":
+        - "Session 5 — Deep Neural Networks": PPoPP/2025/Session-5/index.md
+        - "FlashTensor: Optimizing Tensor Programs by Leveraging Fine-grained Tensor Property": PPoPP/2025/Session-5/flashtensor_optimizing_tensor_programs_by_leveraging_fine_grained_tensor_property.md
+        - "Mario: Near Zero-cost Activation Checkpointing in Pipeline Parallelism": PPoPP/2025/Session-5/mario_near_zero_cost_activation_checkpointing_in_pipeline_parallelism.md
+        - "COMPSO: Optimizing Gradient Compression for Distributed Training with Second-Order Optimizers": PPoPP/2025/Session-5/compso_optimizing_gradient_compression_for_distributed_training_with_second_order_optimizers.md
+      - "Session 6 — Large Language Models (3)":
+        - "Session 6 — Large Language Models": PPoPP/2025/Session-6/index.md
+        - "MARLIN: Mixed-Precision Auto-Regressive Parallel Inference on Large Language Models": PPoPP/2025/Session-6/marlin_mixed_precision_auto_regressive_parallel_inference_on_large_language_models.md
+        - "WeiPipe: Weight Pipeline Parallelism for Communication-Effective Long-Context Large Model Training": PPoPP/2025/Session-6/weipipe_weight_pipeline_parallelism_for_communication_effective_long_context_large_model_training.md
+        - "ATTNChecker: Highly-Optimized Fault Tolerant Attention for Large Language Model Training": PPoPP/2025/Session-6/attnchecker_highly_optimized_fault_tolerant_attention_for_large_language_model_training.md
+      - "Session 7 — Scheduling and Resource Management (3)":
+        - "Session 7 — Scheduling and Resource Management": PPoPP/2025/Session-7/index.md
+        - "SGDRC: Software-Defined Dynamic Resource Control for Concurrent DNN Inference on NVIDIA GPUs": PPoPP/2025/Session-7/sgdrc_software_defined_dynamic_resource_control_for_concurrent_dnn_inference_on_nvidia_gpus.md
+        - "DORADD: Deterministic Parallel Execution in the Era of Microsecond-Scale Computing": PPoPP/2025/Session-7/doradd_deterministic_parallel_execution_in_the_era_of_microsecond_scale_computing.md
+        - "WaterWise: Co-optimizing Carbon- and Water-Footprint Toward Environmentally Sustainable Cloud Computing": PPoPP/2025/Session-7/waterwise_co_optimizing_carbon_and_water_footprint_toward_environmentally_sustainable_cloud_computing.md
+      - "Session 8 — Tensor Cores (4)":
+        - "Session 8 — Tensor Cores": PPoPP/2025/Session-8/index.md
+        - "FlashSparse: Minimizing Computation Redundancy for Fast Sparse Matrix Multiplications on Tensor Cores": PPoPP/2025/Session-8/flashsparse_minimizing_computation_redundancy_for_fast_sparse_matrix_multiplications_on_tensor_cores.md
+        - "Acc-SpMM: Accelerating General-purpose Sparse Matrix-Matrix Multiplication with GPU Tensor Cores": PPoPP/2025/Session-8/acc_spmm_accelerating_general_purpose_sparse_matrix_matrix_multiplication_with_gpu_tensor_cores.md
+        - "BerryBees: Breadth First Search by Bit-Tensor-Cores": PPoPP/2025/Session-8/berrybees_breadth_first_search_by_bit_tensor_cores.md
+        - "FlashFFTStencil: Bridging Fast Fourier Transforms to Memory-Efficient Stencil Computations on Tensor Core Units": PPoPP/2025/Session-8/flashfftstencil_bridging_fast_fourier_transforms_to_memory_efficient_stencil_computations_on_tensor_core_units.md
+      - "Session 9 — Concurrent Data Structures and Synchronization II (4)":
+        - "Session 9 — Concurrent Data Structures and Synchronization II": PPoPP/2025/Session-9/index.md
+        - "PANNS: Enhancing Graph-based Approximate Nearest Neighbor Search through Recency-aware Construction and Parameterized Search": PPoPP/2025/Session-9/panns_enhancing_graph_based_approximate_nearest_neighbor_search_through_recency_aware_construction_and_parameterized_search.md
+        - "Balanced Allocations over Efficient Queues: A Fast Relaxed FIFO Queue": PPoPP/2025/Session-9/balanced_allocations_over_efficient_queues_a_fast_relaxed_fifo_queue.md
+        - "LibRTS: A Spatial Indexing Library by Ray Tracing": PPoPP/2025/Session-9/librts_a_spatial_indexing_library_by_ray_tracing.md
+        - "Crystality: A Programming Model for Smart Contracts on Parallel EVMs": PPoPP/2025/Session-9/crystality_a_programming_model_for_smart_contracts_on_parallel_evms.md
+      - "Session 10 — GPU II (4)":
+        - "Session 10 — GPU II": PPoPP/2025/Session-10/index.md
+        - "Popcorn: Accelerating Kernel K-means on GPUs through Sparse Linear Algebra": PPoPP/2025/Session-10/popcorn_accelerating_kernel_k_means_on_gpus_through_sparse_linear_algebra.md
+        - "Swift Unfolding of Communities: GPU-Accelerated Louvain Algorithm": PPoPP/2025/Session-10/swift_unfolding_of_communities_gpu_accelerated_louvain_algorithm.md
+        - "GLUMIN: Fast Connectivity Check Based on LUTs For Efficient Graph Pattern Mining": PPoPP/2025/Session-10/glumin_fast_connectivity_check_based_on_luts_for_efficient_graph_pattern_mining.md
+        - "Improving Tridiagonalization Performance on GPU Architectures": PPoPP/2025/Session-10/improving_tridiagonalization_performance_on_gpu_architectures.md
+      - "Session 11 — Parallel Algorithms and Applications (4)":
+        - "Session 11 — Parallel Algorithms and Applications": PPoPP/2025/Session-11/index.md
+        - "Jigsaw: Toward Conflict-free Vectorized Stencil Computation by Tessellating Swizzled Registers": PPoPP/2025/Session-11/jigsaw_toward_conflict_free_vectorized_stencil_computation_by_tessellating_swizzled_registers.md
+        - "Semi-StructMG: A Fast and Scalable Semi-Structured Algebraic Multigrid": PPoPP/2025/Session-11/semi_structmg_a_fast_and_scalable_semi_structured_algebraic_multigrid.md
+        - "SBMGT: Scaling Bayesian Multinomial Group Testing": PPoPP/2025/Session-11/sbmgt_scaling_bayesian_multinomial_group_testing.md
+        - "An AI-Enhanced 1km-Resolution Seamless Global Weather and Climate Model to Achieve Year-Scale Simulation Speed using 34 Million Cores": PPoPP/2025/Session-11/an_ai_enhanced_1km_resolution_seamless_global_weather_and_climate_model_to_achieve_year_scale_simulation_speed_using_34_million_cores.md
+    - PPoPP 2024 (32):
+      - PPoPP 2024: PPoPP/2024/index.md
+      - "Session 1 — Synchronization and Concurrency Control I (3)":
+        - "Session 1 — Synchronization and Concurrency Control I": PPoPP/2024/Session-1/index.md
+        - "Scaling Up Transactions with Slower Clocks": PPoPP/2024/Session-1/scaling_up_transactions_with_slower_clocks.md
+        - "Locks as a Resource: Fairly Scheduling Lock Occupation with CFL": PPoPP/2024/Session-1/locks_as_a_resource_fairly_scheduling_lock_occupation_with_cfl.md
+        - "Are Your Epochs Too Epic? Batch Free Can Be Harmful": PPoPP/2024/Session-1/are_your_epochs_too_epic_batch_free_can_be_harmful.md
+      - "Session 2 — Compilers and Runtimes for Parallel Systems (4)":
+        - "Session 2 — Compilers and Runtimes for Parallel Systems": PPoPP/2024/Session-2/index.md
+        - "Liger: Interleaving Intra- and Inter-Operator Parallelism for Distributed Large Model Inference": PPoPP/2024/Session-2/liger_interleaving_intra_and_inter_operator_parallelism_for_distributed_large_model_inference.md
+        - "A Holistic Approach to Automatic Mixed-Precision Code Generation and Tuning for Affine Programs": PPoPP/2024/Session-2/a_holistic_approach_to_automatic_mixed_precision_code_generation_and_tuning_for_affine_programs.md
+        - "Language-Agnostic Static Deadlock Detection for Futures": PPoPP/2024/Session-2/language_agnostic_static_deadlock_detection_for_futures.md
+        - "Recurrence Analysis for Automatic Parallelization of Subscripted Subscripts": PPoPP/2024/Session-2/recurrence_analysis_for_automatic_parallelization_of_subscripted_subscripts.md
+      - "Session 3 — High Performance Computing (4)":
+        - "Session 3 — High Performance Computing": PPoPP/2024/Session-3/index.md
+        - "OsirisBFT: Say No to Task Replication for Scalable Byzantine Fault Tolerant Analytics": PPoPP/2024/Session-3/osirisbft_say_no_to_task_replication_for_scalable_byzantine_fault_tolerant_analytics.md
+        - "Towards Scalable Unstructured Mesh Computations on Shared Memory Many-Cores": PPoPP/2024/Session-3/towards_scalable_unstructured_mesh_computations_on_shared_memory_many_cores.md
+        - "Extreme-scale Direct Numerical Simulation of Incompressible Turbulence on the Heterogeneous Many-core System": PPoPP/2024/Session-3/extreme_scale_direct_numerical_simulation_of_incompressible_turbulence_on_the_heterogeneous_many_core_system.md
+        - "Pure: Evolving Message Passing To Better Leverage Shared Memory Within Nodes": PPoPP/2024/Session-3/pure_evolving_message_passing_to_better_leverage_shared_memory_within_nodes.md
+      - "Session 4 — Graph Processing (3)":
+        - "Session 4 — Graph Processing": PPoPP/2024/Session-4/index.md
+        - "INFINEL: An efficient GPU-based processing method for unpredictable large output graph queries": PPoPP/2024/Session-4/infinel_an_efficient_gpu_based_processing_method_for_unpredictable_large_output_graph_queries.md
+        - "GraphCube: Interconnection Hierarchy-aware Graph Processing": PPoPP/2024/Session-4/graphcube_interconnection_hierarchy_aware_graph_processing.md
+        - "Exploiting Fine-Grained Redundancy in Set-Centric Graph Pattern Mining": PPoPP/2024/Session-4/exploiting_fine_grained_redundancy_in_set_centric_graph_pattern_mining.md
+      - "Session 5 — Synchronization and Concurrency Control II (3)":
+        - "Session 5 — Synchronization and Concurrency Control II": PPoPP/2024/Session-5/index.md
+        - "Memory Bounds for Concurrent Bounded Queues": PPoPP/2024/Session-5/memory_bounds_for_concurrent_bounded_queues.md
+        - "VERLIB: Concurrent Versioned Pointers": PPoPP/2024/Session-5/verlib_concurrent_versioned_pointers.md
+        - "Practical Hardware Transactional vEB Trees": PPoPP/2024/Session-5/practical_hardware_transactional_veb_trees.md
+      - "Session 6 — ML Workloads (3)":
+        - "Session 6 — ML Workloads": PPoPP/2024/Session-6/index.md
+        - "Tetris: Accelerating Sparse Convolution by Exploiting Memory Reuse on GPU": PPoPP/2024/Session-6/tetris_accelerating_sparse_convolution_by_exploiting_memory_reuse_on_gpu.md
+        - "Shared Memory-contention-aware Concurrent DNN Execution for Diversely Heterogeneous System-on-Chips": PPoPP/2024/Session-6/shared_memory_contention_aware_concurrent_dnn_execution_for_diversely_heterogeneous_system_on_chips.md
+        - "Training one DeePMD Model in Minutes: a Step towards Online Learning": PPoPP/2024/Session-6/training_one_deepmd_model_in_minutes_a_step_towards_online_learning.md
+      - "Session 7 — Parallel Algorithms (4)":
+        - "Session 7 — Parallel Algorithms": PPoPP/2024/Session-7/index.md
+        - "ParlayANN: Scalable and Deterministic Parallel Graph-Based Approximate Nearest Neighbor Search Algorithms": PPoPP/2024/Session-7/parlayann_scalable_and_deterministic_parallel_graph_based_approximate_nearest_neighbor_search_algorithms.md
+        - "Parallel k-Core Decomposition with Batched Updates and Asynchronous Reads": PPoPP/2024/Session-7/parallel_k_core_decomposition_with_batched_updates_and_asynchronous_reads.md
+        - "Parallel Integer Sort: Theory and Practice": PPoPP/2024/Session-7/parallel_integer_sort_theory_and_practice.md
+        - "Fast American Option Pricing using Nonlinear Stencils": PPoPP/2024/Session-7/fast_american_option_pricing_using_nonlinear_stencils.md
+      - "Session 8 — Optimizing for Memory (3)":
+        - "Session 8 — Optimizing for Memory": PPoPP/2024/Session-8/index.md
+        - "ConvStencil: Transform Stencil Computation to Matrix Multiplication on Tensor Cores": PPoPP/2024/Session-8/convstencil_transform_stencil_computation_to_matrix_multiplication_on_tensor_cores.md
+        - "CPMA: An Efficient Batch-Parallel Compressed Set Without Pointers": PPoPP/2024/Session-8/cpma_an_efficient_batch_parallel_compressed_set_without_pointers.md
+        - "Gallatin: A General-Purpose GPU Memory Manager": PPoPP/2024/Session-8/gallatin_a_general_purpose_gpu_memory_manager.md
+      - "Session 9 — Linear Algebra (3)":
+        - "Session 9 — Linear Algebra": PPoPP/2024/Session-9/index.md
+        - "A Row Decomposition-based Approach for Sparse Matrix Multiplication on GPUs": PPoPP/2024/Session-9/a_row_decomposition_based_approach_for_sparse_matrix_multiplication_on_gpus.md
+        - "Fast Kronecker Matrix-Matrix Multiplication on GPUs": PPoPP/2024/Session-9/fast_kronecker_matrix_matrix_multiplication_on_gpus.md
+        - "Arrow Matrix Decomposition: A Novel Approach for Communication-Efficient Sparse Matrix Multiplication": PPoPP/2024/Session-9/arrow_matrix_decomposition_a_novel_approach_for_communication_efficient_sparse_matrix_multiplication.md
+      - "Session 10 — Applications (2)":
+        - "Session 10 — Applications": PPoPP/2024/Session-10/index.md
+        - "FastFold: Optimizing AlphaFold Training and Inference on GPU Clusters": PPoPP/2024/Session-10/fastfold_optimizing_alphafold_training_and_inference_on_gpu_clusters.md
+        - "AGAThA: Fast and Efficient GPU Acceleration of Guided Sequence Alignment for Long Read Mapping": PPoPP/2024/Session-10/agatha_fast_and_efficient_gpu_acceleration_of_guided_sequence_alignment_for_long_read_mapping.md
   - 🔧 ATC:
     - ATC 2026 (135):
       - ATC 2026: ATC/2026/index.md
@@ -3215,124 +3536,154 @@ nav:
         - "AssyLLM: Efficient Federated Fine-tuning of LLMs via Assembling Pre-trained Blocks": ATC/2025/intelligent_resource_management_federation_colocation_and_ml_for_systems/assyllm_efficient_federated_fine_tuning_of_llms_via_assembling_pre_trained_blocks.md
         - "Learning-Enhanced High-Throughput Pattern Matching Based on Programmable Data Plane": ATC/2025/intelligent_resource_management_federation_colocation_and_ml_for_systems/learning_enhanced_high_throughput_pattern_matching_based_on_programmable_data_plane.md
   - 🖧 HPDC:
-    - HPDC 2026 (95):
+    - HPDC 2026 (40):
       - HPDC 2026: HPDC/2026/index.md
-      - "Machine Learning and LLM Systems (26)":
-        - "Machine Learning and LLM Systems": HPDC/2026/machine_learning_and_llm_systems/index.md
-        - "A Fully GPU-Accelerated Framework for High-Performance Configuration Interaction Selection with Neural Network Quantum States": HPDC/2026/machine_learning_and_llm_systems/a_fully_gpu_accelerated_framework_for_high_performance_configuration_interaction_selection_with_neural_network_quantum_states.md
-        - "Accelerating Block Low-Rank Foundation Model Inference on Memory-Constrained GPUs": HPDC/2026/machine_learning_and_llm_systems/accelerating_block_low_rank_foundation_model_inference_on_memory_constrained_gpus.md
-        - "ATLAS: Efficient Out-of-Core Inference for Billion-Scale Graph Neural Networks": HPDC/2026/machine_learning_and_llm_systems/atlas_efficient_out_of_core_inference_for_billion_scale_graph_neural_networks.md
-        - "Building an LLM Gateway as an RSE: Patterns, Pitfalls, and a Case Study from Public Health Data Discovery": HPDC/2026/machine_learning_and_llm_systems/building_an_llm_gateway_as_an_rse_patterns_pitfalls_and_a_case_study_from_public_health_data_discovery.md
-        - "CoDL: A Framework for Studying Cross-Component Interference in Deep Learning Training Pipelines": HPDC/2026/machine_learning_and_llm_systems/codl_a_framework_for_studying_cross_component_interference_in_deep_learning_training_pipelines.md
-        - "DiTango: Cost-Effective Parallel Diffusion Generation with Selective Attention State Reuse": HPDC/2026/machine_learning_and_llm_systems/ditango_cost_effective_parallel_diffusion_generation_with_selective_attention_state_reuse.md
-        - "Dynamo-MoE: Accelerating Sparse Large Model Inference with Dynamic Parallelization": HPDC/2026/machine_learning_and_llm_systems/dynamo_moe_accelerating_sparse_large_model_inference_with_dynamic_parallelization.md
-        - "Eliminating Python Overhead in Predictive Neural Compression: A Native C++/LibTorch Implementation of TEZip": HPDC/2026/machine_learning_and_llm_systems/eliminating_python_overhead_in_predictive_neural_compression_a_native_c_libtorch_implementation_of_tezip.md
-        - "GLANCED-IO: Taming I/O Optimization for Deep Learning at Scale": HPDC/2026/machine_learning_and_llm_systems/glanced_io_taming_i_o_optimization_for_deep_learning_at_scale.md
-        - "Graph Acceleration Techniques for Sparse Transformers": HPDC/2026/machine_learning_and_llm_systems/graph_acceleration_techniques_for_sparse_transformers.md
-        - "Group-TopK: Optimizing Distributed Training on Edge Devices via Communication Compression": HPDC/2026/machine_learning_and_llm_systems/group_topk_optimizing_distributed_training_on_edge_devices_via_communication_compression.md
-        - "Merkle-Tree Weight Snapshot Deduplication for Provenance-Aware Auditing of Neural Network Training": HPDC/2026/machine_learning_and_llm_systems/merkle_tree_weight_snapshot_deduplication_for_provenance_aware_auditing_of_neural_network_training.md
-        - "MoE-Lens: Towards the Hardware Limit of High-Throughput MoE LLM Serving Under Resource Constraints": HPDC/2026/machine_learning_and_llm_systems/moe_lens_towards_the_hardware_limit_of_high_throughput_moe_llm_serving_under_resource_constraints.md
-        - "Momentum-Buffered Local SGD for Zero-Payload Drift Correction in Federated Learning": HPDC/2026/machine_learning_and_llm_systems/momentum_buffered_local_sgd_for_zero_payload_drift_correction_in_federated_learning.md
-        - "Odin: Harnessing Rendering Visibility to Break Global Barriers in Distributed Point-Based Neural Rendering": HPDC/2026/machine_learning_and_llm_systems/odin_harnessing_rendering_visibility_to_break_global_barriers_in_distributed_point_based_neural_rendering.md
-        - "PKAS: Predictive KVCache-Aware Scheduling for Faster LLM and Transformer Inferences": HPDC/2026/machine_learning_and_llm_systems/pkas_predictive_kvcache_aware_scheduling_for_faster_llm_and_transformer_inferences.md
-        - "ResiHP: Taming LLM Training Failures with Dynamic Hybrid Parallelism": HPDC/2026/machine_learning_and_llm_systems/resihp_taming_llm_training_failures_with_dynamic_hybrid_parallelism.md
-        - "Resource-Aware Online Tuning for Heterogeneous Federated Learning": HPDC/2026/machine_learning_and_llm_systems/resource_aware_online_tuning_for_heterogeneous_federated_learning.md
-        - "Scaling Attention Beyond GPUs for LLM Inference": HPDC/2026/machine_learning_and_llm_systems/scaling_attention_beyond_gpus_for_llm_inference.md
-        - "Scheduling Optimization of Distributed LLM Inference": HPDC/2026/machine_learning_and_llm_systems/scheduling_optimization_of_distributed_llm_inference.md
-        - "STAR: Decode-Phase Rescheduling for LLM Inference": HPDC/2026/machine_learning_and_llm_systems/star_decode_phase_rescheduling_for_llm_inference.md
-        - "TACO: Efficient Communication Compression of Intermediate Tensors for Scalable Tensor-Parallel LLM Training": HPDC/2026/machine_learning_and_llm_systems/taco_efficient_communication_compression_of_intermediate_tensors_for_scalable_tensor_parallel_llm_training.md
-        - "Thermal-Aware Scheduling for DNN Inference on 3D Logic-to-DRAM Process-Near-Memory Architecture": HPDC/2026/machine_learning_and_llm_systems/thermal_aware_scheduling_for_dnn_inference_on_3d_logic_to_dram_process_near_memory_architecture.md
-        - "Toward Low-Latency and Memory-Efficient Deployment of Irregular Sparse Deep Learning Workloads": HPDC/2026/machine_learning_and_llm_systems/toward_low_latency_and_memory_efficient_deployment_of_irregular_sparse_deep_learning_workloads.md
-        - "UniEP: Unified Expert-Parallel MegaKernel MoE for LLM Training": HPDC/2026/machine_learning_and_llm_systems/uniep_unified_expert_parallel_megakernel_moe_for_llm_training.md
-        - "When RDMA Goes Long-Haul: Characterization, Modeling, and Verbs-Level Emulation with Implications for Federated Learning": HPDC/2026/machine_learning_and_llm_systems/when_rdma_goes_long_haul_characterization_modeling_and_verbs_level_emulation_with_implications_for_federated_learning.md
-      - "Accelerators and Heterogeneous Computing (15)":
-        - "Accelerators and Heterogeneous Computing": HPDC/2026/accelerators_and_heterogeneous_computing/index.md
-        - "Accelerating high-accuracy runtime estimation in adaptive sample selection for parallel scalability analysis with reiforcement learning": HPDC/2026/accelerators_and_heterogeneous_computing/accelerating_high_accuracy_runtime_estimation_in_adaptive_sample_selection_for_parallel_scalability_analysis_with_reiforcement_learning.md
-        - "BCCE: Block-Centric GPU Co-Design for Real-Time Range-Top-K Query at Scale": HPDC/2026/accelerators_and_heterogeneous_computing/bcce_block_centric_gpu_co_design_for_real_time_range_top_k_query_at_scale.md
-        - "Deterministic and Efficient Low Rank Approximation on GPUs": HPDC/2026/accelerators_and_heterogeneous_computing/deterministic_and_efficient_low_rank_approximation_on_gpus.md
-        - "FAME: A Framework for Accelerating Independent Multi-Agent Reinforcement Learning on Heterogeneous Platforms": HPDC/2026/accelerators_and_heterogeneous_computing/fame_a_framework_for_accelerating_independent_multi_agent_reinforcement_learning_on_heterogeneous_platforms.md
-        - "FluxZK: Scalable and Efficient Zero-Knowledge Proof Computation via GPU Acceleration": HPDC/2026/accelerators_and_heterogeneous_computing/fluxzk_scalable_and_efficient_zero_knowledge_proof_computation_via_gpu_acceleration.md
-        - "Full-Core Fluid-Structure-Interaction Simulation of Nuclear Reactor on CPU+GPU Hybrid Clusters": HPDC/2026/accelerators_and_heterogeneous_computing/full_core_fluid_structure_interaction_simulation_of_nuclear_reactor_on_cpu_gpu_hybrid_clusters.md
-        - "GICC: A High-Performance Runtime for GPU-Initiated Communication and Coordination in Modern HPC Systems": HPDC/2026/accelerators_and_heterogeneous_computing/gicc_a_high_performance_runtime_for_gpu_initiated_communication_and_coordination_in_modern_hpc_systems.md
-        - "Hardware-based Kernel-Bypass Exceptions to Accelerate Floating Point Tracing and Virtualization": HPDC/2026/accelerators_and_heterogeneous_computing/hardware_based_kernel_bypass_exceptions_to_accelerate_floating_point_tracing_and_virtualization.md
-        - "OPAL: On-demand Progressive Accelerated Scientific Lossy Compression": HPDC/2026/accelerators_and_heterogeneous_computing/opal_on_demand_progressive_accelerated_scientific_lossy_compression.md
-        - "POLAR-PIC: A Holistic Framework for Matrixized PIC with Co-Designed Compute, Layout, and Communication": HPDC/2026/accelerators_and_heterogeneous_computing/polar_pic_a_holistic_framework_for_matrixized_pic_with_co_designed_compute_layout_and_communication.md
-        - "PowerQuant: Architecture-Agnostic GPU Power Estimation via Quantile Regression": HPDC/2026/accelerators_and_heterogeneous_computing/powerquant_architecture_agnostic_gpu_power_estimation_via_quantile_regression.md
-        - "SIVF: GPU-Resident IVF Index for Streaming Vector Analytics": HPDC/2026/accelerators_and_heterogeneous_computing/sivf_gpu_resident_ivf_index_for_streaming_vector_analytics.md
-        - "SYCL++: A Unified Programming Framework for Heterogeneous Supercomputers at Scale": HPDC/2026/accelerators_and_heterogeneous_computing/sycl_a_unified_programming_framework_for_heterogeneous_supercomputers_at_scale.md
-        - "torch_cufft: Extending PyTorch FFT Capacity with Multi-GPU and Descriptor-Resident cuFFTXt Execution": HPDC/2026/accelerators_and_heterogeneous_computing/torch_cufft_extending_pytorch_fft_capacity_with_multi_gpu_and_descriptor_resident_cufftxt_execution.md
-        - "TZ: Achieving High-Ratio Scientific Data Compression on GPUs with Global Data Decomposition": HPDC/2026/accelerators_and_heterogeneous_computing/tz_achieving_high_ratio_scientific_data_compression_on_gpus_with_global_data_decomposition.md
-      - "Quantum Computing and Optimization (12)":
-        - "Quantum Computing and Optimization": HPDC/2026/quantum_computing_and_optimization/index.md
-        - "Delta-Based Rare Pattern Discovery with Quantum Speedup": HPDC/2026/quantum_computing_and_optimization/delta_based_rare_pattern_discovery_with_quantum_speedup.md
-        - "Distributed Scheduling for Modular Quantum Computing in Cloud": HPDC/2026/quantum_computing_and_optimization/distributed_scheduling_for_modular_quantum_computing_in_cloud.md
-        - "Evaluating QAOA and Quantum Annealing for Minimum Vertex Cover on NISQ Devices": HPDC/2026/quantum_computing_and_optimization/evaluating_qaoa_and_quantum_annealing_for_minimum_vertex_cover_on_nisq_devices.md
-        - "Expressibility, Noise, and Error Mitigation in VQE Ansatz Selection": HPDC/2026/quantum_computing_and_optimization/expressibility_noise_and_error_mitigation_in_vqe_ansatz_selection.md
-        - "Extracting Quantum-Ready Cores in Discrete Tomography": HPDC/2026/quantum_computing_and_optimization/extracting_quantum_ready_cores_in_discrete_tomography.md
-        - "Quantum Bit-Parallel Swap Matching": HPDC/2026/quantum_computing_and_optimization/quantum_bit_parallel_swap_matching.md
-        - "Quantum LCS in Practice: Circuits, Optimizations, and Evaluation": HPDC/2026/quantum_computing_and_optimization/quantum_lcs_in_practice_circuits_optimizations_and_evaluation.md
-        - "Scalability Bottlenecks in Quantum-Resilient Distributed Ledgers: A Comparative Analysis of Post-Quantum Blockchain Implementations": HPDC/2026/quantum_computing_and_optimization/scalability_bottlenecks_in_quantum_resilient_distributed_ledgers_a_comparative_analysis_of_post_quantum_blockchain_implementations.md
-        - "Scalable Quantum Circuit Simulation via Circuit Cutting and FPGA Acceleration": HPDC/2026/quantum_computing_and_optimization/scalable_quantum_circuit_simulation_via_circuit_cutting_and_fpga_acceleration.md
-        - "Stabilizing Grover Search via Density-Aware Phase Control": HPDC/2026/quantum_computing_and_optimization/stabilizing_grover_search_via_density_aware_phase_control.md
-        - "Structural Parallelism in Quantum Programs": HPDC/2026/quantum_computing_and_optimization/structural_parallelism_in_quantum_programs.md
-        - "The Energy Cost of Post-Quantum Transition: Benchmarking PQC Algorithms on Commodity Hardware": HPDC/2026/quantum_computing_and_optimization/the_energy_cost_of_post_quantum_transition_benchmarking_pqc_algorithms_on_commodity_hardware.md
-      - "Storage and I/O Systems (9)":
-        - "Storage and I/O Systems": HPDC/2026/storage_and_i_o_systems/index.md
-        - "Analysis of I/O Subsystem Utilization on the Theta Supercomputer": HPDC/2026/storage_and_i_o_systems/analysis_of_i_o_subsystem_utilization_on_the_theta_supercomputer.md
-        - "DPIO: A Unified I/O Architecture for Heterogeneous CPU and DPU NVMeoF": HPDC/2026/storage_and_i_o_systems/dpio_a_unified_i_o_architecture_for_heterogeneous_cpu_and_dpu_nvmeof.md
-        - "I/O Optimisation at the Compiler Level: IOOpt": HPDC/2026/storage_and_i_o_systems/i_o_optimisation_at_the_compiler_level_ioopt.md
-        - "Metis: Agentic Knowledge Synthesis for Explainable I/O Performance in HPC Systems": HPDC/2026/storage_and_i_o_systems/metis_agentic_knowledge_synthesis_for_explainable_i_o_performance_in_hpc_systems.md
-        - "Modernizing VPIC-Kokkos I/O: From Legacy Binary Output to Adaptive HDF5 Workflows": HPDC/2026/storage_and_i_o_systems/modernizing_vpic_kokkos_i_o_from_legacy_binary_output_to_adaptive_hdf5_workflows.md
-        - "Pome: Parallelizing I/Os and Computations for Efficient LSM-tree-based Data Storage": HPDC/2026/storage_and_i_o_systems/pome_parallelizing_i_os_and_computations_for_efficient_lsm_tree_based_data_storage.md
-        - "QProR: An Efficient Framework for Quantity-of-Interest Based Progressive Retrieval with Guaranteed Error Control": HPDC/2026/storage_and_i_o_systems/qpror_an_efficient_framework_for_quantity_of_interest_based_progressive_retrieval_with_guaranteed_error_control.md
-        - "Robust I/O Characterization of Machine Learning Workloads Across Performance Analysis Tools": HPDC/2026/storage_and_i_o_systems/robust_i_o_characterization_of_machine_learning_workloads_across_performance_analysis_tools.md
-        - "Towards Transparent Checkpointing with AI-driven Code Generation": HPDC/2026/storage_and_i_o_systems/towards_transparent_checkpointing_with_ai_driven_code_generation.md
-      - "Distributed and Networked Systems (6)":
-        - "Distributed and Networked Systems": HPDC/2026/distributed_and_networked_systems/index.md
-        - "Achieving 86% Peak GPU Throughput for Distributed QR Factorization": HPDC/2026/distributed_and_networked_systems/achieving_86_peak_gpu_throughput_for_distributed_qr_factorization.md
-        - "HAT-MPI: Hierarchical Auto Tuning of MPI Inter-Node Communication on InfiniBand Clusters": HPDC/2026/distributed_and_networked_systems/hat_mpi_hierarchical_auto_tuning_of_mpi_inter_node_communication_on_infiniband_clusters.md
-        - "NCCLZ: Compression-Enabled GPU Collectives with Decoupled Quantization and Entropy Coding": HPDC/2026/distributed_and_networked_systems/ncclz_compression_enabled_gpu_collectives_with_decoupled_quantization_and_entropy_coding.md
-        - "NCCLZ: Compression-Enabled GPU Collectives with Decoupled Quantization and Entropy Coding": HPDC/2026/distributed_and_networked_systems/ncclz_compression_enabled_gpu_collectives_with_decoupled_quantization_and_entropy_coding_2.md
-        - "Robust Ensemble Log Anomaly Detection for High-performance Parallel and Distributed Computing Systems": HPDC/2026/distributed_and_networked_systems/robust_ensemble_log_anomaly_detection_for_high_performance_parallel_and_distributed_computing_systems.md
-        - "SRAP: Sender-side Receiver-Aware Port Selection for Deterministic Flow-to-Core Mapping in Hash-Based Flow Steering": HPDC/2026/distributed_and_networked_systems/srap_sender_side_receiver_aware_port_selection_for_deterministic_flow_to_core_mapping_in_hash_based_flow_steering.md
-      - "Graph and Data Analytics (6)":
-        - "Graph and Data Analytics": HPDC/2026/graph_and_data_analytics/index.md
-        - "Challenges in Scaling R-tree Spatial Search on Processing-In-Memory": HPDC/2026/graph_and_data_analytics/challenges_in_scaling_r_tree_spatial_search_on_processing_in_memory.md
-        - "Efficient Tracking of Communities on Evolving Graphs with Leiden Algorithm": HPDC/2026/graph_and_data_analytics/efficient_tracking_of_communities_on_evolving_graphs_with_leiden_algorithm.md
-        - "ExCC: External Memory Connected Components on Large Graphs": HPDC/2026/graph_and_data_analytics/excc_external_memory_connected_components_on_large_graphs.md
-        - "Flux Fiction: Hopping Toward Storage Graph Scheduling With El Capitan's Rabbits": HPDC/2026/graph_and_data_analytics/flux_fiction_hopping_toward_storage_graph_scheduling_with_el_capitan_s_rabbits.md
-        - "SAGA: State-Aware Graph Analytics for Combinatorial Optimization on Dynamic Graphs": HPDC/2026/graph_and_data_analytics/saga_state_aware_graph_analytics_for_combinatorial_optimization_on_dynamic_graphs.md
-        - "νMG-LPA and νBM-LPA: Memory Efficient GPU-based Label Propagation Algorithms (LPA) for Community Detection": HPDC/2026/graph_and_data_analytics/mg_lpa_and_bm_lpa_memory_efficient_gpu_based_label_propagation_algorithms_lpa_for_community_detection.md
-      - "Performance Modeling and Analysis (5)":
-        - "Performance Modeling and Analysis": HPDC/2026/performance_modeling_and_analysis/index.md
-        - "A High-Performance Persistent Transactional Memory System via Cooperative Concurrency Control": HPDC/2026/performance_modeling_and_analysis/a_high_performance_persistent_transactional_memory_system_via_cooperative_concurrency_control.md
-        - "CXLMemSim: Practical Performance Simulation and Characterization of CXL 3.0 Memory Systems": HPDC/2026/performance_modeling_and_analysis/cxlmemsim_practical_performance_simulation_and_characterization_of_cxl_3_0_memory_systems.md
-        - "Lustre Query: Periodic Offline Metadata Monitoring from MDT Backups": HPDC/2026/performance_modeling_and_analysis/lustre_query_periodic_offline_metadata_monitoring_from_mdt_backups.md
-        - "Performance Analysis of Conveyors: Memory Dominates?": HPDC/2026/performance_modeling_and_analysis/performance_analysis_of_conveyors_memory_dominates.md
-        - "Performance Evaluation of Approximate Nearest Neighbor Search on NVIDIA BlueField-3 DPU": HPDC/2026/performance_modeling_and_analysis/performance_evaluation_of_approximate_nearest_neighbor_search_on_nvidia_bluefield_3_dpu.md
-      - "Compilers and Runtime Systems (4)":
-        - "Compilers and Runtime Systems": HPDC/2026/compilers_and_runtime_systems/index.md
-        - "A Lock-Free Work-Stealing Algorithm for Bulk Operations": HPDC/2026/compilers_and_runtime_systems/a_lock_free_work_stealing_algorithm_for_bulk_operations.md
-        - "CARBS: Compiler Autotuning via Randomized Biased Search": HPDC/2026/compilers_and_runtime_systems/carbs_compiler_autotuning_via_randomized_biased_search.md
-        - "Enabling Floating Point Virtualization With Tiny Numbers": HPDC/2026/compilers_and_runtime_systems/enabling_floating_point_virtualization_with_tiny_numbers.md
-        - "Motivating Regime-Aware User-Profiles for Runtime Prediction in Large-Scale HPC Systems": HPDC/2026/compilers_and_runtime_systems/motivating_regime_aware_user_profiles_for_runtime_prediction_in_large_scale_hpc_systems.md
-      - "Scheduling and Resource Management (4)":
-        - "Scheduling and Resource Management": HPDC/2026/scheduling_and_resource_management/index.md
-        - "Beyond Fixed Budgets: Characterizing the Inelasticity and Limitations of Tree-of-Thought Reasoning Strategies": HPDC/2026/scheduling_and_resource_management/beyond_fixed_budgets_characterizing_the_inelasticity_and_limitations_of_tree_of_thought_reasoning_strategies.md
-        - "Decay Driven Multi Objective Optimization for HPC nodes": HPDC/2026/scheduling_and_resource_management/decay_driven_multi_objective_optimization_for_hpc_nodes.md
-        - "Inkly: A Data-Informed and Context-Aware System for HPC Job Execution": HPDC/2026/scheduling_and_resource_management/inkly_a_data_informed_and_context_aware_system_for_hpc_job_execution.md
-        - "Omnia: Efficient RAG Serving through Speculative Scheduling": HPDC/2026/scheduling_and_resource_management/omnia_efficient_rag_serving_through_speculative_scheduling.md
-      - "Cloud and Serverless Systems (3)":
-        - "Cloud and Serverless Systems": HPDC/2026/cloud_and_serverless_systems/index.md
-        - "A New Era for the Open Science Data Federation: The Pelican Platform": HPDC/2026/cloud_and_serverless_systems/a_new_era_for_the_open_science_data_federation_the_pelican_platform.md
-        - "Enabling High-Utilization and Low-Contention FaaS: A Request-Level Resource Provisioning Approach": HPDC/2026/cloud_and_serverless_systems/enabling_high_utilization_and_low_contention_faas_a_request_level_resource_provisioning_approach.md
-        - "Krysha: Cost-Efficient Resource Orchestration for Geo-Distributed Serverless Microservices": HPDC/2026/cloud_and_serverless_systems/krysha_cost_efficient_resource_orchestration_for_geo_distributed_serverless_microservices.md
-      - "Security and Reliability (3)":
-        - "Security and Reliability": HPDC/2026/security_and_reliability/index.md
-        - "Cremes: Cost-Efficient and Reliable Microservice Execution on Spot Instances": HPDC/2026/security_and_reliability/cremes_cost_efficient_and_reliable_microservice_execution_on_spot_instances.md
-        - "Fault Tolerance of Accelerated Asynchronous Fixed-Point Iterations on Flexible Computing Infrastructure": HPDC/2026/security_and_reliability/fault_tolerance_of_accelerated_asynchronous_fixed_point_iterations_on_flexible_computing_infrastructure.md
-        - "JANUS: Resilient and Adaptive Data Transmission for Enabling Timely and Efficient Cross-Facility Scientific Workflows": HPDC/2026/security_and_reliability/janus_resilient_and_adaptive_data_transmission_for_enabling_timely_and_efficient_cross_facility_scientific_workflows.md
-      - "Scientific Computing and Applications (2)":
-        - "Scientific Computing and Applications": HPDC/2026/scientific_computing_and_applications/index.md
-        - "Bridging Information Theory and Practice for Scientific Lossy Compression": HPDC/2026/scientific_computing_and_applications/bridging_information_theory_and_practice_for_scientific_lossy_compression.md
-        - "Endeavor: Efficient PairHMM for Detection of DNA Variants in Genome-Scale Datasets": HPDC/2026/scientific_computing_and_applications/endeavor_efficient_pairhmm_for_detection_of_dna_variants_in_genome_scale_datasets.md
+      - "Session 1 — LLM Inference: Scheduling & Serving (3)":
+        - "Session 1 — LLM Inference: Scheduling & Serving": HPDC/2026/Session-1/index.md
+        - "STAR: Decode-Phase Rescheduling for LLM Inference": HPDC/2026/Session-1/star-decode-phase-rescheduling-for-llm-inference.md
+        - "PKAS: Predictive KVCache-Aware Scheduling for Faster LLM and Transformer Inferences": HPDC/2026/Session-1/pkas-predictive-kvcache-aware-scheduling-for-faster-llm-and-transformer-inferences.md
+        - "Omnia: Efficient RAG Serving through Speculative Scheduling": HPDC/2026/Session-1/omnia-efficient-rag-serving-through-speculative-scheduling.md
+      - "Session 2 — Scaling Generative Inference (3)":
+        - "Session 2 — Scaling Generative Inference": HPDC/2026/Session-2/index.md
+        - "Scaling Attention Beyond GPUs for LLM Inference": HPDC/2026/Session-2/scaling-attention-beyond-gpus-for-llm-inference.md
+        - "Accelerating Block Low-Rank Foundation Model Inference on Memory-Constrained GPUs": HPDC/2026/Session-2/accelerating-block-low-rank-foundation-model-inference-on-memory-constrained-gpus.md
+        - "MoE-Lens: Towards the Hardware Limit of High-Throughput MoE LLM Serving Under Resource Constraints": HPDC/2026/Session-2/moe-lens-towards-the-hardware-limit-of-high-throughput-moe-llm-serving-under-resource-constraints.md
+      - "Session 3 — MoE Systems & Distributed LLM Training (3)":
+        - "Session 3 — MoE Systems & Distributed LLM Training": HPDC/2026/Session-3/index.md
+        - "UniEP: Unified Expert-Parallel MegaKernel MoE for LLM Training": HPDC/2026/Session-3/uniep-unified-expert-parallel-megakernel-moe-for-llm-training.md
+        - "ResiHP: Taming LLM Training Failures with Dynamic Hybrid Parallelism": HPDC/2026/Session-3/resihp-taming-llm-training-failures-with-dynamic-hybrid-parallelism.md
+        - "TACO: Efficient Communication Compression of Intermediate Tensors for Scalable Tensor-Parallel LLM Training": HPDC/2026/Session-3/taco-efficient-communication-compression-of-intermediate-tensors-for-scalable-tensor-parallel-llm-training.md
+      - "Session 4 — Programming Models, Frameworks & Compilers (4)":
+        - "Session 4 — Programming Models, Frameworks & Compilers": HPDC/2026/Session-4/index.md
+        - "SYCL++: A Unified Programming Framework for Heterogeneous Supercomputers at Scale": HPDC/2026/Session-4/sycl-a-unified-programming-framework-for-heterogeneous-supercomputers-at-scale.md
+        - "Enabling Floating Point Virtualization With Tiny Numbers": HPDC/2026/Session-4/enabling-floating-point-virtualization-with-tiny-numbers.md
+        - "FAME: A Framework for Accelerating Independent Multi-Agent Reinforcement Learning on Heterogeneous Platforms": HPDC/2026/Session-4/fame-a-framework-for-accelerating-independent-multi-agent-reinforcement-learning-on-heterogeneous-platforms.md
+        - "CARBS: Compiler Autotuning via Randomized Biased Search": HPDC/2026/Session-4/carbs-compiler-autotuning-via-randomized-biased-search.md
+      - "Session 5 — Scientific Applications at Scale (4)":
+        - "Session 5 — Scientific Applications at Scale": HPDC/2026/Session-5/index.md
+        - "POLAR-PIC: A Holistic Framework for Matrixized PIC with Co-Designed Compute, Layout, and Communication": HPDC/2026/Session-5/polar-pic-a-holistic-framework-for-matrixized-pic-with-co-designed-compute-layout-and-communication.md
+        - "A Fully GPU-Accelerated Framework for High-Performance Configuration Interaction Selection with Neural Network Quantum States": HPDC/2026/Session-5/a-fully-gpu-accelerated-framework-for-high-performance-configuration-interaction-selection-with-neural-network-quantum-states.md
+        - "Full-Core Fluid-Structure-Interaction Simulation of Nuclear Reactor on CPU+GPU Hybrid Clusters": HPDC/2026/Session-5/full-core-fluid-structure-interaction-simulation-of-nuclear-reactor-on-cpu-gpu-hybrid-clusters.md
+        - "Endeavor: Efficient PairHMM for Detection of DNA Variants in Genome-Scale Datasets": HPDC/2026/Session-5/endeavor-efficient-pairhmm-for-detection-of-dna-variants-in-genome-scale-datasets.md
+      - "Session 6 — Scientific Data Compression (4)":
+        - "Session 6 — Scientific Data Compression": HPDC/2026/Session-6/index.md
+        - "OPAL: On-demand Progressive Accelerated Scientific Lossy Compression": HPDC/2026/Session-6/opal-on-demand-progressive-accelerated-scientific-lossy-compression.md
+        - "TZ: Achieving High-Ratio Scientific Data Compression on GPUs with Global Data Decomposition": HPDC/2026/Session-6/tz-achieving-high-ratio-scientific-data-compression-on-gpus-with-global-data-decomposition.md
+        - "QProR: An Efficient Framework for Quantity-of-Interest Based Progressive Retrieval with Guaranteed Error Control": HPDC/2026/Session-6/qpror-an-efficient-framework-for-quantity-of-interest-based-progressive-retrieval-with-guaranteed-error-control.md
+        - "Bridging Information Theory and Practice for Scientific Lossy Compression": HPDC/2026/Session-6/bridging-information-theory-and-practice-for-scientific-lossy-compression.md
+      - "Session 7 — Graph Processing & Community Detection (3)":
+        - "Session 7 — Graph Processing & Community Detection": HPDC/2026/Session-7/index.md
+        - "SAGA: State-Aware Graph Analytics for Combinatorial Optimization on Dynamic Graphs": HPDC/2026/Session-7/saga-state-aware-graph-analytics-for-combinatorial-optimization-on-dynamic-graphs.md
+        - "Efficient Tracking of Communities on Evolving Graphs with Leiden Algorithm": HPDC/2026/Session-7/efficient-tracking-of-communities-on-evolving-graphs-with-leiden-algorithm.md
+        - "νMG-LPA and νBM-LPA: Memory Efficient GPU-based Label Propagation Algorithms (LPA) for Community Detection": HPDC/2026/Session-7/mg-lpa-and-bm-lpa-memory-efficient-gpu-based-label-propagation-algorithms-lpa-for-community-detection.md
+      - "Session 8 — Storage & I/O for Data-Intensive Workloads (4)":
+        - "Session 8 — Storage & I/O for Data-Intensive Workloads": HPDC/2026/Session-8/index.md
+        - "A High-Performance Persistent Transactional Memory System via Cooperative Concurrency Control": HPDC/2026/Session-8/a-high-performance-persistent-transactional-memory-system-via-cooperative-concurrency-control.md
+        - "GLANCED-IO: Taming I/O Optimization for Deep Learning at Scale": HPDC/2026/Session-8/glanced-io-taming-i-o-optimization-for-deep-learning-at-scale.md
+        - "Merkle-Tree Weight Snapshot Deduplication for Provenance-Aware Auditing of Neural Network Training": HPDC/2026/Session-8/merkle-tree-weight-snapshot-deduplication-for-provenance-aware-auditing-of-neural-network-training.md
+        - "Pome: Parallelizing I/Os and Computations for Efficient LSM-tree-based Data Storage": HPDC/2026/Session-8/pome-parallelizing-i-os-and-computations-for-efficient-lsm-tree-based-data-storage.md
+      - "Session 9 — Cloud, Serverless & Microservices (3)":
+        - "Session 9 — Cloud, Serverless & Microservices": HPDC/2026/Session-9/index.md
+        - "Enabling High-Utilization and Low-Contention FaaS: A Request-Level Resource Provisioning Approach": HPDC/2026/Session-9/enabling-high-utilization-and-low-contention-faas-a-request-level-resource-provisioning-approach.md
+        - "Cremes: Cost-Efficient and Reliable Microservice Execution on Spot Instances": HPDC/2026/Session-9/cremes-cost-efficient-and-reliable-microservice-execution-on-spot-instances.md
+        - "Krysha: Cost-Efficient Resource Orchestration for Geo-Distributed Serverless Microservices": HPDC/2026/Session-9/krysha-cost-efficient-resource-orchestration-for-geo-distributed-serverless-microservices.md
+      - "Session 10 — Data Systems for AI & Analytics (3)":
+        - "Session 10 — Data Systems for AI & Analytics": HPDC/2026/Session-10/index.md
+        - "SIVF: GPU-Resident IVF Index for Streaming Vector Analytics": HPDC/2026/Session-10/sivf-gpu-resident-ivf-index-for-streaming-vector-analytics.md
+        - "BCCE: Block-Centric GPU Co-Design for Real-Time Range-Top-K Query at Scale": HPDC/2026/Session-10/bcce-block-centric-gpu-co-design-for-real-time-range-top-k-query-at-scale.md
+        - "ATLAS: Efficient Out-of-Core Inference for Billion-Scale Graph Neural Networks": HPDC/2026/Session-10/atlas-efficient-out-of-core-inference-for-billion-scale-graph-neural-networks.md
+      - "Session 11 — Communication, Workflows & Sustainability (4)":
+        - "Session 11 — Communication, Workflows & Sustainability": HPDC/2026/Session-11/index.md
+        - "GICC: A High-Performance Runtime for GPU-Initiated Communication and Coordination in Modern HPC Systems": HPDC/2026/Session-11/gicc-a-high-performance-runtime-for-gpu-initiated-communication-and-coordination-in-modern-hpc-systems.md
+        - "When RDMA Goes Long-Haul: Characterization, Modeling, and Verbs-Level Emulation with Implications for Federated Learning": HPDC/2026/Session-11/when-rdma-goes-long-haul-characterization-modeling-and-verbs-level-emulation-with-implications-for-federated-learning.md
+        - "JANUS: Resilient and Adaptive Data Transmission for Enabling Timely and Efficient Cross-Facility Scientific Workflows": HPDC/2026/Session-11/janus-resilient-and-adaptive-data-transmission-for-enabling-timely-and-efficient-cross-facility-scientific-workflows.md
+        - "PowerQuant: Architecture-Agnostic GPU Power Estimation via Quantile Regression": HPDC/2026/Session-11/powerquant-architecture-agnostic-gpu-power-estimation-via-quantile-regression.md
+      - "Session 12 — Emerging Generative & Agentic AI Workloads (2)":
+        - "Session 12 — Emerging Generative & Agentic AI Workloads": HPDC/2026/Session-12/index.md
+        - "DiTango: Cost-Effective Parallel Diffusion Generation with Selective Attention State Reuse": HPDC/2026/Session-12/ditango-cost-effective-parallel-diffusion-generation-with-selective-attention-state-reuse.md
+        - "Dynamo-MoE: Accelerating Sparse Large Model Inference with Dynamic Parallelization": HPDC/2026/Session-12/dynamo-moe-accelerating-sparse-large-model-inference-with-dynamic-parallelization.md
+    - HPDC 2025 (25):
+      - HPDC 2025: HPDC/2025/index.md
+      - "Session 1 — Numerical Methods (4)":
+        - "Session 1 — Numerical Methods": HPDC/2025/Session-1/index.md
+        - "Virtualization So Light, it Floats! Accelerating Floating Point Virtualization": HPDC/2025/Session-1/virtualization-so-light-it-floats-accelerating-floating-point-virtualization.md
+        - "FloatGuard: Efficient Whole-Program Detection of Floating-Point Exceptions in AMD GPUs": HPDC/2025/Session-1/floatguard-efficient-whole-program-detection-of-floating-point-exceptions-in-amd-gpus.md
+        - "LiteForm: Lightweight and Automatic Format Composition for Sparse Matrix-Matrix Multiplication on GPUs": HPDC/2025/Session-1/liteform-lightweight-and-automatic-format-composition-for-sparse-matrix-matrix-multiplication-on-gpus.md
+        - "Optimization of GNN Training Through Half-precision": HPDC/2025/Session-1/optimization-of-gnn-training-through-half-precision.md
+      - "Session 2 — Model Training (4)":
+        - "Session 2 — Model Training": HPDC/2025/Session-2/index.md
+        - "SAFusion: Efficient Tensor Fusion with Sparsification Ahead for High-Performance Distributed DNN Training": HPDC/2025/Session-2/safusion-efficient-tensor-fusion-with-sparsification-ahead-for-high-performance-distributed-dnn-training.md
+        - "ModelX: A Novel Transfer Learning Approach Across Heterogeneous Datasets": HPDC/2025/Session-2/modelx-a-novel-transfer-learning-approach-across-heterogeneous-datasets.md
+        - "FT2: First-Token-Inspired Online Fault Tolerance on Critical Layers for Generative Large Language Models": HPDC/2025/Session-2/ft2-first-token-inspired-online-fault-tolerance-on-critical-layers-for-generative-large-language-models.md
+        - "Optimizing Data Distribution and Kernel Performance for Efficient Training of Chemistry Foundation Models: A Case Study with MACE": HPDC/2025/Session-2/optimizing-data-distribution-and-kernel-performance-for-efficient-training-of-chemistry-foundation-models-a-case-study-with-mace.md
+      - "Session 3 — Storage Systems (3)":
+        - "Session 3 — Storage Systems": HPDC/2025/Session-3/index.md
+        - "TSUE: A Two-Stage Data Update Method for an Erasure Coded Cluster File System": HPDC/2025/Session-3/tsue-a-two-stage-data-update-method-for-an-erasure-coded-cluster-file-system.md
+        - "AutoSSD: CXL-Enhanced Autonomous SSDs for Low Tail Latency": HPDC/2025/Session-3/autossd-cxl-enhanced-autonomous-ssds-for-low-tail-latency.md
+        - "DPU-KV: On the Benefits of DPU Offloading for In-Memory Key-Value Stores at the Edge": HPDC/2025/Session-3/dpu-kv-on-the-benefits-of-dpu-offloading-for-in-memory-key-value-stores-at-the-edge.md
+      - "Session 4 — Efficiency and Sustainability (4)":
+        - "Session 4 — Efficiency and Sustainability": HPDC/2025/Session-4/index.md
+        - "CarbonEdge: Leveraging Mesoscale Spatial Carbon-Intensity Variations for Low Carbon Edge Computing": HPDC/2025/Session-4/carbonedge-leveraging-mesoscale-spatial-carbon-intensity-variations-for-low-carbon-edge-computing.md
+        - "Advancing Scientific Data Compression via Cross-Field Prediction": HPDC/2025/Session-4/advancing-scientific-data-compression-via-cross-field-prediction.md
+        - "Parameterized Algorithms for Non-uniform All-to-all": HPDC/2025/Session-4/parameterized-algorithms-for-non-uniform-all-to-all.md
+        - "Top-Down Stochastic Block Partitioning: Turning Graph Clustering Upside Down": HPDC/2025/Session-4/top-down-stochastic-block-partitioning-turning-graph-clustering-upside-down.md
+      - "Session 5 — Clouds and FaaS (3)":
+        - "Session 5 — Clouds and FaaS": HPDC/2025/Session-5/index.md
+        - "F3: An FPGA-accelerated FaaS Framework": HPDC/2025/Session-5/f3-an-fpga-accelerated-faas-framework.md
+        - "PathFence: Reducing Cross-Path Dependencies in Microservices": HPDC/2025/Session-5/pathfence-reducing-cross-path-dependencies-in-microservices.md
+        - "FluidFaaS: A Dynamic Pipelined Solution for Serverless Computing with Strong Isolation-based GPU Sharing": HPDC/2025/Session-5/fluidfaas-a-dynamic-pipelined-solution-for-serverless-computing-with-strong-isolation-based-gpu-sharing.md
+      - "Session 6 — Tuning and Performance (4)":
+        - "Session 6 — Tuning and Performance": HPDC/2025/Session-6/index.md
+        - "Grudon: A System for Deploying Graph Workloads on Disaggregated Architectures with Near-Data Processing": HPDC/2025/Session-6/grudon-a-system-for-deploying-graph-workloads-on-disaggregated-architectures-with-near-data-processing.md
+        - "HYPERF: End-to-End Autotuning Framework for High-Performance Computing": HPDC/2025/Session-6/hyperf-end-to-end-autotuning-framework-for-high-performance-computing.md
+        - "Bringing Differential Privacy to HPC: Privacy-Preserving Transformations of HPC Traces": HPDC/2025/Session-6/bringing-differential-privacy-to-hpc-privacy-preserving-transformations-of-hpc-traces.md
+        - "Weight-Sharing NAS with Architecture-Agnostic Intermediate Representation": HPDC/2025/Session-6/weight-sharing-nas-with-architecture-agnostic-intermediate-representation.md
+      - "Session 7 — Best Paper and Best Student Paper Finalists (3)":
+        - "Session 7 — Best Paper and Best Student Paper Finalists": HPDC/2025/Session-7/index.md
+        - "Out-of-Core Parallel Spatial Join Outperforming In-Memory Systems: A BFS-DFS Hybrid Approach": HPDC/2025/Session-7/out-of-core-parallel-spatial-join-outperforming-in-memory-systems-a-bfs-dfs-hybrid-approach.md
+        - "IPComp: Interpolation Based Progressive Lossy Compression for Scientific Applications": HPDC/2025/Session-7/ipcomp-interpolation-based-progressive-lossy-compression-for-scientific-applications.md
+        - "LegoIndex: A Scalable and Modular Indexing Framework for Efficient Analysis of Extreme-Scale Particle Data": HPDC/2025/Session-7/legoindex-a-scalable-and-modular-indexing-framework-for-efficient-analysis-of-extreme-scale-particle-data.md
+    - HPDC 2024 (26):
+      - HPDC 2024: HPDC/2024/index.md
+      - "Session 1 — Compression and AI (4)":
+        - "Session 1 — Compression and AI": HPDC/2024/Session-1/index.md
+        - "CereSZ: Enabling and Scaling Error-bounded Lossy Compression on Cerebras CS-2": HPDC/2024/Session-1/ceresz-enabling-and-scaling-error-bounded-lossy-compression-on-cerebras-cs-2.md
+        - "A Portable, Fast, DCT-based Compressor for AI Accelerators": HPDC/2024/Session-1/a-portable-fast-dct-based-compressor-for-ai-accelerators.md
+        - "ADTopk: All-Dimension Top-k Compression for High-Performance Data-Parallel DNN Training": HPDC/2024/Session-1/adtopk-all-dimension-top-k-compression-for-high-performance-data-parallel-dnn-training.md
+        - "GNNOne: A Unified System Optimizations for GNN Kernels": HPDC/2024/Session-1/gnnone-a-unified-system-optimizations-for-gnn-kernels.md
+      - "Session 2 — Resilience (3)":
+        - "Session 2 — Resilience": HPDC/2024/Session-2/index.md
+        - "DataStates-LLM: Lazy Asynchronous Checkpointing for Large Language Models": HPDC/2024/Session-2/datastates-llm-lazy-asynchronous-checkpointing-for-large-language-models.md
+        - "FPBOXer: Efficient Input-Generation for Targeting Floating-Point Exceptions in GPU Programs": HPDC/2024/Session-2/fpboxer-efficient-input-generation-for-targeting-floating-point-exceptions-in-gpu-programs.md
+        - "Reinforcement Learning-based Adaptive Mitigation of Uncorrected DRAM Errors in the Field": HPDC/2024/Session-2/reinforcement-learning-based-adaptive-mitigation-of-uncorrected-dram-errors-in-the-field.md
+      - "Session 3 — Serverless Computing (3)":
+        - "Session 3 — Serverless Computing": HPDC/2024/Session-3/index.md
+        - "FaaSKeeper: Learning from Building Serverless Services with ZooKeeper as an Example": HPDC/2024/Session-3/faaskeeper-learning-from-building-serverless-services-with-zookeeper-as-an-example.md
+        - "FaaSRail: Employing Real Workloads to Generate Representative Load for Serverless Research": HPDC/2024/Session-3/faasrail-employing-real-workloads-to-generate-representative-load-for-serverless-research.md
+        - "Faast: An Efficient Serverless Framework Made Snapshot-based Function Response Fast": HPDC/2024/Session-3/faast-an-efficient-serverless-framework-made-snapshot-based-function-response-fast.md
+      - "Session 4 — Software Systems & Workflows (3)":
+        - "Session 4 — Software Systems & Workflows": HPDC/2024/Session-4/index.md
+        - "IDT: Intelligent Data Placement for Multi-tiered Main Memory with Reinforcement Learning": HPDC/2024/Session-4/idt-intelligent-data-placement-for-multi-tiered-main-memory-with-reinforcement-learning.md
+        - "DLHT: A Non-blocking Resizable Hashtable with Fast Deletes and Memory-awareness": HPDC/2024/Session-4/dlht-a-non-blocking-resizable-hashtable-with-fast-deletes-and-memory-awareness.md
+        - "Accelerating Function-Centric Applications by Discovering, Distributing, and Retaining Reusable Context in Workflow Systems": HPDC/2024/Session-4/accelerating-function-centric-applications-by-discovering-distributing-and-retaining-reusable-context-in-workflow-systems.md
+      - "Session 5 — Performance Modeling & LLMs (3)":
+        - "Session 5 — Performance Modeling & LLMs": HPDC/2024/Session-5/index.md
+        - "ETS: Deep Learning Training Iteration Time Prediction based on Execution Trace Sliding Window": HPDC/2024/Session-5/ets-deep-learning-training-iteration-time-prediction-based-on-execution-trace-sliding-window.md
+        - "Can Large Language Models Write Parallel Code?": HPDC/2024/Session-5/can-large-language-models-write-parallel-code.md
+        - "FASOP: Fast yet Accurate Automated Search for Optimal Parallelization of Transformers on Heterogeneous GPU Clusters": HPDC/2024/Session-5/fasop-fast-yet-accurate-automated-search-for-optimal-parallelization-of-transformers-on-heterogeneous-gpu-clusters.md
+      - "Session 6 — Accelerators & Scientific Applications (3)":
+        - "Session 6 — Accelerators & Scientific Applications": HPDC/2024/Session-6/index.md
+        - "Extending Sparse Patterns to Improve Inverse Preconditioning on GPU Architectures": HPDC/2024/Session-6/extending-sparse-patterns-to-improve-inverse-preconditioning-on-gpu-architectures.md
+        - "SIMCoV-GPU: Accelerating an Agent-Based Model for Exascale": HPDC/2024/Session-6/simcov-gpu-accelerating-an-agent-based-model-for-exascale.md
+        - "HAM-SpMSpV: an Optimized Parallel Algorithm for Masked Sparse Matrix-Sparse Vector Multiplications on multi-core CPUs": HPDC/2024/Session-6/ham-spmspv-an-optimized-parallel-algorithm-for-masked-sparse-matrix-sparse-vector-multiplications-on-multi-core-cpus.md
+      - "Session 7 — Resource Management (3)":
+        - "Session 7 — Resource Management": HPDC/2024/Session-7/index.md
+        - "Loki: A System for Serving ML Inference Pipelines with Hardware and Accuracy Scaling": HPDC/2024/Session-7/loki-a-system-for-serving-ml-inference-pipelines-with-hardware-and-accuracy-scaling.md
+        - "ESG: Pipeline-Conscious Efficient Scheduling of DNN Workflows on Serverless Platforms with Shareable GPUs": HPDC/2024/Session-7/esg-pipeline-conscious-efficient-scheduling-of-dnn-workflows-on-serverless-platforms-with-shareable-gpus.md
+        - "ElasticRoom: Multi-Tenant DNN Inference Engine via Co-design with Resource-constrained Compilation and Strong Priority Scheduling": HPDC/2024/Session-7/elasticroom-multi-tenant-dnn-inference-engine-via-co-design-with-resource-constrained-compilation-and-strong-priority-scheduling.md
+      - "Session 8 — Communication & Storage (4)":
+        - "Session 8 — Communication & Storage": HPDC/2024/Session-8/index.md
+        - "Near-Optimal Wafer-Scale Reduce": HPDC/2024/Session-8/near-optimal-wafer-scale-reduce.md
+        - "Efficient all-to-all Collective Communication Schedules for Direct-connect Topologies": HPDC/2024/Session-8/efficient-all-to-all-collective-communication-schedules-for-direct-connect-topologies.md
+        - "ScaleDFS: Accelerating Decentralized and Private File Sharing via Scaling Directed Acyclic Graph Processing": HPDC/2024/Session-8/scaledfs-accelerating-decentralized-and-private-file-sharing-via-scaling-directed-acyclic-graph-processing.md
+        - "EvoStore: Towards Scalable Storage of Evolving Learning Models": HPDC/2024/Session-8/evostore-towards-scalable-storage-of-evolving-learning-models.md

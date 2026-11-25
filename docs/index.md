@@ -124,6 +124,7 @@ hide:
   <div class="conf-cube__name">EuroSys</div>
   <div class="conf-cube__full">European Conference on Computer Systems</div>
   <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="EuroSys/2026/">2026</a>
     <a class="conf-cube__year-link" href="EuroSys/2025/">2025</a>
   </div>
 </div>
@@ -133,7 +134,9 @@ hide:
   <div class="conf-cube__name">PPoPP</div>
   <div class="conf-cube__full">ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming</div>
   <div class="conf-cube__years">
+    <a class="conf-cube__year-link" href="PPoPP/2026/">2026</a>
     <a class="conf-cube__year-link" href="PPoPP/2025/">2025</a>
+    <a class="conf-cube__year-link" href="PPoPP/2024/">2024</a>
   </div>
 </div>
 
@@ -153,6 +156,8 @@ hide:
   <div class="conf-cube__full">ACM International Symposium on High-Performance Parallel and Distributed Computing</div>
   <div class="conf-cube__years">
     <a class="conf-cube__year-link" href="HPDC/2026/">2026</a>
+    <a class="conf-cube__year-link" href="HPDC/2025/">2025</a>
+    <a class="conf-cube__year-link" href="HPDC/2024/">2024</a>
   </div>
 </div>
 
