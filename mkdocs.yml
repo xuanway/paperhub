@@ -9,6 +9,7 @@ site_dir: site
 not_in_nav: |
   /ISCA/2026/Session-*/*.md
   !/ISCA/2026/Session-*/index.md
+  /research-directions/index.md
 
 theme:
   name: material

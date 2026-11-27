@@ -47,6 +47,13 @@ hide:
 
 </div>
 
+<div class="directions-section">
+  <a class="directions-cta__button" href="research-directions/">
+    查看全部关键词
+    <span aria-hidden="true">→</span>
+  </a>
+</div>
+
 ---
 
 <div class="conf-cubes">
@@ -168,24 +175,3 @@ hide:
 </div>
 
 ---
-
-<div class="directions-section">
-  <div class="directions-table-wrap">
-    <table class="directions-table" aria-label="研究方向关键词表">
-      <tbody id="directions-table-body">
-        <tr>
-          <td class="directions-table__loading">研究方向加载中…</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<div class="wc-results" id="keyword-results">
-  <div class="wc-results__eyebrow">Research Directions</div>
-  <div class="wc-results__title" id="keyword-results-title">点击下方研究方向查看对应论文列表</div>
-  <div class="wc-results__meta" id="keyword-results-meta">所有关键词按表格方式展示；点击任意关键词即可查看对应论文、会议信息与简介。</div>
-  <div class="wc-results__list" id="keyword-results-list">
-    <div class="wc-results__empty">选择一个研究方向后，这里会展示匹配论文的标题、会议信息和简介。</div>
-  </div>
-</div>
