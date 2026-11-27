@@ -186,7 +186,7 @@ tags:
 | [GS-Scale: Unlocking Large-Scale 3D Gaussian Splatting Training via Host Offloading](Session-3C/gs-scale-unlocking-large-scale-3d-gaussian-splatting-training-via-host-offloading.md) | GS-Scale：通过主机卸载释放大规模 3D 高斯泼溅训练 |
 | [Neo: Real-Time On-Device 3D Gaussian Splatting with Reuse-and-Update Sorting Acceleration](Session-3C/neo-real-time-on-device-3d-gaussian-splatting-with-reuse-and-update-sorting-acceleration.md) | Neo：基于复用与更新排序加速的实时端侧 3D 高斯泼溅 |
 | [CLM: Removing the GPU Memory Barrier for 3D Gaussian Splatting](Session-3C/clm-removing-the-gpu-memory-barrier-for-3d-gaussian-splatting.md) | CLM：消除 3D 高斯泼溅的 GPU 内存壁垒 |
-| [Nebula: Infinite-Scale 3D Gaussian Splatting in VR via Collaborative Rendering and Accelerated Stereo Rasterization](Session-3C/nebula-infinite-scale-3d-gaussian-splatting-in-vr-via-collaborative-rendering-and-accelerated-stereo-rasterization.md) | Nebula：通过协同渲染与加速立体光栅化在 VR 中实现无限规模 3D 高斯泼溅 |
+| [Nebula: Infinite-Scale 3D Gaussian Splatting in VR via Collaborative Rendering and Accelerated Stereo Rasterization](Session-3C/nebula-infinite-scale-3d-gaussian-splatting-in-vr-via-collaborative-rendering-and-accelerated-stereo-rasterization.md) ([code](https://github.com/SJTU-MVCLab/Nebula)) ([website](https://stonesix16.github.io/Nebula/)) | Nebula：通过协同渲染与加速立体光栅化在 VR 中实现无限规模 3D 高斯泼溅 |
 | [AGS: Accelerating 3D Gaussian Splatting SLAM via CODEC-Assisted Frame Covisibility Detection](Session-3C/ags-accelerating-3d-gaussian-splatting-slam-via-codec-assisted-frame-covisibility-detection.md) | AGS：通过 CODEC 辅助的帧共视检测加速 3D 高斯泼溅 SLAM |
 
 ## Session 3D: Trusted Execution Environments

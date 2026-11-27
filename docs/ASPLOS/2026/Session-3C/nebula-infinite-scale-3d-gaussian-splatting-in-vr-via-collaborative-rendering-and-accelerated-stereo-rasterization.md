@@ -36,7 +36,8 @@ tags:
 3D 高斯泼溅；神经渲染加速；云-客户端协同渲染；算法-硬件协同设计
 
 ## 相关链接
-
+- [code](https://github.com/SJTU-MVCLab/Nebula)
+- [website](https://stonesix16.github.io/Nebula/)
 - [论文 DOI](https://doi.org/10.1145/3779212.3790190)
 - [ASPLOS 2026 · Volume 2 论文集](https://doi.org/10.1145/3779212)
 - [ASPLOS 2026 Detailed Program](https://www.asplos-conference.org/asplos2026/program/index.html)

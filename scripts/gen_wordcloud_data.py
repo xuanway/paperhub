@@ -27,9 +27,9 @@ TRACK_CANONICAL = {
 }
 
 
-def compute_content_hash(total_papers, keywords):
+def compute_content_hash(total_papers, keywords, stats):
     payload = json.dumps(
-        {"total_papers": total_papers, "keywords": keywords},
+        {"total_papers": total_papers, "keywords": keywords, "stats": stats},
         ensure_ascii=False,
         sort_keys=True,
         separators=(",", ":"),
@@ -512,7 +512,7 @@ def generate():
         "per_track":          dict(per_track_raw),
     }
 
-    content_hash = compute_content_hash(total_papers, keywords)
+    content_hash = compute_content_hash(total_papers, keywords, stats)
     previous = None
     if os.path.exists(OUTPUT):
         try:
